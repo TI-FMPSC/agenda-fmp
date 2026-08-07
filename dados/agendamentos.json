@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "settings": {
+    "appName": "Agenda de Espaços FMP",
+    "panelTitle": "Painel de Laboratórios e Espaços",
+    "github": {
+      "owner": "",
+      "repo": "",
+      "path": "dados/agendamentos.json",
+      "token": ""
+    }
+  },
+  "resources": [
+    {"id":"lab1","name":"Laboratório 1","type":"Laboratório","active":true},
+    {"id":"lab2","name":"Laboratório 2","type":"Laboratório","active":true},
+    {"id":"lab3","name":"Laboratório 3","type":"Laboratório","active":true},
+    {"id":"lab4","name":"Laboratório 4","type":"Laboratório","active":true},
+    {"id":"lab5","name":"Laboratório 5","type":"Laboratório","active":true},
+    {"id":"auditorio","name":"Auditório","type":"Auditório","active":true},
+    {"id":"volante","name":"Sala Volante","type":"Sala móvel","active":true}
+  ],
+  "users": [
+    {"id":"u1","name":"Administrador","username":"admin","role":"Administrador"}
+  ],
+  "bookings": []
+}

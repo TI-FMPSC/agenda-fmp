@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b5cab" />
+  <title>Agenda de Espaços FMP — Prévia</title>
+  <style>
+    :root{
+      --primary:#0b5cab;
+      --primary-2:#073f79;
+      --success:#138a59;
+      --success-soft:#e7f7ef;
+      --warning:#c47a00;
+      --danger:#c23737;
+      --ink:#182230;
+      --muted:#667085;
+      --line:#dbe3ed;
+      --surface:#ffffff;
+      --surface-2:#f4f7fb;
+      --shadow:0 12px 35px rgba(19,42,76,.12);
+      --radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--surface-2)}
+    button,input,select,textarea{font:inherit}
+    button{cursor:pointer}
+    .hidden{display:none!important}
+    .app{min-height:100vh}
+    .btn{border:0;border-radius:12px;padding:11px 16px;font-weight:700;display:inline-flex;align-items:center;gap:8px;justify-content:center;transition:.2s}
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{background:var(--primary);color:#fff;box-shadow:0 7px 16px rgba(11,92,171,.22)}
+    .btn-secondary{background:#fff;color:var(--primary);border:1px solid #bed1e6}
+    .btn-success{background:var(--success);color:#fff}
+    .btn-ghost{background:transparent;color:var(--ink)}
+    .btn-danger{background:#fff0f0;color:var(--danger);border:1px solid #ffd0d0}
+    .icon-btn{width:42px;height:42px;padding:0;border-radius:12px;border:1px solid var(--line);background:#fff;color:var(--ink)}
+    .tag{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:800}
+    .tag-blue{color:var(--primary);background:#eaf3fc}.tag-green{color:var(--success);background:var(--success-soft)}
+    .tag-orange{color:#995d00;background:#fff3dc}.tag-gray{color:#5b6675;background:#edf1f5}
+    .dot{width:8px;height:8px;border-radius:50%;background:currentColor}
+    .logo{width:48px;height:48px;border-radius:14px;background:linear-gradient(145deg,var(--primary),#2b86d8);color:#fff;display:grid;place-items:center;font-weight:900;letter-spacing:.5px;overflow:hidden;box-shadow:0 8px 20px rgba(11,92,171,.22)}
+    .logo img{width:100%;height:100%;object-fit:contain;background:#fff}
+
+    /* Login */
+    .login-page{min-height:100vh;display:grid;grid-template-columns:1.08fr .92fr;background:#fff}
+    .login-brand{position:relative;overflow:hidden;padding:70px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;background:linear-gradient(145deg,#062d57 0%,var(--primary) 56%,#0b8b66 145%)}
+    .login-brand:before,.login-brand:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.08)}
+    .login-brand:before{width:430px;height:430px;right:-180px;top:-120px}.login-brand:after{width:260px;height:260px;left:-100px;bottom:-90px}
+    .brand-head{display:flex;align-items:center;gap:14px;position:relative;z-index:2}.brand-head .logo{background:#fff;color:var(--primary)}
+    .brand-title{font-size:42px;line-height:1.08;margin:0;max-width:650px;position:relative;z-index:2}
+    .brand-sub{font-size:18px;line-height:1.55;opacity:.9;max-width:590px;position:relative;z-index:2}
+    .brand-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;position:relative;z-index:2}
+    .brand-card{padding:18px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.09);border-radius:16px;backdrop-filter:blur(9px)}
+    .brand-card strong{display:block;font-size:20px;margin-bottom:6px}.brand-card span{font-size:13px;opacity:.82}
+    .login-box-wrap{display:grid;place-items:center;padding:42px}
+    .login-box{width:min(440px,100%)}
+    .login-box h2{font-size:30px;margin:18px 0 8px}.login-box p{color:var(--muted);margin:0 0 28px;line-height:1.5}
+    .field{display:flex;flex-direction:column;gap:7px;margin-bottom:16px}.field label{font-size:13px;font-weight:800;color:#344054}
+    .field input,.field select,.field textarea{border:1px solid #cdd8e5;border-radius:12px;padding:12px 13px;background:#fff;color:var(--ink);outline:0}
+    .field input:focus,.field select:focus,.field textarea:focus{border-color:#5d9bd5;box-shadow:0 0 0 4px rgba(11,92,171,.1)}
+    .login-actions{display:grid;gap:10px;margin-top:22px}.demo-info{margin-top:18px;padding:12px;border-radius:12px;background:#f5f8fc;color:#536174;font-size:13px;line-height:1.45}
+
+    /* Admin shell */
+    .shell{display:grid;grid-template-columns:250px 1fr;min-height:100vh}
+    .sidebar{background:#081d35;color:#fff;padding:22px 16px;position:sticky;top:0;height:100vh;display:flex;flex-direction:column}
+    .side-brand{display:flex;align-items:center;gap:12px;padding:4px 8px 22px;border-bottom:1px solid rgba(255,255,255,.09)}
+    .side-brand strong{display:block}.side-brand small{color:#a9bdd3}
+    .nav{display:grid;gap:6px;margin-top:20px}.nav button{display:flex;align-items:center;gap:11px;text-align:left;border:0;border-radius:11px;padding:12px;color:#c2d2e4;background:transparent;font-weight:700}
+    .nav button.active,.nav button:hover{background:#11395f;color:#fff}.nav-spacer{flex:1}
+    .side-foot{display:grid;gap:9px;border-top:1px solid rgba(255,255,255,.09);padding-top:16px}.side-foot button{color:#c2d2e4}
+    .main{min-width:0}.topbar{height:76px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 28px;position:sticky;top:0;z-index:20}
+    .topbar h1{font-size:22px;margin:0}.topbar small{color:var(--muted)}.top-actions{display:flex;align-items:center;gap:10px}
+    .content{padding:26px;max-width:1600px;margin:auto}
+    .summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:22px}
+    .summary{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 4px 15px rgba(19,42,76,.04)}
+    .summary .label{font-size:13px;color:var(--muted);font-weight:700}.summary .value{font-size:30px;font-weight:900;margin-top:8px}.summary .detail{font-size:12px;color:var(--muted);margin-top:6px}
+    .toolbar{display:flex;align-items:center;gap:10px;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap}.toolbar-group{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+    .segmented{display:flex;padding:4px;background:#eaf0f7;border-radius:12px}.segmented button{border:0;background:transparent;padding:8px 12px;border-radius:9px;font-weight:800;color:#58687a}.segmented button.active{background:#fff;color:var(--primary);box-shadow:0 3px 10px rgba(19,42,76,.08)}
+    .calendar-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 5px 18px rgba(19,42,76,.05)}
+    .week-grid{display:grid;grid-template-columns:170px repeat(7,minmax(150px,1fr));overflow:auto}
+    .week-head,.resource-name,.week-cell{border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:118px}
+    .week-head{min-height:auto;padding:13px;background:#f8fafc;text-align:center;position:sticky;top:76px;z-index:5}.week-head:first-child{text-align:left;left:0;z-index:8}
+    .week-head strong{display:block;font-size:13px}.week-head span{font-size:12px;color:var(--muted)}.week-head.today{background:#eaf4ff;color:var(--primary)}
+    .resource-name{padding:15px;position:sticky;left:0;background:#fff;z-index:4}.resource-name strong{display:block}.resource-name small{color:var(--muted)}
+    .week-cell{padding:8px;background:#fff}.week-cell:hover{background:#fbfdff}
+    .booking{border-left:4px solid var(--primary);background:#edf6ff;border-radius:10px;padding:8px;margin-bottom:7px;font-size:11px;line-height:1.35;cursor:pointer}
+    .booking strong{display:block;font-size:12px}.booking .time{font-weight:800;color:var(--primary)}.booking.current{border-color:var(--success);background:var(--success-soft)}
+    .month-grid{display:grid;grid-template-columns:repeat(7,1fr)}.month-weekday{background:#f8fafc;padding:12px;text-align:center;font-size:12px;font-weight:900;color:#667085;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+    .month-day{min-height:130px;padding:9px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:#fff}.month-day.other{background:#fafbfc;color:#a0a9b5}.month-day.today{box-shadow:inset 0 0 0 2px #5c9dde}.day-number{display:flex;align-items:center;justify-content:space-between;font-size:13px;font-weight:900;margin-bottom:7px}.count-badge{font-size:10px;background:#e8f1fb;color:var(--primary);padding:3px 6px;border-radius:999px}
+    .month-booking{font-size:10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:#eff6ff;border-radius:6px;padding:4px 5px;margin-bottom:4px;border-left:3px solid var(--primary)}
+    .empty-state{padding:45px;text-align:center;color:var(--muted)}
+
+    /* Config */
+    .settings-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 5px 18px rgba(19,42,76,.04)}
+    .panel h3{margin:0 0 5px}.panel .sub{color:var(--muted);font-size:13px;margin-bottom:20px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.form-grid .full{grid-column:1/-1}
+    .resource-list,.user-list{display:grid;gap:8px}.resource-item,.user-item{display:flex;align-items:center;justify-content:space-between;border:1px solid var(--line);border-radius:12px;padding:11px 12px}.resource-item span,.user-item span{display:flex;align-items:center;gap:9px}
+    .resource-dot{width:10px;height:10px;border-radius:50%;background:var(--primary)}
+
+    /* Modal */
+    .modal-backdrop{position:fixed;inset:0;background:rgba(5,18,33,.65);display:grid;place-items:center;padding:22px;z-index:100;backdrop-filter:blur(3px)}
+    .modal{background:#fff;border-radius:20px;width:min(780px,100%);max-height:92vh;overflow:auto;box-shadow:0 25px 70px rgba(0,0,0,.3)}
+    .modal-head{display:flex;align-items:center;justify-content:space-between;padding:20px 22px;border-bottom:1px solid var(--line);position:sticky;top:0;background:#fff;z-index:2}.modal-head h2{font-size:21px;margin:0}.modal-body{padding:22px}.modal-foot{display:flex;justify-content:flex-end;gap:10px;border-top:1px solid var(--line);padding:16px 22px;position:sticky;bottom:0;background:#fff}
+    .alert{border-radius:12px;padding:12px 13px;font-size:13px;margin-bottom:15px}.alert-error{background:#fff0f0;color:#9c2828;border:1px solid #ffd0d0}.alert-info{background:#edf6ff;color:#245c8c;border:1px solid #cce5fb}
+
+    /* Public panel */
+    .public-page{min-height:100vh;background:radial-gradient(circle at 10% 0,#173e66 0,#071b31 48%,#041323 100%);color:#fff;padding:22px}
+    .public-header{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:8px 4px 22px}.public-brand{display:flex;align-items:center;gap:13px}.public-brand h1{margin:0;font-size:25px}.public-brand p{margin:4px 0 0;color:#a9bfd4}.public-clock{text-align:right}.public-clock strong{font-size:30px;display:block}.public-clock span{color:#a9bfd4}
+    .public-toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}.date-nav{display:flex;align-items:center;gap:10px}.date-nav button{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);color:#fff}.date-label{font-weight:900;font-size:18px;min-width:230px;text-align:center}
+    .public-grid{display:grid;grid-template-columns:repeat(4,minmax(230px,1fr));gap:14px}.space-card{position:relative;background:linear-gradient(160deg,rgba(255,255,255,.10),rgba(255,255,255,.045));border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:17px;min-height:250px;box-shadow:0 15px 35px rgba(0,0,0,.16);backdrop-filter:blur(8px);transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease,background .2s ease;overflow:hidden}.space-card:before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:rgba(255,255,255,.16)}.space-card.free{opacity:.78}.space-card.scheduled{background:linear-gradient(155deg,rgba(24,118,205,.34),rgba(13,64,112,.24));border-color:rgba(93,175,245,.72);box-shadow:0 16px 38px rgba(0,78,145,.28),inset 0 0 0 1px rgba(108,188,255,.12)}.space-card.scheduled:before{background:#52adf4}.space-card.in-use{background:linear-gradient(155deg,rgba(18,166,107,.42),rgba(7,82,58,.33));border-color:rgba(86,231,168,.85);box-shadow:0 18px 44px rgba(0,135,88,.34),0 0 0 3px rgba(48,211,143,.12)}.space-card.in-use:before{background:#42e19d}.space-card.in-use:after{content:"";position:absolute;width:150px;height:150px;border-radius:50%;right:-75px;top:-75px;background:rgba(80,235,171,.12)}
+    .space-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;padding-bottom:13px;border-bottom:1px solid rgba(255,255,255,.11);position:relative;z-index:1}.space-head h2{font-size:19px;margin:0}.space-head small{color:#a9bfd4}.status-pill{font-size:11px;font-weight:900;border-radius:999px;padding:6px 9px;background:rgba(255,255,255,.12);white-space:nowrap}.status-pill.free{color:#d6e0e9}.status-pill.scheduled{background:#1684d8;color:#fff;box-shadow:0 0 0 4px rgba(22,132,216,.16)}.status-pill.busy{background:#18a66c;color:#fff;box-shadow:0 0 0 4px rgba(24,166,108,.18)}
+    .current-box{position:relative;z-index:1;margin:13px 0;padding:13px;border-radius:14px;background:rgba(18,166,107,.19);border:1px solid rgba(72,230,164,.42)}.current-box.scheduled{background:rgba(20,128,214,.18);border-color:rgba(92,178,246,.42)}.current-box.empty{background:rgba(255,255,255,.045);border-color:rgba(255,255,255,.08)}
+    .current-box .eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:10px;color:#8ee0bc;font-weight:900}.current-box.scheduled .eyebrow{color:#8dcafb}.current-box.empty .eyebrow{color:#a9bfd4}.current-box strong{display:block;font-size:17px;margin-top:5px}.current-box span{display:block;color:#c9d9e8;font-size:12px;margin-top:4px}
+    .status-legend{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.legend-item{display:inline-flex;align-items:center;gap:7px;padding:7px 10px;border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.07);border-radius:999px;font-size:11px;font-weight:800;color:#d7e3ee}.legend-dot{width:9px;height:9px;border-radius:50%;background:#8799aa}.legend-item.scheduled .legend-dot{background:#52adf4;box-shadow:0 0 0 4px rgba(82,173,244,.13)}.legend-item.busy .legend-dot{background:#42e19d;box-shadow:0 0 0 4px rgba(66,225,157,.13)}
+    .schedule-list{display:grid;gap:7px}.schedule-row{display:grid;grid-template-columns:75px 1fr;gap:9px;align-items:center;font-size:12px}.schedule-row .slot{font-weight:900;color:#8bbde9}.schedule-row .who{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#dbe7f2}.schedule-row.now .slot,.schedule-row.now .who{color:#6fe1ae}
+    .public-foot{display:flex;justify-content:space-between;color:#86a0b8;font-size:12px;padding:18px 4px 2px}
+    .fullscreen-btn{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.17)}
+
+    .toast{position:fixed;right:22px;bottom:22px;background:#12283f;color:#fff;padding:13px 16px;border-radius:12px;box-shadow:var(--shadow);z-index:200;animation:slide .25s ease}
+    @keyframes slide{from{transform:translateY(15px);opacity:0}to{transform:none;opacity:1}}
+
+    @media(max-width:1100px){.login-page{grid-template-columns:1fr}.login-brand{display:none}.shell{grid-template-columns:82px 1fr}.side-brand div,.nav button span,.side-foot span{display:none}.side-brand{justify-content:center}.nav button{justify-content:center}.summary-grid{grid-template-columns:repeat(2,1fr)}.public-grid{grid-template-columns:repeat(2,1fr)}.settings-grid{grid-template-columns:1fr}}
+    @media(max-width:700px){.content{padding:16px}.topbar{padding:0 15px}.topbar small{display:none}.summary-grid{grid-template-columns:1fr 1fr;gap:10px}.summary{padding:14px}.summary .value{font-size:24px}.shell{grid-template-columns:1fr}.sidebar{position:fixed;height:auto;bottom:0;top:auto;left:0;right:0;z-index:50;display:block;padding:7px;background:#071a2e}.side-brand,.side-foot{display:none}.nav{display:flex;margin:0;justify-content:space-around}.nav button{padding:10px}.main{padding-bottom:68px}.public-page{padding:12px}.public-grid{grid-template-columns:1fr}.public-header{align-items:flex-start}.public-clock strong{font-size:23px}.public-brand h1{font-size:20px}.form-grid{grid-template-columns:1fr}.form-grid .full{grid-column:auto}.month-day{min-height:100px}.month-booking{display:none}}
+  </style>
+</head>
+<body>
+<div id="app" class="app"></div>
+
+<div id="bookingModal" class="modal-backdrop hidden">
+  <div class="modal">
+    <div class="modal-head"><h2 id="modalTitle">Novo agendamento</h2><button class="icon-btn" onclick="closeBookingModal()">✕</button></div>
+    <form id="bookingForm" onsubmit="saveBooking(event)">
+      <div class="modal-body">
+        <div id="bookingAlert" class="alert alert-error hidden"></div>
+        <input type="hidden" id="bookingId" />
+        <div class="form-grid">
+          <div class="field"><label>Espaço *</label><select id="resourceId" required></select></div>
+          <div class="field"><label>Responsável / professor *</label><input id="responsible" required placeholder="Ex.: Prof. Leandro Pickler" /></div>
+          <div class="field"><label>Turma, curso ou evento *</label><input id="purpose" required placeholder="Ex.: ADS — Redes de Computadores" /></div>
+          <div class="field"><label>Tipo de horário</label><select id="periodType" onchange="applyPeriodPreset()"><option value="morning">Manhã — 08:00 às 11:10</option><option value="afternoon">Tarde — 13:00 às 17:00</option><option value="evening">Noite — 19:00 às 22:00</option><option value="custom">Meio período / horário personalizado</option></select></div>
+          <div class="field"><label>Data inicial *</label><input type="date" id="startDate" required /></div>
+          <div class="field"><label>Data final *</label><input type="date" id="endDate" required /></div>
+          <div class="field"><label>Horário inicial *</label><input type="time" id="startTime" required value="08:00" /></div>
+          <div class="field"><label>Horário final *</label><input type="time" id="endTime" required value="11:10" /></div>
+          <div class="field"><label>Repetição</label><select id="repeat"><option value="none">Somente nesta data</option><option value="weekly">Toda semana</option><option value="weekdays">Todos os dias úteis</option></select></div>
+          <div class="field"><label>Status</label><select id="status"><option value="confirmed">Confirmado</option><option value="pending">Pendente</option></select></div>
+          <div class="field full"><label>Observações</label><textarea id="notes" rows="3" placeholder="Equipamentos, montagem, necessidades específicas..."></textarea></div>
+        </div>
+        <div class="alert alert-info">A prévia impede sobreposição no mesmo espaço e permite agendar um único dia, vários dias úteis ou repetições semanais.</div>
+      </div>
+      <div class="modal-foot"><button type="button" class="btn btn-secondary" onclick="closeBookingModal()">Cancelar</button><button type="submit" class="btn btn-primary">Salvar agendamento</button></div>
+    </form>
+  </div>
+</div>
+
+<input type="file" id="importInput" class="hidden" accept="application/json" onchange="importJson(event)" />
+<script>
+const DB_KEY='fmp_agenda_preview_v1';
+const SESSION_KEY='fmp_agenda_session';
+const defaultResources=[
+  {id:'lab1',name:'Laboratório 1',type:'Laboratório',active:true},
+  {id:'lab2',name:'Laboratório 2',type:'Laboratório',active:true},
+  {id:'lab3',name:'Laboratório 3',type:'Laboratório',active:true},
+  {id:'lab4',name:'Laboratório 4',type:'Laboratório',active:true},
+  {id:'lab5',name:'Laboratório 5',type:'Laboratório',active:true},
+  {id:'auditorio',name:'Auditório',type:'Auditório',active:true},
+  {id:'volante',name:'Sala Volante',type:'Sala móvel',active:true}
+];
+function localISO(d){const z=new Date(d.getTime()-d.getTimezoneOffset()*60000);return z.toISOString().slice(0,10)}
+function addDays(date,n){const d=new Date(date);d.setDate(d.getDate()+n);return d}
+function seedBookings(){
+  const today=new Date(); const dow=(today.getDay()+6)%7; const monday=addDays(today,-dow);
+  const date=n=>localISO(addDays(monday,n));
+  return [
+    {id:crypto.randomUUID(),resourceId:'lab1',responsible:'Prof. Leandro Pickler',purpose:'ADS — Redes de Computadores',date:date(0),startTime:'08:00',endTime:'11:10',status:'confirmed',notes:''},
+    {id:crypto.randomUUID(),resourceId:'lab2',responsible:'Prof. Samuel',purpose:'Programação Web',date:date(0),startTime:'19:00',endTime:'22:00',status:'confirmed',notes:''},
+    {id:crypto.randomUUID(),resourceId:'auditorio',responsible:'Secretaria Acadêmica',purpose:'Reunião de abertura do semestre',date:date(1),startTime:'13:00',endTime:'15:00',status:'confirmed',notes:''},
+    {id:crypto.randomUUID(),resourceId:'lab3',responsible:'Prof. Matheus',purpose:'Banco de Dados',date:date(2),startTime:'19:00',endTime:'20:30',status:'confirmed',notes:''},
+    {id:crypto.randomUUID(),resourceId:'lab1',responsible:'FMP Concursos',purpose:'Treinamento da equipe',date:date(3),startTime:'13:00',endTime:'17:00',status:'confirmed',notes:''},
+    {id:crypto.randomUUID(),resourceId:'lab4',responsible:'Prof. Ana',purpose:'Sistemas Operacionais',date:date(3),startTime:'19:00',endTime:'22:00',status:'confirmed',notes:''},
+    {id:crypto.randomUUID(),resourceId:'volante',responsible:'Coordenação ADS',purpose:'Oficina de Hardware',date:date(4),startTime:'08:00',endTime:'09:30',status:'confirmed',notes:''},
+    {id:crypto.randomUUID(),resourceId:'lab5',responsible:'Prof. Carlos',purpose:'Lógica de Programação',date:date(4),startTime:'13:00',endTime:'17:00',status:'confirmed',notes:''}
+  ]
+}
+function defaultState(){return {settings:{appName:'Agenda de Espaços FMP',panelTitle:'Painel de Laboratórios e Espaços',logo:'',github:{owner:'',repo:'',path:'dados/agendamentos.json',token:''}},resources:defaultResources,users:[{id:'u1',name:'Administrador',username:'admin',password:'admin123',role:'Administrador'}],bookings:seedBookings()}}
+let state=loadState(); let currentView='week'; let referenceDate=new Date(); let adminSection='agenda';
+function loadState(){try{return JSON.parse(localStorage.getItem(DB_KEY))||defaultState()}catch{return defaultState()}}
+function saveState(){localStorage.setItem(DB_KEY,JSON.stringify(state));}
+function toast(msg){const el=document.createElement('div');el.className='toast';el.textContent=msg;document.body.appendChild(el);setTimeout(()=>el.remove(),2600)}
+function escapeHtml(v=''){return String(v).replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))}
+function formatDate(d,opts={}){return new Intl.DateTimeFormat('pt-BR',opts).format(d)}
+function parseLocal(s){return new Date(s+'T12:00:00')}
+function isLogged(){return sessionStorage.getItem(SESSION_KEY)==='1'}
+function route(){
+  const hash=location.hash||'#login';
+  if(hash==='#painel') renderPublic();
+  else if(hash==='#admin'&&isLogged()) renderAdmin();
+  else renderLogin();
+}
+window.addEventListener('hashchange',route);
+function logoMarkup(){return `<div class="logo">${state.settings.logo?`<img src="${state.settings.logo}" alt="Logo">`:'FMP'}</div>`}
+function renderLogin(){
+ document.getElementById('app').innerHTML=`<section class="login-page">
+  <div class="login-brand"><div class="brand-head">${logoMarkup()}<div><strong>${escapeHtml(state.settings.appName)}</strong><div style="opacity:.75;font-size:13px">Gestão de ambientes institucionais</div></div></div>
+  <div><h1 class="brand-title">Agendamento claro, rápido e sem conflitos.</h1><p class="brand-sub">Organize os cinco laboratórios, o auditório e uma sala volante. Exiba a ocupação em um painel público, enquanto a equipe autorizada administra todo o calendário.</p></div>
+  <div class="brand-cards"><div class="brand-card"><strong>7 espaços</strong><span>Laboratórios, auditório e sala volante</span></div><div class="brand-card"><strong>3 turnos</strong><span>Com opção de horários personalizados</span></div><div class="brand-card"><strong>Painel público</strong><span>Acesso sem login para consulta</span></div></div></div>
+  <div class="login-box-wrap"><div class="login-box">${logoMarkup()}<h2>Acesso administrativo</h2><p>Entre para cadastrar, editar e acompanhar os agendamentos.</p>
+  <form onsubmit="login(event)"><div class="field"><label>Usuário</label><input id="loginUser" value="admin" required></div><div class="field"><label>Senha</label><input id="loginPass" type="password" value="admin123" required></div><div class="login-actions"><button class="btn btn-primary" type="submit">Entrar no sistema</button><button class="btn btn-secondary" type="button" onclick="location.hash='#painel'">Abrir painel público</button></div></form>
+  <div class="demo-info"><strong>Acesso da prévia:</strong> usuário <b>admin</b> e senha <b>admin123</b>. Nesta versão demonstrativa, os dados ficam no navegador.</div></div></div></section>`;
+}
+function login(e){e.preventDefault();const u=document.getElementById('loginUser').value.trim(),p=document.getElementById('loginPass').value;const ok=state.users.some(x=>x.username===u&&x.password===p);if(!ok){toast('Usuário ou senha inválidos.');return}sessionStorage.setItem(SESSION_KEY,'1');location.hash='#admin'}
+function logout(){sessionStorage.removeItem(SESSION_KEY);location.hash='#login'}
+function renderAdmin(){
+ const title=adminSection==='agenda'?'Agenda de espaços':adminSection==='settings'?'Configurações':'Agendamentos cadastrados';
+ document.getElementById('app').innerHTML=`<div class="shell"><aside class="sidebar"><div class="side-brand">${logoMarkup()}<div><strong>${escapeHtml(state.settings.appName)}</strong><small>Administração</small></div></div>
+ <nav class="nav"><button class="${adminSection==='agenda'?'active':''}" onclick="setSection('agenda')">▦ <span>Agenda</span></button><button class="${adminSection==='list'?'active':''}" onclick="setSection('list')">☷ <span>Agendamentos</span></button><button class="${adminSection==='settings'?'active':''}" onclick="setSection('settings')">⚙ <span>Configurações</span></button></nav><div class="nav-spacer"></div><div class="side-foot"><button class="btn btn-ghost" onclick="location.hash='#painel'">◉ <span>Painel público</span></button><button class="btn btn-ghost" onclick="logout()">↪ <span>Sair</span></button></div></aside>
+ <main class="main"><header class="topbar"><div><h1>${title}</h1><small>${formatDate(new Date(),{weekday:'long',day:'2-digit',month:'long',year:'numeric'})}</small></div><div class="top-actions"><button class="btn btn-secondary" onclick="location.hash='#painel'">Painel público</button><button class="btn btn-primary" onclick="openBookingModal()">＋ Novo agendamento</button></div></header><div class="content" id="adminContent"></div></main></div>`;
+ if(adminSection==='agenda') renderAgenda(); else if(adminSection==='settings') renderSettings(); else renderBookingList();
+}
+function setSection(s){adminSection=s;renderAdmin()}
+function getWeekStart(d){const x=new Date(d);const day=(x.getDay()+6)%7;x.setDate(x.getDate()-day);x.setHours(12,0,0,0);return x}
+function periodLabel(b){return `${b.startTime}–${b.endTime}`}
+function getBookings(date,resourceId){const iso=localISO(date);return state.bookings.filter(b=>b.date===iso&&(!resourceId||b.resourceId===resourceId)).sort((a,b)=>a.startTime.localeCompare(b.startTime))}
+function currentStatus(b,date=new Date()){const today=localISO(date);const hm=date.toTimeString().slice(0,5);return b.date===today&&b.startTime<=hm&&b.endTime>hm}
+function renderAgenda(){
+ const today=localISO(new Date());const confirmed=state.bookings.filter(b=>b.status==='confirmed').length;const todayCount=state.bookings.filter(b=>b.date===today).length;const occupiedNow=state.resources.filter(r=>state.bookings.some(b=>b.resourceId===r.id&&currentStatus(b))).length;
+ document.getElementById('adminContent').innerHTML=`<div class="summary-grid"><div class="summary"><div class="label">Espaços cadastrados</div><div class="value">${state.resources.filter(r=>r.active).length}</div><div class="detail">5 laboratórios + auditório + volante</div></div><div class="summary"><div class="label">Agendamentos hoje</div><div class="value">${todayCount}</div><div class="detail">Somando todos os turnos</div></div><div class="summary"><div class="label">Em uso agora</div><div class="value">${occupiedNow}</div><div class="detail">Atualização automática do status</div></div><div class="summary"><div class="label">Confirmados</div><div class="value">${confirmed}</div><div class="detail">Base demonstrativa</div></div></div>
+ <div class="toolbar"><div class="toolbar-group"><button class="icon-btn" onclick="moveCalendar(-1)">‹</button><button class="btn btn-secondary" onclick="goToday()">Hoje</button><button class="icon-btn" onclick="moveCalendar(1)">›</button><strong id="rangeTitle"></strong></div><div class="toolbar-group"><div class="segmented"><button class="${currentView==='week'?'active':''}" onclick="changeView('week')">Semana</button><button class="${currentView==='month'?'active':''}" onclick="changeView('month')">Mês</button></div><button class="btn btn-secondary" onclick="exportJson()">⇩ Exportar JSON</button></div></div><div id="calendarHost" class="calendar-card"></div>`;
+ renderCalendar();
+}
+function changeView(v){currentView=v;renderAgenda()}
+function moveCalendar(n){if(currentView==='week')referenceDate=addDays(referenceDate,n*7);else referenceDate=new Date(referenceDate.getFullYear(),referenceDate.getMonth()+n,1);renderAgenda()}
+function goToday(){referenceDate=new Date();renderAgenda()}
+function renderCalendar(){currentView==='week'?renderWeek():renderMonth()}
+function renderWeek(){
+ const start=getWeekStart(referenceDate);const days=Array.from({length:7},(_,i)=>addDays(start,i));
+ document.getElementById('rangeTitle').textContent=`${formatDate(start,{day:'2-digit',month:'short'})} — ${formatDate(days[6],{day:'2-digit',month:'short',year:'numeric'})}`;
+ let html=`<div class="week-grid"><div class="week-head"><strong>Espaço</strong><span>Agenda semanal</span></div>`;
+ days.forEach(d=>html+=`<div class="week-head ${localISO(d)===localISO(new Date())?'today':''}"><strong>${formatDate(d,{weekday:'short'})}</strong><span>${formatDate(d,{day:'2-digit',month:'2-digit'})}</span></div>`);
+ state.resources.filter(r=>r.active).forEach(r=>{html+=`<div class="resource-name"><strong>${escapeHtml(r.name)}</strong><small>${escapeHtml(r.type)}</small></div>`;days.forEach(d=>{const arr=getBookings(d,r.id);html+=`<div class="week-cell" ondblclick="openBookingModal('', '${localISO(d)}', '${r.id}')">${arr.map(b=>`<div class="booking ${currentStatus(b)?'current':''}" onclick="openBookingModal('${b.id}')"><span class="time">${periodLabel(b)}</span><strong>${escapeHtml(b.purpose)}</strong><span>${escapeHtml(b.responsible)}</span></div>`).join('')}</div>`});});
+ html+='</div>';document.getElementById('calendarHost').innerHTML=html;
+}
+function renderMonth(){
+ const first=new Date(referenceDate.getFullYear(),referenceDate.getMonth(),1,12);const offset=(first.getDay()+6)%7;const start=addDays(first,-offset);document.getElementById('rangeTitle').textContent=formatDate(first,{month:'long',year:'numeric'});
+ let html='<div class="month-grid">';['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'].forEach(x=>html+=`<div class="month-weekday">${x}</div>`);
+ for(let i=0;i<42;i++){const d=addDays(start,i),arr=getBookings(d);const other=d.getMonth()!==first.getMonth();html+=`<div class="month-day ${other?'other':''} ${localISO(d)===localISO(new Date())?'today':''}" ondblclick="openBookingModal('', '${localISO(d)}')"><div class="day-number"><span>${d.getDate()}</span>${arr.length?`<span class="count-badge">${arr.length}</span>`:''}</div>${arr.slice(0,4).map(b=>{const r=state.resources.find(x=>x.id===b.resourceId);return `<div class="month-booking" onclick="openBookingModal('${b.id}')">${b.startTime} · ${escapeHtml(r?.name||'')} · ${escapeHtml(b.purpose)}</div>`}).join('')}${arr.length>4?`<small>+ ${arr.length-4} agendamento(s)</small>`:''}</div>`}
+ html+='</div>';document.getElementById('calendarHost').innerHTML=html;
+}
+function renderBookingList(){
+ const sorted=[...state.bookings].sort((a,b)=>(a.date+a.startTime).localeCompare(b.date+b.startTime));
+ document.getElementById('adminContent').innerHTML=`<div class="panel"><div class="toolbar"><div><h3 style="margin:0">Todos os agendamentos</h3><div class="sub" style="margin:5px 0 0">Clique em um item para editar ou excluir.</div></div><button class="btn btn-secondary" onclick="exportJson()">Exportar JSON</button></div><div class="resource-list">${sorted.map(b=>{const r=state.resources.find(x=>x.id===b.resourceId);return `<div class="resource-item" onclick="openBookingModal('${b.id}')" style="cursor:pointer"><span><span class="resource-dot"></span><span><strong>${escapeHtml(r?.name||'Espaço')}</strong><br><small>${formatDate(parseLocal(b.date),{day:'2-digit',month:'2-digit',year:'numeric'})} · ${periodLabel(b)} · ${escapeHtml(b.purpose)} — ${escapeHtml(b.responsible)}</small></span></span><span class="tag ${b.status==='confirmed'?'tag-green':'tag-orange'}">${b.status==='confirmed'?'Confirmado':'Pendente'}</span></div>`}).join('')||'<div class="empty-state">Nenhum agendamento cadastrado.</div>'}</div></div>`;
+}
+function renderSettings(){
+ const gh=state.settings.github||{};
+ document.getElementById('adminContent').innerHTML=`<div class="settings-grid"><section class="panel"><h3>Identidade do sistema</h3><div class="sub">Altere o nome, o título do painel e a logomarca.</div><div class="field"><label>Nome do sistema</label><input id="cfgAppName" value="${escapeHtml(state.settings.appName)}"></div><div class="field"><label>Título do painel público</label><input id="cfgPanelTitle" value="${escapeHtml(state.settings.panelTitle)}"></div><div class="field"><label>Logomarca</label><input type="file" accept="image/*" onchange="loadLogo(event)"></div><div class="field"><label>Nome da sala volante</label><input id="cfgVolante" value="${escapeHtml(state.resources.find(r=>r.id==='volante')?.name||'Sala Volante')}"></div><button class="btn btn-primary" onclick="saveSettings()">Salvar configurações</button></section>
+ <section class="panel"><h3>Integração com GitHub</h3><div class="sub">Campos preparados para a próxima etapa de sincronização com JSON.</div><div class="form-grid"><div class="field"><label>Proprietário</label><input id="ghOwner" value="${escapeHtml(gh.owner||'')}" placeholder="usuario-github"></div><div class="field"><label>Repositório</label><input id="ghRepo" value="${escapeHtml(gh.repo||'')}" placeholder="agenda-fmp"></div><div class="field full"><label>Caminho do JSON</label><input id="ghPath" value="${escapeHtml(gh.path||'dados/agendamentos.json')}"></div><div class="field full"><label>Token de acesso</label><input id="ghToken" type="password" value="${escapeHtml(gh.token||'')}" placeholder="Armazenado somente no navegador"></div></div><button class="btn btn-secondary" onclick="saveGithub()">Salvar dados do GitHub</button></section>
+ <section class="panel"><h3>Espaços cadastrados</h3><div class="sub">Estrutura inicial solicitada para a FMP.</div><div class="resource-list">${state.resources.map(r=>`<div class="resource-item"><span><span class="resource-dot"></span><span><strong>${escapeHtml(r.name)}</strong><br><small>${escapeHtml(r.type)}</small></span></span><span class="tag tag-blue">Ativo</span></div>`).join('')}</div></section>
+ <section class="panel"><h3>Usuários e segurança</h3><div class="sub">A prévia possui um administrador. A versão final poderá permitir vários usuários e perfis.</div><div class="user-list">${state.users.map(u=>`<div class="user-item"><span><span class="resource-dot" style="background:var(--success)"></span><span><strong>${escapeHtml(u.name)}</strong><br><small>${escapeHtml(u.username)} · ${escapeHtml(u.role)}</small></span></span><span class="tag tag-green">Ativo</span></div>`).join('')}</div><div style="display:flex;gap:9px;margin-top:16px;flex-wrap:wrap"><button class="btn btn-secondary" onclick="document.getElementById('importInput').click()">Importar JSON</button><button class="btn btn-secondary" onclick="exportJson()">Exportar JSON</button><button class="btn btn-danger" onclick="resetDemo()">Restaurar prévia</button></div></section></div>`;
+}
+let pendingLogo=null;
+function loadLogo(e){const f=e.target.files[0];if(!f)return;const reader=new FileReader();reader.onload=()=>{pendingLogo=reader.result;toast('Logo carregada. Clique em salvar configurações.')} ;reader.readAsDataURL(f)}
+function saveSettings(){state.settings.appName=document.getElementById('cfgAppName').value.trim()||'Agenda de Espaços FMP';state.settings.panelTitle=document.getElementById('cfgPanelTitle').value.trim()||'Painel de Laboratórios e Espaços';const volante=state.resources.find(r=>r.id==='volante');if(volante)volante.name=document.getElementById('cfgVolante').value.trim()||'Sala Volante';if(pendingLogo){state.settings.logo=pendingLogo;pendingLogo=null}saveState();renderAdmin();toast('Configurações salvas.')}
+function saveGithub(){state.settings.github={owner:document.getElementById('ghOwner').value.trim(),repo:document.getElementById('ghRepo').value.trim(),path:document.getElementById('ghPath').value.trim()||'dados/agendamentos.json',token:document.getElementById('ghToken').value.trim()};saveState();toast('Configuração do GitHub armazenada localmente.')}
+function openBookingModal(id='',presetDate='',presetResource=''){
+ const b=id?state.bookings.find(x=>x.id===id):null;document.getElementById('modalTitle').textContent=b?'Editar agendamento':'Novo agendamento';document.getElementById('bookingId').value=b?.id||'';
+ document.getElementById('resourceId').innerHTML=state.resources.filter(r=>r.active).map(r=>`<option value="${r.id}">${escapeHtml(r.name)}</option>`).join('');
+ document.getElementById('resourceId').value=b?.resourceId||presetResource||state.resources[0].id;document.getElementById('responsible').value=b?.responsible||'';document.getElementById('purpose').value=b?.purpose||'';
+ document.getElementById('startDate').value=b?.date||presetDate||localISO(new Date());document.getElementById('endDate').value=b?.date||presetDate||localISO(new Date());document.getElementById('startTime').value=b?.startTime||'08:00';document.getElementById('endTime').value=b?.endTime||'11:10';document.getElementById('repeat').value='none';document.getElementById('repeat').disabled=!!b;document.getElementById('status').value=b?.status||'confirmed';document.getElementById('notes').value=b?.notes||'';
+ const preset=b&&b.startTime==='08:00'&&b.endTime==='11:10'?'morning':b&&b.startTime==='13:00'&&b.endTime==='17:00'?'afternoon':b&&b.startTime==='19:00'&&b.endTime==='22:00'?'evening':'custom';document.getElementById('periodType').value=b?preset:'morning';document.getElementById('bookingAlert').classList.add('hidden');
+ let foot=document.querySelector('#bookingModal .modal-foot');const old=document.getElementById('deleteBtn');if(old)old.remove();if(b){const del=document.createElement('button');del.type='button';del.id='deleteBtn';del.className='btn btn-danger';del.textContent='Excluir';del.onclick=()=>deleteBooking(b.id);foot.prepend(del)}
+ document.getElementById('bookingModal').classList.remove('hidden');
+}
+function closeBookingModal(){document.getElementById('bookingModal').classList.add('hidden')}
+function applyPeriodPreset(){const type=document.getElementById('periodType').value;const map={morning:['08:00','11:10'],afternoon:['13:00','17:00'],evening:['19:00','22:00']};if(map[type]){document.getElementById('startTime').value=map[type][0];document.getElementById('endTime').value=map[type][1]}}
+function datesBetween(start,end,repeat){let out=[];let d=parseLocal(start),last=parseLocal(end);if(repeat==='none')return [start];while(d<=last){if(repeat==='weekdays'){if(d.getDay()!==0&&d.getDay()!==6)out.push(localISO(d));d=addDays(d,1)}else{out.push(localISO(d));d=addDays(d,7)}}return out}
+function overlaps(aStart,aEnd,bStart,bEnd){return aStart<bEnd&&aEnd>bStart}
+function saveBooking(e){
+ e.preventDefault();const id=document.getElementById('bookingId').value;const resourceId=document.getElementById('resourceId').value;const startDate=document.getElementById('startDate').value,endDate=document.getElementById('endDate').value,startTime=document.getElementById('startTime').value,endTime=document.getElementById('endTime').value,repeat=document.getElementById('repeat').value;
+ const alert=document.getElementById('bookingAlert');if(endDate<startDate||endTime<=startTime){alert.textContent='Verifique as datas e os horários informados.';alert.classList.remove('hidden');return}
+ const dates=datesBetween(startDate,endDate,repeat);const conflicts=dates.filter(date=>state.bookings.some(b=>b.id!==id&&b.resourceId===resourceId&&b.date===date&&overlaps(startTime,endTime,b.startTime,b.endTime)));
+ if(conflicts.length){alert.textContent=`Conflito encontrado em ${conflicts.slice(0,3).map(x=>formatDate(parseLocal(x),{day:'2-digit',month:'2-digit'})).join(', ')}. O espaço já possui agendamento nesse horário.`;alert.classList.remove('hidden');return}
+ const base={resourceId,responsible:document.getElementById('responsible').value.trim(),purpose:document.getElementById('purpose').value.trim(),startTime,endTime,status:document.getElementById('status').value,notes:document.getElementById('notes').value.trim()};
+ if(id){const idx=state.bookings.findIndex(b=>b.id===id);state.bookings[idx]={...state.bookings[idx],...base,date:startDate}}else dates.forEach(date=>state.bookings.push({id:crypto.randomUUID(),...base,date}));
+ saveState();closeBookingModal();renderAdmin();toast(id?'Agendamento atualizado.':`${dates.length} agendamento(s) salvo(s).`)
+}
+function deleteBooking(id){if(!confirm('Deseja excluir este agendamento?'))return;state.bookings=state.bookings.filter(b=>b.id!==id);saveState();closeBookingModal();renderAdmin();toast('Agendamento excluído.')}
+function exportJson(){const data={version:1,exportedAt:new Date().toISOString(),settings:{...state.settings,github:{...state.settings.github,token:''}},resources:state.resources,users:state.users.map(({password,...u})=>u),bookings:state.bookings};const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='agendamentos-fmp.json';a.click();URL.revokeObjectURL(a.href)}
+function importJson(e){const f=e.target.files[0];if(!f)return;const reader=new FileReader();reader.onload=()=>{try{const d=JSON.parse(reader.result);if(!Array.isArray(d.bookings)||!Array.isArray(d.resources))throw new Error();state={...state,...d,users:state.users,settings:{...state.settings,...d.settings,github:{...state.settings.github,...(d.settings?.github||{}),token:state.settings.github?.token||''}}};saveState();renderAdmin();toast('JSON importado com sucesso.')}catch{toast('Arquivo JSON inválido.')}};reader.readAsText(f);e.target.value=''}
+function resetDemo(){if(!confirm('Restaurar todos os dados da prévia?'))return;state=defaultState();saveState();renderAdmin();toast('Prévia restaurada.')}
+function renderPublic(){
+ const selected=window.publicDate||new Date();window.publicDate=selected;document.getElementById('app').innerHTML=`<section class="public-page"><header class="public-header"><div class="public-brand">${logoMarkup()}<div><h1>${escapeHtml(state.settings.panelTitle)}</h1><p>${escapeHtml(state.settings.appName)} · Consulta pública</p></div></div><div class="public-clock"><strong id="clock">--:--</strong><span id="clockDate"></span></div></header>
+ <div class="public-toolbar"><div class="date-nav"><button class="icon-btn" onclick="movePublicDate(-1)">‹</button><button class="btn fullscreen-btn" onclick="window.publicDate=new Date();renderPublic()">Hoje</button><button class="icon-btn" onclick="movePublicDate(1)">›</button><div class="date-label">${formatDate(selected,{weekday:'long',day:'2-digit',month:'long'})}</div></div><div class="status-legend"><span class="legend-item busy"><span class="legend-dot"></span>Em uso</span><span class="legend-item scheduled"><span class="legend-dot"></span>Com agendamento</span><span class="legend-item"><span class="legend-dot"></span>Sem agendamento</span></div><div style="display:flex;gap:9px"><button class="btn fullscreen-btn" onclick="toggleFullscreen()">⛶ Tela cheia</button><button class="btn fullscreen-btn" onclick="location.hash='${isLogged()?'#admin':'#login'}'">Área administrativa</button></div></div>
+ <div class="public-grid">${state.resources.filter(r=>r.active).map(r=>publicSpaceCard(r,selected)).join('')}</div><footer class="public-foot"><span>Horários institucionais: 08:00–11:10 · 13:00–17:00 · 19:00–22:00</span><span>Atualização automática a cada minuto</span></footer></section>`;updateClock();clearInterval(window.clockTimer);window.clockTimer=setInterval(()=>{updateClock();if(localISO(window.publicDate)===localISO(new Date()))renderPublic()},60000)
+}
+function publicSpaceCard(r,date){const arr=getBookings(date,r.id);const isToday=localISO(date)===localISO(new Date());const current=isToday?arr.find(b=>currentStatus(b)):null;const now=new Date().toTimeString().slice(0,5);const next=isToday?(arr.find(b=>b.startTime>now)||arr[0]):arr[0];const cardState=current?'in-use':arr.length?'scheduled':'free';const pillClass=current?'busy':arr.length?'scheduled':'free';const pillText=current?'EM USO':arr.length?'AGENDADO':'SEM AGENDA';let highlight;if(current){highlight=`<div class="current-box"><div class="eyebrow">Em uso agora</div><strong>${escapeHtml(current.purpose)}</strong><span>${escapeHtml(current.responsible)} · ${periodLabel(current)}</span></div>`}else if(arr.length){highlight=`<div class="current-box scheduled"><div class="eyebrow">${isToday?'Próximo agendamento':'Agenda desta data'}</div><strong>${isToday&&next?`${next.startTime} — ${escapeHtml(next.purpose)}`:`${arr.length} agendamento${arr.length>1?'s':''}`}</strong><span>${isToday&&next?`${escapeHtml(next.responsible)} · até ${next.endTime}`:`Primeiro horário: ${periodLabel(arr[0])}`}</span></div>`}else{highlight=`<div class="current-box empty"><div class="eyebrow">Situação da data</div><strong>Sem agendamentos</strong><span>Espaço livre durante todo o dia</span></div>`}return `<article class="space-card ${cardState}"><div class="space-head"><div><h2>${escapeHtml(r.name)}</h2><small>${escapeHtml(r.type)}</small></div><span class="status-pill ${pillClass}">${pillText}</span></div>${highlight}<div class="schedule-list">${arr.length?arr.map(b=>`<div class="schedule-row ${current?.id===b.id?'now':''}"><span class="slot">${periodLabel(b)}</span><span class="who">${escapeHtml(b.purpose)} · ${escapeHtml(b.responsible)}</span></div>`).join(''):'<div style="color:#86a0b8;font-size:12px">Nenhum agendamento para esta data.</div>'}</div></article>`}
+function movePublicDate(n){window.publicDate=addDays(window.publicDate||new Date(),n);renderPublic()}
+function updateClock(){const now=new Date();const c=document.getElementById('clock'),d=document.getElementById('clockDate');if(c)c.textContent=now.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});if(d)d.textContent=formatDate(now,{day:'2-digit',month:'2-digit',year:'numeric'})}
+function toggleFullscreen(){if(!document.fullscreenElement)document.documentElement.requestFullscreen?.();else document.exitFullscreen?.()}
+route();
+</script>
+</body>
+</html>
