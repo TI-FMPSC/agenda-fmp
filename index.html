@@ -138,7 +138,44 @@
           <div class="field"><label>Espaço *</label><select id="resourceId" required onchange="toggleCustomSpace()"></select></div>
           <div class="field hidden" id="customSpaceField"><label>Informe o espaço *</label><input id="customSpaceName" placeholder="Ex.: Sala 12, Biblioteca, Hall, Sala de Reuniões..." /></div>
           <div class="field"><label>Responsável / professor *</label><input id="responsible" required placeholder="Ex.: Prof. Leandro Pickler" /></div>
-          <div class="field"><label>Turma, disciplina ou evento</label><input id="purpose" placeholder="Ex.: ADS — Redes de Computadores" /></div>
+          <div class="field"><label>Turma / curso / evento</label><select id="purpose" onchange="toggleCustomPurpose()">
+            <option value="">Selecione a turma</option>
+            <optgroup label="ADS">
+              <option value="ADS — 1ª Fase">ADS — 1ª Fase</option>
+              <option value="ADS — 2ª Fase">ADS — 2ª Fase</option>
+              <option value="ADS — 3ª Fase">ADS — 3ª Fase</option>
+              <option value="ADS — 4ª Fase">ADS — 4ª Fase</option>
+              <option value="ADS — 5ª Fase">ADS — 5ª Fase</option>
+            </optgroup>
+            <optgroup label="TPG">
+              <option value="TPG — 1ª Fase">TPG — 1ª Fase</option>
+              <option value="TPG — 2ª Fase">TPG — 2ª Fase</option>
+              <option value="TPG — 3ª Fase">TPG — 3ª Fase</option>
+              <option value="TPG — 4ª Fase">TPG — 4ª Fase</option>
+            </optgroup>
+            <optgroup label="Administração">
+              <option value="Administração — 1ª Fase">Administração — 1ª Fase</option>
+              <option value="Administração — 2ª Fase">Administração — 2ª Fase</option>
+              <option value="Administração — 3ª Fase">Administração — 3ª Fase</option>
+              <option value="Administração — 4ª Fase">Administração — 4ª Fase</option>
+              <option value="Administração — 5ª Fase">Administração — 5ª Fase</option>
+              <option value="Administração — 6ª Fase">Administração — 6ª Fase</option>
+              <option value="Administração — 7ª Fase">Administração — 7ª Fase</option>
+              <option value="Administração — 8ª Fase">Administração — 8ª Fase</option>
+            </optgroup>
+            <optgroup label="Pedagogia">
+              <option value="Pedagogia — 1ª Fase">Pedagogia — 1ª Fase</option>
+              <option value="Pedagogia — 2ª Fase">Pedagogia — 2ª Fase</option>
+              <option value="Pedagogia — 3ª Fase">Pedagogia — 3ª Fase</option>
+              <option value="Pedagogia — 4ª Fase">Pedagogia — 4ª Fase</option>
+              <option value="Pedagogia — 5ª Fase">Pedagogia — 5ª Fase</option>
+              <option value="Pedagogia — 6ª Fase">Pedagogia — 6ª Fase</option>
+              <option value="Pedagogia — 7ª Fase">Pedagogia — 7ª Fase</option>
+              <option value="Pedagogia — 8ª Fase">Pedagogia — 8ª Fase</option>
+            </optgroup>
+            <option value="__custom_purpose__">Outra turma / curso / evento — digitar</option>
+          </select></div>
+          <div class="field hidden" id="customPurposeField"><label>Informe a turma / curso / evento</label><input id="customPurpose" placeholder="Ex.: Pós-graduação, reunião, capacitação..." /></div>
           <div class="field"><label>Tipo de horário</label><select id="periodType" onchange="applyPeriodPreset()"><option value="morning">Manhã — 08:00 às 11:10</option><option value="afternoon">Tarde — 13:00 às 17:00</option><option value="evening">Noite — 19:00 às 22:00</option><option value="morning1">Manhã 1 — 08:00 às 09:30</option><option value="morning2">Manhã 2 — 09:40 às 11:10</option><option value="afternoon1">Tarde 1 — 13:00 às 15:00</option><option value="afternoon2">Tarde 2 — 15:00 às 17:00</option><option value="evening1">Noite 1 — 19:00 às 20:30</option><option value="evening2">Noite 2 — 20:30 às 22:00</option><option value="custom">Meio período / horário personalizado</option></select></div>
           <div class="field"><label>Data inicial *</label><input type="date" id="startDate" required /></div>
           <div class="field"><label>Data final *</label><input type="date" id="endDate" required /></div>
@@ -264,23 +301,27 @@ function openBookingModal(id='',presetDate='',presetResource=''){
  const b=id?state.bookings.find(x=>x.id===id):null;document.getElementById('modalTitle').textContent=b?'Editar agendamento':'Novo agendamento';document.getElementById('bookingId').value=b?.id||'';
  document.getElementById('resourceId').innerHTML=state.resources.filter(r=>r.active&&r.id!=='volante').map(r=>`<option value="${r.id}">${escapeHtml(r.name)}</option>`).join('')+'<option value="__custom__">Outro espaço — digitar nome</option>';
  const selected=b?.resourceId||presetResource||state.resources.find(r=>r.active)?.id||'__custom__';const isCustom=String(selected).startsWith('custom:');document.getElementById('resourceId').value=isCustom?'__custom__':selected;document.getElementById('customSpaceName').value=isCustom?(b?.customSpaceName||(presetResource?state.bookings.find(x=>x.resourceId===presetResource)?.customSpaceName:'')||''):'';toggleCustomSpace();
- document.getElementById('responsible').value=b?.responsible||'';document.getElementById('purpose').value=b?.purpose||'';
+ document.getElementById('responsible').value=b?.responsible||'';setPurposeField(b?.purpose||'');
  document.getElementById('startDate').value=b?.date||presetDate||localISO(new Date());document.getElementById('endDate').value=b?.date||presetDate||localISO(new Date());document.getElementById('startTime').value=b?.startTime||'08:00';document.getElementById('endTime').value=b?.endTime||'11:10';document.getElementById('repeat').value='none';document.getElementById('repeat').disabled=!!b;document.getElementById('status').value=b?.status||'confirmed';document.getElementById('notes').value=b?.notes||'';
  const preset=!b?'morning':b.startTime==='08:00'&&b.endTime==='11:10'?'morning':b.startTime==='13:00'&&b.endTime==='17:00'?'afternoon':b.startTime==='19:00'&&b.endTime==='22:00'?'evening':b.startTime==='08:00'&&b.endTime==='09:30'?'morning1':b.startTime==='09:40'&&b.endTime==='11:10'?'morning2':b.startTime==='13:00'&&b.endTime==='15:00'?'afternoon1':b.startTime==='15:00'&&b.endTime==='17:00'?'afternoon2':b.startTime==='19:00'&&b.endTime==='20:30'?'evening1':b.startTime==='20:30'&&b.endTime==='22:00'?'evening2':'custom';document.getElementById('periodType').value=b?preset:'morning';document.getElementById('bookingAlert').classList.add('hidden');
  let foot=document.querySelector('#bookingModal .modal-foot');const old=document.getElementById('deleteBtn');if(old)old.remove();if(b){const del=document.createElement('button');del.type='button';del.id='deleteBtn';del.className='btn btn-danger';del.textContent='Excluir';del.onclick=()=>deleteBooking(b.id);foot.prepend(del)}
  document.getElementById('bookingModal').classList.remove('hidden');
 }
 function toggleCustomSpace(){const sel=document.getElementById('resourceId'),field=document.getElementById('customSpaceField'),input=document.getElementById('customSpaceName');if(!sel||!field||!input)return;const custom=sel.value==='__custom__';field.classList.toggle('hidden',!custom);input.required=custom;if(custom)setTimeout(()=>input.focus(),0)}
+function predefinedPurposeValues(){return [...document.querySelectorAll('#purpose option')].map(o=>o.value).filter(v=>v&&v!=='__custom_purpose__')}
+function setPurposeField(value=''){const sel=document.getElementById('purpose'),field=document.getElementById('customPurposeField'),input=document.getElementById('customPurpose');if(!sel||!field||!input)return;const v=String(value||'').trim();if(!v){sel.value='';input.value=''}else if(predefinedPurposeValues().includes(v)){sel.value=v;input.value=''}else{sel.value='__custom_purpose__';input.value=v}toggleCustomPurpose()}
+function toggleCustomPurpose(){const sel=document.getElementById('purpose'),field=document.getElementById('customPurposeField'),input=document.getElementById('customPurpose');if(!sel||!field||!input)return;const custom=sel.value==='__custom_purpose__';field.classList.toggle('hidden',!custom);input.required=custom;if(custom)setTimeout(()=>input.focus(),0)}
+function selectedPurpose(){const sel=document.getElementById('purpose');if(!sel)return '';return sel.value==='__custom_purpose__'?(document.getElementById('customPurpose')?.value.trim()||''):sel.value.trim()}
 function closeBookingModal(){document.getElementById('bookingModal').classList.add('hidden')}
 function applyPeriodPreset(){const type=document.getElementById('periodType').value;const map={morning:['08:00','11:10'],afternoon:['13:00','17:00'],evening:['19:00','22:00'],morning1:['08:00','09:30'],morning2:['09:40','11:10'],afternoon1:['13:00','15:00'],afternoon2:['15:00','17:00'],evening1:['19:00','20:30'],evening2:['20:30','22:00']};if(map[type]){document.getElementById('startTime').value=map[type][0];document.getElementById('endTime').value=map[type][1]}}
 function datesBetween(start,end,repeat){let out=[];let d=parseLocal(start),last=parseLocal(end);if(repeat==='none')return [start];while(d<=last){if(repeat==='weekdays'){if(d.getDay()!==0&&d.getDay()!==6)out.push(localISO(d));d=addDays(d,1)}else{out.push(localISO(d));d=addDays(d,7)}}return out}
 function overlaps(aStart,aEnd,bStart,bEnd){return aStart<bEnd&&aEnd>bStart}
 async function saveBooking(e){
  e.preventDefault();const id=document.getElementById('bookingId').value;const selectedResource=document.getElementById('resourceId').value;const customSpaceName=document.getElementById('customSpaceName').value.trim();const resourceId=selectedResource==='__custom__'?makeCustomResourceId(customSpaceName):selectedResource;const startDate=document.getElementById('startDate').value,endDate=document.getElementById('endDate').value,startTime=document.getElementById('startTime').value,endTime=document.getElementById('endTime').value,repeat=document.getElementById('repeat').value;
- const alert=document.getElementById('bookingAlert');if(selectedResource==='__custom__'&&!customSpaceName){alert.textContent='Informe o nome do espaço que será utilizado.';alert.classList.remove('hidden');return}if(endDate<startDate||endTime<=startTime){alert.textContent='Verifique as datas e os horários informados.';alert.classList.remove('hidden');return}
+ const alert=document.getElementById('bookingAlert');const purpose=selectedPurpose();if(selectedResource==='__custom__'&&!customSpaceName){alert.textContent='Informe o nome do espaço que será utilizado.';alert.classList.remove('hidden');return}if(document.getElementById('purpose').value==='__custom_purpose__'&&!purpose){alert.textContent='Informe a turma, curso ou evento.';alert.classList.remove('hidden');return}if(endDate<startDate||endTime<=startTime){alert.textContent='Verifique as datas e os horários informados.';alert.classList.remove('hidden');return}
  const dates=datesBetween(startDate,endDate,repeat);const conflicts=dates.filter(date=>state.bookings.some(b=>b.id!==id&&b.resourceId===resourceId&&b.date===date&&b.status!=='cancelled'&&overlaps(startTime,endTime,b.startTime,b.endTime)));
  if(conflicts.length){alert.textContent=`Conflito encontrado em ${conflicts.slice(0,3).map(x=>formatDate(parseLocal(x),{day:'2-digit',month:'2-digit'})).join(', ')}. O espaço já possui agendamento nesse horário.`;alert.classList.remove('hidden');return}
- const base={resourceId,...(selectedResource==='__custom__'?{customSpaceName}:{}),responsible:document.getElementById('responsible').value.trim(),purpose:document.getElementById('purpose').value.trim(),startTime,endTime,status:document.getElementById('status').value,notes:document.getElementById('notes').value.trim()};
+ const base={resourceId,...(selectedResource==='__custom__'?{customSpaceName}:{}),responsible:document.getElementById('responsible').value.trim(),purpose,startTime,endTime,status:document.getElementById('status').value,notes:document.getElementById('notes').value.trim()};
  if(id){const idx=state.bookings.findIndex(b=>b.id===id);const previous=state.bookings[idx]||{};state.bookings[idx]={...previous,...base,date:startDate};if(selectedResource!=='__custom__')delete state.bookings[idx].customSpaceName}else dates.forEach(date=>state.bookings.push({id:crypto.randomUUID(),...base,date}));
  closeBookingModal();renderAdmin();await persistAndSync(id?'Atualiza agendamento':'Cria agendamento');
 }
