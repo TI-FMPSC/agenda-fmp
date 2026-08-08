@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "updatedAt": null,
+  "users": [
+    {
+      "id": "u1",
+      "name": "Administrador",
+      "username": "admin",
+      "passwordHash": "61c7dc1d815f7ed0bee8e9ab126bac8008220982e08e6676fcb2976fd1a95e2f",
+      "role": "Administrador",
+      "active": true
+    }
+  ]
+}
