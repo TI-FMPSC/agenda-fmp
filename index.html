@@ -260,6 +260,149 @@
       .schedule-list{gap:3px}.schedule-row{font-size:12px;grid-template-columns:92px 1fr;gap:8px;padding:1px 0}.schedule-row .who small{margin-top:1px}.public-foot{font-size:11px;padding-top:6px}
     }
 
+
+    /* =========================================================
+       PAINEL DE SALAS DE AULA — IDENTIDADE VERDE
+       ========================================================= */
+    .classroom-page{
+      min-height:100vh;
+      background:radial-gradient(circle at 12% 0,#185942 0,#0b3126 48%,#041b15 100%);
+      color:#fff;padding:26px 30px;display:flex;flex-direction:column;
+    }
+    .classroom-page .public-toolbar{
+      background:rgba(117,255,186,.07);
+      border-color:rgba(132,255,197,.17);
+    }
+    .classroom-page .fullscreen-btn,
+    .classroom-page .date-nav button{
+      background:rgba(108,255,184,.09);
+      border-color:rgba(142,255,204,.22);
+    }
+    .classroom-periods{display:flex;gap:8px;flex-wrap:wrap}
+    .classroom-periods button{
+      border:1px solid rgba(139,255,201,.20);
+      background:rgba(255,255,255,.06);color:#dff8eb;
+      border-radius:999px;padding:9px 12px;font-weight:900;
+    }
+    .classroom-periods button.active{
+      background:#1aa56f;border-color:#5de0aa;color:#fff;
+      box-shadow:0 0 0 4px rgba(75,226,163,.13);
+    }
+    .classroom-panel-note{
+      display:flex;align-items:center;justify-content:space-between;gap:14px;
+      padding:11px 14px;margin:0 0 16px;border-radius:15px;
+      background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.10);
+      color:#d5eee2;font-size:clamp(13px,.82vw,17px);font-weight:800;
+    }
+    .classroom-grid{
+      display:grid;grid-template-columns:repeat(4,minmax(230px,1fr));
+      gap:16px;align-items:stretch;flex:1;
+    }
+    .classroom-card{
+      position:relative;min-height:230px;padding:19px 20px;border-radius:21px;
+      border:2px solid #3e8067;
+      background:linear-gradient(155deg,#124b39,#0b3428);
+      box-shadow:0 16px 38px rgba(0,0,0,.24);
+      overflow:hidden;
+    }
+    .classroom-card:before{
+      content:"";position:absolute;inset:0 auto 0 0;width:8px;background:#54d59e;
+    }
+    .classroom-card.unassigned{
+      border-color:#d6a447;background:linear-gradient(155deg,#4a3b18,#30260f);
+    }
+    .classroom-card.unassigned:before{background:#f0b84e}
+    .classroom-card.exception{
+      box-shadow:0 18px 44px rgba(0,155,97,.30),inset 0 0 0 1px rgba(95,237,173,.16);
+    }
+    .classroom-room{
+      display:flex;align-items:flex-start;justify-content:space-between;gap:12px;
+      padding-bottom:13px;border-bottom:1px solid rgba(255,255,255,.15)
+    }
+    .classroom-room h2{
+      margin:0;font-size:clamp(27px,1.8vw,38px);line-height:1;font-weight:950;
+      letter-spacing:-.025em;
+    }
+    .classroom-room .room-tag{
+      white-space:nowrap;border-radius:999px;padding:7px 10px;
+      background:#168b60;color:#fff;font-size:12px;font-weight:950;letter-spacing:.04em
+    }
+    .classroom-card.unassigned .room-tag{background:#9c6d13}
+    .classroom-professor{
+      margin-top:17px;font-size:clamp(22px,1.45vw,31px);font-weight:950;line-height:1.08
+    }
+    .classroom-course{
+      margin-top:8px;color:#c7ead9;font-size:clamp(15px,.95vw,20px);font-weight:850
+    }
+    .classroom-time{
+      margin-top:16px;display:inline-flex;align-items:center;gap:7px;
+      border-radius:10px;padding:8px 10px;background:rgba(103,236,171,.12);
+      color:#9ff0c7;font-weight:950;font-size:clamp(14px,.84vw,18px)
+    }
+    .classroom-empty{
+      grid-column:1/-1;display:grid;place-items:center;text-align:center;
+      min-height:300px;border:2px dashed rgba(167,234,199,.24);
+      border-radius:22px;color:#d4e9de;padding:30px
+    }
+    .classroom-empty strong{display:block;font-size:30px;margin-bottom:8px}
+    .room-admin-header{
+      display:flex;align-items:flex-start;justify-content:space-between;gap:16px;
+      flex-wrap:wrap;margin-bottom:18px
+    }
+    .room-assignment-grid{
+      display:grid;grid-template-columns:repeat(3,minmax(230px,1fr));gap:14px
+    }
+    .room-assignment-card{
+      border:1px solid #cfe7dc;background:#fbfefd;border-radius:15px;padding:15px
+    }
+    .room-assignment-card strong{display:block;font-size:15px;margin-bottom:4px}
+    .room-assignment-card small{display:block;color:var(--muted);margin-bottom:10px}
+    .room-assignment-card input{
+      width:100%;border:1px solid #bad8cb;border-radius:11px;padding:11px 12px;
+      outline:0;background:#fff
+    }
+    .room-assignment-card input:focus{
+      border-color:#31a774;box-shadow:0 0 0 4px rgba(36,161,108,.11)
+    }
+    .room-summary{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px
+    }
+    .room-summary .summary{border-color:#d5e9df}
+    .booking-area-hint{
+      margin-top:-7px;margin-bottom:10px;font-size:12px;color:var(--muted);font-weight:700
+    }
+
+    @media (min-width:2200px){
+      .classroom-page{padding:42px 56px}
+      .classroom-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+      .classroom-card{min-height:310px;padding:27px 29px;border-radius:28px}
+      .classroom-room h2{font-size:48px}
+      .classroom-professor{font-size:38px}
+      .classroom-course{font-size:24px}
+      .classroom-time{font-size:21px;padding:11px 14px}
+    }
+    @media (max-width:1499px){
+      .classroom-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+      .room-assignment-grid{grid-template-columns:repeat(2,minmax(230px,1fr))}
+    }
+    @media (max-width:1000px){
+      .classroom-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .classroom-page{padding:16px}
+      .room-summary{grid-template-columns:1fr 1fr}
+    }
+    @media (max-width:700px){
+      .classroom-page{padding:12px}
+      .classroom-grid{grid-template-columns:1fr;gap:12px}
+      .classroom-card{min-height:190px;padding:16px 17px}
+      .classroom-room h2{font-size:28px}
+      .classroom-professor{font-size:24px}
+      .classroom-course{font-size:16px}
+      .classroom-periods{width:100%;overflow-x:auto;flex-wrap:nowrap;padding-bottom:3px}
+      .classroom-periods button{white-space:nowrap;min-height:42px}
+      .classroom-panel-note{align-items:flex-start;flex-direction:column}
+      .room-assignment-grid,.room-summary{grid-template-columns:1fr}
+    }
+
     /* Respeita usuários que preferem menos animação. */
     @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
@@ -276,7 +419,8 @@
         <div id="bookingAlert" class="alert alert-error hidden"></div>
         <input type="hidden" id="bookingId" />
         <div class="form-grid">
-          <div class="field"><label>Espaço *</label><select id="resourceId" required onchange="toggleCustomSpace()"></select></div>
+          <div class="field"><label>Tipo de uso *</label><select id="bookingArea" required onchange="toggleBookingArea()"><option value="lab">Laboratório / Auditório</option><option value="classroom">Sala de aula / outro espaço</option></select><div class="booking-area-hint" id="bookingAreaHint">Reserva de laboratório, auditório ou outro espaço institucional.</div></div>
+          <div class="field"><label id="resourceLabel">Espaço *</label><select id="resourceId" required onchange="toggleCustomSpace()"></select></div>
           <div class="field hidden" id="customSpaceField"><label>Informe o espaço *</label><input id="customSpaceName" placeholder="Ex.: Sala 12, Biblioteca, Hall, Sala de Reuniões..." /></div>
           <div class="field"><label>Responsável / professor *</label><input id="responsible" required placeholder="Ex.: Prof. Leandro Pickler" /></div>
           <div class="field"><label>Turma / curso / evento</label><select id="purpose" onchange="toggleCustomPurpose()">
@@ -317,7 +461,7 @@
             <option value="__custom_purpose__">Outra turma / curso / evento — digitar</option>
           </select></div>
           <div class="field hidden" id="customPurposeField"><label>Informe a turma / curso / evento</label><input id="customPurpose" placeholder="Ex.: Pós-graduação, reunião, capacitação..." /></div>
-          <div class="field"><label>Tipo de horário</label><select id="periodType" onchange="applyPeriodPreset()"><option value="morning">Manhã — 08:00 às 11:10</option><option value="afternoon">Tarde — 13:00 às 17:00</option><option value="evening">Noite — 19:00 às 22:00</option><option value="morning1">Manhã 1 — 08:00 às 09:30</option><option value="morning2">Manhã 2 — 09:40 às 11:10</option><option value="afternoon1">Tarde 1 — 13:00 às 15:00</option><option value="afternoon2">Tarde 2 — 15:00 às 17:00</option><option value="evening1">Noite 1 — 19:00 às 20:30</option><option value="evening2">Noite 2 — 20:30 às 22:00</option><option value="custom">Meio período / horário personalizado</option></select></div>
+          <div class="field"><label>Tipo de horário</label><select id="periodType" onchange="applyPeriodPreset()"><option value="morning">Manhã — 08:00 às 11:10</option><option value="afternoon">Tarde — 13:00 às 17:00</option><option value="evening">Noite — 19:00 às 22:00</option><option value="morning1">Manhã 1 — 08:00 às 09:30</option><option value="morning2">Manhã 2 — 09:40 às 11:10</option><option value="afternoon1">Tarde 1 — 13:00 às 15:00</option><option value="afternoon2">Tarde 2 — 15:00 às 17:00</option><option value="evening1">Noite 1 — 19:00 às 20:30</option><option value="evening2">Noite 2 — 20:30 às 22:00</option><option value="classnight1">Aula Noturno 1 — 18:50 às 20:20</option><option value="classnight2">Aula Noturno 2 — 20:30 às 22:00</option><option value="custom">Meio período / horário personalizado</option></select></div>
           <div class="field"><label>Data inicial *</label><input type="date" id="startDate" required /></div>
           <div class="field"><label>Data final *</label><input type="date" id="endDate" required /></div>
           <div class="field"><label>Horário inicial *</label><input type="time" id="startTime" required value="08:00" /></div>
@@ -338,6 +482,143 @@
 const DB_KEY='fmp_agenda_v3';
 const SESSION_KEY='fmp_agenda_session';
 const GH_TOKEN_KEY='fmp_agenda_github_token';
+
+const SEMESTER_2026_2={label:'2026/2',start:'',end:''};
+const CLASSROOM_PERIODS=[
+  {id:'m1',label:'08:00–09:30',start:'08:00',end:'09:30'},
+  {id:'m2',label:'09:40–11:10',start:'09:40',end:'11:10'},
+  {id:'n1',label:'18:50–20:20',start:'18:50',end:'20:20'},
+  {id:'n2',label:'20:30–22:00',start:'20:30',end:'22:00'}
+];
+const CLASS_TEACHER_GRIDS=[
+  {course:'ADS',periods:[['08:00','09:30'],['09:40','11:10']],phases:[
+    {phase:1,teachers:[
+      ['Daniela Amorim','Processo Seletivo','Rafael Novo da Rosa','Leandro Pickler','Erves Ducati'],
+      ['Daniela Amorim','Clodomir Coradini','Rafael Novo da Rosa','Leandro Pickler','Erves Ducati']
+    ]},
+    {phase:2,teachers:[
+      ['Rafael Novo da Rosa','Daniela Amorim','Clodomir Coradini','Sérgio M. Schutz','Sérgio M. Schutz'],
+      ['Rafael Novo da Rosa','Daniela Amorim','Clodomir Coradini','Sérgio M. Schutz','Sérgio M. Schutz']
+    ]},
+    {phase:3,teachers:[
+      ['Sérgio M. Schutz','Clodomir Coradini','Gregori M. Czizeweski','Rafael Novo da Rosa','Leandro Pickler'],
+      ['Sérgio M. Schutz','Processo Seletivo','Gregori M. Czizeweski','Rafael Novo da Rosa','Leandro Pickler']
+    ]},
+    {phase:4,teachers:[
+      ['Schirlei S. Ramos','Rafael Novo da Rosa','Leandro Pickler','Clodomir Coradini','Daniela Amorim'],
+      ['Schirlei S. Ramos','Rafael Novo da Rosa','Leandro Pickler','Anderson da Silveira','Daniela Amorim']
+    ]},
+    {phase:5,teachers:[
+      ['Leandro Pickler','Jaime B. do Monte','Sérgio M. Schutz','Daniela Amorim','Rafael Novo da Rosa'],
+      ['Clodomir Coradini','Jaime B. do Monte','Sérgio M. Schutz','Daniela Amorim','Rafael Novo da Rosa']
+    ]}
+  ]},
+  {course:'TPG',periods:[['08:00','09:30'],['09:40','11:10']],phases:[
+    {phase:1,teachers:[
+      ['Fabiana Witt','Mariane R. Estefano','Alexandre L. da Silva','Jaime B. do Monte','Processo Seletivo'],
+      ['Fabiana Witt','Mariane R. Estefano','Alexandre L. da Silva','Jaime B. do Monte','Processo Seletivo']
+    ]},
+    {phase:2,teachers:[
+      ['Luzinete C. Niedzieluk','Maurício A. de Lima','Jaime B. do Monte','Marcelo R. da Silva','Tatiani Schmitt'],
+      ['Luzinete C. Niedzieluk','Maurício A. de Lima','Jaime B. do Monte','Marcelo R. da Silva','Tatiani Schmitt']
+    ]},
+    {phase:3,teachers:[
+      ['Fabiana E. Boff','Antonio J. Bicca','Fabiana Witt','Tatiani Schmitt','Ana Bárbara S. M. S. Dias'],
+      ['Fabiana E. Boff','Antonio J. Bicca','Fabiana Witt','Tatiani Schmitt','Ana Bárbara S. M. S. Dias']
+    ]},
+    {phase:4,teachers:[
+      ['Carlos A. A. Junior','Erves Ducati','Processo Seletivo','Fernando M. da Silva','Mariane R. Estefano'],
+      ['Carlos A. A. Junior','Erves Ducati','Processo Seletivo','Fernando M. da Silva','Mariane R. Estefano']
+    ]}
+  ]},
+  {course:'Administração',periods:[['18:50','20:20'],['20:30','22:00']],phases:[
+    {phase:1,teachers:[
+      ['Jaime B. do Monte','Fabiana E. Boff','Schirlei S. Ramos','Inara A. V. Willerding','Inara A. V. Willerding'],
+      ['Jaime B. do Monte','Gregori M. Czizeweski','Schirlei S. Ramos','Inara A. V. Willerding','Inara A. V. Willerding']
+    ]},
+    {phase:2,teachers:[
+      ['Fabiana E. Boff','Luzinete C. Niedzieluk','Leonardo C. Chaves','Maurício A. de Lima','Juliane P. Q. Odinino'],
+      ['Fabiana E. Boff','Luzinete C. Niedzieluk','Leonardo C. Chaves','Maurício A. de Lima','Juliane P. Q. Odinino']
+    ]},
+    {phase:3,teachers:[
+      ['Mauricio A. de Lima','Inara A. V. Willerding','Tatiani Schmitt','Leonardo C. Chaves','Processo Seletivo'],
+      ['Mauricio A. de Lima','Inara A. V. Willerding','Tatiani Schmitt','Leonardo C. Chaves','Processo Seletivo']
+    ]},
+    {phase:4,teachers:[
+      ['Antônio J. Bicca','Tatiani Schmitt','Fernando M. da Silva','Fabiana E. Boff','Maurício A. de Lima'],
+      ['Antônio J. Bicca','Tatiani Schmitt','Fernando M. da Silva','Fabiana E. Boff','Maurício A. de Lima']
+    ]},
+    {phase:5,teachers:[
+      ['Marcelo Silveira','Mauricio A. de Lima','Carlos A. A. Junior','Antônio J. Bicca','Schirlei S. Ramos'],
+      ['Marcelo Silveira','Mauricio A. de Lima','Carlos A. A. Junior','Antônio J. Bicca','Schirlei S. Ramos']
+    ]},
+    {phase:6,teachers:[
+      ['Processo Seletivo','Marcelo Silveira','Fernanda M. Sanchez','Mariane R. Estefano','Fabiana E. Boff'],
+      ['Processo Seletivo','Marcelo Silveira','Fernanda M. Sanchez','Mariane R. Estefano','Fabiana E. Boff']
+    ]},
+    {phase:7,teachers:[
+      ['Marcelo R. da Silva','Kleber M. da Costa','Marcelo Silveira','Processo Seletivo','Leonardo C. Chaves'],
+      ['Marcelo R. da Silva','Schirlei S. Ramos','Marcelo Silveira','Processo Seletivo','Leonardo C. Chaves']
+    ]},
+    {phase:8,teachers:[
+      ['Mariane R. Estefano','Antônio J. Bicca','Mauricio A. de Lima','Ana Bárbara S. M. S. Dias','Tatiani Schmitt'],
+      ['Mariane R. Estefano','Antônio J. Bicca','Mauricio A. de Lima','Ana Bárbara S. M. S. Dias','Tatiani Schmitt']
+    ]}
+  ]},
+  {course:'Pedagogia',periods:[['18:50','20:20'],['20:30','22:00']],phases:[
+    {phase:1,teachers:[
+      ['Anderson da Silveira','Anderson da Silveira','Marcus B. O. Silveira','Juliane P. Q. Odinino','Fernando M. da Silva'],
+      ['Rodolfo M. Lorandi','Anderson da Silveira','Marcus B. O. Silveira','Juliane P. Q. Odinino','Fernando M. da Silva']
+    ]},
+    {phase:2,teachers:[
+      ['Ana Lucia Machado','Grazielle F. da Silva','Jaime B. do Monte','Fernando M. da Silva','Gregori M. Czizeweski'],
+      ['Ana Lucia Machado','Grazielle F. da Silva','Jaime B. do Monte','Fernando M. da Silva','Gregori M. Czizeweski']
+    ]},
+    {phase:3,teachers:[
+      ['Andreia de B. Machado','Fernando M. da Silva','Juliane P. Q. Odinino','Kleber M. da Costa','Anderson da Silveira'],
+      ['Andreia de B. Machado','Fernando M. da Silva','Juliane P. Q. Odinino','Kleber M. da Costa','Anderson da Silveira']
+    ]},
+    {phase:4,teachers:[
+      ['Elaine M. S. dos Santos','Carolina C. Seidel','Gabriele B. Silva','Luzinete C. Niedzieluk','Carolina C. Seidel'],
+      ['Elaine M. S. dos Santos','Elaine M. S. dos Santos','Gabriele B. Silva','Luzinete C. Niedzieluk','Carolina C. Seidel']
+    ]},
+    {phase:5,teachers:[
+      ['Marcus B. O. Silveira','Larissa O. Gonçalves','Juliana C. Müller','Grazielle F. da Silva','Ana Lucia Machado'],
+      ['Marcus B. O. Silveira','Larissa O. Gonçalves','Elaine M. S. dos Santos / Ana Lucia Machado','Grazielle F. da Silva','Ana Lucia Machado']
+    ]},
+    {phase:6,teachers:[
+      ['Larissa O. Gonçalves','Marcus B. O. Silveira','Ivanir Maciel / Ana Lucia Machado','Andreia de B. Machado','Deisi Cord'],
+      ['Anderson da Silveira','Marcus B. O. Silveira','Ivanir Maciel','Andreia de B. Machado','Deisi Cord']
+    ]},
+    {phase:7,teachers:[
+      ['Gregori M. Czizeweski','Andreia de B. Machado','Luzinete C. Niedzielnk','Deisi Cord / Carolina C. Siedel','Marcus B. O. Silveira'],
+      ['Gregori M. Czizeweski','Andreia de B. Machado','Luzinete C. Niedzielnk','Deisi Cord / Carolina C. Siedel','Marcus B. O. Silveira']
+    ]},
+    {phase:8,teachers:[
+      ['Juliane P. Q. Odinino','Rodolfo M. Lorandi','Larissa O. Gonçalves','Marcus B. O. Silveira','Kleber M. da Costa'],
+      ['Larissa O. Gonçalves','Rodolfo M. Lorandi','Larissa O. Gonçalves','Marcus B. O. Silveira','Kleber M. da Costa']
+    ]}
+  ]}
+];
+function classPurpose(course,phase){return `${course} — ${phase}ª Fase`}
+function buildDefaultClassSchedule(){
+  const out=[];
+  CLASS_TEACHER_GRIDS.forEach(group=>group.phases.forEach(ph=>{
+    group.periods.forEach((period,slotIndex)=>{
+      (ph.teachers[slotIndex]||[]).forEach((professor,dayIndex)=>{
+        out.push({id:`${normalizeSpaceName(group.course)}-${ph.phase}-${dayIndex+1}-${slotIndex+1}`,semester:SEMESTER_2026_2.label,course:group.course,phase:ph.phase,purpose:classPurpose(group.course,ph.phase),weekday:dayIndex+1,startTime:period[0],endTime:period[1],professor});
+      });
+    });
+  }));
+  return out;
+}
+function allClassPurposes(){
+  return CLASS_TEACHER_GRIDS.flatMap(g=>g.phases.map(p=>classPurpose(g.course,p.phase)));
+}
+function defaultRoomAssignments(){
+  return Object.fromEntries(allClassPurposes().map(p=>[p,'']));
+}
+
 const defaultResources=[
   {id:'lab1',name:'Laboratório 01',type:'Sala 34 · 34 computadores',active:true},
   {id:'lab2',name:'Laboratório 02',type:'Sala 35 · 14 computadores',active:true},
@@ -348,11 +629,11 @@ const defaultResources=[
 ];
 function localISO(d){const z=new Date(d.getTime()-d.getTimezoneOffset()*60000);return z.toISOString().slice(0,10)}
 function addDays(date,n){const d=new Date(date);d.setDate(d.getDate()+n);return d}
-function defaultState(){return {settings:{appName:'Agenda de Espaços FMP',panelTitle:'Painel de Laboratórios e Espaços',logo:'',publicRefreshSeconds:60,github:{owner:'TI-FMPSC',repo:'agenda-fmp',branch:'main',path:'dados/agendamentos.json'}},resources:structuredClone(defaultResources),users:[{id:'u1',name:'Administrador',username:'admin',password:'admin123',role:'Administrador'}],bookings:[],meta:{updatedAt:null}}}
+function defaultState(){return {settings:{appName:'Agenda de Espaços FMP',panelTitle:'Painel de Laboratórios e Espaços',classroomPanelTitle:'Painel de Salas de Aula',logo:'',publicRefreshSeconds:60,github:{owner:'TI-FMPSC',repo:'agenda-fmp',branch:'main',path:'dados/agendamentos.json'}},resources:structuredClone(defaultResources),users:[{id:'u1',name:'Administrador',username:'admin',password:'admin123',role:'Administrador'}],bookings:[],classSchedule:buildDefaultClassSchedule(),roomAssignments:defaultRoomAssignments(),meta:{updatedAt:null}}}
 function normalizeSpaceName(name=''){return String(name).trim().normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'').slice(0,70)||'espaco'}
 function makeCustomResourceId(name){return 'custom:'+normalizeSpaceName(name)}
 function migrateStateData(data){const d=data||{};const oldVolante=(Array.isArray(d.resources)?d.resources:[]).find(r=>r.id==='volante');d.resources=(Array.isArray(d.resources)?d.resources:structuredClone(defaultResources)).filter(r=>r.id!=='volante');d.bookings=(Array.isArray(d.bookings)?d.bookings:[]).map(b=>{if(b.resourceId==='volante'){const name=(b.customSpaceName||oldVolante?.name||'Sala Volante').trim();return {...b,resourceId:makeCustomResourceId(name),customSpaceName:name}}return b});return d}
-function loadState(){try{const saved=migrateStateData(JSON.parse(localStorage.getItem(DB_KEY)));return saved?{...defaultState(),...saved,settings:{...defaultState().settings,...(saved.settings||{}),github:{...defaultState().settings.github,...(saved.settings?.github||{})}},resources:Array.isArray(saved.resources)&&saved.resources.length?saved.resources.filter(r=>r.id!=='volante'):structuredClone(defaultResources),bookings:Array.isArray(saved.bookings)?saved.bookings:[],users:Array.isArray(saved.users)&&saved.users.length?saved.users:defaultState().users}:defaultState()}catch{return defaultState()}}
+function loadState(){try{const saved=migrateStateData(JSON.parse(localStorage.getItem(DB_KEY)));return saved?{...defaultState(),...saved,settings:{...defaultState().settings,...(saved.settings||{}),github:{...defaultState().settings.github,...(saved.settings?.github||{})}},resources:Array.isArray(saved.resources)&&saved.resources.length?saved.resources.filter(r=>r.id!=='volante'):structuredClone(defaultResources),bookings:Array.isArray(saved.bookings)?saved.bookings:[],classSchedule:Array.isArray(saved.classSchedule)&&saved.classSchedule.length?saved.classSchedule:buildDefaultClassSchedule(),roomAssignments:{...defaultRoomAssignments(),...(saved.roomAssignments||{})},users:Array.isArray(saved.users)&&saved.users.length?saved.users:defaultState().users}:defaultState()}catch{return defaultState()}}
 function saveState(){localStorage.setItem(DB_KEY,JSON.stringify(state));}
 function githubToken(){return localStorage.getItem(GH_TOKEN_KEY)||''}
 let state=loadState(); let currentView='week'; let referenceDate=new Date(); let adminSection='agenda';
@@ -362,31 +643,35 @@ function escapeHtml(v=''){return String(v).replace(/[&<>'"]/g,c=>({'&':'&amp;','
 function formatDate(d,opts={}){return new Intl.DateTimeFormat('pt-BR',opts).format(d)}
 function parseLocal(s){return new Date(s+'T12:00:00')}
 function isLogged(){return sessionStorage.getItem(SESSION_KEY)==='1'}
+
 function route(){
   const hash=location.hash||'#login';
-  if(hash==='#painel') renderPublic();
+  if(hash==='#painel'||hash==='#painel-labs') renderPublic();
+  else if(hash==='#painel-salas') renderClassroomPublic();
   else if(hash==='#admin'&&isLogged()) renderAdmin();
   else renderLogin();
 }
 window.addEventListener('hashchange',route);
 function logoMarkup(){return `<div class="logo">${state.settings.logo?`<img src="${state.settings.logo}" alt="Logo">`:'FMP'}</div>`}
+
 function renderLogin(){
  document.getElementById('app').innerHTML=`<section class="login-page">
-  <div class="login-brand"><div class="brand-head">${logoMarkup()}<div><strong>${escapeHtml(state.settings.appName)}</strong><div style="opacity:.75;font-size:13px">Gestão de laboratórios e ambientes institucionais</div></div></div>
-  <div><h1 class="brand-title">Agenda centralizada, visível e sem conflitos.</h1><p class="brand-sub">Organize os cinco laboratórios, o auditório e outros espaços informados conforme a necessidade. Exiba a ocupação em um painel público, enquanto a equipe autorizada administra todo o calendário.</p></div>
-  <div class="brand-cards"><div class="brand-card"><strong>6 espaços fixos</strong><span>+ outros espaços cadastrados sob demanda</span></div><div class="brand-card"><strong>3 turnos</strong><span>Com opção de horários personalizados</span></div><div class="brand-card"><strong>Painel público</strong><span>Acesso sem login para consulta</span></div></div></div>
-  <div class="login-box-wrap"><div class="login-box">${logoMarkup()}<h2>Acesso administrativo</h2><p>Entre para cadastrar, editar e acompanhar os agendamentos.</p>
-  <form onsubmit="login(event)"><div class="field"><label>Usuário</label><input id="loginUser" value="admin" required></div><div class="field"><label>Senha</label><input id="loginPass" type="password" value="admin123" required></div><div class="login-actions"><button class="btn btn-primary" type="submit">Entrar no sistema</button><button class="btn btn-secondary" type="button" onclick="location.hash='#painel'">Abrir painel público</button></div></form>
-  <div class="demo-info"><strong>Acesso da prévia:</strong> usuário <b>admin</b> e senha <b>admin123</b>. A senha é para testes. Para publicar alterações no JSON, configure o token do GitHub na área administrativa.</div></div></div></section>`;
+  <div class="login-brand"><div class="brand-head">${logoMarkup()}<div><strong>${escapeHtml(state.settings.appName)}</strong><div style="opacity:.75;font-size:13px">Gestão de laboratórios, salas e ambientes institucionais</div></div></div>
+  <div><h1 class="brand-title">Agenda centralizada, visível e sem conflitos.</h1><p class="brand-sub">Organize laboratórios e auditório, consulte a ocupação e publique também um painel de salas de aula baseado na grade semestral.</p></div>
+  <div class="brand-cards"><div class="brand-card"><strong>Painel de laboratórios</strong><span>Reservas e ocupação dos espaços</span></div><div class="brand-card"><strong>Painel de salas</strong><span>Professor, turma, horário e sala</span></div><div class="brand-card"><strong>Acesso público</strong><span>Consulta sem necessidade de login</span></div></div></div>
+  <div class="login-box-wrap"><div class="login-box">${logoMarkup()}<h2>Acesso administrativo</h2><p>Entre para cadastrar, editar e acompanhar os agendamentos e as salas das turmas.</p>
+  <form onsubmit="login(event)"><div class="field"><label>Usuário</label><input id="loginUser" value="admin" required></div><div class="field"><label>Senha</label><input id="loginPass" type="password" value="admin123" required></div><div class="login-actions"><button class="btn btn-primary" type="submit">Entrar no sistema</button><button class="btn btn-secondary" type="button" onclick="location.hash='#painel-labs'">Abrir painel dos laboratórios</button><button class="btn btn-success" type="button" onclick="location.hash='#painel-salas'">Abrir painel das salas de aula</button></div></form>
+  <div class="demo-info"><strong>Acesso administrativo:</strong> usuário <b>admin</b> e senha <b>admin123</b>. Os dois painéis públicos podem ser consultados sem login.</div></div></div></section>`;
 }
 function login(e){e.preventDefault();const u=document.getElementById('loginUser').value.trim(),p=document.getElementById('loginPass').value;const ok=state.users.some(x=>x.username===u&&x.password===p);if(!ok){toast('Usuário ou senha inválidos.');return}sessionStorage.setItem(SESSION_KEY,'1');location.hash='#admin'}
 function logout(){sessionStorage.removeItem(SESSION_KEY);location.hash='#login'}
+
 function renderAdmin(){
- const title=adminSection==='agenda'?'Agenda de espaços':adminSection==='settings'?'Configurações':'Agendamentos cadastrados';
+ const title=adminSection==='agenda'?'Agenda de espaços':adminSection==='settings'?'Configurações':adminSection==='rooms'?'Grade de salas — 2026/2':'Agendamentos cadastrados';
  document.getElementById('app').innerHTML=`<div class="shell"><aside class="sidebar"><div class="side-brand">${logoMarkup()}<div><strong>${escapeHtml(state.settings.appName)}</strong><small>Administração</small></div></div>
- <nav class="nav"><button class="${adminSection==='agenda'?'active':''}" onclick="setSection('agenda')">▦ <span>Agenda</span></button><button class="${adminSection==='list'?'active':''}" onclick="setSection('list')">☷ <span>Agendamentos</span></button><button class="${adminSection==='settings'?'active':''}" onclick="setSection('settings')">⚙ <span>Configurações</span></button></nav><div class="nav-spacer"></div><div class="side-foot"><button class="btn btn-ghost" onclick="location.hash='#painel'">◉ <span>Painel público</span></button><button class="btn btn-ghost" onclick="logout()">↪ <span>Sair</span></button></div></aside>
- <main class="main"><header class="topbar"><div><h1>${title}</h1><small>${formatDate(new Date(),{weekday:'long',day:'2-digit',month:'long',year:'numeric'})}</small></div><div class="top-actions"><span id="adminSyncBadge" class="sync-badge">GitHub</span><button class="btn btn-secondary" onclick="syncFromGithub()">↻ Sincronizar</button><button class="btn btn-secondary" onclick="location.hash='#painel'">Painel público</button><button class="btn btn-primary" onclick="openBookingModal()">＋ Novo agendamento</button></div></header><div class="content" id="adminContent"></div></main></div>`;
- if(adminSection==='agenda') renderAgenda(); else if(adminSection==='settings') renderSettings(); else renderBookingList(); updateAdminSyncBadge();
+ <nav class="nav"><button class="${adminSection==='agenda'?'active':''}" onclick="setSection('agenda')">▦ <span>Agenda</span></button><button class="${adminSection==='list'?'active':''}" onclick="setSection('list')">☷ <span>Agendamentos</span></button><button class="${adminSection==='rooms'?'active':''}" onclick="setSection('rooms')">⌂ <span>Grade de salas</span></button><button class="${adminSection==='settings'?'active':''}" onclick="setSection('settings')">⚙ <span>Configurações</span></button></nav><div class="nav-spacer"></div><div class="side-foot"><button class="btn btn-ghost" onclick="location.hash='#painel-labs'">◉ <span>Painel laboratórios</span></button><button class="btn btn-ghost" onclick="location.hash='#painel-salas'">⌂ <span>Painel salas de aula</span></button><button class="btn btn-ghost" onclick="logout()">↪ <span>Sair</span></button></div></aside>
+ <main class="main"><header class="topbar"><div><h1>${title}</h1><small>${formatDate(new Date(),{weekday:'long',day:'2-digit',month:'long',year:'numeric'})}</small></div><div class="top-actions"><span id="adminSyncBadge" class="sync-badge">GitHub</span><button class="btn btn-secondary" onclick="syncFromGithub()">↻ Sincronizar</button><button class="btn btn-secondary" onclick="location.hash='#painel-labs'">Painel laboratórios</button><button class="btn btn-success" onclick="location.hash='#painel-salas'">Painel salas</button><button class="btn btn-primary" onclick="openBookingModal()">＋ Novo agendamento</button></div></header><div class="content" id="adminContent"></div></main></div>`;
+ if(adminSection==='agenda') renderAgenda(); else if(adminSection==='settings') renderSettings(); else if(adminSection==='rooms') renderRoomAssignments(); else renderBookingList(); updateAdminSyncBadge();
 }
 function setSection(s){adminSection=s;renderAdmin()}
 function getWeekStart(d){const x=new Date(d);const day=(x.getDay()+6)%7;x.setDate(x.getDate()-day);x.setHours(12,0,0,0);return x}
@@ -394,8 +679,10 @@ function periodLabel(b){return `${b.startTime}–${b.endTime}`}
 function getBookings(date,resourceId){const iso=localISO(date);return state.bookings.filter(b=>b.date===iso&&(!resourceId||b.resourceId===resourceId)).sort((a,b)=>a.startTime.localeCompare(b.startTime))}
 function bookingResourceName(b){if(!b)return 'Espaço';if(String(b.resourceId||'').startsWith('custom:'))return b.customSpaceName||'Outro espaço';return state.resources.find(x=>x.id===b.resourceId)?.name||b.customSpaceName||'Espaço'}
 function bookingResourceType(b){if(String(b?.resourceId||'').startsWith('custom:'))return 'Espaço informado manualmente';return state.resources.find(x=>x.id===b?.resourceId)?.type||'Espaço institucional'}
-function customResourcesForDates(dates){const set=new Map();const wanted=new Set(dates.map(localISO));state.bookings.filter(b=>wanted.has(b.date)&&String(b.resourceId||'').startsWith('custom:')).forEach(b=>set.set(b.resourceId,{id:b.resourceId,name:b.customSpaceName||'Outro espaço',type:'Espaço informado manualmente',active:true,custom:true}));return [...set.values()].sort((a,b)=>a.name.localeCompare(b.name,'pt-BR'))}
-function resourcesForPublicDate(date){return [...state.resources.filter(r=>r.active),...customResourcesForDates([date])]}
+
+function bookingCategory(b){return b?.spaceCategory==='classroom'?'classroom':'lab'}
+function customResourcesForDates(dates,category=null){const set=new Map();const wanted=new Set(dates.map(localISO));state.bookings.filter(b=>wanted.has(b.date)&&String(b.resourceId||'').startsWith('custom:')&&(!category||bookingCategory(b)===category)).forEach(b=>set.set(b.resourceId,{id:b.resourceId,name:b.customSpaceName||'Outro espaço',type:bookingCategory(b)==='classroom'?'Sala de aula / espaço informado':'Espaço informado manualmente',active:true,custom:true,category:bookingCategory(b)}));return [...set.values()].sort((a,b)=>a.name.localeCompare(b.name,'pt-BR'))}
+function resourcesForPublicDate(date){return [...state.resources.filter(r=>r.active),...customResourcesForDates([date],'lab')]}
 function resourcesForWeek(days){return [...state.resources.filter(r=>r.active),...customResourcesForDates(days)]}
 function currentStatus(b,date=new Date()){const today=localISO(date);const hm=date.toTimeString().slice(0,5);return b.date===today&&b.startTime<=hm&&b.endTime>hm}
 function renderAgenda(){
@@ -422,13 +709,27 @@ function renderMonth(){
  for(let i=0;i<42;i++){const d=addDays(start,i),arr=getBookings(d);const other=d.getMonth()!==first.getMonth();html+=`<div class="month-day ${other?'other':''} ${localISO(d)===localISO(new Date())?'today':''}" ondblclick="openBookingModal('', '${localISO(d)}')"><div class="day-number"><span>${d.getDate()}</span>${arr.length?`<span class="count-badge">${arr.length}</span>`:''}</div>${arr.slice(0,4).map(b=>{const r=state.resources.find(x=>x.id===b.resourceId);return `<div class="month-booking" onclick="openBookingModal('${b.id}')">${b.startTime} · ${escapeHtml(bookingResourceName(b))} · ${escapeHtml(b.purpose)}</div>`}).join('')}${arr.length>4?`<small>+ ${arr.length-4} agendamento(s)</small>`:''}</div>`}
  html+='</div>';document.getElementById('calendarHost').innerHTML=html;
 }
+
+function renderRoomAssignments(){
+ const purposes=allClassPurposes();const assigned=purposes.filter(p=>(state.roomAssignments?.[p]||'').trim()).length;const unassigned=purposes.length-assigned;
+ const groups=CLASS_TEACHER_GRIDS.map(g=>`<section class="panel" style="margin-bottom:18px"><div class="room-admin-header"><div><h3>${escapeHtml(g.course)}</h3><div class="sub" style="margin:5px 0 0">Defina a sala-base de cada turma para o semestre ${SEMESTER_2026_2.label}. A alteração vale para todos os dias da grade.</div></div><span class="tag tag-green">${g.phases.length} turma${g.phases.length>1?'s':''}</span></div><div class="room-assignment-grid">${g.phases.map(ph=>{const purpose=classPurpose(g.course,ph.phase);return `<div class="room-assignment-card"><strong>${escapeHtml(purpose)}</strong><small>Professor e horário são carregados da grade semestral</small><input class="room-assignment-input" data-purpose="${escapeHtml(purpose)}" value="${escapeHtml(state.roomAssignments?.[purpose]||'')}" placeholder="Ex.: Sala 04"></div>`}).join('')}</div></section>`).join('');
+ document.getElementById('adminContent').innerHTML=`<div class="room-summary"><div class="summary"><div class="label">Turmas na grade</div><div class="value">${purposes.length}</div><div class="detail">ADS, TPG, Administração e Pedagogia</div></div><div class="summary"><div class="label">Salas definidas</div><div class="value">${assigned}</div><div class="detail">Prontas para o painel público</div></div><div class="summary"><div class="label">A definir</div><div class="value">${unassigned}</div><div class="detail">Turmas sem sala-base informada</div></div></div>
+ <div class="panel" style="margin-bottom:18px;border-color:#cce7da;background:#f9fdfb"><div class="room-admin-header" style="margin:0"><div><h3>Como funciona</h3><div class="sub" style="margin:5px 0 0">A grade 2026/2 já contém professor, curso, fase, dia e horário. Aqui você informa somente a sala. Para uma mudança pontual em uma data específica, use <b>Novo agendamento → Sala de aula</b>; essa reserva aparecerá como ajuste no painel.</div></div><button class="btn btn-success" onclick="location.hash='#painel-salas'">Abrir painel das salas</button></div></div>
+ ${groups}<div style="position:sticky;bottom:12px;display:flex;justify-content:flex-end;pointer-events:none"><button class="btn btn-success" style="pointer-events:auto;box-shadow:0 10px 28px rgba(12,119,76,.28)" onclick="saveRoomAssignments()">Salvar salas no GitHub</button></div>`;
+}
+async function saveRoomAssignments(){
+ const updated={...defaultRoomAssignments(),...(state.roomAssignments||{})};
+ document.querySelectorAll('.room-assignment-input').forEach(input=>updated[input.dataset.purpose]=input.value.trim());
+ state.roomAssignments=updated;saveState();await persistAndSync('Atualiza grade de salas 2026-2');renderRoomAssignments();
+}
+
 function renderBookingList(){
  const sorted=[...state.bookings].sort((a,b)=>(a.date+a.startTime).localeCompare(b.date+b.startTime));
- document.getElementById('adminContent').innerHTML=`<div class="panel"><div class="toolbar"><div><h3 style="margin:0">Todos os agendamentos</h3><div class="sub" style="margin:5px 0 0">Clique em um item para editar ou excluir.</div></div><button class="btn btn-secondary" onclick="exportJson()">Exportar JSON</button></div><div class="resource-list">${sorted.map(b=>{const r=state.resources.find(x=>x.id===b.resourceId);return `<div class="resource-item" onclick="openBookingModal('${b.id}')" style="cursor:pointer"><span><span class="resource-dot"></span><span><strong>${escapeHtml(bookingResourceName(b))}</strong><br><small>${formatDate(parseLocal(b.date),{day:'2-digit',month:'2-digit',year:'numeric'})} · ${periodLabel(b)} · ${escapeHtml(b.purpose)} — ${escapeHtml(b.responsible)}</small></span></span><span class="tag ${b.status==='confirmed'?'tag-green':'tag-orange'}">${b.status==='confirmed'?'Confirmado':'Pendente'}</span></div>`}).join('')||'<div class="empty-state">Nenhum agendamento cadastrado.</div>'}</div></div>`;
+ document.getElementById('adminContent').innerHTML=`<div class="panel"><div class="toolbar"><div><h3 style="margin:0">Todos os agendamentos</h3><div class="sub" style="margin:5px 0 0">Clique em um item para editar ou excluir.</div></div><button class="btn btn-secondary" onclick="exportJson()">Exportar JSON</button></div><div class="resource-list">${sorted.map(b=>{const r=state.resources.find(x=>x.id===b.resourceId);return `<div class="resource-item" onclick="openBookingModal('${b.id}')" style="cursor:pointer"><span><span class="resource-dot" style="background:${bookingCategory(b)==='classroom'?'var(--success)':'var(--primary)'}"></span><span><strong>${escapeHtml(bookingResourceName(b))}</strong><br><small>${bookingCategory(b)==='classroom'?'Sala de aula':'Laboratório / espaço'} · ${formatDate(parseLocal(b.date),{day:'2-digit',month:'2-digit',year:'numeric'})} · ${periodLabel(b)} · ${escapeHtml(b.purpose)} — ${escapeHtml(b.responsible)}</small></span></span><span class="tag ${b.status==='confirmed'?'tag-green':'tag-orange'}">${b.status==='confirmed'?'Confirmado':'Pendente'}</span></div>`}).join('')||'<div class="empty-state">Nenhum agendamento cadastrado.</div>'}</div></div>`;
 }
 function renderSettings(){
  const gh=state.settings.github||{};
- document.getElementById('adminContent').innerHTML=`<div class="settings-grid"><section class="panel"><h3>Identidade do sistema</h3><div class="sub">Altere o nome, o título do painel e a logomarca.</div><div class="field"><label>Nome do sistema</label><input id="cfgAppName" value="${escapeHtml(state.settings.appName)}"></div><div class="field"><label>Título do painel público</label><input id="cfgPanelTitle" value="${escapeHtml(state.settings.panelTitle)}"></div><div class="field"><label>Logomarca</label><input type="file" accept="image/*" onchange="loadLogo(event)"></div><div class="field"><label>Atualização do painel (segundos)</label><input id="cfgRefresh" type="number" min="30" max="600" value="${Number(state.settings.publicRefreshSeconds)||60}"></div><button class="btn btn-primary" onclick="saveSettings()">Salvar configurações</button></section>
+ document.getElementById('adminContent').innerHTML=`<div class="settings-grid"><section class="panel"><h3>Identidade do sistema</h3><div class="sub">Altere o nome, o título do painel e a logomarca.</div><div class="field"><label>Nome do sistema</label><input id="cfgAppName" value="${escapeHtml(state.settings.appName)}"></div><div class="field"><label>Título do painel dos laboratórios</label><input id="cfgPanelTitle" value="${escapeHtml(state.settings.panelTitle)}"></div><div class="field"><label>Título do painel das salas</label><input id="cfgClassroomPanelTitle" value="${escapeHtml(state.settings.classroomPanelTitle||'Painel de Salas de Aula')}"></div><div class="field"><label>Logomarca</label><input type="file" accept="image/*" onchange="loadLogo(event)"></div><div class="field"><label>Atualização do painel (segundos)</label><input id="cfgRefresh" type="number" min="30" max="600" value="${Number(state.settings.publicRefreshSeconds)||60}"></div><button class="btn btn-primary" onclick="saveSettings()">Salvar configurações</button></section>
  <section class="panel"><h3>Integração com GitHub</h3><div class="sub">O token fica somente neste navegador e nunca é gravado no JSON público.</div><div class="form-grid"><div class="field"><label>Proprietário</label><input id="ghOwner" value="${escapeHtml(gh.owner||'')}" placeholder="TI-FMPSC"></div><div class="field"><label>Repositório</label><input id="ghRepo" value="${escapeHtml(gh.repo||'')}" placeholder="agenda-fmp"></div><div class="field"><label>Branch</label><input id="ghBranch" value="${escapeHtml(gh.branch||'main')}" placeholder="main"></div><div class="field"><label>Caminho do JSON</label><input id="ghPath" value="${escapeHtml(gh.path||'dados/agendamentos.json')}"></div><div class="field full"><label>Fine-grained token</label><input id="ghToken" type="password" value="${escapeHtml(githubToken())}" placeholder="github_pat_..."></div></div><div style="display:flex;gap:9px;flex-wrap:wrap"><button class="btn btn-primary" onclick="saveGithub()">Salvar conexão</button><button class="btn btn-secondary" onclick="testGithubConnection()">Testar conexão</button><button class="btn btn-secondary" onclick="syncFromGithub()">Baixar JSON do GitHub</button></div><div class="alert alert-info" style="margin-top:14px;margin-bottom:0">Permissão necessária no token: <b>Contents = Read and write</b>, limitada ao repositório desta agenda.</div></section>
  <section class="panel"><h3>Espaços cadastrados</h3><div class="sub">Os cinco laboratórios e o auditório são fixos. Outros espaços são informados diretamente no novo agendamento.</div><div class="resource-list">${state.resources.map(r=>`<div class="resource-item"><span><span class="resource-dot"></span><span><strong>${escapeHtml(r.name)}</strong><br><small>${escapeHtml(r.type)}</small></span></span><span class="tag tag-blue">Ativo</span></div>`).join('')}</div></section>
  <section class="panel"><h3>Usuários e backup</h3><div class="sub">O login desta versão é local ao navegador. O token do GitHub é a credencial que autoriza gravação no repositório.</div><div class="user-list">${state.users.map(u=>`<div class="user-item"><span><span class="resource-dot" style="background:var(--success)"></span><span><strong>${escapeHtml(u.name)}</strong><br><small>${escapeHtml(u.username)} · ${escapeHtml(u.role)}</small></span></span><span class="tag tag-green">Ativo</span></div>`).join('')}</div><div style="display:flex;gap:9px;margin-top:16px;flex-wrap:wrap"><button class="btn btn-secondary" onclick="document.getElementById('importInput').click()">Importar JSON</button><button class="btn btn-secondary" onclick="exportJson()">Exportar JSON</button><button class="btn btn-danger" onclick="resetDemo()">Limpar dados locais</button></div></section></div>`;
@@ -436,33 +737,64 @@ function renderSettings(){
 let pendingLogo=null;
 
 function loadLogo(e){const f=e.target.files[0];if(!f)return;const reader=new FileReader();reader.onload=()=>{pendingLogo=reader.result;toast('Logo carregada. Clique em salvar configurações.')} ;reader.readAsDataURL(f)}
-function saveSettings(){state.settings.appName=document.getElementById('cfgAppName').value.trim()||'Agenda de Espaços FMP';state.settings.panelTitle=document.getElementById('cfgPanelTitle').value.trim()||'Painel de Laboratórios e Espaços';if(pendingLogo){state.settings.logo=pendingLogo;pendingLogo=null}saveState();renderAdmin();toast('Configurações salvas.')}
+function saveSettings(){state.settings.appName=document.getElementById('cfgAppName').value.trim()||'Agenda de Espaços FMP';state.settings.panelTitle=document.getElementById('cfgPanelTitle').value.trim()||'Painel de Laboratórios e Espaços';state.settings.classroomPanelTitle=document.getElementById('cfgClassroomPanelTitle').value.trim()||'Painel de Salas de Aula';if(pendingLogo){state.settings.logo=pendingLogo;pendingLogo=null}saveState();renderAdmin();toast('Configurações salvas.')}
 async function saveGithub(){state.settings.github={owner:document.getElementById('ghOwner').value.trim(),repo:document.getElementById('ghRepo').value.trim(),branch:document.getElementById('ghBranch').value.trim()||'main',path:document.getElementById('ghPath').value.trim()||'dados/agendamentos.json'};localStorage.setItem(GH_TOKEN_KEY,document.getElementById('ghToken').value.trim());saveState();toast('Conexão salva somente neste navegador.');await testGithubConnection();}
+
 function openBookingModal(id='',presetDate='',presetResource=''){
  const b=id?state.bookings.find(x=>x.id===id):null;document.getElementById('modalTitle').textContent=b?'Editar agendamento':'Novo agendamento';document.getElementById('bookingId').value=b?.id||'';
- document.getElementById('resourceId').innerHTML=state.resources.filter(r=>r.active&&r.id!=='volante').map(r=>`<option value="${r.id}">${escapeHtml(r.name)}</option>`).join('')+'<option value="__custom__">Outro espaço — digitar nome</option>';
- const selected=b?.resourceId||presetResource||state.resources.find(r=>r.active)?.id||'__custom__';const isCustom=String(selected).startsWith('custom:');document.getElementById('resourceId').value=isCustom?'__custom__':selected;document.getElementById('customSpaceName').value=isCustom?(b?.customSpaceName||(presetResource?state.bookings.find(x=>x.resourceId===presetResource)?.customSpaceName:'')||''):'';toggleCustomSpace();
+ const area=b?bookingCategory(b):'lab';document.getElementById('bookingArea').value=area;
+ const selected=b?.resourceId||presetResource||state.resources.find(r=>r.active)?.id||'__custom__';const isCustom=String(selected).startsWith('custom:');
+ populateBookingResources(isCustom?'__custom__':selected);
+ document.getElementById('customSpaceName').value=isCustom?(b?.customSpaceName||(presetResource?state.bookings.find(x=>x.resourceId===presetResource)?.customSpaceName:'')||''):'';
+ toggleCustomSpace();
  document.getElementById('responsible').value=b?.responsible||'';setPurposeField(b?.purpose||'');
  document.getElementById('startDate').value=b?.date||presetDate||localISO(new Date());document.getElementById('endDate').value=b?.date||presetDate||localISO(new Date());document.getElementById('startTime').value=b?.startTime||'08:00';document.getElementById('endTime').value=b?.endTime||'11:10';document.getElementById('repeat').value='none';document.getElementById('repeat').disabled=!!b;document.getElementById('status').value=b?.status||'confirmed';document.getElementById('notes').value=b?.notes||'';
- const preset=!b?'morning':b.startTime==='08:00'&&b.endTime==='11:10'?'morning':b.startTime==='13:00'&&b.endTime==='17:00'?'afternoon':b.startTime==='19:00'&&b.endTime==='22:00'?'evening':b.startTime==='08:00'&&b.endTime==='09:30'?'morning1':b.startTime==='09:40'&&b.endTime==='11:10'?'morning2':b.startTime==='13:00'&&b.endTime==='15:00'?'afternoon1':b.startTime==='15:00'&&b.endTime==='17:00'?'afternoon2':b.startTime==='19:00'&&b.endTime==='20:30'?'evening1':b.startTime==='20:30'&&b.endTime==='22:00'?'evening2':'custom';document.getElementById('periodType').value=b?preset:'morning';document.getElementById('bookingAlert').classList.add('hidden');
+ const preset=!b?'morning':b.startTime==='08:00'&&b.endTime==='11:10'?'morning':b.startTime==='13:00'&&b.endTime==='17:00'?'afternoon':b.startTime==='19:00'&&b.endTime==='22:00'?'evening':b.startTime==='08:00'&&b.endTime==='09:30'?'morning1':b.startTime==='09:40'&&b.endTime==='11:10'?'morning2':b.startTime==='13:00'&&b.endTime==='15:00'?'afternoon1':b.startTime==='15:00'&&b.endTime==='17:00'?'afternoon2':b.startTime==='19:00'&&b.endTime==='20:30'?'evening1':b.startTime==='20:30'&&b.endTime==='22:00'?'evening2':b.startTime==='18:50'&&b.endTime==='20:20'?'classnight1':b.startTime==='20:30'&&b.endTime==='22:00'?'evening2':'custom';document.getElementById('periodType').value=b?preset:'morning';document.getElementById('bookingAlert').classList.add('hidden');
  let foot=document.querySelector('#bookingModal .modal-foot');const old=document.getElementById('deleteBtn');if(old)old.remove();if(b){const del=document.createElement('button');del.type='button';del.id='deleteBtn';del.className='btn btn-danger';del.textContent='Excluir';del.onclick=()=>deleteBooking(b.id);foot.prepend(del)}
  document.getElementById('bookingModal').classList.remove('hidden');
 }
-function toggleCustomSpace(){const sel=document.getElementById('resourceId'),field=document.getElementById('customSpaceField'),input=document.getElementById('customSpaceName');if(!sel||!field||!input)return;const custom=sel.value==='__custom__';field.classList.toggle('hidden',!custom);input.required=custom;if(custom)setTimeout(()=>input.focus(),0)}
+function populateBookingResources(selected=''){
+ const area=document.getElementById('bookingArea')?.value||'lab';const sel=document.getElementById('resourceId');if(!sel)return;
+ if(area==='classroom'){
+   sel.innerHTML='<option value="__custom__">Sala de aula — informar nome</option>';sel.value='__custom__';
+ }else{
+   sel.innerHTML=state.resources.filter(r=>r.active&&r.id!=='volante').map(r=>`<option value="${r.id}">${escapeHtml(r.name)}</option>`).join('')+'<option value="__custom__">Outro espaço — digitar nome</option>';
+   if(selected&&[...sel.options].some(o=>o.value===selected))sel.value=selected;else if(!sel.value)sel.value=state.resources.find(r=>r.active)?.id||'__custom__';
+ }
+ toggleCustomSpace();
+}
+function toggleBookingArea(){
+ const area=document.getElementById('bookingArea')?.value||'lab';const input=document.getElementById('customSpaceName');const hint=document.getElementById('bookingAreaHint');
+ populateBookingResources();
+ if(input){input.value='';input.placeholder=area==='classroom'?'Ex.: Sala 04, Sala 12, Biblioteca...':'Ex.: Sala 12, Biblioteca, Hall, Sala de Reuniões...'}
+ if(hint)hint.textContent=area==='classroom'?'Use para uma reserva ou mudança pontual de sala. Ela aparecerá no Painel de Salas de Aula.':'Reserva de laboratório, auditório ou outro espaço institucional.';
+}
+function toggleCustomSpace(){const sel=document.getElementById('resourceId'),field=document.getElementById('customSpaceField'),input=document.getElementById('customSpaceName'),label=field?.querySelector('label');if(!sel||!field||!input)return;const area=document.getElementById('bookingArea')?.value||'lab';const custom=sel.value==='__custom__';field.classList.toggle('hidden',!custom);input.required=custom;if(label)label.textContent=area==='classroom'?'Informe a sala de aula *':'Informe o espaço *';if(area==='classroom')input.placeholder='Ex.: Sala 04';if(custom)setTimeout(()=>input.focus(),0)}
 function predefinedPurposeValues(){return [...document.querySelectorAll('#purpose option')].map(o=>o.value).filter(v=>v&&v!=='__custom_purpose__')}
 function setPurposeField(value=''){const sel=document.getElementById('purpose'),field=document.getElementById('customPurposeField'),input=document.getElementById('customPurpose');if(!sel||!field||!input)return;const v=String(value||'').trim();if(!v){sel.value='';input.value=''}else if(predefinedPurposeValues().includes(v)){sel.value=v;input.value=''}else{sel.value='__custom_purpose__';input.value=v}toggleCustomPurpose()}
 function toggleCustomPurpose(){const sel=document.getElementById('purpose'),field=document.getElementById('customPurposeField'),input=document.getElementById('customPurpose');if(!sel||!field||!input)return;const custom=sel.value==='__custom_purpose__';field.classList.toggle('hidden',!custom);input.required=custom;if(custom)setTimeout(()=>input.focus(),0)}
 function selectedPurpose(){const sel=document.getElementById('purpose');if(!sel)return '';return sel.value==='__custom_purpose__'?(document.getElementById('customPurpose')?.value.trim()||''):sel.value.trim()}
 function closeBookingModal(){document.getElementById('bookingModal').classList.add('hidden')}
-function applyPeriodPreset(){const type=document.getElementById('periodType').value;const map={morning:['08:00','11:10'],afternoon:['13:00','17:00'],evening:['19:00','22:00'],morning1:['08:00','09:30'],morning2:['09:40','11:10'],afternoon1:['13:00','15:00'],afternoon2:['15:00','17:00'],evening1:['19:00','20:30'],evening2:['20:30','22:00']};if(map[type]){document.getElementById('startTime').value=map[type][0];document.getElementById('endTime').value=map[type][1]}}
+function applyPeriodPreset(){const type=document.getElementById('periodType').value;const map={morning:['08:00','11:10'],afternoon:['13:00','17:00'],evening:['19:00','22:00'],morning1:['08:00','09:30'],morning2:['09:40','11:10'],afternoon1:['13:00','15:00'],afternoon2:['15:00','17:00'],evening1:['19:00','20:30'],evening2:['20:30','22:00'],classnight1:['18:50','20:20'],classnight2:['20:30','22:00']};if(map[type]){document.getElementById('startTime').value=map[type][0];document.getElementById('endTime').value=map[type][1]}}
 function datesBetween(start,end,repeat){let out=[];let d=parseLocal(start),last=parseLocal(end);if(repeat==='none')return [start];while(d<=last){if(repeat==='weekdays'){if(d.getDay()!==0&&d.getDay()!==6)out.push(localISO(d));d=addDays(d,1)}else{out.push(localISO(d));d=addDays(d,7)}}return out}
 function overlaps(aStart,aEnd,bStart,bEnd){return aStart<bEnd&&aEnd>bStart}
+
+function normalizeRoomName(v=''){return normalizeSpaceName(v)}
+function classroomBaselineConflicts(room,date,startTime,endTime,purpose=''){
+ const d=parseLocal(date);const weekday=d.getDay();if(weekday<1||weekday>5)return [];
+ const normalized=normalizeRoomName(room);
+ return (state.classSchedule||[]).filter(e=>e.weekday===weekday&&e.purpose!==purpose&&overlaps(startTime,endTime,e.startTime,e.endTime)&&normalizeRoomName(state.roomAssignments?.[e.purpose]||'')===normalized&&normalized);
+}
 async function saveBooking(e){
- e.preventDefault();const id=document.getElementById('bookingId').value;const selectedResource=document.getElementById('resourceId').value;const customSpaceName=document.getElementById('customSpaceName').value.trim();const resourceId=selectedResource==='__custom__'?makeCustomResourceId(customSpaceName):selectedResource;const startDate=document.getElementById('startDate').value,endDate=document.getElementById('endDate').value,startTime=document.getElementById('startTime').value,endTime=document.getElementById('endTime').value,repeat=document.getElementById('repeat').value;
- const alert=document.getElementById('bookingAlert');const purpose=selectedPurpose();if(selectedResource==='__custom__'&&!customSpaceName){alert.textContent='Informe o nome do espaço que será utilizado.';alert.classList.remove('hidden');return}if(document.getElementById('purpose').value==='__custom_purpose__'&&!purpose){alert.textContent='Informe a turma, curso ou evento.';alert.classList.remove('hidden');return}if(endDate<startDate||endTime<=startTime){alert.textContent='Verifique as datas e os horários informados.';alert.classList.remove('hidden');return}
+ e.preventDefault();const id=document.getElementById('bookingId').value;const area=document.getElementById('bookingArea').value||'lab';const selectedResource=document.getElementById('resourceId').value;const customSpaceName=document.getElementById('customSpaceName').value.trim();const resourceId=selectedResource==='__custom__'?makeCustomResourceId(customSpaceName):selectedResource;const startDate=document.getElementById('startDate').value,endDate=document.getElementById('endDate').value,startTime=document.getElementById('startTime').value,endTime=document.getElementById('endTime').value,repeat=document.getElementById('repeat').value;
+ const alert=document.getElementById('bookingAlert');const purpose=selectedPurpose();if(selectedResource==='__custom__'&&!customSpaceName){alert.textContent=area==='classroom'?'Informe a sala de aula que será utilizada.':'Informe o nome do espaço que será utilizado.';alert.classList.remove('hidden');return}if(document.getElementById('purpose').value==='__custom_purpose__'&&!purpose){alert.textContent='Informe a turma, curso ou evento.';alert.classList.remove('hidden');return}if(endDate<startDate||endTime<=startTime){alert.textContent='Verifique as datas e os horários informados.';alert.classList.remove('hidden');return}
  const dates=datesBetween(startDate,endDate,repeat);const conflicts=dates.filter(date=>state.bookings.some(b=>b.id!==id&&b.resourceId===resourceId&&b.date===date&&b.status!=='cancelled'&&overlaps(startTime,endTime,b.startTime,b.endTime)));
  if(conflicts.length){alert.textContent=`Conflito encontrado em ${conflicts.slice(0,3).map(x=>formatDate(parseLocal(x),{day:'2-digit',month:'2-digit'})).join(', ')}. O espaço já possui agendamento nesse horário.`;alert.classList.remove('hidden');return}
- const base={resourceId,...(selectedResource==='__custom__'?{customSpaceName}:{}),responsible:document.getElementById('responsible').value.trim(),purpose,startTime,endTime,status:document.getElementById('status').value,notes:document.getElementById('notes').value.trim()};
+ if(area==='classroom'){
+   const baselineConflicts=dates.flatMap(date=>classroomBaselineConflicts(customSpaceName,date,startTime,endTime,purpose).map(x=>({date,entry:x})));
+   if(baselineConflicts.length){const c=baselineConflicts[0];alert.textContent=`A sala ${customSpaceName} já está vinculada a ${c.entry.purpose} em ${formatDate(parseLocal(c.date),{day:'2-digit',month:'2-digit'})}, no horário ${c.entry.startTime}–${c.entry.endTime}.`;alert.classList.remove('hidden');return}
+ }
+ const base={spaceCategory:area,resourceId,...(selectedResource==='__custom__'?{customSpaceName}:{}),responsible:document.getElementById('responsible').value.trim(),purpose,startTime,endTime,status:document.getElementById('status').value,notes:document.getElementById('notes').value.trim()};
  if(id){const idx=state.bookings.findIndex(b=>b.id===id);const previous=state.bookings[idx]||{};state.bookings[idx]={...previous,...base,date:startDate};if(selectedResource!=='__custom__')delete state.bookings[idx].customSpaceName}else dates.forEach(date=>state.bookings.push({id:crypto.randomUUID(),...base,date}));
  closeBookingModal();renderAdmin();await persistAndSync(id?'Atualiza agendamento':'Cria agendamento');
 }
@@ -472,13 +804,13 @@ function importJson(e){const f=e.target.files[0];if(!f)return;const reader=new F
 function resetDemo(){if(!confirm('Limpar dados locais deste navegador? O JSON do GitHub não será apagado.'))return;const token=githubToken();state=defaultState();saveState();if(token)localStorage.setItem(GH_TOKEN_KEY,token);renderAdmin();toast('Dados locais limpos. Use Sincronizar para baixar o GitHub novamente.')}
 function sharedPayload(){
  const {github,...publicSettings}=state.settings||{};
- return {version:3,updatedAt:new Date().toISOString(),settings:publicSettings,resources:state.resources.filter(r=>r.id!=='volante'),bookings:[...state.bookings].sort((a,b)=>(a.date+a.startTime).localeCompare(b.date+b.startTime))};
+ return {version:4,updatedAt:new Date().toISOString(),semester:SEMESTER_2026_2,settings:publicSettings,resources:state.resources.filter(r=>r.id!=='volante'),bookings:[...state.bookings].sort((a,b)=>(a.date+a.startTime).localeCompare(b.date+b.startTime)),classSchedule:state.classSchedule||buildDefaultClassSchedule(),roomAssignments:{...defaultRoomAssignments(),...(state.roomAssignments||{})}};
 }
 function githubApiUrl(){const g=state.settings.github||{};return `https://api.github.com/repos/${encodeURIComponent(g.owner||'')}/${encodeURIComponent(g.repo||'')}/contents/${String(g.path||'dados/agendamentos.json').split('/').map(encodeURIComponent).join('/')}?ref=${encodeURIComponent(g.branch||'main')}`}
 function githubRawUrl(){const g=state.settings.github||{};return `https://raw.githubusercontent.com/${encodeURIComponent(g.owner||'')}/${encodeURIComponent(g.repo||'')}/${encodeURIComponent(g.branch||'main')}/${String(g.path||'dados/agendamentos.json').split('/').map(encodeURIComponent).join('/')}?t=${Date.now()}`}
 function decodeBase64Unicode(b64){const bytes=Uint8Array.from(atob(String(b64).replace(/\s/g,'')),c=>c.charCodeAt(0));return new TextDecoder().decode(bytes)}
 function encodeBase64Unicode(text){const bytes=new TextEncoder().encode(text);let binary='';for(const b of bytes)binary+=String.fromCharCode(b);return btoa(binary)}
-function mergeRemoteData(d){if(!d||!Array.isArray(d.resources)||!Array.isArray(d.bookings))throw new Error('JSON do GitHub possui estrutura inválida.');d=migrateStateData(d);state.resources=d.resources.filter(r=>r.id!=='volante');state.bookings=d.bookings;state.settings={...state.settings,...(d.settings||{}),github:state.settings.github};state.meta={...(state.meta||{}),updatedAt:d.updatedAt||new Date().toISOString()};saveState();syncInfo={status:'ok',last:new Date(),message:'Sincronizado com GitHub'};}
+function mergeRemoteData(d){if(!d||!Array.isArray(d.resources)||!Array.isArray(d.bookings))throw new Error('JSON do GitHub possui estrutura inválida.');d=migrateStateData(d);state.resources=d.resources.filter(r=>r.id!=='volante');state.bookings=d.bookings;state.classSchedule=Array.isArray(d.classSchedule)&&d.classSchedule.length?d.classSchedule:buildDefaultClassSchedule();state.roomAssignments={...defaultRoomAssignments(),...(d.roomAssignments||{})};state.settings={...state.settings,...(d.settings||{}),github:state.settings.github};state.meta={...(state.meta||{}),updatedAt:d.updatedAt||new Date().toISOString()};saveState();syncInfo={status:'ok',last:new Date(),message:'Sincronizado com GitHub'};}
 async function fetchGithubJson(useToken=false){
  const g=state.settings.github||{};if(!g.owner||!g.repo)throw new Error('Informe proprietário e repositório nas configurações.');
  const headers={'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};const token=githubToken();if(useToken&&token)headers.Authorization=`Bearer ${token}`;
@@ -493,7 +825,7 @@ async function syncFromGithub(silent=false){
  try{syncInfo={status:'busy',last:syncInfo.last,message:'Sincronizando...'};updateAdminSyncBadge();const {data}=await fetchGithubJson(Boolean(githubToken()));mergeRemoteData(data);if(!silent)toast('Dados atualizados a partir do GitHub.');if(location.hash==='#admin')renderAdmin();return true}catch(e){syncInfo={status:'error',last:syncInfo.last,message:e.message};updateAdminSyncBadge();if(!silent)toast('Falha ao sincronizar: '+e.message);return false}
 }
 async function syncPublic(silent=true){
- try{const d=await fetchPublicJson();mergeRemoteData(d);if(location.hash==='#painel')renderPublic(false);return true}catch(e){syncInfo={status:'error',last:syncInfo.last,message:e.message};if(!silent)toast('Não foi possível atualizar o painel.');updatePublicSyncNote();return false}
+ try{const d=await fetchPublicJson();mergeRemoteData(d);if(location.hash==='#painel'||location.hash==='#painel-labs')renderPublic(false);else if(location.hash==='#painel-salas')renderClassroomPublic(false);return true}catch(e){syncInfo={status:'error',last:syncInfo.last,message:e.message};if(!silent)toast('Não foi possível atualizar o painel.');updatePublicSyncNote();return false}
 }
 async function saveDataToGithub(message='Atualiza Agenda FMP'){
  const token=githubToken();if(!token)throw new Error('Token do GitHub não configurado neste navegador.');const g=state.settings.github||{};if(!g.owner||!g.repo)throw new Error('Configure o repositório do GitHub.');
@@ -513,7 +845,7 @@ function updatePublicSyncNote(){const el=document.getElementById('publicSync');i
 function renderPublic(resetTimer=true){
  if(window.publicAutoDate===undefined)window.publicAutoDate=true;
  const selected=window.publicAutoDate?new Date():(window.publicDate||new Date());window.publicDate=selected;document.getElementById('app').innerHTML=`<section class="public-page"><header class="public-header"><div class="public-brand">${logoMarkup()}<div><h1>${escapeHtml(state.settings.panelTitle)}</h1><p>${escapeHtml(state.settings.appName)} · Agenda pública</p></div></div><div class="public-clock"><strong id="clock">--:--</strong><span id="clockDate"></span></div></header>
- <div class="public-toolbar"><div class="date-nav"><button class="icon-btn" onclick="movePublicDate(-1)">‹</button><button class="btn fullscreen-btn" onclick="goPublicToday()">Hoje</button><button class="icon-btn" onclick="movePublicDate(1)">›</button><div class="date-label">${formatDate(selected,{weekday:'long',day:'2-digit',month:'long'})}</div></div><div class="status-legend"><span class="legend-item busy"><span class="legend-dot"></span>EM USO</span><span class="legend-item scheduled"><span class="legend-dot"></span>AGENDADO</span><span class="legend-item"><span class="legend-dot"></span>LIVRE</span></div><div style="display:flex;gap:9px"><button class="btn fullscreen-btn" onclick="toggleFullscreen()">⛶ Tela cheia</button><button class="btn fullscreen-btn" onclick="location.hash='${isLogged()?'#admin':'#login'}'">Administração</button></div></div>
+ <div class="public-toolbar"><div class="date-nav"><button class="icon-btn" onclick="movePublicDate(-1)">‹</button><button class="btn fullscreen-btn" onclick="goPublicToday()">Hoje</button><button class="icon-btn" onclick="movePublicDate(1)">›</button><div class="date-label">${formatDate(selected,{weekday:'long',day:'2-digit',month:'long'})}</div></div><div class="status-legend"><span class="legend-item busy"><span class="legend-dot"></span>EM USO</span><span class="legend-item scheduled"><span class="legend-dot"></span>AGENDADO</span><span class="legend-item"><span class="legend-dot"></span>LIVRE</span></div><div style="display:flex;gap:9px;flex-wrap:wrap"><button class="btn fullscreen-btn" onclick="location.hash='#painel-salas'">⌂ Salas de aula</button><button class="btn fullscreen-btn" onclick="toggleFullscreen()">⛶ Tela cheia</button><button class="btn fullscreen-btn" onclick="location.hash='${isLogged()?'#admin':'#login'}'">Administração</button></div></div>
  <div class="public-grid">${resourcesForPublicDate(selected).map(r=>publicSpaceCard(r,selected)).join('')}</div><footer class="public-foot"><span>Turnos: 08:00–11:10 · 13:00–17:00 · 19:00–22:00</span><span id="publicSync" class="sync-note">Dados carregados</span></footer></section>`;updateClock();updatePublicSyncNote();schedulePublicMidnightRollover();if(resetTimer){clearInterval(window.publicTimer);const seconds=Math.max(30,Number(state.settings.publicRefreshSeconds)||60);window.publicTimer=setInterval(async()=>{updateClock();ensurePublicCurrentDay();if(window.publicAutoDate)await syncPublic(true)},seconds*1000)}
 }
 function displayPurpose(b){return (b.purpose||'').trim()||'Reserva de espaço'}
@@ -525,8 +857,63 @@ function publicSpaceCard(r,date){const arr=getBookings(date,r.id).filter(b=>b.st
  return `<article class="space-card ${cardState}"><div class="space-head"><div><h2>${escapeHtml(r.name)}</h2><small>${escapeHtml(r.type)}</small></div><span class="status-pill ${pillClass}">${pillText}</span></div>${highlight}<div class="schedule-list">${rows}</div></article>`}
 function movePublicDate(n){window.publicAutoDate=false;window.publicDate=addDays(window.publicDate||new Date(),n);renderPublic()}
 function goPublicToday(){window.publicAutoDate=true;window.publicDate=new Date();renderPublic()}
-function ensurePublicCurrentDay(){if(!window.publicAutoDate)return false;const now=new Date();if(!window.publicDate||localISO(window.publicDate)!==localISO(now)){window.publicDate=now;if(location.hash==='#painel')renderPublic(false);return true}return false}
-function schedulePublicMidnightRollover(){clearTimeout(window.publicMidnightTimer);const now=new Date();const nextMidnight=new Date(now);nextMidnight.setHours(24,0,1,0);window.publicMidnightTimer=setTimeout(async()=>{if(location.hash==='#painel'&&window.publicAutoDate){window.publicDate=new Date();renderPublic(false);await syncPublic(true)}schedulePublicMidnightRollover()},Math.max(1000,nextMidnight.getTime()-now.getTime()))}
+function ensurePublicCurrentDay(){if(!window.publicAutoDate)return false;const now=new Date();if(!window.publicDate||localISO(window.publicDate)!==localISO(now)){window.publicDate=now;if(location.hash==='#painel'||location.hash==='#painel-labs')renderPublic(false);return true}return false}
+function schedulePublicMidnightRollover(){clearTimeout(window.publicMidnightTimer);const now=new Date();const nextMidnight=new Date(now);nextMidnight.setHours(24,0,1,0);window.publicMidnightTimer=setTimeout(async()=>{if((location.hash==='#painel'||location.hash==='#painel-labs')&&window.publicAutoDate){window.publicDate=new Date();renderPublic(false);await syncPublic(true)}schedulePublicMidnightRollover()},Math.max(1000,nextMidnight.getTime()-now.getTime()))}
+
+function semesterContainsDate(date){
+ const iso=localISO(date);if(SEMESTER_2026_2.start&&iso<SEMESTER_2026_2.start)return false;if(SEMESTER_2026_2.end&&iso>SEMESTER_2026_2.end)return false;return true;
+}
+function classroomSlotById(id){return CLASSROOM_PERIODS.find(p=>p.id===id)||CLASSROOM_PERIODS[0]}
+function autoClassroomPeriod(date){
+ if(localISO(date)!==localISO(new Date()))return 'm1';
+ const hm=new Date().toTimeString().slice(0,5);
+ if(hm<'09:30')return 'm1';
+ if(hm<'18:50')return hm<'11:10'?'m2':'n1';
+ if(hm<'20:20')return 'n1';
+ return 'n2';
+}
+function classroomEntriesForPeriod(date,periodId){
+ const slot=classroomSlotById(periodId),weekday=date.getDay();
+ if(weekday<1||weekday>5||!semesterContainsDate(date))return [];
+ const baseline=(state.classSchedule||[]).filter(e=>e.weekday===weekday&&e.startTime===slot.start&&e.endTime===slot.end).map(e=>({...e,room:(state.roomAssignments?.[e.purpose]||'').trim(),manual:false}));
+ const manual=state.bookings.filter(b=>bookingCategory(b)==='classroom'&&b.status==='confirmed'&&b.date===localISO(date)&&overlaps(slot.start,slot.end,b.startTime,b.endTime)).map(b=>({id:'manual-'+b.id,purpose:b.purpose||'Reserva de sala',course:'',phase:'',weekday,startTime:b.startTime,endTime:b.endTime,professor:b.responsible,room:bookingResourceName(b),manual:true}));
+ const overridden=new Set(manual.map(x=>x.purpose).filter(Boolean));
+ return [...baseline.filter(x=>!overridden.has(x.purpose)),...manual].sort((a,b)=>{
+   const ar=(a.room||'zzzz').toLocaleLowerCase('pt-BR'),br=(b.room||'zzzz').toLocaleLowerCase('pt-BR');
+   return ar.localeCompare(br,'pt-BR')||a.purpose.localeCompare(b.purpose,'pt-BR');
+ });
+}
+function classroomCard(entry){
+ const room=(entry.room||'').trim();const unassigned=!room;
+ return `<article class="classroom-card ${unassigned?'unassigned':''} ${entry.manual?'exception':''}">
+   <div class="classroom-room"><h2>${escapeHtml(room||'A DEFINIR')}</h2><span class="room-tag">${entry.manual?'AJUSTE':'GRADE'}</span></div>
+   <div class="classroom-professor">${escapeHtml(entry.professor||'Professor a definir')}</div>
+   <div class="classroom-course">${escapeHtml(entry.purpose||'Turma')}</div>
+   <div class="classroom-time">◷ ${entry.startTime}–${entry.endTime}</div>
+ </article>`;
+}
+function renderClassroomPublic(resetTimer=true){
+ if(window.classroomAutoDate===undefined)window.classroomAutoDate=true;
+ if(!window.classroomPeriod)window.classroomPeriod='auto';
+ const selected=window.classroomAutoDate?new Date():(window.classroomDate||new Date());window.classroomDate=selected;
+ const periodId=window.classroomPeriod==='auto'?autoClassroomPeriod(selected):window.classroomPeriod;const slot=classroomSlotById(periodId);
+ const entries=classroomEntriesForPeriod(selected,periodId);const unassigned=entries.filter(e=>!String(e.room||'').trim()).length;
+ const outside=!semesterContainsDate(selected);const weekend=selected.getDay()===0||selected.getDay()===6;
+ const emptyText=outside?'Data fora do período letivo 2026/2.':weekend?'Não há grade regular de salas aos finais de semana.':'Nenhuma aula encontrada para este período.';
+ document.getElementById('app').innerHTML=`<section class="classroom-page"><header class="public-header"><div class="public-brand">${logoMarkup()}<div><h1>${escapeHtml(state.settings.classroomPanelTitle||'Painel de Salas de Aula')}</h1><p>${escapeHtml(state.settings.appName)} · Grade ${SEMESTER_2026_2.label}</p></div></div><div class="public-clock"><strong id="clock">--:--</strong><span id="clockDate"></span></div></header>
+ <div class="public-toolbar"><div class="date-nav"><button class="icon-btn" onclick="moveClassroomDate(-1)">‹</button><button class="btn fullscreen-btn" onclick="goClassroomToday()">Hoje</button><button class="icon-btn" onclick="moveClassroomDate(1)">›</button><div class="date-label">${formatDate(selected,{weekday:'long',day:'2-digit',month:'long'})}</div></div><div class="classroom-periods"><button class="${window.classroomPeriod==='auto'?'active':''}" onclick="setClassroomPeriod('auto')">Automático</button>${CLASSROOM_PERIODS.map(p=>`<button class="${window.classroomPeriod===p.id?'active':''}" onclick="setClassroomPeriod('${p.id}')">${p.label}</button>`).join('')}</div><div style="display:flex;gap:9px;flex-wrap:wrap"><button class="btn fullscreen-btn" onclick="location.hash='#painel-labs'">▦ Laboratórios</button><button class="btn fullscreen-btn" onclick="toggleFullscreen()">⛶ Tela cheia</button><button class="btn fullscreen-btn" onclick="location.hash='${isLogged()?'#admin':'#login'}'">Administração</button></div></div>
+ <div class="classroom-panel-note"><span><b>${window.classroomPeriod==='auto'?'Período automático':'Período selecionado'}:</b> ${slot.label} · ${entries.length} turma${entries.length===1?'':'s'}</span><span>${unassigned?`⚠ ${unassigned} turma${unassigned===1?'':'s'} com sala a definir`:'✓ Todas as salas deste período estão definidas'}</span></div>
+ <div class="classroom-grid">${entries.length?entries.map(classroomCard).join(''):`<div class="classroom-empty"><div><strong>Sem aulas neste período</strong><span>${escapeHtml(emptyText)}</span></div></div>`}</div>
+ <footer class="public-foot"><span>Grade semestral ${SEMESTER_2026_2.label} · alterações pontuais podem ser feitas pela administração</span><span id="publicSync" class="sync-note">Dados carregados</span></footer></section>`;
+ updateClock();updatePublicSyncNote();scheduleClassroomMidnightRollover();clearInterval(window.publicTimer);
+ if(resetTimer){clearInterval(window.classroomTimer);const seconds=Math.max(30,Number(state.settings.publicRefreshSeconds)||60);window.classroomTimer=setInterval(async()=>{updateClock();ensureClassroomCurrentDay();if(window.classroomAutoDate)await syncPublic(true);else renderClassroomPublic(false)},seconds*1000)}
+}
+function setClassroomPeriod(id){window.classroomPeriod=id;renderClassroomPublic()}
+function moveClassroomDate(n){window.classroomAutoDate=false;window.classroomDate=addDays(window.classroomDate||new Date(),n);renderClassroomPublic()}
+function goClassroomToday(){window.classroomAutoDate=true;window.classroomDate=new Date();window.classroomPeriod='auto';renderClassroomPublic()}
+function ensureClassroomCurrentDay(){if(!window.classroomAutoDate)return false;const now=new Date();if(!window.classroomDate||localISO(window.classroomDate)!==localISO(now)){window.classroomDate=now;if(location.hash==='#painel-salas')renderClassroomPublic(false);return true}if(location.hash==='#painel-salas'&&window.classroomPeriod==='auto')renderClassroomPublic(false);return false}
+function scheduleClassroomMidnightRollover(){clearTimeout(window.classroomMidnightTimer);const now=new Date();const nextMidnight=new Date(now);nextMidnight.setHours(24,0,1,0);window.classroomMidnightTimer=setTimeout(async()=>{if(location.hash==='#painel-salas'&&window.classroomAutoDate){window.classroomDate=new Date();window.classroomPeriod='auto';renderClassroomPublic(false);await syncPublic(true)}scheduleClassroomMidnightRollover()},Math.max(1000,nextMidnight.getTime()-now.getTime()))}
+
 function updateClock(){const now=new Date();const c=document.getElementById('clock'),d=document.getElementById('clockDate');if(c)c.textContent=now.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});if(d)d.textContent=formatDate(now,{day:'2-digit',month:'2-digit',year:'numeric'})}
 function toggleFullscreen(){if(!document.fullscreenElement)document.documentElement.requestFullscreen?.();else document.exitFullscreen?.()}
 async function bootstrap(){try{const d=await fetchPublicJson();mergeRemoteData(d)}catch(e){syncInfo={status:'error',last:null,message:e.message}}route();}
