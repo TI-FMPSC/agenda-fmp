@@ -948,14 +948,28 @@ function schedulePublicMidnightRollover(){clearTimeout(window.publicMidnightTime
 function semesterContainsDate(date){
  const iso=localISO(date);if(SEMESTER_2026_2.start&&iso<SEMESTER_2026_2.start)return false;if(SEMESTER_2026_2.end&&iso>SEMESTER_2026_2.end)return false;return true;
 }
-function classroomSlotById(id){return CLASSROOM_PERIODS.find(p=>p.id===id)||CLASSROOM_PERIODS[0]}
-function autoClassroomPeriod(date){
- if(localISO(date)!==localISO(new Date()))return 'm1';
+function classroomSlotById(id){return CLASSROOM_PERIODS.find(p=>p.id===id)||null}
+function classroomAutoState(date){
+ if(localISO(date)!==localISO(new Date()))return {type:'period',periodId:'m1'};
  const hm=new Date().toTimeString().slice(0,5);
- if(hm<'09:30')return 'm1';
- if(hm<'18:50')return hm<'11:10'?'m2':'n1';
- if(hm<'20:20')return 'n1';
- return 'n2';
+ if(hm<'08:00')return {type:'idle',title:'Aulas ainda não iniciadas',message:'O primeiro horário começa às 08:00.',next:'08:00'};
+ if(hm<'09:30')return {type:'period',periodId:'m1'};
+ if(hm<'09:40')return {type:'interval',title:'INTERVALO',message:'O 2º horário da manhã começa às 09:40.',next:'09:40'};
+ if(hm<'11:10')return {type:'period',periodId:'m2'};
+ if(hm<'18:50')return {type:'idle',title:'Sem aulas neste período',message:'A próxima grade regular começa às 18:50.',next:'18:50'};
+ if(hm<'20:20')return {type:'period',periodId:'n1'};
+ if(hm<'20:30')return {type:'interval',title:'INTERVALO',message:'O 2º horário noturno começa às 20:30.',next:'20:30'};
+ if(hm<'22:00')return {type:'period',periodId:'n2'};
+ return {type:'idle',title:'Aulas encerradas',message:'A grade regular do dia foi encerrada às 22:00.'};
+}
+function nextClassroomTransitionMs(){
+ const now=new Date();const hm=now.toTimeString().slice(0,5);const transitions=['08:00','09:30','09:40','11:10','18:50','20:20','20:30','22:00'];
+ const next=transitions.find(t=>t>hm);if(!next)return null;const [h,m]=next.split(':').map(Number);const target=new Date(now);target.setHours(h,m,0,250);return Math.max(250,target.getTime()-now.getTime());
+}
+function scheduleClassroomPeriodTransition(){
+ clearTimeout(window.classroomPeriodTimer);if(location.hash!=='#painel-salas'||window.classroomPeriod!=='auto'||!window.classroomAutoDate)return;
+ const delay=nextClassroomTransitionMs();if(delay==null)return;
+ window.classroomPeriodTimer=setTimeout(()=>{if(location.hash==='#painel-salas'&&window.classroomPeriod==='auto'&&window.classroomAutoDate)renderClassroomPublic(false)},delay);
 }
 function classroomEntriesForPeriod(date,periodId){
  const slot=classroomSlotById(periodId),weekday=date.getDay(),iso=localISO(date);
@@ -1002,16 +1016,19 @@ function renderClassroomPublic(resetTimer=true){
  if(window.classroomAutoDate===undefined)window.classroomAutoDate=true;
  if(!window.classroomPeriod)window.classroomPeriod='auto';
  const selected=window.classroomAutoDate?new Date():(window.classroomDate||new Date());window.classroomDate=selected;
- const periodId=window.classroomPeriod==='auto'?autoClassroomPeriod(selected):window.classroomPeriod;const slot=classroomSlotById(periodId);
- const entries=classroomEntriesForPeriod(selected,periodId);const unassigned=entries.filter(e=>!String(e.room||'').trim()).length;const crossConflicts=entries.filter(e=>e.conflict).length;const inLabs=entries.filter(e=>e.relocationCategory==='lab'&&!e.conflict).length;
+ const autoState=window.classroomPeriod==='auto'?classroomAutoState(selected):{type:'period',periodId:window.classroomPeriod};
+ const periodId=autoState.type==='period'?autoState.periodId:null;const slot=periodId?classroomSlotById(periodId):null;
+ const entries=slot?classroomEntriesForPeriod(selected,periodId):[];const unassigned=entries.filter(e=>!String(e.room||'').trim()).length;const crossConflicts=entries.filter(e=>e.conflict).length;const inLabs=entries.filter(e=>e.relocationCategory==='lab'&&!e.conflict).length;
  const outside=!semesterContainsDate(selected);const weekend=selected.getDay()===0||selected.getDay()===6;
- const emptyText=outside?'Data fora do período letivo 2026/2.':weekend?'Não há grade regular de salas aos finais de semana.':'Nenhuma aula encontrada para este período.';
+ const emptyText=outside?'Data fora do período letivo 2026/2.':weekend?'Não há grade regular de salas aos finais de semana.':autoState.type!=='period'?autoState.message:'Nenhuma aula encontrada para este período.';
+ const autoLabel=autoState.type==='period'?slot.label:autoState.title;const autoExtra=autoState.next?` · próximo horário ${autoState.next}`:'';
+ const mainEmptyTitle=autoState.type==='interval'?'INTERVALO':autoState.type==='idle'?autoState.title:'Sem aulas neste período';
  document.getElementById('app').innerHTML=`<section class="classroom-page"><header class="public-header"><div class="public-brand">${logoMarkup()}<div><h1>${escapeHtml(state.settings.classroomPanelTitle||'Painel de Salas de Aula')}</h1><p>${escapeHtml(state.settings.appName)} · Grade ${SEMESTER_2026_2.label}</p></div></div><div class="public-clock"><strong id="clock">--:--</strong><span id="clockDate"></span></div></header>
  <div class="public-toolbar"><div class="date-nav"><button class="icon-btn" onclick="moveClassroomDate(-1)">‹</button><button class="btn fullscreen-btn" onclick="goClassroomToday()">Hoje</button><button class="icon-btn" onclick="moveClassroomDate(1)">›</button><div class="date-label">${formatDate(selected,{weekday:'long',day:'2-digit',month:'long'})}</div></div><div class="classroom-periods"><button class="${window.classroomPeriod==='auto'?'active':''}" onclick="setClassroomPeriod('auto')">Automático</button>${CLASSROOM_PERIODS.map(p=>`<button class="${window.classroomPeriod===p.id?'active':''}" onclick="setClassroomPeriod('${p.id}')">${p.label}</button>`).join('')}</div><div style="display:flex;gap:9px;flex-wrap:wrap"><button class="btn fullscreen-btn" onclick="location.hash='#painel-labs'">▦ Laboratórios</button><button class="btn fullscreen-btn" onclick="toggleFullscreen()">⛶ Tela cheia</button><button class="btn fullscreen-btn" onclick="location.hash='${isLogged()?'#admin':'#login'}'">Administração</button></div></div>
- <div class="classroom-panel-note"><span><b>${window.classroomPeriod==='auto'?'Período automático':'Período selecionado'}:</b> ${slot.label} · ${entries.length} turma${entries.length===1?'':'s'} · ${inLabs} em laboratório</span><span>${crossConflicts?`⚠ ${crossConflicts} conflito${crossConflicts===1?'':'s'} de professor/local — revisar`:unassigned?`⚠ ${unassigned} turma${unassigned===1?'':'s'} com sala a definir`:'✓ Conferência automática ativa · locais consistentes'}</span></div>
- <div class="classroom-grid">${entries.length?entries.map(classroomCard).join(''):`<div class="classroom-empty"><div><strong>Sem aulas neste período</strong><span>${escapeHtml(emptyText)}</span></div></div>`}</div>
+ <div class="classroom-panel-note"><span><b>${window.classroomPeriod==='auto'?'Período automático':'Período selecionado'}:</b> ${escapeHtml(autoLabel)}${autoExtra}${slot?` · ${entries.length} turma${entries.length===1?'':'s'} · ${inLabs} em laboratório`:''}</span><span>${slot?(crossConflicts?`⚠ ${crossConflicts} conflito${crossConflicts===1?'':'s'} de professor/local — revisar`:unassigned?`⚠ ${unassigned} turma${unassigned===1?'':'s'} com sala a definir`:'✓ Conferência automática ativa · locais consistentes'):'✓ Troca automática de horário ativa'}</span></div>
+ <div class="classroom-grid">${entries.length?entries.map(classroomCard).join(''):`<div class="classroom-empty"><div><strong>${escapeHtml(mainEmptyTitle)}</strong><span>${escapeHtml(emptyText)}</span></div></div>`}</div>
  <footer class="public-foot"><span>Grade semestral ${SEMESTER_2026_2.label} · alterações pontuais podem ser feitas pela administração</span><span id="publicSync" class="sync-note">Dados carregados</span></footer></section>`;
- updateClock();updatePublicSyncNote();scheduleClassroomMidnightRollover();clearInterval(window.publicTimer);
+ updateClock();updatePublicSyncNote();scheduleClassroomMidnightRollover();scheduleClassroomPeriodTransition();clearInterval(window.publicTimer);
  if(resetTimer){clearInterval(window.classroomTimer);const seconds=Math.max(30,Number(state.settings.publicRefreshSeconds)||60);window.classroomTimer=setInterval(async()=>{updateClock();ensureClassroomCurrentDay();if(window.classroomAutoDate)await syncPublic(true);else renderClassroomPublic(false)},seconds*1000)}
 }
 function setClassroomPeriod(id){window.classroomPeriod=id;renderClassroomPublic()}
