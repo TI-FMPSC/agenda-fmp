@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-08T18:16:33.751Z",
+  "updatedAt": "2026-08-16T17:21:49.709Z",
   "semester": {
     "label": "2026/2",
     "start": "",
@@ -2780,18 +2780,9 @@
     "Pedagogia — 2ª Fase": "Sala 03",
     "Pedagogia — 3ª Fase": "Sala 05",
     "Pedagogia — 4ª Fase": "Sala 04",
-    "Pedagogia — 5ª Fase": "Sala 02 / Sala 09 — VERIFICAR",
+    "Pedagogia — 5ª Fase": "Sala 09",
     "Pedagogia — 6ª Fase": "Sala 07",
     "Pedagogia — 7ª Fase": "Sala 08",
     "Pedagogia — 8ª Fase": "Sala 17"
-  },
-  "roomAssignmentNotes": {
-    "ADS — 4ª Fase": "A relação recebida informa ADS 4ª Fase na Sala 03 e também na Sala 08. Mantido como conflito para conferência, sem escolher uma delas automaticamente.",
-    "Pedagogia — 5ª Fase": "A relação recebida informa Pedagogia 5ª Fase na Sala 02 e também na Sala 09. Mantido como conflito para conferência, sem escolher uma delas automaticamente.",
-    "Administração — 5ª Fase": "A relação recebida não informou sala para Administração 5ª Fase; permanece sem sala-base até confirmação.",
-    "ADS — 2ª Fase": "A expressão “2 FASE DADS” recebida foi interpretada como ADS — 2ª Fase, pois ADS é o curso existente na grade."
-  },
-  "additionalRoomAssignments": {
-    "Pós-Graduação": "Sala 16"
   }
 }
