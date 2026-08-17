@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-17T10:49:40.237Z",
+  "updatedAt": "2026-08-17T14:00:59.270Z",
   "users": [
     {
       "id": "u1",
@@ -15,6 +15,14 @@
       "name": "Amanda",
       "username": "amandafranca",
       "passwordHash": "f47dc630419bbb41ac77fb797141a0f9718067bb9338c85f8281d5dd9d984715",
+      "role": "Administrador",
+      "active": true
+    },
+    {
+      "id": "e317c06f-1db2-40c1-8814-91fff7691af4",
+      "name": "Débora Bombazaro",
+      "username": "deborabombazaro",
+      "passwordHash": "2146fe308ae7d06a805de82928b6329b42917292b6fbca5be533b1f2a5e7ccd9",
       "role": "Administrador",
       "active": true
     }
