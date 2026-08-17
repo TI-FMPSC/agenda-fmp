@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-17T14:14:56.037Z",
-    "updatedAt": "2026-08-17T14:14:56.037Z",
+    "lastSync": "2026-08-17T14:52:21.446Z",
+    "updatedAt": "2026-08-17T14:52:21.446Z",
     "integratedWith": "Agenda FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2044,14 +2044,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 39,
+      "currentStock": 38,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: com 5 sacos com 4 pacotes cada | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-08-17"
     },
     {
       "id": "mat_lim_031",
@@ -2448,6 +2448,22 @@
       "notes": "",
       "createdBy": "Agenda FMP",
       "createdAt": "2026-08-17T14:12:28.217Z"
+    },
+    {
+      "id": "id_nh0pcli3msxcriic",
+      "materialId": "mat_lim_030",
+      "type": "saida",
+      "date": "2026-08-17",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 39,
+      "newStock": 38,
+      "effect": -1,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "Agenda FMP",
+      "createdAt": "2026-08-17T14:52:18.420Z"
     }
   ],
   "users": []
