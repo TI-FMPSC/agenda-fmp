@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-17T13:51:31.729Z",
-    "updatedAt": "2026-08-17T13:51:31.729Z",
+    "lastSync": "2026-08-17T14:12:31.283Z",
+    "updatedAt": "2026-08-17T14:12:31.283Z",
     "integratedWith": "Agenda FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2026,14 +2026,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 8,
+      "currentStock": 7,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 30 metros | Tamanho/apresentação: 8 FARDOS COM 4 PACOTES DE 16 ROLOS | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-08-17"
     },
     {
       "id": "mat_lim_030",
@@ -2432,6 +2432,23 @@
       "updatedAt": "2026-08-16"
     }
   ],
-  "movements": [],
+  "movements": [
+    {
+      "id": "id_o040939zmsxbca7t",
+      "materialId": "mat_lim_029",
+      "type": "saida",
+      "date": "2026-08-17",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 8,
+      "newStock": 7,
+      "effect": -1,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "Agenda FMP",
+      "createdAt": "2026-08-17T14:12:28.217Z"
+    }
+  ],
   "users": []
 }
