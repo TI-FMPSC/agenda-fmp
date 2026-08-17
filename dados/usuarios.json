@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-11T20:51:50.500Z",
+  "updatedAt": "2026-08-17T10:49:40.237Z",
   "users": [
     {
       "id": "u1",
@@ -14,7 +14,7 @@
       "id": "45c3fad5-2774-43e6-808e-a184acb7f2df",
       "name": "Amanda",
       "username": "amandafranca",
-      "passwordHash": "0a1ca4e988fa0d0ba6eccd16f051f104b24a834c674833c0c91a944d2c339e6d",
+      "passwordHash": "f47dc630419bbb41ac77fb797141a0f9718067bb9338c85f8281d5dd9d984715",
       "role": "Administrador",
       "active": true
     }
