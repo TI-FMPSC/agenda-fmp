@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-17T13:50:28.598Z",
-    "updatedAt": "2026-08-17T13:50:28.599Z",
+    "lastSync": "2026-08-17T13:51:31.729Z",
+    "updatedAt": "2026-08-17T13:51:31.729Z",
     "integratedWith": "Agenda FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -273,13 +273,13 @@
     },
     {
       "id": "mat_esc_005",
-      "code": "",
-      "name": "Folhas A4",
+      "code": "002",
+      "name": "Folhas A4 - 180G",
       "categoryId": "cat_escritorio",
       "unit": "CX",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 1,
       "currentStock": 2,
       "avgCost": "",
       "status": "active",
@@ -287,7 +287,7 @@
       "description": "Especificação: 180 gramatura 25x50 folhas | Marca: Chamequinho | Tamanho/apresentação: 25 com 50 folhas cada",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-08-17"
     },
     {
       "id": "mat_esc_006",
