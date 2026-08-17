@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "",
-    "updatedAt": "2026-08-16T08:52:00-03:00",
+    "lastSync": "2026-08-17T13:50:28.598Z",
+    "updatedAt": "2026-08-17T13:50:28.599Z",
     "integratedWith": "Agenda FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -50,8 +50,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Marca: OURO TRADICIONAL | Tamanho/apresentação: 500GRAMAS | Observações: Lú retirou um em 11/08",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -68,8 +68,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: 50 UNI POR CAIXA",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -86,8 +86,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidade",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -104,8 +104,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: TAMANHO P | Tamanho/apresentação: 73 CAIXAS",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -122,8 +122,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: TAMANHO M | Tamanho/apresentação: 35 CAIXAS",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -140,8 +140,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: TAMANHO G | Tamanho/apresentação: 10 CAIXAS",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -158,8 +158,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: EPI | Tamanho/apresentação: PARES",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -176,8 +176,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: sapatão | Tamanho/apresentação: PARES",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -194,8 +194,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidade",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -212,8 +212,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: TOUR POUR | Marca: CF - 283 - A BLACK | Tamanho/apresentação: UNIDADES",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -230,8 +230,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: F.P | Marca: TN - 660 / TN 2340 / TN 22370 - BLACK | Tamanho/apresentação: UNIDADES",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -248,28 +248,28 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: 250und cada caixa",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
     {
       "id": "mat_esc_004",
-      "code": "",
-      "name": "Folhas A4",
+      "code": "001",
+      "name": "Folhas A4 - Padrão",
       "categoryId": "cat_escritorio",
       "unit": "CX",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 5,
       "currentStock": 17,
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 10X500 com 75 folhas - 75G | Marca: Chamex solutions | Tamanho/apresentação: 17 CAIXAS 10 RESMA COM 500 FOLHAS CADA",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-08-17"
     },
     {
       "id": "mat_esc_005",
@@ -284,8 +284,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 180 gramatura 25x50 folhas | Marca: Chamequinho | Tamanho/apresentação: 25 com 50 folhas cada",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -302,8 +302,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: pacotes com 4 cada",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -320,8 +320,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: com 12 unidades cada caixa",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -338,8 +338,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: com 24 unidades cada caixa",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -356,8 +356,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: com 18 unidades cada caixa",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -374,8 +374,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: com 12 unidades cada caixa",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -392,8 +392,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: caixas com 6 unidades cada",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -410,8 +410,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: caixas com 6 unidades cada",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -428,8 +428,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: caixas com 12 unidades cada",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -446,8 +446,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: caixas com 12 unidades cada",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -464,8 +464,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 30 cm | Tamanho/apresentação: UNIDADE",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -482,8 +482,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: com 6 unidades",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -500,8 +500,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidade",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -518,8 +518,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 250 gramas | Tamanho/apresentação: 250 gramas cada | Observações: atualizado em 14/08",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -536,8 +536,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 50 m | Tamanho/apresentação: Rolos",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -554,8 +554,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: CAIXAS",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -572,8 +572,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 76x76mm | Tamanho/apresentação: UNIDADES",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -590,8 +590,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: umedecedor de dedos 12g | Marca: Star Print | Tamanho/apresentação: UNIDADES",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -608,8 +608,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 2 pontas ref: MT08/amarelo | Marca: Neo Mundi | Tamanho/apresentação: caixa com 12",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -626,8 +626,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: Caixa | Marca: bic | Tamanho/apresentação: caixas com 50 und e 1 caixacom 25 aberta",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -644,8 +644,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: unidade | Marca: bic | Tamanho/apresentação: canetas soltas",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -662,8 +662,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: unidade | Marca: Tipo Látex | Tamanho/apresentação: caixa",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -680,8 +680,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: unidade | Marca: DWG-HB | Tamanho/apresentação: unidades",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -698,8 +698,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: caixa | Tamanho/apresentação: caixas com 440 unid cada",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -716,8 +716,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 40g | Tamanho/apresentação: com 6 unidades cada",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -734,8 +734,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 40g | Tamanho/apresentação: unidades soltas",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -752,8 +752,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Marca: sortidos | Tamanho/apresentação: unidades/ compra em caixa com 24 unidades",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -770,8 +770,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Marca: solta acrilex | Tamanho/apresentação: unidades",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -788,8 +788,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Marca: 5mm x 6m cada | Tamanho/apresentação: 12 unidades cada",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -806,8 +806,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Marca: 18 ml | Tamanho/apresentação: 12 unidades cada",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -824,8 +824,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Marca: 18 ml | Tamanho/apresentação: unidades soltas",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -842,8 +842,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Marca: 1 kg | Tamanho/apresentação: unidades",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -860,8 +860,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: Acrilex | Marca: branca | Tamanho/apresentação: com 3 unidades cada",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -878,8 +878,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: Acrilex",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -896,8 +896,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: Com Pincel | Tamanho/apresentação: unidade",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -914,8 +914,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Marca: Masterprint | Tamanho/apresentação: unidade",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -932,8 +932,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -950,8 +950,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: Pacotes | Tamanho/apresentação: unidade com 4",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -968,8 +968,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 38 mm x 5 mm | Tamanho/apresentação: blocos pequenos com 4 e 50 folhas",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -986,8 +986,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: lápis de cor pequeno",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1004,8 +1004,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidade",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1022,8 +1022,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Marca: Neo | Tamanho/apresentação: com 12 unidades cada",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1040,8 +1040,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 5 mm x 6m | Tamanho/apresentação: com 12 unidades cada",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1058,8 +1058,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: com 100 ou mais unid cada fardo",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1076,8 +1076,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidades",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1094,8 +1094,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidades",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1112,8 +1112,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: undades",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1130,8 +1130,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: com 6 unidades",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1148,8 +1148,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: com 12 unidades cada",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1166,8 +1166,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidades",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1184,8 +1184,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: com 6 unidades",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1202,8 +1202,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidades",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1220,8 +1220,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 2 AA | Marca: maior | Tamanho/apresentação: com 10 pares cada",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1238,8 +1238,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: AAA | Marca: 1,5 V alcalina | Tamanho/apresentação: com 12 pares",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1256,8 +1256,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Marca: Cuts | Tamanho/apresentação: caixas pequenas",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1274,8 +1274,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1292,8 +1292,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: caixas pequenas",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1310,8 +1310,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: fardo com 9 unidades",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1328,8 +1328,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: com 12 unidades",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1346,8 +1346,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: fino | Marca: 1 kg | Tamanho/apresentação: 1kg cada",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1364,8 +1364,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: grosso | Marca: 1 kg | Tamanho/apresentação: 1kg cada",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1382,8 +1382,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidade",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1400,8 +1400,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidade",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1418,8 +1418,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidade",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1436,8 +1436,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: 5 mil cada caixa",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1454,8 +1454,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Marca: TK 5232BK com chip | Tamanho/apresentação: unidades",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1472,8 +1472,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidades",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1490,8 +1490,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidades",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1508,8 +1508,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidade",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1526,8 +1526,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: Limão Verde | Marca: BONZÃO | Tamanho/apresentação: 500ML | Observações: atualizado em 14/08",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1544,8 +1544,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: côco | Marca: BONZÃO | Tamanho/apresentação: 500ML",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1562,8 +1562,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Marca: SEBOLD | Tamanho/apresentação: 500ML | Observações: atualizado em 14/08",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1580,8 +1580,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Marca: SEBOLD | Tamanho/apresentação: 500ML | Observações: atualizado em 14/08",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1598,8 +1598,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: tixan Ypê | Marca: X-MAX | Tamanho/apresentação: 400 GRAMAS | Observações: atualizado em 14/08",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1616,8 +1616,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 70º INPM | Marca: ITAJUBÁ | Tamanho/apresentação: 1 LITRO | Observações: atualizado em 14/08",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1634,8 +1634,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 70,6 INPM COM BAMPE | Marca: SAUBA | Tamanho/apresentação: 500 GRAMAS",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1652,8 +1652,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 70º INPM SEM BAMPE | Marca: SAUBA | Tamanho/apresentação: GRAMAS",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1670,8 +1670,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: Erva Doce | Tamanho/apresentação: 5 LITROS",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1688,8 +1688,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: Unidade",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1706,8 +1706,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: Classic | Marca: SEBOLD | Tamanho/apresentação: 2 L | Observações: atualizado em 14/08",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1724,8 +1724,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: Intense | Marca: SEBOLD | Tamanho/apresentação: 2 L | Observações: atualizado em 14/08",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1742,8 +1742,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: Lavanda | Marca: SEBOLD | Tamanho/apresentação: 200 ML | Observações: atualizado em 14/08",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1760,8 +1760,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 30 x 33 cm | Marca: PEGG Folhas simples Gofrado | Tamanho/apresentação: 50 UNIDADE CADA",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1778,8 +1778,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 100 litros | Tamanho/apresentação: 100 UNIDADES CADA",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1796,8 +1796,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 50 litros | Tamanho/apresentação: 100 UNIDADES CADA",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1814,8 +1814,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 30 litros | Tamanho/apresentação: 10 UNIDADES CADA | Observações: atualizado em 14/08",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1832,8 +1832,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: 7 BALDES",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1850,8 +1850,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: 2 LIXEIRAS",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1868,8 +1868,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: UNIDADE",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1886,8 +1886,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: UNIDADE",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1904,8 +1904,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: UNIDADE",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1922,8 +1922,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: UNIDADE",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1940,8 +1940,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: UNIDADE",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1958,8 +1958,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: UNIDADE",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1976,8 +1976,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: UNIDADE",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -1994,8 +1994,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: Pacote com 3 | Observações: atualizado em 14/08",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2012,8 +2012,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: UNIDADE",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2030,8 +2030,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 30 metros | Tamanho/apresentação: 8 FARDOS COM 4 PACOTES DE 16 ROLOS | Observações: atualizado em 14/08",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2048,8 +2048,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: com 5 sacos com 4 pacotes cada | Observações: atualizado em 14/08",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2066,8 +2066,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: 4 pacotes cada | Observações: atualizado em 14/08",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2084,8 +2084,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: 18 unidades soltas",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2102,8 +2102,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 30 ML | Marca: SEBOLD | Tamanho/apresentação: UNIDADE | Observações: atualizado 14/08",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2120,8 +2120,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: ventilador oscilante parede | Marca: Ventisol 6 Pás Preto | Tamanho/apresentação: 50 cm",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2138,8 +2138,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: Popline Reta Cromado | Tamanho/apresentação: 40 x 53 x 45",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2156,8 +2156,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 1,8 litros",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2174,8 +2174,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: Pilhas | Tamanho/apresentação: 8 caixas com 10 pares de pilhas",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2192,8 +2192,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: parede | Tamanho/apresentação: unidade | Observações: atualizado em 14/08",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2210,8 +2210,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidade",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2228,8 +2228,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidade",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2246,8 +2246,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidade",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2264,8 +2264,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidade",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2282,8 +2282,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: com duas tomadas | Tamanho/apresentação: unidade",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2300,8 +2300,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidade",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2318,8 +2318,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Tamanho/apresentação: unidade",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2336,8 +2336,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: Aguarras | Tamanho/apresentação: 2 unidades 1 litro cada",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2354,8 +2354,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 20 metros | Tamanho/apresentação: rolos",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2372,8 +2372,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 50 metros | Tamanho/apresentação: rolos",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2390,8 +2390,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: plug de 3 pinos | Tamanho/apresentação: entradas",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2408,8 +2408,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: 500w | Tamanho/apresentação: unidade",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     },
@@ -2426,8 +2426,8 @@
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Marca: Soprano",
+      "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
     }
