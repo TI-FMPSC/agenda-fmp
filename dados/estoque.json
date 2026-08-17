@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-17T14:12:31.283Z",
-    "updatedAt": "2026-08-17T14:12:31.283Z",
+    "lastSync": "2026-08-17T14:14:56.037Z",
+    "updatedAt": "2026-08-17T14:14:56.037Z",
     "integratedWith": "Agenda FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2019,18 +2019,18 @@
     },
     {
       "id": "mat_lim_029",
-      "code": "",
+      "code": "003",
       "name": "Papel Higiênico",
       "categoryId": "cat_limpeza",
       "unit": "FRD",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 4,
       "currentStock": 7,
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "description": "Especificação: 30 metros | Tamanho/apresentação: 8 FARDOS COM 4 PACOTES DE 16 ROLOS | Observações: atualizado em 14/08",
+      "description": "Especificação: 30 metros | Tamanho/apresentação: 4 PACOTES DE 16 ROLOS | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-17"
