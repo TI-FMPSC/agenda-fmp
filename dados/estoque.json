@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-18T13:22:31.482Z",
-    "updatedAt": "2026-08-18T13:22:31.482Z",
+    "lastSync": "2026-08-18T13:33:27.725Z",
+    "updatedAt": "2026-08-18T13:33:27.725Z",
     "integratedWith": "Agenda FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2296,14 +2296,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 10,
+      "currentStock": 30,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: unidade",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-08-18"
     },
     {
       "id": "mat_man_012",
@@ -2444,8 +2444,8 @@
       "avgCost": 0,
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "",
+      "expirationDate": "",
       "createdAt": "2026-08-18",
       "updatedAt": "2026-08-18"
     }
@@ -2498,6 +2498,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "Agenda FMP",
       "createdAt": "2026-08-18T13:22:29.659Z"
+    },
+    {
+      "id": "id_4txxpatrmsypdxgz",
+      "materialId": "mat_man_011",
+      "type": "entrada",
+      "date": "2026-08-18",
+      "quantity": 20,
+      "unitCost": 0,
+      "previousStock": 10,
+      "newStock": 30,
+      "effect": 20,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "Agenda FMP",
+      "createdAt": "2026-08-18T13:33:25.811Z"
     }
   ],
   "users": []
