@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-18T16:39:06.127Z",
-    "updatedAt": "2026-08-18T16:39:06.127Z",
+    "lastSync": "2026-08-18T16:40:26.291Z",
+    "updatedAt": "2026-08-18T16:40:26.291Z",
     "integratedWith": "Agenda FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1954,14 +1954,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 31,
+      "currentStock": 27,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: UNIDADE",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-08-18"
     },
     {
       "id": "mat_lim_026",
@@ -2644,6 +2644,22 @@
       "notes": "",
       "createdBy": "Agenda FMP",
       "createdAt": "2026-08-18T16:39:04.218Z"
+    },
+    {
+      "id": "id_togqz3pcmsyw2dob",
+      "materialId": "mat_lim_025",
+      "type": "saida",
+      "date": "2026-08-18",
+      "quantity": 4,
+      "unitCost": 0,
+      "previousStock": 31,
+      "newStock": 27,
+      "effect": -4,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "Agenda FMP",
+      "createdAt": "2026-08-18T16:40:24.251Z"
     }
   ],
   "users": []
