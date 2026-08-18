@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-17T14:52:21.446Z",
-    "updatedAt": "2026-08-17T14:52:21.446Z",
+    "lastSync": "2026-08-18T13:22:31.482Z",
+    "updatedAt": "2026-08-18T13:22:31.482Z",
     "integratedWith": "Agenda FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2430,6 +2430,24 @@
       "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
+    },
+    {
+      "id": "id_vdeirod2msyozv6j",
+      "code": "TT",
+      "name": "Tomada Tramontina",
+      "categoryId": "cat_manutencao",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 0,
+      "currentStock": 15,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "expirationDate": "",
+      "description": "",
+      "createdAt": "2026-08-18",
+      "updatedAt": "2026-08-18"
     }
   ],
   "movements": [
@@ -2464,6 +2482,22 @@
       "notes": "",
       "createdBy": "Agenda FMP",
       "createdAt": "2026-08-17T14:52:18.420Z"
+    },
+    {
+      "id": "id_sntge5w7msyozv6j",
+      "materialId": "id_vdeirod2msyozv6j",
+      "type": "entrada",
+      "date": "2026-08-18",
+      "quantity": 15,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 15,
+      "effect": 15,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "Agenda FMP",
+      "createdAt": "2026-08-18T13:22:29.659Z"
     }
   ],
   "users": []
