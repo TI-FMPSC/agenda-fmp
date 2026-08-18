@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-18T16:26:57.164Z",
-    "updatedAt": "2026-08-18T16:26:57.164Z",
+    "lastSync": "2026-08-18T16:27:30.727Z",
+    "updatedAt": "2026-08-18T16:27:30.727Z",
     "integratedWith": "Agenda FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2404,7 +2404,7 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 5,
+      "currentStock": 6,
       "avgCost": "",
       "status": "active",
       "barcode": "",
@@ -2580,6 +2580,22 @@
       "notes": "",
       "createdBy": "Agenda FMP",
       "createdAt": "2026-08-18T16:26:55.154Z"
+    },
+    {
+      "id": "id_0abe15tumsyvlra2",
+      "materialId": "mat_man_017",
+      "type": "entrada",
+      "date": "2026-08-14",
+      "quantity": 1,
+      "unitCost": "",
+      "previousStock": 5,
+      "newStock": 6,
+      "effect": 1,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "Agenda FMP",
+      "createdAt": "2026-08-18T16:27:28.730Z"
     }
   ],
   "users": []
