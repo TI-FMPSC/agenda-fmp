@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-18T13:34:14.431Z",
-    "updatedAt": "2026-08-18T13:34:14.431Z",
+    "lastSync": "2026-08-18T13:35:42.328Z",
+    "updatedAt": "2026-08-18T13:35:42.328Z",
     "integratedWith": "Agenda FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2448,6 +2448,24 @@
       "expirationDate": "",
       "createdAt": "2026-08-18",
       "updatedAt": "2026-08-18"
+    },
+    {
+      "id": "id_ut7n060dmsypgtb6",
+      "code": "R",
+      "name": "Rejunte Branco",
+      "categoryId": "cat_manutencao",
+      "unit": "KG",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 0,
+      "currentStock": 3,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "expirationDate": "",
+      "description": "",
+      "createdAt": "2026-08-18",
+      "updatedAt": "2026-08-18"
     }
   ],
   "movements": [
@@ -2530,6 +2548,22 @@
       "notes": "6 rolos de 15cm",
       "createdBy": "Agenda FMP",
       "createdAt": "2026-08-18T13:34:12.666Z"
+    },
+    {
+      "id": "id_n0xrr63hmsypgtb6",
+      "materialId": "id_ut7n060dmsypgtb6",
+      "type": "entrada",
+      "date": "2026-08-18",
+      "quantity": 3,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 3,
+      "effect": 3,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "Agenda FMP",
+      "createdAt": "2026-08-18T13:35:40.386Z"
     }
   ],
   "users": []
