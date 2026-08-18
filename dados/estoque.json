@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-18T16:36:09.564Z",
-    "updatedAt": "2026-08-18T16:36:09.564Z",
+    "lastSync": "2026-08-18T16:39:06.127Z",
+    "updatedAt": "2026-08-18T16:39:06.127Z",
     "integratedWith": "Agenda FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2404,7 +2404,7 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 5,
+      "currentStock": 4,
       "avgCost": "",
       "status": "active",
       "barcode": "",
@@ -2628,6 +2628,22 @@
       "notes": "",
       "createdBy": "Agenda FMP",
       "createdAt": "2026-08-18T16:36:07.802Z"
+    },
+    {
+      "id": "id_396gm23lmsyw0nx6",
+      "materialId": "mat_man_017",
+      "type": "saida",
+      "date": "2026-08-17",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 5,
+      "newStock": 4,
+      "effect": -1,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "Agenda FMP",
+      "createdAt": "2026-08-18T16:39:04.218Z"
     }
   ],
   "users": []
