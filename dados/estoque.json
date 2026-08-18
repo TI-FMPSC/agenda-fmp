@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-18T13:33:27.725Z",
-    "updatedAt": "2026-08-18T13:33:27.725Z",
+    "lastSync": "2026-08-18T13:34:14.431Z",
+    "updatedAt": "2026-08-18T13:34:14.431Z",
     "integratedWith": "Agenda FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2260,14 +2260,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 4,
+      "currentStock": 10,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: unidade",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-08-18"
     },
     {
       "id": "mat_man_010",
@@ -2514,6 +2514,22 @@
       "notes": "",
       "createdBy": "Agenda FMP",
       "createdAt": "2026-08-18T13:33:25.811Z"
+    },
+    {
+      "id": "id_re0devhnmsypexmi",
+      "materialId": "mat_man_009",
+      "type": "entrada",
+      "date": "2026-08-18",
+      "quantity": 6,
+      "unitCost": 0,
+      "previousStock": 4,
+      "newStock": 10,
+      "effect": 6,
+      "sector": "",
+      "document": "",
+      "notes": "6 rolos de 15cm",
+      "createdBy": "Agenda FMP",
+      "createdAt": "2026-08-18T13:34:12.666Z"
     }
   ],
   "users": []
