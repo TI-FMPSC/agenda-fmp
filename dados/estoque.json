@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-18T13:35:42.328Z",
-    "updatedAt": "2026-08-18T13:35:42.328Z",
+    "lastSync": "2026-08-18T16:26:57.164Z",
+    "updatedAt": "2026-08-18T16:26:57.164Z",
     "integratedWith": "Agenda FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2404,14 +2404,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 6,
+      "currentStock": 5,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 500w | Tamanho/apresentação: unidade",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-08-18"
     },
     {
       "id": "mat_ele_001",
@@ -2462,8 +2462,8 @@
       "avgCost": 0,
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "",
+      "expirationDate": "",
       "createdAt": "2026-08-18",
       "updatedAt": "2026-08-18"
     }
@@ -2564,6 +2564,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "Agenda FMP",
       "createdAt": "2026-08-18T13:35:40.386Z"
+    },
+    {
+      "id": "id_yhqfyfy3msyvl1de",
+      "materialId": "mat_man_017",
+      "type": "saida",
+      "date": "2026-08-14",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 6,
+      "newStock": 5,
+      "effect": -1,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "Agenda FMP",
+      "createdAt": "2026-08-18T16:26:55.154Z"
     }
   ],
   "users": []
