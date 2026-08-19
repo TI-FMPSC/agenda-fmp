@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-19T11:14:07.606Z",
-    "updatedAt": "2026-08-19T11:14:07.606Z",
+    "lastSync": "2026-08-19T11:17:02.902Z",
+    "updatedAt": "2026-08-19T11:17:02.902Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1605,13 +1605,13 @@
     },
     {
       "id": "mat_lim_006",
-      "code": "",
+      "code": "0010",
       "name": "Alcool em gel",
       "categoryId": "cat_limpeza",
       "unit": "L",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 15,
       "currentStock": 1,
       "avgCost": "",
       "status": "active",
@@ -1619,7 +1619,7 @@
       "description": "Especificação: 70º INPM | Marca: ITAJUBÁ | Tamanho/apresentação: 1 LITRO | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-08-19"
     },
     {
       "id": "mat_lim_007",
