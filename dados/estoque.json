@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-19T13:23:04.745Z",
-    "updatedAt": "2026-08-19T13:23:04.745Z",
+    "lastSync": "2026-08-19T14:42:40.539Z",
+    "updatedAt": "2026-08-19T14:42:40.539Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -525,13 +525,13 @@
     },
     {
       "id": "mat_esc_019",
-      "code": "",
+      "code": "0019",
       "name": "Fita crepe",
       "categoryId": "cat_escritorio",
       "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 5,
       "currentStock": 2,
       "avgCost": "",
       "status": "active",
@@ -539,7 +539,7 @@
       "description": "Especificação: 50 m | Tamanho/apresentação: Rolos",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-08-19"
     },
     {
       "id": "mat_esc_020",
@@ -2498,8 +2498,8 @@
       "avgCost": 0,
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "AÇUCAR CRISTAL / GLOBO",
+      "expirationDate": "",
       "createdAt": "2026-08-19",
       "updatedAt": "2026-08-19"
     }
