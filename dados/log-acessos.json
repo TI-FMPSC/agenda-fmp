@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-19T12:10:45.122Z",
+  "updatedAt": "2026-08-19T13:11:56.694Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -127,6 +127,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "0016 · Lixeira sem tampa"
+    },
+    {
+      "id": "98c60052-2347-47f3-953e-65f8cc75d681",
+      "timestamp": "2026-08-19T13:11:56.157Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
