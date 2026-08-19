@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-19T11:17:02.902Z",
-    "updatedAt": "2026-08-19T11:17:02.902Z",
+    "lastSync": "2026-08-19T11:17:23.554Z",
+    "updatedAt": "2026-08-19T11:17:23.554Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1641,13 +1641,13 @@
     },
     {
       "id": "mat_lim_008",
-      "code": "",
+      "code": "0011",
       "name": "Alcool em gel",
       "categoryId": "cat_limpeza",
       "unit": "G",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 15,
       "currentStock": 0,
       "avgCost": "",
       "status": "active",
@@ -1655,7 +1655,7 @@
       "description": "Especificação: 70º INPM SEM BAMPE | Marca: SAUBA | Tamanho/apresentação: GRAMAS",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-08-19"
     },
     {
       "id": "mat_lim_009",
