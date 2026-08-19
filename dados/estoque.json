@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-19T11:17:23.554Z",
-    "updatedAt": "2026-08-19T11:17:23.554Z",
+    "lastSync": "2026-08-19T11:18:28.526Z",
+    "updatedAt": "2026-08-19T11:18:28.526Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1623,13 +1623,13 @@
     },
     {
       "id": "mat_lim_007",
-      "code": "",
+      "code": "0012",
       "name": "Gel antisséptico",
       "categoryId": "cat_limpeza",
       "unit": "G",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 14.98,
       "currentStock": 7,
       "avgCost": "",
       "status": "active",
@@ -1637,7 +1637,7 @@
       "description": "Especificação: 70,6 INPM COM BAMPE | Marca: SAUBA | Tamanho/apresentação: 500 GRAMAS",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-08-19"
     },
     {
       "id": "mat_lim_008",
