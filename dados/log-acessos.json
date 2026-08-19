@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-19T12:05:50.588Z",
+  "updatedAt": "2026-08-19T12:08:08.488Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -109,6 +109,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "0ddd4269-0586-422e-848b-ed3299fade98",
+      "timestamp": "2026-08-19T12:08:08.133Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "007 · Detergente louça"
     }
   ]
 }
