@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-19T03:02:13.135Z",
+  "updatedAt": "2026-08-19T10:45:05.697Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -19,6 +19,15 @@
       "action": "Atualiza configurações do sistema",
       "module": "Configurações",
       "details": "Agenda de Espaços FMP"
+    },
+    {
+      "id": "31b3e7e4-81a8-4b98-ab85-d6c2b9a77bf4",
+      "timestamp": "2026-08-19T10:45:05.200Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
