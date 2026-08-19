@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-19T11:10:22.238Z",
+  "updatedAt": "2026-08-19T11:12:49.189Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -55,6 +55,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "006 · Detergente louça"
+    },
+    {
+      "id": "2849074e-879d-430c-9f60-7f35bef3834f",
+      "timestamp": "2026-08-19T11:12:48.845Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "008 · Limpa Vidros com alcool com válvula"
     }
   ]
 }
