@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-19T11:18:27.123Z",
+  "updatedAt": "2026-08-19T11:19:38.813Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -91,6 +91,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "0012 · Gel antisséptico"
+    },
+    {
+      "id": "55477504-462f-41f5-8478-b5e52d5e6fd5",
+      "timestamp": "2026-08-19T11:19:38.553Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "0014 · Amaciante de Roupas"
     }
   ]
 }
