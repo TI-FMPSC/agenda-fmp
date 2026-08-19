@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-19T12:10:46.567Z",
-    "updatedAt": "2026-08-19T12:10:46.567Z",
+    "lastSync": "2026-08-19T13:15:45.680Z",
+    "updatedAt": "2026-08-19T13:15:45.680Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2466,6 +2466,24 @@
       "expirationDate": "",
       "createdAt": "2026-08-18",
       "updatedAt": "2026-08-18"
+    },
+    {
+      "id": "id_ubcqw6tnmt0470lk",
+      "code": "0017",
+      "name": "A4 - PLASTIFICAÇÃO 100 LAMINAS",
+      "categoryId": "cat_escritorio",
+      "unit": "CX",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 1,
+      "currentStock": 2,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "expirationDate": "",
+      "description": "CAIXA COM 100 LAMINAS - 125 MICRAS 0,05MM - 220 MM X 307 MM - MASTERPRINT",
+      "createdAt": "2026-08-19",
+      "updatedAt": "2026-08-19"
     }
   ],
   "movements": [
@@ -2660,6 +2678,22 @@
       "notes": "",
       "createdBy": "Agenda FMP",
       "createdAt": "2026-08-18T16:40:24.251Z"
+    },
+    {
+      "id": "id_job64zurmt0470lk",
+      "materialId": "id_ubcqw6tnmt0470lk",
+      "type": "entrada",
+      "date": "2026-08-19",
+      "quantity": 2,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 2,
+      "effect": 2,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-19T13:15:43.688Z"
     }
   ],
   "users": []
