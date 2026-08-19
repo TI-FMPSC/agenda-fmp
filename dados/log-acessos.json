@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-19T11:17:01.576Z",
+  "updatedAt": "2026-08-19T11:18:27.123Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -82,6 +82,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "0010 · Alcool em gel"
+    },
+    {
+      "id": "59e1de5c-60d5-4695-8376-07e2af71f0fc",
+      "timestamp": "2026-08-19T11:18:26.791Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "0012 · Gel antisséptico"
     }
   ]
 }
