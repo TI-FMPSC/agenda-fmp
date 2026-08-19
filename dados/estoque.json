@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-19T11:19:24.042Z",
-    "updatedAt": "2026-08-19T11:19:24.042Z",
+    "lastSync": "2026-08-19T11:19:40.184Z",
+    "updatedAt": "2026-08-19T11:19:40.184Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1713,13 +1713,13 @@
     },
     {
       "id": "mat_lim_012",
-      "code": "",
+      "code": "0014",
       "name": "Amaciante de Roupas",
       "categoryId": "cat_limpeza",
       "unit": "L",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 15,
       "currentStock": 1,
       "avgCost": "",
       "status": "active",
@@ -1727,7 +1727,7 @@
       "description": "Especificação: Intense | Marca: SEBOLD | Tamanho/apresentação: 2 L | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-08-19"
     },
     {
       "id": "mat_lim_013",
