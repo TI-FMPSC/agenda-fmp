@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-19T14:42:39.170Z",
+  "updatedAt": "2026-08-19T21:59:59.956Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -181,6 +181,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "0019 · Fita crepe"
+    },
+    {
+      "id": "9e7c7a32-6e09-417a-ab34-479b6144c12b",
+      "timestamp": "2026-08-19T21:59:59.480Z",
+      "username": "deborabombazaro",
+      "name": "Débora Bombazaro",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
