@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-18T16:40:26.291Z",
-    "updatedAt": "2026-08-18T16:40:26.291Z",
+    "lastSync": "2026-08-19T11:10:23.673Z",
+    "updatedAt": "2026-08-19T11:10:23.673Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1533,13 +1533,13 @@
     },
     {
       "id": "mat_lim_002",
-      "code": "341068",
+      "code": "006",
       "name": "Detergente louça",
       "categoryId": "cat_limpeza",
       "unit": "ML",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 5,
       "currentStock": 1,
       "avgCost": "",
       "status": "active",
@@ -1547,7 +1547,7 @@
       "description": "Especificação: côco | Marca: BONZÃO | Tamanho/apresentação: 500ML",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-08-19"
     },
     {
       "id": "mat_lim_003",
