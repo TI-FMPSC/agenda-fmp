@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-19T14:42:40.539Z",
-    "updatedAt": "2026-08-19T14:42:40.539Z",
+    "lastSync": "2026-08-19T22:05:45.435Z",
+    "updatedAt": "2026-08-19T22:05:45.435Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2080,14 +2080,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 18,
+      "currentStock": 78,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: 18 unidades soltas",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-08-19"
     },
     {
       "id": "mat_lim_033",
@@ -2728,6 +2728,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-19T13:23:02.765Z"
+    },
+    {
+      "id": "id_po7dk8ckmt0n4lnf",
+      "materialId": "mat_lim_032",
+      "type": "entrada",
+      "date": "2026-08-19",
+      "quantity": 60,
+      "unitCost": 0,
+      "previousStock": 18,
+      "newStock": 78,
+      "effect": 60,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "deborabombazaro",
+      "createdAt": "2026-08-19T22:05:43.707Z"
     }
   ],
   "users": []
