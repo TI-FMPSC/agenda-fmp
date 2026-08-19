@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-19T12:08:09.795Z",
-    "updatedAt": "2026-08-19T12:08:09.795Z",
+    "lastSync": "2026-08-19T12:08:27.789Z",
+    "updatedAt": "2026-08-19T12:08:27.789Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1539,7 +1539,7 @@
       "unit": "ML",
       "supplierId": "",
       "locationId": "",
-      "minStock": 5,
+      "minStock": 15,
       "currentStock": 1,
       "avgCost": "",
       "status": "active",
