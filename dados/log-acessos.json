@@ -1,5 +1,15 @@
 {
   "version": 1,
-  "updatedAt": null,
-  "logs": []
+  "updatedAt": "2026-08-19T03:00:28.388Z",
+  "logs": [
+    {
+      "id": "3896c0bd-232c-4e63-854e-b74857c46612",
+      "timestamp": "2026-08-19T03:00:27.960Z",
+      "username": "admin",
+      "name": "Administrador",
+      "action": "Atualiza integração com GitHub",
+      "module": "Configurações",
+      "details": "TI-FMPSC/agenda-fmp · main"
+    }
+  ]
 }
