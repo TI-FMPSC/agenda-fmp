@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-19T12:08:08.488Z",
+  "updatedAt": "2026-08-19T12:10:45.122Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -118,6 +118,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "007 · Detergente louça"
+    },
+    {
+      "id": "c3674580-943a-444e-9cc6-0047b3e910d7",
+      "timestamp": "2026-08-19T12:10:44.734Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "0016 · Lixeira sem tampa"
     }
   ]
 }
