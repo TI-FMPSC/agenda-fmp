@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-19T13:15:44.104Z",
+  "updatedAt": "2026-08-19T13:23:03.158Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -145,6 +145,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "0017 · A4 - PLASTIFICAÇÃO 100 LAMINAS"
+    },
+    {
+      "id": "b013fff1-4f24-45ca-9c93-655a46242813",
+      "timestamp": "2026-08-19T13:23:02.789Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "0018 · AÇÚCAR CRISTAL"
     }
   ]
 }
