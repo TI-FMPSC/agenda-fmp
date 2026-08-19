@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-19T13:15:45.680Z",
-    "updatedAt": "2026-08-19T13:15:45.680Z",
+    "lastSync": "2026-08-19T13:23:04.745Z",
+    "updatedAt": "2026-08-19T13:23:04.745Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2480,8 +2480,26 @@
       "avgCost": 0,
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "CAIXA COM 100 LAMINAS - 125 MICRAS 0,05MM - 220 MM X 307 MM - MASTERPRINT",
+      "expirationDate": "",
+      "createdAt": "2026-08-19",
+      "updatedAt": "2026-08-19"
+    },
+    {
+      "id": "id_m1kkizvamt04gfe5",
+      "code": "0018",
+      "name": "AÇÚCAR CRISTAL",
+      "categoryId": "cat_copa",
+      "unit": "KG",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 2,
+      "currentStock": 6,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "expirationDate": "",
+      "description": "AÇUCAR CRISTAL / GLOBO",
       "createdAt": "2026-08-19",
       "updatedAt": "2026-08-19"
     }
@@ -2694,6 +2712,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-19T13:15:43.688Z"
+    },
+    {
+      "id": "id_7vqo0mjgmt04gfe5",
+      "materialId": "id_m1kkizvamt04gfe5",
+      "type": "entrada",
+      "date": "2026-08-19",
+      "quantity": 6,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 6,
+      "effect": 6,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-19T13:23:02.765Z"
     }
   ],
   "users": []
