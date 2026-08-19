@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-19T11:10:23.673Z",
-    "updatedAt": "2026-08-19T11:10:23.673Z",
+    "lastSync": "2026-08-19T11:11:19.837Z",
+    "updatedAt": "2026-08-19T11:11:19.837Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1515,13 +1515,13 @@
     },
     {
       "id": "mat_lim_001",
-      "code": "341068",
+      "code": "007",
       "name": "Detergente louça",
       "categoryId": "cat_limpeza",
       "unit": "ML",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 5,
       "currentStock": 5,
       "avgCost": "",
       "status": "active",
@@ -1529,7 +1529,7 @@
       "description": "Especificação: Limão Verde | Marca: BONZÃO | Tamanho/apresentação: 500ML | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-08-19"
     },
     {
       "id": "mat_lim_002",
