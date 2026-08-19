@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-19T12:08:27.789Z",
-    "updatedAt": "2026-08-19T12:08:27.789Z",
+    "lastSync": "2026-08-19T12:10:46.567Z",
+    "updatedAt": "2026-08-19T12:10:46.567Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1839,13 +1839,13 @@
     },
     {
       "id": "mat_lim_019",
-      "code": "",
+      "code": "0016",
       "name": "Lixeira sem tampa",
       "categoryId": "cat_limpeza",
       "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 5,
       "currentStock": 2,
       "avgCost": "",
       "status": "active",
@@ -1853,7 +1853,7 @@
       "description": "Tamanho/apresentação: 2 LIXEIRAS",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-08-19"
     },
     {
       "id": "mat_lim_020",
