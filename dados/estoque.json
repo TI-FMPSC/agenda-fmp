@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-21T12:40:33.114Z",
-    "updatedAt": "2026-08-21T12:40:33.114Z",
+    "lastSync": "2026-08-21T12:41:17.757Z",
+    "updatedAt": "2026-08-21T12:41:17.757Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2534,8 +2534,26 @@
       "avgCost": 0,
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Neutro",
+      "expirationDate": "",
+      "createdAt": "2026-08-21",
+      "updatedAt": "2026-08-21"
+    },
+    {
+      "id": "id_j7xrtpr8mt2xuehl",
+      "code": "0022",
+      "name": "Detergente louça",
+      "categoryId": "cat_limpeza",
+      "unit": "ML",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 0,
+      "currentStock": 48,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "expirationDate": "",
+      "description": "Maçã 500ml",
       "createdAt": "2026-08-21",
       "updatedAt": "2026-08-21"
     }
@@ -2844,6 +2862,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-21T12:40:31.457Z"
+    },
+    {
+      "id": "id_vt8c4qzimt2xuehl",
+      "materialId": "id_j7xrtpr8mt2xuehl",
+      "type": "entrada",
+      "date": "2026-08-21",
+      "quantity": 48,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 48,
+      "effect": 48,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-21T12:41:15.993Z"
     }
   ],
   "users": []
