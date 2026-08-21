@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-21T11:48:56.113Z",
+  "updatedAt": "2026-08-21T11:50:58.149Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -262,6 +262,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "aa90cbef-e6c4-4e3e-a3b1-0f81555ca0a5",
+      "timestamp": "2026-08-21T11:50:57.686Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · sem código · Sabonete líquido Grande · quantidade 10 · saldo 1"
     }
   ]
 }
