@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-21T12:34:39.018Z",
+  "updatedAt": "2026-08-21T12:40:31.865Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -298,6 +298,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "0020 · Água Sanitaria"
+    },
+    {
+      "id": "68f72254-7836-44fa-9ea7-0090387a6d8b",
+      "timestamp": "2026-08-21T12:40:31.495Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "0021 · Detergente louça"
     }
   ]
 }
