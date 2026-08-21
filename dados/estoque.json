@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-21T12:51:25.041Z",
-    "updatedAt": "2026-08-21T12:51:25.041Z",
+    "lastSync": "2026-08-21T13:49:11.873Z",
+    "updatedAt": "2026-08-21T13:49:11.873Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1658,24 +1658,6 @@
       "updatedAt": "2026-08-19"
     },
     {
-      "id": "mat_lim_009",
-      "code": "",
-      "name": "Sabonete líquido Grande",
-      "categoryId": "cat_limpeza",
-      "unit": "L",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": "",
-      "currentStock": 1,
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Especificação: Erva Doce | Tamanho/apresentação: 5 LITROS",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-21"
-    },
-    {
       "id": "mat_lim_010",
       "code": "",
       "name": "Termômetro Infravermelho",
@@ -2706,22 +2688,6 @@
       "createdAt": "2026-08-18T16:30:44.594Z"
     },
     {
-      "id": "id_ea358vhsmsyvuzfe",
-      "materialId": "mat_lim_009",
-      "type": "saida",
-      "date": "2026-08-17",
-      "quantity": 1,
-      "unitCost": 0,
-      "previousStock": 12,
-      "newStock": 11,
-      "effect": -1,
-      "sector": "",
-      "document": "",
-      "notes": "",
-      "createdBy": "Agenda FMP",
-      "createdAt": "2026-08-18T16:34:39.194Z"
-    },
-    {
       "id": "id_fdvcl9sjmsyvwvsq",
       "materialId": "mat_lim_005",
       "type": "saida",
@@ -2832,22 +2798,6 @@
       "notes": "",
       "createdBy": "deborabombazaro",
       "createdAt": "2026-08-19T22:08:07.943Z"
-    },
-    {
-      "id": "id_ud08p4hlmt2w1pio",
-      "materialId": "mat_lim_009",
-      "type": "saida",
-      "date": "2026-08-21",
-      "quantity": 10,
-      "unitCost": 0,
-      "previousStock": 11,
-      "newStock": 1,
-      "effect": -10,
-      "sector": "",
-      "document": "",
-      "notes": "",
-      "createdBy": "amandafranca",
-      "createdAt": "2026-08-21T11:50:57.648Z"
     },
     {
       "id": "id_m0tttr37mt2xlvwb",
