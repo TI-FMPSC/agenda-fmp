@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-21T13:49:11.873Z",
-    "updatedAt": "2026-08-21T13:49:11.873Z",
+    "lastSync": "2026-08-21T13:50:26.253Z",
+    "updatedAt": "2026-08-21T13:50:26.253Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2556,6 +2556,24 @@
       "expirationDate": "",
       "createdAt": "2026-08-21",
       "updatedAt": "2026-08-21"
+    },
+    {
+      "id": "id_xr67phu6mt30bbbr",
+      "code": "0024",
+      "name": "Sabonete Líquido Grande",
+      "categoryId": "cat_limpeza",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 15,
+      "currentStock": 10,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "expirationDate": "",
+      "description": "Especificação: Erva Doce | Tamanho/apresentação: 5 LITROS",
+      "createdAt": "2026-08-21",
+      "updatedAt": "2026-08-21"
     }
   ],
   "movements": [
@@ -2878,6 +2896,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-21T12:51:23.085Z"
+    },
+    {
+      "id": "id_80j61jf4mt30bbbr",
+      "materialId": "id_xr67phu6mt30bbbr",
+      "type": "entrada",
+      "date": "2026-08-21",
+      "quantity": 10,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 10,
+      "effect": 10,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-21T13:50:24.279Z"
     }
   ],
   "users": []
