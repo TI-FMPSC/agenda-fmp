@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-21T13:59:15.313Z",
+  "updatedAt": "2026-08-21T14:01:14.598Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -397,6 +397,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "4fedb39e-0d7c-4627-8a38-e2e702ba0fbb",
+      "timestamp": "2026-08-21T14:01:14.177Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Exclui material",
+      "module": "Estoque FMP",
+      "details": "sem código · Sabão em pó"
     }
   ]
 }
