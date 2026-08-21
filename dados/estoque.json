@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-21T14:02:34.703Z",
-    "updatedAt": "2026-08-21T14:02:34.703Z",
+    "lastSync": "2026-08-21T14:02:59.297Z",
+    "updatedAt": "2026-08-21T14:02:59.297Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2562,7 +2562,7 @@
       "code": "0025",
       "name": "Sabão em Pó",
       "categoryId": "cat_limpeza",
-      "unit": "G",
+      "unit": "UN",
       "supplierId": "",
       "locationId": "",
       "minStock": 10,
@@ -2570,8 +2570,8 @@
       "avgCost": 0,
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: tixan Ypê | Marca: X-MAX | Tamanho/apresentação: 400 GRAMAS | Observações: atualizado em 14/08",
+      "expirationDate": "",
       "createdAt": "2026-08-21",
       "updatedAt": "2026-08-21"
     }
