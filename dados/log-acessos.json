@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-21T12:27:39.687Z",
+  "updatedAt": "2026-08-21T12:34:39.018Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -289,6 +289,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "4fe83f01-757d-49dc-9f07-8e1bbb0f0df4",
+      "timestamp": "2026-08-21T12:34:38.681Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "0020 · Água Sanitaria"
     }
   ]
 }
