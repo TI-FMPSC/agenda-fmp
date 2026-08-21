@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-21T11:50:59.398Z",
-    "updatedAt": "2026-08-21T11:50:59.398Z",
+    "lastSync": "2026-08-21T12:34:40.473Z",
+    "updatedAt": "2026-08-21T12:34:40.473Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2502,6 +2502,24 @@
       "expirationDate": "",
       "createdAt": "2026-08-19",
       "updatedAt": "2026-08-19"
+    },
+    {
+      "id": "id_p07km1q6mt2xlvwb",
+      "code": "0020",
+      "name": "Água Sanitaria",
+      "categoryId": "cat_limpeza",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 20,
+      "currentStock": 78,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "expirationDate": "",
+      "description": "",
+      "createdAt": "2026-08-21",
+      "updatedAt": "2026-08-21"
     }
   ],
   "movements": [
@@ -2776,6 +2794,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-21T11:50:57.648Z"
+    },
+    {
+      "id": "id_m0tttr37mt2xlvwb",
+      "materialId": "id_p07km1q6mt2xlvwb",
+      "type": "entrada",
+      "date": "2026-08-21",
+      "quantity": 78,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 78,
+      "effect": 78,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-21T12:34:38.651Z"
     }
   ],
   "users": []
