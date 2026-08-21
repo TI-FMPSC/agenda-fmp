@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-21T14:07:04.139Z",
-    "updatedAt": "2026-08-21T14:07:04.139Z",
+    "lastSync": "2026-08-21T14:23:17.297Z",
+    "updatedAt": "2026-08-21T14:23:17.297Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1594,14 +1594,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 15,
-      "currentStock": 1,
+      "currentStock": 0,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 70º INPM | Marca: ITAJUBÁ | Tamanho/apresentação: 1 LITRO | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-19"
+      "updatedAt": "2026-08-21"
     },
     {
       "id": "mat_lim_007",
@@ -2928,6 +2928,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-21T14:07:02.163Z"
+    },
+    {
+      "id": "id_s5h9odpkmt31hk75",
+      "materialId": "mat_lim_006",
+      "type": "saida",
+      "date": "2026-08-21",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 1,
+      "newStock": 0,
+      "effect": -1,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-21T14:23:15.329Z"
     }
   ],
   "users": []
