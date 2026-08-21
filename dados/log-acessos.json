@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-21T14:02:33.258Z",
+  "updatedAt": "2026-08-21T14:07:03.148Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -415,6 +415,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "0025 · Sabão em Pó"
+    },
+    {
+      "id": "f7f5d772-8a3d-4424-9e49-b60b93ff755b",
+      "timestamp": "2026-08-21T14:07:02.191Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · sem código · Saponáceo Cremoso · quantidade 4 · saldo 5"
     }
   ]
 }
