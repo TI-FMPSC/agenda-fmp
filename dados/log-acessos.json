@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-21T12:44:34.990Z",
+  "updatedAt": "2026-08-21T12:51:23.440Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -316,6 +316,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "0023 · Alcool Etílico Hidratado 92,8%"
+    },
+    {
+      "id": "4c3f1905-c1ef-4fd1-bb80-831c3d47098f",
+      "timestamp": "2026-08-21T12:51:23.120Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Entrada · sem código · PÓ DE CAFÉ · quantidade 40 · saldo 59"
     }
   ]
 }
