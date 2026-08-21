@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-21T12:34:40.473Z",
-    "updatedAt": "2026-08-21T12:34:40.473Z",
+    "lastSync": "2026-08-21T12:40:33.114Z",
+    "updatedAt": "2026-08-21T12:40:33.114Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2516,8 +2516,26 @@
       "avgCost": 0,
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "",
+      "expirationDate": "",
+      "createdAt": "2026-08-21",
+      "updatedAt": "2026-08-21"
+    },
+    {
+      "id": "id_nwtfs1uomt2xtg4h",
+      "code": "0021",
+      "name": "Detergente louça",
+      "categoryId": "cat_limpeza",
+      "unit": "ML",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 15,
+      "currentStock": 48,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "expirationDate": "",
+      "description": "Neutro",
       "createdAt": "2026-08-21",
       "updatedAt": "2026-08-21"
     }
@@ -2810,6 +2828,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-21T12:34:38.651Z"
+    },
+    {
+      "id": "id_oogba4cjmt2xtg4h",
+      "materialId": "id_nwtfs1uomt2xtg4h",
+      "type": "entrada",
+      "date": "2026-08-21",
+      "quantity": 48,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 48,
+      "effect": 48,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-21T12:40:31.457Z"
     }
   ],
   "users": []
