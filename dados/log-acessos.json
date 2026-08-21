@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-21T13:37:11.651Z",
+  "updatedAt": "2026-08-21T13:49:10.542Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -361,6 +361,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "39370568-3a1a-4a5d-9287-5f5f682af2ec",
+      "timestamp": "2026-08-21T13:49:10.222Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Exclui material",
+      "module": "Estoque FMP",
+      "details": "sem código · Sabonete líquido Grande"
     }
   ]
 }
