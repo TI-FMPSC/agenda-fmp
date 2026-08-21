@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-21T14:07:03.148Z",
+  "updatedAt": "2026-08-21T14:23:15.726Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -424,6 +424,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · sem código · Saponáceo Cremoso · quantidade 4 · saldo 5"
+    },
+    {
+      "id": "7cfaa199-da2f-414a-b37d-1dda0d8b5794",
+      "timestamp": "2026-08-21T14:23:15.359Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 0010 · Alcool em gel · quantidade 1 · saldo 0"
     }
   ]
 }
