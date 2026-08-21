@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-21T13:50:26.253Z",
-    "updatedAt": "2026-08-21T13:50:26.253Z",
+    "lastSync": "2026-08-21T14:01:15.820Z",
+    "updatedAt": "2026-08-21T14:01:15.820Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1586,24 +1586,6 @@
       "updatedAt": "2026-08-19"
     },
     {
-      "id": "mat_lim_005",
-      "code": "",
-      "name": "Sabão em pó",
-      "categoryId": "cat_limpeza",
-      "unit": "G",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": "",
-      "currentStock": 1,
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Especificação: tixan Ypê | Marca: X-MAX | Tamanho/apresentação: 400 GRAMAS | Observações: atualizado em 14/08",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-18"
-    },
-    {
       "id": "mat_lim_006",
       "code": "0010",
       "name": "Alcool em gel",
@@ -2570,8 +2552,8 @@
       "avgCost": 0,
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: Erva Doce | Tamanho/apresentação: 5 LITROS",
+      "expirationDate": "",
       "createdAt": "2026-08-21",
       "updatedAt": "2026-08-21"
     }
@@ -2704,22 +2686,6 @@
       "notes": "",
       "createdBy": "Agenda FMP",
       "createdAt": "2026-08-18T16:30:44.594Z"
-    },
-    {
-      "id": "id_fdvcl9sjmsyvwvsq",
-      "materialId": "mat_lim_005",
-      "type": "saida",
-      "date": "2026-08-17",
-      "quantity": 4,
-      "unitCost": 0,
-      "previousStock": 5,
-      "newStock": 1,
-      "effect": -4,
-      "sector": "",
-      "document": "",
-      "notes": "",
-      "createdBy": "Agenda FMP",
-      "createdAt": "2026-08-18T16:36:07.802Z"
     },
     {
       "id": "id_396gm23lmsyw0nx6",
