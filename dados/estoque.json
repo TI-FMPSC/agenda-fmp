@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-21T12:41:17.757Z",
-    "updatedAt": "2026-08-21T12:41:17.757Z",
+    "lastSync": "2026-08-21T12:44:36.593Z",
+    "updatedAt": "2026-08-21T12:44:36.594Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2552,8 +2552,26 @@
       "avgCost": 0,
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Maçã 500ml",
+      "expirationDate": "",
+      "createdAt": "2026-08-21",
+      "updatedAt": "2026-08-21"
+    },
+    {
+      "id": "id_cp2jzwyimt2xynql",
+      "code": "0023",
+      "name": "Alcool Etílico Hidratado 92,8%",
+      "categoryId": "cat_limpeza",
+      "unit": "L",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 20,
+      "currentStock": 108,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "expirationDate": "",
+      "description": "",
       "createdAt": "2026-08-21",
       "updatedAt": "2026-08-21"
     }
@@ -2878,6 +2896,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-21T12:41:15.993Z"
+    },
+    {
+      "id": "id_1c5q6narmt2xynql",
+      "materialId": "id_cp2jzwyimt2xynql",
+      "type": "entrada",
+      "date": "2026-08-21",
+      "quantity": 108,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 108,
+      "effect": 108,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-21T12:44:34.605Z"
     }
   ],
   "users": []
