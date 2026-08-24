@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-24T12:59:58.294Z",
+  "updatedAt": "2026-08-24T13:01:15.501Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -523,6 +523,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "2f846330-2fd1-4cc0-9637-59240ab3b616",
+      "timestamp": "2026-08-24T13:01:14.992Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "ADS — 5ª Fase · Coradini · 2026-08-24 · 10:00–11:10 · Laboratório 03"
     }
   ]
 }
