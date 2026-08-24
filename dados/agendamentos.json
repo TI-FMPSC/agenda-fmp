@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-08-17T10:56:26.102Z",
+  "updatedAt": "2026-08-24T13:01:12.581Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -1724,6 +1724,18 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: DANIELA"
+    },
+    {
+      "id": "102a86e1-036d-4dca-a036-bc05baaa642a",
+      "spaceCategory": "lab",
+      "resourceId": "lab3",
+      "responsible": "Coradini",
+      "purpose": "ADS — 5ª Fase",
+      "startTime": "10:00",
+      "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-08-24"
     },
     {
       "id": "327f7052-b9ce-5217-ae1a-e3c4ee3aa386",
