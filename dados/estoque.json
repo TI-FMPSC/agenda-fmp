@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-24T12:25:22.485Z",
-    "updatedAt": "2026-08-24T12:25:22.485Z",
+    "lastSync": "2026-08-24T12:25:42.376Z",
+    "updatedAt": "2026-08-24T12:25:42.376Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2508,7 +2508,7 @@
       "code": "0022",
       "name": "Detergente louça",
       "categoryId": "cat_limpeza",
-      "unit": "ML",
+      "unit": "UN",
       "supplierId": "",
       "locationId": "",
       "minStock": 0,
@@ -2519,7 +2519,7 @@
       "description": "Maçã 500ml",
       "expirationDate": "",
       "createdAt": "2026-08-21",
-      "updatedAt": "2026-08-21"
+      "updatedAt": "2026-08-24"
     },
     {
       "id": "id_cp2jzwyimt2xynql",
