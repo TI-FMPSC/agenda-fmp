@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-24T13:01:15.501Z",
+  "updatedAt": "2026-08-24T13:04:18.195Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -530,6 +530,15 @@
       "username": "amandafranca",
       "name": "Amanda",
       "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "ADS — 5ª Fase · Coradini · 2026-08-24 · 10:00–11:10 · Laboratório 03"
+    },
+    {
+      "id": "8a8a8b36-8f66-44a4-9208-5721b3125915",
+      "timestamp": "2026-08-24T13:04:17.786Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "ADS — 5ª Fase · Coradini · 2026-08-24 · 10:00–11:10 · Laboratório 03"
     }
