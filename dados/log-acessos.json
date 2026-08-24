@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-24T12:25:21.000Z",
+  "updatedAt": "2026-08-24T12:26:41.120Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -496,6 +496,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "0021 · Detergente louça"
+    },
+    {
+      "id": "1c13e216-9491-4079-ad92-790137d204c2",
+      "timestamp": "2026-08-24T12:26:40.593Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "0023 · Alcool Etílico Hidratado 92,8%"
     }
   ]
 }
