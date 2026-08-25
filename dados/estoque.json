@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-25T17:15:31.173Z",
-    "updatedAt": "2026-08-25T17:15:31.173Z",
+    "lastSync": "2026-08-25T17:16:08.858Z",
+    "updatedAt": "2026-08-25T17:16:08.858Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1518,7 +1518,7 @@
       "code": "006",
       "name": "Detergente louça",
       "categoryId": "cat_limpeza",
-      "unit": "ML",
+      "unit": "UN",
       "supplierId": "",
       "locationId": "",
       "minStock": 15,
