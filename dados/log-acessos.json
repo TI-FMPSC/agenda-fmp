@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T17:52:54.279Z",
+  "updatedAt": "2026-08-25T18:02:06.743Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -892,6 +892,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "0029 · Monitor de Cristal Líquido"
+    },
+    {
+      "id": "b843a74e-2efe-45f7-ad15-232de5d094ce",
+      "timestamp": "2026-08-25T18:02:06.229Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
