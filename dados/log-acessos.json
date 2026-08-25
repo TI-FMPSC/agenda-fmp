@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T18:14:08.048Z",
+  "updatedAt": "2026-08-25T18:16:12.521Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -946,6 +946,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 6ª Fase · Leandro · 2026-08-25 · 20:30–22:00 · Laboratório 02"
+    },
+    {
+      "id": "84e85d41-b99d-4839-be74-66f2131bcd90",
+      "timestamp": "2026-08-25T18:16:12.250Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 7ª Fase · Amanda · 2026-08-25 · 20:30–22:00 · Laboratório 02"
     }
   ]
 }
