@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T17:32:56.427Z",
+  "updatedAt": "2026-08-25T17:46:48.065Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -874,6 +874,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 0014 · Amaciante de Roupas · quantidade 1 · saldo 14"
+    },
+    {
+      "id": "5ff70508-15a1-4e67-a532-74c39ad044b8",
+      "timestamp": "2026-08-25T17:46:47.296Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 003 · Papel Higiênico · quantidade 2 · saldo 5"
     }
   ]
 }
