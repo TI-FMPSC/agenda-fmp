@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-25T18:35:42.750Z",
-    "updatedAt": "2026-08-25T18:35:42.750Z",
+    "lastSync": "2026-08-25T18:43:10.350Z",
+    "updatedAt": "2026-08-25T18:43:10.350Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2404,14 +2404,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 20,
-      "currentStock": 78,
+      "currentStock": 74,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "",
       "expirationDate": "",
       "createdAt": "2026-08-21",
-      "updatedAt": "2026-08-21"
+      "updatedAt": "2026-08-25"
     },
     {
       "id": "id_nwtfs1uomt2xtg4h",
@@ -3186,6 +3186,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-25T18:35:40.981Z"
+    },
+    {
+      "id": "id_lwo12k0omt90j5x7",
+      "materialId": "id_p07km1q6mt2xlvwb",
+      "type": "saida",
+      "date": "2026-08-24",
+      "quantity": 4,
+      "unitCost": "",
+      "previousStock": 78,
+      "newStock": 74,
+      "effect": -4,
+      "sector": "",
+      "document": "",
+      "notes": "cada uma com 2litros",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-25T18:43:07.579Z"
     }
   ],
   "users": []
