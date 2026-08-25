@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-25T16:39:49.611Z",
-    "updatedAt": "2026-08-25T16:39:49.611Z",
+    "lastSync": "2026-08-25T16:48:16.944Z",
+    "updatedAt": "2026-08-25T16:48:16.944Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1568,24 +1568,6 @@
       "updatedAt": "2026-08-19"
     },
     {
-      "id": "mat_lim_004",
-      "code": "009",
-      "name": "Limpa Vidros com alcool uso geral",
-      "categoryId": "cat_limpeza",
-      "unit": "ML",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": 15,
-      "currentStock": 1,
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Marca: SEBOLD | Tamanho/apresentação: 500ML | Observações: atualizado em 14/08",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-19"
-    },
-    {
       "id": "mat_lim_006",
       "code": "0010",
       "name": "Alcool em gel",
@@ -2624,8 +2606,8 @@
       "avgCost": 0,
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Marca: SEBOLD | Tamanho/apresentação: 500ML",
+      "expirationDate": "",
       "createdAt": "2026-08-25",
       "updatedAt": "2026-08-25"
     }
