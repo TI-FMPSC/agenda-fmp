@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T18:02:06.743Z",
+  "updatedAt": "2026-08-25T18:09:29.498Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -901,6 +901,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "bbec3cbc-ca41-4009-8c6b-c45a2785720e",
+      "timestamp": "2026-08-25T18:09:29.037Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 8ª Fase · Leandro · 2026-08-25 · 20:30–22:00 · Laboratório 02"
     }
   ]
 }
