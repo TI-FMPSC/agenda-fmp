@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T16:49:02.109Z",
+  "updatedAt": "2026-08-25T16:49:41.836Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -703,6 +703,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "9ceb5b18-3700-4d5e-bcb3-d1761eb2d288",
+      "timestamp": "2026-08-25T16:49:41.480Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Exclui material",
+      "module": "Estoque FMP",
+      "details": "008 · Limpa Vidros com alcool com válvula"
     }
   ]
 }
