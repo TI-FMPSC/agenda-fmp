@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-25T18:43:10.350Z",
-    "updatedAt": "2026-08-25T18:43:10.350Z",
+    "lastSync": "2026-08-25T18:44:46.058Z",
+    "updatedAt": "2026-08-25T18:44:46.058Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2440,14 +2440,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 0,
-      "currentStock": 48,
+      "currentStock": 45,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "Maçã 500ml",
       "expirationDate": "",
       "createdAt": "2026-08-21",
-      "updatedAt": "2026-08-24"
+      "updatedAt": "2026-08-25"
     },
     {
       "id": "id_cp2jzwyimt2xynql",
@@ -3193,7 +3193,7 @@
       "type": "saida",
       "date": "2026-08-24",
       "quantity": 4,
-      "unitCost": "",
+      "unitCost": 0,
       "previousStock": 78,
       "newStock": 74,
       "effect": -4,
@@ -3202,6 +3202,22 @@
       "notes": "cada uma com 2litros",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-25T18:43:07.579Z"
+    },
+    {
+      "id": "id_7v9f56gnmt90l8kk",
+      "materialId": "id_j7xrtpr8mt2xuehl",
+      "type": "saida",
+      "date": "2026-08-24",
+      "quantity": 3,
+      "unitCost": "",
+      "previousStock": 48,
+      "newStock": 45,
+      "effect": -3,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-25T18:44:44.324Z"
     }
   ],
   "users": []
