@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T17:14:16.492Z",
+  "updatedAt": "2026-08-25T17:15:29.676Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -793,6 +793,15 @@
       "action": "Exclui material",
       "module": "Estoque FMP",
       "details": "006 · Detergente louça"
+    },
+    {
+      "id": "0b3c8e78-e613-468d-84f1-660930dc1a35",
+      "timestamp": "2026-08-25T17:15:29.040Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Entrada · 006 · Detergente louça · quantidade 1 · saldo 2"
     }
   ]
 }
