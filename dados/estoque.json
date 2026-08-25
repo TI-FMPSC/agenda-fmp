@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-25T17:31:10.121Z",
-    "updatedAt": "2026-08-25T17:31:10.121Z",
+    "lastSync": "2026-08-25T17:32:41.273Z",
+    "updatedAt": "2026-08-25T17:32:41.273Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1626,7 +1626,7 @@
       "code": "0014",
       "name": "Amaciante de Roupas",
       "categoryId": "cat_limpeza",
-      "unit": "L",
+      "unit": "UN",
       "supplierId": "",
       "locationId": "",
       "minStock": 15,
