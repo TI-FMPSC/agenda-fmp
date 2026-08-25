@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T17:46:48.065Z",
+  "updatedAt": "2026-08-25T17:52:54.279Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -883,6 +883,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 003 · Papel Higiênico · quantidade 2 · saldo 5"
+    },
+    {
+      "id": "10c63007-cb5f-442d-9c29-4c9651aa4e9e",
+      "timestamp": "2026-08-25T17:52:53.733Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "0029 · Monitor de Cristal Líquido"
     }
   ]
 }
