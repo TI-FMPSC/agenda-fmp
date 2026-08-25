@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T16:39:48.280Z",
+  "updatedAt": "2026-08-25T16:41:18.751Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -667,6 +667,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "0028 · Limpa Vidros com alcool uso geral"
+    },
+    {
+      "id": "5886e0f7-0526-487b-af27-9a083bae45f0",
+      "timestamp": "2026-08-25T16:41:18.467Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cria usuário administrativo",
+      "module": "Usuários",
+      "details": "andreakochela · Andréa Kochela"
     }
   ]
 }
