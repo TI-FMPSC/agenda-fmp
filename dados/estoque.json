@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-25T17:22:24.907Z",
-    "updatedAt": "2026-08-25T17:22:24.907Z",
+    "lastSync": "2026-08-25T17:29:40.985Z",
+    "updatedAt": "2026-08-25T17:29:40.985Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1612,14 +1612,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 15,
-      "currentStock": 0,
+      "currentStock": 23,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: Classic | Marca: SEBOLD | Tamanho/apresentação: 2 L | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-19"
+      "updatedAt": "2026-08-25"
     },
     {
       "id": "mat_lim_012",
@@ -3072,6 +3072,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-25T17:15:29.016Z"
+    },
+    {
+      "id": "id_zl0os4mzmt8xwo8f",
+      "materialId": "mat_lim_011",
+      "type": "entrada",
+      "date": "2026-08-25",
+      "quantity": 23,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 23,
+      "effect": 23,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-25T17:29:38.991Z"
     }
   ],
   "users": []
