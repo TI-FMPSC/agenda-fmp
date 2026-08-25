@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T18:21:53.505Z",
+  "updatedAt": "2026-08-25T18:23:43.476Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -986,6 +986,15 @@
     {
       "id": "9a27218d-7e2d-4509-8ae3-cd1dd90e4862",
       "timestamp": "2026-08-25T18:21:52.996Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 7ª Fase · fernanda · 2026-08-25 · 20:30–22:00 · Laboratório 02"
+    },
+    {
+      "id": "fe2c7d76-6947-4204-9308-60689d9f7333",
+      "timestamp": "2026-08-25T18:23:42.954Z",
       "username": "amandafranca",
       "name": "Amanda",
       "action": "Exclui agendamento",
