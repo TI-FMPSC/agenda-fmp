@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T17:30:34.817Z",
+  "updatedAt": "2026-08-25T17:31:08.713Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -838,6 +838,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "0013 · Amaciante de Roupas"
+    },
+    {
+      "id": "c693639e-3ea9-42b6-b89f-5ad6b787f79a",
+      "timestamp": "2026-08-25T17:31:08.187Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Entrada · 0014 · Amaciante de Roupas · quantidade 14 · saldo 15"
     }
   ]
 }
