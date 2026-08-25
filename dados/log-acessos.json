@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T17:31:43.502Z",
+  "updatedAt": "2026-08-25T17:32:40.314Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -856,6 +856,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "db3dc471-bb53-45d1-90ea-ebfee98590a3",
+      "timestamp": "2026-08-25T17:32:39.681Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "0014 · Amaciante de Roupas"
     }
   ]
 }
