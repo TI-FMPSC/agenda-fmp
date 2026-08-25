@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-25T16:32:18.489Z",
-    "updatedAt": "2026-08-25T16:32:18.489Z",
+    "lastSync": "2026-08-25T16:39:49.611Z",
+    "updatedAt": "2026-08-25T16:39:49.611Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2606,6 +2606,24 @@
       "avgCost": 0,
       "status": "active",
       "barcode": "",
+      "description": "Marca: SEBOLD | Tamanho/apresentação: 500ML",
+      "expirationDate": "",
+      "createdAt": "2026-08-25",
+      "updatedAt": "2026-08-25"
+    },
+    {
+      "id": "id_i2nytlb0mt8w4k4z",
+      "code": "0028",
+      "name": "Limpa Vidros com alcool uso geral",
+      "categoryId": "cat_limpeza",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 15,
+      "currentStock": 5,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
       "expirationDate": "",
       "description": "Marca: SEBOLD | Tamanho/apresentação: 500ML",
       "createdAt": "2026-08-25",
@@ -3044,6 +3062,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-25T16:32:16.689Z"
+    },
+    {
+      "id": "id_zmiv27asmt8w4k4z",
+      "materialId": "id_i2nytlb0mt8w4k4z",
+      "type": "entrada",
+      "date": "2026-08-25",
+      "quantity": 5,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 5,
+      "effect": 5,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-25T16:39:47.699Z"
     }
   ],
   "users": []
