@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-25T17:30:35.835Z",
-    "updatedAt": "2026-08-25T17:30:35.835Z",
+    "lastSync": "2026-08-25T17:31:10.121Z",
+    "updatedAt": "2026-08-25T17:31:10.121Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1630,14 +1630,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 15,
-      "currentStock": 1,
+      "currentStock": 15,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: Intense | Marca: SEBOLD | Tamanho/apresentação: 2 L | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-19"
+      "updatedAt": "2026-08-25"
     },
     {
       "id": "mat_lim_014",
@@ -3088,6 +3088,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-25T17:29:38.991Z"
+    },
+    {
+      "id": "id_qhzvd3frmt8xyl14",
+      "materialId": "mat_lim_012",
+      "type": "entrada",
+      "date": "2026-08-25",
+      "quantity": 14,
+      "unitCost": 0,
+      "previousStock": 1,
+      "newStock": 15,
+      "effect": 14,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-25T17:31:08.152Z"
     }
   ],
   "users": []
