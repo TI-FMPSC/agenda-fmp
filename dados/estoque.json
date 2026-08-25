@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-25T15:33:29.811Z",
-    "updatedAt": "2026-08-25T15:33:29.811Z",
+    "lastSync": "2026-08-25T16:24:39.965Z",
+    "updatedAt": "2026-08-25T16:24:39.965Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2592,6 +2592,24 @@
       "expirationDate": "",
       "createdAt": "2026-08-25",
       "updatedAt": "2026-08-25"
+    },
+    {
+      "id": "id_qvqajb4tmt8vl2f2",
+      "code": "Limpa Vidros com alcool com válvula",
+      "name": "008",
+      "categoryId": "cat_limpeza",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 3,
+      "currentStock": 0,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "expirationDate": "",
+      "description": "Marca: SEBOLD | Tamanho/apresentação: 500ML |",
+      "createdAt": "2026-08-25",
+      "updatedAt": "2026-08-25"
     }
   ],
   "movements": [
@@ -3001,7 +3019,7 @@
       "type": "saida",
       "date": "2026-08-25",
       "quantity": 10,
-      "unitCost": "",
+      "unitCost": 0,
       "previousStock": 100,
       "newStock": 90,
       "effect": -10,
