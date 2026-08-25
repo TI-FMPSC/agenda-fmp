@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T16:58:58.973Z",
+  "updatedAt": "2026-08-25T17:01:04.341Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -766,6 +766,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "0027 · Lustra Móveis"
+    },
+    {
+      "id": "56a57c4d-f121-4a4a-83b7-c7d8fab1d5b8",
+      "timestamp": "2026-08-25T17:01:03.938Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Logout realizado",
+      "module": "Acesso",
+      "details": "Saída da área administrativa"
     }
   ]
 }
