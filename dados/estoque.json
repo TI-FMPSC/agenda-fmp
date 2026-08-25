@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-25T15:32:01.210Z",
-    "updatedAt": "2026-08-25T15:32:01.210Z",
+    "lastSync": "2026-08-25T15:32:41.005Z",
+    "updatedAt": "2026-08-25T15:32:41.005Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2577,8 +2577,8 @@
     },
     {
       "id": "id_vf4h0b18mt8tpczd",
-      "code": "Caixa Arquivo",
-      "name": "0026",
+      "code": "0026",
+      "name": "Caixa Arquivo",
       "categoryId": "cat_escritorio",
       "unit": "UN",
       "supplierId": "",
@@ -2588,8 +2588,8 @@
       "avgCost": 0,
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "2 fardos com 50 cada",
+      "expirationDate": "",
       "createdAt": "2026-08-25",
       "updatedAt": "2026-08-25"
     }
