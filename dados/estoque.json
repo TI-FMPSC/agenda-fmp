@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-25T17:46:49.192Z",
-    "updatedAt": "2026-08-25T17:46:49.192Z",
+    "lastSync": "2026-08-25T17:52:55.405Z",
+    "updatedAt": "2026-08-25T17:52:55.405Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2574,6 +2574,24 @@
       "expirationDate": "",
       "createdAt": "2026-08-25",
       "updatedAt": "2026-08-25"
+    },
+    {
+      "id": "id_zx2hui1qmt8yqkd0",
+      "code": "0029",
+      "name": "Monitor de Cristal Líquido",
+      "categoryId": "cat_escritorio",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 0,
+      "currentStock": 15,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "expirationDate": "",
+      "description": "Monitor Full HD 21,5\" AOC",
+      "createdAt": "2026-08-25",
+      "updatedAt": "2026-08-25"
     }
   ],
   "movements": [
@@ -3136,6 +3154,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-25T17:46:47.269Z"
+    },
+    {
+      "id": "id_717luadcmt8yqkd0",
+      "materialId": "id_zx2hui1qmt8yqkd0",
+      "type": "entrada",
+      "date": "2026-08-25",
+      "quantity": 15,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 15,
+      "effect": 15,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-25T17:52:53.652Z"
     }
   ],
   "users": []
