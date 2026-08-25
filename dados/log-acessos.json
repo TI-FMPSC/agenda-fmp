@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T15:32:39.583Z",
+  "updatedAt": "2026-08-25T15:33:28.524Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -595,6 +595,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "0026 · Caixa Arquivo"
+    },
+    {
+      "id": "63376d90-c109-4099-88de-7c50f9930dde",
+      "timestamp": "2026-08-25T15:33:28.005Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 0026 · Caixa Arquivo · quantidade 10 · saldo 90"
     }
   ]
 }
