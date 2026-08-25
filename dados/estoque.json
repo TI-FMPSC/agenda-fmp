@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-24T12:26:42.221Z",
-    "updatedAt": "2026-08-24T12:26:42.221Z",
+    "lastSync": "2026-08-25T15:32:01.210Z",
+    "updatedAt": "2026-08-25T15:32:01.210Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2574,6 +2574,24 @@
       "expirationDate": "",
       "createdAt": "2026-08-21",
       "updatedAt": "2026-08-21"
+    },
+    {
+      "id": "id_vf4h0b18mt8tpczd",
+      "code": "Caixa Arquivo",
+      "name": "0026",
+      "categoryId": "cat_escritorio",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 30,
+      "currentStock": 100,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "expirationDate": "",
+      "description": "2 fardos com 50 cada",
+      "createdAt": "2026-08-25",
+      "updatedAt": "2026-08-25"
     }
   ],
   "movements": [
@@ -2960,6 +2978,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-21T14:47:54.963Z"
+    },
+    {
+      "id": "id_bbp76sfbmt8tpcze",
+      "materialId": "id_vf4h0b18mt8tpczd",
+      "type": "entrada",
+      "date": "2026-08-25",
+      "quantity": 100,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 100,
+      "effect": 100,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-25T15:31:59.354Z"
     }
   ],
   "users": []
