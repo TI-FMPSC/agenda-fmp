@@ -431,6 +431,35 @@
     @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
   
+
+    /* ===== Gestão operacional das salas de aula ===== */
+    .classroom-admin-controls{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:16px;padding:14px 16px;border:1px solid #cfe7dc;background:#f9fdfb;border-radius:16px}
+    .classroom-admin-date{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+    .classroom-admin-periods{display:flex;gap:7px;flex-wrap:wrap}
+    .classroom-admin-periods button{border:1px solid #b9dccc;background:#fff;color:#267558;border-radius:999px;padding:9px 12px;font-weight:850}
+    .classroom-admin-periods button.active{background:var(--success);border-color:var(--success);color:#fff;box-shadow:0 5px 14px rgba(19,138,89,.20)}
+    .classroom-admin-grid{display:grid;grid-template-columns:repeat(3,minmax(260px,1fr));gap:14px}
+    .classroom-admin-card{border:1px solid #cfe4da;background:#fff;border-radius:16px;padding:16px;box-shadow:0 4px 15px rgba(19,42,76,.045);cursor:pointer;transition:.18s;position:relative;overflow:hidden}
+    .classroom-admin-card:hover{transform:translateY(-1px);border-color:#69bd99;box-shadow:0 9px 22px rgba(19,138,89,.10)}
+    .classroom-admin-card:before{content:"";position:absolute;inset:0 auto 0 0;width:5px;background:#3cb47f}
+    .classroom-admin-card.lab{border-color:#bfdcf5}.classroom-admin-card.lab:before{background:#2f8ed3}
+    .classroom-admin-card.conflict{border-color:#f0b1b1;background:#fff9f9}.classroom-admin-card.conflict:before{background:var(--danger)}
+    .classroom-admin-card.unassigned{border-color:#eed39b;background:#fffdf7}.classroom-admin-card.unassigned:before{background:#d59a22}
+    .classroom-admin-card .ca-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;margin-bottom:12px}
+    .classroom-admin-card .ca-room{font-size:24px;font-weight:950;line-height:1;color:#1f6f51}
+    .classroom-admin-card.lab .ca-room{color:#176aa7}.classroom-admin-card.conflict .ca-room{color:#a32626}.classroom-admin-card.unassigned .ca-room{color:#956815}
+    .classroom-admin-card .ca-course{font-weight:900;font-size:15px;margin-bottom:7px}
+    .classroom-admin-card .ca-prof{font-size:17px;font-weight:800;color:#344054;line-height:1.25}
+    .classroom-admin-card .ca-time{margin-top:10px;color:#667085;font-size:12px;font-weight:800}
+    .classroom-admin-card .ca-hint{margin-top:11px;padding-top:10px;border-top:1px solid #edf1f4;color:#667085;font-size:11px;font-weight:700}
+    .classroom-admin-empty{grid-column:1/-1;padding:42px;text-align:center;border:1px dashed #b8d8ca;border-radius:16px;color:#667085;background:#fbfefd}
+    .classroom-edit-note{padding:11px 12px;border-radius:12px;background:#f1faf6;border:1px solid #cbe9dc;color:#315f4c;font-size:12px;line-height:1.45;margin-bottom:14px}
+    .classroom-edit-scope{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+    .classroom-edit-scope label{display:flex;gap:8px;align-items:flex-start;border:1px solid var(--line);border-radius:12px;padding:11px;background:#fff;cursor:pointer;font-size:12px;font-weight:750;line-height:1.35}
+    .classroom-edit-scope input{margin-top:2px}
+    @media(max-width:1100px){.classroom-admin-grid{grid-template-columns:repeat(2,minmax(240px,1fr))}}
+    @media(max-width:700px){.classroom-admin-grid{grid-template-columns:1fr}.classroom-admin-controls{align-items:flex-start}.classroom-admin-periods{width:100%;overflow-x:auto;flex-wrap:nowrap}.classroom-admin-periods button{white-space:nowrap}.classroom-edit-scope{grid-template-columns:1fr}}
+
     /* ===== Gestão de Estoque integrada ===== */
     .stock-module-wrap{height:calc(100vh - 128px);min-height:680px;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#050505;box-shadow:0 8px 24px rgba(19,42,76,.10)}
     .stock-module-frame{display:block;width:100%;height:100%;border:0;background:#050505}
@@ -509,6 +538,35 @@
         <div class="alert alert-info">O sistema impede sobreposição no mesmo espaço e permite agendar um único dia, vários dias úteis ou repetições semanais.</div>
       </div>
       <div class="modal-foot"><button type="button" class="btn btn-secondary" onclick="closeBookingModal()">Cancelar</button><button type="submit" class="btn btn-primary">Salvar agendamento</button></div>
+    </form>
+  </div>
+</div>
+
+<div id="classroomEditModal" class="modal-backdrop hidden">
+  <div class="modal" style="width:min(720px,100%)">
+    <div class="modal-head"><h2>Editar sala de aula</h2><button class="icon-btn" onclick="closeClassroomAdminEditor()">✕</button></div>
+    <form onsubmit="saveClassroomAdminEdit(event)">
+      <div class="modal-body">
+        <div id="classroomEditAlert" class="alert alert-error hidden"></div>
+        <input type="hidden" id="classroomEditEntryId" />
+        <input type="hidden" id="classroomEditBookingId" />
+        <input type="hidden" id="classroomEditDate" />
+        <input type="hidden" id="classroomEditStart" />
+        <input type="hidden" id="classroomEditEnd" />
+        <div class="classroom-edit-note" id="classroomEditContext"></div>
+        <div class="form-grid">
+          <div class="field"><label>Turma</label><input id="classroomEditPurpose" readonly /></div>
+          <div class="field"><label>Horário</label><input id="classroomEditTime" readonly /></div>
+          <div class="field"><label>Sala *</label><input id="classroomEditRoom" required placeholder="Ex.: Sala 05" /></div>
+          <div class="field"><label>Professor *</label><input id="classroomEditProfessor" required placeholder="Nome do professor" /></div>
+        </div>
+        <div style="font-size:13px;font-weight:900;margin:8px 0">Onde aplicar esta alteração?</div>
+        <div class="classroom-edit-scope">
+          <label><input type="radio" name="classroomEditScope" value="date" checked><span><b>Somente nesta data</b><br>Cria ou atualiza uma exceção em agendamentos.json. Ideal para troca de sala ou professor apenas neste dia.</span></label>
+          <label id="classroomBaseScopeLabel"><input type="radio" name="classroomEditScope" value="base"><span><b>Grade semanal</b><br>Altera a sala-base da turma e o professor deste dia/horário em grade-salas.json.</span></label>
+        </div>
+      </div>
+      <div class="modal-foot"><button type="button" id="removeClassroomOverrideBtn" class="btn btn-danger hidden" onclick="removeClassroomAdminOverride()">Remover ajuste deste dia</button><button type="button" class="btn btn-secondary" onclick="closeClassroomAdminEditor()">Cancelar</button><button type="submit" class="btn btn-success">Salvar alteração</button></div>
     </form>
   </div>
 </div>
@@ -785,12 +843,12 @@ async function logout(){const username=currentUsername();await recordAuditLog('L
 
 function renderAdmin(){
  if(!isLogged()){location.hash='#login';return}
- const title=adminSection==='agenda'?'Gestão das Salas':adminSection==='settings'?'Configurações':adminSection==='rooms'?'Grade de salas — 2026/2':adminSection==='stock'?'Gestão de Estoque':adminSection==='logs'?'Logs de acesso':'Gestão dos Laboratórios';
+ const title=adminSection==='agenda'?'Gestão das Salas':adminSection==='settings'?'Configurações':adminSection==='rooms'?'Grade-base de salas — 2026/2':adminSection==='stock'?'Gestão de Estoque':adminSection==='logs'?'Logs de acesso':'Gestão dos Laboratórios';
  const stockMode=adminSection==='stock';
  document.getElementById('app').innerHTML=`<div class="shell"><aside class="sidebar"><div class="side-brand">${logoMarkup()}<div><strong>${escapeHtml(state.settings.appName)}</strong><small>Administração</small></div></div>
- <nav class="nav"><button class="${adminSection==='agenda'?'active':''}" onclick="setSection('agenda')">▦ <span>Gestão das Salas</span></button><button class="${adminSection==='list'?'active':''}" onclick="setSection('list')">☷ <span>Gestão dos Laboratórios</span></button><button class="${adminSection==='rooms'?'active':''}" onclick="setSection('rooms')">⌂ <span>Grade de salas</span></button><button class="${adminSection==='stock'?'active':''}" onclick="setSection('stock')">▣ <span>Gestão de Estoque</span></button><button class="${adminSection==='logs'?'active':''}" onclick="setSection('logs')">☰ <span>Logs de acesso</span></button><button class="${adminSection==='settings'?'active':''}" onclick="setSection('settings')">⚙ <span>Configurações</span></button></nav><div class="nav-spacer"></div><div class="side-foot"><button class="btn btn-ghost" onclick="location.hash='#painel-labs'">◉ <span>Painel laboratórios</span></button><button class="btn btn-ghost" onclick="location.hash='#painel-salas'">⌂ <span>Painel salas de aula</span></button><button class="btn btn-ghost" onclick="logout()">↪ <span>Sair</span></button></div></aside>
- <main class="main ${stockMode?'stock-mode':''}"><header class="topbar"><div><h1>${title}</h1><small>${formatDate(new Date(),{weekday:'long',day:'2-digit',month:'long',year:'numeric'})}</small></div><div class="top-actions"><span id="sessionBadge" class="session-badge" title="A sessão administrativa expira 30 minutos após o login">Sessão: ${formatSessionRemaining()}</span><span id="adminSyncBadge" class="sync-badge">GitHub</span><button class="btn btn-secondary" onclick="${stockMode?'syncStockModule()':'syncFromGithub()'}">↻ Sincronizar</button>${stockMode?`<button class="btn btn-secondary" onclick="setSection('agenda')">← Voltar à agenda</button>`:`<button class="btn btn-secondary" onclick="location.hash='#painel-labs'">Painel laboratórios</button><button class="btn btn-success" onclick="location.hash='#painel-salas'">Painel salas</button><button class="btn btn-primary" onclick="openBookingModal()">＋ Novo agendamento</button>`}</div></header><div class="content" id="adminContent"></div></main></div>`;
- if(adminSection==='agenda')renderAgenda();else if(adminSection==='settings')renderSettings();else if(adminSection==='rooms')renderRoomAssignments();else if(adminSection==='stock')renderStockModule();else if(adminSection==='logs')renderAuditLogs();else renderBookingList();
+ <nav class="nav"><button class="${adminSection==='agenda'?'active':''}" onclick="setSection('agenda')">▦ <span>Gestão das Salas</span></button><button class="${adminSection==='list'?'active':''}" onclick="setSection('list')">☷ <span>Gestão dos Laboratórios</span></button><button class="${adminSection==='rooms'?'active':''}" onclick="setSection('rooms')">⌂ <span>Grade-base de salas</span></button><button class="${adminSection==='stock'?'active':''}" onclick="setSection('stock')">▣ <span>Gestão de Estoque</span></button><button class="${adminSection==='logs'?'active':''}" onclick="setSection('logs')">☰ <span>Logs de acesso</span></button><button class="${adminSection==='settings'?'active':''}" onclick="setSection('settings')">⚙ <span>Configurações</span></button></nav><div class="nav-spacer"></div><div class="side-foot"><button class="btn btn-ghost" onclick="location.hash='#painel-labs'">◉ <span>Painel laboratórios</span></button><button class="btn btn-ghost" onclick="location.hash='#painel-salas'">⌂ <span>Painel salas de aula</span></button><button class="btn btn-ghost" onclick="logout()">↪ <span>Sair</span></button></div></aside>
+ <main class="main ${stockMode?'stock-mode':''}"><header class="topbar"><div><h1>${title}</h1><small>${formatDate(new Date(),{weekday:'long',day:'2-digit',month:'long',year:'numeric'})}</small></div><div class="top-actions"><span id="sessionBadge" class="session-badge" title="A sessão administrativa expira 30 minutos após o login">Sessão: ${formatSessionRemaining()}</span><span id="adminSyncBadge" class="sync-badge">GitHub</span><button class="btn btn-secondary" onclick="${stockMode?'syncStockModule()':'syncFromGithub()'}">↻ Sincronizar</button>${stockMode?`<button class="btn btn-secondary" onclick="setSection('agenda')">← Voltar às salas</button>`:adminSection==='agenda'?`<button class="btn btn-success" onclick="location.hash='#painel-salas'">Painel salas</button><button class="btn btn-secondary" onclick="setSection('rooms')">Grade-base</button>`:adminSection==='list'?`<button class="btn btn-secondary" onclick="location.hash='#painel-labs'">Painel laboratórios</button><button class="btn btn-primary" onclick="openBookingModal()">＋ Novo agendamento</button>`:`<button class="btn btn-secondary" onclick="location.hash='#painel-labs'">Painel laboratórios</button><button class="btn btn-success" onclick="location.hash='#painel-salas'">Painel salas</button>`}</div></header><div class="content" id="adminContent"></div></main></div>`;
+ if(adminSection==='agenda')renderClassroomManagement();else if(adminSection==='settings')renderSettings();else if(adminSection==='rooms')renderRoomAssignments();else if(adminSection==='stock')renderStockModule();else if(adminSection==='logs')renderAuditLogs();else renderBookingList();
  updateAdminSyncBadge();updateSessionBadge();
 }
 function setSection(s){if(!isLogged()){location.hash='#login';return}adminSection=s;renderAdmin();if(s==='logs')loadAuditLogs(true)}
@@ -824,7 +882,80 @@ function customResourcesForDates(dates,category=null){const set=new Map();const 
 function resourcesForPublicDate(date){return [...state.resources.filter(r=>r.active),...customResourcesForDates([date],'lab')]}
 function resourcesForWeek(days){return [...state.resources.filter(r=>r.active),...customResourcesForDates(days)]}
 function currentStatus(b,date=new Date()){const today=localISO(date);const hm=date.toTimeString().slice(0,5);return b.date===today&&b.startTime<=hm&&b.endTime>hm}
-function renderAgenda(){
+
+let classroomAdminDate=new Date();
+let classroomAdminPeriod='auto';
+function classroomAdminEffectivePeriod(){
+ const d=classroomAdminDate||new Date();
+ if(classroomAdminPeriod!=='auto')return classroomAdminPeriod;
+ const stateAuto=classroomAutoState(d);
+ if(stateAuto.type==='period')return stateAuto.periodId;
+ if(localISO(d)!==localISO(new Date()))return 'm1';
+ const hm=new Date().toTimeString().slice(0,5);
+ if(hm<'09:40')return 'm1';if(hm<'18:50')return 'm2';if(hm<'20:30')return 'n1';return 'n2';
+}
+function moveClassroomAdminDate(days){classroomAdminDate=addDays(classroomAdminDate||new Date(),days);renderClassroomManagement()}
+function classroomAdminToday(){classroomAdminDate=new Date();classroomAdminPeriod='auto';renderClassroomManagement()}
+function setClassroomAdminPeriod(id){classroomAdminPeriod=id;renderClassroomManagement()}
+function classroomAdminCurrentEntries(){return classroomEntriesForPeriod(classroomAdminDate||new Date(),classroomAdminEffectivePeriod())}
+function renderClassroomManagement(){
+ const date=classroomAdminDate||new Date();const periodId=classroomAdminEffectivePeriod();const slot=classroomSlotById(periodId);const entries=classroomEntriesForPeriod(date,periodId);
+ const baseCount=entries.filter(e=>!e.manual).length,adjustCount=entries.filter(e=>e.manual).length,unassigned=entries.filter(e=>!(e.room||'').trim()).length;
+ const weekday=date.getDay();const regularDay=weekday>=1&&weekday<=5;
+ const cards=entries.map(entry=>{
+   const room=(entry.room||'').trim();const cls=entry.conflict?'conflict':entry.relocationCategory==='lab'?'lab':!room?'unassigned':'';
+   const status=entry.conflict?'VERIFICAR':entry.relocationCategory==='lab'?'NO LAB':entry.manual?'AJUSTE':'GRADE';
+   return `<div class="classroom-admin-card ${cls}" onclick="openClassroomAdminEditor('${escapeHtml(entry.id)}')"><div class="ca-top"><div class="ca-room">${escapeHtml(room||'A DEFINIR')}</div><span class="tag ${entry.conflict?'tag-red':entry.relocationCategory==='lab'?'tag-blue':entry.manual?'tag-orange':'tag-green'}">${status}</span></div><div class="ca-course">${escapeHtml(entry.purpose||'Turma / atividade')}</div><div class="ca-prof">${escapeHtml(entry.professor||'Professor a definir')}</div><div class="ca-time">${escapeHtml(entry.startTime)}–${escapeHtml(entry.endTime)} · ${formatDate(date,{weekday:'long',day:'2-digit',month:'2-digit'})}</div><div class="ca-hint">Clique para trocar sala ou professor.${entry.manual?' Existe um ajuste específico para esta data.':''}</div></div>`;
+ }).join('');
+ document.getElementById('adminContent').innerHTML=`<div class="summary-grid"><div class="summary"><div class="label">Turmas neste horário</div><div class="value">${entries.length}</div><div class="detail">Dados que alimentam o Painel das Salas</div></div><div class="summary"><div class="label">Grade regular</div><div class="value">${baseCount}</div><div class="detail">Professor e turma da grade-base</div></div><div class="summary"><div class="label">Ajustes do dia</div><div class="value">${adjustCount}</div><div class="detail">Mudanças pontuais de sala/professor</div></div><div class="summary"><div class="label">Sala a definir</div><div class="value">${unassigned}</div><div class="detail">Turmas sem local definido</div></div></div>
+ <div class="classroom-admin-controls"><div class="classroom-admin-date"><button class="icon-btn" onclick="moveClassroomAdminDate(-1)">‹</button><button class="btn btn-secondary" onclick="classroomAdminToday()">Hoje</button><button class="icon-btn" onclick="moveClassroomAdminDate(1)">›</button><strong>${formatDate(date,{weekday:'long',day:'2-digit',month:'long',year:'numeric'})}</strong></div><div class="classroom-admin-periods">${CLASSROOM_PERIODS.map(p=>`<button class="${periodId===p.id?'active':''}" onclick="setClassroomAdminPeriod('${p.id}')">${p.label}</button>`).join('')}</div></div>
+ <div class="panel" style="margin-bottom:16px;border-color:#cce7da;background:#f9fdfb"><div class="room-admin-header" style="margin:0"><div><h3>Gestão operacional das salas</h3><div class="sub" style="margin:5px 0 0">Esta tela mostra exatamente as turmas consideradas pelo <b>Painel das Salas de Aula</b> para a data e horário selecionados. Clique em uma turma para trocar sala ou professor. Você pode aplicar a mudança somente nesta data ou na grade semanal.</div></div><button class="btn btn-success" onclick="location.hash='#painel-salas'">Abrir Painel das Salas</button></div></div>
+ <div class="classroom-admin-grid">${cards||(regularDay?'<div class="classroom-admin-empty"><strong>Nenhuma turma encontrada.</strong><br>Confira a grade e o horário selecionado.</div>':'<div class="classroom-admin-empty"><strong>Sem grade regular neste dia.</strong><br>A grade de salas é carregada de segunda a sexta-feira.</div>')}</div>`;
+}
+function findClassroomAdminEntry(entryId){return classroomAdminCurrentEntries().find(e=>String(e.id)===String(entryId))||null}
+function openClassroomAdminEditor(entryId){
+ const entry=findClassroomAdminEntry(entryId);if(!entry){toast('Não foi possível localizar esta turma.');return}
+ const date=classroomAdminDate||new Date();
+ document.getElementById('classroomEditEntryId').value=entry.id||'';document.getElementById('classroomEditBookingId').value=entry.bookingId||'';document.getElementById('classroomEditDate').value=localISO(date);document.getElementById('classroomEditStart').value=entry.startTime;document.getElementById('classroomEditEnd').value=entry.endTime;
+ document.getElementById('classroomEditPurpose').value=entry.purpose||'';document.getElementById('classroomEditTime').value=`${entry.startTime}–${entry.endTime}`;document.getElementById('classroomEditRoom').value=(entry.room||'').replace(/^CONFLITO.*$/i,'');document.getElementById('classroomEditProfessor').value=entry.professor||'';
+ const context=document.getElementById('classroomEditContext');context.innerHTML=`<b>${escapeHtml(formatDate(date,{weekday:'long',day:'2-digit',month:'long',year:'numeric'}))}</b> · ${escapeHtml(entry.purpose||'Turma')}<br>${entry.manual?'Esta turma possui um ajuste específico nesta data.':'Exibindo a informação da grade-base do semestre.'}`;
+ const baselineExists=(state.classSchedule||[]).some(e=>e.id===entry.id);const baseLabel=document.getElementById('classroomBaseScopeLabel');baseLabel.style.opacity=baselineExists?'1':'.45';baseLabel.querySelector('input').disabled=!baselineExists;
+ document.querySelector('input[name="classroomEditScope"][value="date"]').checked=true;
+ const remove=document.getElementById('removeClassroomOverrideBtn');remove.classList.toggle('hidden',!entry.bookingId);
+ document.getElementById('classroomEditAlert').classList.add('hidden');document.getElementById('classroomEditModal').classList.remove('hidden');
+}
+function closeClassroomAdminEditor(){document.getElementById('classroomEditModal').classList.add('hidden')}
+function classroomEditError(msg){const el=document.getElementById('classroomEditAlert');el.textContent=msg;el.classList.remove('hidden')}
+async function saveClassroomAdminEdit(e){
+ e.preventDefault();const entryId=document.getElementById('classroomEditEntryId').value,bookingId=document.getElementById('classroomEditBookingId').value,date=document.getElementById('classroomEditDate').value,startTime=document.getElementById('classroomEditStart').value,endTime=document.getElementById('classroomEditEnd').value,purpose=document.getElementById('classroomEditPurpose').value.trim(),room=document.getElementById('classroomEditRoom').value.trim(),professor=document.getElementById('classroomEditProfessor').value.trim(),scope=document.querySelector('input[name="classroomEditScope"]:checked')?.value||'date';
+ if(!room||!professor){classroomEditError('Informe a sala e o professor.');return}
+ const baseline=(state.classSchedule||[]).find(x=>x.id===entryId);
+ if(scope==='base'){
+   if(!baseline){classroomEditError('Este registro é um ajuste pontual e não possui uma linha correspondente na grade-base.');return}
+   if(isTrackableProfessor(professor)){
+     const profConflict=(state.classSchedule||[]).find(x=>x.id!==baseline.id&&x.weekday===baseline.weekday&&overlaps(startTime,endTime,x.startTime,x.endTime)&&sameProfessor(x.professor,professor));
+     if(profConflict){classroomEditError(`${professor} já consta em ${profConflict.purpose} neste mesmo dia e horário na grade.`);return}
+   }
+   const assignments={...defaultRoomAssignments(),...(state.roomAssignments||{}),[purpose]:room};const conflicts=roomAssignmentConflicts(assignments);if(conflicts.length){const c=conflicts[0];classroomEditError(`${c.room} ficaria atribuída a ${c.a.purpose} e ${c.b.purpose} no mesmo horário.`);return}
+   baseline.professor=professor;state.roomAssignments=assignments;saveState();closeClassroomAdminEditor();await persistGradeAndSync('Atualiza sala/professor da grade',`${purpose} · ${['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'][baseline.weekday]} · ${startTime}–${endTime} · ${room} · ${professor}`);renderClassroomManagement();return;
+ }
+ const targetId=bookingId||state.bookings.find(b=>b.date===date&&samePurpose(b.purpose,purpose)&&overlaps(startTime,endTime,b.startTime,b.endTime))?.id||'';
+ const roomId=makeCustomResourceId(room);
+ const roomConflict=state.bookings.find(b=>b.id!==targetId&&b.date===date&&b.status!=='cancelled'&&b.resourceId===roomId&&overlaps(startTime,endTime,b.startTime,b.endTime));if(roomConflict){classroomEditError(`${room} já possui um agendamento das ${roomConflict.startTime} às ${roomConflict.endTime}.`);return}
+ const baselineRoomConflict=classroomBaselineConflicts(room,date,startTime,endTime,purpose)[0];if(baselineRoomConflict){classroomEditError(`${room} já está vinculada a ${baselineRoomConflict.purpose} na grade neste horário.`);return}
+ if(isTrackableProfessor(professor)){
+   const manualConflict=professorBookings(professor,date,startTime,endTime,targetId,false).find(b=>!samePurpose(b.purpose,purpose));if(manualConflict){classroomEditError(`${professor} já possui agendamento em ${bookingResourceName(manualConflict)} neste horário.`);return}
+   const gradeConflict=professorBaselineEntries(professor,date,startTime,endTime).find(x=>!samePurpose(x.purpose,purpose));if(gradeConflict){classroomEditError(`${professor} já consta em ${gradeConflict.purpose} neste horário na grade.`);return}
+ }
+ const record={id:targetId||crypto.randomUUID(),spaceCategory:'classroom',resourceId:roomId,customSpaceName:room,responsible:professor,purpose,date,startTime,endTime,status:'confirmed',notes:'Ajuste pontual realizado pela Gestão das Salas.'};
+ if(targetId){const idx=state.bookings.findIndex(b=>b.id===targetId);if(idx>=0)state.bookings[idx]={...state.bookings[idx],...record};else state.bookings.push(record)}else state.bookings.push(record);
+ saveState();closeClassroomAdminEditor();await persistAndSync(targetId?'Atualiza ajuste de sala de aula':'Cria ajuste de sala de aula',`${purpose} · ${date} · ${startTime}–${endTime} · ${room} · ${professor}`);renderClassroomManagement();
+}
+async function removeClassroomAdminOverride(){
+ const id=document.getElementById('classroomEditBookingId').value;if(!id)return;if(!confirm('Remover o ajuste pontual desta data e voltar a usar a grade-base?'))return;const b=state.bookings.find(x=>x.id===id);state.bookings=state.bookings.filter(x=>x.id!==id);saveState();closeClassroomAdminEditor();await persistAndSync('Remove ajuste de sala de aula',b?`${b.purpose} · ${b.date} · ${b.startTime}–${b.endTime}`:id);renderClassroomManagement();
+}
+
+function renderLegacyAgenda(){
  const today=localISO(new Date());const confirmed=state.bookings.filter(b=>b.status==='confirmed').length;const todayCount=state.bookings.filter(b=>b.date===today).length;const occupiedNow=new Set(state.bookings.filter(b=>b.status==='confirmed'&&currentStatus(b)).map(b=>b.resourceId)).size;
  document.getElementById('adminContent').innerHTML=`<div class="summary-grid"><div class="summary"><div class="label">Espaços fixos</div><div class="value">${state.resources.filter(r=>r.active).length}</div><div class="detail">5 laboratórios + auditório · outros sob demanda</div></div><div class="summary"><div class="label">Agendamentos hoje</div><div class="value">${todayCount}</div><div class="detail">Somando todos os turnos</div></div><div class="summary"><div class="label">Em uso agora</div><div class="value">${occupiedNow}</div><div class="detail">Inclui espaços informados manualmente</div></div><div class="summary"><div class="label">Confirmados</div><div class="value">${confirmed}</div><div class="detail">Base sincronizada</div></div></div>
  <div class="toolbar"><div class="toolbar-group"><button class="icon-btn" onclick="moveCalendar(-1)">‹</button><button class="btn btn-secondary" onclick="goToday()">Hoje</button><button class="icon-btn" onclick="moveCalendar(1)">›</button><strong id="rangeTitle"></strong></div><div class="toolbar-group"><div class="segmented"><button class="${currentView==='week'?'active':''}" onclick="changeView('week')">Semana</button><button class="${currentView==='month'?'active':''}" onclick="changeView('month')">Mês</button></div><button class="btn btn-secondary" onclick="exportJson()">⇩ Exportar JSON</button></div></div><div id="calendarHost" class="calendar-card"></div>`;
@@ -853,7 +984,7 @@ function renderRoomAssignments(){
  const purposes=allClassPurposes();const assigned=purposes.filter(p=>(state.roomAssignments?.[p]||'').trim()).length;const unassigned=purposes.length-assigned;
  const groups=CLASS_TEACHER_GRIDS.map(g=>`<section class="panel" style="margin-bottom:18px"><div class="room-admin-header"><div><h3>${escapeHtml(g.course)}</h3><div class="sub" style="margin:5px 0 0">Defina a sala-base de cada turma para o semestre ${SEMESTER_2026_2.label}. A alteração vale para todos os dias da grade.</div></div><span class="tag tag-green">${g.phases.length} turma${g.phases.length>1?'s':''}</span></div><div class="room-assignment-grid">${g.phases.map(ph=>{const purpose=classPurpose(g.course,ph.phase);return `<div class="room-assignment-card"><strong>${escapeHtml(purpose)}</strong><small>Professor e horário são carregados da grade semestral</small><input class="room-assignment-input" data-purpose="${escapeHtml(purpose)}" value="${escapeHtml(state.roomAssignments?.[purpose]||'')}" placeholder="Ex.: Sala 04"></div>`}).join('')}</div></section>`).join('');
  document.getElementById('adminContent').innerHTML=`<div class="room-summary"><div class="summary"><div class="label">Turmas na grade</div><div class="value">${purposes.length}</div><div class="detail">ADS, TPG, Administração e Pedagogia</div></div><div class="summary"><div class="label">Salas definidas</div><div class="value">${assigned}</div><div class="detail">Prontas para o painel público</div></div><div class="summary"><div class="label">A definir</div><div class="value">${unassigned}</div><div class="detail">Turmas sem sala-base informada</div></div></div>
- <div class="panel" style="margin-bottom:18px;border-color:#cce7da;background:#f9fdfb"><div class="room-admin-header" style="margin:0"><div><h3>Como funciona</h3><div class="sub" style="margin:5px 0 0">A grade 2026/2 já contém professor, curso, fase, dia e horário. Aqui você informa somente a sala. Para uma mudança pontual em uma data específica, use <b>Novo agendamento → Sala de aula</b>; essa reserva aparecerá como ajuste no painel.</div></div><button class="btn btn-success" onclick="location.hash='#painel-salas'">Abrir painel das salas</button></div></div>
+ <div class="panel" style="margin-bottom:18px;border-color:#cce7da;background:#f9fdfb"><div class="room-admin-header" style="margin:0"><div><h3>Como funciona</h3><div class="sub" style="margin:5px 0 0">A grade 2026/2 já contém professor, curso, fase, dia e horário. Aqui você informa somente a sala. Para mudanças de sala ou professor em uma data específica, use <b>Gestão das Salas</b>. Esta área fica reservada para a configuração da grade-base do semestre.</div></div><button class="btn btn-success" onclick="location.hash='#painel-salas'">Abrir painel das salas</button></div></div>
  ${groups}<div style="position:sticky;bottom:12px;display:flex;justify-content:flex-end;pointer-events:none"><button class="btn btn-success" style="pointer-events:auto;box-shadow:0 10px 28px rgba(12,119,76,.28)" onclick="saveRoomAssignments()">Salvar salas no GitHub</button></div>`;
 }
 async function saveRoomAssignments(){
@@ -870,10 +1001,11 @@ function bookingHasEnded(b,now=new Date()){
 }
 function renderBookingList(){
  const now=new Date();
- const upcoming=[...state.bookings].filter(b=>!bookingHasEnded(b,now)).sort((a,b)=>(a.date+a.startTime).localeCompare(b.date+b.startTime));
- const used=[...state.bookings].filter(b=>bookingHasEnded(b,now)).sort((a,b)=>(b.date+b.startTime).localeCompare(a.date+a.startTime));
+ const labBookings=state.bookings.filter(b=>bookingCategory(b)!=='classroom');
+ const upcoming=[...labBookings].filter(b=>!bookingHasEnded(b,now)).sort((a,b)=>(a.date+a.startTime).localeCompare(b.date+b.startTime));
+ const used=[...labBookings].filter(b=>bookingHasEnded(b,now)).sort((a,b)=>(b.date+b.startTime).localeCompare(a.date+a.startTime));
  const renderItem=(b,isUsed=false)=>`<div class="resource-item ${isUsed?'used-booking':''}" onclick="openBookingModal('${b.id}')" style="cursor:pointer"><span><span class="resource-dot" style="background:${isUsed?'var(--danger)':bookingCategory(b)==='classroom'?'var(--success)':'var(--primary)'}"></span><span><strong>${escapeHtml(bookingResourceName(b))}</strong><br><small>${bookingCategory(b)==='classroom'?'Sala de aula':'Laboratório / espaço'} · ${formatDate(parseLocal(b.date),{day:'2-digit',month:'2-digit',year:'numeric'})} · ${periodLabel(b)} · ${escapeHtml(b.purpose)} — ${escapeHtml(b.responsible)}</small></span></span><span class="tag ${isUsed?'tag-red':b.status==='confirmed'?'tag-green':'tag-orange'}">${isUsed?'Utilizado':b.status==='confirmed'?'Confirmado':'Pendente'}</span></div>`;
- document.getElementById('adminContent').innerHTML=`<div class="panel"><div class="toolbar"><div><h3 style="margin:0">Todos os agendamentos</h3><div class="sub" style="margin:5px 0 0">Os agendamentos atuais e futuros ficam no topo. Os já utilizados aparecem em vermelho no final.</div></div><button class="btn btn-secondary" onclick="exportJson()">Exportar JSON</button></div>
+ document.getElementById('adminContent').innerHTML=`<div class="panel"><div class="toolbar"><div><h3 style="margin:0">Laboratórios e espaços</h3><div class="sub" style="margin:5px 0 0">Os agendamentos atuais e futuros ficam no topo. Os já utilizados aparecem em vermelho no final.</div></div><button class="btn btn-secondary" onclick="exportJson()">Exportar JSON</button></div>
  <div class="booking-group-title">Atuais e próximos · ${upcoming.length}</div><div class="resource-list">${upcoming.map(b=>renderItem(b,false)).join('')||'<div class="empty-state">Nenhum agendamento atual ou futuro.</div>'}</div>
  <div class="booking-group-title used">Agendamentos utilizados · ${used.length}</div><div class="resource-list">${used.map(b=>renderItem(b,true)).join('')||'<div class="empty-state">Nenhum agendamento utilizado.</div>'}</div></div>`;
 }
