@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T18:35:41.717Z",
+  "updatedAt": "2026-08-25T18:44:44.996Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1018,6 +1018,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · sem código · Papel Toalha · quantidade 7 · saldo 31"
+    },
+    {
+      "id": "9894d333-8368-4136-88e2-8dcf3b56583d",
+      "timestamp": "2026-08-25T18:44:44.358Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 0022 · Detergente louça · quantidade 3 · saldo 45"
     }
   ]
 }
