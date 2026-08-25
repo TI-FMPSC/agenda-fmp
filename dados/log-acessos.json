@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T15:55:41.335Z",
+  "updatedAt": "2026-08-25T16:20:31.753Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -608,6 +608,15 @@
     {
       "id": "bdeac142-6080-4d06-a99d-b2179e468d99",
       "timestamp": "2026-08-25T15:55:40.734Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "d51731cc-ee6c-4972-9479-86458f1d2fdc",
+      "timestamp": "2026-08-25T16:20:31.265Z",
       "username": "amandafranca",
       "name": "Amanda",
       "action": "Login realizado",
