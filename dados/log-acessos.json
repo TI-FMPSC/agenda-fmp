@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T16:57:28.457Z",
+  "updatedAt": "2026-08-25T16:58:58.973Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -757,6 +757,15 @@
       "action": "Exclui material",
       "module": "Estoque FMP",
       "details": "711 · Lustra Móveis"
+    },
+    {
+      "id": "d6ae7924-7b9f-4b74-9100-e6f75225a1a8",
+      "timestamp": "2026-08-25T16:58:58.567Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "0027 · Lustra Móveis"
     }
   ]
 }
