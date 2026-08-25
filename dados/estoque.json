@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-25T16:24:39.965Z",
-    "updatedAt": "2026-08-25T16:24:39.965Z",
+    "lastSync": "2026-08-25T16:28:53.610Z",
+    "updatedAt": "2026-08-25T16:28:53.610Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2590,24 +2590,6 @@
       "barcode": "",
       "description": "2 fardos com 50 cada",
       "expirationDate": "",
-      "createdAt": "2026-08-25",
-      "updatedAt": "2026-08-25"
-    },
-    {
-      "id": "id_qvqajb4tmt8vl2f2",
-      "code": "Limpa Vidros com alcool com válvula",
-      "name": "008",
-      "categoryId": "cat_limpeza",
-      "unit": "UN",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": 3,
-      "currentStock": 0,
-      "avgCost": 0,
-      "status": "active",
-      "barcode": "",
-      "expirationDate": "",
-      "description": "Marca: SEBOLD | Tamanho/apresentação: 500ML |",
       "createdAt": "2026-08-25",
       "updatedAt": "2026-08-25"
     }
