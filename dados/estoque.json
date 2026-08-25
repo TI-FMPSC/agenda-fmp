@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-25T17:52:55.405Z",
-    "updatedAt": "2026-08-25T17:52:55.405Z",
+    "lastSync": "2026-08-25T18:35:42.750Z",
+    "updatedAt": "2026-08-25T18:35:42.750Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1936,14 +1936,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 38,
+      "currentStock": 31,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: com 5 sacos com 4 pacotes cada | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-17"
+      "updatedAt": "2026-08-25"
     },
     {
       "id": "mat_lim_031",
@@ -2588,8 +2588,8 @@
       "avgCost": 0,
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Monitor Full HD 21,5\" AOC",
+      "expirationDate": "",
       "createdAt": "2026-08-25",
       "updatedAt": "2026-08-25"
     }
@@ -3170,6 +3170,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-25T17:52:53.652Z"
+    },
+    {
+      "id": "id_5sbus7q9mt909lbp",
+      "materialId": "mat_lim_030",
+      "type": "saida",
+      "date": "2026-08-25",
+      "quantity": 7,
+      "unitCost": 0,
+      "previousStock": 38,
+      "newStock": 31,
+      "effect": -7,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-25T18:35:40.981Z"
     }
   ],
   "users": []
