@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-25T17:14:18.209Z",
-    "updatedAt": "2026-08-25T17:14:18.209Z",
+    "lastSync": "2026-08-25T17:15:31.173Z",
+    "updatedAt": "2026-08-25T17:15:31.173Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1522,14 +1522,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 15,
-      "currentStock": 1,
+      "currentStock": 2,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: côco | Marca: BONZÃO | Tamanho/apresentação: 500ML",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-19"
+      "updatedAt": "2026-08-25"
     },
     {
       "id": "mat_lim_006",
@@ -3056,6 +3056,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-25T16:58:58.547Z"
+    },
+    {
+      "id": "id_azm37061mt8xege0",
+      "materialId": "mat_lim_002",
+      "type": "entrada",
+      "date": "2026-08-25",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 1,
+      "newStock": 2,
+      "effect": 1,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-25T17:15:29.016Z"
     }
   ],
   "users": []
