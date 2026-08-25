@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-25T16:54:17.993Z",
-    "updatedAt": "2026-08-25T16:54:17.993Z",
+    "lastSync": "2026-08-25T16:57:30.056Z",
+    "updatedAt": "2026-08-25T16:57:30.056Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1656,24 +1656,6 @@
       "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-19"
-    },
-    {
-      "id": "mat_lim_013",
-      "code": "711",
-      "name": "Lustra Móveis",
-      "categoryId": "cat_limpeza",
-      "unit": "ML",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": "",
-      "currentStock": 7,
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Especificação: Lavanda | Marca: SEBOLD | Tamanho/apresentação: 200 ML | Observações: atualizado em 14/08",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
     },
     {
       "id": "mat_lim_014",
