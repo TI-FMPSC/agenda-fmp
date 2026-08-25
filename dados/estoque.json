@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-25T16:59:00.245Z",
-    "updatedAt": "2026-08-25T16:59:00.245Z",
+    "lastSync": "2026-08-25T17:14:14.418Z",
+    "updatedAt": "2026-08-25T17:14:14.418Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1514,24 +1514,6 @@
       "updatedAt": "2026-08-16"
     },
     {
-      "id": "mat_lim_001",
-      "code": "007",
-      "name": "Detergente louça",
-      "categoryId": "cat_limpeza",
-      "unit": "ML",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": 15,
-      "currentStock": 5,
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Especificação: Limão Verde | Marca: BONZÃO | Tamanho/apresentação: 500ML | Observações: atualizado em 14/08",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-19"
-    },
-    {
       "id": "mat_lim_002",
       "code": "006",
       "name": "Detergente louça",
@@ -2588,8 +2570,8 @@
       "avgCost": 0,
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Especificação: Lavanda | Marca: SEBOLD | Tamanho/apresentação: 200 ML",
+      "expirationDate": "",
       "createdAt": "2026-08-25",
       "updatedAt": "2026-08-25"
     }
