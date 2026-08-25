@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T18:45:14.713Z",
+  "updatedAt": "2026-08-25T18:46:04.923Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1036,6 +1036,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 0013 · Amaciante de Roupas · quantidade 1 · saldo 22"
+    },
+    {
+      "id": "61fe22f7-d3a9-46cb-add0-4dad9943b10b",
+      "timestamp": "2026-08-25T18:46:04.049Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 0023 · Alcool Etílico Hidratado 92,8% · quantidade 1 · saldo 107"
     }
   ]
 }
