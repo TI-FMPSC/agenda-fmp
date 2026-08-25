@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-25T15:32:41.005Z",
-    "updatedAt": "2026-08-25T15:32:41.005Z",
+    "lastSync": "2026-08-25T15:33:29.811Z",
+    "updatedAt": "2026-08-25T15:33:29.811Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2584,7 +2584,7 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 30,
-      "currentStock": 100,
+      "currentStock": 90,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
@@ -2994,6 +2994,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-25T15:31:59.354Z"
+    },
+    {
+      "id": "id_i40u9cq7mt8tr9by",
+      "materialId": "id_vf4h0b18mt8tpczd",
+      "type": "saida",
+      "date": "2026-08-25",
+      "quantity": 10,
+      "unitCost": "",
+      "previousStock": 100,
+      "newStock": 90,
+      "effect": -10,
+      "sector": "",
+      "document": "",
+      "notes": "Setor : Acadêmica 10 caixas dia 25/08.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-25T15:33:27.934Z"
     }
   ],
   "users": []
