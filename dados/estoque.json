@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-25T16:49:43.176Z",
-    "updatedAt": "2026-08-25T16:49:43.176Z",
+    "lastSync": "2026-08-25T16:52:32.864Z",
+    "updatedAt": "2026-08-25T16:52:32.864Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2560,7 +2560,7 @@
     {
       "id": "id_z1c2yki0mt8vuw4x",
       "code": "027",
-      "name": "Limpa Vidros com alcool com válvula",
+      "name": "Limpa Vidros com alcool e válvula",
       "categoryId": "cat_limpeza",
       "unit": "UN",
       "supplierId": "",
