@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T15:31:59.989Z",
+  "updatedAt": "2026-08-25T15:32:39.583Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -586,6 +586,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "Caixa Arquivo · 0026"
+    },
+    {
+      "id": "5715522b-176b-4ef7-bfae-2afb10217421",
+      "timestamp": "2026-08-25T15:32:39.092Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "0026 · Caixa Arquivo"
     }
   ]
 }
