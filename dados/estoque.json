@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-25T16:30:37.581Z",
-    "updatedAt": "2026-08-25T16:30:37.581Z",
+    "lastSync": "2026-08-25T16:32:18.489Z",
+    "updatedAt": "2026-08-25T16:32:18.489Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1550,6 +1550,24 @@
       "updatedAt": "2026-08-19"
     },
     {
+      "id": "mat_lim_003",
+      "code": "008",
+      "name": "Limpa Vidros com alcool com válvula",
+      "categoryId": "cat_limpeza",
+      "unit": "ML",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 15,
+      "currentStock": 0,
+      "avgCost": "",
+      "status": "active",
+      "barcode": "",
+      "description": "Marca: SEBOLD | Tamanho/apresentação: 500ML | Observações: atualizado em 14/08",
+      "expirationDate": "",
+      "createdAt": "2026-08-16",
+      "updatedAt": "2026-08-19"
+    },
+    {
       "id": "mat_lim_004",
       "code": "009",
       "name": "Limpa Vidros com alcool uso geral",
@@ -2574,6 +2592,24 @@
       "expirationDate": "",
       "createdAt": "2026-08-25",
       "updatedAt": "2026-08-25"
+    },
+    {
+      "id": "id_z1c2yki0mt8vuw4x",
+      "code": "027",
+      "name": "Limpa Vidros com alcool com válvula",
+      "categoryId": "cat_limpeza",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 10,
+      "currentStock": 3,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "expirationDate": "",
+      "description": "Marca: SEBOLD | Tamanho/apresentação: 500ML",
+      "createdAt": "2026-08-25",
+      "updatedAt": "2026-08-25"
     }
   ],
   "movements": [
@@ -2992,6 +3028,22 @@
       "notes": "Setor : Acadêmica 10 caixas dia 25/08.",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-25T15:33:27.934Z"
+    },
+    {
+      "id": "id_is6eriu5mt8vuw4x",
+      "materialId": "id_z1c2yki0mt8vuw4x",
+      "type": "entrada",
+      "date": "2026-08-25",
+      "quantity": 3,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 3,
+      "effect": 3,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-25T16:32:16.689Z"
     }
   ],
   "users": []
