@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-08-25T18:17:29.295Z",
+  "updatedAt": "2026-08-25T18:18:21.367Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -1864,7 +1864,7 @@
       "id": "94739a7c-8b60-4b46-b762-0e0dd83bffb4",
       "spaceCategory": "lab",
       "resourceId": "lab2",
-      "responsible": "Amanda",
+      "responsible": "fernanda",
       "purpose": "Administração — 7ª Fase",
       "startTime": "20:30",
       "endTime": "22:00",
