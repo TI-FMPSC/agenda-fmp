@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-25T16:52:31.202Z",
+  "updatedAt": "2026-08-25T16:54:16.603Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -730,6 +730,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "027 · Limpa Vidros com alcool e válvula"
+    },
+    {
+      "id": "3199ca93-14ce-4678-b42b-dcc9177c4378",
+      "timestamp": "2026-08-25T16:54:16.252Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Entrada · sem código · Saponáceo Cremoso · quantidade 1 · saldo 6"
     }
   ]
 }
