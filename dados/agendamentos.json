@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-08-26T12:31:55.659Z",
+  "updatedAt": "2026-08-26T12:33:56.297Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -1897,7 +1897,7 @@
     {
       "id": "b872cb4b-ee44-5b42-abce-41ed3bdb872b",
       "resourceId": "lab4",
-      "responsible": "leandro",
+      "responsible": "Leandro Pickler",
       "purpose": "ADS — 4ª Fase",
       "date": "2026-08-26",
       "startTime": "08:00",
