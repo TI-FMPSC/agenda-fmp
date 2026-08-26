@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-08-26T11:35:01.778Z",
+  "updatedAt": "2026-08-26T11:35:46.327Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -1886,7 +1886,7 @@
       "id": "6f5cd40b-74c2-5418-b83e-e17ae76bcd9f",
       "resourceId": "lab3",
       "responsible": "Fabiana Boff",
-      "purpose": "TPG — 3ª Fase",
+      "purpose": "ADS — 2ª Fase",
       "date": "2026-08-26",
       "startTime": "08:00",
       "endTime": "11:10",
