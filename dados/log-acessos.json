@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-26T11:35:04.519Z",
+  "updatedAt": "2026-08-26T11:35:49.007Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1171,6 +1171,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "TPG — 3ª Fase · Fabiana Boff · 2026-08-26 · 08:00–11:10 · Laboratório 03"
+    },
+    {
+      "id": "cd9dfdd1-4e9e-4937-a237-2dcc16c634a1",
+      "timestamp": "2026-08-26T11:35:48.622Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "ADS — 2ª Fase · Fabiana Boff · 2026-08-26 · 08:00–11:10 · Laboratório 03"
     }
   ]
 }
