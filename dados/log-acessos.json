@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-26T12:31:58.710Z",
+  "updatedAt": "2026-08-26T12:33:59.192Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1198,6 +1198,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "ADS — 4ª Fase · leandro · 2026-08-26 · 08:00–11:10 · Laboratório 04"
+    },
+    {
+      "id": "1b720ebd-31bb-4c10-9898-cd8fbb383187",
+      "timestamp": "2026-08-26T12:33:58.784Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "ADS — 4ª Fase · Leandro Pickler · 2026-08-26 · 08:00–11:10 · Laboratório 04"
     }
   ]
 }
