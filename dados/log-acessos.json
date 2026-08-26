@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-26T01:47:48.762Z",
+  "updatedAt": "2026-08-26T02:02:16.926Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1126,6 +1126,15 @@
       "action": "Cria usuário administrativo",
       "module": "Usuários",
       "details": "leandropickler · Leandro Pickler"
+    },
+    {
+      "id": "08a6af9a-bdc2-46c4-a5fc-41b96e9e0020",
+      "timestamp": "2026-08-26T02:02:16.233Z",
+      "username": "admin",
+      "name": "Administrador",
+      "action": "Atualiza configurações do sistema",
+      "module": "Configurações",
+      "details": "Agenda de Espaços FMP"
     }
   ]
 }
