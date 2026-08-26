@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-26T12:19:21.755Z",
+  "updatedAt": "2026-08-26T12:31:58.710Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1189,6 +1189,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "4fb29287-d024-4b98-b3bb-c1f7b73dcf1e",
+      "timestamp": "2026-08-26T12:31:58.189Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "ADS — 4ª Fase · leandro · 2026-08-26 · 08:00–11:10 · Laboratório 04"
     }
   ]
 }
