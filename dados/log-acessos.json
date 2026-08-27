@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-27T20:34:38.895Z",
+  "updatedAt": "2026-08-27T20:38:26.895Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1405,6 +1405,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "b · bobina relógio ponto"
+    },
+    {
+      "id": "c6078481-122a-4e3e-b7aa-d07420e88ab6",
+      "timestamp": "2026-08-27T20:38:26.397Z",
+      "username": "deborabombazaro",
+      "name": "Débora Bombazaro",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "PG · Pistola grande (cola quente)"
     }
   ]
 }
