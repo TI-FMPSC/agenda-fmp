@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-27T00:49:55.457Z",
+  "updatedAt": "2026-08-27T00:49:59.764Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1252,6 +1252,15 @@
       "action": "Atualiza logo do estoque",
       "module": "Estoque FMP",
       "details": "Nova logomarca carregada"
+    },
+    {
+      "id": "1d329221-59dc-4d9d-9378-b5f24eee1654",
+      "timestamp": "2026-08-27T00:49:58.787Z",
+      "username": "admin",
+      "name": "Administrador",
+      "action": "Atualiza configurações do estoque",
+      "module": "Estoque FMP",
+      "details": "ESTOQUE FMP"
     }
   ]
 }
