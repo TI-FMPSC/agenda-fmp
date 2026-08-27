@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-27T20:39:16.594Z",
+  "updatedAt": "2026-08-27T20:39:34.890Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1432,6 +1432,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · PG · Pistola grande (cola quente) · quantidade 2 · saldo 8"
+    },
+    {
+      "id": "5e13605c-7f8b-43c7-bd54-c798c48eacc7",
+      "timestamp": "2026-08-27T20:39:34.465Z",
+      "username": "deborabombazaro",
+      "name": "Débora Bombazaro",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · PP · Pistola pequena(cola quente) · quantidade 2 · saldo 8"
     }
   ]
 }
