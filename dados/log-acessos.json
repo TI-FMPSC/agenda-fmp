@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-27T18:47:11.995Z",
+  "updatedAt": "2026-08-27T19:24:37.353Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1351,6 +1351,15 @@
       "action": "Atualiza sala/professor da grade",
       "module": "Grade de salas",
       "details": "Administração — 6ª Fase · Qui · 18:50–20:20 · 11 · Mariane R. Estefano"
+    },
+    {
+      "id": "1b81dc2e-2eb4-4fbf-ab0f-57ecf59ab826",
+      "timestamp": "2026-08-27T19:24:36.855Z",
+      "username": "deborabombazaro",
+      "name": "Débora Bombazaro",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
