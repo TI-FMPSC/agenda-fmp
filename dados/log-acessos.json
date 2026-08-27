@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-27T20:39:34.890Z",
+  "updatedAt": "2026-08-27T20:39:58.751Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1441,6 +1441,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · PP · Pistola pequena(cola quente) · quantidade 2 · saldo 8"
+    },
+    {
+      "id": "c4b9de8d-4905-4ed4-a761-832451fd81e1",
+      "timestamp": "2026-08-27T20:39:58.375Z",
+      "username": "deborabombazaro",
+      "name": "Débora Bombazaro",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · b · bobina relógio ponto · quantidade 6 · saldo 24"
     }
   ]
 }
