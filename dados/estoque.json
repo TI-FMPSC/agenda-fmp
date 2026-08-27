@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-27T20:34:39.942Z",
-    "updatedAt": "2026-08-27T20:34:39.942Z",
+    "lastSync": "2026-08-27T20:38:27.989Z",
+    "updatedAt": "2026-08-27T20:38:27.989Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2606,6 +2606,24 @@
       "avgCost": 0,
       "status": "active",
       "barcode": "",
+      "description": "",
+      "expirationDate": "",
+      "createdAt": "2026-08-27",
+      "updatedAt": "2026-08-27"
+    },
+    {
+      "id": "id_bt3loj8rmtbzj5tz",
+      "code": "PG",
+      "name": "Pistola grande (cola quente)",
+      "categoryId": "cat_escritorio",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 0,
+      "currentStock": 10,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
       "expirationDate": "",
       "description": "",
       "createdAt": "2026-08-27",
@@ -3284,6 +3302,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "deborabombazaro",
       "createdAt": "2026-08-27T20:34:38.288Z"
+    },
+    {
+      "id": "id_ivnqls8umtbzj5tz",
+      "materialId": "id_bt3loj8rmtbzj5tz",
+      "type": "entrada",
+      "date": "2026-08-27",
+      "quantity": 10,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 10,
+      "effect": 10,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "deborabombazaro",
+      "createdAt": "2026-08-27T20:38:26.375Z"
     }
   ],
   "users": []
