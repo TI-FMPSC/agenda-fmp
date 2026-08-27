@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-27T20:38:26.895Z",
+  "updatedAt": "2026-08-27T20:39:00.849Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1414,6 +1414,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "PG · Pistola grande (cola quente)"
+    },
+    {
+      "id": "d849e415-8ccd-40c1-b3e9-3af091eac73e",
+      "timestamp": "2026-08-27T20:39:00.382Z",
+      "username": "deborabombazaro",
+      "name": "Débora Bombazaro",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "PP · Pistola pequena(cola quente)"
     }
   ]
 }
