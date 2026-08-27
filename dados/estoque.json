@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-27T20:39:02.356Z",
-    "updatedAt": "2026-08-27T20:39:02.356Z",
+    "lastSync": "2026-08-27T20:39:17.825Z",
+    "updatedAt": "2026-08-27T20:39:17.825Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2620,7 +2620,7 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 0,
-      "currentStock": 10,
+      "currentStock": 8,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
@@ -2642,8 +2642,8 @@
       "avgCost": 0,
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "",
+      "expirationDate": "",
       "createdAt": "2026-08-27",
       "updatedAt": "2026-08-27"
     }
@@ -3352,6 +3352,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "deborabombazaro",
       "createdAt": "2026-08-27T20:39:00.358Z"
+    },
+    {
+      "id": "id_rvgcm0vdmtbzk88v",
+      "materialId": "id_bt3loj8rmtbzj5tz",
+      "type": "saida",
+      "date": "2026-08-27",
+      "quantity": 2,
+      "unitCost": 0,
+      "previousStock": 10,
+      "newStock": 8,
+      "effect": -2,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "deborabombazaro",
+      "createdAt": "2026-08-27T20:39:16.159Z"
     }
   ],
   "users": []
