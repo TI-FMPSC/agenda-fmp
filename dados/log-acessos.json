@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-27T18:46:21.999Z",
+  "updatedAt": "2026-08-27T18:46:40.327Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1328,6 +1328,15 @@
     {
       "id": "52337598-9a47-49d7-8bf1-dc889183b583",
       "timestamp": "2026-08-27T18:46:21.596Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Atualiza ajuste de sala de aula",
+      "module": "Agendamentos",
+      "details": "Administração — 6ª Fase · 2026-08-27 · 18:50–20:20 · 11 · Mariane R. Estefano"
+    },
+    {
+      "id": "28f9bb37-3e46-4b0a-ace9-cf210d511c8c",
+      "timestamp": "2026-08-27T18:46:39.782Z",
       "username": "andreakochela",
       "name": "Andréa Kochela",
       "action": "Atualiza ajuste de sala de aula",
