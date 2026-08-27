@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-26T17:09:54.949Z",
+  "updatedAt": "2026-08-27T00:46:10.426Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1222,6 +1222,15 @@
       "timestamp": "2026-08-26T17:09:54.077Z",
       "username": "deborabombazaro",
       "name": "Débora Bombazaro",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "ab3dc60c-d2c0-41bf-a7bd-418f593a4c9e",
+      "timestamp": "2026-08-27T00:46:09.889Z",
+      "username": "admin",
+      "name": "Administrador",
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
