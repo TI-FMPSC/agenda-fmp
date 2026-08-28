@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-08-27T18:46:36.975Z",
+  "updatedAt": "2026-08-28T11:03:05.024Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -2122,13 +2122,14 @@
     {
       "id": "ec9629f1-d78b-5269-b344-1ec9347bf290",
       "resourceId": "lab4",
-      "responsible": "Sérgio M. Schutz",
-      "purpose": "ADS — 2ª Fase",
+      "responsible": "Mariane R. Estefano",
+      "purpose": "TPG — 4ª Fase",
       "date": "2026-08-28",
       "startTime": "08:00",
       "endTime": "11:10",
       "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: SÉRGIO"
+      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: SÉRGIO",
+      "spaceCategory": "lab"
     },
     {
       "id": "90cdc2ba-8ace-561c-8048-758e451004e2",
