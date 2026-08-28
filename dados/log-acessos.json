@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-28T13:00:07.583Z",
+  "updatedAt": "2026-08-28T13:02:23.336Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1486,6 +1486,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "b5b91608-219f-42fa-b72a-7bef76eb9c79",
+      "timestamp": "2026-08-28T13:02:23.328Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Exclui material",
+      "module": "Estoque FMP",
+      "details": "sem código · Elástico"
     }
   ]
 }
