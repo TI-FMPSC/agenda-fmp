@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-28T15:26:13.608Z",
+  "updatedAt": "2026-08-28T15:41:43.565Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1504,6 +1504,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "c1d4f281-6db1-449d-ac27-a710f64e60d9",
+      "timestamp": "2026-08-28T15:41:42.894Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "0047 · Elástico"
     }
   ]
 }
