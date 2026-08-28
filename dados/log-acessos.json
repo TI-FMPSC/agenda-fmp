@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-28T11:03:07.919Z",
+  "updatedAt": "2026-08-28T13:00:07.583Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1477,6 +1477,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "TPG — 4ª Fase · Mariane R. Estefano · 2026-08-28 · 08:00–11:10 · Laboratório 04"
+    },
+    {
+      "id": "630e3045-4aee-4f8c-ac29-1dc40eb5f9dd",
+      "timestamp": "2026-08-28T13:00:06.915Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
