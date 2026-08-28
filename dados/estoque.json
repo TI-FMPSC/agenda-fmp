@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-27T20:39:59.966Z",
-    "updatedAt": "2026-08-27T20:39:59.966Z",
+    "lastSync": "2026-08-28T13:02:24.975Z",
+    "updatedAt": "2026-08-28T13:02:24.975Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -645,24 +645,6 @@
       "status": "active",
       "barcode": "",
       "description": "Especificação: unidade | Marca: bic | Tamanho/apresentação: canetas soltas",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
-    },
-    {
-      "id": "mat_esc_026",
-      "code": "",
-      "name": "Elástico",
-      "categoryId": "cat_escritorio",
-      "unit": "CX",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": "",
-      "currentStock": 120,
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Especificação: unidade | Marca: Tipo Látex | Tamanho/apresentação: caixa",
       "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
