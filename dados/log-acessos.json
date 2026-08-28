@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-28T15:41:43.565Z",
+  "updatedAt": "2026-08-28T15:46:14.231Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1513,6 +1513,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "0047 · Elástico"
+    },
+    {
+      "id": "9767830e-bf7d-44d7-93b2-6897afdab55c",
+      "timestamp": "2026-08-28T15:46:13.737Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "0048 · Desinfetante"
     }
   ]
 }
