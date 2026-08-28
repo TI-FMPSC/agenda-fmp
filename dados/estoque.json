@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-28T15:41:44.513Z",
-    "updatedAt": "2026-08-28T15:41:44.513Z",
+    "lastSync": "2026-08-28T15:46:15.706Z",
+    "updatedAt": "2026-08-28T15:46:15.706Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2642,8 +2642,26 @@
       "avgCost": 0,
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Recebidos  em 27/08 - 5kg de Elásticos.",
+      "expirationDate": "",
+      "createdAt": "2026-08-28",
+      "updatedAt": "2026-08-28"
+    },
+    {
+      "id": "id_3iirvjowmtd4j83v",
+      "code": "0048",
+      "name": "Desinfetante",
+      "categoryId": "cat_limpeza",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 10,
+      "currentStock": 36,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "expirationDate": "",
+      "description": "Recebidos em 28/08 36 unidades de 5 litros cada. Marca: Sebold",
       "createdAt": "2026-08-28",
       "updatedAt": "2026-08-28"
     }
@@ -3400,6 +3418,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-28T15:41:42.718Z"
+    },
+    {
+      "id": "id_zrjhpzgfmtd4j83v",
+      "materialId": "id_3iirvjowmtd4j83v",
+      "type": "entrada",
+      "date": "2026-08-28",
+      "quantity": 36,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 36,
+      "effect": 36,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-28T15:46:13.579Z"
     }
   ],
   "users": []
