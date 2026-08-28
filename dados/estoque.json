@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-28T13:02:24.975Z",
-    "updatedAt": "2026-08-28T13:02:24.975Z",
+    "lastSync": "2026-08-28T15:41:44.513Z",
+    "updatedAt": "2026-08-28T15:41:44.513Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2628,6 +2628,24 @@
       "expirationDate": "",
       "createdAt": "2026-08-27",
       "updatedAt": "2026-08-27"
+    },
+    {
+      "id": "id_qr74ksalmtd4df3y",
+      "code": "0047",
+      "name": "Elástico",
+      "categoryId": "cat_escritorio",
+      "unit": "KG",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 2,
+      "currentStock": 5,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "expirationDate": "",
+      "description": "Recebidos  em 27/08 - 5kg de Elásticos.",
+      "createdAt": "2026-08-28",
+      "updatedAt": "2026-08-28"
     }
   ],
   "movements": [
@@ -3366,6 +3384,22 @@
       "notes": "",
       "createdBy": "deborabombazaro",
       "createdAt": "2026-08-27T20:39:58.343Z"
+    },
+    {
+      "id": "id_md2l3cgjmtd4df3y",
+      "materialId": "id_qr74ksalmtd4df3y",
+      "type": "entrada",
+      "date": "2026-08-28",
+      "quantity": 5,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 5,
+      "effect": 5,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-08-28T15:41:42.718Z"
     }
   ],
   "users": []
