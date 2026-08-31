@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-31T19:29:02.483Z",
+  "updatedAt": "2026-08-31T19:45:59.809Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1558,6 +1558,15 @@
       "action": "Remove ajuste de sala de aula",
       "module": "Agendamentos",
       "details": "Pedagogia — 6ª Fase · 2026-09-01 · 18:30–22:00"
+    },
+    {
+      "id": "a84896e7-f815-4882-b651-6c44afe01a92",
+      "timestamp": "2026-08-31T19:45:59.282Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 6ª Fase · MARCUS · 2026-09-01 · 18:50–22:00 · Laboratório 01"
     }
   ]
 }
