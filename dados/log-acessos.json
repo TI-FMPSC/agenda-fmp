@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-28T15:46:14.231Z",
+  "updatedAt": "2026-08-31T18:40:24.127Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1522,6 +1522,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "0048 · Desinfetante"
+    },
+    {
+      "id": "9979b32f-8a01-466b-a72c-c09cd46ccc66",
+      "timestamp": "2026-08-31T18:40:23.585Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
