@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-08-31T21:00:43.070Z",
+  "updatedAt": "2026-08-31T21:01:55.161Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -2232,9 +2232,9 @@
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: MARIANE"
     },
     {
-      "id": "d06c5c0b-003b-46da-9343-68d4b4d4652c",
+      "id": "b2b71772-c589-46be-ae94-8b32d9406e2b",
       "spaceCategory": "lab",
-      "resourceId": "lab3",
+      "resourceId": "lab2",
       "responsible": "MARCUS",
       "purpose": "Pedagogia — 5ª Fase",
       "startTime": "18:50",
