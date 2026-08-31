@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-08-31T19:06:44.767Z",
+  "updatedAt": "2026-08-31T19:28:59.813Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -2297,18 +2297,6 @@
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: SALA 16: MATURIDADE (13:30-17:30)",
       "customSpaceName": "Sala 16"
-    },
-    {
-      "id": "3234e2fc-66c3-5000-891f-d12a5c215dab",
-      "resourceId": "lab4",
-      "responsible": "Marcus B. O. Silveira",
-      "purpose": "Pedagogia — 6ª Fase",
-      "date": "2026-09-01",
-      "startTime": "18:30",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: name: LARISSA APÓS PAUSA",
-      "spaceCategory": "lab"
     },
     {
       "id": "4dd4dcf2-f728-5bc7-bf98-e8265ec36515",
