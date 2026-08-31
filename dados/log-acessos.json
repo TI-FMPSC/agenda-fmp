@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-31T19:16:16.972Z",
+  "updatedAt": "2026-08-31T19:29:02.483Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1549,6 +1549,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "1aa18424-3925-42dd-849a-32c44c3ae24f",
+      "timestamp": "2026-08-31T19:29:02.100Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Remove ajuste de sala de aula",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 6ª Fase · 2026-09-01 · 18:30–22:00"
     }
   ]
 }
