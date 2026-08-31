@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-31T21:41:54.173Z",
+  "updatedAt": "2026-08-31T22:07:15.536Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1666,6 +1666,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 7ª Fase · Gregori M. Czizeweski · 2026-08-31 · 18:50–22:00 · Laboratório 05"
+    },
+    {
+      "id": "7a81613f-d10d-46cf-a5ae-d804df5fdcb0",
+      "timestamp": "2026-08-31T22:07:15.115Z",
+      "username": "não autenticado",
+      "name": "não autenticado",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 8ª Fase · LARISSA · 2026-08-31 · 20:30–22:00 · Laboratório 04"
     }
   ]
 }
