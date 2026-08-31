@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-31T19:45:59.809Z",
+  "updatedAt": "2026-08-31T19:49:45.171Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1567,6 +1567,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 6ª Fase · MARCUS · 2026-09-01 · 18:50–22:00 · Laboratório 01"
+    },
+    {
+      "id": "c170d799-8eea-4948-baf6-a8c84e7a4fbd",
+      "timestamp": "2026-08-31T19:49:44.539Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
