@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-08-31T22:07:12.805Z",
+  "updatedAt": "2026-08-31T22:11:40.037Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -2233,15 +2233,16 @@
     },
     {
       "id": "b2b71772-c589-46be-ae94-8b32d9406e2b",
-      "spaceCategory": "lab",
-      "resourceId": "lab2",
-      "responsible": "MARCUS",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:lab-02",
+      "responsible": "Marcus B. O. Silveira",
       "purpose": "Pedagogia — 5ª Fase",
       "startTime": "18:50",
-      "endTime": "22:00",
+      "endTime": "20:20",
       "status": "confirmed",
-      "notes": "",
-      "date": "2026-08-31"
+      "notes": "Ajuste pontual realizado pela Gestão das Salas.",
+      "date": "2026-08-31",
+      "customSpaceName": "lab. 02"
     },
     {
       "id": "8c26c1f2-bb78-4cf2-8e72-892d1422fd60",
