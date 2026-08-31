@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-31T21:00:46.967Z",
+  "updatedAt": "2026-08-31T21:01:57.957Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1621,6 +1621,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 5ª Fase · MARCUS · 2026-08-31 · 18:50–22:00 · Laboratório 03"
+    },
+    {
+      "id": "86a64975-3e01-40cf-9aeb-e73607f27565",
+      "timestamp": "2026-08-31T21:01:57.560Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 5ª Fase · MARCUS · 2026-08-31 · 18:50–22:00 · Laboratório 02"
     }
   ]
 }
