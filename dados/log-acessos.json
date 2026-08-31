@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-31T21:36:08.186Z",
+  "updatedAt": "2026-08-31T21:39:51.606Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1639,6 +1639,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "e52fb7ce-6673-4cde-b167-d78cd71ab11e",
+      "timestamp": "2026-08-31T21:39:51.078Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 5ª Fase · marcu · 2026-08-31 · 18:50–22:00 · Laboratório 03"
     }
   ]
 }
