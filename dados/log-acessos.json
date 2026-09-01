@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-01T02:41:15.853Z",
+  "updatedAt": "2026-09-01T02:41:32.829Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1747,6 +1747,15 @@
       "action": "Logout realizado",
       "module": "Acesso",
       "details": "Saída da área administrativa"
+    },
+    {
+      "id": "6cc0e28a-2e7e-45e1-8dd2-04c4a1a17d66",
+      "timestamp": "2026-09-01T02:41:32.406Z",
+      "username": "admin",
+      "name": "Administrador",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
