@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-31T22:11:43.260Z",
+  "updatedAt": "2026-09-01T00:22:06.868Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1693,6 +1693,15 @@
       "action": "Atualiza ajuste de sala de aula",
       "module": "Agendamentos",
       "details": "Pedagogia — 5ª Fase · 2026-08-31 · 18:50–20:20 · lab. 02 · Marcus B. O. Silveira"
+    },
+    {
+      "id": "8b9813b8-0a19-46d8-b46c-5b55abd1f888",
+      "timestamp": "2026-09-01T00:22:06.048Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
