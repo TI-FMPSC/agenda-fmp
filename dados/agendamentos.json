@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-01T00:27:36.356Z",
+  "updatedAt": "2026-09-01T10:38:30.496Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -2323,6 +2323,18 @@
       "endTime": "09:30",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: CORADINI"
+    },
+    {
+      "id": "85262b10-5376-41a3-abe7-46ad6f94950c",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "responsible": "Prefeitura",
+      "purpose": "INOVA",
+      "startTime": "08:00",
+      "endTime": "12:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-01"
     },
     {
       "id": "666dbc73-fb61-5e9c-b3a5-f69972ab2593",
