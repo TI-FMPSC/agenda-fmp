@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-01T02:21:22.426Z",
+  "updatedAt": "2026-09-01T02:21:24.369Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1713,8 +1713,17 @@
       "details": "Pedagogia — 8ª Fase · RODOLFO · 2026-09-01 · 18:50–22:00 · Laboratório 04"
     },
     {
-      "id": "3da7f263-dbff-4b9a-a15b-4d9381c24b9a",
-      "timestamp": "2026-09-01T02:21:21.356Z",
+      "id": "6d99e0b3-9fd0-4b2a-a0cb-751e16c6fa84",
+      "timestamp": "2026-09-01T02:21:19.899Z",
+      "username": "admin",
+      "name": "Administrador",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "11c4bad9-b9db-40c1-a32c-e755ae4a01ff",
+      "timestamp": "2026-09-01T02:21:22.748Z",
       "username": "admin",
       "name": "Administrador",
       "action": "Login realizado",
