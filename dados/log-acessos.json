@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-01T10:38:33.377Z",
+  "updatedAt": "2026-09-01T14:52:37.236Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1774,6 +1774,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "INOVA · Prefeitura · 2026-09-01 · 08:00–12:00 · Auditório"
+    },
+    {
+      "id": "1bcbe0f1-8b83-4378-bfd3-c2ee983a9214",
+      "timestamp": "2026-09-01T14:52:36.498Z",
+      "username": "deborabombazaro",
+      "name": "Débora Bombazaro",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
