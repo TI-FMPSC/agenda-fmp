@@ -487,7 +487,8 @@
           <div class="field"><label>Tipo de uso *</label><select id="bookingArea" required onchange="toggleBookingArea()"><option value="lab">Laboratório / Auditório</option><option value="classroom">Sala de aula / outro espaço</option></select><div class="booking-area-hint" id="bookingAreaHint">Reserva de laboratório, auditório ou outro espaço institucional.</div></div>
           <div class="field"><label id="resourceLabel">Espaço *</label><select id="resourceId" required onchange="toggleCustomSpace()"></select></div>
           <div class="field hidden" id="customSpaceField"><label>Informe o espaço *</label><input id="customSpaceName" placeholder="Ex.: Sala 12, Biblioteca, Hall, Sala de Reuniões..." /></div>
-          <div class="field"><label>Responsável / professor *</label><input id="responsible" required placeholder="Ex.: Prof. Leandro Pickler" /></div>
+          <div class="field"><label>Responsável / professor *</label><input id="responsible" list="professorOptionsList" required autocomplete="off" placeholder="Selecione ou digite o responsável" /><div class="booking-area-hint" style="margin:6px 0 0">Professores da grade 2026/2 aparecem em ordem alfabética; também é possível digitar outro responsável.</div></div>
+          <datalist id="professorOptionsList"></datalist>
           <div class="field"><label>Turma / curso / evento</label><select id="purpose" onchange="toggleCustomPurpose()">
             <option value="">Selecione a turma</option>
             <optgroup label="ADS">
@@ -526,16 +527,16 @@
             <option value="__custom_purpose__">Outra turma / curso / evento — digitar</option>
           </select></div>
           <div class="field hidden" id="customPurposeField"><label>Informe a turma / curso / evento</label><input id="customPurpose" placeholder="Ex.: Pós-graduação, reunião, capacitação..." /></div>
-          <div class="field"><label>Tipo de horário</label><select id="periodType" onchange="applyPeriodPreset()"><option value="morning">Manhã — 08:00 às 11:10</option><option value="afternoon">Tarde — 13:00 às 17:00</option><option value="evening">Noite — 19:00 às 22:00</option><option value="morning1">Manhã 1 — 08:00 às 09:30</option><option value="morning2">Manhã 2 — 09:40 às 11:10</option><option value="afternoon1">Tarde 1 — 13:00 às 15:00</option><option value="afternoon2">Tarde 2 — 15:00 às 17:00</option><option value="evening1">Noite 1 — 19:00 às 20:30</option><option value="evening2">Noite 2 — 20:30 às 22:00</option><option value="classnight1">Aula Noturno 1 — 18:50 às 20:20</option><option value="classnight2">Aula Noturno 2 — 20:30 às 22:00</option><option value="custom">Meio período / horário personalizado</option></select></div>
-          <div class="field"><label>Data inicial *</label><input type="date" id="startDate" required /></div>
+          <div class="field"><label>Tipo de horário</label><select id="periodType" onchange="applyPeriodPreset()"><option value="morning">Período completo — Matutino — 08:00 às 11:10</option><option value="afternoon">Período completo — Vespertino — 13:00 às 17:00</option><option value="classnightfull">Período completo — Noturno — 18:50 às 22:00</option><option value="evening">Período completo — Noturno institucional — 19:00 às 22:00</option><option value="morning1">Matutino 1 — 08:00 às 09:30</option><option value="morning2">Matutino 2 — 09:40 às 11:10</option><option value="afternoon1">Vespertino 1 — 13:00 às 15:00</option><option value="afternoon2">Vespertino 2 — 15:00 às 17:00</option><option value="classnight1">Noturno 1 — 18:50 às 20:20</option><option value="classnight2">Noturno 2 — 20:30 às 22:00</option><option value="evening1">Noite institucional 1 — 19:00 às 20:30</option><option value="evening2">Noite institucional 2 — 20:30 às 22:00</option><option value="custom">Horário personalizado</option></select></div>
+          <div class="field"><label>Data inicial *</label><input type="date" id="startDate" required onchange="handleStartDateChange()" /></div>
           <div class="field"><label>Data final *</label><input type="date" id="endDate" required /></div>
           <div class="field"><label>Horário inicial *</label><input type="time" id="startTime" required value="08:00" /></div>
           <div class="field"><label>Horário final *</label><input type="time" id="endTime" required value="11:10" /></div>
-          <div class="field"><label>Repetição</label><select id="repeat"><option value="none">Somente nesta data</option><option value="weekly">Toda semana</option><option value="weekdays">Todos os dias úteis</option></select></div>
+          <div class="field"><label>Repetição</label><select id="repeat" onchange="handleRepeatChange()"><option value="none">Somente nesta data</option><option value="monthly_weekday">Mesmo dia da semana até o fim deste mês</option><option value="weekly">Toda semana até a data final</option><option value="weekdays">Todos os dias úteis até a data final</option></select><div class="booking-area-hint" style="margin:6px 0 0">Ex.: escolhendo uma segunda-feira, a opção mensal cria todas as segundas-feiras restantes daquele mês.</div></div>
           <div class="field"><label>Status</label><select id="status"><option value="confirmed">Confirmado</option><option value="pending">Pendente</option></select></div>
           <div class="field full"><label>Observações</label><textarea id="notes" rows="3" placeholder="Equipamentos, montagem, necessidades específicas..."></textarea></div>
         </div>
-        <div class="alert alert-info">O sistema impede sobreposição no mesmo espaço e permite agendar um único dia, vários dias úteis ou repetições semanais.</div>
+        <div class="alert alert-info">O sistema impede sobreposição no mesmo espaço. O mesmo professor pode constar em mais de um agendamento no mesmo horário. Você pode agendar uma data, repetir semanalmente até uma data final ou repetir no mesmo dia da semana até o fim do mês.</div>
       </div>
       <div class="modal-foot"><button type="button" class="btn btn-secondary" onclick="closeBookingModal()">Cancelar</button><button type="submit" class="btn btn-primary">Salvar agendamento</button></div>
     </form>
@@ -558,7 +559,7 @@
           <div class="field"><label>Turma</label><input id="classroomEditPurpose" readonly /></div>
           <div class="field"><label>Horário</label><input id="classroomEditTime" readonly /></div>
           <div class="field"><label>Sala *</label><input id="classroomEditRoom" required placeholder="Ex.: Sala 05" /></div>
-          <div class="field"><label>Professor *</label><input id="classroomEditProfessor" required placeholder="Nome do professor" /></div>
+          <div class="field"><label>Professor *</label><input id="classroomEditProfessor" list="professorOptionsList" required autocomplete="off" placeholder="Selecione ou digite o professor" /></div>
         </div>
         <div style="font-size:13px;font-weight:900;margin:8px 0">Onde aplicar esta alteração?</div>
         <div class="classroom-edit-scope">
@@ -946,6 +947,7 @@ function renderClassroomManagement(){
 }
 function findClassroomAdminEntry(entryId){return classroomAdminCurrentEntries().find(e=>String(e.id)===String(entryId))||null}
 function openClassroomAdminEditor(entryId){
+ populateProfessorDatalist();
  const entry=findClassroomAdminEntry(entryId);if(!entry){toast('Não foi possível localizar esta turma.');return}
  const date=classroomAdminDate||new Date();
  document.getElementById('classroomEditEntryId').value=entry.id||'';document.getElementById('classroomEditBookingId').value=entry.bookingId||'';document.getElementById('classroomEditDate').value=localISO(date);document.getElementById('classroomEditStart').value=entry.startTime;document.getElementById('classroomEditEnd').value=entry.endTime;
@@ -975,10 +977,8 @@ async function saveClassroomAdminEdit(e){
  const roomId=makeCustomResourceId(room);
  const roomConflict=state.bookings.find(b=>b.id!==targetId&&b.date===date&&b.status!=='cancelled'&&b.resourceId===roomId&&overlaps(startTime,endTime,b.startTime,b.endTime));if(roomConflict){classroomEditError(`${room} já possui um agendamento das ${roomConflict.startTime} às ${roomConflict.endTime}.`);return}
  const baselineRoomConflict=classroomBaselineConflicts(room,date,startTime,endTime,purpose)[0];if(baselineRoomConflict){classroomEditError(`${room} já está vinculada a ${baselineRoomConflict.purpose} na grade neste horário.`);return}
- if(isTrackableProfessor(professor)){
-   const manualConflict=professorBookings(professor,date,startTime,endTime,targetId,false).find(b=>!samePurpose(b.purpose,purpose));if(manualConflict){classroomEditError(`${professor} já possui agendamento em ${bookingResourceName(manualConflict)} neste horário.`);return}
-   const gradeConflict=professorBaselineEntries(professor,date,startTime,endTime).find(x=>!samePurpose(x.purpose,purpose));if(gradeConflict){classroomEditError(`${professor} já consta em ${gradeConflict.purpose} neste horário na grade.`);return}
- }
+ // Em ajustes pontuais, o mesmo professor pode constar em outro agendamento no mesmo horário.
+ // Conflitos da sala/local continuam bloqueados acima.
  const record={id:targetId||crypto.randomUUID(),spaceCategory:'classroom',resourceId:roomId,customSpaceName:room,responsible:professor,purpose,date,startTime,endTime,status:'confirmed',notes:'Ajuste pontual realizado pela Gestão das Salas.'};
  if(targetId){const idx=state.bookings.findIndex(b=>b.id===targetId);if(idx>=0)state.bookings[idx]={...state.bookings[idx],...record};else state.bookings.push(record)}else state.bookings.push(record);
  saveState();closeClassroomAdminEditor();await persistAndSync(targetId?'Atualiza ajuste de sala de aula':'Cria ajuste de sala de aula',`${purpose} · ${date} · ${startTime}–${endTime} · ${room} · ${professor}`);renderClassroomManagement();
@@ -1063,7 +1063,20 @@ function cancelUserEdit(){resetUserForm()}
 async function saveAdminUser(e){e.preventDefault();const id=document.getElementById('editUserId').value;const name=document.getElementById('newUserName').value.trim();const username=document.getElementById('newUsername').value.trim();const password=document.getElementById('newUserPassword').value;if(!name||!username){toast('Informe nome e usuário.');return}if(state.users.some(u=>u.id!==id&&u.username.toLowerCase()===username.toLowerCase())){toast('Já existe um usuário com esse login.');return}if(!id&&!password){toast('Informe uma senha para o novo usuário.');return}const current=id?state.users.find(u=>u.id===id):null;if(id&&!current){toast('Usuário não encontrado.');return}const passwordHash=password?await hashPassword(password):(current?.passwordHash||'');const record={id:current?.id||crypto.randomUUID(),name,username,passwordHash,role:'Administrador',active:true};if(id){state.users=state.users.map(u=>u.id===id?record:u);if(currentUsername().toLowerCase()===String(current.username).toLowerCase())refreshSessionUsername(username)}else state.users.push(record);saveState();await persistUsersAndSync(id?'Atualiza usuário administrativo':'Cria usuário administrativo',`${username} · ${name}`);renderSettings()}
 async function removeAdminUser(id){const user=state.users.find(u=>u.id===id);if(!user)return;if(state.users.filter(u=>u.active!==false).length<=1){toast('É necessário manter pelo menos um usuário ativo.');return}if(currentUsername().toLowerCase()===user.username.toLowerCase()){toast('Você não pode remover o usuário que está conectado.');return}if(!confirm(`Remover o usuário ${user.username}?`))return;state.users=state.users.filter(u=>u.id!==id);saveState();await persistUsersAndSync('Remove usuário administrativo',`${user.username} · ${user.name}`);renderSettings()}
 
+const PROFESSORES_FMP_2026_2=[
+ 'Alexandre L. da Silva','Ana Bárbara S. M. S. Dias','Ana Lucia Machado','Anderson da Silveira','Andreia de B. Machado','Antônio J. Bicca','Carlos A. A. Junior','Carolina C. Seidel','Clodomir Coradini','Daniela Amorim','Deisi Cord','Elaine M. S. dos Santos','Erves Ducati','Fabiana E. Boff','Fabiana Witt','Fernanda M. Sanchez','Fernando M. da Silva','Gabriele B. Silva','Grazielle F. da Silva','Gregori M. Czizeweski','Inara A. V. Willerding','Ivanir Maciel','Jaime B. do Monte','Juliana C. Müller','Juliane P. Q. Odinino','Kleber M. da Costa','Larissa O. Gonçalves','Leandro Pickler','Leonardo C. Chaves','Luzinete C. Niedzieluk','Marcelo R. da Silva','Marcelo Silveira','Marcus B. O. Silveira','Mariane R. Estefano','Maurício A. de Lima','Rafael Novo da Rosa','Rodolfo M. Lorandi','Schirlei S. Ramos','Sérgio M. Schutz','Tatiani Schmitt','Processo Seletivo'
+];
+function professorOptionNames(){
+ const extras=(state.classSchedule||[]).flatMap(e=>String(e.professor||'').split('/')).map(x=>x.trim()).filter(Boolean);
+ const aliases={'Antonio J. Bicca':'Antônio J. Bicca','Mauricio A. de Lima':'Maurício A. de Lima','Luzinete C. Niedzielnk':'Luzinete C. Niedzieluk','Carolina C. Siedel':'Carolina C. Seidel'};
+ const byKey=new Map();
+ [...PROFESSORES_FMP_2026_2,...extras].forEach(raw=>{const name=(aliases[raw]||raw).trim();if(!name)return;const key=normalizePersonName(name)||normalizeSpaceName(name);if(key&&!byKey.has(key))byKey.set(key,name)});
+ return [...byKey.values()].sort((a,b)=>a.localeCompare(b,'pt-BR',{sensitivity:'base'}));
+}
+function populateProfessorDatalist(){const list=document.getElementById('professorOptionsList');if(!list)return;list.innerHTML=professorOptionNames().map(name=>`<option value="${escapeHtml(name)}"></option>`).join('')}
+
 function openBookingModal(id='',presetDate='',presetResource=''){
+ populateProfessorDatalist();
  const b=id?state.bookings.find(x=>x.id===id):null;document.getElementById('modalTitle').textContent=b?'Editar agendamento':'Novo agendamento';document.getElementById('bookingId').value=b?.id||'';
  const area=b?bookingCategory(b):'lab';document.getElementById('bookingArea').value=area;
  const selected=b?.resourceId||presetResource||state.resources.find(r=>r.active)?.id||'__custom__';const isCustom=String(selected).startsWith('custom:');
@@ -1071,8 +1084,8 @@ function openBookingModal(id='',presetDate='',presetResource=''){
  document.getElementById('customSpaceName').value=isCustom?(b?.customSpaceName||(presetResource?state.bookings.find(x=>x.resourceId===presetResource)?.customSpaceName:'')||''):'';
  toggleCustomSpace();
  document.getElementById('responsible').value=b?.responsible||'';setPurposeField(b?.purpose||'');
- document.getElementById('startDate').value=b?.date||presetDate||localISO(new Date());document.getElementById('endDate').value=b?.date||presetDate||localISO(new Date());document.getElementById('startTime').value=b?.startTime||'08:00';document.getElementById('endTime').value=b?.endTime||'11:10';document.getElementById('repeat').value='none';document.getElementById('repeat').disabled=!!b;document.getElementById('status').value=b?.status||'confirmed';document.getElementById('notes').value=b?.notes||'';
- const preset=!b?'morning':b.startTime==='08:00'&&b.endTime==='11:10'?'morning':b.startTime==='13:00'&&b.endTime==='17:00'?'afternoon':b.startTime==='19:00'&&b.endTime==='22:00'?'evening':b.startTime==='08:00'&&b.endTime==='09:30'?'morning1':b.startTime==='09:40'&&b.endTime==='11:10'?'morning2':b.startTime==='13:00'&&b.endTime==='15:00'?'afternoon1':b.startTime==='15:00'&&b.endTime==='17:00'?'afternoon2':b.startTime==='19:00'&&b.endTime==='20:30'?'evening1':b.startTime==='20:30'&&b.endTime==='22:00'?'evening2':b.startTime==='18:50'&&b.endTime==='20:20'?'classnight1':b.startTime==='20:30'&&b.endTime==='22:00'?'evening2':'custom';document.getElementById('periodType').value=b?preset:'morning';document.getElementById('bookingAlert').classList.add('hidden');
+ document.getElementById('startDate').value=b?.date||presetDate||localISO(new Date());document.getElementById('endDate').value=b?.date||presetDate||localISO(new Date());document.getElementById('endDate').disabled=false;document.getElementById('startTime').value=b?.startTime||'08:00';document.getElementById('endTime').value=b?.endTime||'11:10';document.getElementById('repeat').value='none';document.getElementById('repeat').disabled=!!b;document.getElementById('status').value=b?.status||'confirmed';document.getElementById('notes').value=b?.notes||'';
+ const preset=!b?'morning':b.startTime==='08:00'&&b.endTime==='11:10'?'morning':b.startTime==='13:00'&&b.endTime==='17:00'?'afternoon':b.startTime==='18:50'&&b.endTime==='22:00'?'classnightfull':b.startTime==='19:00'&&b.endTime==='22:00'?'evening':b.startTime==='08:00'&&b.endTime==='09:30'?'morning1':b.startTime==='09:40'&&b.endTime==='11:10'?'morning2':b.startTime==='13:00'&&b.endTime==='15:00'?'afternoon1':b.startTime==='15:00'&&b.endTime==='17:00'?'afternoon2':b.startTime==='19:00'&&b.endTime==='20:30'?'evening1':b.startTime==='20:30'&&b.endTime==='22:00'?'evening2':b.startTime==='18:50'&&b.endTime==='20:20'?'classnight1':'custom';document.getElementById('periodType').value=b?preset:'morning';document.getElementById('bookingAlert').classList.add('hidden');
  let foot=document.querySelector('#bookingModal .modal-foot');const old=document.getElementById('deleteBtn');if(old)old.remove();if(b){const del=document.createElement('button');del.type='button';del.id='deleteBtn';del.className='btn btn-danger';del.textContent='Excluir';del.onclick=()=>deleteBooking(b.id);foot.prepend(del)}
  document.getElementById('bookingModal').classList.remove('hidden');
 }
@@ -1098,8 +1111,11 @@ function setPurposeField(value=''){const sel=document.getElementById('purpose'),
 function toggleCustomPurpose(){const sel=document.getElementById('purpose'),field=document.getElementById('customPurposeField'),input=document.getElementById('customPurpose');if(!sel||!field||!input)return;const custom=sel.value==='__custom_purpose__';field.classList.toggle('hidden',!custom);input.required=custom;if(custom)setTimeout(()=>input.focus(),0)}
 function selectedPurpose(){const sel=document.getElementById('purpose');if(!sel)return '';return sel.value==='__custom_purpose__'?(document.getElementById('customPurpose')?.value.trim()||''):sel.value.trim()}
 function closeBookingModal(){document.getElementById('bookingModal').classList.add('hidden')}
-function applyPeriodPreset(){const type=document.getElementById('periodType').value;const map={morning:['08:00','11:10'],afternoon:['13:00','17:00'],evening:['19:00','22:00'],morning1:['08:00','09:30'],morning2:['09:40','11:10'],afternoon1:['13:00','15:00'],afternoon2:['15:00','17:00'],evening1:['19:00','20:30'],evening2:['20:30','22:00'],classnight1:['18:50','20:20'],classnight2:['20:30','22:00']};if(map[type]){document.getElementById('startTime').value=map[type][0];document.getElementById('endTime').value=map[type][1]}}
-function datesBetween(start,end,repeat){let out=[];let d=parseLocal(start),last=parseLocal(end);if(repeat==='none')return [start];while(d<=last){if(repeat==='weekdays'){if(d.getDay()!==0&&d.getDay()!==6)out.push(localISO(d));d=addDays(d,1)}else{out.push(localISO(d));d=addDays(d,7)}}return out}
+function applyPeriodPreset(){const type=document.getElementById('periodType').value;const map={morning:['08:00','11:10'],afternoon:['13:00','17:00'],classnightfull:['18:50','22:00'],evening:['19:00','22:00'],morning1:['08:00','09:30'],morning2:['09:40','11:10'],afternoon1:['13:00','15:00'],afternoon2:['15:00','17:00'],evening1:['19:00','20:30'],evening2:['20:30','22:00'],classnight1:['18:50','20:20'],classnight2:['20:30','22:00']};if(map[type]){document.getElementById('startTime').value=map[type][0];document.getElementById('endTime').value=map[type][1]}}
+function lastDayOfMonthISO(iso){const d=parseLocal(iso);return localISO(new Date(d.getFullYear(),d.getMonth()+1,0))}
+function handleRepeatChange(){const repeat=document.getElementById('repeat')?.value||'none',start=document.getElementById('startDate'),end=document.getElementById('endDate');if(!start||!end)return;if(repeat==='monthly_weekday'&&start.value){end.value=lastDayOfMonthISO(start.value);end.disabled=true}else{end.disabled=false;if(repeat==='none'&&start.value)end.value=start.value}}
+function handleStartDateChange(){const repeat=document.getElementById('repeat')?.value||'none',start=document.getElementById('startDate'),end=document.getElementById('endDate');if(!start||!end)return;if(repeat==='monthly_weekday')handleRepeatChange();else if(repeat==='none')end.value=start.value}
+function datesBetween(start,end,repeat){let out=[];let d=parseLocal(start);if(repeat==='none')return [start];let last=repeat==='monthly_weekday'?parseLocal(lastDayOfMonthISO(start)):parseLocal(end);while(d<=last){if(repeat==='weekdays'){if(d.getDay()!==0&&d.getDay()!==6)out.push(localISO(d));d=addDays(d,1)}else{out.push(localISO(d));d=addDays(d,7)}}return out}
 function overlaps(aStart,aEnd,bStart,bEnd){return aStart<bEnd&&aEnd>bStart}
 
 // Conferência cruzada de professor, turma e local.
@@ -1115,10 +1131,7 @@ function professorBaselineEntries(name,date,startTime,endTime){
  if(!isTrackableProfessor(name))return [];const d=parseLocal(date),weekday=d.getDay();if(weekday<1||weekday>5||!semesterContainsDate(d))return [];
  return (state.classSchedule||[]).filter(e=>e.weekday===weekday&&sameProfessor(e.professor,name)&&overlaps(startTime,endTime,e.startTime,e.endTime));
 }
-function bookingProfessorConflicts(b){
- if(!b||b.status!=='confirmed'||!isTrackableProfessor(b.responsible))return [];
- return professorBookings(b.responsible,b.date,b.startTime,b.endTime,b.id,true).filter(x=>x.resourceId!==b.resourceId);
-}
+function bookingProfessorConflicts(b){return []} // sobreposição de responsável é permitida; conflito de espaço continua validado no salvamento.
 function uniqueBookingLocations(bookings){const m=new Map();bookings.forEach(b=>{const name=bookingResourceName(b);m.set(normalizeRoomName(name),name)});return [...m.values()]}
 function roomAssignmentConflicts(assignments){
  const entries=state.classSchedule||[];const out=[];
@@ -1138,12 +1151,8 @@ async function saveBooking(e){
  const dates=datesBetween(startDate,endDate,repeat);const conflicts=dates.filter(date=>state.bookings.some(b=>b.id!==id&&b.resourceId===resourceId&&b.date===date&&b.status!=='cancelled'&&overlaps(startTime,endTime,b.startTime,b.endTime)));
  if(conflicts.length){alert.textContent=`Conflito encontrado em ${conflicts.slice(0,3).map(x=>formatDate(parseLocal(x),{day:'2-digit',month:'2-digit'})).join(', ')}. O espaço já possui agendamento nesse horário.`;alert.classList.remove('hidden');return}
  const responsible=document.getElementById('responsible').value.trim();
- if(isTrackableProfessor(responsible)){
-   const manualProfessorConflicts=dates.flatMap(date=>professorBookings(responsible,date,startTime,endTime,id,false).map(b=>({date,b})));
-   if(manualProfessorConflicts.length){const c=manualProfessorConflicts[0];alert.textContent=`Conflito de professor: ${responsible} já possui agendamento em ${bookingResourceName(c.b)} em ${formatDate(parseLocal(c.date),{day:'2-digit',month:'2-digit'})}, das ${c.b.startTime} às ${c.b.endTime}. Um professor não pode ficar em dois locais no mesmo horário.`;alert.classList.remove('hidden');return}
-   const baselineProfessorConflicts=dates.flatMap(date=>professorBaselineEntries(responsible,date,startTime,endTime).filter(e=>!samePurpose(e.purpose,purpose)).map(e=>({date,e})));
-   if(baselineProfessorConflicts.length){const c=baselineProfessorConflicts[0];alert.textContent=`Conflito com a grade: ${responsible} consta em ${c.e.purpose} em ${formatDate(parseLocal(c.date),{day:'2-digit',month:'2-digit'})}, das ${c.e.startTime} às ${c.e.endTime}. Para mover a própria turma para outro espaço, selecione a mesma turma do agendamento.`;alert.classList.remove('hidden');return}
- }
+ // O mesmo professor/responsável pode constar em mais de um agendamento no mesmo dia e horário.
+ // A validação de ocupação permanece vinculada ao espaço, evitando duas reservas simultâneas do mesmo local.
  if(area==='classroom'){
    const baselineConflicts=dates.flatMap(date=>classroomBaselineConflicts(customSpaceName,date,startTime,endTime,purpose).map(x=>({date,entry:x})));
    if(baselineConflicts.length){const c=baselineConflicts[0];alert.textContent=`A sala ${customSpaceName} já está vinculada a ${c.entry.purpose} em ${formatDate(parseLocal(c.date),{day:'2-digit',month:'2-digit'})}, no horário ${c.entry.startTime}–${c.entry.endTime}.`;alert.classList.remove('hidden');return}
@@ -1297,12 +1306,8 @@ function classroomEntriesForPeriod(date,periodId){
      const chosen=sameClass[0];
      return {...entry,room:bookingResourceName(chosen),professor:chosen.responsible||entry.professor,manual:true,relocationCategory:bookingCategory(chosen),bookingId:chosen.id};
    }
-   // Se o professor foi agendado em outro local para outra atividade, não mostramos dois locais: sinalizamos o conflito.
-   const sameProf=isTrackableProfessor(entry.professor)?allBookings.filter(b=>sameProfessor(b.responsible,entry.professor)):[];
-   if(sameProf.length){
-     sameProf.forEach(b=>consumed.add(b.id));const locations=uniqueBookingLocations(sameProf);
-     return {...entry,room:'CONFLITO DE HORÁRIO',conflict:true,conflictText:`${entry.professor} também consta em ${locations.join(' × ')} neste horário.`,manual:true};
-   }
+   // Sobreposição do mesmo professor/responsável em agendamentos é permitida por regra operacional.
+   // O painel só sinaliza conflito quando a própria turma aparece em mais de um local.
    if(String(entry.room||'').includes('VERIFICAR')){
      return {...entry,conflict:true,conflictText:`A relação de salas recebida informa mais de uma sala-base para ${entry.purpose}. Confira a sala correta em Grade de salas.`};
    }
