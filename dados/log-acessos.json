@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-03T20:03:01.940Z",
+  "updatedAt": "2026-09-03T20:09:13.765Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1936,6 +1936,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "78ff1c05-6f3b-44f3-8182-6a33b6cb556d",
+      "timestamp": "2026-09-03T20:09:12.944Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": " · VALDESIA · 2026-09-05 · 14:00–18:30 · SALA 01"
     }
   ]
 }
