@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-03T19:04:32.354Z",
+  "updatedAt": "2026-09-03T19:05:05.424Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -2694,9 +2694,9 @@
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: BOFF"
     },
     {
-      "id": "96627fd7-4df3-4693-b5a0-da8f8d4b4e40",
+      "id": "93e46612-527d-4aff-a324-81ca71fa7f5e",
       "spaceCategory": "lab",
-      "resourceId": "lab2",
+      "resourceId": "lab3",
       "responsible": "Tatiani Schmitt",
       "purpose": "Administração — 8ª Fase",
       "startTime": "18:50",
