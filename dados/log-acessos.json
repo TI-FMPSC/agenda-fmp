@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-03T19:04:35.814Z",
+  "updatedAt": "2026-09-03T19:05:07.700Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1900,6 +1900,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 8ª Fase · Tatiani Schmitt · 2026-09-04 · 18:50–22:00 · Laboratório 02"
+    },
+    {
+      "id": "fdde1c71-3626-4cba-9ad5-605e7788e01a",
+      "timestamp": "2026-09-03T19:05:07.288Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 8ª Fase · Tatiani Schmitt · 2026-09-04 · 18:50–22:00 · Laboratório 03"
     }
   ]
 }
