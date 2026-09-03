@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-03T19:06:37.987Z",
+  "updatedAt": "2026-09-03T20:09:08.062Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -2715,6 +2715,19 @@
       "endTime": "17:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: PALESTRA DESPERTAR FEMININO - SETEMBRO AMARELO - 14:00-17:00 | name: VALDESIA (DÉBORA) | equipment: TODOS"
+    },
+    {
+      "id": "5e1c96dc-c5bb-4c7f-8ad2-eebd5fb06984",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:sala-01",
+      "customSpaceName": "SALA 01",
+      "responsible": "VALDESIA",
+      "purpose": "",
+      "startTime": "14:00",
+      "endTime": "18:30",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-05"
     },
     {
       "id": "5f06d488-b929-5664-8c82-bc9b9b9d2ba5",
