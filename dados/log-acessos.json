@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-04T14:47:36.424Z",
+  "updatedAt": "2026-09-04T14:50:47.200Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2089,6 +2089,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "c66aa272-b542-4f72-b9d2-b02172381566",
+      "timestamp": "2026-09-04T14:50:46.271Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "0062 · Apontador"
     }
   ]
 }
