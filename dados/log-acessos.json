@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-04T14:59:04.822Z",
+  "updatedAt": "2026-09-04T15:02:24.300Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2116,6 +2116,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "fb1b428f-dc0f-4320-8b0d-28b23e472a86",
+      "timestamp": "2026-09-04T15:02:23.336Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "0068 · Adesivo Plástico PVC"
     }
   ]
 }
