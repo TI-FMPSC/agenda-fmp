@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-04T12:22:44.501Z",
-    "updatedAt": "2026-09-04T12:22:44.501Z",
+    "lastSync": "2026-09-04T12:23:04.445Z",
+    "updatedAt": "2026-09-04T12:23:04.445Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1948,8 +1948,8 @@
     {
       "id": "mat_lim_032",
       "code": "0061",
-      "name": "Papel Toalha avulso",
-      "categoryId": "cat_limpeza",
+      "name": "Papel Toalha",
+      "categoryId": "cat_copa",
       "unit": "UN",
       "supplierId": "",
       "locationId": "",
