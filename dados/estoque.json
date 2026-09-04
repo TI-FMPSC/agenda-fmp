@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-04T11:20:19.566Z",
-    "updatedAt": "2026-09-04T11:20:19.566Z",
+    "lastSync": "2026-09-04T12:22:44.501Z",
+    "updatedAt": "2026-09-04T12:22:44.501Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1947,21 +1947,21 @@
     },
     {
       "id": "mat_lim_032",
-      "code": "",
+      "code": "0061",
       "name": "Papel Toalha avulso",
       "categoryId": "cat_limpeza",
       "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 40,
       "currentStock": 69,
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "description": "Tamanho/apresentação: 18 unidades soltas",
+      "description": "Tamanho/apresentação: UNIDADES",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-19"
+      "updatedAt": "2026-09-04"
     },
     {
       "id": "mat_lim_033",
