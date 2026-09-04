@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-04T14:50:47.200Z",
+  "updatedAt": "2026-09-04T14:53:44.379Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2098,6 +2098,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "0062 · Apontador"
+    },
+    {
+      "id": "02d51a1d-d22f-4015-a269-a6aad74fe0ef",
+      "timestamp": "2026-09-04T14:53:43.370Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "0065 · Vassourção"
     }
   ]
 }
