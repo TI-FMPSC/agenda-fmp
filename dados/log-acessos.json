@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-04T10:55:54.255Z",
+  "updatedAt": "2026-09-04T11:18:56.510Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1963,6 +1963,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "7e27e365-793a-42bc-817d-d88f30cb3d2e",
+      "timestamp": "2026-09-04T11:18:55.627Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 003 · Papel Higiênico · quantidade 5 · saldo 0"
     }
   ]
 }
