@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-04T12:23:14.686Z",
-    "updatedAt": "2026-09-04T12:23:14.686Z",
+    "lastSync": "2026-09-04T12:23:21.308Z",
+    "updatedAt": "2026-09-04T12:23:21.308Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1910,24 +1910,6 @@
       "updatedAt": "2026-09-04"
     },
     {
-      "id": "mat_lim_030",
-      "code": "",
-      "name": "Papel Toalha",
-      "categoryId": "cat_limpeza",
-      "unit": "FRD",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": "",
-      "currentStock": 31,
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Tamanho/apresentação: com 5 sacos com 4 pacotes cada | Observações: atualizado em 14/08",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-25"
-    },
-    {
       "id": "mat_lim_032",
       "code": "0061",
       "name": "Papel Toalha",
@@ -2666,22 +2648,6 @@
       "createdAt": "2026-08-17T14:12:28.217Z"
     },
     {
-      "id": "id_nh0pcli3msxcriic",
-      "materialId": "mat_lim_030",
-      "type": "saida",
-      "date": "2026-08-17",
-      "quantity": 1,
-      "unitCost": 0,
-      "previousStock": 39,
-      "newStock": 38,
-      "effect": -1,
-      "sector": "",
-      "document": "",
-      "notes": "",
-      "createdBy": "Agenda FMP",
-      "createdAt": "2026-08-17T14:52:18.420Z"
-    },
-    {
       "id": "id_sntge5w7msyozv6j",
       "materialId": "id_vdeirod2msyozv6j",
       "type": "entrada",
@@ -3224,22 +3190,6 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-25T17:52:53.652Z"
-    },
-    {
-      "id": "id_5sbus7q9mt909lbp",
-      "materialId": "mat_lim_030",
-      "type": "saida",
-      "date": "2026-08-25",
-      "quantity": 7,
-      "unitCost": 0,
-      "previousStock": 38,
-      "newStock": 31,
-      "effect": -7,
-      "sector": "",
-      "document": "",
-      "notes": "",
-      "createdBy": "amandafranca",
-      "createdAt": "2026-08-25T18:35:40.981Z"
     },
     {
       "id": "id_lwo12k0omt90j5x7",
