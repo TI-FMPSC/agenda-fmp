@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-04T14:59:49.542Z",
-    "updatedAt": "2026-09-04T14:59:49.542Z",
+    "lastSync": "2026-09-04T15:02:25.106Z",
+    "updatedAt": "2026-09-04T15:02:25.106Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -543,13 +543,13 @@
     },
     {
       "id": "mat_esc_020",
-      "code": "",
+      "code": "0068",
       "name": "Adesivo Plástico PVC",
       "categoryId": "cat_escritorio",
       "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 2,
       "currentStock": 3,
       "avgCost": "",
       "status": "active",
@@ -557,7 +557,7 @@
       "description": "Tamanho/apresentação: CAIXAS",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-09-04"
     },
     {
       "id": "mat_esc_021",
