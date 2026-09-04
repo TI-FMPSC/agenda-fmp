@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-04T14:51:27.392Z",
-    "updatedAt": "2026-09-04T14:51:27.392Z",
+    "lastSync": "2026-09-04T14:53:45.170Z",
+    "updatedAt": "2026-09-04T14:53:45.170Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1731,13 +1731,13 @@
     },
     {
       "id": "mat_lim_020",
-      "code": "",
+      "code": "0065",
       "name": "Vassourção",
       "categoryId": "cat_limpeza",
       "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 15,
       "currentStock": 27,
       "avgCost": "",
       "status": "active",
@@ -1745,7 +1745,7 @@
       "description": "Tamanho/apresentação: UNIDADE",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-09-04"
     },
     {
       "id": "mat_lim_021",
