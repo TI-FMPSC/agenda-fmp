@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-08-28T15:46:15.706Z",
-    "updatedAt": "2026-08-28T15:46:15.706Z",
+    "lastSync": "2026-09-04T11:19:23.038Z",
+    "updatedAt": "2026-09-04T11:19:23.038Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1900,14 +1900,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 4,
-      "currentStock": 5,
+      "currentStock": 68,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 30 metros | Tamanho/apresentação: 4 PACOTES DE 16 ROLOS | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-25"
+      "updatedAt": "2026-09-04"
     },
     {
       "id": "mat_lim_030",
@@ -2660,8 +2660,8 @@
       "avgCost": 0,
       "status": "active",
       "barcode": "",
-      "expirationDate": "",
       "description": "Recebidos em 28/08 36 unidades de 5 litros cada. Marca: Sebold",
+      "expirationDate": "",
       "createdAt": "2026-08-28",
       "updatedAt": "2026-08-28"
     }
@@ -3434,6 +3434,38 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-28T15:46:13.579Z"
+    },
+    {
+      "id": "id_z8dtbmh2mtmv2fs6",
+      "materialId": "mat_lim_029",
+      "type": "saida",
+      "date": "2026-09-04",
+      "quantity": 5,
+      "unitCost": 0,
+      "previousStock": 5,
+      "newStock": 0,
+      "effect": -5,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-04T11:18:55.590Z"
+    },
+    {
+      "id": "id_j7wfl6qzmtmv2zq0",
+      "materialId": "mat_lim_029",
+      "type": "entrada",
+      "date": "2026-09-04",
+      "quantity": 68,
+      "unitCost": "",
+      "previousStock": 0,
+      "newStock": 68,
+      "effect": 68,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-04T11:19:21.432Z"
     }
   ],
   "users": []
