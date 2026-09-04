@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-04T14:53:44.379Z",
+  "updatedAt": "2026-09-04T14:59:04.822Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2107,6 +2107,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "0065 · Vassourção"
+    },
+    {
+      "id": "66c81244-42f5-4f76-86db-f670b02e00f6",
+      "timestamp": "2026-09-04T14:59:03.816Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
