@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-04T14:53:45.170Z",
-    "updatedAt": "2026-09-04T14:53:45.170Z",
+    "lastSync": "2026-09-04T14:54:43.837Z",
+    "updatedAt": "2026-09-04T14:54:43.837Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1749,13 +1749,13 @@
     },
     {
       "id": "mat_lim_021",
-      "code": "",
+      "code": "0066",
       "name": "Vassouras",
       "categoryId": "cat_limpeza",
       "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 5,
       "currentStock": 6,
       "avgCost": "",
       "status": "active",
@@ -1763,7 +1763,7 @@
       "description": "Tamanho/apresentação: UNIDADE",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-09-04"
     },
     {
       "id": "mat_lim_022",
