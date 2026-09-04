@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-04T12:23:04.445Z",
-    "updatedAt": "2026-09-04T12:23:04.445Z",
+    "lastSync": "2026-09-04T12:23:14.686Z",
+    "updatedAt": "2026-09-04T12:23:14.686Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1926,24 +1926,6 @@
       "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-25"
-    },
-    {
-      "id": "mat_lim_031",
-      "code": "",
-      "name": "sacos de papel toalha",
-      "categoryId": "cat_limpeza",
-      "unit": "PCT",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": "",
-      "currentStock": 7,
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Tamanho/apresentação: 4 pacotes cada | Observações: atualizado em 14/08",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
     },
     {
       "id": "mat_lim_032",
