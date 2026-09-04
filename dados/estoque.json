@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-04T12:23:21.308Z",
-    "updatedAt": "2026-09-04T12:23:21.308Z",
+    "lastSync": "2026-09-04T14:51:27.392Z",
+    "updatedAt": "2026-09-04T14:51:27.392Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -723,13 +723,13 @@
     },
     {
       "id": "mat_esc_031",
-      "code": "",
+      "code": "0062",
       "name": "Apontador",
       "categoryId": "cat_escritorio",
       "unit": "CX",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 3,
       "currentStock": 12,
       "avgCost": "",
       "status": "active",
@@ -737,7 +737,7 @@
       "description": "Marca: sortidos | Tamanho/apresentação: unidades/ compra em caixa com 24 unidades",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-09-04"
     },
     {
       "id": "mat_esc_032",
@@ -2037,13 +2037,13 @@
     },
     {
       "id": "mat_man_006",
-      "code": "",
+      "code": "0064",
       "name": "Assento Sanitário",
       "categoryId": "cat_manutencao",
       "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 3,
       "currentStock": 8,
       "avgCost": "",
       "status": "active",
@@ -2051,7 +2051,7 @@
       "description": "Tamanho/apresentação: unidade",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-09-04"
     },
     {
       "id": "mat_man_007",
