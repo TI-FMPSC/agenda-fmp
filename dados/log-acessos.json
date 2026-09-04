@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-04T11:20:18.280Z",
+  "updatedAt": "2026-09-04T11:22:52.629Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -1999,6 +1999,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "003 · Papel Higiênico"
+    },
+    {
+      "id": "604aa8e0-45ec-4a6a-812f-47f83efe6c27",
+      "timestamp": "2026-09-04T11:22:51.704Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "0058 · Papel Higiênico - Rolo Avulso"
     }
   ]
 }
