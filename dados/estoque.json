@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-04T11:19:23.038Z",
-    "updatedAt": "2026-09-04T11:19:23.038Z",
+    "lastSync": "2026-09-04T11:19:48.428Z",
+    "updatedAt": "2026-09-04T11:19:48.428Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1896,7 +1896,7 @@
       "code": "003",
       "name": "Papel Higiênico",
       "categoryId": "cat_limpeza",
-      "unit": "FRD",
+      "unit": "UN",
       "supplierId": "",
       "locationId": "",
       "minStock": 4,
@@ -3457,7 +3457,7 @@
       "type": "entrada",
       "date": "2026-09-04",
       "quantity": 68,
-      "unitCost": "",
+      "unitCost": 0,
       "previousStock": 0,
       "newStock": 68,
       "effect": 68,
