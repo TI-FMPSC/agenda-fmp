@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-08T21:27:48.095Z",
+  "updatedAt": "2026-09-08T21:30:12.133Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -2870,13 +2870,14 @@
     {
       "id": "af53eebf-dba1-5162-9a1d-5dde3e71a5bf",
       "resourceId": "lab3",
-      "responsible": "Clodomir Coradini",
-      "purpose": "ADS — 2ª Fase",
-      "date": "2026-09-09",
-      "startTime": "08:00",
-      "endTime": "11:10",
+      "responsible": "MARCU",
+      "purpose": "Pedagogia — 6ª Fase",
+      "date": "2026-09-08",
+      "startTime": "18:50",
+      "endTime": "22:00",
       "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: CORADINI"
+      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: CORADINI",
+      "spaceCategory": "lab"
     },
     {
       "id": "853dc341-db2b-57da-9276-bc0653a22b3b",
