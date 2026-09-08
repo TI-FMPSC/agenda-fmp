@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-03T20:09:08.062Z",
+  "updatedAt": "2026-09-08T21:00:18.397Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -2820,18 +2820,6 @@
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: ANDERSON(MATURIDADE) - 16:20-17:30"
     },
     {
-      "id": "cba4f201-7724-42d1-807a-98005145f995",
-      "spaceCategory": "lab",
-      "resourceId": "lab5",
-      "responsible": "Inara A. V. Willerding",
-      "purpose": "",
-      "startTime": "19:00",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-09-08"
-    },
-    {
       "id": "eec92811-68f6-5456-ad2c-c15b85729de8",
       "resourceId": "lab1",
       "responsible": "Sérgio M. Schutz",
@@ -4529,6 +4517,18 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: KLEBER (PALESTRA DAS 19:00-22:00))"
+    },
+    {
+      "id": "cba4f201-7724-42d1-807a-98005145f995",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "responsible": "VALNEIDE (DÉBORA)",
+      "purpose": "OUTUBRO ROSA",
+      "startTime": "13:00",
+      "endTime": "18:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-03"
     },
     {
       "id": "ceef1e07-a58d-521e-84dc-70ec8758c39a",
