@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-08T20:52:03.430Z",
+  "updatedAt": "2026-09-08T21:00:21.933Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2143,6 +2143,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "f942729e-d0d2-42e6-b18f-b70c9dafb7fa",
+      "timestamp": "2026-09-08T21:00:21.187Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "OUTUBRO ROSA · VALNEIDE (DÉBORA) · 2026-10-03 · 13:00–18:00 · Auditório"
     }
   ]
 }
