@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-08T21:09:49.093Z",
+  "updatedAt": "2026-09-08T21:10:36.195Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -2820,15 +2820,15 @@
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: ANDERSON(MATURIDADE) - 16:20-17:30"
     },
     {
-      "id": "f0955184-ab5c-5e19-8ec7-2d69f425554c",
-      "resourceId": "lab2",
+      "id": "af53eebf-dba1-5162-9a1d-5dde3e71a5bf",
+      "resourceId": "lab3",
       "responsible": "Marcus B. O. Silveira",
       "purpose": "Pedagogia — 6ª Fase",
       "date": "2026-09-08",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: GREGORI",
+      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: CORADINI",
       "spaceCategory": "lab"
     },
     {
@@ -2843,15 +2843,15 @@
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: SÉRGIO"
     },
     {
-      "id": "af53eebf-dba1-5162-9a1d-5dde3e71a5bf",
-      "resourceId": "lab3",
-      "responsible": "Clodomir Coradini",
-      "purpose": "ADS — 2ª Fase",
+      "id": "f0955184-ab5c-5e19-8ec7-2d69f425554c",
+      "resourceId": "lab2",
+      "responsible": "Gregori M. Czizeweski",
+      "purpose": "ADS — 3ª Fase",
       "date": "2026-09-09",
       "startTime": "08:00",
       "endTime": "11:10",
       "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: CORADINI"
+      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: GREGORI"
     },
     {
       "id": "b4bd983e-1665-50b7-818e-f46594472510",
