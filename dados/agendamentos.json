@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-08T21:00:18.397Z",
+  "updatedAt": "2026-09-08T21:08:37.466Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -2822,13 +2822,14 @@
     {
       "id": "eec92811-68f6-5456-ad2c-c15b85729de8",
       "resourceId": "lab1",
-      "responsible": "Sérgio M. Schutz",
-      "purpose": "ADS — 5ª Fase",
-      "date": "2026-09-09",
-      "startTime": "08:00",
-      "endTime": "11:10",
+      "responsible": "Grazielle F. da Silva",
+      "purpose": "Pedagogia — 2ª Fase",
+      "date": "2026-09-08",
+      "startTime": "18:50",
+      "endTime": "22:00",
       "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: SÉRGIO"
+      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: SÉRGIO",
+      "spaceCategory": "lab"
     },
     {
       "id": "f0955184-ab5c-5e19-8ec7-2d69f425554c",
