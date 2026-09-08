@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-08T21:27:50.837Z",
+  "updatedAt": "2026-09-08T21:30:15.461Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2242,6 +2242,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 6ª Fase · Marcus B. O. Silveira · 2026-09-08 · 18:50–22:00 · Laboratório 02"
+    },
+    {
+      "id": "9a91c9a9-2cf4-4279-be09-69d706a3577b",
+      "timestamp": "2026-09-08T21:30:14.605Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 6ª Fase · MARCU · 2026-09-08 · 18:50–22:00 · Laboratório 03"
     }
   ]
 }
