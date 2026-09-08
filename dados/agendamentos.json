@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-08T21:26:59.456Z",
+  "updatedAt": "2026-09-08T21:27:48.095Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -2858,13 +2858,14 @@
     {
       "id": "f0955184-ab5c-5e19-8ec7-2d69f425554c",
       "resourceId": "lab2",
-      "responsible": "Gregori M. Czizeweski",
-      "purpose": "ADS — 3ª Fase",
-      "date": "2026-09-09",
-      "startTime": "08:00",
-      "endTime": "11:10",
+      "responsible": "Marcus B. O. Silveira",
+      "purpose": "Pedagogia — 6ª Fase",
+      "date": "2026-09-08",
+      "startTime": "18:50",
+      "endTime": "22:00",
       "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: GREGORI"
+      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: GREGORI",
+      "spaceCategory": "lab"
     },
     {
       "id": "af53eebf-dba1-5162-9a1d-5dde3e71a5bf",
