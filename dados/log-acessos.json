@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-09T23:24:15.109Z",
+  "updatedAt": "2026-09-09T23:30:07.198Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2323,6 +2323,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "PÓS-GRADUAÇÃO (EDUCAÇÃO ESPECIAL) · Gabriele B. Silva · 2026-09-10 · 18:50–22:00 · Auditório"
+    },
+    {
+      "id": "455bdeb5-85b7-45cf-9505-8a61a59daaf3",
+      "timestamp": "2026-09-09T23:30:06.796Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "MATURIDADE · MATURIDADE · 2026-09-10 · 13:30–17:30 · SALA 17"
     }
   ]
 }
