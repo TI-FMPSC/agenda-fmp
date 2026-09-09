@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-08T21:30:15.461Z",
+  "updatedAt": "2026-09-09T18:26:09.516Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2251,6 +2251,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 6ª Fase · MARCU · 2026-09-08 · 18:50–22:00 · Laboratório 03"
+    },
+    {
+      "id": "9d0df4c5-cae5-462c-9f4d-c6d08dbf974d",
+      "timestamp": "2026-09-09T18:26:08.657Z",
+      "username": "deborabombazaro",
+      "name": "Débora Bombazaro",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
