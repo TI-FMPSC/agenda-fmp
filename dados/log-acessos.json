@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-09T23:21:27.288Z",
+  "updatedAt": "2026-09-09T23:24:15.109Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2314,6 +2314,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 3ª Fase · Gabriele B. Silva · 2026-09-10 · 18:50–22:00 · Auditório"
+    },
+    {
+      "id": "0d9321c8-0f3d-4679-b53b-4d7324c61f20",
+      "timestamp": "2026-09-09T23:24:14.702Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "PÓS-GRADUAÇÃO (EDUCAÇÃO ESPECIAL) · Gabriele B. Silva · 2026-09-10 · 18:50–22:00 · Auditório"
     }
   ]
 }
