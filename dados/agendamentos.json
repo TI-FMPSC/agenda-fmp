@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-09T18:27:21.294Z",
+  "updatedAt": "2026-09-09T23:13:46.101Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3058,6 +3058,18 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: BOFF"
+    },
+    {
+      "id": "14a88c45-56d5-46f9-b08a-3a2446132085",
+      "spaceCategory": "lab",
+      "resourceId": "lab3",
+      "responsible": "Grazielle F. da Silva",
+      "purpose": "Pedagogia — 5ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-10"
     },
     {
       "id": "dca474c3-d127-5111-8a5e-d4db269546e4",
