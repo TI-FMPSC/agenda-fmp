@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-09T23:13:46.101Z",
+  "updatedAt": "2026-09-09T23:21:24.426Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3065,6 +3065,18 @@
       "resourceId": "lab3",
       "responsible": "Grazielle F. da Silva",
       "purpose": "Pedagogia — 5ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-10"
+    },
+    {
+      "id": "fe60d285-753e-4070-9484-81991b88c3fd",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "responsible": "Gabriele B. Silva",
+      "purpose": "Pedagogia — 3ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
