@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-09T23:41:08.319Z",
+  "updatedAt": "2026-09-09T23:54:07.292Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2368,6 +2368,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "91d30006-0b5e-4766-9ffb-d7cee458a391",
+      "timestamp": "2026-09-09T23:54:06.782Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "CURSO DE LIBRAS · Kleber M. da Costa · 2026-09-11 · 17:30–18:30 · Auditório"
     }
   ]
 }
