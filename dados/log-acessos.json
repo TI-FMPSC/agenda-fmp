@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-09T23:30:07.198Z",
+  "updatedAt": "2026-09-09T23:32:00.226Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2332,6 +2332,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "MATURIDADE · MATURIDADE · 2026-09-10 · 13:30–17:30 · SALA 17"
+    },
+    {
+      "id": "b8cd6ff7-1287-489f-af9d-8f525ea635a8",
+      "timestamp": "2026-09-09T23:31:59.441Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "SALA 17: MATURIDADE (13:30-17:30) · SALA 17: MATURIDADE (13:30-17:30) · 2026-09-10 · 13:30–17:30 · Sala 16"
     }
   ]
 }
