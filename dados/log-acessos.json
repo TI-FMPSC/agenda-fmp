@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-09T23:54:07.292Z",
+  "updatedAt": "2026-09-09T23:55:27.088Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2377,6 +2377,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "CURSO DE LIBRAS · Kleber M. da Costa · 2026-09-11 · 17:30–18:30 · Auditório"
+    },
+    {
+      "id": "d9540dc2-d694-4ab0-84e1-1bef95a11192",
+      "timestamp": "2026-09-09T23:55:26.335Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 7ª Fase · Marcus B. O. Silveira · 2026-09-11 · 18:50–22:00 · Laboratório 02"
     }
   ]
 }
