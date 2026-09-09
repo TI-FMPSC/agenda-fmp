@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-09T23:21:24.426Z",
+  "updatedAt": "2026-09-09T23:24:12.399Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3076,7 +3076,7 @@
       "spaceCategory": "lab",
       "resourceId": "auditorio",
       "responsible": "Gabriele B. Silva",
-      "purpose": "Pedagogia — 3ª Fase",
+      "purpose": "PÓS-GRADUAÇÃO (EDUCAÇÃO ESPECIAL)",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
