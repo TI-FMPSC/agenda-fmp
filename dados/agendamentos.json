@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-09T23:31:55.189Z",
+  "updatedAt": "2026-09-09T23:36:11.551Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3002,19 +3002,6 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: ANDERSON"
-    },
-    {
-      "id": "3ac09a7b-c003-5191-b4d5-9dcdcd5d1136",
-      "resourceId": "custom:sala-16",
-      "responsible": "SALA 17: MATURIDADE (13:30-17:30)",
-      "purpose": "SALA 17: MATURIDADE (13:30-17:30)",
-      "date": "2026-09-10",
-      "startTime": "13:30",
-      "endTime": "17:30",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: SALA 16: MATURIDADE (13:30-17:30)",
-      "customSpaceName": "Sala 16",
-      "spaceCategory": "lab"
     },
     {
       "id": "aefd4928-0df2-4599-adc2-cdff49d4c0f0",
