@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-09T23:13:49.031Z",
+  "updatedAt": "2026-09-09T23:21:27.288Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2305,6 +2305,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 5ª Fase · Grazielle F. da Silva · 2026-09-10 · 18:50–22:00 · Laboratório 03"
+    },
+    {
+      "id": "52e98ab5-6320-4c1c-a3ec-3fbccd628d39",
+      "timestamp": "2026-09-09T23:21:26.540Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 3ª Fase · Gabriele B. Silva · 2026-09-10 · 18:50–22:00 · Auditório"
     }
   ]
 }
