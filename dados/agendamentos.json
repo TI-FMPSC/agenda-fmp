@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-08T21:30:12.133Z",
+  "updatedAt": "2026-09-09T18:27:21.294Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -2912,6 +2912,18 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: LEONARDO"
+    },
+    {
+      "id": "44ddc16c-c464-4bbc-b7ef-492ab1195832",
+      "spaceCategory": "lab",
+      "resourceId": "lab2",
+      "responsible": "Ana Lucia Machado",
+      "purpose": "Pedagogia — 6ª Fase",
+      "startTime": "19:00",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-09"
     },
     {
       "id": "217bf65d-2ffc-54ef-b660-d8e9c29c73b0",
