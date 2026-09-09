@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-09T18:26:11.761Z",
+  "updatedAt": "2026-09-09T18:27:24.100Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2260,6 +2260,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "87a6c01e-9050-4e4e-b669-1f65b074aaa5",
+      "timestamp": "2026-09-09T18:27:23.638Z",
+      "username": "deborabombazaro",
+      "name": "Débora Bombazaro",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 6ª Fase · Ana Lucia Machado · 2026-09-09 · 19:00–22:00 · Laboratório 02"
     }
   ]
 }
