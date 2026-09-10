@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T15:18:00.758Z",
+  "updatedAt": "2026-09-10T15:18:29.501Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2638,6 +2638,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 0028 · Limpa Vidros com alcool uso geral · quantidade 1 · saldo 4"
+    },
+    {
+      "id": "d1907d61-3b6e-4f7b-9751-f0924fc4d895",
+      "timestamp": "2026-09-10T15:18:29.087Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 0020 · Água Sanitaria · quantidade 2 · saldo 69"
     }
   ]
 }
