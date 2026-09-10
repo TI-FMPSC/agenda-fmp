@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-10T15:16:20.295Z",
-    "updatedAt": "2026-09-10T15:16:20.295Z",
+    "lastSync": "2026-09-10T15:18:02.067Z",
+    "updatedAt": "2026-09-10T15:18:02.067Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1756,14 +1756,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 5,
-      "currentStock": 6,
+      "currentStock": 4,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: UNIDADE",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-09-04"
+      "updatedAt": "2026-09-10"
     },
     {
       "id": "mat_lim_022",
@@ -2494,14 +2494,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 15,
-      "currentStock": 5,
+      "currentStock": 4,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "Marca: SEBOLD | Tamanho/apresentação: 500ML",
       "expirationDate": "",
       "createdAt": "2026-08-25",
-      "updatedAt": "2026-08-25"
+      "updatedAt": "2026-09-10"
     },
     {
       "id": "id_iz3kwmj3mt8wt84z",
@@ -3565,7 +3565,7 @@
       "type": "saida",
       "date": "2026-08-31",
       "quantity": 1,
-      "unitCost": "",
+      "unitCost": 0,
       "previousStock": 32,
       "newStock": 31,
       "effect": -1,
@@ -3574,6 +3574,38 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-10T15:16:18.315Z"
+    },
+    {
+      "id": "id_ehhbmxxhmtvo7rxa",
+      "materialId": "mat_lim_021",
+      "type": "saida",
+      "date": "2026-09-10",
+      "quantity": 2,
+      "unitCost": 0,
+      "previousStock": 6,
+      "newStock": 4,
+      "effect": -2,
+      "sector": "VIVI / ASO",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-10T15:17:02.878Z"
+    },
+    {
+      "id": "id_925dtfxlmtvo902r",
+      "materialId": "id_i2nytlb0mt8w4k4z",
+      "type": "saida",
+      "date": "2026-09-02",
+      "quantity": 1,
+      "unitCost": "",
+      "previousStock": 5,
+      "newStock": 4,
+      "effect": -1,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-10T15:18:00.099Z"
     }
   ],
   "users": []
