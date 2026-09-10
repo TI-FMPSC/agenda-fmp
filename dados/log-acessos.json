@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T20:06:15.125Z",
+  "updatedAt": "2026-09-10T20:07:52.034Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2782,6 +2782,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "fd0be7db-3c10-4368-afe6-88fb00d6862f",
+      "timestamp": "2026-09-10T20:07:51.512Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "KLEBER (PALESTRA DAS 19:00-22:00)) · Kleber M. da Costa · 2026-10-22 · 19:00–22:00 · Auditório"
     }
   ]
 }
