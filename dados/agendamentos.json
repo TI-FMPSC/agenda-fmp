@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-10T00:01:23.097Z",
+  "updatedAt": "2026-09-10T00:32:47.621Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -6629,6 +6629,18 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: LARISSA"
+    },
+    {
+      "id": "33bad383-d0d6-4e8b-b400-5f40d84f68ef",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "responsible": "Tatiani Schmitt",
+      "purpose": "Pedagogia — 4ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "03 mesas+água+plantas",
+      "date": "2026-11-03"
     },
     {
       "id": "b83ac62b-5ca4-55c9-a9c6-c97072370d8f",
