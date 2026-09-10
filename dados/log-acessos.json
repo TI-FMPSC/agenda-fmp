@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T15:02:37.344Z",
+  "updatedAt": "2026-09-10T15:05:06.399Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2548,6 +2548,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · sem código · Sacos de Lixo · quantidade 1 · saldo 18"
+    },
+    {
+      "id": "8f2a8568-b0b7-4483-885c-bcc48491e0e2",
+      "timestamp": "2026-09-10T15:05:05.897Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 0048 · Desinfetante · quantidade 2 · saldo 34"
     }
   ]
 }
