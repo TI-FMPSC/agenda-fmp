@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T15:18:29.501Z",
+  "updatedAt": "2026-09-10T15:18:55.834Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2647,6 +2647,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 0020 · Água Sanitaria · quantidade 2 · saldo 69"
+    },
+    {
+      "id": "cdf48db8-0756-499b-ac99-bc5c4038ff2f",
+      "timestamp": "2026-09-10T15:18:55.308Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 0048 · Desinfetante · quantidade 1 · saldo 35"
     }
   ]
 }
