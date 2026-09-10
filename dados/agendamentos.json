@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-10T22:15:16.646Z",
+  "updatedAt": "2026-09-10T22:57:58.631Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3022,6 +3022,18 @@
       "resourceId": "auditorio",
       "responsible": "Gabriele B. Silva",
       "purpose": "PÓS-GRADUAÇÃO (EDUCAÇÃO ESPECIAL)",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-10"
+    },
+    {
+      "id": "c2913652-d223-4a26-8ef2-2b4d6c3a1623",
+      "spaceCategory": "lab",
+      "resourceId": "lab1",
+      "responsible": "Fabiana E. Boff",
+      "purpose": "Administração — 4ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
