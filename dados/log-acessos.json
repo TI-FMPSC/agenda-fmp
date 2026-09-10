@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T12:51:57.578Z",
+  "updatedAt": "2026-09-10T12:55:59.452Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2467,6 +2467,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "13c5f5b2-e4d2-4e86-8801-50de8ac23fe0",
+      "timestamp": "2026-09-10T12:55:58.872Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · sem código · Cola grande · quantidade 4 · saldo 1"
     }
   ]
 }
