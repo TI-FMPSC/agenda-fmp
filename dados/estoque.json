@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-04T15:02:25.106Z",
-    "updatedAt": "2026-09-04T15:02:25.106Z",
+    "lastSync": "2026-09-10T15:01:23.572Z",
+    "updatedAt": "2026-09-10T15:01:23.572Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2350,14 +2350,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 20,
-      "currentStock": 74,
+      "currentStock": 73,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "",
       "expirationDate": "",
       "createdAt": "2026-08-21",
-      "updatedAt": "2026-08-25"
+      "updatedAt": "2026-09-10"
     },
     {
       "id": "id_nwtfs1uomt2xtg4h",
@@ -2404,14 +2404,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 20,
-      "currentStock": 107,
+      "currentStock": 106,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "",
       "expirationDate": "",
       "createdAt": "2026-08-21",
-      "updatedAt": "2026-08-25"
+      "updatedAt": "2026-09-10"
     },
     {
       "id": "id_xr67phu6mt30bbbr",
@@ -2440,14 +2440,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 10,
-      "currentStock": 4,
+      "currentStock": 3,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "Especificação: tixan Ypê | Marca: X-MAX | Tamanho/apresentação: 400 GRAMAS | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-21",
-      "updatedAt": "2026-08-21"
+      "updatedAt": "2026-09-10"
     },
     {
       "id": "id_vf4h0b18mt8tpczd",
@@ -3398,6 +3398,54 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-04T11:19:21.432Z"
+    },
+    {
+      "id": "id_pt3zvrcdmtvnl9qu",
+      "materialId": "id_dv1vx6wrmt30qxey",
+      "type": "saida",
+      "date": "2026-08-26",
+      "quantity": 1,
+      "unitCost": "",
+      "previousStock": 4,
+      "newStock": 3,
+      "effect": -1,
+      "sector": "Vivi / ASO",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-10T14:59:32.886Z"
+    },
+    {
+      "id": "id_j6wysyk0mtvnmgl1",
+      "materialId": "id_p07km1q6mt2xlvwb",
+      "type": "saida",
+      "date": "2026-08-26",
+      "quantity": 1,
+      "unitCost": "",
+      "previousStock": 74,
+      "newStock": 73,
+      "effect": -1,
+      "sector": "VIVI / ASO",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-10T15:00:28.405Z"
+    },
+    {
+      "id": "id_y0r532i1mtvnnlp9",
+      "materialId": "id_cp2jzwyimt2xynql",
+      "type": "saida",
+      "date": "2026-08-26",
+      "quantity": 1,
+      "unitCost": "",
+      "previousStock": 107,
+      "newStock": 106,
+      "effect": -1,
+      "sector": "VIVI / ASO",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-10T15:01:21.693Z"
     }
   ],
   "users": []
