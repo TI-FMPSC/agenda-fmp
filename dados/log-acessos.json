@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T15:17:03.691Z",
+  "updatedAt": "2026-09-10T15:18:00.758Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2629,6 +2629,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 0066 · Vassouras · quantidade 2 · saldo 4"
+    },
+    {
+      "id": "e4d7a624-54dd-4690-8b02-ae3f61ac8ec6",
+      "timestamp": "2026-09-10T15:18:00.142Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 0028 · Limpa Vidros com alcool uso geral · quantidade 1 · saldo 4"
     }
   ]
 }
