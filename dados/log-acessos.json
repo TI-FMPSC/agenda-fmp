@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T20:07:52.034Z",
+  "updatedAt": "2026-09-10T20:30:10.010Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2791,6 +2791,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "KLEBER (PALESTRA DAS 19:00-22:00)) · Kleber M. da Costa · 2026-10-22 · 19:00–22:00 · Auditório"
+    },
+    {
+      "id": "2390c806-1387-4bce-91dd-913612a5470a",
+      "timestamp": "2026-09-10T20:30:09.430Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 3ª Fase · Kleber M. da Costa · 2026-09-17 · 18:50–22:00 · Auditório"
     }
   ]
 }
