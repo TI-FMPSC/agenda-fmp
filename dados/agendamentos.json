@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-10T20:30:07.362Z",
+  "updatedAt": "2026-09-10T21:59:11.996Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3015,17 +3015,6 @@
       "status": "confirmed",
       "notes": "",
       "date": "2026-09-10"
-    },
-    {
-      "id": "fe7a3301-d998-51e4-b4de-f7cb8a7acece",
-      "resourceId": "lab1",
-      "responsible": "Leonardo C. Chaves",
-      "purpose": "Administração — 3ª Fase",
-      "date": "2026-09-10",
-      "startTime": "18:50",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: LEONARDO"
     },
     {
       "id": "678a5bc0-1f4c-5ca5-9c43-c706b22db983",
