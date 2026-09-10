@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-10T22:14:05.895Z",
+  "updatedAt": "2026-09-10T22:15:16.646Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3015,17 +3015,6 @@
       "status": "confirmed",
       "notes": "",
       "date": "2026-09-10"
-    },
-    {
-      "id": "6862f300-40ad-5c3f-8e7b-7a31ff3c43ba",
-      "resourceId": "lab5",
-      "responsible": "Fabiana E. Boff",
-      "purpose": "Administração — 4ª Fase",
-      "date": "2026-09-10",
-      "startTime": "18:50",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: BOFF"
     },
     {
       "id": "fe60d285-753e-4070-9484-81991b88c3fd",
