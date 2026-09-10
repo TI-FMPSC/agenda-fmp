@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-10T15:19:25.611Z",
-    "updatedAt": "2026-09-10T15:19:25.611Z",
+    "lastSync": "2026-09-10T15:20:07.715Z",
+    "updatedAt": "2026-09-10T15:20:07.715Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2044,14 +2044,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 3,
-      "currentStock": 8,
+      "currentStock": 5,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: unidade",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-09-04"
+      "updatedAt": "2026-09-10"
     },
     {
       "id": "mat_man_007",
@@ -3645,7 +3645,7 @@
       "type": "saida",
       "date": "2026-09-03",
       "quantity": 1,
-      "unitCost": "",
+      "unitCost": 0,
       "previousStock": 2,
       "newStock": 1,
       "effect": -1,
@@ -3654,6 +3654,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-10T15:19:23.649Z"
+    },
+    {
+      "id": "id_ddnyt7usmtvobpa6",
+      "materialId": "mat_man_006",
+      "type": "saida",
+      "date": "2026-09-04",
+      "quantity": 3,
+      "unitCost": "",
+      "previousStock": 8,
+      "newStock": 5,
+      "effect": -3,
+      "sector": "JUAREZ / ASO",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-10T15:20:06.078Z"
     }
   ],
   "users": []
