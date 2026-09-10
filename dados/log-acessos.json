@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T15:24:05.342Z",
+  "updatedAt": "2026-09-10T15:25:43.405Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2692,6 +2692,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 0018 · AÇÚCAR CRISTAL · quantidade 1 · saldo 5"
+    },
+    {
+      "id": "9e2399a9-25df-49c9-9507-dad14b3d48f5",
+      "timestamp": "2026-09-10T15:25:42.536Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "115 · PILHAS -  UNIDADE"
     }
   ]
 }
