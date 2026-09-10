@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T00:32:50.379Z",
+  "updatedAt": "2026-09-10T01:13:44.296Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2422,6 +2422,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 4ª Fase · Tatiani Schmitt · 2026-11-03 · 18:50–22:00 · Auditório"
+    },
+    {
+      "id": "54879cc3-1017-454b-aa3d-48a0325aa139",
+      "timestamp": "2026-09-10T01:13:43.696Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
