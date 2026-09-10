@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T15:14:57.662Z",
+  "updatedAt": "2026-09-10T15:16:18.679Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2611,6 +2611,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 0024 · Sabonete Líquido Grande · quantidade 1 · saldo 7"
+    },
+    {
+      "id": "e403ec71-d20b-4745-a344-f6439237d009",
+      "timestamp": "2026-09-10T15:16:18.358Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · sem código · Sacos de Lixo · quantidade 1 · saldo 31"
     }
   ]
 }
