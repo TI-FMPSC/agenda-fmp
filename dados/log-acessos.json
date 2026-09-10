@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T15:16:18.679Z",
+  "updatedAt": "2026-09-10T15:17:03.691Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2620,6 +2620,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · sem código · Sacos de Lixo · quantidade 1 · saldo 31"
+    },
+    {
+      "id": "0ce76100-468c-497b-9e61-668be0e47b2c",
+      "timestamp": "2026-09-10T15:17:02.919Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 0066 · Vassouras · quantidade 2 · saldo 4"
     }
   ]
 }
