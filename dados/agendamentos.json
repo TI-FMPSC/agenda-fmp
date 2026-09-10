@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-10T20:07:48.842Z",
+  "updatedAt": "2026-09-10T20:30:07.362Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3643,6 +3643,18 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: BOFF"
+    },
+    {
+      "id": "2e736063-7b32-4562-abfd-07dfe6c8ea92",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "responsible": "Kleber M. da Costa",
+      "purpose": "Pedagogia — 3ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "PALESTRA",
+      "date": "2026-09-17"
     },
     {
       "id": "2f2a7f42-bdf4-5375-8514-9fe64a19fcbc",
