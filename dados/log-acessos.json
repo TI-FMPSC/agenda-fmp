@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T21:59:14.854Z",
+  "updatedAt": "2026-09-10T22:09:06.970Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2854,6 +2854,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "Administração — 3ª Fase · Leonardo C. Chaves · 2026-09-10 · 18:50–22:00 · Laboratório 01"
+    },
+    {
+      "id": "8b700ae5-c94a-4ddf-ab79-bd19d761b60b",
+      "timestamp": "2026-09-10T22:09:06.415Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 6ª Fase · Mariane R. Estefano · 2026-09-10 · 18:50–22:00 · Laboratório 02"
     }
   ]
 }
