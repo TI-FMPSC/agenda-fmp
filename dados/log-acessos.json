@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T21:56:16.529Z",
+  "updatedAt": "2026-09-10T21:59:14.854Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2845,6 +2845,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "9a895726-1f43-4157-b733-b211988cf2d0",
+      "timestamp": "2026-09-10T21:59:14.166Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 3ª Fase · Leonardo C. Chaves · 2026-09-10 · 18:50–22:00 · Laboratório 01"
     }
   ]
 }
