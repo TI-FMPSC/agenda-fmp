@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T15:00:29.030Z",
+  "updatedAt": "2026-09-10T15:01:22.280Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2530,6 +2530,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 0020 · Água Sanitaria · quantidade 1 · saldo 73"
+    },
+    {
+      "id": "d6ec1340-72c2-442f-be27-b06cbc8dcab2",
+      "timestamp": "2026-09-10T15:01:21.744Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 0023 · Alcool Etílico Hidratado 92,8% · quantidade 1 · saldo 106"
     }
   ]
 }
