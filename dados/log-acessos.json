@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T13:01:49.145Z",
+  "updatedAt": "2026-09-10T13:03:50.549Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2494,6 +2494,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "110 · Pilhas AAA"
+    },
+    {
+      "id": "e6b3b9ae-0ed9-463e-8096-1fb601583efc",
+      "timestamp": "2026-09-10T13:03:50.035Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 0018 · AÇÚCAR CRISTAL · quantidade 1 · saldo 5"
     }
   ]
 }
