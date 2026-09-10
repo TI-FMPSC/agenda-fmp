@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T22:14:09.212Z",
+  "updatedAt": "2026-09-10T22:15:19.948Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2953,6 +2953,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "Administração — 6ª Fase · Mariane R. Estefano · 2026-09-10 · 18:50–22:00 · Laboratório 04"
+    },
+    {
+      "id": "f88b59a6-58a2-45f9-a8b4-09ccf68844d1",
+      "timestamp": "2026-09-10T22:15:19.406Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 4ª Fase · Fabiana E. Boff · 2026-09-10 · 18:50–22:00 · Laboratório 05"
     }
   ]
 }
