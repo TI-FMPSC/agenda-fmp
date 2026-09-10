@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T13:00:30.939Z",
+  "updatedAt": "2026-09-10T13:00:32.398Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2478,8 +2478,8 @@
       "details": "Saída · sem código · Cola grande · quantidade 4 · saldo 1"
     },
     {
-      "id": "498ee46a-bcc0-4183-ac0b-4296924df4d7",
-      "timestamp": "2026-09-10T13:00:30.118Z",
+      "id": "b8c3a43c-88ef-4c9b-aef5-a8ccb4dcdff1",
+      "timestamp": "2026-09-10T13:00:32.005Z",
       "username": "amandafranca",
       "name": "Amanda",
       "action": "Login realizado",
