@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-10T15:15:22.822Z",
-    "updatedAt": "2026-09-10T15:15:22.822Z",
+    "lastSync": "2026-09-10T15:15:51.015Z",
+    "updatedAt": "2026-09-10T15:15:51.015Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1666,14 +1666,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 15,
+      "currentStock": 14,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 50 litros | Tamanho/apresentação: 100 UNIDADES CADA",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-09-10"
     },
     {
       "id": "mat_lim_017",
@@ -3533,7 +3533,7 @@
       "type": "saida",
       "date": "2026-08-31",
       "quantity": 1,
-      "unitCost": "",
+      "unitCost": 0,
       "previousStock": 19,
       "newStock": 18,
       "effect": -1,
@@ -3542,6 +3542,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-10T15:15:20.981Z"
+    },
+    {
+      "id": "id_hjt9l0b4mtvo677x",
+      "materialId": "mat_lim_016",
+      "type": "saida",
+      "date": "2026-08-31",
+      "quantity": 1,
+      "unitCost": "",
+      "previousStock": 15,
+      "newStock": 14,
+      "effect": -1,
+      "sector": "VIVI / ASO",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-10T15:15:49.389Z"
     }
   ],
   "users": []
