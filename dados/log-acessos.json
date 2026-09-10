@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T22:11:32.788Z",
+  "updatedAt": "2026-09-10T22:13:30.995Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2926,6 +2926,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "Administração — 4ª Fase · Fabiana E. Boff · 2026-09-10 · 18:50–22:00 · Laboratório 05"
+    },
+    {
+      "id": "e8d16c6f-2e35-4e82-a125-b575985f5dd4",
+      "timestamp": "2026-09-10T22:13:30.047Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
