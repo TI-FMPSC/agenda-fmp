@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-10T15:01:23.572Z",
-    "updatedAt": "2026-09-10T15:01:23.572Z",
+    "lastSync": "2026-09-10T15:12:27.369Z",
+    "updatedAt": "2026-09-10T15:12:27.369Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2368,14 +2368,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 15,
-      "currentStock": 48,
+      "currentStock": 44,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "Neutro",
       "expirationDate": "",
       "createdAt": "2026-08-21",
-      "updatedAt": "2026-08-24"
+      "updatedAt": "2026-09-10"
     },
     {
       "id": "id_j7xrtpr8mt2xuehl",
@@ -3405,7 +3405,7 @@
       "type": "saida",
       "date": "2026-08-26",
       "quantity": 1,
-      "unitCost": "",
+      "unitCost": 0,
       "previousStock": 4,
       "newStock": 3,
       "effect": -1,
@@ -3421,7 +3421,7 @@
       "type": "saida",
       "date": "2026-08-26",
       "quantity": 1,
-      "unitCost": "",
+      "unitCost": 0,
       "previousStock": 74,
       "newStock": 73,
       "effect": -1,
@@ -3437,7 +3437,7 @@
       "type": "saida",
       "date": "2026-08-26",
       "quantity": 1,
-      "unitCost": "",
+      "unitCost": 0,
       "previousStock": 107,
       "newStock": 106,
       "effect": -1,
@@ -3446,6 +3446,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-10T15:01:21.693Z"
+    },
+    {
+      "id": "id_270yl0fumtvo1two",
+      "materialId": "id_nwtfs1uomt2xtg4h",
+      "type": "saida",
+      "date": "2026-09-10",
+      "quantity": 4,
+      "unitCost": 0,
+      "previousStock": 48,
+      "newStock": 44,
+      "effect": -4,
+      "sector": "MARI / ASO",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-10T15:12:25.512Z"
     }
   ],
   "users": []
