@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-10T15:14:36.700Z",
-    "updatedAt": "2026-09-10T15:14:36.700Z",
+    "lastSync": "2026-09-10T15:14:59.138Z",
+    "updatedAt": "2026-09-10T15:14:59.138Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2422,7 +2422,7 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 15,
-      "currentStock": 8,
+      "currentStock": 7,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
@@ -3501,7 +3501,7 @@
       "type": "saida",
       "date": "2026-08-31",
       "quantity": 2,
-      "unitCost": "",
+      "unitCost": 0,
       "previousStock": 10,
       "newStock": 8,
       "effect": -2,
@@ -3510,6 +3510,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-10T15:14:35.027Z"
+    },
+    {
+      "id": "id_z6ttupf0mtvo52yt",
+      "materialId": "id_xr67phu6mt30bbbr",
+      "type": "saida",
+      "date": "2026-08-31",
+      "quantity": 1,
+      "unitCost": "",
+      "previousStock": 8,
+      "newStock": 7,
+      "effect": -1,
+      "sector": "VIVI / ASO",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-10T15:14:57.221Z"
     }
   ],
   "users": []
