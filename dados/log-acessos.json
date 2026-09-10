@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T15:25:43.405Z",
+  "updatedAt": "2026-09-10T19:19:48.228Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2701,6 +2701,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "115 · PILHAS -  UNIDADE"
+    },
+    {
+      "id": "0867eaae-50e4-4015-a7e9-9d9f54f263db",
+      "timestamp": "2026-09-10T19:19:47.590Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
