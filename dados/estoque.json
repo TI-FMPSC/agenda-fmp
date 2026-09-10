@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-10T15:15:51.015Z",
-    "updatedAt": "2026-09-10T15:15:51.015Z",
+    "lastSync": "2026-09-10T15:16:20.295Z",
+    "updatedAt": "2026-09-10T15:16:20.295Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1684,14 +1684,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 32,
+      "currentStock": 31,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 30 litros | Tamanho/apresentação: 10 UNIDADES CADA | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-09-10"
     },
     {
       "id": "mat_lim_018",
@@ -3549,7 +3549,7 @@
       "type": "saida",
       "date": "2026-08-31",
       "quantity": 1,
-      "unitCost": "",
+      "unitCost": 0,
       "previousStock": 15,
       "newStock": 14,
       "effect": -1,
@@ -3558,6 +3558,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-10T15:15:49.389Z"
+    },
+    {
+      "id": "id_8n1dwdtomtvo6tjf",
+      "materialId": "mat_lim_017",
+      "type": "saida",
+      "date": "2026-08-31",
+      "quantity": 1,
+      "unitCost": "",
+      "previousStock": 32,
+      "newStock": 31,
+      "effect": -1,
+      "sector": "VIV / ASO",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-10T15:16:18.315Z"
     }
   ],
   "users": []
