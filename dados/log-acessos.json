@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T14:40:30.658Z",
+  "updatedAt": "2026-09-10T14:59:33.548Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2512,6 +2512,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "6e485e5e-8bf5-44dd-95d8-08c075873dfd",
+      "timestamp": "2026-09-10T14:59:32.948Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 0025 · Sabão em Pó · quantidade 1 · saldo 3"
     }
   ]
 }
