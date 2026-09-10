@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T15:22:15.021Z",
+  "updatedAt": "2026-09-10T15:24:05.342Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2683,6 +2683,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · sem código · Pacotes de Esponja · quantidade 1 · saldo 19"
+    },
+    {
+      "id": "a7716958-1535-46a4-92dc-3e58f0e81858",
+      "timestamp": "2026-09-10T15:24:04.579Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 0018 · AÇÚCAR CRISTAL · quantidade 1 · saldo 5"
     }
   ]
 }
