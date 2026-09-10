@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T01:13:46.302Z",
+  "updatedAt": "2026-09-10T12:35:43.526Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2431,6 +2431,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "0b5f625e-8235-4319-9073-8b15e6ee1360",
+      "timestamp": "2026-09-10T12:35:43.049Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza integração com GitHub",
+      "module": "Configurações",
+      "details": "TI-FMPSC/agenda-fmp · main"
     }
   ]
 }
