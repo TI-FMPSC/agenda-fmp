@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-10T20:30:10.010Z",
+  "updatedAt": "2026-09-10T20:39:35.078Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -2800,6 +2800,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 3ª Fase · Kleber M. da Costa · 2026-09-17 · 18:50–22:00 · Auditório"
+    },
+    {
+      "id": "9556e5d0-84e6-472a-8c53-61be3b52cfda",
+      "timestamp": "2026-09-10T20:39:34.471Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
