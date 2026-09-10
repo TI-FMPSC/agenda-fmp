@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-10T00:32:47.621Z",
+  "updatedAt": "2026-09-10T20:07:48.842Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -5930,17 +5930,6 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: AVALIAÇÃO CPA | name: ANA BARBARA (8ªADM)"
-    },
-    {
-      "id": "1cbc8ff0-eace-5411-a9a5-eb0b70654e48",
-      "resourceId": "auditorio",
-      "responsible": "Kleber M. da Costa",
-      "purpose": "KLEBER (PALESTRA DAS 19:00-22:00))",
-      "date": "2026-10-22",
-      "startTime": "19:00",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: KLEBER (PALESTRA DAS 19:00-22:00))"
     },
     {
       "id": "1b406796-27b6-5122-beb3-a351887d25f6",
