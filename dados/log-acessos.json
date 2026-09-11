@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T14:33:51.583Z",
+  "updatedAt": "2026-09-11T14:40:36.595Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3214,6 +3214,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Ajuste · 0022 · Detergente louça · quantidade 94 · saldo 94"
+    },
+    {
+      "id": "8cdd55bb-053c-484b-9dd6-d94ee44a03ea",
+      "timestamp": "2026-09-11T14:40:36.064Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Ajuste · 001 · Folhas A4 - Padrão · quantidade 15 · saldo 15"
     }
   ]
 }
