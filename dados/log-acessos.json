@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T14:19:50.717Z",
+  "updatedAt": "2026-09-11T14:30:33.585Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3178,6 +3178,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Ajuste · 0013 · Amaciante de Roupas · quantidade 44 · saldo 44"
+    },
+    {
+      "id": "06ca1a3d-66db-47fb-a7b7-c548bfabe405",
+      "timestamp": "2026-09-11T14:30:33.141Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Exclui material",
+      "module": "Estoque FMP",
+      "details": "006 · Detergente louça"
     }
   ]
 }
