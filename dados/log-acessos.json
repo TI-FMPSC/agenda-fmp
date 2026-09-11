@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T16:41:49.543Z",
+  "updatedAt": "2026-09-11T16:54:31.318Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3295,6 +3295,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "GABRIELA (PÓS) · GABRIELA (PÓS) · 2026-09-28 · 19:00–22:00 · Auditório"
+    },
+    {
+      "id": "0693f680-366e-4ea6-b27c-1f19d6b0ab7d",
+      "timestamp": "2026-09-11T16:54:30.643Z",
+      "username": "não autenticado",
+      "name": "não autenticado",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "CASA EDUCADOR · MALTON · 2026-09-14 · 13:00–17:00 · SALA 11, 13"
     }
   ]
 }
