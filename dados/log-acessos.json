@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T18:44:11.430Z",
+  "updatedAt": "2026-09-11T18:46:03.892Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3394,6 +3394,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "341bd895-49a9-4213-bdf3-0600e9e712f4",
+      "timestamp": "2026-09-11T18:46:03.326Z",
+      "username": "deborabombazaro",
+      "name": "Débora Bombazaro",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 4ª Fase · Maurício A. de Lima · 2026-09-11 · 19:00–22:00 · Laboratório 04"
     }
   ]
 }
