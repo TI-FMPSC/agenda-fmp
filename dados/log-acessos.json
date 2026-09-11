@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T17:06:36.578Z",
+  "updatedAt": "2026-09-11T17:14:20.292Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3358,6 +3358,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "CASA EDUCADOR · MALTON · 2026-09-17 · 13:00–17:00 · SALA 11, 13"
+    },
+    {
+      "id": "e3f55290-040f-44fe-a632-c50b51479f70",
+      "timestamp": "2026-09-11T17:14:19.737Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 7ª Fase · Marcus B. O. Silveira. · 2026-09-11 · 18:50–22:00 · Laboratório 03"
     }
   ]
 }
