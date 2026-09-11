@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T15:11:15.719Z",
+  "updatedAt": "2026-09-11T15:15:08.231Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3232,6 +3232,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "cfeffec4-d33b-4c16-a957-6fced3d4fa5e",
+      "timestamp": "2026-09-11T15:15:07.807Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "SALA 16: MATURIDADE (13:30-17:30) · SALA 16: MATURIDADE (13:30-17:30) · 2026-09-16 · 13:30–17:30 · Sala 17"
     }
   ]
 }
