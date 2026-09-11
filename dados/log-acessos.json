@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T13:42:41.546Z",
+  "updatedAt": "2026-09-11T13:44:58.869Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3097,6 +3097,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "0061 · Papel Toalha"
+    },
+    {
+      "id": "4652203f-76fe-4623-af1f-5b263b8c9212",
+      "timestamp": "2026-09-11T13:44:58.353Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · sem código · Garrafas Térmica · quantidade 4 · saldo 2"
     }
   ]
 }
