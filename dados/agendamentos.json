@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-11T16:39:07.484Z",
+  "updatedAt": "2026-09-11T16:41:46.998Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -4249,17 +4249,6 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: ANDRÉIA (3ª FASE PED)"
-    },
-    {
-      "id": "ce0736af-a17f-579b-a5b1-f28a8f2f3d1c",
-      "resourceId": "auditorio",
-      "responsible": "GABRIELA (PÓS)",
-      "purpose": "GABRIELA (PÓS)",
-      "date": "2026-09-28",
-      "startTime": "19:00",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: GABRIELA (PÓS)"
     },
     {
       "id": "17ee4136-14c4-5c88-b3f6-097087cd4901",
