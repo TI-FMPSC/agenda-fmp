@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T16:22:11.401Z",
+  "updatedAt": "2026-09-11T16:22:34.148Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3259,6 +3259,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "ca57bb2d-d9e2-4558-9bba-4e18cd9eb1c2",
+      "timestamp": "2026-09-11T16:22:33.145Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 6ª Fase · Deisi Cord · 2026-09-11 · 18:50–22:00 · Laboratório 04"
     }
   ]
 }
