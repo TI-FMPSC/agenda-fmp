@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-11T14:16:37.778Z",
-    "updatedAt": "2026-09-11T14:16:37.778Z",
+    "lastSync": "2026-09-11T14:30:35.707Z",
+    "updatedAt": "2026-09-11T14:30:35.707Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1496,24 +1496,6 @@
       "updatedAt": "2026-08-16"
     },
     {
-      "id": "mat_lim_002",
-      "code": "006",
-      "name": "Detergente louça",
-      "categoryId": "cat_limpeza",
-      "unit": "UN",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": 15,
-      "currentStock": 2,
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Especificação: côco | Marca: BONZÃO | Tamanho/apresentação: 500ML",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-25"
-    },
-    {
       "id": "mat_lim_006",
       "code": "0010",
       "name": "Alcool em gel",
@@ -2360,24 +2342,6 @@
       "updatedAt": "2026-09-11"
     },
     {
-      "id": "id_nwtfs1uomt2xtg4h",
-      "code": "0021",
-      "name": "Detergente louça",
-      "categoryId": "cat_limpeza",
-      "unit": "UN",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": 15,
-      "currentStock": 44,
-      "avgCost": 0,
-      "status": "active",
-      "barcode": "",
-      "description": "Neutro",
-      "expirationDate": "",
-      "createdAt": "2026-08-21",
-      "updatedAt": "2026-09-10"
-    },
-    {
       "id": "id_j7xrtpr8mt2xuehl",
       "code": "0022",
       "name": "Detergente louça",
@@ -2856,22 +2820,6 @@
       "createdAt": "2026-08-21T12:34:38.651Z"
     },
     {
-      "id": "id_oogba4cjmt2xtg4h",
-      "materialId": "id_nwtfs1uomt2xtg4h",
-      "type": "entrada",
-      "date": "2026-08-21",
-      "quantity": 48,
-      "unitCost": 0,
-      "previousStock": 0,
-      "newStock": 48,
-      "effect": 48,
-      "sector": "Estoque inicial",
-      "document": "",
-      "notes": "Lançamento automático do estoque inicial no cadastro.",
-      "createdBy": "amandafranca",
-      "createdAt": "2026-08-21T12:40:31.457Z"
-    },
-    {
       "id": "id_vt8c4qzimt2xuehl",
       "materialId": "id_j7xrtpr8mt2xuehl",
       "type": "entrada",
@@ -3094,22 +3042,6 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-25T16:58:58.547Z"
-    },
-    {
-      "id": "id_azm37061mt8xege0",
-      "materialId": "mat_lim_002",
-      "type": "entrada",
-      "date": "2026-08-25",
-      "quantity": 1,
-      "unitCost": 0,
-      "previousStock": 1,
-      "newStock": 2,
-      "effect": 1,
-      "sector": "",
-      "document": "",
-      "notes": "",
-      "createdBy": "amandafranca",
-      "createdAt": "2026-08-25T17:15:29.016Z"
     },
     {
       "id": "id_zl0os4mzmt8xwo8f",
@@ -3448,22 +3380,6 @@
       "createdAt": "2026-09-10T15:01:21.693Z"
     },
     {
-      "id": "id_270yl0fumtvo1two",
-      "materialId": "id_nwtfs1uomt2xtg4h",
-      "type": "saida",
-      "date": "2026-09-10",
-      "quantity": 4,
-      "unitCost": 0,
-      "previousStock": 48,
-      "newStock": 44,
-      "effect": -4,
-      "sector": "MARI / ASO",
-      "document": "",
-      "notes": "",
-      "createdBy": "amandafranca",
-      "createdAt": "2026-09-10T15:12:25.512Z"
-    },
-    {
       "id": "id_9qr956pymtvo2mp0",
       "materialId": "id_dv1vx6wrmt30qxey",
       "type": "saida",
@@ -3709,7 +3625,7 @@
       "type": "ajuste",
       "date": "2026-09-11",
       "quantity": 98,
-      "unitCost": "",
+      "unitCost": 0,
       "previousStock": 106,
       "newStock": 98,
       "effect": -8,
