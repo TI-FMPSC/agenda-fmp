@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T16:27:48.337Z",
+  "updatedAt": "2026-09-11T16:39:10.260Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3277,6 +3277,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": " · Ivanir Maciel · 2026-09-12 · 08:00–12:00 · SALA 16 - WORKSHOP (FERNANDO FARIAS)"
+    },
+    {
+      "id": "b21be633-8e55-4167-aff6-7c8b90323b28",
+      "timestamp": "2026-09-11T16:39:09.616Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "GABRIELA (PÓS) · GABRIELA (PÓS) · 2026-09-14 · 19:00–22:00 · Auditório"
     }
   ]
 }
