@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T12:47:09.369Z",
+  "updatedAt": "2026-09-11T13:18:31.858Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3034,6 +3034,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "CASA EDUCADOR · MALTON · 2026-09-14 · 08:00–11:10 · SALA 11, 13"
+    },
+    {
+      "id": "474937a1-d579-4a4b-8de1-3954d66d95a7",
+      "timestamp": "2026-09-11T13:18:31.207Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
