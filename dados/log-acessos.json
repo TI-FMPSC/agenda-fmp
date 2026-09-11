@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T13:39:58.823Z",
+  "updatedAt": "2026-09-11T13:42:41.546Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3088,6 +3088,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "122 · Luva Látex G"
+    },
+    {
+      "id": "7feac0a6-dfd1-43aa-b627-d8f0573adfe3",
+      "timestamp": "2026-09-11T13:42:40.987Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "0061 · Papel Toalha"
     }
   ]
 }
