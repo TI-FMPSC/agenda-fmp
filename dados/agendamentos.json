@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-11T19:42:42.187Z",
+  "updatedAt": "2026-09-11T19:43:07.027Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3168,9 +3168,9 @@
       "date": "2026-09-11"
     },
     {
-      "id": "59f8d9ed-1ae2-4178-893c-076f47cdcd53",
+      "id": "5f649aff-5853-42f9-a18a-936c3df443b0",
       "spaceCategory": "lab",
-      "resourceId": "lab2",
+      "resourceId": "lab3",
       "responsible": "Tatiani Schmitt",
       "purpose": "Administração — 8ª Fase",
       "startTime": "19:00",
