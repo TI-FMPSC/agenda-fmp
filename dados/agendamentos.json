@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-10T22:57:58.631Z",
+  "updatedAt": "2026-09-11T11:47:45.300Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3106,6 +3106,19 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "MONTAR 11 NOTES DA SALA DO LPP.",
+      "date": "2026-09-11"
+    },
+    {
+      "id": "b71c7733-0a49-40cf-8c91-bebb6af18016",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:sala-17",
+      "customSpaceName": "SALA 17",
+      "responsible": "Sérgio M. Schutz",
+      "purpose": "MATURIDADE",
+      "startTime": "14:00",
+      "endTime": "18:00",
+      "status": "confirmed",
+      "notes": "",
       "date": "2026-09-11"
     },
     {
