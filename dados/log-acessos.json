@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T15:15:08.231Z",
+  "updatedAt": "2026-09-11T15:18:30.487Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3241,6 +3241,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "SALA 16: MATURIDADE (13:30-17:30) · SALA 16: MATURIDADE (13:30-17:30) · 2026-09-16 · 13:30–17:30 · Sala 17"
+    },
+    {
+      "id": "21b8a96b-1bd1-4587-9bcc-d040ca3d07de",
+      "timestamp": "2026-09-11T15:18:29.880Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
