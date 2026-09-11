@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T19:42:14.973Z",
+  "updatedAt": "2026-09-11T19:42:44.736Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3412,6 +3412,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "33d9420c-c8b3-4466-9795-8d46fee8c220",
+      "timestamp": "2026-09-11T19:42:44.307Z",
+      "username": "deborabombazaro",
+      "name": "Débora Bombazaro",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 8ª Fase · Tatiani Schmitt · 2026-09-11 · 19:00–22:00 · Laboratório 02"
     }
   ]
 }
