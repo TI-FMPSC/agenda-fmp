@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-11T16:27:44.595Z",
+  "updatedAt": "2026-09-11T16:39:07.484Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3293,17 +3293,6 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: MARIANE"
-    },
-    {
-      "id": "0cb5740a-29d5-5ef6-b325-86f070530a12",
-      "resourceId": "auditorio",
-      "responsible": "GABRIELA (PÓS)",
-      "purpose": "GABRIELA (PÓS)",
-      "date": "2026-09-14",
-      "startTime": "19:00",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: GABRIELA (PÓS)"
     },
     {
       "id": "74d8bf82-bad2-587a-a5d3-de2e9dc6c5c3",
