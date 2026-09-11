@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T16:39:10.260Z",
+  "updatedAt": "2026-09-11T16:41:49.543Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3286,6 +3286,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "GABRIELA (PÓS) · GABRIELA (PÓS) · 2026-09-14 · 19:00–22:00 · Auditório"
+    },
+    {
+      "id": "e0c95468-2999-43c0-9b49-d5edcec90c3f",
+      "timestamp": "2026-09-11T16:41:49.097Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "GABRIELA (PÓS) · GABRIELA (PÓS) · 2026-09-28 · 19:00–22:00 · Auditório"
     }
   ]
 }
