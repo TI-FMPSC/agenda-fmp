@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T14:18:47.678Z",
+  "updatedAt": "2026-09-11T14:19:50.717Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3169,6 +3169,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "8727204c-c36f-402b-90a4-27f19254b377",
+      "timestamp": "2026-09-11T14:19:50.196Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Ajuste · 0013 · Amaciante de Roupas · quantidade 44 · saldo 44"
     }
   ]
 }
