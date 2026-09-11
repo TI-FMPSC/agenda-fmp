@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-11T13:38:18.496Z",
-    "updatedAt": "2026-09-11T13:38:18.496Z",
+    "lastSync": "2026-09-11T13:42:01.937Z",
+    "updatedAt": "2026-09-11T13:42:01.937Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -111,39 +111,39 @@
     },
     {
       "id": "mat_epi_004",
-      "code": "",
-      "name": "Luva Látex",
+      "code": "121",
+      "name": "Luva Látex M",
       "categoryId": "cat_epis",
       "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 20,
       "currentStock": 35,
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "description": "Especificação: TAMANHO M | Tamanho/apresentação: 35 CAIXAS",
+      "description": "Especificação: TAMANHO M | Tamanho/apresentação:",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-09-11"
     },
     {
       "id": "mat_epi_005",
-      "code": "",
-      "name": "Luva Látex",
+      "code": "122",
+      "name": "Luva Látex G",
       "categoryId": "cat_epis",
       "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 10,
       "currentStock": 10,
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "description": "Especificação: TAMANHO G | Tamanho/apresentação: 10 CAIXAS",
+      "description": "Especificação: TAMANHO G | Tamanho/apresentação: 10",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-09-11"
     },
     {
       "id": "mat_epi_006",
@@ -1918,14 +1918,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 40,
-      "currentStock": 69,
+      "currentStock": 636,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: UNIDADES",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-09-04"
+      "updatedAt": "2026-09-11"
     },
     {
       "id": "mat_lim_033",
@@ -3670,6 +3670,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-10T15:20:06.078Z"
+    },
+    {
+      "id": "id_oxh7hdkymtx09egm",
+      "materialId": "mat_lim_032",
+      "type": "entrada",
+      "date": "2026-09-11",
+      "quantity": 567,
+      "unitCost": 0,
+      "previousStock": 69,
+      "newStock": 636,
+      "effect": 567,
+      "sector": "",
+      "document": "",
+      "notes": "Contagem e ajuste por unidades.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-11T13:42:00.310Z"
     }
   ],
   "users": []
