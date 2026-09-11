@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T13:29:46.822Z",
+  "updatedAt": "2026-09-11T13:38:17.158Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3052,6 +3052,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "c9638218-c661-4d93-8c79-26e7e52f7712",
+      "timestamp": "2026-09-11T13:38:16.685Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "120 · Luva Látex P"
     }
   ]
 }
