@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T17:02:44.792Z",
+  "updatedAt": "2026-09-11T17:04:23.511Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3331,6 +3331,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "CASA EDUCADOR · MALTON · 2026-09-16 · 08:00–11:10 · SALA 11, 13"
+    },
+    {
+      "id": "ada70fd3-1bf2-49ba-987c-df0e2457b4a6",
+      "timestamp": "2026-09-11T17:04:23.089Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "CASA EDUCADOR · MALTON · 2026-09-16 · 13:00–17:00 · SALA 12"
     }
   ]
 }
