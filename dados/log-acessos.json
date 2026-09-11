@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T13:39:04.291Z",
+  "updatedAt": "2026-09-11T13:39:21.135Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3070,6 +3070,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "121 · Luva Látex"
+    },
+    {
+      "id": "8ddac86e-a993-4433-b77d-93d6245b1fce",
+      "timestamp": "2026-09-11T13:39:20.302Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "121 · Luva Látex M"
     }
   ]
 }
