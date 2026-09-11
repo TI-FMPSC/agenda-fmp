@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T14:30:33.585Z",
+  "updatedAt": "2026-09-11T14:30:36.103Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3187,6 +3187,15 @@
       "action": "Exclui material",
       "module": "Estoque FMP",
       "details": "006 · Detergente louça"
+    },
+    {
+      "id": "28bc9f5b-6385-44d3-9fa8-4c7bd6392f92",
+      "timestamp": "2026-09-11T14:30:35.699Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Exclui material",
+      "module": "Estoque FMP",
+      "details": "0021 · Detergente louça"
     }
   ]
 }
