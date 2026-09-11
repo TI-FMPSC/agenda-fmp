@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T17:17:24.573Z",
+  "updatedAt": "2026-09-11T18:44:11.430Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3385,6 +3385,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 7ª Fase · Marcus B. O. Silveira · 2026-09-18 · 18:50–22:00 · Laboratório 03"
+    },
+    {
+      "id": "e9101a96-b89c-41b6-8d38-a5aa8a1c9a74",
+      "timestamp": "2026-09-11T18:44:10.576Z",
+      "username": "deborabombazaro",
+      "name": "Débora Bombazaro",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
