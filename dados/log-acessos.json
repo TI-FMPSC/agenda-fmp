@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T12:41:43.993Z",
+  "updatedAt": "2026-09-11T12:47:09.369Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3025,6 +3025,15 @@
       "action": "Atualiza integração com GitHub",
       "module": "Configurações",
       "details": "TI-FMPSC/agenda-fmp · main"
+    },
+    {
+      "id": "50d5a9cb-20fe-431d-9824-a2471c0afbae",
+      "timestamp": "2026-09-11T12:47:08.603Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "CASA EDUCADOR · MALTON · 2026-09-14 · 08:00–11:10 · SALA 11, 13"
     }
   ]
 }
