@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-11T17:01:32.619Z",
+  "updatedAt": "2026-09-11T17:02:41.836Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3474,6 +3474,19 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: RAFAEL"
+    },
+    {
+      "id": "316a3191-48e7-48bf-90f0-3a9cb33a388f",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:sala-11-13",
+      "customSpaceName": "SALA 11, 13",
+      "responsible": "MALTON",
+      "purpose": "CASA EDUCADOR",
+      "startTime": "08:00",
+      "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-16"
     },
     {
       "id": "7abfe419-4ba4-5c5e-a405-42415fe3aa4b",
