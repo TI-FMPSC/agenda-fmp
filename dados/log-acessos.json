@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T14:11:32.111Z",
+  "updatedAt": "2026-09-11T14:14:22.383Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3124,6 +3124,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "9135e0db-ab1d-4325-bff2-9e0a2a52569f",
+      "timestamp": "2026-09-11T14:14:21.709Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 0020 · Água Sanitaria · quantidade 2 · saldo 67"
     }
   ]
 }
