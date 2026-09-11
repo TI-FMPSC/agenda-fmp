@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-11T13:42:43.009Z",
-    "updatedAt": "2026-09-11T13:42:43.009Z",
+    "lastSync": "2026-09-11T14:14:23.318Z",
+    "updatedAt": "2026-09-11T14:14:23.318Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2350,14 +2350,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 20,
-      "currentStock": 69,
+      "currentStock": 67,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "",
       "expirationDate": "",
       "createdAt": "2026-08-21",
-      "updatedAt": "2026-09-10"
+      "updatedAt": "2026-09-11"
     },
     {
       "id": "id_nwtfs1uomt2xtg4h",
@@ -3686,6 +3686,22 @@
       "notes": "Contagem e ajuste por unidades.",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-11T13:42:00.310Z"
+    },
+    {
+      "id": "id_3rqeo2ttmtx1f0en",
+      "materialId": "id_p07km1q6mt2xlvwb",
+      "type": "saida",
+      "date": "2026-09-11",
+      "quantity": 2,
+      "unitCost": "",
+      "previousStock": 69,
+      "newStock": 67,
+      "effect": -2,
+      "sector": "",
+      "document": "",
+      "notes": "Atualização dia 11/09",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-11T14:14:21.647Z"
     }
   ],
   "users": []
