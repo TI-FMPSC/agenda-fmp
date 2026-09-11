@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-11T15:15:04.862Z",
+  "updatedAt": "2026-09-11T16:22:30.749Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3145,17 +3145,6 @@
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: LEONARDO"
     },
     {
-      "id": "1ab13ec5-ff4e-5756-8ad9-56c27d71cac9",
-      "resourceId": "lab4",
-      "responsible": "Deisi Cord",
-      "purpose": "Pedagogia — 6ª Fase",
-      "date": "2026-09-11",
-      "startTime": "18:50",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: DEISI"
-    },
-    {
       "id": "5c2f5867-ba2e-59e9-aa42-cc712f8ae67b",
       "resourceId": "lab5",
       "responsible": "Fabiana E. Boff",
@@ -3471,7 +3460,7 @@
     },
     {
       "id": "34ee26f7-6794-5592-a99b-75468ed4d581",
-      "resourceId": "custom:sala-17",
+      "resourceId": "custom:sala-16",
       "responsible": "SALA 16: MATURIDADE (13:30-17:30)",
       "purpose": "SALA 16: MATURIDADE (13:30-17:30)",
       "date": "2026-09-16",
@@ -3479,8 +3468,7 @@
       "endTime": "17:30",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: SALA 16: MATURIDADE (13:30-17:30)",
-      "customSpaceName": "Sala 17",
-      "spaceCategory": "lab"
+      "customSpaceName": "Sala 16"
     },
     {
       "id": "e3c9e4e9-606a-5095-8f3e-6733408f668e",
