@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-11T16:22:30.749Z",
+  "updatedAt": "2026-09-11T16:27:44.595Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3178,6 +3178,19 @@
       "status": "confirmed",
       "notes": "",
       "date": "2026-09-11"
+    },
+    {
+      "id": "a88a3c24-08f2-4bff-9160-ac14b51d9d86",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:sala-16-workshop-fernando-farias",
+      "customSpaceName": "SALA 16 - WORKSHOP (FERNANDO FARIAS)",
+      "responsible": "Ivanir Maciel",
+      "purpose": "",
+      "startTime": "08:00",
+      "endTime": "12:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-12"
     },
     {
       "id": "2274cc7d-d631-5228-bbd2-a43fea2bb624",
