@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-11T16:22:34.148Z",
+  "updatedAt": "2026-09-11T16:27:48.337Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3268,6 +3268,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 6ª Fase · Deisi Cord · 2026-09-11 · 18:50–22:00 · Laboratório 04"
+    },
+    {
+      "id": "6c77a7b1-c16e-4e6d-a0a6-f6777621deae",
+      "timestamp": "2026-09-11T16:27:47.479Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": " · Ivanir Maciel · 2026-09-12 · 08:00–12:00 · SALA 16 - WORKSHOP (FERNANDO FARIAS)"
     }
   ]
 }
