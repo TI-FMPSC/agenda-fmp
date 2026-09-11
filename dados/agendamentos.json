@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-11T16:54:28.479Z",
+  "updatedAt": "2026-09-11T17:01:32.619Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3276,6 +3276,19 @@
       "spaceCategory": "classroom",
       "resourceId": "custom:sala-11-13",
       "customSpaceName": "SALA 11, 13",
+      "responsible": "MALTON",
+      "purpose": "CASA EDUCADOR",
+      "startTime": "13:00",
+      "endTime": "17:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-14"
+    },
+    {
+      "id": "8032af5e-159b-44dd-bcda-dbb68ecdfd72",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:salas-11-13",
+      "customSpaceName": "SALAS 11, 13",
       "responsible": "MALTON",
       "purpose": "CASA EDUCADOR",
       "startTime": "13:00",
