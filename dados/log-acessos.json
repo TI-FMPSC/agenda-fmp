@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T20:31:47.759Z",
+  "updatedAt": "2026-09-14T20:32:33.442Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3583,6 +3583,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "PÓS-GRADUAÇÃO · Sérgio M. Schutz · 2026-09-15 · 18:50–22:00 · Laboratório 01"
+    },
+    {
+      "id": "388e4208-c93f-47ab-9eab-63f5f5e09beb",
+      "timestamp": "2026-09-14T20:32:33.041Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 8ª Fase · Rodolfo M. Lorandi · 2026-09-15 · 18:50–22:00 · Laboratório 05"
     }
   ]
 }
