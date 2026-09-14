@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-14T20:31:44.627Z",
+  "updatedAt": "2026-09-14T20:32:30.567Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3398,11 +3398,11 @@
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: ANDERSON(MATURIDADE) - 16:20-17:30"
     },
     {
-      "id": "d943bd78-15f6-48f5-9bcd-b91129e6c452",
+      "id": "c9aec18b-f3e7-4b6d-bdf8-c2d4060dcf05",
       "spaceCategory": "lab",
-      "resourceId": "lab1",
-      "responsible": "Sérgio M. Schutz",
-      "purpose": "PÓS-GRADUAÇÃO",
+      "resourceId": "lab5",
+      "responsible": "Rodolfo M. Lorandi",
+      "purpose": "Pedagogia — 8ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
