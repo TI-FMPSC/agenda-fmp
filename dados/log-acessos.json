@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T20:28:42.111Z",
+  "updatedAt": "2026-09-14T20:30:21.061Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3565,6 +3565,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 6ª Fase · Andreia de B. Machado · 2026-09-15 · 19:00–22:00 · Laboratório 04"
+    },
+    {
+      "id": "be37d4fb-7dda-4543-ae0b-3fccc7cea9a4",
+      "timestamp": "2026-09-14T20:30:20.230Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "MATURIDADE · Rodolfo M. Lorandi · 2026-09-15 · 14:00–16:00 · Auditório"
     }
   ]
 }
