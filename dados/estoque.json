@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-11T14:40:37.653Z",
-    "updatedAt": "2026-09-11T14:40:37.653Z",
+    "lastSync": "2026-09-14T14:16:36.700Z",
+    "updatedAt": "2026-09-14T14:16:36.700Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1882,14 +1882,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 35,
-      "currentStock": 68,
+      "currentStock": 36,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 30 metros | Tamanho/apresentação: 4 PACOTES DE 16 ROLOS | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-09-04"
+      "updatedAt": "2026-09-14"
     },
     {
       "id": "mat_lim_032",
@@ -3641,7 +3641,7 @@
       "type": "ajuste",
       "date": "2026-09-11",
       "quantity": 15,
-      "unitCost": "",
+      "unitCost": 0,
       "previousStock": 16,
       "newStock": 15,
       "effect": -1,
@@ -3650,6 +3650,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-11T14:40:36.023Z"
+    },
+    {
+      "id": "id_rrpp4ck7mu1btf2t",
+      "materialId": "mat_lim_029",
+      "type": "saida",
+      "date": "2026-09-08",
+      "quantity": 32,
+      "unitCost": "",
+      "previousStock": 68,
+      "newStock": 36,
+      "effect": -32,
+      "sector": "VIVI",
+      "document": "",
+      "notes": "VIVI ASO",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-14T14:16:34.709Z"
     }
   ],
   "users": []
