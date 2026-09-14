@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-14T20:28:39.452Z",
+  "updatedAt": "2026-09-14T20:30:18.110Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3385,6 +3385,18 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: CORADINI"
+    },
+    {
+      "id": "a91edc3b-d6ad-43fc-a400-1b8e6cc236d3",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "responsible": "Rodolfo M. Lorandi",
+      "purpose": "MATURIDADE",
+      "startTime": "14:00",
+      "endTime": "16:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-15"
     },
     {
       "id": "f0dbb79d-2122-5921-abc2-d3f79ab5e84d",
