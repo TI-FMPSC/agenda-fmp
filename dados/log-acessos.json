@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T20:28:27.918Z",
+  "updatedAt": "2026-09-14T20:28:42.111Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3556,6 +3556,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "SALA 16: MATURIDADE (13:30-17:30) · SALA 16: MATURIDADE (13:30-17:30) · 2026-09-15 · 13:30–17:30 · Sala 16"
+    },
+    {
+      "id": "a49ec902-8223-4eaf-89b6-9765d2e705fa",
+      "timestamp": "2026-09-14T20:28:41.560Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 6ª Fase · Andreia de B. Machado · 2026-09-15 · 19:00–22:00 · Laboratório 04"
     }
   ]
 }
