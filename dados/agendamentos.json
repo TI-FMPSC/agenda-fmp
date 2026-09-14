@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-14T20:28:24.674Z",
+  "updatedAt": "2026-09-14T20:28:39.452Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3396,17 +3396,6 @@
       "endTime": "17:30",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: ANDERSON(MATURIDADE) - 16:20-17:30"
-    },
-    {
-      "id": "66e319e6-cccc-5556-bffc-dcc33955cb05",
-      "resourceId": "lab4",
-      "responsible": "Andreia de B. Machado",
-      "purpose": "Pedagogia — 6ª Fase",
-      "date": "2026-09-15",
-      "startTime": "19:00",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: ANDRÉIA (6ª PED)"
     },
     {
       "id": "5c838f82-ebe3-5bc5-beed-f330440c8595",
