@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T10:55:36.374Z",
+  "updatedAt": "2026-09-14T12:28:59.565Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3466,6 +3466,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "130 · Saco de Lixo"
+    },
+    {
+      "id": "e9eb43b4-a8f9-47ef-928a-f6706ed469af",
+      "timestamp": "2026-09-14T12:28:59.013Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
