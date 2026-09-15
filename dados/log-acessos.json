@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T23:08:11.975Z",
+  "updatedAt": "2026-09-15T23:08:51.337Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3871,6 +3871,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 2ª Fase · Leonardo C. Chaves · 2026-09-24 · 18:50–22:00 · Laboratório 02"
+    },
+    {
+      "id": "48e298f6-a242-47c4-9601-91f97f69b263",
+      "timestamp": "2026-09-15T23:08:50.522Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 2ª Fase · Leonardo C. Chaves. · 2026-09-24 · 18:50–22:00 · Laboratório 03"
     }
   ]
 }
