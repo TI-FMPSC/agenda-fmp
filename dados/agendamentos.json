@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-15T21:10:36.942Z",
+  "updatedAt": "2026-09-15T21:12:16.862Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -5613,6 +5613,18 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: AVALIAÇÃO CPA"
+    },
+    {
+      "id": "01933516-1dd9-404b-9cfd-dd7aa942ccfc",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "responsible": "PROJETO JOVEM PALHOCENSE (DÉBORA)",
+      "purpose": "PROJETO JOVEM PALHOCENSE (DÉBORA)",
+      "startTime": "13:30",
+      "endTime": "17:30",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-19"
     },
     {
       "id": "728271c4-1985-50b3-9547-ca08736738fa",
