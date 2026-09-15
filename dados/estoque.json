@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-14T14:16:36.700Z",
-    "updatedAt": "2026-09-14T14:16:36.700Z",
+    "lastSync": "2026-09-15T15:31:19.205Z",
+    "updatedAt": "2026-09-15T15:31:19.205Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1623,13 +1623,13 @@
     },
     {
       "id": "mat_lim_015",
-      "code": "",
-      "name": "Sacos de Lixo",
+      "code": "999",
+      "name": "Sacos de Lixxo",
       "categoryId": "cat_limpeza",
       "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 5,
       "currentStock": 18,
       "avgCost": "",
       "status": "active",
@@ -1637,7 +1637,7 @@
       "description": "Especificação: 100 litros | Tamanho/apresentação: 100 UNIDADES CADA",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-09-10"
+      "updatedAt": "2026-09-15"
     },
     {
       "id": "mat_lim_016",
@@ -3657,7 +3657,7 @@
       "type": "saida",
       "date": "2026-09-08",
       "quantity": 32,
-      "unitCost": "",
+      "unitCost": 0,
       "previousStock": 68,
       "newStock": 36,
       "effect": -32,
