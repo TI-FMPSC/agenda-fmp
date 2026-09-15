@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T23:03:24.582Z",
+  "updatedAt": "2026-09-15T23:04:46.283Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3853,6 +3853,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "ADS — 1ª Fase · Schirlei S. Ramos · 2026-10-02 · 08:00–11:10 · Auditório"
+    },
+    {
+      "id": "39363b02-bd32-43b3-8bdd-2694a6b11174",
+      "timestamp": "2026-09-15T23:04:45.596Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "PELESTRA COM TODAS AS TURMAS DO CURSO DE ADS · Schirlei S. Ramos · 2026-10-02 · 08:00–11:10 · Auditório"
     }
   ]
 }
