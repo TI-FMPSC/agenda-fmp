@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-15T22:14:55.934Z",
+  "updatedAt": "2026-09-15T22:56:36.470Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -4714,6 +4714,18 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: LEANDRO"
+    },
+    {
+      "id": "9d3b51ba-38e3-4039-953f-9f871b800f1e",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "responsible": "Schirlei S. Ramos",
+      "purpose": "ADS — 1ª Fase",
+      "startTime": "08:00",
+      "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-02"
     },
     {
       "id": "5932633b-bd35-5c2c-ad1e-ee914bc2a7ec",
