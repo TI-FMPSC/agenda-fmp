@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T20:48:05.474Z",
+  "updatedAt": "2026-09-15T20:50:13.951Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3709,6 +3709,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 2ª Fase · Leonardo C. Chaves · 2026-09-16 · 18:50–22:00 · Laboratório 05"
+    },
+    {
+      "id": "413e9578-c412-4b24-bc99-117c67d9a923",
+      "timestamp": "2026-09-15T20:50:13.262Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "ADS — 1ª Fase · Rafael Novo da Rosa · 2026-09-16 · 08:00–11:10 · Laboratório 05"
     }
   ]
 }
