@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-14T20:35:00.638Z",
+  "updatedAt": "2026-09-15T01:15:14.306Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3374,6 +3374,18 @@
       "endTime": "09:30",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: CORADINI"
+    },
+    {
+      "id": "0d382003-71a9-4cab-b98f-dc594a48a2cf",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "responsible": "ALEXANDRO ADRIANO",
+      "purpose": "PROGRAMA INOVA JOVEM",
+      "startTime": "08:00",
+      "endTime": "12:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-15"
     },
     {
       "id": "c345332c-7c62-5dff-a46b-4f312542fd0f",
