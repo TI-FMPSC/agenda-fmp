@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T23:04:46.283Z",
+  "updatedAt": "2026-09-15T23:08:11.975Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3862,6 +3862,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "PELESTRA COM TODAS AS TURMAS DO CURSO DE ADS · Schirlei S. Ramos · 2026-10-02 · 08:00–11:10 · Auditório"
+    },
+    {
+      "id": "2d4d7d6b-c464-40fc-9e27-aed389f8c911",
+      "timestamp": "2026-09-15T23:08:11.560Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 2ª Fase · Leonardo C. Chaves · 2026-09-24 · 18:50–22:00 · Laboratório 02"
     }
   ]
 }
