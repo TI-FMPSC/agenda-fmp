@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T21:12:19.632Z",
+  "updatedAt": "2026-09-15T21:14:55.787Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3754,6 +3754,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "PROJETO JOVEM PALHOCENSE (DÉBORA) · PROJETO JOVEM PALHOCENSE (DÉBORA) · 2026-10-19 · 13:30–17:30 · Auditório"
+    },
+    {
+      "id": "44a26dc0-ad4c-4d1c-990a-9cabcc12b5e6",
+      "timestamp": "2026-09-15T21:14:54.661Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "PROJETO JOVEM PALHOCENSE (DÉBORA) · PROJETO JOVEM PALHOCENSE (DÉBORA) · 2026-10-26 · 13:30–17:30 · Auditório"
     }
   ]
 }
