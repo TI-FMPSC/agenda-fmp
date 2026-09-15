@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-15T23:08:08.805Z",
+  "updatedAt": "2026-09-15T23:08:48.523Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -4221,6 +4221,18 @@
       "resourceId": "lab2",
       "responsible": "Leonardo C. Chaves",
       "purpose": "Administração — 2ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-24"
+    },
+    {
+      "id": "9eb80985-0dbc-4575-bcbe-5682debe84ed",
+      "spaceCategory": "lab",
+      "resourceId": "lab3",
+      "responsible": "Leonardo C. Chaves.",
+      "purpose": "Pedagogia — 2ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
