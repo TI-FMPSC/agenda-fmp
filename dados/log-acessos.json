@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T22:56:39.890Z",
+  "updatedAt": "2026-09-15T23:03:24.582Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3842,6 +3842,15 @@
       "username": "andreakochela",
       "name": "Andréa Kochela",
       "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "ADS — 1ª Fase · Schirlei S. Ramos · 2026-10-02 · 08:00–11:10 · Auditório"
+    },
+    {
+      "id": "8da763ad-7b58-4183-9e4d-108c33d03a39",
+      "timestamp": "2026-09-15T23:03:23.871Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "ADS — 1ª Fase · Schirlei S. Ramos · 2026-10-02 · 08:00–11:10 · Auditório"
     }
