@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-14T20:35:03.824Z",
+  "updatedAt": "2026-09-15T01:13:01.725Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3601,6 +3601,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "MATURIDADE · MATURIDADE · 2026-09-15 · 13:00–17:00 · Sala 17"
+    },
+    {
+      "id": "a4467f47-f9d1-4ee7-b952-859439b55419",
+      "timestamp": "2026-09-15T01:13:01.043Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
