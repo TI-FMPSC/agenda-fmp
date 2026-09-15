@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T20:50:41.952Z",
+  "updatedAt": "2026-09-15T21:09:27.563Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3727,6 +3727,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "TPG — 3ª Fase · Fabiana Witt · 2026-09-16 · 08:00–11:10 · Laboratório 05"
+    },
+    {
+      "id": "3f48b490-86bc-428a-a137-85986c2e68f6",
+      "timestamp": "2026-09-15T21:09:26.865Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "PROJETO JOVEM PALHOCENSE (DÉBORA) · PROJETO JOVEM PALHOCENSE (DÉBORA) · 2026-09-28 · 13:30–17:30 · Auditório"
     }
   ]
 }
