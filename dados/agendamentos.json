@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-15T20:50:10.810Z",
+  "updatedAt": "2026-09-15T20:50:38.837Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3485,6 +3485,18 @@
       "customSpaceName": "SALA 11, 13",
       "responsible": "MALTON",
       "purpose": "CASA EDUCADOR",
+      "startTime": "08:00",
+      "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-16"
+    },
+    {
+      "id": "5f9ce9c5-ce44-47bb-b3fd-69b6e16e015c",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "responsible": "Fabiana Witt",
+      "purpose": "TPG — 3ª Fase",
       "startTime": "08:00",
       "endTime": "11:10",
       "status": "confirmed",
