@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T22:14:58.941Z",
+  "updatedAt": "2026-09-15T22:56:39.890Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3835,6 +3835,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 5ª Fase · Juliana C. Müller · 2026-09-16 · 19:00–20:30 · Auditório"
+    },
+    {
+      "id": "3d7393c4-a640-48f1-9265-1cef98c1c983",
+      "timestamp": "2026-09-15T22:56:39.059Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "ADS — 1ª Fase · Schirlei S. Ramos · 2026-10-02 · 08:00–11:10 · Auditório"
     }
   ]
 }
