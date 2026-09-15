@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T21:37:30.603Z",
+  "updatedAt": "2026-09-15T21:44:07.092Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3817,6 +3817,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "PROJETO JOVEM PALHOCENSE (DÉBORA) · PROJETO JOVEM PALHOCENSE (DÉBORA) · 2026-12-10 · 18:00–20:00 · Auditório"
+    },
+    {
+      "id": "8bb65394-ceb3-4dba-8305-43539f8deea5",
+      "timestamp": "2026-09-15T21:44:06.686Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 5ª Fase · Ana Lucia Machado · 2026-09-16 · 18:50–22:00 · Laboratório 02"
     }
   ]
 }
