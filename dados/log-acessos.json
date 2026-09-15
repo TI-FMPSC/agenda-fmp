@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T12:52:12.197Z",
+  "updatedAt": "2026-09-15T12:53:22.031Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3628,6 +3628,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "8a0d6760-f517-4ad8-aac2-eb9cb59d1641",
+      "timestamp": "2026-09-15T12:53:21.199Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 001 · Folhas A4 - Padrão · quantidade 1 · saldo 14"
     }
   ]
 }
