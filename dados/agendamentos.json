@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-15T20:48:01.945Z",
+  "updatedAt": "2026-09-15T20:50:10.810Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3477,17 +3477,6 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: LEANDRO"
-    },
-    {
-      "id": "fde924d6-292f-56b3-8047-c3bd9d4f1a7a",
-      "resourceId": "lab5",
-      "responsible": "Rafael Novo da Rosa",
-      "purpose": "ADS — 1ª Fase",
-      "date": "2026-09-16",
-      "startTime": "08:00",
-      "endTime": "11:10",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: RAFAEL"
     },
     {
       "id": "316a3191-48e7-48bf-90f0-3a9cb33a388f",
