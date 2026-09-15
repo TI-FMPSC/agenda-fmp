@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-15T23:03:21.324Z",
+  "updatedAt": "2026-09-15T23:04:43.096Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -4714,6 +4714,18 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: LEANDRO"
+    },
+    {
+      "id": "30f700ac-fca7-4812-8d68-19137d2209ad",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "responsible": "Schirlei S. Ramos",
+      "purpose": "PELESTRA COM TODAS AS TURMAS DO CURSO DE ADS",
+      "startTime": "08:00",
+      "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-02"
     },
     {
       "id": "5932633b-bd35-5c2c-ad1e-ee914bc2a7ec",
