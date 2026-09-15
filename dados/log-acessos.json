@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T01:13:01.725Z",
+  "updatedAt": "2026-09-15T01:15:17.306Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3610,6 +3610,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "62712fbc-e090-49e8-b487-9262dbe052ff",
+      "timestamp": "2026-09-15T01:15:16.590Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "PROGRAMA INOVA JOVEM · ALEXANDRO ADRIANO · 2026-09-15 · 08:00–12:00 · Auditório"
     }
   ]
 }
