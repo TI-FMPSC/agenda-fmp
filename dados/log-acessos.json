@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-15T20:50:13.951Z",
+  "updatedAt": "2026-09-15T20:50:41.952Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3718,6 +3718,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "ADS — 1ª Fase · Rafael Novo da Rosa · 2026-09-16 · 08:00–11:10 · Laboratório 05"
+    },
+    {
+      "id": "99ae88b1-851c-4e3f-a040-015d8e07cf53",
+      "timestamp": "2026-09-15T20:50:41.249Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "TPG — 3ª Fase · Fabiana Witt · 2026-09-16 · 08:00–11:10 · Laboratório 05"
     }
   ]
 }
