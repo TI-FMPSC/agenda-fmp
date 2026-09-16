@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-16T14:46:00.505Z",
+  "updatedAt": "2026-09-16T14:46:02.335Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3900,8 +3900,8 @@
       "details": "Entrada na área administrativa"
     },
     {
-      "id": "70456dbd-2c35-4a83-a323-ba76daaf68d9",
-      "timestamp": "2026-09-16T14:45:59.847Z",
+      "id": "31d66abb-caa9-495a-a03f-3fad5be57f34",
+      "timestamp": "2026-09-16T14:46:01.519Z",
       "username": "admin",
       "name": "Administrador",
       "action": "Login realizado",
