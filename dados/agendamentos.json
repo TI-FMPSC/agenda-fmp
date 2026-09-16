@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-15T23:11:35.612Z",
+  "updatedAt": "2026-09-16T22:46:14.038Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3497,6 +3497,19 @@
       "resourceId": "lab5",
       "responsible": "Fabiana Witt",
       "purpose": "TPG — 3ª Fase",
+      "startTime": "08:00",
+      "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-16"
+    },
+    {
+      "id": "d510c4e5-ee87-48ef-a029-73e5f38d6161",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:sala-08",
+      "customSpaceName": "sala 08",
+      "responsible": "GERAR",
+      "purpose": "GERAR",
       "startTime": "08:00",
       "endTime": "11:10",
       "status": "confirmed",
