@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-16T22:42:17.855Z",
+  "updatedAt": "2026-09-16T22:46:17.089Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3925,6 +3925,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "1eda9a47-0a12-4ee8-8d92-d96717c0d8d0",
+      "timestamp": "2026-09-16T22:46:16.545Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "GERAR · GERAR · 2026-09-16 · 08:00–11:10 · sala 08"
     }
   ]
 }
