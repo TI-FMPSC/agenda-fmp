@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-16T22:46:17.089Z",
+  "updatedAt": "2026-09-16T22:47:42.826Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3934,6 +3934,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "GERAR · GERAR · 2026-09-16 · 08:00–11:10 · sala 08"
+    },
+    {
+      "id": "0a7465bb-1fe3-4f59-9e44-a4efb444a3da",
+      "timestamp": "2026-09-16T22:47:41.993Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "GERAR · GERAR · 2026-09-23 · 08:00–11:10 · SALA 08"
     }
   ]
 }
