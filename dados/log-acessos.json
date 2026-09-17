@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T00:27:35.361Z",
+  "updatedAt": "2026-09-17T00:28:17.113Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -3997,6 +3997,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "GERAR · GERAR · 2026-10-14 · 08:00–11:10 · GERAR"
+    },
+    {
+      "id": "28254e6a-c91d-4117-96cb-70f7b3a6b72c",
+      "timestamp": "2026-09-17T00:28:16.432Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "GERAR · GERAR · 2026-10-21 · 08:00–11:10 · GERAR"
     }
   ]
 }
