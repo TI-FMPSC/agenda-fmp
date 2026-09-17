@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-17T00:35:58.800Z",
+  "updatedAt": "2026-09-17T00:36:34.920Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -6990,19 +6990,6 @@
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: RAFAEL"
     },
     {
-      "id": "72aa150e-70ec-46fc-82cd-c04a1baa361f",
-      "spaceCategory": "classroom",
-      "resourceId": "custom:gerar",
-      "customSpaceName": "GERAR",
-      "responsible": "GERAR",
-      "purpose": "GERAR",
-      "startTime": "08:00",
-      "endTime": "11:10",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-11-04"
-    },
-    {
       "id": "3a49dd68-ebb0-5867-af2e-b8fc66f852b0",
       "resourceId": "custom:sala-16",
       "responsible": "SALA 16: MATURIDADE (13:30-17:30)",
@@ -7468,6 +7455,19 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: RAFAEL"
+    },
+    {
+      "id": "571956d1-bd82-44d5-ae2e-b6d7413bf088",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:gerar",
+      "customSpaceName": "GERAR",
+      "responsible": "GERAR",
+      "purpose": "GERAR",
+      "startTime": "08:00",
+      "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-11"
     },
     {
       "id": "83f77c39-e9e1-5a7d-99c3-b68520b06a02",
