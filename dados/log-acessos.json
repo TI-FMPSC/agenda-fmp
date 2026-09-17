@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T01:05:07.453Z",
+  "updatedAt": "2026-09-17T01:05:45.857Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4132,6 +4132,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "CASA EDUCADOR · CASA EDUCADOR · 2026-09-17 · 08:00–11:10 · Auditório"
+    },
+    {
+      "id": "80c79dd1-3c7c-45b3-bd1d-fe77815b19a1",
+      "timestamp": "2026-09-17T01:05:45.405Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "CASA EDUCADOR · CASA EDUCADOR · 2026-09-17 · 13:00–17:00 · Auditório"
     }
   ]
 }
