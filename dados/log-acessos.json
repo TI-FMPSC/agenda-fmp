@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T00:39:31.057Z",
+  "updatedAt": "2026-09-17T00:58:58.769Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4078,6 +4078,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "GERAR · GERAR · 2026-12-09 · 08:00–11:10 · GERAR"
+    },
+    {
+      "id": "33d0ae3a-a7cb-4d97-927b-7a190d4e9702",
+      "timestamp": "2026-09-17T00:58:58.010Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
