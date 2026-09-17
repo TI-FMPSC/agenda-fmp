@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-17T00:05:11.253Z",
+  "updatedAt": "2026-09-17T00:06:45.237Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -47,6 +47,19 @@
     }
   ],
   "bookings": [
+    {
+      "id": "884783a0-c8a0-4679-b251-ade08fc5b07f",
+      "spaceCategory": "lab",
+      "resourceId": "custom:gerar",
+      "customSpaceName": "GERAR",
+      "responsible": "GERAR",
+      "purpose": "GERAR",
+      "startTime": "08:00",
+      "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "0010-10-07"
+    },
     {
       "id": "d9a94571-73bd-5944-a5e7-c9f221676d6c",
       "resourceId": "custom:quadra-laranja",
