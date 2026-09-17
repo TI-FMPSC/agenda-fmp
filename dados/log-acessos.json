@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-17T01:05:45.857Z",
+  "updatedAt": "2026-09-17T10:44:07.745Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4141,6 +4141,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "CASA EDUCADOR · CASA EDUCADOR · 2026-09-17 · 13:00–17:00 · Auditório"
+    },
+    {
+      "id": "cf4465fd-9c72-423e-9549-4f6a0a219eae",
+      "timestamp": "2026-09-17T10:44:06.920Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
