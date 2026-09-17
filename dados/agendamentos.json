@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-17T00:34:59.024Z",
+  "updatedAt": "2026-09-17T00:35:58.800Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -6990,7 +6990,7 @@
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: RAFAEL"
     },
     {
-      "id": "ad4eba72-54a6-463e-b3da-c4c5c40c7def",
+      "id": "72aa150e-70ec-46fc-82cd-c04a1baa361f",
       "spaceCategory": "classroom",
       "resourceId": "custom:gerar",
       "customSpaceName": "GERAR",
