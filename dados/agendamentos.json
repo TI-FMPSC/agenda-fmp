@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-18T01:07:56.593Z",
+  "updatedAt": "2026-09-18T16:39:06.000Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9204,6 +9204,21 @@
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: equipment: FUTASL 17:30-22:00",
       "customSpaceName": "Quadra Azul"
+    },
+    {
+      "id": "evento-adm-summit-2026-09-19",
+      "spaceCategory": "event",
+      "resourceId": "event:fmp",
+      "customSpaceName": "FMP",
+      "responsible": "Faculdade Municipal de Palhoça",
+      "purpose": "Sábado Letivo – ADM Summit",
+      "date": "2026-09-19",
+      "startTime": "08:00",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "featuredEvent": true,
+      "allDay": true,
+      "notes": "Evento institucional de dia inteiro em destaque. Não vinculado a um laboratório específico."
     }
   ]
 }
