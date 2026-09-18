@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T00:27:15.104Z",
+  "updatedAt": "2026-09-18T00:27:54.476Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4177,6 +4177,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 5ª Fase · Gregori M. Czizeweski · 2026-09-17 · 18:50–22:00 · Laboratório 03"
+    },
+    {
+      "id": "bc8cb0ad-5b77-4fd3-bc2c-c151a90c6e75",
+      "timestamp": "2026-09-18T00:27:53.747Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
