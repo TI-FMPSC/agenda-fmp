@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-18T00:47:10.223Z",
+  "updatedAt": "2026-09-18T00:48:19.599Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3883,6 +3883,18 @@
       "resourceId": "lab1",
       "responsible": "Fabiana E. Boff",
       "purpose": "Administração — 6ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-18"
+    },
+    {
+      "id": "386fbedf-6734-40d7-98a3-8adecb98a5e5",
+      "spaceCategory": "lab",
+      "resourceId": "lab2",
+      "responsible": "Gregori M. Czizeweski",
+      "purpose": "Pedagogia — 2ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
