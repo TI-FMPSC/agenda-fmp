@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T01:07:59.631Z",
+  "updatedAt": "2026-09-18T16:30:07.693Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4294,6 +4294,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "ESTÁGIO · Ana Lucia Machado · 2026-09-18 · 08:00–11:10 · SALA LPP"
+    },
+    {
+      "id": "8ed29e0b-462f-4c5a-8ea2-0778f273d288",
+      "timestamp": "2026-09-18T16:30:07.015Z",
+      "username": "admin",
+      "name": "Administrador",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
