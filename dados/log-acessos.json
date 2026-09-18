@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-18T00:58:02.754Z",
+  "updatedAt": "2026-09-18T01:07:59.631Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4285,6 +4285,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "CURSO DE LIBRAS · Kleber M. da Costa · 2026-09-18 · 17:30–18:30 · Auditório"
+    },
+    {
+      "id": "7f8a3486-fad7-4616-b65c-78636a818013",
+      "timestamp": "2026-09-18T01:07:59.228Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "ESTÁGIO · Ana Lucia Machado · 2026-09-18 · 08:00–11:10 · SALA LPP"
     }
   ]
 }
