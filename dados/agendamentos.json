@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-17T01:05:43.104Z",
+  "updatedAt": "2026-09-18T00:27:12.417Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3796,6 +3796,18 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "PALESTRA",
+      "date": "2026-09-17"
+    },
+    {
+      "id": "e2ca841f-e687-426e-b391-93c0bcd65272",
+      "spaceCategory": "lab",
+      "resourceId": "lab3",
+      "responsible": "Gregori M. Czizeweski",
+      "purpose": "Administração — 5ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
       "date": "2026-09-17"
     },
     {
