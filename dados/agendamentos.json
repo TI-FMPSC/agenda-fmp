@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-18T00:50:31.953Z",
+  "updatedAt": "2026-09-18T00:57:59.737Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3864,6 +3864,18 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: LEANDRO"
+    },
+    {
+      "id": "035a7a96-959d-47b7-ba42-e62715eae4d1",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "responsible": "Kleber M. da Costa",
+      "purpose": "CURSO DE LIBRAS",
+      "startTime": "17:30",
+      "endTime": "18:30",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-18"
     },
     {
       "id": "1bffab6a-5254-4de0-9656-83860f475664",
