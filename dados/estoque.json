@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-15T15:31:19.205Z",
-    "updatedAt": "2026-09-15T15:31:19.205Z",
+    "lastSync": "2026-09-21T15:26:19.686Z",
+    "updatedAt": "2026-09-21T15:26:19.686Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1882,14 +1882,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 35,
-      "currentStock": 36,
+      "currentStock": 16,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 30 metros | Tamanho/apresentação: 4 PACOTES DE 16 ROLOS | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-09-14"
+      "updatedAt": "2026-09-21"
     },
     {
       "id": "mat_lim_032",
@@ -3666,6 +3666,22 @@
       "notes": "VIVI ASO",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-14T14:16:34.709Z"
+    },
+    {
+      "id": "id_unn5zqzpmubee275",
+      "materialId": "mat_lim_029",
+      "type": "ajuste",
+      "date": "2026-09-21",
+      "quantity": 16,
+      "unitCost": 0,
+      "previousStock": 36,
+      "newStock": 16,
+      "effect": -20,
+      "sector": "",
+      "document": "",
+      "notes": "Ajuste / sistema estava com instabilidade. Voltamos a usar dia 21/09. Recebemos 16 rolos do Gerar dia 21/09.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-21T15:26:18.785Z"
     }
   ],
   "users": []
