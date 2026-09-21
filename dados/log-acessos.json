@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-21T22:33:26.242Z",
+  "updatedAt": "2026-09-21T22:34:45.477Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4393,6 +4393,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "7d2a0eac-6eda-4d7a-8660-e614ccb24929",
+      "timestamp": "2026-09-21T22:34:45.094Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "IVANIR ANTES DA PAUSA · Ivanir Maciel · 2026-09-21 · 18:50–20:20 · Laboratório 05"
     }
   ]
 }
