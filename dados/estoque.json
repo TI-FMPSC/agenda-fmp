@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-21T15:26:19.686Z",
-    "updatedAt": "2026-09-21T15:26:19.686Z",
+    "lastSync": "2026-09-21T15:31:47.611Z",
+    "updatedAt": "2026-09-21T15:31:47.611Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1900,14 +1900,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 400,
-      "currentStock": 636,
+      "currentStock": 556,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: UNIDADES",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-09-11"
+      "updatedAt": "2026-09-21"
     },
     {
       "id": "mat_lim_033",
@@ -3682,6 +3682,22 @@
       "notes": "Ajuste / sistema estava com instabilidade. Voltamos a usar dia 21/09. Recebemos 16 rolos do Gerar dia 21/09.",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-21T15:26:18.785Z"
+    },
+    {
+      "id": "id_mccrtxf6mubel33y",
+      "materialId": "mat_lim_032",
+      "type": "ajuste",
+      "date": "2026-09-21",
+      "quantity": 556,
+      "unitCost": 0,
+      "previousStock": 636,
+      "newStock": 556,
+      "effect": -80,
+      "sector": "",
+      "document": "",
+      "notes": "Ajuste dia 21/09. Sistema estava com instabilidade. Ajuste dia 21/09.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-21T15:31:46.558Z"
     }
   ],
   "users": []
