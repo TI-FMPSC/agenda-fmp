@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-18T16:39:06.000Z",
+  "updatedAt": "2026-09-21T22:34:42.745Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -3951,6 +3951,21 @@
       "date": "2026-09-18"
     },
     {
+      "id": "evento-adm-summit-2026-09-19",
+      "spaceCategory": "event",
+      "resourceId": "event:fmp",
+      "customSpaceName": "FMP",
+      "responsible": "Faculdade Municipal de Palhoça",
+      "purpose": "Sábado Letivo – ADM Summit",
+      "date": "2026-09-19",
+      "startTime": "08:00",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "featuredEvent": true,
+      "allDay": true,
+      "notes": "Evento institucional de dia inteiro em destaque. Não vinculado a um laboratório específico."
+    },
+    {
       "id": "eddf9b05-5e70-5769-a6b4-6b2d769b9324",
       "resourceId": "lab1",
       "responsible": "Rafael Novo da Rosa",
@@ -4049,17 +4064,6 @@
       "endTime": "20:20",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: LARISSA"
-    },
-    {
-      "id": "fb0bafe3-76e9-5438-a445-595cf403346a",
-      "resourceId": "lab5",
-      "responsible": "Ivanir Maciel",
-      "purpose": "IVANIR ANTES DA PAUSA",
-      "date": "2026-09-21",
-      "startTime": "18:50",
-      "endTime": "20:20",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: IVANIR ANTES DA PAUSA"
     },
     {
       "id": "1dd24b66-d0b7-5921-9b41-047079d4e0ea",
@@ -9204,21 +9208,6 @@
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: equipment: FUTASL 17:30-22:00",
       "customSpaceName": "Quadra Azul"
-    },
-    {
-      "id": "evento-adm-summit-2026-09-19",
-      "spaceCategory": "event",
-      "resourceId": "event:fmp",
-      "customSpaceName": "FMP",
-      "responsible": "Faculdade Municipal de Palhoça",
-      "purpose": "Sábado Letivo – ADM Summit",
-      "date": "2026-09-19",
-      "startTime": "08:00",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "featuredEvent": true,
-      "allDay": true,
-      "notes": "Evento institucional de dia inteiro em destaque. Não vinculado a um laboratório específico."
     }
   ]
 }
