@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-21T15:32:24.150Z",
-    "updatedAt": "2026-09-21T15:32:24.150Z",
+    "lastSync": "2026-09-22T12:17:19.079Z",
+    "updatedAt": "2026-09-22T12:17:19.079Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -46,14 +46,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 59,
+      "currentStock": 57,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Marca: OURO TRADICIONAL | Tamanho/apresentação: 500GRAMAS | Observações: Lú retirou um em 11/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-21"
+      "updatedAt": "2026-09-22"
     },
     {
       "id": "mat_epi_001",
@@ -3698,6 +3698,22 @@
       "notes": "Ajuste dia 21/09. Sistema estava com instabilidade. Ajuste dia 21/09.",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-21T15:31:46.558Z"
+    },
+    {
+      "id": "id_dfnioat1mucn2t6d",
+      "materialId": "mat_cop_001",
+      "type": "saida",
+      "date": "2026-09-22",
+      "quantity": 2,
+      "unitCost": 0,
+      "previousStock": 59,
+      "newStock": 57,
+      "effect": -2,
+      "sector": "MARI",
+      "document": "",
+      "notes": "MARI pegou 01 un  em 19/09 e 01 un em 22/09.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-22T12:17:16.597Z"
     }
   ],
   "users": []
