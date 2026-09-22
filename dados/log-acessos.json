@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-22T01:01:28.795Z",
+  "updatedAt": "2026-09-22T01:03:01.916Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4438,6 +4438,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 2ª Fase · Luzinete C. Niedzieluk · 2026-09-22 · 18:50–22:00 · Laboratório 01"
+    },
+    {
+      "id": "e2d8a2a4-3626-4775-88d2-931ab1b9f9e0",
+      "timestamp": "2026-09-22T01:03:00.702Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "ESTÁGIO · Ana Lucia Machado · 2026-09-22 · 08:00–11:10 · Laboratório 02"
     }
   ]
 }
