@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-22T12:33:34.533Z",
+  "updatedAt": "2026-09-22T13:45:02.179Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4492,6 +4492,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 001 · Folhas A4 - Padrão · quantidade 1 · saldo 14"
+    },
+    {
+      "id": "274255bc-8b8b-4d82-895b-346503b07a63",
+      "timestamp": "2026-09-22T13:45:01.741Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cria ajuste de sala de aula",
+      "module": "Agendamentos",
+      "details": "TPG — 3ª Fase · 2026-09-22 · 09:40–11:10 · Sala 16 · Antonio J. Bicca / Substituto Carlos"
     }
   ]
 }
