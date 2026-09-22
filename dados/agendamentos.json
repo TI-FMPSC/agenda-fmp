@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-22T01:08:37.543Z",
+  "updatedAt": "2026-09-22T13:44:59.441Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -4170,6 +4170,19 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: CORADINI"
+    },
+    {
+      "id": "60c36da7-a10d-4469-8a45-7bdb49553fe8",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:sala-16",
+      "customSpaceName": "Sala 16",
+      "responsible": "Antonio J. Bicca / Substituto Carlos",
+      "purpose": "TPG — 3ª Fase",
+      "date": "2026-09-22",
+      "startTime": "09:40",
+      "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "Ajuste pontual realizado pela Gestão das Salas."
     },
     {
       "id": "eecdc54d-63c7-51d0-9257-875e97c6b300",
