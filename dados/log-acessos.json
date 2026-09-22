@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-22T13:45:02.179Z",
+  "updatedAt": "2026-09-22T23:54:20.327Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4501,6 +4501,15 @@
       "action": "Cria ajuste de sala de aula",
       "module": "Agendamentos",
       "details": "TPG — 3ª Fase · 2026-09-22 · 09:40–11:10 · Sala 16 · Antonio J. Bicca / Substituto Carlos"
+    },
+    {
+      "id": "ea391197-4fd4-4aeb-bcda-61c7d91beb6c",
+      "timestamp": "2026-09-22T23:54:19.344Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
