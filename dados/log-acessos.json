@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-22T12:17:17.057Z",
+  "updatedAt": "2026-09-22T12:33:34.533Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4483,6 +4483,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · sem código · PÓ DE CAFÉ · quantidade 2 · saldo 57"
+    },
+    {
+      "id": "a45f8df0-c7d4-4627-8508-bb2484a7b04d",
+      "timestamp": "2026-09-22T12:33:34.006Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 001 · Folhas A4 - Padrão · quantidade 1 · saldo 14"
     }
   ]
 }
