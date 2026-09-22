@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-22T12:17:19.079Z",
-    "updatedAt": "2026-09-22T12:17:19.079Z",
+    "lastSync": "2026-09-22T12:33:34.769Z",
+    "updatedAt": "2026-09-22T12:33:34.769Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -262,14 +262,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 5,
-      "currentStock": 15,
+      "currentStock": 14,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 10X500 com 75 folhas - 75G | Marca: Chamex solutions | Tamanho/apresentação: 17 CAIXAS 10 RESMA COM 500 FOLHAS CADA",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-09-11"
+      "updatedAt": "2026-09-22"
     },
     {
       "id": "mat_esc_005",
@@ -3714,6 +3714,22 @@
       "notes": "MARI pegou 01 un  em 19/09 e 01 un em 22/09.",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-22T12:17:16.597Z"
+    },
+    {
+      "id": "id_0cut8t4kmucnnrb5",
+      "materialId": "mat_esc_004",
+      "type": "saida",
+      "date": "2026-09-22",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 15,
+      "newStock": 14,
+      "effect": -1,
+      "sector": "Administração",
+      "document": "",
+      "notes": "Retirado uma caixa para distribuição entre setores e uso interno, nesta data. 10 Resmas",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-22T12:33:33.953Z"
     }
   ],
   "users": []
