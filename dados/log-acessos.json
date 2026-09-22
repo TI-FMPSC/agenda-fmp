@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-22T01:00:46.087Z",
+  "updatedAt": "2026-09-22T01:01:28.795Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4429,6 +4429,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "MATURIDADE · Rodolfo M. Lorandi · 2026-09-22 · 14:00–16:20 · Auditório"
+    },
+    {
+      "id": "ea920947-3fc0-46f9-ab92-ba6b054d4437",
+      "timestamp": "2026-09-22T01:01:28.396Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 2ª Fase · Luzinete C. Niedzieluk · 2026-09-22 · 18:50–22:00 · Laboratório 01"
     }
   ]
 }
