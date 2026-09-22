@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-22T01:03:01.916Z",
+  "updatedAt": "2026-09-22T01:07:17.975Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4447,6 +4447,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "ESTÁGIO · Ana Lucia Machado · 2026-09-22 · 08:00–11:10 · Laboratório 02"
+    },
+    {
+      "id": "6cd37a36-c256-4163-a6d3-c6d145e0bea2",
+      "timestamp": "2026-09-22T01:07:16.944Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 8ª Fase · Rodolfo M. Lorandi · 2026-09-22 · 18:50–22:00 · Laboratório 04"
     }
   ]
 }
