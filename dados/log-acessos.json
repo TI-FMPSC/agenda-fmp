@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-22T01:07:17.975Z",
+  "updatedAt": "2026-09-22T01:08:40.129Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4456,6 +4456,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 8ª Fase · Rodolfo M. Lorandi · 2026-09-22 · 18:50–22:00 · Laboratório 04"
+    },
+    {
+      "id": "9e04da83-b741-4836-a41f-4fb5370767b0",
+      "timestamp": "2026-09-22T01:08:39.699Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "MATURIDADE · MATURIDADE · 2026-09-21 · 13:00–17:00 · sala 17"
     }
   ]
 }
