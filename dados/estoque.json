@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-22T12:33:34.769Z",
-    "updatedAt": "2026-09-22T12:33:34.769Z",
+    "lastSync": "2026-09-23T13:00:35.987Z",
+    "updatedAt": "2026-09-23T13:00:35.987Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1882,14 +1882,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 35,
-      "currentStock": 16,
+      "currentStock": 496,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 30 metros | Tamanho/apresentação: 4 PACOTES DE 16 ROLOS | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-09-21"
+      "updatedAt": "2026-09-23"
     },
     {
       "id": "mat_lim_032",
@@ -3730,6 +3730,22 @@
       "notes": "Retirado uma caixa para distribuição entre setores e uso interno, nesta data. 10 Resmas",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-22T12:33:33.953Z"
+    },
+    {
+      "id": "id_yposo4dpmue42cwr",
+      "materialId": "mat_lim_029",
+      "type": "entrada",
+      "date": "2026-09-23",
+      "quantity": 480,
+      "unitCost": 0,
+      "previousStock": 16,
+      "newStock": 496,
+      "effect": 480,
+      "sector": "",
+      "document": "",
+      "notes": "Compra de 480 Rolão de papel higiênico.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-23T13:00:35.163Z"
     }
   ],
   "users": []
