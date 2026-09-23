@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-23T20:17:15.189Z",
+  "updatedAt": "2026-09-23T20:18:08.325Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -6201,6 +6201,20 @@
       "purpose": "GERAR",
       "startTime": "08:00",
       "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-21"
+    },
+    {
+      "id": "41c10ac0-8f9c-47cf-bab1-455390fda0a7",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "DANIELA/ADS/COPER",
+      "purpose": "DANIELA/ADS/COPER",
+      "startTime": "11:11",
+      "endTime": "12:30",
       "status": "confirmed",
       "notes": "",
       "date": "2026-10-21"
