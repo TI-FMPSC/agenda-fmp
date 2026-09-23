@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-23T20:13:52.168Z",
+  "updatedAt": "2026-09-23T20:16:18.283Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4717,6 +4717,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "64a4893b-de44-4a5d-bf2f-d4814f8c4490",
+      "timestamp": "2026-09-23T20:16:17.856Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": " · DANIELA/ADS/COPER · 2026-10-14 · 11:11–12:30 · Laboratório 05"
     }
   ]
 }
