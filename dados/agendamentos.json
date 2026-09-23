@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-23T20:27:45.791Z",
+  "updatedAt": "2026-09-23T20:28:28.357Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8090,20 +8090,6 @@
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: RAFAEL"
     },
     {
-      "id": "96208078-fd2e-4a70-817b-c157ed3e9405",
-      "spaceCategory": "lab",
-      "resourceId": "lab5",
-      "featuredEvent": false,
-      "allDay": false,
-      "responsible": "DANIELA/ADS/COPER",
-      "purpose": "DANIELA/ADS/COPER",
-      "startTime": "11:11",
-      "endTime": "12:30",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-11-18"
-    },
-    {
       "id": "c883d04d-c317-5d27-94ce-b0e8c677309c",
       "resourceId": "custom:sala-16",
       "responsible": "SALA 16: MATURIDADE (13:30-17:30)",
@@ -8267,6 +8253,20 @@
       "purpose": "PROJETO JOVEM PALHOCENSE (DÉBORA)",
       "startTime": "08:00",
       "endTime": "11:30",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-23"
+    },
+    {
+      "id": "1f83005f-31c2-4f27-bfe3-a94fe376e966",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "DANIELA/ADS/COPER",
+      "purpose": "DANIELA/ADS/COPER",
+      "startTime": "11:11",
+      "endTime": "12:30",
       "status": "confirmed",
       "notes": "",
       "date": "2026-11-23"
