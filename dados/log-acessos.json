@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-23T10:35:40.859Z",
+  "updatedAt": "2026-09-23T10:47:17.053Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4654,6 +4654,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Brinquedoteca · Vinicius · 2026-09-23 · 08:00–11:10 · Auditório"
+    },
+    {
+      "id": "c11dcc75-fbda-4257-b5c6-358783b09ebc",
+      "timestamp": "2026-09-23T10:47:16.335Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza grade de salas 2026-2",
+      "module": "Grade de salas",
+      "details": "Salas-base do semestre 2026/2"
     }
   ]
 }
