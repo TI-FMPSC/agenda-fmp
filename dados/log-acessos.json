@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-23T10:47:17.053Z",
+  "updatedAt": "2026-09-23T13:00:36.302Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4663,6 +4663,15 @@
       "action": "Atualiza grade de salas 2026-2",
       "module": "Grade de salas",
       "details": "Salas-base do semestre 2026/2"
+    },
+    {
+      "id": "b5dcb423-3393-4ea2-8cf2-bbe6c7a1ad8e",
+      "timestamp": "2026-09-23T13:00:35.232Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Entrada · 003 · Papel Higiênico · quantidade 480 · saldo 496"
     }
   ]
 }
