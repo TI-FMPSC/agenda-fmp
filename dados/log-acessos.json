@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-23T20:17:17.756Z",
+  "updatedAt": "2026-09-23T20:18:11.534Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4735,6 +4735,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "DANIELA/ADS/COPER · DANIELA/ADS/COPER · 2026-10-19 · 11:11–11:30 · Laboratório 05"
+    },
+    {
+      "id": "7b42053e-c986-48bf-87a1-daf2398a1c19",
+      "timestamp": "2026-09-23T20:18:10.696Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "DANIELA/ADS/COPER · DANIELA/ADS/COPER · 2026-10-21 · 11:11–12:30 · Laboratório 05"
     }
   ]
 }
