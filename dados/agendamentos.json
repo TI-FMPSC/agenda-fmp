@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-23T20:27:04.384Z",
+  "updatedAt": "2026-09-23T20:27:45.791Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -7620,6 +7620,20 @@
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: RAFAEL"
     },
     {
+      "id": "a6bc7858-61f1-4d43-ab51-1d0e628e4b93",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "DANIELA/ADS/COPER",
+      "purpose": "DANIELA/ADS/COPER",
+      "startTime": "11:11",
+      "endTime": "12:30",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-11"
+    },
+    {
       "id": "83f77c39-e9e1-5a7d-99c3-b68520b06a02",
       "resourceId": "custom:sala-16",
       "responsible": "SALA 16: MATURIDADE (13:30-17:30)",
@@ -7875,20 +7889,6 @@
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: DANIELA"
     },
     {
-      "id": "0f9cfb02-4b79-4945-91b3-1b6489338407",
-      "spaceCategory": "lab",
-      "resourceId": "lab5",
-      "featuredEvent": false,
-      "allDay": false,
-      "responsible": "DANIELA/ADS/COPER",
-      "purpose": "DANIELA/ADS/COPER",
-      "startTime": "11:11",
-      "endTime": "12:30",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-11-16"
-    },
-    {
       "id": "ab5f9e43-03ef-4eda-933e-543b9b900f8f",
       "spaceCategory": "lab",
       "resourceId": "auditorio",
@@ -8088,6 +8088,20 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: RAFAEL"
+    },
+    {
+      "id": "96208078-fd2e-4a70-817b-c157ed3e9405",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "DANIELA/ADS/COPER",
+      "purpose": "DANIELA/ADS/COPER",
+      "startTime": "11:11",
+      "endTime": "12:30",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-18"
     },
     {
       "id": "c883d04d-c317-5d27-94ce-b0e8c677309c",
