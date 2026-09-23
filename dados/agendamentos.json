@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-23T20:22:39.957Z",
+  "updatedAt": "2026-09-23T20:23:36.877Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -6763,20 +6763,6 @@
       "date": "2026-10-28"
     },
     {
-      "id": "ff91fac8-890a-4c0c-aa8c-8916d063b096",
-      "spaceCategory": "lab",
-      "resourceId": "lab5",
-      "featuredEvent": false,
-      "allDay": false,
-      "responsible": "DANIELA/ADS/COPER",
-      "purpose": "DANIELA/ADS/COPER",
-      "startTime": "11:11",
-      "endTime": "12:30",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-10-28"
-    },
-    {
       "id": "244ebf2b-fbd6-5aa3-a3dd-04daad2f9589",
       "resourceId": "custom:sala-16",
       "responsible": "SALA 16: MATURIDADE (13:30-17:30)",
@@ -7165,6 +7151,20 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: RAFAEL"
+    },
+    {
+      "id": "b90ac20a-0b1e-4885-94cc-a1b8a949e5d0",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "DANIELA/ADS/COPER",
+      "purpose": "DANIELA/ADS/COPER",
+      "startTime": "11:11",
+      "endTime": "12:30",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-04"
     },
     {
       "id": "3a49dd68-ebb0-5867-af2e-b8fc66f852b0",
