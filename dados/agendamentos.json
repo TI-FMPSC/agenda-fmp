@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-23T20:39:57.318Z",
+  "updatedAt": "2026-09-23T20:40:47.012Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8673,20 +8673,6 @@
       "date": "2026-11-30"
     },
     {
-      "id": "604061b0-cf2f-40a7-a4fc-e0ba286b939b",
-      "spaceCategory": "lab",
-      "resourceId": "lab5",
-      "featuredEvent": false,
-      "allDay": false,
-      "responsible": "DANIELA/ADS/COPER",
-      "purpose": "DANIELA/ADS/COPER",
-      "startTime": "11:11",
-      "endTime": "13:30",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-11-30"
-    },
-    {
       "id": "a82272ac-0954-5b23-ad5a-63c27172f250",
       "resourceId": "custom:quadra-azul",
       "responsible": "FUTASL 17:30-22:00",
@@ -8828,6 +8814,20 @@
       "purpose": "GERAR",
       "startTime": "08:00",
       "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-12-02"
+    },
+    {
+      "id": "8b60033f-1e39-4489-825b-a2a2cdbb94ba",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "DANIELA/ADS/COPER",
+      "purpose": "DANIELA/ADS/COPER",
+      "startTime": "11:11",
+      "endTime": "12:30",
       "status": "confirmed",
       "notes": "",
       "date": "2026-12-02"
