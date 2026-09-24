@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-24T11:02:50.567Z",
-    "updatedAt": "2026-09-24T11:02:50.567Z",
+    "lastSync": "2026-09-24T15:30:57.532Z",
+    "updatedAt": "2026-09-24T15:30:57.532Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1504,14 +1504,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 15,
-      "currentStock": 0,
+      "currentStock": 12,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 70º INPM | Marca: ITAJUBÁ | Tamanho/apresentação: 1 LITRO | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-21"
+      "updatedAt": "2026-09-24"
     },
     {
       "id": "mat_lim_007",
@@ -3746,6 +3746,22 @@
       "notes": "Compra de 480 Rolão de papel higiênico.",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-23T13:00:35.163Z"
+    },
+    {
+      "id": "id_lqhaodtlmufovkki",
+      "materialId": "mat_lim_006",
+      "type": "entrada",
+      "date": "2026-09-24",
+      "quantity": 12,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 12,
+      "effect": 12,
+      "sector": "",
+      "document": "",
+      "notes": "12 unidades",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-24T15:30:56.611Z"
     }
   ],
   "users": []
