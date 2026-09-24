@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-24T00:21:29.905Z",
+  "updatedAt": "2026-09-24T00:31:08.540Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -4354,6 +4354,21 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: ANDERSON"
+    },
+    {
+      "id": "811781b5-4928-4b9d-9769-8f2644b03bbb",
+      "spaceCategory": "lab",
+      "resourceId": "custom:sala-17",
+      "customSpaceName": "Sala 17",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "MATURIDADE",
+      "purpose": "MATURIDADE",
+      "startTime": "13:00",
+      "endTime": "17:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-24"
     },
     {
       "id": "f5c4c486-3761-59d5-9bca-d0066ad79fe0",
