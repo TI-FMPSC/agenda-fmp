@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-24T15:33:01.226Z",
-    "updatedAt": "2026-09-24T15:33:01.226Z",
+    "lastSync": "2026-09-24T15:37:40.362Z",
+    "updatedAt": "2026-09-24T15:37:40.362Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2592,6 +2592,24 @@
       "expirationDate": "",
       "createdAt": "2026-08-28",
       "updatedAt": "2026-09-10"
+    },
+    {
+      "id": "id_oyljvzfjmufp465n",
+      "code": "130",
+      "name": "Dispenser de Rolão de Papel Higiênico",
+      "categoryId": "cat_limpeza",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 10,
+      "currentStock": 30,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "",
+      "expirationDate": "",
+      "createdAt": "2026-09-24",
+      "updatedAt": "2026-09-24"
     }
   ],
   "movements": [
@@ -3794,6 +3812,22 @@
       "notes": "Entrada de 48 unidades",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-24T15:32:59.947Z"
+    },
+    {
+      "id": "id_m1vtvt39mufp465n",
+      "materialId": "id_oyljvzfjmufp465n",
+      "type": "entrada",
+      "date": "2026-09-24",
+      "quantity": 30,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 30,
+      "effect": 30,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-24T15:37:37.835Z"
     }
   ],
   "users": []
