@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-24T15:32:07.150Z",
+  "updatedAt": "2026-09-24T15:37:38.459Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4897,6 +4897,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Entrada · 027 · Limpa Vidros com alcool e válvula · quantidade 48 · saldo 51"
+    },
+    {
+      "id": "97161f3d-5af7-4da7-8d73-92e0c02c7382",
+      "timestamp": "2026-09-24T15:37:37.959Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "130 · Dispenser de Rolão de Papel Higiênico"
     }
   ]
 }
