@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-24T15:30:57.532Z",
-    "updatedAt": "2026-09-24T15:30:57.532Z",
+    "lastSync": "2026-09-24T15:32:09.460Z",
+    "updatedAt": "2026-09-24T15:32:09.460Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2440,14 +2440,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 10,
-      "currentStock": 3,
+      "currentStock": 51,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "Marca: SEBOLD | Tamanho/apresentação: 500ML",
       "expirationDate": "",
       "createdAt": "2026-08-25",
-      "updatedAt": "2026-08-25"
+      "updatedAt": "2026-09-24"
     },
     {
       "id": "id_i2nytlb0mt8w4k4z",
@@ -3762,6 +3762,22 @@
       "notes": "12 unidades",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-24T15:30:56.611Z"
+    },
+    {
+      "id": "id_vhfhkwozmufox2kr",
+      "materialId": "id_z1c2yki0mt8vuw4x",
+      "type": "entrada",
+      "date": "2026-09-24",
+      "quantity": 48,
+      "unitCost": 0,
+      "previousStock": 3,
+      "newStock": 51,
+      "effect": 48,
+      "sector": "",
+      "document": "",
+      "notes": "Entrada de 48 unidades",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-24T15:32:06.603Z"
     }
   ],
   "users": []
