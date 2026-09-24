@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-24T15:27:24.972Z",
+  "updatedAt": "2026-09-24T15:30:57.079Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4879,6 +4879,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "1189f861-880b-4bef-884a-9975eadf896d",
+      "timestamp": "2026-09-24T15:30:56.674Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Entrada · 0010 · Alcool em gel · quantidade 12 · saldo 12"
     }
   ]
 }
