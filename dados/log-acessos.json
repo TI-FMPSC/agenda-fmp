@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-24T15:30:57.079Z",
+  "updatedAt": "2026-09-24T15:32:07.150Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4888,6 +4888,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Entrada · 0010 · Alcool em gel · quantidade 12 · saldo 12"
+    },
+    {
+      "id": "7aeb5211-41b8-422d-a31d-a85fd8196b45",
+      "timestamp": "2026-09-24T15:32:06.665Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Entrada · 027 · Limpa Vidros com alcool e válvula · quantidade 48 · saldo 51"
     }
   ]
 }
