@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-24T15:32:09.460Z",
-    "updatedAt": "2026-09-24T15:32:09.460Z",
+    "lastSync": "2026-09-24T15:33:01.226Z",
+    "updatedAt": "2026-09-24T15:33:01.226Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2476,14 +2476,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 15,
-      "currentStock": 7,
+      "currentStock": 55,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "Especificação: Lavanda | Marca: SEBOLD | Tamanho/apresentação: 200 ML",
       "expirationDate": "",
       "createdAt": "2026-08-25",
-      "updatedAt": "2026-08-25"
+      "updatedAt": "2026-09-24"
     },
     {
       "id": "id_zx2hui1qmt8yqkd0",
@@ -3778,6 +3778,22 @@
       "notes": "Entrada de 48 unidades",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-24T15:32:06.603Z"
+    },
+    {
+      "id": "id_w6jg8es8mufoy7qj",
+      "materialId": "id_iz3kwmj3mt8wt84z",
+      "type": "entrada",
+      "date": "2026-09-24",
+      "quantity": 48,
+      "unitCost": 0,
+      "previousStock": 7,
+      "newStock": 55,
+      "effect": 48,
+      "sector": "",
+      "document": "",
+      "notes": "Entrada de 48 unidades",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-24T15:32:59.947Z"
     }
   ],
   "users": []
