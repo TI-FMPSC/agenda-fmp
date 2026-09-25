@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-25T23:48:37.974Z",
+  "updatedAt": "2026-09-25T23:49:17.465Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5131,6 +5131,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 3ª Fase · Leonardo C. Chaves · 2026-10-15 · 18:50–20:20 · Laboratório 01"
+    },
+    {
+      "id": "19629d91-04d5-47e5-8b66-2e74ec4a3c60",
+      "timestamp": "2026-09-25T23:49:16.514Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 3ª Fase · Leonardo C. Chaves · 2026-10-08 · 18:50–20:20 · Laboratório 01"
     }
   ]
 }
