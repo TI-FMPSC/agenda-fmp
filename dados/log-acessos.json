@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-24T15:37:38.459Z",
+  "updatedAt": "2026-09-25T10:36:08.183Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4906,6 +4906,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "130 · Dispenser de Rolão de Papel Higiênico"
+    },
+    {
+      "id": "e7a4693d-b40c-4a6e-a8ab-279a77f26cef",
+      "timestamp": "2026-09-25T10:36:07.107Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
