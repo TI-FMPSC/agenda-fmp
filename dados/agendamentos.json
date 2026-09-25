@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-25T22:30:00.712Z",
+  "updatedAt": "2026-09-25T22:30:51.901Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -4513,6 +4513,20 @@
       "allDay": false,
       "responsible": "Gregori M. Czizeweski",
       "purpose": "Pedagogia — 2ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-25"
+    },
+    {
+      "id": "414dea6a-f854-449d-9e7f-f89846cbb8d3",
+      "spaceCategory": "lab",
+      "resourceId": "lab2",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Maurício A. de Lima",
+      "purpose": "Administração — 4ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
