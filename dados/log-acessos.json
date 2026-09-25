@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-25T21:57:06.200Z",
+  "updatedAt": "2026-09-25T22:27:19.353Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5023,6 +5023,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "bda16d89-476f-4f24-9e1f-96971ed8b058",
+      "timestamp": "2026-09-25T22:27:18.137Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 4ª Fase · Maurício A. de Lima · 2026-09-25 · 18:50–22:00 · Laboratório 01"
     }
   ]
 }
