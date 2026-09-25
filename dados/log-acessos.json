@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-25T10:36:08.183Z",
+  "updatedAt": "2026-09-25T12:21:46.479Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -4915,6 +4915,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "cdcf22a3-98a3-4f26-80dc-b42dad2dd699",
+      "timestamp": "2026-09-25T12:21:45.925Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Entrada · sem código · Bloco autoadesivo pequeno · quantidade 9 · saldo 36"
     }
   ]
 }
