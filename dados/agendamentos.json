@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-25T23:17:06.971Z",
+  "updatedAt": "2026-09-25T23:18:07.565Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -4604,6 +4604,20 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: DANIELA"
+    },
+    {
+      "id": "ae01c63a-2c0c-42bf-82c9-65014f40ec49",
+      "spaceCategory": "lab",
+      "resourceId": "lab2",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Tatiani Schmitt",
+      "purpose": "TPG — 4ª Fase",
+      "startTime": "08:00",
+      "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-28"
     },
     {
       "id": "17ef943d-f1fc-4431-9eee-c83f2adc3ddc",
