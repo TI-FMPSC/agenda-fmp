@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-25T22:27:19.353Z",
+  "updatedAt": "2026-09-25T22:27:33.651Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5030,6 +5030,15 @@
       "username": "andreakochela",
       "name": "Andréa Kochela",
       "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 4ª Fase · Maurício A. de Lima · 2026-09-25 · 18:50–22:00 · Laboratório 01"
+    },
+    {
+      "id": "88349809-f9ac-48be-9d4a-e6a4ece80ce2",
+      "timestamp": "2026-09-25T22:27:33.262Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "Administração — 4ª Fase · Maurício A. de Lima · 2026-09-25 · 18:50–22:00 · Laboratório 01"
     }
