@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-25T22:30:04.559Z",
+  "updatedAt": "2026-09-25T22:30:54.366Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5050,6 +5050,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 2ª Fase · Gregori M. Czizeweski · 2026-09-25 · 18:50–22:00 · Laboratório 01"
+    },
+    {
+      "id": "bf6eeb9e-71e6-4bc7-92b3-eaeb9bcb1958",
+      "timestamp": "2026-09-25T22:30:53.948Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 4ª Fase · Maurício A. de Lima · 2026-09-25 · 18:50–22:00 · Laboratório 02"
     }
   ]
 }
