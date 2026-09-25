@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-25T23:18:11.349Z",
+  "updatedAt": "2026-09-25T23:19:17.769Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5095,6 +5095,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "TPG — 4ª Fase · Tatiani Schmitt · 2026-09-28 · 08:00–11:10 · Laboratório 02"
+    },
+    {
+      "id": "2376b985-e9eb-4742-aece-9c5cc24d4a7e",
+      "timestamp": "2026-09-25T23:19:17.370Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 7ª Fase · Gregori M. Czizeweski · 2026-09-28 · 18:50–22:00 · Laboratório 02"
     }
   ]
 }
