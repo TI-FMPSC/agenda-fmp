@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-25T23:17:10.230Z",
+  "updatedAt": "2026-09-25T23:18:11.349Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5086,6 +5086,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "MARKETING DIGITAL · MARKETING DIGITAL · 2026-09-28 · 11:11–12:00 · Laboratório 01"
+    },
+    {
+      "id": "9ca21f18-63a7-4859-850d-f49e5e1a4a85",
+      "timestamp": "2026-09-25T23:18:10.348Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "TPG — 4ª Fase · Tatiani Schmitt · 2026-09-28 · 08:00–11:10 · Laboratório 02"
     }
   ]
 }
