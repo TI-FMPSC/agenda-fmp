@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-25T22:38:59.678Z",
+  "updatedAt": "2026-09-25T23:17:10.230Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5077,6 +5077,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 1ª Fase · Inara A. V. Willerding · 2026-09-25 · 18:50–22:00 · Laboratório 04"
+    },
+    {
+      "id": "0c2aef4b-efd4-4c9c-93b7-1b6e66bbb2d8",
+      "timestamp": "2026-09-25T23:17:09.676Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "MARKETING DIGITAL · MARKETING DIGITAL · 2026-09-28 · 11:11–12:00 · Laboratório 01"
     }
   ]
 }
