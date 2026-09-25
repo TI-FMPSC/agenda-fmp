@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-25T12:21:49.088Z",
-    "updatedAt": "2026-09-25T12:21:49.088Z",
+    "lastSync": "2026-09-25T12:22:35.843Z",
+    "updatedAt": "2026-09-25T12:22:35.843Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2610,6 +2610,24 @@
       "expirationDate": "",
       "createdAt": "2026-09-24",
       "updatedAt": "2026-09-24"
+    },
+    {
+      "id": "id_q2d39sk8mugxl6oi",
+      "code": "140",
+      "name": "Canetinha Hidrocor",
+      "categoryId": "cat_escritorio",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 5,
+      "currentStock": 10,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "",
+      "expirationDate": "",
+      "createdAt": "2026-09-25",
+      "updatedAt": "2026-09-25"
     }
   ],
   "movements": [
@@ -3844,6 +3862,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-25T12:21:45.852Z"
+    },
+    {
+      "id": "id_tx3q3kqhmugxl6oi",
+      "materialId": "id_q2d39sk8mugxl6oi",
+      "type": "entrada",
+      "date": "2026-09-25",
+      "quantity": 10,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 10,
+      "effect": 10,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-25T12:22:34.770Z"
     }
   ],
   "users": []
