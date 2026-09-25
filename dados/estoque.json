@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-24T15:38:04.706Z",
-    "updatedAt": "2026-09-24T15:38:04.706Z",
+    "lastSync": "2026-09-25T12:21:49.088Z",
+    "updatedAt": "2026-09-25T12:21:49.088Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -946,14 +946,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 27,
+      "currentStock": 36,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 38 mm x 5 mm | Tamanho/apresentação: blocos pequenos com 4 e 50 folhas",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-09-25"
     },
     {
       "id": "mat_esc_044",
@@ -3828,6 +3828,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-24T15:37:37.835Z"
+    },
+    {
+      "id": "id_84iok0nbmugxk4xo",
+      "materialId": "mat_esc_043",
+      "type": "entrada",
+      "date": "2026-09-25",
+      "quantity": 9,
+      "unitCost": 0,
+      "previousStock": 27,
+      "newStock": 36,
+      "effect": 9,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-25T12:21:45.852Z"
     }
   ],
   "users": []
