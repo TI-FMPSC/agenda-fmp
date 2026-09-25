@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-25T22:38:56.764Z",
+  "updatedAt": "2026-09-25T23:17:06.971Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -4604,6 +4604,20 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: DANIELA"
+    },
+    {
+      "id": "17ef943d-f1fc-4431-9eee-c83f2adc3ddc",
+      "spaceCategory": "lab",
+      "resourceId": "lab1",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "MARKETING DIGITAL",
+      "purpose": "MARKETING DIGITAL",
+      "startTime": "11:11",
+      "endTime": "12:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-28"
     },
     {
       "id": "3319df71-90db-4657-87df-d9b8f4a2c006",
