@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-25T23:49:17.465Z",
+  "updatedAt": "2026-09-25T23:51:20.350Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5140,6 +5140,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 3ª Fase · Leonardo C. Chaves · 2026-10-08 · 18:50–20:20 · Laboratório 01"
+    },
+    {
+      "id": "3d0dd89e-43af-4019-ac4d-ccc35e0f022d",
+      "timestamp": "2026-09-25T23:51:19.411Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 4ª Fase · Elaine M. S. dos Santos · 2026-09-30 · 18:50–22:00 · Laboratório 02"
     }
   ]
 }
