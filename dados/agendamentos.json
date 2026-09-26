@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-26T00:36:18.432Z",
+  "updatedAt": "2026-09-26T00:36:58.942Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8338,6 +8338,20 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: FERNANDA SANCHES (METODOLOGIA TCC)"
+    },
+    {
+      "id": "1a4de6e4-0c4d-4b38-ae5d-ef227d8fc105",
+      "spaceCategory": "lab",
+      "resourceId": "lab4",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Elaine M. S. dos Santos",
+      "purpose": "Pedagogia — 4ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-18"
     },
     {
       "id": "f485f140-db2b-54b4-a7f2-3a3ac53d9083",
