@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-26T00:05:49.802Z",
+  "updatedAt": "2026-09-26T00:35:01.630Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5194,6 +5194,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 4ª Fase · Elaine M. S. dos Santos. · 2026-10-28 · 18:50–22:00 · Laboratório 03"
+    },
+    {
+      "id": "8a069c65-916e-4df1-9679-58059955421f",
+      "timestamp": "2026-09-26T00:35:01.068Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 4ª Fase · Elaine M. S. dos Santos. · 2026-11-04 · 18:50–22:00 · Laboratório 04"
     }
   ]
 }
