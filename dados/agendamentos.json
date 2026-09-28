@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-26T00:36:58.942Z",
+  "updatedAt": "2026-09-28T11:00:20.874Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -4575,13 +4575,16 @@
     {
       "id": "c51b00fa-aea4-5292-bb40-ca2a5c28c5e6",
       "resourceId": "lab3",
-      "responsible": "Leandro Pickler",
-      "purpose": "ADS — 5ª Fase",
+      "responsible": "livre",
+      "purpose": "Livre",
       "date": "2026-09-28",
       "startTime": "08:00",
       "endTime": "09:30",
       "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: LEANDRO"
+      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: LEANDRO",
+      "spaceCategory": "lab",
+      "featuredEvent": false,
+      "allDay": false
     },
     {
       "id": "88ac3b7d-f483-5fe2-a2a6-d22cbbafe124",
