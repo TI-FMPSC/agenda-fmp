@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-28T11:00:20.874Z",
+  "updatedAt": "2026-09-28T12:58:26.452Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -4614,8 +4614,8 @@
       "resourceId": "lab2",
       "featuredEvent": false,
       "allDay": false,
-      "responsible": "Tatiani Schmitt",
-      "purpose": "TPG — 4ª Fase",
+      "responsible": "Luzinete C. Niedzieluk",
+      "purpose": "ADS — 2ª Fase",
       "startTime": "08:00",
       "endTime": "11:10",
       "status": "confirmed",
