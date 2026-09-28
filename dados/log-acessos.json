@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T10:54:57.101Z",
+  "updatedAt": "2026-09-28T11:00:24.534Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5239,6 +5239,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "31063e13-a5a7-4372-a3c7-ed4e4647b81b",
+      "timestamp": "2026-09-28T11:00:23.637Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "Livre · livre · 2026-09-28 · 08:00–09:30 · Laboratório 03"
     }
   ]
 }
