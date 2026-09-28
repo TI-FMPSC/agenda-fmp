@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T12:58:30.325Z",
+  "updatedAt": "2026-09-28T13:15:07.804Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5257,6 +5257,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "ADS — 2ª Fase · Luzinete C. Niedzieluk · 2026-09-28 · 08:00–11:10 · Laboratório 02"
+    },
+    {
+      "id": "b0f5936f-e0a9-4889-9386-30899754bca4",
+      "timestamp": "2026-09-28T13:15:07.103Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "Formatura Institucional · Formatura Institucional · 2026-09-28 · 17:00–22:00 · Auditório"
     }
   ]
 }
