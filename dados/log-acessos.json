@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T11:00:24.534Z",
+  "updatedAt": "2026-09-28T12:58:30.325Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5248,6 +5248,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "Livre · livre · 2026-09-28 · 08:00–09:30 · Laboratório 03"
+    },
+    {
+      "id": "e14957a1-22ad-40b7-b3bf-f38fbe078884",
+      "timestamp": "2026-09-28T12:58:29.764Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "ADS — 2ª Fase · Luzinete C. Niedzieluk · 2026-09-28 · 08:00–11:10 · Laboratório 02"
     }
   ]
 }
