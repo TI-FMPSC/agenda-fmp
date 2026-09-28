@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-28T13:16:27.393Z",
+  "updatedAt": "2026-09-28T13:17:13.896Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5270,6 +5270,15 @@
     {
       "id": "ca45d27d-c7c7-42de-95e1-11f76aede464",
       "timestamp": "2026-09-28T13:16:26.910Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza grade de salas 2026-2",
+      "module": "Grade de salas",
+      "details": "Salas-base do semestre 2026/2"
+    },
+    {
+      "id": "8324a7b7-2209-4ff8-9f9d-00a3a1d056e3",
+      "timestamp": "2026-09-28T13:17:13.306Z",
       "username": "amandafranca",
       "name": "Amanda",
       "action": "Atualiza grade de salas 2026-2",
