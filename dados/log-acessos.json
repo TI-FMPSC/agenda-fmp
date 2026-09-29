@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-29T12:23:13.473Z",
+  "updatedAt": "2026-09-29T12:37:03.601Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5302,6 +5302,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "fd0f89fc-a7e7-40bb-be2a-85a2dbbb4175",
+      "timestamp": "2026-09-29T12:37:02.647Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra Local/Setor",
+      "module": "Estoque FMP",
+      "details": "DEPÓSITO"
     }
   ]
 }
