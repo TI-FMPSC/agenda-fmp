@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-29T13:46:41.238Z",
-    "updatedAt": "2026-09-29T13:46:41.238Z",
+    "lastSync": "2026-09-29T13:49:05.164Z",
+    "updatedAt": "2026-09-29T13:49:05.164Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -84,6 +84,10 @@
     {
       "id": "id_rfp0rtzimumo6zfb",
       "name": "ARMÁRIO I - MATERIAL DE MANUTENÇÃO | ADM"
+    },
+    {
+      "id": "id_ialw1uwamumqftnp",
+      "name": "LAVANDERIA"
     }
   ],
   "materials": [
