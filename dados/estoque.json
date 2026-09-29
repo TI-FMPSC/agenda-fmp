@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-29T12:45:16.769Z",
-    "updatedAt": "2026-09-29T12:45:16.769Z",
+    "lastSync": "2026-09-29T12:45:47.422Z",
+    "updatedAt": "2026-09-29T12:45:47.422Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -56,6 +56,10 @@
     {
       "id": "id_7t187xi9mumny3mz",
       "name": "ALMOXARIFADO PAPEL"
+    },
+    {
+      "id": "id_6dz0i75gmumo6enr",
+      "name": "ARMÁRIO I -  MATERIAL DE ESCRITÓRIO | ADM"
     }
   ],
   "materials": [
