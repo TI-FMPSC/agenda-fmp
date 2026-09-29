@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-29T12:57:53.031Z",
-    "updatedAt": "2026-09-29T12:57:53.031Z",
+    "lastSync": "2026-09-29T13:46:41.238Z",
+    "updatedAt": "2026-09-29T13:46:41.238Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -58,6 +58,10 @@
     {
       "id": "id_2xp1pvmsmumolz6o",
       "name": "CHAMEQUINHO"
+    },
+    {
+      "id": "id_hisgkhmymumqcqm4",
+      "name": "SANTA CLARA"
     }
   ],
   "locations": [
