@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-29T12:39:19.563Z",
+  "updatedAt": "2026-09-29T12:39:39.061Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5338,6 +5338,15 @@
       "action": "Cadastra Local/Setor",
       "module": "Estoque FMP",
       "details": "ALMOXARIFADO PAPEL"
+    },
+    {
+      "id": "2cd8421b-475f-459d-a2b5-c72c1a18b26a",
+      "timestamp": "2026-09-29T12:39:37.998Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra Local/Setor",
+      "module": "Estoque FMP",
+      "details": "ARMÁRIO I - ADM"
     }
   ]
 }
