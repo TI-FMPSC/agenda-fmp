@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-29T19:15:24.021Z",
+  "updatedAt": "2026-09-29T19:18:11.947Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8190,6 +8190,20 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: ANDRÉIA (3ª FASE PED)"
+    },
+    {
+      "id": "c595543a-1297-4442-803a-d36d2a563865",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Rodolfo M. Lorandi",
+      "purpose": "Pedagogia — 1ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-16"
     },
     {
       "id": "80fed7aa-c756-5e8c-99dd-cdb53e0eed91",
