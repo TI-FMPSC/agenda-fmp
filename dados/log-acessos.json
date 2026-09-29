@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-29T12:38:50.419Z",
+  "updatedAt": "2026-09-29T12:39:19.563Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5329,6 +5329,15 @@
       "action": "Exclui local/setor",
       "module": "Estoque FMP",
       "details": "DEPÓSITO GERAL"
+    },
+    {
+      "id": "6041244a-4129-4add-87af-afe4e9601a35",
+      "timestamp": "2026-09-29T12:39:18.295Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra Local/Setor",
+      "module": "Estoque FMP",
+      "details": "ALMOXARIFADO PAPEL"
     }
   ]
 }
