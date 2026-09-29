@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-29T12:46:14.037Z",
-    "updatedAt": "2026-09-29T12:46:14.037Z",
+    "lastSync": "2026-09-29T12:47:16.291Z",
+    "updatedAt": "2026-09-29T12:47:16.291Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -46,6 +46,10 @@
     {
       "id": "id_i636i0ltmumo5bqw",
       "name": "SIRIUS"
+    },
+    {
+      "id": "id_t67csz6lmumo8bmh",
+      "name": "SEPTI"
     }
   ],
   "locations": [
