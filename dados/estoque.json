@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-29T12:46:00.857Z",
-    "updatedAt": "2026-09-29T12:46:00.857Z",
+    "lastSync": "2026-09-29T12:46:14.037Z",
+    "updatedAt": "2026-09-29T12:46:14.037Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -64,6 +64,10 @@
     {
       "id": "id_p15x7aiwmumo6pg9",
       "name": "ARMÁRIO II - MATERIAL DE ESCRITÓRIO | ADM"
+    },
+    {
+      "id": "id_rfp0rtzimumo6zfb",
+      "name": "ARMÁRIO I - MATERIAL DE MANUTENÇÃO | ADM"
     }
   ],
   "materials": [
