@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-29T12:45:10.069Z",
+  "updatedAt": "2026-09-29T12:45:14.542Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5349,13 +5349,13 @@
       "details": "ARMÁRIO I - ADM"
     },
     {
-      "id": "d6bab8bf-b05e-4715-a0ef-5134054d0963",
-      "timestamp": "2026-09-29T12:45:08.887Z",
+      "id": "d10c08d5-f403-4ba3-8a10-61b1ddde11e0",
+      "timestamp": "2026-09-29T12:45:12.336Z",
       "username": "amandafranca",
       "name": "Amanda",
       "action": "Exclui local/setor",
       "module": "Estoque FMP",
-      "details": "ARMÁRIO III - ADM"
+      "details": "ARMÁRIO II - ADM"
     }
   ]
 }
