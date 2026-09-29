@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-29T12:37:03.549Z",
-    "updatedAt": "2026-09-29T12:37:03.549Z",
+    "lastSync": "2026-09-29T12:37:38.721Z",
+    "updatedAt": "2026-09-29T12:37:38.721Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -38,6 +38,10 @@
     {
       "id": "id_wov4w4vjmumnv5nq",
       "name": "SEBOLD"
+    },
+    {
+      "id": "id_z6d2fv83mumnvy4f",
+      "name": "TIXAN YPÊ"
     }
   ],
   "locations": [
