@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-29T12:57:52.825Z",
+  "updatedAt": "2026-09-29T13:49:04.984Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5374,6 +5374,15 @@
       "action": "Cadastra Fornecedor",
       "module": "Estoque FMP",
       "details": "CHAMEQUINHO"
+    },
+    {
+      "id": "8cbef298-4d87-4014-a66b-dd52015f6968",
+      "timestamp": "2026-09-29T13:49:04.402Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra Local/Setor",
+      "module": "Estoque FMP",
+      "details": "LAVANDERIA"
     }
   ]
 }
