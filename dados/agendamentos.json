@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-29T19:22:33.863Z",
+  "updatedAt": "2026-09-29T19:23:10.646Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -7330,6 +7330,20 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "03 mesas+água+plantas",
+      "date": "2026-11-03"
+    },
+    {
+      "id": "4ad0ef14-0ac3-45c1-8bc9-effd2d84b782",
+      "spaceCategory": "lab",
+      "resourceId": "lab2",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Rodolfo M. Lorandi",
+      "purpose": "Pedagogia — 8ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
       "date": "2026-11-03"
     },
     {
