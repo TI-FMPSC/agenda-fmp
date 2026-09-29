@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-29T19:26:07.210Z",
+  "updatedAt": "2026-09-29T19:26:55.604Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5482,6 +5482,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 8ª Fase · Rodolfo M. Lorandi · 2026-11-24 · 18:50–22:00 · Laboratório 04"
+    },
+    {
+      "id": "f617e451-8f45-4144-9c82-c3111fedd6d5",
+      "timestamp": "2026-09-29T19:26:54.617Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 8ª Fase · Rodolfo M. Lorandi · 2026-12-01 · 18:50–22:00 · Laboratório 04"
     }
   ]
 }
