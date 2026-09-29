@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-29T12:46:00.547Z",
+  "updatedAt": "2026-09-29T12:57:52.825Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5365,6 +5365,15 @@
       "action": "Cadastra Local/Setor",
       "module": "Estoque FMP",
       "details": "ARMÁRIO II - MATERIAL DE ESCRITÓRIO | ADM"
+    },
+    {
+      "id": "ba338363-c4f6-4183-b27b-736e07dc2c0b",
+      "timestamp": "2026-09-29T12:57:52.264Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra Fornecedor",
+      "module": "Estoque FMP",
+      "details": "CHAMEQUINHO"
     }
   ]
 }
