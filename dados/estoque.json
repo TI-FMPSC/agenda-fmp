@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-29T12:45:10.144Z",
-    "updatedAt": "2026-09-29T12:45:10.144Z",
+    "lastSync": "2026-09-29T12:45:14.558Z",
+    "updatedAt": "2026-09-29T12:45:14.558Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -60,10 +60,6 @@
     {
       "id": "id_fl9icb22mumnyiu9",
       "name": "ARMÁRIO I - ADM"
-    },
-    {
-      "id": "id_c44xlqyrmumnymo3",
-      "name": "ARMÁRIO II - ADM"
     }
   ],
   "materials": [
