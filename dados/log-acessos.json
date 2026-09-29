@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-29T19:15:26.612Z",
+  "updatedAt": "2026-09-29T19:18:15.092Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5401,6 +5401,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 1ª Fase · Rodolfo M. Lorandi · 2026-11-09 · 18:50–22:00 · Auditório"
+    },
+    {
+      "id": "96463dc7-7bdf-408b-b83b-1f60c5b96559",
+      "timestamp": "2026-09-29T19:18:14.328Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 1ª Fase · Rodolfo M. Lorandi · 2026-11-16 · 18:50–22:00 · Auditório"
     }
   ]
 }
