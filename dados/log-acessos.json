@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-29T19:32:37.255Z",
+  "updatedAt": "2026-09-29T19:34:06.034Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5518,6 +5518,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 2ª Fase · Luzinete C. Niedzieluk · 2026-09-29 · 18:50–22:00 · Laboratório 01"
+    },
+    {
+      "id": "54eb7a03-e22b-466a-8fbf-a0958f11fc7d",
+      "timestamp": "2026-09-29T19:34:05.478Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 7ª Fase · Andreia de B. Machado · 2026-09-29 · 18:50–22:00 · Laboratório 05"
     }
   ]
 }
