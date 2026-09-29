@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-29T19:28:49.040Z",
+  "updatedAt": "2026-09-29T19:32:37.255Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5509,6 +5509,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "TPG — 4ª Fase · Inara A. V. Willerding · 2026-10-06 · 08:00–11:10 · Laboratório 02"
+    },
+    {
+      "id": "02118c4b-d312-4969-a0d6-c30a2570059c",
+      "timestamp": "2026-09-29T19:32:36.811Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 2ª Fase · Luzinete C. Niedzieluk · 2026-09-29 · 18:50–22:00 · Laboratório 01"
     }
   ]
 }
