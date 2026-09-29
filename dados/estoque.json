@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-29T12:37:01.829Z",
-    "updatedAt": "2026-09-29T12:37:01.829Z",
+    "lastSync": "2026-09-29T12:37:03.549Z",
+    "updatedAt": "2026-09-29T12:37:03.549Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -40,7 +40,12 @@
       "name": "SEBOLD"
     }
   ],
-  "locations": [],
+  "locations": [
+    {
+      "id": "id_yiqxc26mmumnv6za",
+      "name": "DEPÓSITO"
+    }
+  ],
   "materials": [
     {
       "id": "mat_cop_001",
