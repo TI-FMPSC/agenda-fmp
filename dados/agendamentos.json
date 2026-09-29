@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-28T13:15:04.391Z",
+  "updatedAt": "2026-09-29T19:15:24.021Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -7706,6 +7706,20 @@
       "endTime": "20:20",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: LARISSA"
+    },
+    {
+      "id": "70cc2bcd-4921-43ab-a523-e057d286a87a",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Rodolfo M. Lorandi",
+      "purpose": "Pedagogia — 1ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-09"
     },
     {
       "id": "c3f940c0-2fc9-510e-a33c-95376ceb0b7b",
