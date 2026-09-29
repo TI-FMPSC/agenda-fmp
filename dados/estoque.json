@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-29T12:56:55.975Z",
-    "updatedAt": "2026-09-29T12:56:55.975Z",
+    "lastSync": "2026-09-29T12:57:08.825Z",
+    "updatedAt": "2026-09-29T12:57:08.825Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -50,6 +50,10 @@
     {
       "id": "id_t67csz6lmumo8bmh",
       "name": "SEPTI"
+    },
+    {
+      "id": "id_s3r1b4p8mumol0yx",
+      "name": "CHAMEX SOLUTION"
     }
   ],
   "locations": [
