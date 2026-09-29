@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-29T13:49:22.057Z",
-    "updatedAt": "2026-09-29T13:49:22.057Z",
+    "lastSync": "2026-09-29T13:50:36.086Z",
+    "updatedAt": "2026-09-29T13:50:36.086Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2686,6 +2686,24 @@
       "expirationDate": "",
       "createdAt": "2026-09-25",
       "updatedAt": "2026-09-25"
+    },
+    {
+      "id": "id_c6ae6f44mumqhri2",
+      "code": "160",
+      "name": "ÁGUA MINERAL",
+      "categoryId": "cat_copa",
+      "unit": "UN",
+      "supplierId": "id_hisgkhmymumqcqm4",
+      "locationId": "id_ialw1uwamumqftnp",
+      "minStock": 4,
+      "currentStock": 4,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "",
+      "expirationDate": "",
+      "createdAt": "2026-09-29",
+      "updatedAt": "2026-09-29"
     }
   ],
   "movements": [
@@ -3936,6 +3954,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-25T12:22:34.770Z"
+    },
+    {
+      "id": "id_bfw8g3nnmumqhri2",
+      "materialId": "id_c6ae6f44mumqhri2",
+      "type": "entrada",
+      "date": "2026-09-29",
+      "quantity": 4,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 4,
+      "effect": 4,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-29T13:50:34.874Z"
     }
   ],
   "users": []
