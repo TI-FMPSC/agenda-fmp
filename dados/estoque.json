@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-29T13:49:05.164Z",
-    "updatedAt": "2026-09-29T13:49:05.164Z",
+    "lastSync": "2026-09-29T13:49:22.057Z",
+    "updatedAt": "2026-09-29T13:49:22.057Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -88,6 +88,10 @@
     {
       "id": "id_ialw1uwamumqftnp",
       "name": "LAVANDERIA"
+    },
+    {
+      "id": "id_dsj691tamumqg6l8",
+      "name": "ALMOXARIFADO EMBAIXO DA ESCADA"
     }
   ],
   "materials": [
