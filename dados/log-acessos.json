@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-29T12:37:46.398Z",
+  "updatedAt": "2026-09-29T12:38:50.419Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5320,6 +5320,15 @@
       "action": "Exclui local/setor",
       "module": "Estoque FMP",
       "details": "DEPÓSITO"
+    },
+    {
+      "id": "4988a36c-0872-40e7-8cce-3b44edbe5ade",
+      "timestamp": "2026-09-29T12:38:49.232Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Exclui local/setor",
+      "module": "Estoque FMP",
+      "details": "DEPÓSITO GERAL"
     }
   ]
 }
