@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-29T12:45:14.542Z",
+  "updatedAt": "2026-09-29T12:46:00.547Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5356,6 +5356,15 @@
       "action": "Exclui local/setor",
       "module": "Estoque FMP",
       "details": "ARMÁRIO II - ADM"
+    },
+    {
+      "id": "978d3ac0-0974-472e-8d42-491b3e5e5e6f",
+      "timestamp": "2026-09-29T12:45:59.812Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra Local/Setor",
+      "module": "Estoque FMP",
+      "details": "ARMÁRIO II - MATERIAL DE ESCRITÓRIO | ADM"
     }
   ]
 }
