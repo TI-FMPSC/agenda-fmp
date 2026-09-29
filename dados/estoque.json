@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-29T12:38:50.066Z",
-    "updatedAt": "2026-09-29T12:38:50.066Z",
+    "lastSync": "2026-09-29T12:39:02.329Z",
+    "updatedAt": "2026-09-29T12:39:02.329Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -44,7 +44,12 @@
       "name": "TIXAN YPÊ"
     }
   ],
-  "locations": [],
+  "locations": [
+    {
+      "id": "id_yzs046h6mumnxqbj",
+      "name": "ALMOXARIFADO CENTRAL"
+    }
+  ],
   "materials": [
     {
       "id": "mat_cop_001",
