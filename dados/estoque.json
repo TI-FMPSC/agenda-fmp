@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-29T12:37:38.721Z",
-    "updatedAt": "2026-09-29T12:37:38.721Z",
+    "lastSync": "2026-09-29T12:37:46.144Z",
+    "updatedAt": "2026-09-29T12:37:46.144Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -44,12 +44,7 @@
       "name": "TIXAN YPÊ"
     }
   ],
-  "locations": [
-    {
-      "id": "id_yiqxc26mmumnv6za",
-      "name": "DEPÓSITO"
-    }
-  ],
+  "locations": [],
   "materials": [
     {
       "id": "mat_cop_001",
