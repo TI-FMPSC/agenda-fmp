@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-25T12:22:39.786Z",
-    "updatedAt": "2026-09-25T12:22:39.786Z",
+    "lastSync": "2026-09-29T12:37:01.829Z",
+    "updatedAt": "2026-09-29T12:37:01.829Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -34,7 +34,12 @@
       "name": "Materiais Elétricos e Afins"
     }
   ],
-  "suppliers": [],
+  "suppliers": [
+    {
+      "id": "id_wov4w4vjmumnv5nq",
+      "name": "SEBOLD"
+    }
+  ],
   "locations": [],
   "materials": [
     {
