@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T21:16:51.663Z",
+  "updatedAt": "2026-09-30T21:18:33.249Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5806,6 +5806,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "Administração — 6ª Fase · Fernanda M. Sanchez · 2026-09-30 · 18:50–22:00 · Laboratório 01"
+    },
+    {
+      "id": "7a51e33c-fe33-4c94-a09a-e035871bb2d5",
+      "timestamp": "2026-09-30T21:18:32.719Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 4ª Fase · Elaine M. S. dos Santos · 2026-09-30 · 18:50–22:00 · Laboratório 02"
     }
   ]
 }
