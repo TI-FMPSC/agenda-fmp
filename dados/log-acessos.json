@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-29T19:34:06.034Z",
+  "updatedAt": "2026-09-30T10:26:53.341Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5527,6 +5527,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 7ª Fase · Andreia de B. Machado · 2026-09-29 · 18:50–22:00 · Laboratório 05"
+    },
+    {
+      "id": "39486ade-4fdc-4cf1-a321-ad044bd37584",
+      "timestamp": "2026-09-30T10:26:53.036Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza integração com GitHub",
+      "module": "Configurações",
+      "details": "TI-FMPSC/agenda-fmp · main"
     }
   ]
 }
