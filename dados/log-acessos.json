@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T21:15:21.042Z",
+  "updatedAt": "2026-09-30T21:15:22.543Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5781,8 +5781,8 @@
       "details": "Entrada na área administrativa"
     },
     {
-      "id": "d585fb00-82ab-4057-a486-b46da087c1da",
-      "timestamp": "2026-09-30T21:15:20.596Z",
+      "id": "942c4482-40e1-424f-808e-840c897dd260",
+      "timestamp": "2026-09-30T21:15:22.084Z",
       "username": "andreakochela",
       "name": "Andréa Kochela",
       "action": "Login realizado",
