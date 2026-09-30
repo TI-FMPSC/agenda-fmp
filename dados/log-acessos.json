@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T10:42:04.699Z",
+  "updatedAt": "2026-09-30T10:47:04.947Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5545,6 +5545,15 @@
       "action": "Cadastra Fornecedor",
       "module": "Estoque FMP",
       "details": "Só Aroma"
+    },
+    {
+      "id": "ddbb0d01-5012-42e1-9bb3-0abdccbf40a5",
+      "timestamp": "2026-09-30T10:47:03.900Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 0023 · Alcool Etílico Hidratado 92,8% · quantidade 2 · saldo 96"
     }
   ]
 }
