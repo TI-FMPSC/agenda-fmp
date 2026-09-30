@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-30T23:16:04.611Z",
+  "updatedAt": "2026-09-30T23:28:15.017Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -5929,6 +5929,20 @@
       "purpose": "GERAR",
       "startTime": "08:00",
       "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "9f6aff97-9482-4e2f-a8c7-fe5d9019b851",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Daniela Amorim",
+      "purpose": "DANIELA/ADS/COPER (CURSO DE PROGRAMAÇÃO",
+      "startTime": "11:10",
+      "endTime": "12:30",
       "status": "confirmed",
       "notes": "",
       "date": "2026-10-14"
