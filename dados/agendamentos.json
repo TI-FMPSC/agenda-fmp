@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-30T23:06:53.711Z",
+  "updatedAt": "2026-09-30T23:07:37.535Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -5953,21 +5953,6 @@
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: JULIANE"
     },
     {
-      "id": "7a4edede-2dfe-427b-847e-bf4057dab139",
-      "spaceCategory": "classroom",
-      "resourceId": "custom:sala-lpp-10-notes",
-      "customSpaceName": "SALA LPP + 10 NOTES",
-      "featuredEvent": false,
-      "allDay": false,
-      "responsible": "Ana Lucia Machado",
-      "purpose": "",
-      "startTime": "18:50",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-10-14"
-    },
-    {
       "id": "e50f73be-f603-587b-8509-edd4608f35e5",
       "resourceId": "lab1",
       "responsible": "Rafael Novo da Rosa",
@@ -6537,6 +6522,21 @@
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: SALA 16: MATURIDADE (13:30-17:30)",
       "customSpaceName": "Sala 16"
+    },
+    {
+      "id": "67599f77-ca0e-4bd5-aa26-e7ded59dbe96",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:sala-lpp-10-notes",
+      "customSpaceName": "SALA LPP + 10 NOTES",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Ana Lucia Machado",
+      "purpose": "",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-21"
     },
     {
       "id": "414aafbe-44bf-588e-92d3-9cb87e740d76",
