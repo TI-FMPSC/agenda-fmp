@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-30T21:23:08.587Z",
+  "updatedAt": "2026-09-30T21:37:28.035Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -4983,6 +4983,20 @@
       "purpose": "Pedagogia — 5ª Fase",
       "startTime": "18:50",
       "endTime": "20:20",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-09-30"
+    },
+    {
+      "id": "7b6ff724-6e74-4874-b4df-cbe6fa46cb72",
+      "spaceCategory": "lab",
+      "resourceId": "lab2",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Ana Lucia Machado",
+      "purpose": "",
+      "startTime": "18:50",
+      "endTime": "22:00",
       "status": "confirmed",
       "notes": "",
       "date": "2026-09-30"
