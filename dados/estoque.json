@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-30T12:30:59.030Z",
-    "updatedAt": "2026-09-30T12:30:59.030Z",
+    "lastSync": "2026-09-30T13:45:38.640Z",
+    "updatedAt": "2026-09-30T13:45:38.640Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
