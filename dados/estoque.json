@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-30T12:10:12.026Z",
-    "updatedAt": "2026-09-30T12:10:12.026Z",
+    "lastSync": "2026-09-30T12:11:07.076Z",
+    "updatedAt": "2026-09-30T12:11:07.076Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2740,14 +2740,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 5,
+      "currentStock": 3,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: Limão Verde | Marca: BONZÃO | Tamanho/apresentação: 500ML | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-09-30"
     },
     {
       "id": "mat_lim_002",
@@ -4526,6 +4526,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-30T12:10:11.224Z"
+    },
+    {
+      "id": "id_z9fx7wd0muo2dofz",
+      "materialId": "mat_lim_001",
+      "type": "saida",
+      "date": "2026-09-25",
+      "quantity": 2,
+      "unitCost": 0,
+      "previousStock": 5,
+      "newStock": 3,
+      "effect": -2,
+      "sector": "Jussane",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-30T12:11:05.855Z"
     }
   ],
   "users": []
