@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-30T10:57:22.308Z",
-    "updatedAt": "2026-09-30T10:57:22.308Z",
+    "lastSync": "2026-09-30T11:50:10.067Z",
+    "updatedAt": "2026-09-30T11:50:10.067Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1984,14 +1984,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 9,
+      "currentStock": 7,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 30 ML | Marca: SEBOLD | Tamanho/apresentação: UNIDADE | Observações: atualizado 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-09-30"
     },
     {
       "id": "mat_man_001",
@@ -4286,6 +4286,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-30T10:57:21.490Z"
+    },
+    {
+      "id": "id_yrun7kb0muo1mqmt",
+      "materialId": "mat_lim_033",
+      "type": "saida",
+      "date": "2026-09-16",
+      "quantity": 2,
+      "unitCost": 0,
+      "previousStock": 9,
+      "newStock": 7,
+      "effect": -2,
+      "sector": "Adri",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-30T11:50:08.981Z"
     }
   ],
   "users": []
