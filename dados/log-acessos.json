@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T21:20:59.240Z",
+  "updatedAt": "2026-09-30T21:22:37.992Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5824,6 +5824,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": " · Ana Lucia Machado · 2026-09-30 · 18:50–22:00 · Laboratório 02"
+    },
+    {
+      "id": "d3e847d9-c874-4721-b5d1-3b694e40c246",
+      "timestamp": "2026-09-30T21:22:37.440Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 5ª Fase · Juliana C. Müller · 2026-09-30 · 18:50–20:20 · Auditório"
     }
   ]
 }
