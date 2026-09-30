@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-30T23:42:05.874Z",
+  "updatedAt": "2026-09-30T23:42:52.019Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8819,20 +8819,6 @@
       "date": "2026-11-23"
     },
     {
-      "id": "fcb68fe2-fdb3-4d45-8563-875c696909d1",
-      "spaceCategory": "lab",
-      "resourceId": "lab5",
-      "featuredEvent": false,
-      "allDay": false,
-      "responsible": "Daniela Amorim",
-      "purpose": "DANIELA/ADS/COPER (CURSO DE PROGRAMAÇÃO)",
-      "startTime": "11:10",
-      "endTime": "12:30",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-11-23"
-    },
-    {
       "id": "1b3a54d8-5abb-5f87-9a92-2bed4ac67bb6",
       "resourceId": "custom:quadra-azul",
       "responsible": "FUTASL 17:30-22:00",
@@ -9001,6 +8987,20 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: RAFAEL"
+    },
+    {
+      "id": "ca305882-c015-4e93-94bb-7c4fdd645c78",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Daniela Amorim",
+      "purpose": "DANIELA/ADS/COPER (CURSO DE PROGRAMAÇÃO)",
+      "startTime": "11:10",
+      "endTime": "12:30",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-25"
     },
     {
       "id": "88f87cec-bec6-5617-a181-8d33f0b80c81",
