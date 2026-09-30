@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-30T23:15:32.083Z",
+  "updatedAt": "2026-09-30T23:16:04.611Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8954,6 +8954,20 @@
       "endTime": "20:20",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: IVANIR ANTES DA PAUSA"
+    },
+    {
+      "id": "b065614b-e274-4e1e-8c5d-d46fe92abece",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Ana Lucia Machado",
+      "purpose": "",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-25"
     },
     {
       "id": "2cea2372-bed4-5ab7-b24d-af0a923b8a1a",
