@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T23:43:43.470Z",
+  "updatedAt": "2026-09-30T23:45:39.965Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6049,6 +6049,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "DANIELA/ADS/COPER (CURSO DE PROGRAMAÇÃO) · Daniela Amorim · 2026-09-11 · 11:10–12:30 · Laboratório 05"
+    },
+    {
+      "id": "b1bf9445-1f2a-4cf3-933d-c7b10dbf8136",
+      "timestamp": "2026-09-30T23:45:38.544Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "DANIELA/ADS/COPER (CURSO DE PROGRAMAÇÃO) · Daniela Amorim · 2026-12-02 · 11:10–12:30 · Laboratório 05"
     }
   ]
 }
