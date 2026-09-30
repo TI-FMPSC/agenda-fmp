@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T21:13:56.269Z",
+  "updatedAt": "2026-09-30T21:14:04.454Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5711,6 +5711,15 @@
     {
       "id": "028090b3-d0e4-4c28-849c-910d9989e756",
       "timestamp": "2026-09-30T21:13:55.860Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "e32a1afd-0e5b-4dd4-b54a-f861b49b06e2",
+      "timestamp": "2026-09-30T21:14:03.628Z",
       "username": "andreakochela",
       "name": "Andréa Kochela",
       "action": "Login realizado",
