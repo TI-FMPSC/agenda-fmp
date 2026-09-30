@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T11:50:32.413Z",
+  "updatedAt": "2026-09-30T11:55:48.494Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5599,6 +5599,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · sem código · Panos de Chão · quantidade 6 · saldo 25"
+    },
+    {
+      "id": "ac356439-989f-40ef-8835-09f51ce9bc2a",
+      "timestamp": "2026-09-30T11:55:47.764Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 0020 · Água Sanitaria · quantidade 1 · saldo 64"
     }
   ]
 }
