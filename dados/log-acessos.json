@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T10:48:48.064Z",
+  "updatedAt": "2026-09-30T10:49:36.197Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5563,6 +5563,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · sem código · Sabão em pó · quantidade 1 · saldo 4"
+    },
+    {
+      "id": "4a460763-f842-4dd2-affb-8155d90b5302",
+      "timestamp": "2026-09-30T10:49:34.821Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 0048 · Desinfetante · quantidade 1 · saldo 34"
     }
   ]
 }
