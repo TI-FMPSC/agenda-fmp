@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T23:02:33.303Z",
+  "updatedAt": "2026-09-30T23:06:56.258Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5869,6 +5869,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": " · Ana Lucia Machado · 2026-10-07 · 18:50–22:00 · SALA LPP"
+    },
+    {
+      "id": "68866f06-76b1-46d2-809d-e00e24e1382a",
+      "timestamp": "2026-09-30T23:06:55.708Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": " · Ana Lucia Machado · 2026-10-14 · 18:50–22:00 · SALA LPP + 10 NOTES"
     }
   ]
 }
