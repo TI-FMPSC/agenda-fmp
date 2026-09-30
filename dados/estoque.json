@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-30T12:26:10.711Z",
-    "updatedAt": "2026-09-30T12:26:10.711Z",
+    "lastSync": "2026-09-30T12:27:51.420Z",
+    "updatedAt": "2026-09-30T12:27:51.420Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -123,7 +123,7 @@
     },
     {
       "id": "mat_epi_001",
-      "code": "1212121",
+      "code": "9999",
       "name": "80 CAIXAS DE MÁSCARA",
       "categoryId": "cat_epis",
       "unit": "CX",
