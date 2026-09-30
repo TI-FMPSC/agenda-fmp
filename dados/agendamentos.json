@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-30T23:07:37.535Z",
+  "updatedAt": "2026-09-30T23:08:29.068Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -6524,21 +6524,6 @@
       "customSpaceName": "Sala 16"
     },
     {
-      "id": "67599f77-ca0e-4bd5-aa26-e7ded59dbe96",
-      "spaceCategory": "classroom",
-      "resourceId": "custom:sala-lpp-10-notes",
-      "customSpaceName": "SALA LPP + 10 NOTES",
-      "featuredEvent": false,
-      "allDay": false,
-      "responsible": "Ana Lucia Machado",
-      "purpose": "",
-      "startTime": "18:50",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-10-21"
-    },
-    {
       "id": "414aafbe-44bf-588e-92d3-9cb87e740d76",
       "resourceId": "lab1",
       "responsible": "Avaliação CPA",
@@ -7153,6 +7138,21 @@
       "allDay": false,
       "responsible": "Elaine M. S. dos Santos.",
       "purpose": "Pedagogia — 4ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-28"
+    },
+    {
+      "id": "19b52b32-2112-4483-868b-20c5a0bcedf5",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:sala-lpp-10-notes",
+      "customSpaceName": "SALA LPP + 10 NOTES",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Ana Lucia Machado",
+      "purpose": "",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
