@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-30T11:57:14.372Z",
-    "updatedAt": "2026-09-30T11:57:14.372Z",
+    "lastSync": "2026-09-30T11:57:34.090Z",
+    "updatedAt": "2026-09-30T11:57:34.090Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2650,7 +2650,7 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 10,
-      "currentStock": 31,
+      "currentStock": 30,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
@@ -4462,6 +4462,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-30T11:57:13.411Z"
+    },
+    {
+      "id": "id_ejz2w1ycmuo1w9by",
+      "materialId": "id_3iirvjowmtd4j83v",
+      "type": "saida",
+      "date": "2026-09-22",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 31,
+      "newStock": 30,
+      "effect": -1,
+      "sector": "Mari",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-30T11:57:33.118Z"
     }
   ],
   "users": []
