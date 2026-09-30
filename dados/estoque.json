@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-30T10:47:04.958Z",
-    "updatedAt": "2026-09-30T10:47:04.958Z",
+    "lastSync": "2026-09-30T10:48:04.540Z",
+    "updatedAt": "2026-09-30T10:48:04.540Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2430,7 +2430,7 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 20,
-      "currentStock": 96,
+      "currentStock": 95,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
@@ -4186,6 +4186,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-30T10:47:03.838Z"
+    },
+    {
+      "id": "id_vgkwb2x5munzew7a",
+      "materialId": "id_cp2jzwyimt2xynql",
+      "type": "saida",
+      "date": "2026-09-29",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 96,
+      "newStock": 95,
+      "effect": -1,
+      "sector": "Amanda",
+      "document": "",
+      "notes": "Uma Unidade para deixar na ADM.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-30T10:48:03.718Z"
     }
   ],
   "users": []
