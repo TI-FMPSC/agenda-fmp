@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-30T12:14:57.885Z",
-    "updatedAt": "2026-09-30T12:14:57.885Z",
+    "lastSync": "2026-09-30T12:26:10.711Z",
+    "updatedAt": "2026-09-30T12:26:10.711Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -123,13 +123,13 @@
     },
     {
       "id": "mat_epi_001",
-      "code": "",
+      "code": "1212121",
       "name": "80 CAIXAS DE MÁSCARA",
       "categoryId": "cat_epis",
       "unit": "CX",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 9.91,
       "currentStock": 80,
       "avgCost": "",
       "status": "active",
@@ -137,7 +137,7 @@
       "description": "Tamanho/apresentação: 50 UNI POR CAIXA",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-09-30"
     },
     {
       "id": "mat_epi_002",
