@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-30T10:48:48.072Z",
-    "updatedAt": "2026-09-30T10:48:48.072Z",
+    "lastSync": "2026-09-30T10:49:35.580Z",
+    "updatedAt": "2026-09-30T10:49:35.580Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2646,14 +2646,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 10,
-      "currentStock": 35,
+      "currentStock": 34,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "Recebidos em 28/08 36 unidades de 5 litros cada. Marca: Sebold",
       "expirationDate": "",
       "createdAt": "2026-08-28",
-      "updatedAt": "2026-09-10"
+      "updatedAt": "2026-09-30"
     },
     {
       "id": "id_oyljvzfjmufp465n",
@@ -4218,6 +4218,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-30T10:48:47.220Z"
+    },
+    {
+      "id": "id_3lnp634dmunzgug2",
+      "materialId": "id_3iirvjowmtd4j83v",
+      "type": "saida",
+      "date": "2026-09-14",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 35,
+      "newStock": 34,
+      "effect": -1,
+      "sector": "Luana",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-30T10:49:34.754Z"
     }
   ],
   "users": []
