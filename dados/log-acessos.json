@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T21:37:49.147Z",
+  "updatedAt": "2026-09-30T23:02:33.303Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5860,6 +5860,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "Administração — 6ª Fase · Fernanda M. Sanchez · 2026-09-30 · 18:50–22:00 · Laboratório 01"
+    },
+    {
+      "id": "376a76a8-9ab8-4209-ab91-e9d95c6fa20a",
+      "timestamp": "2026-09-30T23:02:32.284Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": " · Ana Lucia Machado · 2026-10-07 · 18:50–22:00 · SALA LPP"
     }
   ]
 }
