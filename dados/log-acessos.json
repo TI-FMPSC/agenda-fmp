@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T10:49:36.197Z",
+  "updatedAt": "2026-09-30T10:57:02.864Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5572,6 +5572,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 0048 · Desinfetante · quantidade 1 · saldo 34"
+    },
+    {
+      "id": "cc251d41-b1f2-4e0c-b327-3ca3f8427271",
+      "timestamp": "2026-09-30T10:57:02.293Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 0022 · Detergente louça · quantidade 6 · saldo 39"
     }
   ]
 }
