@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-30T11:50:32.428Z",
-    "updatedAt": "2026-09-30T11:50:32.428Z",
+    "lastSync": "2026-09-30T11:53:47.905Z",
+    "updatedAt": "2026-09-30T11:53:47.905Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1912,14 +1912,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 20,
+      "currentStock": 17,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: Pacote com 3 | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-09-30"
     },
     {
       "id": "mat_lim_028",
@@ -4318,6 +4318,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-30T11:50:31.323Z"
+    },
+    {
+      "id": "id_judl5agzmuo1rewr",
+      "materialId": "mat_lim_027",
+      "type": "saida",
+      "date": "2026-09-16",
+      "quantity": 3,
+      "unitCost": 0,
+      "previousStock": 20,
+      "newStock": 17,
+      "effect": -3,
+      "sector": "Adri",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-09-30T11:53:47.067Z"
     }
   ],
   "users": []
