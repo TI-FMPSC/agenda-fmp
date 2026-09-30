@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-09-30T10:27:14.096Z",
-    "updatedAt": "2026-09-30T10:27:14.096Z",
+    "lastSync": "2026-09-30T10:42:07.207Z",
+    "updatedAt": "2026-09-30T10:42:07.207Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -62,6 +62,10 @@
     {
       "id": "id_hisgkhmymumqcqm4",
       "name": "SANTA CLARA"
+    },
+    {
+      "id": "id_kbkbmizjmunz76rv",
+      "name": "Só Aroma"
     }
   ],
   "locations": [
