@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T10:57:02.864Z",
+  "updatedAt": "2026-09-30T10:57:22.431Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5581,6 +5581,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 0022 · Detergente louça · quantidade 6 · saldo 39"
+    },
+    {
+      "id": "c19457fd-fdaa-4647-9172-a386ac729168",
+      "timestamp": "2026-09-30T10:57:21.557Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 0023 · Alcool Etílico Hidratado 92,8% · quantidade 2 · saldo 93"
     }
   ]
 }
