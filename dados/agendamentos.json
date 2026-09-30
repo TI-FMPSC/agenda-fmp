@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-30T21:20:55.395Z",
+  "updatedAt": "2026-09-30T21:22:34.925Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -4974,15 +4974,15 @@
       "date": "2026-09-30"
     },
     {
-      "id": "fa516ef4-82d8-4af7-9b16-daf0442348d1",
+      "id": "8e1a9866-79b1-42e3-bb49-5428ae711a37",
       "spaceCategory": "lab",
-      "resourceId": "lab2",
+      "resourceId": "auditorio",
       "featuredEvent": false,
       "allDay": false,
-      "responsible": "Ana Lucia Machado",
-      "purpose": "",
+      "responsible": "Juliana C. Müller",
+      "purpose": "Pedagogia — 5ª Fase",
       "startTime": "18:50",
-      "endTime": "22:00",
+      "endTime": "20:20",
       "status": "confirmed",
       "notes": "",
       "date": "2026-09-30"
