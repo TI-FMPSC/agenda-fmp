@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-30T23:09:34.433Z",
+  "updatedAt": "2026-09-30T23:13:11.197Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -1295,6 +1295,21 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: MARIANE"
+    },
+    {
+      "id": "65b0e56d-9a1b-4cd3-89c1-edf458aa79bb",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:sala-lpp-10-notes",
+      "customSpaceName": "SALA LPP + 10 NOTES",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Ana Lucia Machado",
+      "purpose": "",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-08-17"
     },
     {
       "id": "449b6fd0-3dfd-5285-8ae6-80c6dbc689df",
@@ -7145,6 +7160,21 @@
       "date": "2026-10-28"
     },
     {
+      "id": "19b52b32-2112-4483-868b-20c5a0bcedf5",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:sala-lpp-10-notes",
+      "customSpaceName": "SALA LPP + 10 NOTES",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Ana Lucia Machado",
+      "purpose": "",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-28"
+    },
+    {
       "id": "71a0bd66-7483-5cf4-8ee5-70217282b95a",
       "resourceId": "lab1",
       "responsible": "Rafael Novo da Rosa",
@@ -7581,6 +7611,21 @@
       "allDay": false,
       "responsible": "Elaine M. S. dos Santos.",
       "purpose": "Pedagogia — 4ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-04"
+    },
+    {
+      "id": "a267a59a-9d81-485a-b782-860707aeaf4a",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:sala-lpp-10-notes",
+      "customSpaceName": "SALA LPP + 10 NOTES",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Ana Lucia Machado",
+      "purpose": "",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
@@ -8054,21 +8099,6 @@
       "allDay": false,
       "responsible": "Elaine M. S. dos Santos.",
       "purpose": "Pedagogia — 4ª Fase",
-      "startTime": "18:50",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-11-11"
-    },
-    {
-      "id": "4c404076-e21d-4187-a1bd-9ab7a53f06e7",
-      "spaceCategory": "classroom",
-      "resourceId": "custom:sala-lpp-10-notes",
-      "customSpaceName": "SALA LPP + 10 NOTES",
-      "featuredEvent": false,
-      "allDay": false,
-      "responsible": "Ana Lucia Machado",
-      "purpose": "",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
