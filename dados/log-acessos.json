@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T21:23:10.759Z",
+  "updatedAt": "2026-09-30T21:37:32.157Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5842,6 +5842,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 3ª Fase · Juliane P. Q. Odinino · 2026-09-30 · 20:30–22:00 · Auditório"
+    },
+    {
+      "id": "38a835f3-0031-46ce-812c-d45f179ddc0a",
+      "timestamp": "2026-09-30T21:37:31.191Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": " · Ana Lucia Machado · 2026-09-30 · 18:50–22:00 · Laboratório 02"
     }
   ]
 }
