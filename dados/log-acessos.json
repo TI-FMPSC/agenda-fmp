@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-09-30T10:26:53.341Z",
+  "updatedAt": "2026-09-30T10:42:04.699Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -5536,6 +5536,15 @@
       "action": "Atualiza integração com GitHub",
       "module": "Configurações",
       "details": "TI-FMPSC/agenda-fmp · main"
+    },
+    {
+      "id": "195801cb-7601-48b7-b36e-b0a7bfd0aa85",
+      "timestamp": "2026-09-30T10:42:04.215Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra Fornecedor",
+      "module": "Estoque FMP",
+      "details": "Só Aroma"
     }
   ]
 }
