@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-09-30T23:02:29.428Z",
+  "updatedAt": "2026-09-30T23:06:53.711Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -5951,6 +5951,21 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: JULIANE"
+    },
+    {
+      "id": "7a4edede-2dfe-427b-847e-bf4057dab139",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:sala-lpp-10-notes",
+      "customSpaceName": "SALA LPP + 10 NOTES",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Ana Lucia Machado",
+      "purpose": "",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-14"
     },
     {
       "id": "e50f73be-f603-587b-8509-edd4608f35e5",
