@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-01T12:34:33.646Z",
+  "updatedAt": "2026-10-01T12:49:06.636Z",
   "users": [
     {
       "id": "u1",
@@ -39,6 +39,14 @@
       "name": "Leandro Pickler",
       "username": "leandropickler",
       "passwordHash": "94f133f755a7140ad29a0b870d60e3d5c192c4cd00499ff92f3112b9e8d87c65",
+      "role": "Administrador",
+      "active": true
+    },
+    {
+      "id": "f38c9edc-9508-4415-bd88-5bc2cf031d37",
+      "name": "teste",
+      "username": "teste",
+      "passwordHash": "289160db0d9f39f9ae1754c4ec9c16f90b50e32e09c5fb5481ae642b3d3d1a36",
       "role": "Administrador",
       "active": true
     }
