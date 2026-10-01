@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-01T12:47:01.185Z",
+  "updatedAt": "2026-10-01T12:49:08.750Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6166,6 +6166,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "b0a8831d-9794-4328-a802-6c84d92e2188",
+      "timestamp": "2026-10-01T12:49:07.913Z",
+      "username": "leandropickler",
+      "name": "Leandro Pickler",
+      "action": "Cria usuário administrativo",
+      "module": "Usuários",
+      "details": "teste · teste"
     }
   ]
 }
