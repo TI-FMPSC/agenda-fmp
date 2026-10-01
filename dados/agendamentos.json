@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-01T00:53:37.040Z",
+  "updatedAt": "2026-10-01T00:54:32.760Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -5155,6 +5155,20 @@
       "allDay": false,
       "responsible": "Gregori M. Czizeweski",
       "purpose": "",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-01"
+    },
+    {
+      "id": "3ee29001-2ae3-4156-94f2-5ed1ad3f9627",
+      "spaceCategory": "lab",
+      "resourceId": "lab4",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Inara A. V. Willerding.",
+      "purpose": "Administração — 1ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
