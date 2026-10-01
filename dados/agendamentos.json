@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-01T00:33:59.418Z",
+  "updatedAt": "2026-10-01T00:49:51.972Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -5118,6 +5118,20 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: MARIANE]"
+    },
+    {
+      "id": "9215ea03-1ea2-4232-9c23-1fd08d7ade8f",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Gabriele B. Silva",
+      "purpose": "PÓS-GRADUAÇÃO",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-01"
     },
     {
       "id": "f3ba7ee8-de9a-5535-9d92-a31a6224cf15",
