@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "updatedAt": "2026-08-26T01:47:46.646Z",
+  "updatedAt": "2026-10-01T12:34:33.646Z",
   "users": [
     {
       "id": "u1",
       "name": "Administrador",
       "username": "admin",
-      "passwordHash": "61c7dc1d815f7ed0bee8e9ab126bac8008220982e08e6676fcb2976fd1a95e2f",
+      "passwordHash": "94f133f755a7140ad29a0b870d60e3d5c192c4cd00499ff92f3112b9e8d87c65",
       "role": "Administrador",
       "active": true
     },
