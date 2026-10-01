@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-01T12:33:15.842Z",
+  "updatedAt": "2026-10-01T12:34:35.769Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6148,6 +6148,15 @@
       "action": "Atualiza integração com GitHub",
       "module": "Configurações",
       "details": "TI-FMPSC/agenda-fmp · main"
+    },
+    {
+      "id": "9af6a318-62be-45fc-b827-bcd0a0aca802",
+      "timestamp": "2026-10-01T12:34:35.180Z",
+      "username": "leandropickler",
+      "name": "Leandro Pickler",
+      "action": "Atualiza usuário administrativo",
+      "module": "Usuários",
+      "details": "admin · Administrador"
     }
   ]
 }
