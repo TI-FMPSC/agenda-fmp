@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-01T00:26:01.183Z",
+  "updatedAt": "2026-10-01T00:34:02.034Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6085,6 +6085,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 7ª Fase · Andreia de B. Machado. · 2026-10-06 · 18:50–22:00 · Laboratório 03"
+    },
+    {
+      "id": "04f47d0a-fcb8-451f-93bb-dd1789b68581",
+      "timestamp": "2026-10-01T00:34:01.484Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "FORMAÇÃO COORDENADORES DE PRÉDIO DO PROCESSO SELETIVO ACT EDUCAÇÃO · Verra · 2026-11-06 · 18:50–22:00 · Auditório"
     }
   ]
 }
