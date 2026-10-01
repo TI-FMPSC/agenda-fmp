@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-01T00:25:58.682Z",
+  "updatedAt": "2026-10-01T00:33:59.418Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -7889,6 +7889,20 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: BOFF"
+    },
+    {
+      "id": "d7b18b68-2c79-45b9-8fb5-b79f68cc358c",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Verra",
+      "purpose": "FORMAÇÃO COORDENADORES DE PRÉDIO DO PROCESSO SELETIVO ACT EDUCAÇÃO",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-06"
     },
     {
       "id": "124f50e2-2ec5-522c-9c85-3698e2720293",
