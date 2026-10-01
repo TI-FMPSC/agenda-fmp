@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-01T00:24:40.037Z",
+  "updatedAt": "2026-10-01T00:25:58.682Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -5426,6 +5426,20 @@
       "featuredEvent": false,
       "allDay": false,
       "responsible": "Andreia de B. Machado",
+      "purpose": "Pedagogia — 7ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-06"
+    },
+    {
+      "id": "1ddef3aa-e706-4939-b899-216fb8dd8d5b",
+      "spaceCategory": "lab",
+      "resourceId": "lab3",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Andreia de B. Machado.",
       "purpose": "Pedagogia — 7ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
