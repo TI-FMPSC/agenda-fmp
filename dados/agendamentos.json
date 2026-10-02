@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-01T00:54:32.760Z",
+  "updatedAt": "2026-10-02T01:50:06.625Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -5238,6 +5238,21 @@
       "purpose": "PELESTRA COM TODAS AS TURMAS DO CURSO DE ADS",
       "startTime": "08:00",
       "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-02"
+    },
+    {
+      "id": "70adfa06-984e-4c8a-8fa0-1c463b01e04d",
+      "spaceCategory": "event",
+      "resourceId": "event:fmp",
+      "customSpaceName": "FMP",
+      "featuredEvent": true,
+      "allDay": true,
+      "responsible": "Maria Laura e Mariana Braga",
+      "purpose": "ADS — 1ª Fase",
+      "startTime": "08:30",
+      "endTime": "11:00",
       "status": "confirmed",
       "notes": "",
       "date": "2026-10-02"
