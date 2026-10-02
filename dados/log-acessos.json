@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-02T01:57:49.766Z",
+  "updatedAt": "2026-10-02T10:48:06.294Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6202,6 +6202,15 @@
       "action": "Atualiza ajuste de sala de aula",
       "module": "Agendamentos",
       "details": "ADS — 1ª Fase · 2026-10-02 · 08:00–09:30 · Auditório FMP · Maria Laura e Mariana Braga"
+    },
+    {
+      "id": "8679b51d-5856-4c4e-9422-77b86f95692d",
+      "timestamp": "2026-10-02T10:48:06.269Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Valida integração com GitHub",
+      "module": "Configurações",
+      "details": "TI-FMPSC/agenda-fmp · token com gravação confirmada"
     }
   ]
 }
