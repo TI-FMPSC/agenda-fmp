@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-02T01:46:49.101Z",
+  "updatedAt": "2026-10-02T01:50:10.801Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6184,6 +6184,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "0dbf8b73-68ae-427f-ad7b-972369f80eed",
+      "timestamp": "2026-10-02T01:50:10.066Z",
+      "username": "leandropickler",
+      "name": "Leandro Pickler",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "ADS — 1ª Fase · Maria Laura e Mariana Braga · 2026-10-02 · 08:30–11:00 · Espaço"
     }
   ]
 }
