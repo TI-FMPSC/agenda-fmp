@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-01T12:39:14.767Z",
-    "updatedAt": "2026-10-01T12:39:14.767Z",
+    "lastSync": "2026-10-02T11:57:54.590Z",
+    "updatedAt": "2026-10-02T11:57:54.590Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2892,6 +2892,24 @@
       "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
+    },
+    {
+      "id": "id_5t1ixjjnmuqwsegp",
+      "code": "170",
+      "name": "Caixa Organizadora",
+      "categoryId": "cat_escritorio",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "id_yzs046h6mumnxqbj",
+      "minStock": 5,
+      "currentStock": 10,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "",
+      "expirationDate": "",
+      "createdAt": "2026-10-02",
+      "updatedAt": "2026-10-02"
     }
   ],
   "movements": [
@@ -4590,6 +4608,22 @@
       "notes": "Entrada rápida de compra realizada pela aba Materiais.",
       "createdBy": "leandropickler",
       "createdAt": "2026-10-01T12:37:26.120Z"
+    },
+    {
+      "id": "id_ygt2chismuqwsegp",
+      "materialId": "id_5t1ixjjnmuqwsegp",
+      "type": "entrada",
+      "date": "2026-10-02",
+      "quantity": 10,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 10,
+      "effect": 10,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-02T11:57:53.593Z"
     }
   ],
   "users": []
