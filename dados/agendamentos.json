@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-02T01:50:06.625Z",
+  "updatedAt": "2026-10-02T01:57:45.462Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -5244,17 +5244,17 @@
     },
     {
       "id": "70adfa06-984e-4c8a-8fa0-1c463b01e04d",
-      "spaceCategory": "event",
-      "resourceId": "event:fmp",
-      "customSpaceName": "FMP",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:auditorio-fmp",
+      "customSpaceName": "Auditório FMP",
       "featuredEvent": true,
       "allDay": true,
       "responsible": "Maria Laura e Mariana Braga",
       "purpose": "ADS — 1ª Fase",
-      "startTime": "08:30",
-      "endTime": "11:00",
+      "startTime": "08:00",
+      "endTime": "09:30",
       "status": "confirmed",
-      "notes": "",
+      "notes": "Ajuste pontual realizado pela Gestão das Salas.",
       "date": "2026-10-02"
     },
     {
