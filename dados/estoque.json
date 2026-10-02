@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-02T11:57:54.590Z",
-    "updatedAt": "2026-10-02T11:57:54.590Z",
+    "lastSync": "2026-10-02T12:00:21.126Z",
+    "updatedAt": "2026-10-02T12:00:21.126Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -321,13 +321,13 @@
     },
     {
       "id": "mat_esc_004",
-      "code": "",
-      "name": "Folhas A4",
+      "code": "171",
+      "name": "Folhas A4 Padrão",
       "categoryId": "cat_escritorio",
       "unit": "CX",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 5,
       "currentStock": 17,
       "avgCost": "",
       "status": "active",
@@ -335,7 +335,7 @@
       "description": "Especificação: 10X500 com 75 folhas - 75G | Marca: Chamex solutions | Tamanho/apresentação: 17 CAIXAS 10 RESMA COM 500 FOLHAS CADA",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-02"
     },
     {
       "id": "mat_esc_005",
