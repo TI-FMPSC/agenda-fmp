@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-02T01:50:10.801Z",
+  "updatedAt": "2026-10-02T01:57:49.766Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6193,6 +6193,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "ADS — 1ª Fase · Maria Laura e Mariana Braga · 2026-10-02 · 08:30–11:00 · Espaço"
+    },
+    {
+      "id": "26444ad9-ff2b-40ad-8718-e75c3b73be3c",
+      "timestamp": "2026-10-02T01:57:48.333Z",
+      "username": "leandropickler",
+      "name": "Leandro Pickler",
+      "action": "Atualiza ajuste de sala de aula",
+      "module": "Agendamentos",
+      "details": "ADS — 1ª Fase · 2026-10-02 · 08:00–09:30 · Auditório FMP · Maria Laura e Mariana Braga"
     }
   ]
 }
