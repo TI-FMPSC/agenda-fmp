@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-05T11:28:05.138Z",
-    "updatedAt": "2026-10-05T11:28:05.138Z",
+    "lastSync": "2026-10-05T11:29:40.254Z",
+    "updatedAt": "2026-10-05T11:29:40.254Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2290,14 +2290,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 6,
+      "currentStock": 4,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 500w | Tamanho/apresentação: unidade",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-05"
     },
     {
       "id": "mat_ele_001",
@@ -4736,6 +4736,22 @@
       "notes": "Sistema havia dado conflito novamente. 05/10",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-05T11:28:04.131Z"
+    },
+    {
+      "id": "id_q2z8g4yrmuv63n9f",
+      "materialId": "mat_man_017",
+      "type": "saida",
+      "date": "2026-10-01",
+      "quantity": 2,
+      "unitCost": 0,
+      "previousStock": 6,
+      "newStock": 4,
+      "effect": -2,
+      "sector": "JUAREZ",
+      "document": "",
+      "notes": "30W",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-05T11:29:39.459Z"
     }
   ],
   "users": []
