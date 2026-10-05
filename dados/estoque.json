@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-05T11:29:40.254Z",
-    "updatedAt": "2026-10-05T11:29:40.254Z",
+    "lastSync": "2026-10-05T11:30:53.960Z",
+    "updatedAt": "2026-10-05T11:30:53.960Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1650,24 +1650,6 @@
       "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-10-01"
-    },
-    {
-      "id": "mat_lim_012",
-      "code": "",
-      "name": "Amaciante de Roupas",
-      "categoryId": "cat_limpeza",
-      "unit": "L",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": "",
-      "currentStock": 1,
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Especificação: Intense | Marca: SEBOLD | Tamanho/apresentação: 2 L | Observações: atualizado em 14/08",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
     },
     {
       "id": "mat_lim_014",
@@ -3376,38 +3358,6 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-08-25T17:29:38.991Z"
-    },
-    {
-      "id": "id_qhzvd3frmt8xyl14",
-      "materialId": "mat_lim_012",
-      "type": "entrada",
-      "date": "2026-08-25",
-      "quantity": 14,
-      "unitCost": 0,
-      "previousStock": 1,
-      "newStock": 15,
-      "effect": 14,
-      "sector": "",
-      "document": "",
-      "notes": "",
-      "createdBy": "amandafranca",
-      "createdAt": "2026-08-25T17:31:08.152Z"
-    },
-    {
-      "id": "id_fw6e81a8mt8y0w8u",
-      "materialId": "mat_lim_012",
-      "type": "saida",
-      "date": "2026-08-25",
-      "quantity": 1,
-      "unitCost": 0,
-      "previousStock": 15,
-      "newStock": 14,
-      "effect": -1,
-      "sector": "",
-      "document": "",
-      "notes": "",
-      "createdBy": "amandafranca",
-      "createdAt": "2026-08-25T17:32:55.998Z"
     },
     {
       "id": "id_1pzz1316mt8yipnp",
