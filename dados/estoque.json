@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-05T11:30:53.960Z",
-    "updatedAt": "2026-10-05T11:30:53.960Z",
+    "lastSync": "2026-10-05T11:31:49.261Z",
+    "updatedAt": "2026-10-05T11:31:49.261Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1638,9 +1638,9 @@
       "code": "999",
       "name": "Amaciante de Roupas",
       "categoryId": "cat_limpeza",
-      "unit": "L",
-      "supplierId": "",
-      "locationId": "",
+      "unit": "UN",
+      "supplierId": "id_wov4w4vjmumnv5nq",
+      "locationId": "id_yzs046h6mumnxqbj",
       "minStock": 10,
       "currentStock": 10,
       "avgCost": "",
@@ -1649,7 +1649,7 @@
       "description": "Especificação: Classic | Marca: SEBOLD | Tamanho/apresentação: 2 L | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-10-01"
+      "updatedAt": "2026-10-05"
     },
     {
       "id": "mat_lim_014",
