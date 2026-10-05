@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-05T11:31:48.968Z",
+  "updatedAt": "2026-10-05T13:02:42.160Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6247,6 +6247,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "999 · Amaciante de Roupas"
+    },
+    {
+      "id": "e44cb6b2-62f6-4993-ad14-05d86903ac51",
+      "timestamp": "2026-10-05T13:02:41.528Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "200 · Tesoura Multiuso"
     }
   ]
 }
