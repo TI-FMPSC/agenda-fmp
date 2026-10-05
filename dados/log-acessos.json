@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-05T11:29:40.102Z",
+  "updatedAt": "2026-10-05T11:31:48.968Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6238,6 +6238,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · sem código · Lâmpada · quantidade 2 · saldo 4"
+    },
+    {
+      "id": "d7fa05b0-2d27-4e40-b027-f0e67e26a820",
+      "timestamp": "2026-10-05T11:31:48.364Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "999 · Amaciante de Roupas"
     }
   ]
 }
