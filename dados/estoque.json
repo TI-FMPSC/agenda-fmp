@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-05T11:32:12.512Z",
-    "updatedAt": "2026-10-05T11:32:12.512Z",
+    "lastSync": "2026-10-05T13:02:42.256Z",
+    "updatedAt": "2026-10-05T13:02:42.256Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1365,13 +1365,13 @@
     },
     {
       "id": "mat_esc_063",
-      "code": "",
+      "code": "200",
       "name": "Tesoura Multiuso",
       "categoryId": "cat_escritorio",
-      "unit": "CX",
+      "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 5,
       "currentStock": 2,
       "avgCost": "",
       "status": "active",
@@ -1379,7 +1379,7 @@
       "description": "Tamanho/apresentação: com 12 unidades",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-05"
     },
     {
       "id": "mat_esc_064",
