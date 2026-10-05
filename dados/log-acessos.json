@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-05T15:47:12.804Z",
+  "updatedAt": "2026-10-05T15:51:45.317Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6292,6 +6292,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "58bd2819-cca5-4b87-b663-c310e8ffef22",
+      "timestamp": "2026-10-05T15:51:44.796Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Ajuste · 4 · AÇÚCAR CRISTAL · quantidade 5 · saldo 5"
     }
   ]
 }
