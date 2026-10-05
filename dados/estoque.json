@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-05T11:31:49.261Z",
-    "updatedAt": "2026-10-05T11:31:49.261Z",
+    "lastSync": "2026-10-05T11:32:12.512Z",
+    "updatedAt": "2026-10-05T11:32:12.512Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -1642,7 +1642,7 @@
       "supplierId": "id_wov4w4vjmumnv5nq",
       "locationId": "id_yzs046h6mumnxqbj",
       "minStock": 10,
-      "currentStock": 10,
+      "currentStock": 43,
       "avgCost": "",
       "status": "active",
       "barcode": "",
@@ -4702,6 +4702,22 @@
       "notes": "30W",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-05T11:29:39.459Z"
+    },
+    {
+      "id": "id_ql4s0fjbmuv66wlt",
+      "materialId": "mat_lim_011",
+      "type": "ajuste",
+      "date": "2026-10-05",
+      "quantity": 43,
+      "unitCost": 0,
+      "previousStock": 10,
+      "newStock": 43,
+      "effect": 33,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-05T11:32:11.537Z"
     }
   ],
   "users": []
