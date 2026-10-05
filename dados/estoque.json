@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-02T12:01:29.561Z",
-    "updatedAt": "2026-10-02T12:01:29.561Z",
+    "lastSync": "2026-10-05T11:22:39.421Z",
+    "updatedAt": "2026-10-05T11:22:39.421Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2398,14 +2398,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 20,
-      "currentStock": 60,
+      "currentStock": 58,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "",
       "expirationDate": "",
       "createdAt": "2026-08-21",
-      "updatedAt": "2026-09-30"
+      "updatedAt": "2026-10-05"
     },
     {
       "id": "id_j7xrtpr8mt2xuehl",
@@ -4640,6 +4640,22 @@
       "notes": "Ajuste  novamente perda de dados 02/10.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-02T12:01:28.194Z"
+    },
+    {
+      "id": "id_u9wuzkz5muv5umkc",
+      "materialId": "id_p07km1q6mt2xlvwb",
+      "type": "saida",
+      "date": "2026-10-01",
+      "quantity": 2,
+      "unitCost": 0,
+      "previousStock": 60,
+      "newStock": 58,
+      "effect": -2,
+      "sector": "JUSSANE",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-05T11:22:38.652Z"
     }
   ],
   "users": []
