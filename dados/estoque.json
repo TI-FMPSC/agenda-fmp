@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-05T11:25:06.780Z",
-    "updatedAt": "2026-10-05T11:25:06.780Z",
+    "lastSync": "2026-10-05T11:28:05.138Z",
+    "updatedAt": "2026-10-05T11:28:05.138Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2812,14 +2812,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 4,
+      "currentStock": 27,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: tixan Ypê | Marca: X-MAX | Tamanho/apresentação: 400 GRAMAS | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-09-30"
+      "updatedAt": "2026-10-05"
     },
     {
       "id": "mat_lim_009",
@@ -4720,6 +4720,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-05T11:25:05.304Z"
+    },
+    {
+      "id": "id_wr5skfs7muv61lpf",
+      "materialId": "mat_lim_005",
+      "type": "ajuste",
+      "date": "2026-10-05",
+      "quantity": 27,
+      "unitCost": 0,
+      "previousStock": 4,
+      "newStock": 27,
+      "effect": 23,
+      "sector": "",
+      "document": "",
+      "notes": "Sistema havia dado conflito novamente. 05/10",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-05T11:28:04.131Z"
     }
   ],
   "users": []
