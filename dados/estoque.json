@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-05T11:24:37.977Z",
-    "updatedAt": "2026-10-05T11:24:37.977Z",
+    "lastSync": "2026-10-05T11:25:06.780Z",
+    "updatedAt": "2026-10-05T11:25:06.780Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2416,14 +2416,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 0,
-      "currentStock": 39,
+      "currentStock": 37,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "Maçã 500ml",
       "expirationDate": "",
       "createdAt": "2026-08-21",
-      "updatedAt": "2026-09-30"
+      "updatedAt": "2026-10-05"
     },
     {
       "id": "id_cp2jzwyimt2xynql",
@@ -4704,6 +4704,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-05T11:24:35.936Z"
+    },
+    {
+      "id": "id_dgl6armhmuv5xrq0",
+      "materialId": "id_j7xrtpr8mt2xuehl",
+      "type": "saida",
+      "date": "2026-10-01",
+      "quantity": 2,
+      "unitCost": 0,
+      "previousStock": 39,
+      "newStock": 37,
+      "effect": -2,
+      "sector": "JUSSANE",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-05T11:25:05.304Z"
     }
   ],
   "users": []
