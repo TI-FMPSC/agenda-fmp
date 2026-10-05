@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-05T13:02:42.160Z",
+  "updatedAt": "2026-10-05T14:07:00.150Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6256,6 +6256,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "200 · Tesoura Multiuso"
+    },
+    {
+      "id": "9ff51d6f-5640-4deb-8edb-df48fa6715e4",
+      "timestamp": "2026-10-05T14:06:59.118Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Logout realizado",
+      "module": "Acesso",
+      "details": "Saída da área administrativa"
     }
   ]
 }
