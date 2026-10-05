@@ -1,12 +1,16 @@
 {
-  "version": "1.0.3-importacao-planilhas-2026-08-16",
+  "version": "1.1.0-equipamentos-2026-10-05",
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
     "lastSync": "2026-10-05T13:03:09.632Z",
-    "updatedAt": "2026-10-05T13:03:09.632Z",
+    "updatedAt": "2026-10-05T14:17:03.269Z",
     "integratedWith": "Sistema integrado FMP",
-    "dataStorage": "dados/estoque.json"
+    "dataStorage": "dados/estoque.json",
+    "modules": [
+      "materials",
+      "equipment"
+    ]
   },
   "categories": [
     {
@@ -105,7 +109,7 @@
   "materials": [
     {
       "id": "mat_cop_001",
-      "code": "",
+      "code": "122",
       "name": "PÓ DE CAFÉ",
       "categoryId": "cat_copa",
       "unit": "",
@@ -123,7 +127,7 @@
     },
     {
       "id": "mat_epi_001",
-      "code": "99",
+      "code": "2",
       "name": "80 CAIXAS DE MÁSCARA",
       "categoryId": "cat_epis",
       "unit": "CX",
@@ -141,7 +145,7 @@
     },
     {
       "id": "mat_epi_002",
-      "code": "",
+      "code": "31",
       "name": "Capa de chuva",
       "categoryId": "cat_epis",
       "unit": "UN",
@@ -159,7 +163,7 @@
     },
     {
       "id": "mat_epi_003",
-      "code": "",
+      "code": "96",
       "name": "Luva Látex",
       "categoryId": "cat_epis",
       "unit": "CX",
@@ -177,7 +181,7 @@
     },
     {
       "id": "mat_epi_004",
-      "code": "",
+      "code": "97",
       "name": "Luva Látex",
       "categoryId": "cat_epis",
       "unit": "UN",
@@ -195,7 +199,7 @@
     },
     {
       "id": "mat_epi_005",
-      "code": "",
+      "code": "98",
       "name": "Luva Látex",
       "categoryId": "cat_epis",
       "unit": "UN",
@@ -213,7 +217,7 @@
     },
     {
       "id": "mat_epi_006",
-      "code": "",
+      "code": "24",
       "name": "Botas",
       "categoryId": "cat_epis",
       "unit": "UN",
@@ -231,7 +235,7 @@
     },
     {
       "id": "mat_epi_007",
-      "code": "",
+      "code": "140",
       "name": "Sapatão",
       "categoryId": "cat_epis",
       "unit": "UN",
@@ -249,7 +253,7 @@
     },
     {
       "id": "mat_epi_008",
-      "code": "",
+      "code": "102",
       "name": "Máscara de Proteção Facial",
       "categoryId": "cat_epis",
       "unit": "UN",
@@ -267,7 +271,7 @@
     },
     {
       "id": "mat_esc_001",
-      "code": "",
+      "code": "150",
       "name": "Tonner cartridge",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -285,7 +289,7 @@
     },
     {
       "id": "mat_esc_002",
-      "code": "",
+      "code": "151",
       "name": "Tonner cartridge",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -303,7 +307,7 @@
     },
     {
       "id": "mat_esc_003",
-      "code": "",
+      "code": "53",
       "name": "Envelopes",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -321,7 +325,7 @@
     },
     {
       "id": "mat_esc_004",
-      "code": "171",
+      "code": "66",
       "name": "Folhas A4 Padrão",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -339,7 +343,7 @@
     },
     {
       "id": "mat_esc_005",
-      "code": "",
+      "code": "65",
       "name": "Folhas A4",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -357,7 +361,7 @@
     },
     {
       "id": "mat_esc_006",
-      "code": "",
+      "code": "29",
       "name": "Canetão",
       "categoryId": "cat_escritorio",
       "unit": "PCT",
@@ -375,7 +379,7 @@
     },
     {
       "id": "mat_esc_007",
-      "code": "",
+      "code": "83",
       "name": "Lápis de cor",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -393,7 +397,7 @@
     },
     {
       "id": "mat_esc_008",
-      "code": "",
+      "code": "84",
       "name": "Lápis de cor",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -411,7 +415,7 @@
     },
     {
       "id": "mat_esc_009",
-      "code": "",
+      "code": "85",
       "name": "Lápis de cor",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -429,7 +433,7 @@
     },
     {
       "id": "mat_esc_010",
-      "code": "",
+      "code": "87",
       "name": "Lápis de cor PEQUENO",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -447,7 +451,7 @@
     },
     {
       "id": "mat_esc_011",
-      "code": "",
+      "code": "75",
       "name": "Guache Tons Clássicos",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -465,7 +469,7 @@
     },
     {
       "id": "mat_esc_012",
-      "code": "",
+      "code": "103",
       "name": "Massa de Modelar",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -483,7 +487,7 @@
     },
     {
       "id": "mat_esc_013",
-      "code": "",
+      "code": "104",
       "name": "Massa de Modelar",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -501,7 +505,7 @@
     },
     {
       "id": "mat_esc_014",
-      "code": "",
+      "code": "69",
       "name": "Giz de cera",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -519,7 +523,7 @@
     },
     {
       "id": "mat_esc_015",
-      "code": "",
+      "code": "127",
       "name": "Régua",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -537,7 +541,7 @@
     },
     {
       "id": "mat_esc_016",
-      "code": "",
+      "code": "40",
       "name": "Cola colorida",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -555,7 +559,7 @@
     },
     {
       "id": "mat_esc_017",
-      "code": "",
+      "code": "38",
       "name": "Cola branca",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -573,7 +577,7 @@
     },
     {
       "id": "mat_esc_018",
-      "code": "",
+      "code": "147",
       "name": "Tinta Guache",
       "categoryId": "cat_escritorio",
       "unit": "TUBO",
@@ -591,7 +595,7 @@
     },
     {
       "id": "mat_esc_019",
-      "code": "",
+      "code": "58",
       "name": "Fita crepe",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -609,7 +613,7 @@
     },
     {
       "id": "mat_esc_020",
-      "code": "",
+      "code": "5",
       "name": "Adesivo Plástico PVC",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -627,7 +631,7 @@
     },
     {
       "id": "mat_esc_021",
-      "code": "",
+      "code": "20",
       "name": "Bloco de anotações de papel",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -645,7 +649,7 @@
     },
     {
       "id": "mat_esc_022",
-      "code": "",
+      "code": "105",
       "name": "Molha dedo",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -663,7 +667,7 @@
     },
     {
       "id": "mat_esc_023",
-      "code": "",
+      "code": "99",
       "name": "Marca e desmarca texto",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -681,7 +685,7 @@
     },
     {
       "id": "mat_esc_024",
-      "code": "",
+      "code": "17",
       "name": "Bic Cristal",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -699,7 +703,7 @@
     },
     {
       "id": "mat_esc_025",
-      "code": "",
+      "code": "18",
       "name": "Bic Cristal",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -717,7 +721,7 @@
     },
     {
       "id": "mat_esc_027",
-      "code": "",
+      "code": "82",
       "name": "Lápis",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -735,7 +739,7 @@
     },
     {
       "id": "mat_esc_028",
-      "code": "",
+      "code": "34",
       "name": "Clips",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -753,7 +757,7 @@
     },
     {
       "id": "mat_esc_029",
-      "code": "",
+      "code": "36",
       "name": "Cola Bastão",
       "categoryId": "cat_escritorio",
       "unit": "FRD",
@@ -771,7 +775,7 @@
     },
     {
       "id": "mat_esc_030",
-      "code": "",
+      "code": "37",
       "name": "Cola Bastão",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -789,7 +793,7 @@
     },
     {
       "id": "mat_esc_031",
-      "code": "",
+      "code": "12",
       "name": "Apontador",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -807,7 +811,7 @@
     },
     {
       "id": "mat_esc_032",
-      "code": "",
+      "code": "39",
       "name": "Cola branca lavável",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -825,7 +829,7 @@
     },
     {
       "id": "mat_esc_033",
-      "code": "",
+      "code": "1",
       "name": "12 unidades cada",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -843,7 +847,7 @@
     },
     {
       "id": "mat_esc_034",
-      "code": "",
+      "code": "26",
       "name": "Caixa com corretivo líquido",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -861,7 +865,7 @@
     },
     {
       "id": "mat_esc_035",
-      "code": "",
+      "code": "43",
       "name": "Corretivo líquido",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -879,7 +883,7 @@
     },
     {
       "id": "mat_esc_036",
-      "code": "",
+      "code": "41",
       "name": "Cola grande",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -897,7 +901,7 @@
     },
     {
       "id": "mat_esc_037",
-      "code": "",
+      "code": "42",
       "name": "Cola Lavável",
       "categoryId": "cat_escritorio",
       "unit": "FRD",
@@ -915,7 +919,7 @@
     },
     {
       "id": "mat_esc_038",
-      "code": "",
+      "code": "148",
       "name": "Tinta Guache",
       "categoryId": "cat_escritorio",
       "unit": "FRD",
@@ -933,7 +937,7 @@
     },
     {
       "id": "mat_esc_039",
-      "code": "",
+      "code": "76",
       "name": "Guache Tons Clássicos",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -951,7 +955,7 @@
     },
     {
       "id": "mat_esc_040",
-      "code": "",
+      "code": "23",
       "name": "Borracha",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -969,7 +973,7 @@
     },
     {
       "id": "mat_esc_041",
-      "code": "",
+      "code": "49",
       "name": "Dupla Face",
       "categoryId": "cat_escritorio",
       "unit": "ROLO",
@@ -987,7 +991,7 @@
     },
     {
       "id": "mat_esc_042",
-      "code": "",
+      "code": "100",
       "name": "Marcadores quadro branco",
       "categoryId": "cat_escritorio",
       "unit": "PCT",
@@ -1005,7 +1009,7 @@
     },
     {
       "id": "mat_esc_043",
-      "code": "",
+      "code": "19",
       "name": "Bloco autoadesivo pequeno",
       "categoryId": "cat_escritorio",
       "unit": "FRD",
@@ -1023,7 +1027,7 @@
     },
     {
       "id": "mat_esc_044",
-      "code": "",
+      "code": "27",
       "name": "caixa de lápis de cor pequeno",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -1041,7 +1045,7 @@
     },
     {
       "id": "mat_esc_045",
-      "code": "",
+      "code": "86",
       "name": "lápis de cor grande",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -1059,7 +1063,7 @@
     },
     {
       "id": "mat_esc_046",
-      "code": "",
+      "code": "101",
       "name": "Marcadores quadro branco",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -1077,7 +1081,7 @@
     },
     {
       "id": "mat_esc_047",
-      "code": "",
+      "code": "57",
       "name": "FIta Corretiva",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -1095,7 +1099,7 @@
     },
     {
       "id": "mat_esc_048",
-      "code": "",
+      "code": "121",
       "name": "Plástico incolor",
       "categoryId": "cat_escritorio",
       "unit": "FRD",
@@ -1113,7 +1117,7 @@
     },
     {
       "id": "mat_esc_049",
-      "code": "",
+      "code": "114",
       "name": "Pastas Transparentes",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -1131,7 +1135,7 @@
     },
     {
       "id": "mat_esc_050",
-      "code": "",
+      "code": "115",
       "name": "Pastas Transparentes abertura lateral",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -1149,7 +1153,7 @@
     },
     {
       "id": "mat_esc_051",
-      "code": "",
+      "code": "124",
       "name": "Prancheta A4",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -1167,7 +1171,7 @@
     },
     {
       "id": "mat_esc_052",
-      "code": "",
+      "code": "63",
       "name": "Fita Larga Parda LARGA",
       "categoryId": "cat_escritorio",
       "unit": "FRD",
@@ -1185,7 +1189,7 @@
     },
     {
       "id": "mat_esc_053",
-      "code": "",
+      "code": "62",
       "name": "Fita Larga Parda FINA",
       "categoryId": "cat_escritorio",
       "unit": "FRD",
@@ -1203,7 +1207,7 @@
     },
     {
       "id": "mat_esc_054",
-      "code": "",
+      "code": "60",
       "name": "Fita Larga",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -1221,7 +1225,7 @@
     },
     {
       "id": "mat_esc_055",
-      "code": "",
+      "code": "61",
       "name": "Fita Larga incolor",
       "categoryId": "cat_escritorio",
       "unit": "FRD",
@@ -1239,7 +1243,7 @@
     },
     {
       "id": "mat_esc_056",
-      "code": "",
+      "code": "128",
       "name": "Régua",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -1257,7 +1261,7 @@
     },
     {
       "id": "mat_esc_057",
-      "code": "",
+      "code": "116",
       "name": "Pilhas",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -1275,7 +1279,7 @@
     },
     {
       "id": "mat_esc_058",
-      "code": "",
+      "code": "117",
       "name": "Pilhas",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -1293,7 +1297,7 @@
     },
     {
       "id": "mat_esc_059",
-      "code": "",
+      "code": "74",
       "name": "Grampo Galvanizado",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -1311,7 +1315,7 @@
     },
     {
       "id": "mat_esc_060",
-      "code": "",
+      "code": "78",
       "name": "High Quality Blade",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -1329,7 +1333,7 @@
     },
     {
       "id": "mat_esc_061",
-      "code": "",
+      "code": "35",
       "name": "Clips Metálicos",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -1347,7 +1351,7 @@
     },
     {
       "id": "mat_esc_062",
-      "code": "",
+      "code": "70",
       "name": "Grampeador",
       "categoryId": "cat_escritorio",
       "unit": "FRD",
@@ -1365,7 +1369,7 @@
     },
     {
       "id": "mat_esc_063",
-      "code": "200",
+      "code": "146",
       "name": "Tesoura Multiuso",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -1383,7 +1387,7 @@
     },
     {
       "id": "mat_esc_064",
-      "code": "",
+      "code": "15",
       "name": "Bastão cola Quente",
       "categoryId": "cat_escritorio",
       "unit": "FRD",
@@ -1401,7 +1405,7 @@
     },
     {
       "id": "mat_esc_065",
-      "code": "",
+      "code": "16",
       "name": "Bastão cola Quente",
       "categoryId": "cat_escritorio",
       "unit": "FRD",
@@ -1419,7 +1423,7 @@
     },
     {
       "id": "mat_esc_066",
-      "code": "",
+      "code": "72",
       "name": "Grampeador Grande",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -1437,7 +1441,7 @@
     },
     {
       "id": "mat_esc_067",
-      "code": "",
+      "code": "126",
       "name": "Refil quadro branco",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -1455,7 +1459,7 @@
     },
     {
       "id": "mat_esc_068",
-      "code": "",
+      "code": "123",
       "name": "Portable Interactive System",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -1473,7 +1477,7 @@
     },
     {
       "id": "mat_esc_069",
-      "code": "",
+      "code": "73",
       "name": "Grampo",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -1491,7 +1495,7 @@
     },
     {
       "id": "mat_esc_070",
-      "code": "",
+      "code": "152",
       "name": "Tonner Premium",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -1509,7 +1513,7 @@
     },
     {
       "id": "mat_esc_071",
-      "code": "",
+      "code": "144",
       "name": "Suporte Fita",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -1527,7 +1531,7 @@
     },
     {
       "id": "mat_esc_072",
-      "code": "",
+      "code": "32",
       "name": "Carimbos - novos",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -1545,7 +1549,7 @@
     },
     {
       "id": "mat_esc_073",
-      "code": "",
+      "code": "71",
       "name": "Grampeador de mesa profissional",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -1563,7 +1567,7 @@
     },
     {
       "id": "mat_lim_006",
-      "code": "",
+      "code": "8",
       "name": "Alcool em gel",
       "categoryId": "cat_limpeza",
       "unit": "L",
@@ -1581,7 +1585,7 @@
     },
     {
       "id": "mat_lim_007",
-      "code": "",
+      "code": "68",
       "name": "Gel antisséptico",
       "categoryId": "cat_limpeza",
       "unit": "G",
@@ -1599,7 +1603,7 @@
     },
     {
       "id": "mat_lim_008",
-      "code": "",
+      "code": "9",
       "name": "Alcool em gel",
       "categoryId": "cat_limpeza",
       "unit": "G",
@@ -1617,7 +1621,7 @@
     },
     {
       "id": "mat_lim_010",
-      "code": "",
+      "code": "145",
       "name": "Termômetro Infravermelho",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -1635,7 +1639,7 @@
     },
     {
       "id": "mat_lim_011",
-      "code": "999",
+      "code": "11",
       "name": "Amaciante de Roupas",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -1653,7 +1657,7 @@
     },
     {
       "id": "mat_lim_014",
-      "code": "",
+      "code": "77",
       "name": "Guardanapos papel",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -1671,7 +1675,7 @@
     },
     {
       "id": "mat_lim_015",
-      "code": "",
+      "code": "136",
       "name": "Sacos de Lixo",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -1689,7 +1693,7 @@
     },
     {
       "id": "mat_lim_016",
-      "code": "",
+      "code": "137",
       "name": "Sacos de Lixo",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -1707,7 +1711,7 @@
     },
     {
       "id": "mat_lim_017",
-      "code": "",
+      "code": "138",
       "name": "Sacos de Lixo",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -1725,7 +1729,7 @@
     },
     {
       "id": "mat_lim_018",
-      "code": "180",
+      "code": "14",
       "name": "Baldes",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -1743,7 +1747,7 @@
     },
     {
       "id": "mat_lim_019",
-      "code": "",
+      "code": "93",
       "name": "Lixeira sem tampa",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -1761,7 +1765,7 @@
     },
     {
       "id": "mat_lim_020",
-      "code": "",
+      "code": "154",
       "name": "Vassourção",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -1779,7 +1783,7 @@
     },
     {
       "id": "mat_lim_021",
-      "code": "",
+      "code": "153",
       "name": "Vassouras",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -1797,7 +1801,7 @@
     },
     {
       "id": "mat_lim_022",
-      "code": "",
+      "code": "130",
       "name": "Rodos",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -1815,7 +1819,7 @@
     },
     {
       "id": "mat_lim_023",
-      "code": "",
+      "code": "113",
       "name": "Pás de lixo",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -1833,7 +1837,7 @@
     },
     {
       "id": "mat_lim_024",
-      "code": "",
+      "code": "125",
       "name": "Refil de Vassoura de pelo",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -1851,7 +1855,7 @@
     },
     {
       "id": "mat_lim_025",
-      "code": "",
+      "code": "108",
       "name": "Panos de Chão",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -1869,7 +1873,7 @@
     },
     {
       "id": "mat_lim_026",
-      "code": "",
+      "code": "109",
       "name": "Panos de Louça",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -1887,7 +1891,7 @@
     },
     {
       "id": "mat_lim_027",
-      "code": "",
+      "code": "107",
       "name": "Pacotes de Esponja",
       "categoryId": "cat_limpeza",
       "unit": "PCT",
@@ -1905,7 +1909,7 @@
     },
     {
       "id": "mat_lim_028",
-      "code": "",
+      "code": "54",
       "name": "Escova para vaso sanitário com suporte",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -1923,7 +1927,7 @@
     },
     {
       "id": "mat_lim_029",
-      "code": "",
+      "code": "110",
       "name": "Papel Higiênico",
       "categoryId": "cat_limpeza",
       "unit": "FRD",
@@ -1941,7 +1945,7 @@
     },
     {
       "id": "mat_lim_032",
-      "code": "",
+      "code": "112",
       "name": "Papel Toalha avulso",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -1959,7 +1963,7 @@
     },
     {
       "id": "mat_lim_033",
-      "code": "",
+      "code": "141",
       "name": "Saponáceo Cremoso",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -1977,7 +1981,7 @@
     },
     {
       "id": "mat_man_001",
-      "code": "",
+      "code": "155",
       "name": "Ventilador",
       "categoryId": "cat_manutencao",
       "unit": "UN",
@@ -1995,7 +1999,7 @@
     },
     {
       "id": "mat_man_002",
-      "code": "",
+      "code": "56",
       "name": "Fechadura",
       "categoryId": "cat_manutencao",
       "unit": "",
@@ -2013,7 +2017,7 @@
     },
     {
       "id": "mat_man_003",
-      "code": "",
+      "code": "67",
       "name": "Garrafas Térmica",
       "categoryId": "cat_manutencao",
       "unit": "UN",
@@ -2031,7 +2035,7 @@
     },
     {
       "id": "mat_man_004",
-      "code": "",
+      "code": "118",
       "name": "Pilhas",
       "categoryId": "cat_manutencao",
       "unit": "CX",
@@ -2049,7 +2053,7 @@
     },
     {
       "id": "mat_man_005",
-      "code": "",
+      "code": "143",
       "name": "Suporte de Papel Toalha",
       "categoryId": "cat_manutencao",
       "unit": "UN",
@@ -2067,7 +2071,7 @@
     },
     {
       "id": "mat_man_006",
-      "code": "",
+      "code": "13",
       "name": "Assento Sanitário",
       "categoryId": "cat_manutencao",
       "unit": "UN",
@@ -2085,7 +2089,7 @@
     },
     {
       "id": "mat_man_007",
-      "code": "",
+      "code": "33",
       "name": "Cifão de Vaso Sanitário",
       "categoryId": "cat_manutencao",
       "unit": "UN",
@@ -2103,7 +2107,7 @@
     },
     {
       "id": "mat_man_008",
-      "code": "",
+      "code": "22",
       "name": "Bocais de Lâmpada",
       "categoryId": "cat_manutencao",
       "unit": "UN",
@@ -2121,7 +2125,7 @@
     },
     {
       "id": "mat_man_009",
-      "code": "",
+      "code": "131",
       "name": "Rolo Pintura",
       "categoryId": "cat_manutencao",
       "unit": "UN",
@@ -2139,7 +2143,7 @@
     },
     {
       "id": "mat_man_010",
-      "code": "",
+      "code": "55",
       "name": "Espelhos",
       "categoryId": "cat_manutencao",
       "unit": "UN",
@@ -2157,7 +2161,7 @@
     },
     {
       "id": "mat_man_011",
-      "code": "",
+      "code": "92",
       "name": "Lixa",
       "categoryId": "cat_manutencao",
       "unit": "UN",
@@ -2175,7 +2179,7 @@
     },
     {
       "id": "mat_man_012",
-      "code": "",
+      "code": "80",
       "name": "Interruptor",
       "categoryId": "cat_manutencao",
       "unit": "UN",
@@ -2193,7 +2197,7 @@
     },
     {
       "id": "mat_man_013",
-      "code": "",
+      "code": "142",
       "name": "Solvente",
       "categoryId": "cat_manutencao",
       "unit": "L",
@@ -2211,7 +2215,7 @@
     },
     {
       "id": "mat_man_014",
-      "code": "",
+      "code": "59",
       "name": "Fita Isolante",
       "categoryId": "cat_manutencao",
       "unit": "UN",
@@ -2229,7 +2233,7 @@
     },
     {
       "id": "mat_man_015",
-      "code": "",
+      "code": "64",
       "name": "FIta Veda Rosca",
       "categoryId": "cat_manutencao",
       "unit": "UN",
@@ -2247,7 +2251,7 @@
     },
     {
       "id": "mat_man_016",
-      "code": "",
+      "code": "52",
       "name": "Entrada de Plug",
       "categoryId": "cat_manutencao",
       "unit": "UN",
@@ -2265,7 +2269,7 @@
     },
     {
       "id": "mat_man_017",
-      "code": "",
+      "code": "81",
       "name": "Lâmpada",
       "categoryId": "cat_manutencao",
       "unit": "UN",
@@ -2283,7 +2287,7 @@
     },
     {
       "id": "mat_ele_001",
-      "code": "",
+      "code": "79",
       "name": "Interruptor",
       "categoryId": "cat_eletricos",
       "unit": "",
@@ -2301,7 +2305,7 @@
     },
     {
       "id": "id_vdeirod2msyozv6j",
-      "code": "TT",
+      "code": "149",
       "name": "Tomada Tramontina",
       "categoryId": "cat_manutencao",
       "unit": "UN",
@@ -2319,7 +2323,7 @@
     },
     {
       "id": "id_ut7n060dmsypgtb6",
-      "code": "R",
+      "code": "129",
       "name": "Rejunte Branco",
       "categoryId": "cat_manutencao",
       "unit": "KG",
@@ -2337,7 +2341,7 @@
     },
     {
       "id": "id_ubcqw6tnmt0470lk",
-      "code": "0017",
+      "code": "3",
       "name": "A4 - PLASTIFICAÇÃO 100 LAMINAS",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -2355,7 +2359,7 @@
     },
     {
       "id": "id_m1kkizvamt04gfe5",
-      "code": "0018",
+      "code": "4",
       "name": "AÇÚCAR CRISTAL",
       "categoryId": "cat_copa",
       "unit": "KG",
@@ -2373,7 +2377,7 @@
     },
     {
       "id": "id_p07km1q6mt2xlvwb",
-      "code": "0020",
+      "code": "7",
       "name": "Água Sanitaria",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -2391,7 +2395,7 @@
     },
     {
       "id": "id_j7xrtpr8mt2xuehl",
-      "code": "0022",
+      "code": "45",
       "name": "Detergente louça",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -2409,7 +2413,7 @@
     },
     {
       "id": "id_cp2jzwyimt2xynql",
-      "code": "0023",
+      "code": "10",
       "name": "Alcool Etílico Hidratado 92,8%",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -2427,7 +2431,7 @@
     },
     {
       "id": "id_xr67phu6mt30bbbr",
-      "code": "0024",
+      "code": "135",
       "name": "Sabonete Líquido Grande",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -2445,7 +2449,7 @@
     },
     {
       "id": "id_dv1vx6wrmt30qxey",
-      "code": "0025",
+      "code": "133",
       "name": "Sabão em Pó",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -2463,7 +2467,7 @@
     },
     {
       "id": "id_vf4h0b18mt8tpczd",
-      "code": "0026",
+      "code": "25",
       "name": "Caixa Arquivo",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -2481,7 +2485,7 @@
     },
     {
       "id": "id_z1c2yki0mt8vuw4x",
-      "code": "027",
+      "code": "89",
       "name": "Limpa Vidros com alcool e válvula",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -2499,7 +2503,7 @@
     },
     {
       "id": "id_i2nytlb0mt8w4k4z",
-      "code": "0028",
+      "code": "90",
       "name": "Limpa Vidros com alcool uso geral",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -2517,7 +2521,7 @@
     },
     {
       "id": "id_iz3kwmj3mt8wt84z",
-      "code": "0027",
+      "code": "94",
       "name": "Lustra Móveis",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -2535,7 +2539,7 @@
     },
     {
       "id": "id_zx2hui1qmt8yqkd0",
-      "code": "0029",
+      "code": "106",
       "name": "Monitor de Cristal Líquido",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -2553,7 +2557,7 @@
     },
     {
       "id": "id_qknnhxq4mtbze9u8",
-      "code": "b",
+      "code": "21",
       "name": "bobina relógio ponto",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -2571,7 +2575,7 @@
     },
     {
       "id": "id_bt3loj8rmtbzj5tz",
-      "code": "PG",
+      "code": "119",
       "name": "Pistola grande (cola quente)",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -2589,7 +2593,7 @@
     },
     {
       "id": "id_p89hlqwomtbzjw1y",
-      "code": "PP",
+      "code": "120",
       "name": "Pistola pequena(cola quente)",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -2607,7 +2611,7 @@
     },
     {
       "id": "id_qr74ksalmtd4df3y",
-      "code": "0047",
+      "code": "50",
       "name": "Elástico",
       "categoryId": "cat_escritorio",
       "unit": "KG",
@@ -2625,7 +2629,7 @@
     },
     {
       "id": "id_3iirvjowmtd4j83v",
-      "code": "0048",
+      "code": "44",
       "name": "Desinfetante",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -2643,7 +2647,7 @@
     },
     {
       "id": "id_oyljvzfjmufp465n",
-      "code": "130",
+      "code": "48",
       "name": "Dispenser de Rolão de Papel Higiênico",
       "categoryId": "cat_limpeza",
       "unit": "UN",
@@ -2661,7 +2665,7 @@
     },
     {
       "id": "id_q2d39sk8mugxl6oi",
-      "code": "140",
+      "code": "30",
       "name": "Canetinha Hidrocor",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -2679,7 +2683,7 @@
     },
     {
       "id": "id_c6ae6f44mumqhri2",
-      "code": "160",
+      "code": "6",
       "name": "ÁGUA MINERAL",
       "categoryId": "cat_copa",
       "unit": "UN",
@@ -2697,7 +2701,7 @@
     },
     {
       "id": "mat_esc_026",
-      "code": "",
+      "code": "51",
       "name": "Elástico",
       "categoryId": "cat_escritorio",
       "unit": "CX",
@@ -2715,7 +2719,7 @@
     },
     {
       "id": "mat_lim_001",
-      "code": "341068",
+      "code": "46",
       "name": "Detergente louça",
       "categoryId": "cat_limpeza",
       "unit": "ML",
@@ -2733,7 +2737,7 @@
     },
     {
       "id": "mat_lim_002",
-      "code": "341068",
+      "code": "47",
       "name": "Detergente louça",
       "categoryId": "cat_limpeza",
       "unit": "ML",
@@ -2751,7 +2755,7 @@
     },
     {
       "id": "mat_lim_003",
-      "code": "341129",
+      "code": "88",
       "name": "Limpa Vidros com alcool com válvula",
       "categoryId": "cat_limpeza",
       "unit": "ML",
@@ -2769,7 +2773,7 @@
     },
     {
       "id": "mat_lim_004",
-      "code": "21",
+      "code": "91",
       "name": "Limpa Vidros com alcool uso geral",
       "categoryId": "cat_limpeza",
       "unit": "ML",
@@ -2787,7 +2791,7 @@
     },
     {
       "id": "mat_lim_005",
-      "code": "",
+      "code": "132",
       "name": "Sabão em pó",
       "categoryId": "cat_limpeza",
       "unit": "G",
@@ -2805,7 +2809,7 @@
     },
     {
       "id": "mat_lim_009",
-      "code": "",
+      "code": "134",
       "name": "Sabonete líquido Grande",
       "categoryId": "cat_limpeza",
       "unit": "L",
@@ -2823,7 +2827,7 @@
     },
     {
       "id": "mat_lim_013",
-      "code": "711",
+      "code": "95",
       "name": "Lustra Móveis",
       "categoryId": "cat_limpeza",
       "unit": "ML",
@@ -2841,7 +2845,7 @@
     },
     {
       "id": "mat_lim_030",
-      "code": "",
+      "code": "111",
       "name": "Papel Toalha",
       "categoryId": "cat_limpeza",
       "unit": "FRD",
@@ -2859,7 +2863,7 @@
     },
     {
       "id": "mat_lim_031",
-      "code": "",
+      "code": "139",
       "name": "sacos de papel toalha",
       "categoryId": "cat_limpeza",
       "unit": "PCT",
@@ -2877,7 +2881,7 @@
     },
     {
       "id": "id_5t1ixjjnmuqwsegp",
-      "code": "170",
+      "code": "28",
       "name": "Caixa Organizadora",
       "categoryId": "cat_escritorio",
       "unit": "UN",
@@ -4736,5 +4740,7 @@
       "createdAt": "2026-10-05T13:03:08.560Z"
     }
   ],
-  "users": []
+  "users": [],
+  "equipment": [],
+  "equipmentDeliveries": []
 }
