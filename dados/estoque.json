@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-05T11:24:17.299Z",
-    "updatedAt": "2026-10-05T11:24:17.299Z",
+    "lastSync": "2026-10-05T11:24:37.977Z",
+    "updatedAt": "2026-10-05T11:24:37.977Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json"
   },
@@ -2434,14 +2434,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 20,
-      "currentStock": 87,
+      "currentStock": 91,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "",
       "expirationDate": "",
       "createdAt": "2026-08-21",
-      "updatedAt": "2026-09-30"
+      "updatedAt": "2026-10-05"
     },
     {
       "id": "id_xr67phu6mt30bbbr",
@@ -4688,6 +4688,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-05T11:24:16.009Z"
+    },
+    {
+      "id": "id_ru6vmakwmuv5x528",
+      "materialId": "id_cp2jzwyimt2xynql",
+      "type": "entrada",
+      "date": "2026-10-01",
+      "quantity": 4,
+      "unitCost": 0,
+      "previousStock": 87,
+      "newStock": 91,
+      "effect": 4,
+      "sector": "JUSSANE",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-05T11:24:35.936Z"
     }
   ],
   "users": []
