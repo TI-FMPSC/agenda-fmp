@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-06T13:29:10.681Z",
+  "updatedAt": "2026-10-06T20:21:57.740Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6400,6 +6400,15 @@
       "action": "Valida integração com GitHub",
       "module": "Configurações",
       "details": "TI-FMPSC/agenda-fmp · token com gravação confirmada"
+    },
+    {
+      "id": "210b577a-c3d6-44ec-9884-2fb04070dc79",
+      "timestamp": "2026-10-06T20:21:57.133Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
