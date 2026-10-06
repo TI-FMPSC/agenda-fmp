@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-06T20:33:48.951Z",
+  "updatedAt": "2026-10-06T20:34:30.207Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6418,6 +6418,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "PÓS-GRADUAÇÃO · Sérgio M. Schutz · 2026-10-06 · 18:50–22:00 · Laboratório 01"
+    },
+    {
+      "id": "27bc7192-426c-44f2-943a-3136ed7fc11a",
+      "timestamp": "2026-10-06T20:34:29.372Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 2ª Fase · Luzinete C. Niedzieluk · 2026-10-06 · 18:50–22:00 · Laboratório 05"
     }
   ]
 }
