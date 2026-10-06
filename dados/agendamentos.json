@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-06T20:33:44.823Z",
+  "updatedAt": "2026-10-06T20:34:25.993Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -5484,6 +5484,20 @@
       "allDay": false,
       "responsible": "Sérgio M. Schutz",
       "purpose": "PÓS-GRADUAÇÃO",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-06"
+    },
+    {
+      "id": "fa0a5abc-98c5-416e-9426-7b92fa50f2fc",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Luzinete C. Niedzieluk",
+      "purpose": "Pedagogia — 2ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
