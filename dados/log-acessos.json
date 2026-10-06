@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-06T13:11:50.871Z",
+  "updatedAt": "2026-10-06T13:29:10.681Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6391,6 +6391,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "350643ae-4337-445a-8773-acb2e18318b2",
+      "timestamp": "2026-10-06T13:29:09.654Z",
+      "username": "leandropickler",
+      "name": "Leandro Pickler",
+      "action": "Valida integração com GitHub",
+      "module": "Configurações",
+      "details": "TI-FMPSC/agenda-fmp · token com gravação confirmada"
     }
   ]
 }
