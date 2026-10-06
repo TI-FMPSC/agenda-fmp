@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-01T00:54:32.760Z",
+  "updatedAt": "2026-10-06T20:33:44.823Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -47,33 +47,6 @@
     }
   ],
   "bookings": [
-    {
-      "id": "e1eadde3-aee6-46a6-96bd-c7fbc573ff0d",
-      "spaceCategory": "lab",
-      "resourceId": "lab1",
-      "featuredEvent": false,
-      "allDay": false,
-      "responsible": "Rodolfo M. Lorandi",
-      "purpose": "Pedagogia — 8ª Fase",
-      "startTime": "18:50",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-11-10"
-    },
-    {
-      "id": "884783a0-c8a0-4679-b251-ade08fc5b07f",
-      "spaceCategory": "lab",
-      "resourceId": "custom:gerar",
-      "customSpaceName": "GERAR",
-      "responsible": "GERAR",
-      "purpose": "GERAR",
-      "startTime": "08:00",
-      "endTime": "11:10",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-10-07"
-    },
     {
       "id": "d9a94571-73bd-5944-a5e7-c9f221676d6c",
       "resourceId": "custom:quadra-laranja",
@@ -5504,6 +5477,33 @@
       "date": "2026-10-06"
     },
     {
+      "id": "66a03ba0-8047-4e87-a1fc-566c1814fae6",
+      "spaceCategory": "lab",
+      "resourceId": "lab1",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Sérgio M. Schutz",
+      "purpose": "PÓS-GRADUAÇÃO",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-06"
+    },
+    {
+      "id": "884783a0-c8a0-4679-b251-ade08fc5b07f",
+      "spaceCategory": "lab",
+      "resourceId": "custom:gerar",
+      "customSpaceName": "GERAR",
+      "responsible": "GERAR",
+      "purpose": "GERAR",
+      "startTime": "08:00",
+      "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-07"
+    },
+    {
       "id": "42f7708c-2b62-5df5-8120-ec02fa966b51",
       "resourceId": "lab1",
       "responsible": "Sérgio M. Schutz",
@@ -8152,6 +8152,20 @@
       "endTime": "17:30",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: ANDERSON(MATURIDADE) - 16:20-17:30"
+    },
+    {
+      "id": "e1eadde3-aee6-46a6-96bd-c7fbc573ff0d",
+      "spaceCategory": "lab",
+      "resourceId": "lab1",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Rodolfo M. Lorandi",
+      "purpose": "Pedagogia — 8ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-10"
     },
     {
       "id": "20ce75fd-136a-5792-b611-5071adf61504",
