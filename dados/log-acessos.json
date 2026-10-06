@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-06T20:21:57.740Z",
+  "updatedAt": "2026-10-06T20:33:48.951Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6409,6 +6409,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "20601994-db45-4bfa-99d2-23225462d921",
+      "timestamp": "2026-10-06T20:33:48.005Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "PÓS-GRADUAÇÃO · Sérgio M. Schutz · 2026-10-06 · 18:50–22:00 · Laboratório 01"
     }
   ]
 }
