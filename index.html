@@ -765,6 +765,7 @@ let state=loadState(); let currentView='week'; let referenceDate=new Date(); let
 let auditLogPage=1; let auditLogSearch=''; const AUDIT_LOGS_PER_PAGE=50;
 let syncInfo={status:'idle',last:null,message:'Aguardando sincronização'};
 let tokenConnectionState={status:'idle',message:'Token ainda não verificado',checkedAt:0,fingerprint:''};
+let usersLoadWarning='';
 
 function tokenFingerprint(token){return token?`${token.length}:${token.slice(0,4)}:${token.slice(-4)}`:''}
 function updateGithubTokenBadge(){
@@ -903,7 +904,10 @@ function route(){
   if(hash==='#painel'||hash==='#painel-labs') renderPublic();
   else if(hash==='#painel-salas') renderClassroomPublic();
   else if(hash==='#admin'&&isLogged()) renderAdmin();
-  else renderLogin();
+  else {
+    if(hash==='#admin'&&!isLogged())history.replaceState(null,'','#login');
+    renderLogin();
+  }
 }
 window.addEventListener('hashchange',route);
 function logoMarkup(){return `<div class="logo">${state.settings.logo?`<img src="${state.settings.logo}" alt="Logo">`:'FMP'}</div>`}
@@ -917,7 +921,25 @@ function renderLogin(){
   <form onsubmit="login(event)" autocomplete="off"><div class="field"><label>Usuário</label><input id="loginUser" value="" autocomplete="off" autocapitalize="none" spellcheck="false" required></div><div class="field"><label>Senha</label><input id="loginPass" type="password" value="" autocomplete="new-password" required></div><div class="login-actions"><button class="btn btn-primary" type="submit">Entrar no sistema</button><button class="btn btn-secondary" type="button" onclick="openPanelInNewTab('#painel-labs')">Abrir painel dos laboratórios</button><button class="btn btn-success" type="button" onclick="openPanelInNewTab('#painel-salas')">Abrir painel das salas de aula</button></div></form>
   <div class="demo-info">Os painéis públicos podem ser consultados sem login. O acesso administrativo exige autenticação.</div></div></div></section>`;
 }
-async function login(e){e.preventDefault();const u=document.getElementById('loginUser').value.trim(),p=document.getElementById('loginPass').value;const user=state.users.find(x=>x.active!==false&&x.username.toLowerCase()===u.toLowerCase());if(!user){toast('Usuário ou senha inválidos.');return}const typedHash=await hashPassword(p);const ok=user.passwordHash?typedHash===user.passwordHash:String(user.password||'')===p;if(!ok){toast('Usuário ou senha inválidos.');return}startSession(user.username);await recordAuditLog('Login realizado','Acesso','Entrada na área administrativa');location.hash='#admin'}
+async function login(e){
+ e.preventDefault();
+ const button=e.submitter||e.target.querySelector('button[type="submit"]');
+ if(button?.disabled)return;
+ if(button){button.disabled=true;button.textContent='Entrando...'}
+ try{
+  const u=document.getElementById('loginUser').value.trim(),p=document.getElementById('loginPass').value;
+  const user=state.users.find(x=>x.active!==false&&x.username.toLowerCase()===u.toLowerCase());
+  if(!user){toast('Usuário ou senha inválidos.');return}
+  const typedHash=await hashPassword(p);const ok=user.passwordHash?typedHash===user.passwordHash:String(user.password||'')===p;
+  if(!ok){toast('Usuário ou senha inválidos.');return}
+  startSession(user.username);
+  history.replaceState(null,'','#admin');
+  renderAdmin();
+  recordAuditLog('Login realizado','Acesso','Entrada na área administrativa').catch(err=>console.warn('Falha ao registrar login:',err));
+ }finally{
+  if(button&&document.body.contains(button)){button.disabled=false;button.textContent='Entrar no sistema'}
+ }
+}
 async function logout(){const username=currentUsername();await recordAuditLog('Logout realizado','Acesso','Saída da área administrativa',username);sessionStorage.removeItem(SESSION_KEY);location.hash='#login'}
 
 function renderAdmin(){
@@ -1426,7 +1448,15 @@ function scheduleClassroomMidnightRollover(){clearTimeout(window.classroomMidnig
 
 function updateClock(){const now=new Date();const c=document.getElementById('clock'),d=document.getElementById('clockDate');if(c)c.textContent=now.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'});if(d)d.textContent=formatDate(now,{day:'2-digit',month:'2-digit',year:'numeric'})}
 function toggleFullscreen(){if(!document.fullscreenElement)document.documentElement.requestFullscreen?.();else document.exitFullscreen?.()}
-async function bootstrap(){try{const [bookings,grade]=await Promise.all([fetchPublicJson(),fetchPublicGrade()]);mergeRemoteData(bookings);mergeGradeData(grade);try{const users=await fetchPublicUsers();mergeUsersData(users)}catch(e){}syncInfo={status:'ok',last:new Date(),message:'Agendamentos, grade e usuários carregados'};}catch(e){syncInfo={status:'error',last:null,message:e.message}}route();}
+async function bootstrap(){
+ try{
+  const [bookings,grade]=await Promise.all([fetchPublicJson(),fetchPublicGrade()]);mergeRemoteData(bookings);mergeGradeData(grade);
+  try{const users=await fetchPublicUsers();mergeUsersData(users);usersLoadWarning=''}catch(e){usersLoadWarning='Não foi possível atualizar a lista de usuários. O sistema está usando os usuários salvos neste navegador.';console.warn(usersLoadWarning,e)}
+  syncInfo={status:'ok',last:new Date(),message:'Agendamentos e grade carregados'+(usersLoadWarning?' · usuários locais':' · usuários atualizados')};
+ }catch(e){syncInfo={status:'error',last:null,message:e.message}}
+ route();
+ if(usersLoadWarning)toast(usersLoadWarning);
+}
 bootstrap();
 setInterval(enforceSessionExpiry,15000);
 </script>
