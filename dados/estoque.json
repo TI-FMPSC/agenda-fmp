@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T13:06:13.603Z",
-    "updatedAt": "2026-10-07T13:06:13.603Z",
+    "lastSync": "2026-10-07T13:07:12.176Z",
+    "updatedAt": "2026-10-07T13:07:12.176Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -3008,6 +3008,24 @@
       "expirationDate": "",
       "createdAt": "2026-10-07",
       "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "id_lvfcy66emuy4gryr",
+      "code": "162",
+      "name": "FONTE",
+      "categoryId": "id_3yjpbg76muy466rh",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 0,
+      "currentStock": 11,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "",
+      "expirationDate": "",
+      "createdAt": "2026-10-07",
+      "updatedAt": "2026-10-07"
     }
   ],
   "movements": [
@@ -4994,6 +5012,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-07T13:06:12.598Z"
+    },
+    {
+      "id": "id_e9456cu1muy4gryr",
+      "materialId": "id_lvfcy66emuy4gryr",
+      "type": "entrada",
+      "date": "2026-10-07",
+      "quantity": 11,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 11,
+      "effect": 11,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-07T13:07:11.379Z"
     }
   ],
   "users": [],
