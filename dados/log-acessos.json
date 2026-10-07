@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T00:41:36.072Z",
+  "updatedAt": "2026-10-07T00:49:42.600Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6463,6 +6463,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "PRÉ-AULA · Marcus B. O. Silveira · 2026-10-07 · 18:00–18:50 · Laboratório 03"
+    },
+    {
+      "id": "cc81e83f-0525-4547-a5d5-e8512bc2a8bf",
+      "timestamp": "2026-10-07T00:49:41.605Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 3ª Fase · Juliane P. Q. Odinino · 2026-10-07 · 19:00–20:20 · Auditório"
     }
   ]
 }
