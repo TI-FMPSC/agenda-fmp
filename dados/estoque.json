@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T13:08:26.901Z",
-    "updatedAt": "2026-10-07T13:08:26.901Z",
+    "lastSync": "2026-10-07T13:09:28.034Z",
+    "updatedAt": "2026-10-07T13:09:28.034Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -5099,6 +5099,22 @@
     }
   ],
   "users": [],
-  "equipment": [],
+  "equipment": [
+    {
+      "id": "id_v0k6kf27muy4jonp",
+      "code": "EQ-001",
+      "name": "PROJETOR",
+      "type": "Equipamento",
+      "unit": "UN",
+      "currentStock": 4,
+      "minStock": 1,
+      "size": "",
+      "model": "",
+      "status": "active",
+      "description": "TI",
+      "createdAt": "2026-10-07",
+      "updatedAt": "2026-10-07"
+    }
+  ],
   "equipmentDeliveries": []
 }
