@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T13:58:01.926Z",
-    "updatedAt": "2026-10-07T13:58:01.926Z",
+    "lastSync": "2026-10-07T13:58:33.511Z",
+    "updatedAt": "2026-10-07T13:58:33.511Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -5457,6 +5457,21 @@
       "id": "id_rpsj91g7muy69f5i",
       "code": "EQ-002",
       "name": "Alicate Rebitador Profissional Harden",
+      "type": "Ferramenta",
+      "unit": "UN",
+      "currentStock": 1,
+      "minStock": 0,
+      "size": "",
+      "model": "",
+      "status": "active",
+      "description": "",
+      "createdAt": "2026-10-07",
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "id_ks0zjgupmuy6at5y",
+      "code": "EQ-003",
+      "name": "Vonder Aparador de Grama 1000w 220v",
       "type": "Ferramenta",
       "unit": "UN",
       "currentStock": 1,
