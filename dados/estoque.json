@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-05T15:52:00.285Z",
-    "updatedAt": "2026-10-05T15:52:00.285Z",
+    "lastSync": "2026-10-07T12:58:58.471Z",
+    "updatedAt": "2026-10-07T12:58:58.471Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -36,6 +36,10 @@
     {
       "id": "cat_eletricos",
       "name": "Materiais Elétricos e Afins"
+    },
+    {
+      "id": "id_3yjpbg76muy466rh",
+      "name": "TI"
     }
   ],
   "suppliers": [
