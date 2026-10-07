@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T13:01:01.356Z",
-    "updatedAt": "2026-10-07T13:01:01.356Z",
+    "lastSync": "2026-10-07T13:01:45.671Z",
+    "updatedAt": "2026-10-07T13:01:45.671Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2918,6 +2918,24 @@
       "expirationDate": "",
       "createdAt": "2026-10-07",
       "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "id_nr5sx2znmuy49rxh",
+      "code": "157",
+      "name": "PLACA DE REDE",
+      "categoryId": "id_3yjpbg76muy466rh",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 0,
+      "currentStock": 4,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "",
+      "expirationDate": "",
+      "createdAt": "2026-10-07",
+      "updatedAt": "2026-10-07"
     }
   ],
   "movements": [
@@ -4824,6 +4842,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-07T13:01:00.561Z"
+    },
+    {
+      "id": "id_h4zv1642muy49rxh",
+      "materialId": "id_nr5sx2znmuy49rxh",
+      "type": "entrada",
+      "date": "2026-10-07",
+      "quantity": 4,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 4,
+      "effect": 4,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-07T13:01:44.741Z"
     }
   ],
   "users": [],
