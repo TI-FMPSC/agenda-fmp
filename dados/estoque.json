@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T13:17:47.470Z",
-    "updatedAt": "2026-10-07T13:17:47.470Z",
+    "lastSync": "2026-10-07T13:20:29.618Z",
+    "updatedAt": "2026-10-07T13:20:29.618Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2028,14 +2028,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 6,
+      "currentStock": 2,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 1,8 litros",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-07"
     },
     {
       "id": "mat_man_004",
@@ -5112,6 +5112,22 @@
       "notes": "ATUALIZAÇÃO DE SISTEMA.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-07T13:17:46.651Z"
+    },
+    {
+      "id": "id_ucglww43muy4xv5d",
+      "materialId": "mat_man_003",
+      "type": "ajuste",
+      "date": "2026-10-07",
+      "quantity": 2,
+      "unitCost": 0,
+      "previousStock": 6,
+      "newStock": 2,
+      "effect": -4,
+      "sector": "",
+      "document": "",
+      "notes": "ATUALIZAÇÃO SISTEMA",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-07T13:20:28.657Z"
     }
   ],
   "users": [],
