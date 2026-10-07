@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T14:02:21.010Z",
-    "updatedAt": "2026-10-07T14:02:21.010Z",
+    "lastSync": "2026-10-07T14:09:11.619Z",
+    "updatedAt": "2026-10-07T14:09:11.619Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -5627,6 +5627,21 @@
       "unit": "UN",
       "currentStock": 40,
       "minStock": 10,
+      "size": "",
+      "model": "",
+      "status": "active",
+      "description": "",
+      "createdAt": "2026-10-07",
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "id_y1x00991muy6ohvj",
+      "code": "EQ-005",
+      "name": "DISCO CORRE FINO FERRO 4.1/2",
+      "type": "Ferramenta",
+      "unit": "UN",
+      "currentStock": 3,
+      "minStock": 1,
       "size": "",
       "model": "",
       "status": "active",
