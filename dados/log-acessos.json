@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T14:09:11.503Z",
+  "updatedAt": "2026-10-07T14:12:16.747Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6634,6 +6634,15 @@
       "action": "Cadastra equipamento",
       "module": "Estoque FMP",
       "details": "EQ-005 · DISCO CORRE FINO FERRO 4.1/2 · saldo 3"
+    },
+    {
+      "id": "b296f503-81e3-4b14-b03a-32cb9c920db2",
+      "timestamp": "2026-10-07T14:12:15.815Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 66 · Folhas A4 Padrão · quantidade 9 · saldo 4"
     }
   ]
 }
