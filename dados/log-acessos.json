@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T13:54:52.975Z",
+  "updatedAt": "2026-10-07T13:55:28.437Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6571,6 +6571,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "170 · Bucha Nylon 06"
+    },
+    {
+      "id": "056d4667-5e9f-4c38-abac-3e8f2436d458",
+      "timestamp": "2026-10-07T13:55:27.918Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "171 · Bucha Nylon 08"
     }
   ]
 }
