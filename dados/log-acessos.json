@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T13:50:09.538Z",
+  "updatedAt": "2026-10-07T13:51:01.010Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6553,6 +6553,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "168 · ESPUMA"
+    },
+    {
+      "id": "7a35fdee-87fe-4272-a1f8-6e460b33da87",
+      "timestamp": "2026-10-07T13:50:59.547Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "169 · PAFLON"
     }
   ]
 }
