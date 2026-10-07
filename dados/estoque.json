@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T13:28:42.959Z",
-    "updatedAt": "2026-10-07T13:28:42.959Z",
+    "lastSync": "2026-10-07T13:29:36.395Z",
+    "updatedAt": "2026-10-07T13:29:36.395Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -3080,6 +3080,24 @@
       "expirationDate": "",
       "createdAt": "2026-10-07",
       "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "id_rwc6wrvimuy59j8j",
+      "code": "166",
+      "name": "Suporte de Bombona",
+      "categoryId": "cat_copa",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 1,
+      "currentStock": 1,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "",
+      "expirationDate": "",
+      "createdAt": "2026-10-07",
+      "updatedAt": "2026-10-07"
     }
   ],
   "movements": [
@@ -5162,6 +5180,22 @@
       "notes": "ATUALIZAÇÃO DE SISTEMA",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-07T13:28:42.165Z"
+    },
+    {
+      "id": "id_k8ppau13muy59j8j",
+      "materialId": "id_rwc6wrvimuy59j8j",
+      "type": "entrada",
+      "date": "2026-10-07",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 1,
+      "effect": 1,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-07T13:29:33.091Z"
     }
   ],
   "users": [],
