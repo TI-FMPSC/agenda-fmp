@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T13:56:56.791Z",
-    "updatedAt": "2026-10-07T13:56:56.791Z",
+    "lastSync": "2026-10-07T13:57:28.240Z",
+    "updatedAt": "2026-10-07T13:57:28.240Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -5416,6 +5416,21 @@
       "model": "",
       "status": "active",
       "description": "TI",
+      "createdAt": "2026-10-07",
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "id_rpsj91g7muy69f5i",
+      "code": "EQ-002",
+      "name": "Alicate Rebitador Profissional Harden",
+      "type": "Ferramenta",
+      "unit": "UN",
+      "currentStock": 1,
+      "minStock": 0,
+      "size": "",
+      "model": "",
+      "status": "active",
+      "description": "",
       "createdAt": "2026-10-07",
       "updatedAt": "2026-10-07"
     }
