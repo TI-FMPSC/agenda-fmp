@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T13:02:11.004Z",
-    "updatedAt": "2026-10-07T13:02:11.004Z",
+    "lastSync": "2026-10-07T13:03:01.858Z",
+    "updatedAt": "2026-10-07T13:03:01.858Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2954,6 +2954,24 @@
       "expirationDate": "",
       "createdAt": "2026-10-07",
       "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "id_ljk1ntjtmuy4begf",
+      "code": "159",
+      "name": "ADAPTADOR",
+      "categoryId": "id_3yjpbg76muy466rh",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 5,
+      "currentStock": 30,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "",
+      "expirationDate": "",
+      "createdAt": "2026-10-07",
+      "updatedAt": "2026-10-07"
     }
   ],
   "movements": [
@@ -4892,6 +4910,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-07T13:02:09.918Z"
+    },
+    {
+      "id": "id_rtg69mibmuy4begf",
+      "materialId": "id_ljk1ntjtmuy4begf",
+      "type": "entrada",
+      "date": "2026-10-07",
+      "quantity": 30,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 30,
+      "effect": 30,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-07T13:03:00.591Z"
     }
   ],
   "users": [],
