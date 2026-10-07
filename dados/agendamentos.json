@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-07T00:41:33.063Z",
+  "updatedAt": "2026-10-07T00:49:38.956Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -5687,6 +5687,20 @@
       "purpose": "",
       "startTime": "18:50",
       "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-07"
+    },
+    {
+      "id": "68589b44-334e-45c0-9de5-354d4930c02f",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Juliane P. Q. Odinino",
+      "purpose": "Pedagogia — 3ª Fase",
+      "startTime": "19:00",
+      "endTime": "20:20",
       "status": "confirmed",
       "notes": "",
       "date": "2026-10-07"
