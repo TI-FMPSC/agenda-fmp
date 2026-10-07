@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T13:55:28.437Z",
+  "updatedAt": "2026-10-07T13:56:57.170Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6580,6 +6580,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "171 · Bucha Nylon 08"
+    },
+    {
+      "id": "25580073-109b-4169-9dff-ea3d78a829b6",
+      "timestamp": "2026-10-07T13:56:56.097Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "173 · Parafuso Phillips 5,0x5,0"
     }
   ]
 }
