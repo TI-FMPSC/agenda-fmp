@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T13:03:01.858Z",
-    "updatedAt": "2026-10-07T13:03:01.858Z",
+    "lastSync": "2026-10-07T13:03:44.883Z",
+    "updatedAt": "2026-10-07T13:03:44.883Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2972,6 +2972,24 @@
       "expirationDate": "",
       "createdAt": "2026-10-07",
       "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "id_grfnyoiymuy4cbo3",
+      "code": "160",
+      "name": "CABO HDMI",
+      "categoryId": "id_3yjpbg76muy466rh",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 10,
+      "currentStock": 19,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "",
+      "expirationDate": "",
+      "createdAt": "2026-10-07",
+      "updatedAt": "2026-10-07"
     }
   ],
   "movements": [
@@ -4926,6 +4944,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-07T13:03:00.591Z"
+    },
+    {
+      "id": "id_j2kr9tvfmuy4cbo3",
+      "materialId": "id_grfnyoiymuy4cbo3",
+      "type": "entrada",
+      "date": "2026-10-07",
+      "quantity": 19,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 19,
+      "effect": 19,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-07T13:03:43.635Z"
     }
   ],
   "users": [],
