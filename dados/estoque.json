@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T12:58:58.471Z",
-    "updatedAt": "2026-10-07T12:58:58.471Z",
+    "lastSync": "2026-10-07T13:01:01.356Z",
+    "updatedAt": "2026-10-07T13:01:01.356Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2900,6 +2900,24 @@
       "expirationDate": "",
       "createdAt": "2026-10-02",
       "updatedAt": "2026-10-02"
+    },
+    {
+      "id": "id_vj525m9amuy48tu9",
+      "code": "156",
+      "name": "SSD",
+      "categoryId": "id_3yjpbg76muy466rh",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 5,
+      "currentStock": 23,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "",
+      "expirationDate": "",
+      "createdAt": "2026-10-07",
+      "updatedAt": "2026-10-07"
     }
   ],
   "movements": [
@@ -4790,6 +4808,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-05T15:51:44.719Z"
+    },
+    {
+      "id": "id_2nmhymqgmuy48tu9",
+      "materialId": "id_vj525m9amuy48tu9",
+      "type": "entrada",
+      "date": "2026-10-07",
+      "quantity": 23,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 23,
+      "effect": 23,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-07T13:01:00.561Z"
     }
   ],
   "users": [],
