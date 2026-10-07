@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T13:58:33.186Z",
+  "updatedAt": "2026-10-07T13:59:15.573Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6607,6 +6607,15 @@
       "action": "Cadastra equipamento",
       "module": "Estoque FMP",
       "details": "EQ-003 · Vonder Aparador de Grama 1000w 220v · saldo 1"
+    },
+    {
+      "id": "beeb0757-5f0b-49cc-a354-22d566eaa211",
+      "timestamp": "2026-10-07T13:59:14.753Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra equipamento",
+      "module": "Estoque FMP",
+      "details": "EQ-004 · Mangueira Jardim Ouro Antitorção · saldo 40"
     }
   ]
 }
