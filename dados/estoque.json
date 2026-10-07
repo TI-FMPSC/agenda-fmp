@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T13:55:55.500Z",
-    "updatedAt": "2026-10-07T13:55:55.500Z",
+    "lastSync": "2026-10-07T13:56:56.791Z",
+    "updatedAt": "2026-10-07T13:56:56.791Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -3188,6 +3188,24 @@
       "expirationDate": "",
       "createdAt": "2026-10-07",
       "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "id_44pduu27muy68qur",
+      "code": "173",
+      "name": "Parafuso Phillips 5,0x5,0",
+      "categoryId": "cat_eletricos",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 0,
+      "currentStock": 50,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "",
+      "expirationDate": "",
+      "createdAt": "2026-10-07",
+      "updatedAt": "2026-10-07"
     }
   ],
   "movements": [
@@ -5366,6 +5384,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-07T13:55:54.551Z"
+    },
+    {
+      "id": "id_a1dcl99vmuy68qur",
+      "materialId": "id_44pduu27muy68qur",
+      "type": "entrada",
+      "date": "2026-10-07",
+      "quantity": 50,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 50,
+      "effect": 50,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-07T13:56:55.923Z"
     }
   ],
   "users": [],
