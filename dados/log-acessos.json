@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T00:37:23.994Z",
+  "updatedAt": "2026-10-07T00:39:50.243Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6445,6 +6445,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "MARKETING DIGITAL (COPER) · COPER · 2026-10-07 · 11:10–12:00 · Laboratório 01"
+    },
+    {
+      "id": "b7a50b9a-45bd-4f4c-a9ce-1e5ff9be909e",
+      "timestamp": "2026-10-07T00:39:49.814Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "PRÁTICAS PEDAGÓGICAS · Ana Lucia Machado · 2026-10-07 · 14:00–18:00 · Laboratório 02"
     }
   ]
 }
