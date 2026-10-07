@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T13:08:26.470Z",
+  "updatedAt": "2026-10-07T13:20:29.665Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6517,6 +6517,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "164 · CARTUCHO HP PEQUENA"
+    },
+    {
+      "id": "c0189e84-4ed0-4430-b78a-f5e72370424c",
+      "timestamp": "2026-10-07T13:20:28.724Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Ajuste · 67 · Garrafas Térmica · quantidade 2 · saldo 2"
     }
   ]
 }
