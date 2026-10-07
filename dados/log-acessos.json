@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T00:39:50.243Z",
+  "updatedAt": "2026-10-07T00:41:36.072Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6454,6 +6454,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "PRÁTICAS PEDAGÓGICAS · Ana Lucia Machado · 2026-10-07 · 14:00–18:00 · Laboratório 02"
+    },
+    {
+      "id": "b54a3a1a-6e67-47ac-a643-772c1ba2bde4",
+      "timestamp": "2026-10-07T00:41:35.507Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "PRÉ-AULA · Marcus B. O. Silveira · 2026-10-07 · 18:00–18:50 · Laboratório 03"
     }
   ]
 }
