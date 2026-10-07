@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T14:00:12.579Z",
-    "updatedAt": "2026-10-07T14:00:12.579Z",
+    "lastSync": "2026-10-07T14:00:39.191Z",
+    "updatedAt": "2026-10-07T14:00:39.191Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -3242,6 +3242,24 @@
       "expirationDate": "",
       "createdAt": "2026-10-07",
       "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "id_v3df2y9amuy6dii0",
+      "code": "176",
+      "name": "Parafuso 3,5 x20",
+      "categoryId": "cat_eletricos",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "id_rfp0rtzimumo6zfb",
+      "minStock": 20,
+      "currentStock": 50,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "",
+      "expirationDate": "",
+      "createdAt": "2026-10-07",
+      "updatedAt": "2026-10-07"
     }
   ],
   "movements": [
@@ -5468,6 +5486,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-07T14:00:11.438Z"
+    },
+    {
+      "id": "id_l58w97k2muy6dii0",
+      "materialId": "id_v3df2y9amuy6dii0",
+      "type": "entrada",
+      "date": "2026-10-07",
+      "quantity": 50,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 50,
+      "effect": 50,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-07T14:00:38.376Z"
     }
   ],
   "users": [],
