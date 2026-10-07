@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T00:34:09.148Z",
+  "updatedAt": "2026-10-07T00:37:23.994Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6436,6 +6436,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "7eaa5ac9-b429-407f-a3be-e1ff5b5c7265",
+      "timestamp": "2026-10-07T00:37:23.001Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "MARKETING DIGITAL (COPER) · COPER · 2026-10-07 · 11:10–12:00 · Laboratório 01"
     }
   ]
 }
