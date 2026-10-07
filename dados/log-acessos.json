@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T13:59:15.573Z",
+  "updatedAt": "2026-10-07T14:02:20.720Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6616,6 +6616,15 @@
       "action": "Cadastra equipamento",
       "module": "Estoque FMP",
       "details": "EQ-004 · Mangueira Jardim Ouro Antitorção · saldo 40"
+    },
+    {
+      "id": "c0e29e3d-998f-4b95-a772-f6f50c773dea",
+      "timestamp": "2026-10-07T14:02:20.176Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "178 · Lampada led bulbo 30w"
     }
   ]
 }
