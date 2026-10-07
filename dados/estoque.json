@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T14:01:14.607Z",
-    "updatedAt": "2026-10-07T14:01:14.607Z",
+    "lastSync": "2026-10-07T14:02:21.010Z",
+    "updatedAt": "2026-10-07T14:02:21.010Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -3278,6 +3278,24 @@
       "expirationDate": "",
       "createdAt": "2026-10-07",
       "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "id_bs9f5qjkmuy6fox9",
+      "code": "178",
+      "name": "Lampada led bulbo 30w",
+      "categoryId": "cat_eletricos",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "id_rfp0rtzimumo6zfb",
+      "minStock": 5,
+      "currentStock": 15,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "",
+      "expirationDate": "",
+      "createdAt": "2026-10-07",
+      "updatedAt": "2026-10-07"
     }
   ],
   "movements": [
@@ -5536,6 +5554,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-07T14:01:13.759Z"
+    },
+    {
+      "id": "id_8k05pg1zmuy6fox9",
+      "materialId": "id_bs9f5qjkmuy6fox9",
+      "type": "entrada",
+      "date": "2026-10-07",
+      "quantity": 15,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 15,
+      "effect": 15,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-07T14:02:20.013Z"
     }
   ],
   "users": [],
