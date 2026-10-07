@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T13:51:35.008Z",
-    "updatedAt": "2026-10-07T13:51:35.008Z",
+    "lastSync": "2026-10-07T13:54:53.124Z",
+    "updatedAt": "2026-10-07T13:54:53.124Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -3134,6 +3134,24 @@
       "expirationDate": "",
       "createdAt": "2026-10-07",
       "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "id_v0f71zdvmuy663gi",
+      "code": "170",
+      "name": "Bucha Nylon 06",
+      "categoryId": "cat_eletricos",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 20,
+      "currentStock": 50,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "",
+      "expirationDate": "",
+      "createdAt": "2026-10-07",
+      "updatedAt": "2026-10-07"
     }
   ],
   "movements": [
@@ -5264,6 +5282,22 @@
       "notes": "ATUALIZAÇÃO DE SISTEMA",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-07T13:48:09.010Z"
+    },
+    {
+      "id": "id_d97dybcvmuy663gi",
+      "materialId": "id_v0f71zdvmuy663gi",
+      "type": "entrada",
+      "date": "2026-10-07",
+      "quantity": 50,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 50,
+      "effect": 50,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-07T13:54:52.290Z"
     }
   ],
   "users": [],
