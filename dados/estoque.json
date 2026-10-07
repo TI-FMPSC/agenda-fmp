@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T14:09:11.619Z",
-    "updatedAt": "2026-10-07T14:09:11.619Z",
+    "lastSync": "2026-10-07T14:10:17.985Z",
+    "updatedAt": "2026-10-07T14:10:17.985Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -5642,6 +5642,21 @@
       "unit": "UN",
       "currentStock": 3,
       "minStock": 1,
+      "size": "",
+      "model": "",
+      "status": "active",
+      "description": "",
+      "createdAt": "2026-10-07",
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "id_550x6teomuy6pwe5",
+      "code": "EQ-006",
+      "name": "APRESENTADOR DE SLIDES",
+      "type": "Equipamento",
+      "unit": "UN",
+      "currentStock": 5,
+      "minStock": 2,
       "size": "",
       "model": "",
       "status": "active",
