@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T13:57:27.930Z",
+  "updatedAt": "2026-10-07T13:58:33.186Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6598,6 +6598,15 @@
       "action": "Cadastra equipamento",
       "module": "Estoque FMP",
       "details": "EQ-002 · Alicate Rebitador Profissional Harden · saldo 1"
+    },
+    {
+      "id": "6950a3b8-380a-40c9-8646-df3fafc7fdff",
+      "timestamp": "2026-10-07T13:58:32.286Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra equipamento",
+      "module": "Estoque FMP",
+      "details": "EQ-003 · Vonder Aparador de Grama 1000w 220v · saldo 1"
     }
   ]
 }
