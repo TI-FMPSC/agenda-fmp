@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T00:53:13.915Z",
+  "updatedAt": "2026-10-07T12:50:22.485Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6481,6 +6481,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": " · Ana Lucia Machado · 2026-10-07 · 18:00–22:00 · SALA LPP + 06 NOTES"
+    },
+    {
+      "id": "79d7839c-37d5-4d46-a412-6b5ae2f805f0",
+      "timestamp": "2026-10-07T12:50:21.803Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Valida integração com GitHub",
+      "module": "Configurações",
+      "details": "TI-FMPSC/agenda-fmp · token com gravação confirmada"
     }
   ]
 }
