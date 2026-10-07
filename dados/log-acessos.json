@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T13:29:33.867Z",
+  "updatedAt": "2026-10-07T13:49:06.604Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6535,6 +6535,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "166 · Suporte de Bombona"
+    },
+    {
+      "id": "05316613-eb9f-4297-b0cf-1cc34269b6c6",
+      "timestamp": "2026-10-07T13:49:05.535Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "167 · ESPUMA MULTIUSO"
     }
   ]
 }
