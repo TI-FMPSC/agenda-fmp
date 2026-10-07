@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T13:20:29.665Z",
+  "updatedAt": "2026-10-07T13:29:33.867Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6526,6 +6526,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Ajuste · 67 · Garrafas Térmica · quantidade 2 · saldo 2"
+    },
+    {
+      "id": "1cbdffc2-766d-46a7-b093-83fc2d833103",
+      "timestamp": "2026-10-07T13:29:33.243Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "166 · Suporte de Bombona"
     }
   ]
 }
