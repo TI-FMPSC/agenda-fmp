@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-07T00:49:38.956Z",
+  "updatedAt": "2026-10-07T00:53:09.865Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -5622,6 +5622,21 @@
       "purpose": "PRÉ-AULA",
       "startTime": "18:00",
       "endTime": "18:50",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-07"
+    },
+    {
+      "id": "fa120ca3-055b-42c2-a483-c088abc054b8",
+      "spaceCategory": "lab",
+      "resourceId": "custom:sala-lpp-06-notes",
+      "customSpaceName": "SALA LPP + 06 NOTES",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Ana Lucia Machado",
+      "purpose": "",
+      "startTime": "18:00",
+      "endTime": "22:00",
       "status": "confirmed",
       "notes": "",
       "date": "2026-10-07"
