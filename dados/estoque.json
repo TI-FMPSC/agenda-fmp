@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T13:51:00.676Z",
-    "updatedAt": "2026-10-07T13:51:00.676Z",
+    "lastSync": "2026-10-07T13:51:35.008Z",
+    "updatedAt": "2026-10-07T13:51:35.008Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2288,24 +2288,6 @@
       "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-10-05"
-    },
-    {
-      "id": "mat_ele_001",
-      "code": "79",
-      "name": "Interruptor",
-      "categoryId": "cat_eletricos",
-      "unit": "",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": "",
-      "currentStock": "",
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Marca: Soprano",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
     },
     {
       "id": "id_vdeirod2msyozv6j",
