@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T13:58:33.511Z",
-    "updatedAt": "2026-10-07T13:58:33.511Z",
+    "lastSync": "2026-10-07T13:59:15.507Z",
+    "updatedAt": "2026-10-07T13:59:15.507Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -5476,6 +5476,21 @@
       "unit": "UN",
       "currentStock": 1,
       "minStock": 0,
+      "size": "",
+      "model": "",
+      "status": "active",
+      "description": "",
+      "createdAt": "2026-10-07",
+      "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "id_yxk60mrwmuy6bpxi",
+      "code": "EQ-004",
+      "name": "Mangueira Jardim Ouro Antitorção",
+      "type": "Ferramenta",
+      "unit": "UN",
+      "currentStock": 40,
+      "minStock": 10,
       "size": "",
       "model": "",
       "status": "active",
