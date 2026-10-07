@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T13:57:28.240Z",
-    "updatedAt": "2026-10-07T13:57:28.240Z",
+    "lastSync": "2026-10-07T13:58:01.926Z",
+    "updatedAt": "2026-10-07T13:58:01.926Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -3206,6 +3206,24 @@
       "expirationDate": "",
       "createdAt": "2026-10-07",
       "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "id_81p7q35bmuy6a54e",
+      "code": "174",
+      "name": "Rebite 4,8 x 16mm",
+      "categoryId": "cat_eletricos",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 100,
+      "currentStock": 250,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "",
+      "expirationDate": "",
+      "createdAt": "2026-10-07",
+      "updatedAt": "2026-10-07"
     }
   ],
   "movements": [
@@ -5400,6 +5418,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-07T13:56:55.923Z"
+    },
+    {
+      "id": "id_7dip4nkzmuy6a54f",
+      "materialId": "id_81p7q35bmuy6a54e",
+      "type": "entrada",
+      "date": "2026-10-07",
+      "quantity": 250,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 250,
+      "effect": 250,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-07T13:58:01.071Z"
     }
   ],
   "users": [],
