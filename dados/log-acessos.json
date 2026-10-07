@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T13:01:01.392Z",
+  "updatedAt": "2026-10-07T13:03:01.723Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6499,6 +6499,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "156 · SSD"
+    },
+    {
+      "id": "c554d50c-ed90-4558-bac6-70cbb6b680d7",
+      "timestamp": "2026-10-07T13:03:00.725Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "159 · ADAPTADOR"
     }
   ]
 }
