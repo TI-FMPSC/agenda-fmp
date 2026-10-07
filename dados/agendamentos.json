@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-06T20:34:25.993Z",
+  "updatedAt": "2026-10-07T00:37:20.238Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -5571,6 +5571,20 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: RAFAEL"
+    },
+    {
+      "id": "d3800fca-d194-4451-8926-d5b338b596d1",
+      "spaceCategory": "lab",
+      "resourceId": "lab1",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "COPER",
+      "purpose": "MARKETING DIGITAL (COPER)",
+      "startTime": "11:10",
+      "endTime": "12:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-07"
     },
     {
       "id": "64c397db-2f59-5f30-8f24-71ff06f8b366",
