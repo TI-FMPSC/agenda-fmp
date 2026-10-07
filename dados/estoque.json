@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T13:03:44.883Z",
-    "updatedAt": "2026-10-07T13:03:44.883Z",
+    "lastSync": "2026-10-07T13:06:13.603Z",
+    "updatedAt": "2026-10-07T13:06:13.603Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2990,6 +2990,24 @@
       "expirationDate": "",
       "createdAt": "2026-10-07",
       "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "id_ji9ktcanmuy4fily",
+      "code": "161",
+      "name": "BATERIA DE LITHIUM",
+      "categoryId": "id_3yjpbg76muy466rh",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 30,
+      "currentStock": 180,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "CAIXA COM 100 UNIDADES.",
+      "expirationDate": "",
+      "createdAt": "2026-10-07",
+      "updatedAt": "2026-10-07"
     }
   ],
   "movements": [
@@ -4960,6 +4978,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-07T13:03:43.635Z"
+    },
+    {
+      "id": "id_vcotd9ssmuy4fily",
+      "materialId": "id_ji9ktcanmuy4fily",
+      "type": "entrada",
+      "date": "2026-10-07",
+      "quantity": 180,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 180,
+      "effect": 180,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-07T13:06:12.598Z"
     }
   ],
   "users": [],
