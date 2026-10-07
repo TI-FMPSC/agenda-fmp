@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T14:12:16.814Z",
-    "updatedAt": "2026-10-07T14:12:16.814Z",
+    "lastSync": "2026-10-07T14:13:59.913Z",
+    "updatedAt": "2026-10-07T14:13:59.913Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1038,14 +1038,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 6,
+      "currentStock": 4,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: lápis de cor pequeno",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-07"
     },
     {
       "id": "mat_esc_045",
@@ -5586,6 +5586,22 @@
       "notes": "9 CAIXAS PARA COMISSÃO , ATÉ CHEGAR A COMPRA.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-07T14:12:15.736Z"
+    },
+    {
+      "id": "id_3vxy2hywmuy6uoba",
+      "materialId": "mat_esc_044",
+      "type": "saida",
+      "date": "2026-10-07",
+      "quantity": 2,
+      "unitCost": 0,
+      "previousStock": 6,
+      "newStock": 4,
+      "effect": -2,
+      "sector": "",
+      "document": "",
+      "notes": "ATUALIZAÇÃO DE SISTEMA",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-07T14:13:59.062Z"
     }
   ],
   "users": [],
