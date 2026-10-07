@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-07T00:39:47.478Z",
+  "updatedAt": "2026-10-07T00:41:33.063Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -5608,6 +5608,20 @@
       "purpose": "PRÁTICAS PEDAGÓGICAS",
       "startTime": "14:00",
       "endTime": "18:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-07"
+    },
+    {
+      "id": "eebdbfc9-fd11-47aa-9637-8e16bce236d4",
+      "spaceCategory": "lab",
+      "resourceId": "lab3",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Marcus B. O. Silveira",
+      "purpose": "PRÉ-AULA",
+      "startTime": "18:00",
+      "endTime": "18:50",
       "status": "confirmed",
       "notes": "",
       "date": "2026-10-07"
