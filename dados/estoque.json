@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T13:47:05.594Z",
-    "updatedAt": "2026-10-07T13:47:05.594Z",
+    "lastSync": "2026-10-07T13:48:09.974Z",
+    "updatedAt": "2026-10-07T13:48:09.974Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2172,14 +2172,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 10,
+      "currentStock": 29,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: unidade",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-07"
     },
     {
       "id": "mat_man_012",
@@ -5212,6 +5212,22 @@
       "notes": "ATUALIZAÇÃO DE SISTEMA",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-07T13:47:04.719Z"
+    },
+    {
+      "id": "id_vlvxdiwymuy5xgaa",
+      "materialId": "mat_man_011",
+      "type": "ajuste",
+      "date": "2026-10-07",
+      "quantity": 29,
+      "unitCost": 0,
+      "previousStock": 10,
+      "newStock": 29,
+      "effect": 19,
+      "sector": "",
+      "document": "",
+      "notes": "ATUALIZAÇÃO DE SISTEMA",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-07T13:48:09.010Z"
     }
   ],
   "users": [],
