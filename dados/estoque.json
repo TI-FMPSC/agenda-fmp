@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-08T12:40:28.232Z",
-    "updatedAt": "2026-10-08T12:40:28.232Z",
+    "lastSync": "2026-10-08T12:40:54.654Z",
+    "updatedAt": "2026-10-08T12:40:54.654Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2381,12 +2381,12 @@
       "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": 0,
+      "minStock": 30,
       "currentStock": 92,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
-      "description": "Maçã 500ml",
+      "description": "500ml VARIADOS AROMAS",
       "expirationDate": "",
       "createdAt": "2026-08-21",
       "updatedAt": "2026-10-08"
