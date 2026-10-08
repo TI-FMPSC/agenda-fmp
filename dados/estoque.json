@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-08T12:08:23.049Z",
-    "updatedAt": "2026-10-08T12:08:23.049Z",
+    "lastSync": "2026-10-08T12:09:05.064Z",
+    "updatedAt": "2026-10-08T12:09:05.064Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1266,20 +1266,20 @@
     {
       "id": "mat_esc_057",
       "code": "116",
-      "name": "Pilhas",
+      "name": "Pilhas 2AA",
       "categoryId": "cat_escritorio",
       "unit": "CX",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 3,
       "currentStock": 7,
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "description": "Especificação: 2 AA | Marca: maior | Tamanho/apresentação: com 10 pares cada",
+      "description": "Especificação: 2 AA | Marca: maior | Tamanho/apresentação: com 10 pares cada . TOTAL 60 PILHAS",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-08"
     },
     {
       "id": "mat_esc_058",
