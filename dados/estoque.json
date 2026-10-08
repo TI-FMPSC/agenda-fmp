@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-08T12:04:55.250Z",
-    "updatedAt": "2026-10-08T12:04:55.250Z",
+    "lastSync": "2026-10-08T12:08:23.049Z",
+    "updatedAt": "2026-10-08T12:08:23.049Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1284,20 +1284,20 @@
     {
       "id": "mat_esc_058",
       "code": "117",
-      "name": "Pilhas",
+      "name": "Pilhas AAA 1,5V",
       "categoryId": "cat_escritorio",
       "unit": "CX",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 1,
       "currentStock": 3,
       "avgCost": "",
       "status": "active",
       "barcode": "",
-      "description": "Especificação: AAA | Marca: 1,5 V alcalina | Tamanho/apresentação: com 12 pares",
+      "description": "Especificação: AAA | Marca: 1,5 V alcalina | Tamanho/apresentação: com 12 pares = 36 PILHAS AAA 1,5V",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-08"
     },
     {
       "id": "mat_esc_059",
