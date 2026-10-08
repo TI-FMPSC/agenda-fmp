@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T12:44:13.303Z",
+  "updatedAt": "2026-10-08T12:44:58.587Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6832,6 +6832,15 @@
       "action": "Exclui material",
       "module": "Estoque FMP",
       "details": "88 · Limpa Vidros com alcool com válvula"
+    },
+    {
+      "id": "64417d56-2f36-468a-bfe1-2cfabbb69afb",
+      "timestamp": "2026-10-08T12:44:57.668Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Exclui material",
+      "module": "Estoque FMP",
+      "details": "95 · Lustra Móveis"
     }
   ]
 }
