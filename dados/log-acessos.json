@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T12:40:28.110Z",
+  "updatedAt": "2026-10-08T12:42:44.171Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6814,6 +6814,15 @@
       "action": "Exclui material",
       "module": "Estoque FMP",
       "details": "46 · Detergente louça"
+    },
+    {
+      "id": "ac05a1cc-5602-4787-a3a9-018573302f82",
+      "timestamp": "2026-10-08T12:42:43.326Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Ajuste · 135 · Sabonete Líquido Grande · quantidade 11 · saldo 11"
     }
   ]
 }
