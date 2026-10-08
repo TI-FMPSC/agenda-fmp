@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T00:01:29.582Z",
+  "updatedAt": "2026-10-08T00:17:38.747Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6661,6 +6661,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 7ª Fase · Deisi Cord · 2026-10-08 · 18:50–22:00 · SALA LPP + 10 NOTES"
+    },
+    {
+      "id": "c13dc6ee-f3fb-4df6-8633-31c9ad63fb1b",
+      "timestamp": "2026-10-08T00:17:38.183Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "CURSO DE LIBRAS (COPER) · Kleber M. da Costa · 2026-10-09 · 17:30–18:30 · Auditório"
     }
   ]
 }
