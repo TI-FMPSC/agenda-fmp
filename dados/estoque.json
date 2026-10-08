@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-07T14:13:59.913Z",
-    "updatedAt": "2026-10-07T14:13:59.913Z",
+    "lastSync": "2026-10-08T10:56:23.373Z",
+    "updatedAt": "2026-10-08T10:56:23.373Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1128,14 +1128,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 5,
+      "currentStock": 0,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: unidades",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-08"
     },
     {
       "id": "mat_esc_050",
@@ -5602,6 +5602,22 @@
       "notes": "ATUALIZAÇÃO DE SISTEMA",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-07T14:13:59.062Z"
+    },
+    {
+      "id": "id_yedgt3eamuzf8e5o",
+      "materialId": "mat_esc_049",
+      "type": "ajuste",
+      "date": "2026-10-08",
+      "quantity": 0,
+      "unitCost": 0,
+      "previousStock": 5,
+      "newStock": 0,
+      "effect": -5,
+      "sector": "",
+      "document": "",
+      "notes": "ATUALIZAÇÃO DE SISTEMA.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-08T10:56:22.189Z"
     }
   ],
   "users": [],
