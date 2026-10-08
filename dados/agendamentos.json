@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-08T00:29:53.595Z",
+  "updatedAt": "2026-10-08T00:35:31.493Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -6398,6 +6398,21 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: LEANDRO"
+    },
+    {
+      "id": "2d051a54-8c49-46ee-a12c-79f48db5b620",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:sala-09-11-notes-tatiani-tpg",
+      "customSpaceName": "SALA 09 = 11 NOTES - TATIANI (TPG)",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Tatiani Schmitt",
+      "purpose": "",
+      "startTime": "08:00",
+      "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-16"
     },
     {
       "id": "d426a66a-8dd9-56f2-94bf-0580ac6dc547",
