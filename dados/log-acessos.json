@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T00:17:38.747Z",
+  "updatedAt": "2026-10-08T00:18:57.879Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6670,6 +6670,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "CURSO DE LIBRAS (COPER) · Kleber M. da Costa · 2026-10-09 · 17:30–18:30 · Auditório"
+    },
+    {
+      "id": "d7b07761-cf20-4006-b2aa-89490b08ba58",
+      "timestamp": "2026-10-08T00:18:57.462Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 8ª Fase · Tatiani Schmitt · 2026-10-09 · 18:50–22:00 · Laboratório 04"
     }
   ]
 }
