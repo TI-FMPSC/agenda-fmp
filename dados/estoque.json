@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-08T12:30:33.616Z",
-    "updatedAt": "2026-10-08T12:30:33.616Z",
+    "lastSync": "2026-10-08T12:33:53.328Z",
+    "updatedAt": "2026-10-08T12:33:53.328Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -3308,6 +3308,24 @@
       "expirationDate": "",
       "createdAt": "2026-10-08",
       "updatedAt": "2026-10-08"
+    },
+    {
+      "id": "id_t7dcaltimuzips0k",
+      "code": "180",
+      "name": "PORTA ALCOOL",
+      "categoryId": "cat_copa",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 1,
+      "currentStock": 3,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "",
+      "expirationDate": "",
+      "createdAt": "2026-10-08",
+      "updatedAt": "2026-10-08"
     }
   ],
   "movements": [
@@ -5726,6 +5744,22 @@
       "notes": "ATUALIZAÇÃO SISTEMA",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-08T12:30:30.161Z"
+    },
+    {
+      "id": "id_kdxaeqpzmuzips0k",
+      "materialId": "id_t7dcaltimuzips0k",
+      "type": "entrada",
+      "date": "2026-10-08",
+      "quantity": 3,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 3,
+      "effect": 3,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-08T12:33:52.148Z"
     }
   ],
   "users": [],
