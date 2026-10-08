@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-08T12:11:26.238Z",
-    "updatedAt": "2026-10-08T12:11:26.238Z",
+    "lastSync": "2026-10-08T12:13:42.413Z",
+    "updatedAt": "2026-10-08T12:13:42.413Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -3290,6 +3290,24 @@
       "expirationDate": "",
       "createdAt": "2026-10-07",
       "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "id_xvx9wzaemuzhztic",
+      "code": "179",
+      "name": "SUPER PILHA AAA",
+      "categoryId": "cat_escritorio",
+      "unit": "UN",
+      "supplierId": "id_ivlfl8dxmuzhww4p",
+      "locationId": "id_p15x7aiwmumo6pg9",
+      "minStock": 20,
+      "currentStock": 48,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "12 CONJUNTOS COM 4 CADA",
+      "expirationDate": "",
+      "createdAt": "2026-10-08",
+      "updatedAt": "2026-10-08"
     }
   ],
   "movements": [
@@ -5628,6 +5646,22 @@
       "notes": "ATUALIZAÇÃO DE SISTEMA.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-08T12:09:29.609Z"
+    },
+    {
+      "id": "id_s51robpumuzhztic",
+      "materialId": "id_xvx9wzaemuzhztic",
+      "type": "entrada",
+      "date": "2026-10-08",
+      "quantity": 48,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 48,
+      "effect": 48,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-08T12:13:41.028Z"
     }
   ],
   "users": [],
