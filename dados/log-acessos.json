@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-07T23:32:29.256Z",
+  "updatedAt": "2026-10-08T00:01:29.582Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6652,6 +6652,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "65e6f3bb-a760-49b5-85a0-4e5eb856bec1",
+      "timestamp": "2026-10-08T00:01:28.984Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 7ª Fase · Deisi Cord · 2026-10-08 · 18:50–22:00 · SALA LPP + 10 NOTES"
     }
   ]
 }
