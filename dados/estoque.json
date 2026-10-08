@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-08T12:11:15.022Z",
-    "updatedAt": "2026-10-08T12:11:15.022Z",
+    "lastSync": "2026-10-08T12:11:26.238Z",
+    "updatedAt": "2026-10-08T12:11:26.238Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -86,6 +86,10 @@
     {
       "id": "id_ad1fqro6muzhwnvd",
       "name": "KIAN"
+    },
+    {
+      "id": "id_ivlfl8dxmuzhww4p",
+      "name": "MAXPRINT"
     }
   ],
   "locations": [
