@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T12:44:58.587Z",
+  "updatedAt": "2026-10-08T12:47:26.094Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6841,6 +6841,15 @@
       "action": "Exclui material",
       "module": "Estoque FMP",
       "details": "95 · Lustra Móveis"
+    },
+    {
+      "id": "fe0630a2-0e00-4828-90fe-f88504c349c0",
+      "timestamp": "2026-10-08T12:47:24.953Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "2 · MÁSCARA DESCARTÁVEL"
     }
   ]
 }
