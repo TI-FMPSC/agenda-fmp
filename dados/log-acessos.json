@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T00:44:23.089Z",
+  "updatedAt": "2026-10-08T12:08:20.477Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6724,6 +6724,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "5ª E 6ª FASE PEDAGPGIA · Larissa O. Gonçalves · 2026-11-17 · 18:50–22:00 · Auditório"
+    },
+    {
+      "id": "484e38f1-be1a-4a6e-bd65-e4cc876155a0",
+      "timestamp": "2026-10-08T12:08:19.956Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "117 · Pilhas AAA 1,5V"
     }
   ]
 }
