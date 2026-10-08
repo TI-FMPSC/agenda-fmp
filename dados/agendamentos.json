@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-07T00:53:09.865Z",
+  "updatedAt": "2026-10-08T00:01:26.427Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -5852,6 +5852,21 @@
       "purpose": "Administração — 3ª Fase",
       "startTime": "18:50",
       "endTime": "20:20",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-08"
+    },
+    {
+      "id": "d20b72dc-01ac-43a2-9ccb-044c4f3e705d",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:sala-lpp-10-notes",
+      "customSpaceName": "SALA LPP + 10 NOTES",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Deisi Cord",
+      "purpose": "Pedagogia — 7ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
       "status": "confirmed",
       "notes": "",
       "date": "2026-10-08"
