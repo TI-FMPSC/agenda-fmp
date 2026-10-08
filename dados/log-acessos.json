@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T12:09:05.098Z",
+  "updatedAt": "2026-10-08T12:11:09.323Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6742,6 +6742,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "116 · Pilhas 2AA"
+    },
+    {
+      "id": "2ef67991-98da-4758-855e-348117706987",
+      "timestamp": "2026-10-08T12:11:08.335Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra Fornecedor",
+      "module": "Estoque FMP",
+      "details": "ELGIN"
     }
   ]
 }
