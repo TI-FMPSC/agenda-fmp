@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T12:42:44.171Z",
+  "updatedAt": "2026-10-08T12:44:13.303Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6823,6 +6823,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Ajuste · 135 · Sabonete Líquido Grande · quantidade 11 · saldo 11"
+    },
+    {
+      "id": "9f8c93b5-e511-48ef-9100-5e66712d51f8",
+      "timestamp": "2026-10-08T12:44:12.853Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Exclui material",
+      "module": "Estoque FMP",
+      "details": "88 · Limpa Vidros com alcool com válvula"
     }
   ]
 }
