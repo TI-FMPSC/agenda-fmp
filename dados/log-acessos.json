@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T00:18:57.879Z",
+  "updatedAt": "2026-10-08T00:27:18.970Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6679,6 +6679,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 8ª Fase · Tatiani Schmitt · 2026-10-09 · 18:50–22:00 · Laboratório 04"
+    },
+    {
+      "id": "3440b680-1132-4a65-97bf-b29c07e16c68",
+      "timestamp": "2026-10-08T00:27:18.541Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 4ª Fase · Maurício A. de Lima · 2026-10-09 · 18:50–22:00 · Laboratório 05"
     }
   ]
 }
