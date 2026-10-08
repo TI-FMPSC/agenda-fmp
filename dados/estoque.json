@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-08T12:20:44.029Z",
-    "updatedAt": "2026-10-08T12:20:44.029Z",
+    "lastSync": "2026-10-08T12:21:33.596Z",
+    "updatedAt": "2026-10-08T12:21:33.596Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1284,7 +1284,7 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 3,
-      "currentStock": 6,
+      "currentStock": 8,
       "avgCost": "",
       "status": "active",
       "barcode": "",
@@ -5678,6 +5678,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-08T12:15:38.916Z"
+    },
+    {
+      "id": "id_5kpq9gqmmuzi9xey",
+      "materialId": "mat_esc_057",
+      "type": "ajuste",
+      "date": "2026-10-08",
+      "quantity": 8,
+      "unitCost": 0,
+      "previousStock": 6,
+      "newStock": 8,
+      "effect": 2,
+      "sector": "",
+      "document": "",
+      "notes": "CONTANDO COM AS AVULSAS + 20 = 2 CAIXAS CONTADAS",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-08T12:21:32.650Z"
     }
   ],
   "users": [],
