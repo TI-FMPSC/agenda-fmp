@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T12:11:09.323Z",
+  "updatedAt": "2026-10-08T12:15:39.646Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6751,6 +6751,15 @@
       "action": "Cadastra Fornecedor",
       "module": "Estoque FMP",
       "details": "ELGIN"
+    },
+    {
+      "id": "d7cd3b44-0311-43b9-8200-c7bff411866f",
+      "timestamp": "2026-10-08T12:15:38.994Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Ajuste · 179 · SUPER PILHA AAA · quantidade 80 · saldo 80"
     }
   ]
 }
