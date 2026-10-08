@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-08T12:43:23.388Z",
-    "updatedAt": "2026-10-08T12:43:23.388Z",
+    "lastSync": "2026-10-08T12:43:42.770Z",
+    "updatedAt": "2026-10-08T12:43:42.770Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2734,24 +2734,6 @@
       "updatedAt": "2026-08-16"
     },
     {
-      "id": "mat_lim_005",
-      "code": "132",
-      "name": "Sabão em pó",
-      "categoryId": "cat_limpeza",
-      "unit": "G",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": "",
-      "currentStock": 27,
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Especificação: tixan Ypê | Marca: X-MAX | Tamanho/apresentação: 400 GRAMAS | Observações: atualizado em 14/08",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-10-05"
-    },
-    {
       "id": "mat_lim_013",
       "code": "95",
       "name": "Lustra Móveis",
@@ -4556,22 +4538,6 @@
       "createdAt": "2026-09-30T10:48:03.718Z"
     },
     {
-      "id": "id_uiv9sa1rmunzftro",
-      "materialId": "mat_lim_005",
-      "type": "saida",
-      "date": "2026-09-14",
-      "quantity": 1,
-      "unitCost": 0,
-      "previousStock": 5,
-      "newStock": 4,
-      "effect": -1,
-      "sector": "Luana",
-      "document": "",
-      "notes": "",
-      "createdBy": "amandafranca",
-      "createdAt": "2026-09-30T10:48:47.220Z"
-    },
-    {
       "id": "id_3lnp634dmunzgug2",
       "materialId": "id_3iirvjowmtd4j83v",
       "type": "saida",
@@ -5018,22 +4984,6 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-05T11:25:05.304Z"
-    },
-    {
-      "id": "id_wr5skfs7muv61lpf",
-      "materialId": "mat_lim_005",
-      "type": "ajuste",
-      "date": "2026-10-05",
-      "quantity": 27,
-      "unitCost": 0,
-      "previousStock": 4,
-      "newStock": 27,
-      "effect": 23,
-      "sector": "",
-      "document": "",
-      "notes": "Sistema havia dado conflito novamente. 05/10",
-      "createdBy": "amandafranca",
-      "createdAt": "2026-10-05T11:28:04.131Z"
     },
     {
       "id": "id_q2z8g4yrmuv63n9f",
