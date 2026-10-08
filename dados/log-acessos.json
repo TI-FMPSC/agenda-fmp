@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T00:29:56.936Z",
+  "updatedAt": "2026-10-08T00:35:34.220Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6697,6 +6697,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "TPG — 2ª Fase · Tatiani Schmitt · 2026-10-09 · 08:00–11:10 · SALA 09=NOTAR 11 NOTES - TATIANI (TPG)"
+    },
+    {
+      "id": "1b06749a-43c9-4e38-8ad1-2d8228e57238",
+      "timestamp": "2026-10-08T00:35:33.799Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": " · Tatiani Schmitt · 2026-10-16 · 08:00–11:10 · SALA 09 = 11 NOTES - TATIANI (TPG)"
     }
   ]
 }
