@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-08T12:43:42.770Z",
-    "updatedAt": "2026-10-08T12:43:42.770Z",
+    "lastSync": "2026-10-08T12:44:13.608Z",
+    "updatedAt": "2026-10-08T12:44:13.608Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2693,24 +2693,6 @@
       "status": "active",
       "barcode": "",
       "description": "Especificação: unidade | Marca: Tipo Látex | Tamanho/apresentação: caixa",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
-    },
-    {
-      "id": "mat_lim_003",
-      "code": "88",
-      "name": "Limpa Vidros com alcool com válvula",
-      "categoryId": "cat_limpeza",
-      "unit": "ML",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": "",
-      "currentStock": 0,
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Marca: SEBOLD | Tamanho/apresentação: 500ML | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
