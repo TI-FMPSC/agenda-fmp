@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T12:15:39.646Z",
+  "updatedAt": "2026-10-08T12:27:48.907Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6760,6 +6760,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Ajuste · 179 · SUPER PILHA AAA · quantidade 80 · saldo 80"
+    },
+    {
+      "id": "288d720a-48f8-4d80-bd53-b0986850a519",
+      "timestamp": "2026-10-08T12:27:48.380Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 153 · Vassouras · quantidade 6 · saldo 0"
     }
   ]
 }
