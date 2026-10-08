@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-08T00:17:35.704Z",
+  "updatedAt": "2026-10-08T00:18:54.776Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -5961,6 +5961,20 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: LEONARDO"
+    },
+    {
+      "id": "388a8f99-4053-4d4e-ae1e-71b120906daf",
+      "spaceCategory": "lab",
+      "resourceId": "lab4",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Tatiani Schmitt",
+      "purpose": "Administração — 8ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-09"
     },
     {
       "id": "d35f78bc-f0be-52e0-82de-ea9f756c90d9",
