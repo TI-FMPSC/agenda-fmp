@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T12:27:48.907Z",
+  "updatedAt": "2026-10-08T12:30:30.857Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6769,6 +6769,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 153 · Vassouras · quantidade 6 · saldo 0"
+    },
+    {
+      "id": "b6c31752-b1d0-4e0e-8456-475894437c99",
+      "timestamp": "2026-10-08T12:30:30.235Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Ajuste · 108 · Panos de Chão · quantidade 21 · saldo 21"
     }
   ]
 }
