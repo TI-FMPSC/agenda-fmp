@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T12:33:52.917Z",
+  "updatedAt": "2026-10-08T12:35:03.078Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6787,6 +6787,15 @@
       "action": "Cadastra material",
       "module": "Estoque FMP",
       "details": "180 · PORTA ALCOOL"
+    },
+    {
+      "id": "b0214b4e-9be2-480b-90a6-85172609714d",
+      "timestamp": "2026-10-08T12:35:02.312Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Ajuste · 110 · Papel Higiênico · quantidade 432 · saldo 432"
     }
   ]
 }
