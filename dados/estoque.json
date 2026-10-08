@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-08T12:39:09.259Z",
-    "updatedAt": "2026-10-08T12:39:09.259Z",
+    "lastSync": "2026-10-08T12:40:03.708Z",
+    "updatedAt": "2026-10-08T12:40:03.708Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2382,14 +2382,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 0,
-      "currentStock": 37,
+      "currentStock": 92,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "Maçã 500ml",
       "expirationDate": "",
       "createdAt": "2026-08-21",
-      "updatedAt": "2026-10-05"
+      "updatedAt": "2026-10-08"
     },
     {
       "id": "id_cp2jzwyimt2xynql",
@@ -5792,6 +5792,22 @@
       "notes": "ATUALIZAÇÃO DE SISTEMA.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-08T12:39:08.435Z"
+    },
+    {
+      "id": "id_9rqrav60muzixpzv",
+      "materialId": "id_j7xrtpr8mt2xuehl",
+      "type": "ajuste",
+      "date": "2026-10-08",
+      "quantity": 92,
+      "unitCost": 0,
+      "previousStock": 37,
+      "newStock": 92,
+      "effect": 55,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-08T12:40:02.779Z"
     }
   ],
   "users": [],
