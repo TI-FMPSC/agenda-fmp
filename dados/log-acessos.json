@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T00:27:18.970Z",
+  "updatedAt": "2026-10-08T00:29:56.936Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6688,6 +6688,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 4ª Fase · Maurício A. de Lima · 2026-10-09 · 18:50–22:00 · Laboratório 05"
+    },
+    {
+      "id": "1f2c412d-5b45-4e8c-832b-06c834a10759",
+      "timestamp": "2026-10-08T00:29:56.370Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "TPG — 2ª Fase · Tatiani Schmitt · 2026-10-09 · 08:00–11:10 · SALA 09=NOTAR 11 NOTES - TATIANI (TPG)"
     }
   ]
 }
