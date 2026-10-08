@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-08T12:46:47.398Z",
-    "updatedAt": "2026-10-08T12:46:47.398Z",
+    "lastSync": "2026-10-08T12:47:25.889Z",
+    "updatedAt": "2026-10-08T12:47:25.889Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -144,7 +144,7 @@
     {
       "id": "mat_epi_001",
       "code": "2",
-      "name": "MÁSCARA",
+      "name": "MÁSCARA DESCARTÁVEL",
       "categoryId": "cat_epis",
       "unit": "CX",
       "supplierId": "",
