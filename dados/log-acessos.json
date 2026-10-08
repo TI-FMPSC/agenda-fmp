@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T12:39:09.521Z",
+  "updatedAt": "2026-10-08T12:40:28.110Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6805,6 +6805,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Ajuste · 141 · Saponáceo Cremoso · quantidade 53 · saldo 53"
+    },
+    {
+      "id": "31fd5503-eb59-43a5-a2e1-0ed2d91e5cb2",
+      "timestamp": "2026-10-08T12:40:27.499Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Exclui material",
+      "module": "Estoque FMP",
+      "details": "46 · Detergente louça"
     }
   ]
 }
