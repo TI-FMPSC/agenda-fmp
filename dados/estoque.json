@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-08T12:11:12.085Z",
-    "updatedAt": "2026-10-08T12:11:12.085Z",
+    "lastSync": "2026-10-08T12:11:15.022Z",
+    "updatedAt": "2026-10-08T12:11:15.022Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -82,6 +82,10 @@
     {
       "id": "id_wq1nnvj9muzhwjn2",
       "name": "ELGIN"
+    },
+    {
+      "id": "id_ad1fqro6muzhwnvd",
+      "name": "KIAN"
     }
   ],
   "locations": [
