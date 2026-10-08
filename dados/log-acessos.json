@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T12:35:03.078Z",
+  "updatedAt": "2026-10-08T12:39:09.521Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6796,6 +6796,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Ajuste · 110 · Papel Higiênico · quantidade 432 · saldo 432"
+    },
+    {
+      "id": "6f47f338-5b96-461b-901b-ff55b8dc55df",
+      "timestamp": "2026-10-08T12:39:08.511Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Ajuste · 141 · Saponáceo Cremoso · quantidade 53 · saldo 53"
     }
   ]
 }
