@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-08T12:09:30.549Z",
-    "updatedAt": "2026-10-08T12:09:30.549Z",
+    "lastSync": "2026-10-08T12:11:12.085Z",
+    "updatedAt": "2026-10-08T12:11:12.085Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -78,6 +78,10 @@
     {
       "id": "id_4nt4fyv6munzkx2y",
       "name": "verdesan"
+    },
+    {
+      "id": "id_wq1nnvj9muzhwjn2",
+      "name": "ELGIN"
     }
   ],
   "locations": [
