@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-08T10:56:23.373Z",
-    "updatedAt": "2026-10-08T10:56:23.373Z",
+    "lastSync": "2026-10-08T12:04:55.250Z",
+    "updatedAt": "2026-10-08T12:04:55.250Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2036,24 +2036,6 @@
       "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-10-07"
-    },
-    {
-      "id": "mat_man_004",
-      "code": "118",
-      "name": "Pilhas",
-      "categoryId": "cat_manutencao",
-      "unit": "CX",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": "",
-      "currentStock": 8,
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Especificação: Pilhas | Tamanho/apresentação: 8 caixas com 10 pares de pilhas",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
     },
     {
       "id": "mat_man_005",
