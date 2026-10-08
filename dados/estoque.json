@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-08T12:21:33.596Z",
-    "updatedAt": "2026-10-08T12:21:33.596Z",
+    "lastSync": "2026-10-08T12:27:49.112Z",
+    "updatedAt": "2026-10-08T12:27:49.112Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1806,14 +1806,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 6,
+      "currentStock": 0,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: UNIDADE",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-08"
     },
     {
       "id": "mat_lim_022",
@@ -5694,6 +5694,22 @@
       "notes": "CONTANDO COM AS AVULSAS + 20 = 2 CAIXAS CONTADAS",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-08T12:21:32.650Z"
+    },
+    {
+      "id": "id_12gj5bwvmuzihz9m",
+      "materialId": "mat_lim_021",
+      "type": "saida",
+      "date": "2026-10-08",
+      "quantity": 6,
+      "unitCost": 0,
+      "previousStock": 6,
+      "newStock": 0,
+      "effect": -6,
+      "sector": "Adri / aso",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-08T12:27:48.298Z"
     }
   ],
   "users": [],
