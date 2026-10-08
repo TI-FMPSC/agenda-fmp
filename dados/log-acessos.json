@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-08T00:35:34.220Z",
+  "updatedAt": "2026-10-08T00:36:36.146Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6706,6 +6706,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": " · Tatiani Schmitt · 2026-10-16 · 08:00–11:10 · SALA 09 = 11 NOTES - TATIANI (TPG)"
+    },
+    {
+      "id": "a11ae270-0925-465b-aed1-a936f7dfef83",
+      "timestamp": "2026-10-08T00:36:34.301Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 8ª Fase · Larissa O. Gonçalves · 2026-11-03 · 18:50–22:00 · Laboratório 01"
     }
   ]
 }
