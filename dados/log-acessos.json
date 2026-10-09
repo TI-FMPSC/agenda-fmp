@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-09T00:08:12.301Z",
+  "updatedAt": "2026-10-09T00:09:22.582Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6877,6 +6877,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 7ª Fase · Marcus B. O. Silveira. · 2026-10-09 · 18:50–22:00 · Laboratório 03"
+    },
+    {
+      "id": "edfe5879-f2e3-4a09-a498-528d9f8a20ea",
+      "timestamp": "2026-10-09T00:09:22.124Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 8ª Fase · Ana Bárbara S. M. S. Dias · 2026-10-29 · 18:50–22:00 · Laboratório 03"
     }
   ]
 }
