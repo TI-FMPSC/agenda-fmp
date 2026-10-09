@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-09T00:09:22.582Z",
+  "updatedAt": "2026-10-09T00:09:59.656Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6886,6 +6886,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 8ª Fase · Ana Bárbara S. M. S. Dias · 2026-10-29 · 18:50–22:00 · Laboratório 03"
+    },
+    {
+      "id": "ed263900-f4c2-46a1-8125-39df1ecbbfcb",
+      "timestamp": "2026-10-09T00:09:58.937Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 8ª Fase · Ana Bárbara S. M. S. Dias · 2026-11-19 · 18:50–22:00 · Laboratório 04"
     }
   ]
 }
