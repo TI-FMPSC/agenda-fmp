@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-09T00:05:53.983Z",
+  "updatedAt": "2026-10-09T00:07:26.214Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6859,6 +6859,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "856de9ba-cc7d-4302-b49e-daae08886d4b",
+      "timestamp": "2026-10-09T00:07:25.646Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 7ª Fase · Marcus B. O. Silveira · 2026-10-09 · 18:50–22:00 · Laboratório 02"
     }
   ]
 }
