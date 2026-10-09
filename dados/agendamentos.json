@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-09T00:09:19.260Z",
+  "updatedAt": "2026-10-09T00:09:56.588Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9115,6 +9115,20 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: BOFF"
+    },
+    {
+      "id": "de271435-a7a3-49c9-8db9-3406f3876a9f",
+      "spaceCategory": "lab",
+      "resourceId": "lab4",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Ana Bárbara S. M. S. Dias",
+      "purpose": "Pedagogia — 8ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-19"
     },
     {
       "id": "af2b6c9b-baa0-5372-ba5a-0ab722b72fd4",
