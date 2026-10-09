@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-09T00:09:59.656Z",
+  "updatedAt": "2026-10-09T13:20:27.907Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6895,6 +6895,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 8ª Fase · Ana Bárbara S. M. S. Dias · 2026-11-19 · 18:50–22:00 · Laboratório 04"
+    },
+    {
+      "id": "236365f1-8788-4403-90d2-473d6bcd3ae9",
+      "timestamp": "2026-10-09T13:20:27.056Z",
+      "username": "leandropickler",
+      "name": "Leandro Pickler",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
