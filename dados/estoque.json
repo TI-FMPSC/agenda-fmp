@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-13T16:50:21.968Z",
-    "updatedAt": "2026-10-13T16:50:21.968Z",
+    "lastSync": "2026-10-13T16:53:21.113Z",
+    "updatedAt": "2026-10-13T16:53:21.113Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -3218,6 +3218,24 @@
       "expirationDate": "",
       "createdAt": "2026-10-08",
       "updatedAt": "2026-10-08"
+    },
+    {
+      "id": "id_9sahm7ndmv6x6pkc",
+      "code": "181",
+      "name": "Copo Descartável",
+      "categoryId": "cat_copa",
+      "unit": "FRD",
+      "supplierId": "",
+      "locationId": "",
+      "minStock": 10,
+      "currentStock": 21,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "22 tiras com 100 copos cada",
+      "expirationDate": "",
+      "createdAt": "2026-10-13",
+      "updatedAt": "2026-10-13"
     }
   ],
   "movements": [
@@ -6020,6 +6038,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-13T16:50:21.075Z"
+    },
+    {
+      "id": "id_m5qkul2lmv6x6pkc",
+      "materialId": "id_9sahm7ndmv6x6pkc",
+      "type": "entrada",
+      "date": "2026-10-13",
+      "quantity": 21,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 21,
+      "effect": 21,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-13T16:53:19.980Z"
     }
   ],
   "users": [],
