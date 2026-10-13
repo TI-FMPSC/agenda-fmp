@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-13T16:26:34.323Z",
-    "updatedAt": "2026-10-13T16:26:34.323Z",
+    "lastSync": "2026-10-13T16:27:13.032Z",
+    "updatedAt": "2026-10-13T16:27:13.032Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2652,14 +2652,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 5,
-      "currentStock": 10,
+      "currentStock": 9,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "",
       "expirationDate": "",
       "createdAt": "2026-09-25",
-      "updatedAt": "2026-09-25"
+      "updatedAt": "2026-10-13"
     },
     {
       "id": "id_c6ae6f44mumqhri2",
@@ -5732,6 +5732,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-13T16:26:33.478Z"
+    },
+    {
+      "id": "id_s3xhamwumv6w93n8",
+      "materialId": "id_q2d39sk8mugxl6oi",
+      "type": "saida",
+      "date": "2026-10-13",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 10,
+      "newStock": 9,
+      "effect": -1,
+      "sector": "Vinicius / Brinquedoteca",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-13T16:27:11.924Z"
     }
   ],
   "users": [],
