@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-13T16:42:58.935Z",
+  "updatedAt": "2026-10-13T16:49:53.879Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6967,6 +6967,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 108 · Panos de Chão · quantidade 6 · saldo 15"
+    },
+    {
+      "id": "d037f499-6221-44bf-ac20-92ea8df3df76",
+      "timestamp": "2026-10-13T16:49:53.254Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 133 · Sabão em Pó · quantidade 1 · saldo 27"
     }
   ]
 }
