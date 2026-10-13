@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-13T16:53:21.113Z",
-    "updatedAt": "2026-10-13T16:53:21.113Z",
+    "lastSync": "2026-10-13T16:54:56.158Z",
+    "updatedAt": "2026-10-13T16:54:56.158Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1698,14 +1698,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 21,
+      "currentStock": 20,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 100 litros | Tamanho/apresentação: 100 UNIDADES CADA",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-13"
     },
     {
       "id": "mat_lim_016",
@@ -6054,6 +6054,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-13T16:53:19.980Z"
+    },
+    {
+      "id": "id_s0pfbba6mv6x8qub",
+      "materialId": "mat_lim_015",
+      "type": "saida",
+      "date": "2026-10-07",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 21,
+      "newStock": 20,
+      "effect": -1,
+      "sector": "Luana",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-13T16:54:54.947Z"
     }
   ],
   "users": [],
