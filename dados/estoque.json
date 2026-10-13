@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-13T16:56:57.534Z",
-    "updatedAt": "2026-10-13T16:56:57.534Z",
+    "lastSync": "2026-10-13T16:57:33.992Z",
+    "updatedAt": "2026-10-13T16:57:33.992Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -330,14 +330,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 8,
+      "currentStock": 7,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: 250und cada caixa",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-13"
     },
     {
       "id": "mat_esc_004",
@@ -6134,6 +6134,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-13T16:56:56.147Z"
+    },
+    {
+      "id": "id_aeslb0lgmv6xc4t7",
+      "materialId": "mat_esc_003",
+      "type": "saida",
+      "date": "2026-10-13",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 8,
+      "newStock": 7,
+      "effect": -1,
+      "sector": "Amanda",
+      "document": "",
+      "notes": "Amanda para ADM",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-13T16:57:33.019Z"
     }
   ],
   "users": [],
