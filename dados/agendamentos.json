@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-09T00:09:56.588Z",
+  "updatedAt": "2026-10-13T20:13:41.991Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -6438,6 +6438,21 @@
       "purpose": "",
       "startTime": "08:00",
       "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "3ef28697-b308-43b5-9bd8-9cccf23f2aae",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:sala-lpp-data-show-01-notebook",
+      "customSpaceName": "SALA LPP + DATA SHOW + 01 NOTEBOOK",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "VERA",
+      "purpose": "FORMAÇÃO DOS COORDENADORES DE PRÉDIO CONCURSO",
+      "startTime": "11:00",
+      "endTime": "18:00",
       "status": "confirmed",
       "notes": "",
       "date": "2026-10-16"
