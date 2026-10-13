@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-13T20:06:32.131Z",
+  "updatedAt": "2026-10-13T20:13:45.745Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6994,6 +6994,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "4710e661-1c83-47fb-9a9f-324b9c483817",
+      "timestamp": "2026-10-13T20:13:45.282Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "FORMAÇÃO DOS COORDENADORES DE PRÉDIO CONCURSO · VERA · 2026-10-16 · 11:00–18:00 · SALA LPP + DATA SHOW + 01 NOTEBOOK"
     }
   ]
 }
