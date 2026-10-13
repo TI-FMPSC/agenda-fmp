@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-13T16:49:53.879Z",
+  "updatedAt": "2026-10-13T16:56:09.095Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6976,6 +6976,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 133 · Sabão em Pó · quantidade 1 · saldo 27"
+    },
+    {
+      "id": "170bb7c0-047f-4dcb-affd-73bda4988461",
+      "timestamp": "2026-10-13T16:56:08.553Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 7 · Água Sanitaria · quantidade 2 · saldo 52"
     }
   ]
 }
