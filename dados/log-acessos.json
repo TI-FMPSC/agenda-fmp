@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-13T14:45:30.602Z",
+  "updatedAt": "2026-10-13T16:29:46.124Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -6922,6 +6922,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Entrada · 135 · Sabonete Líquido Grande · quantidade 8 · saldo 19"
+    },
+    {
+      "id": "db4608b1-1598-4420-83d0-69f9d5451644",
+      "timestamp": "2026-10-13T16:29:45.455Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 110 · Papel Higiênico · quantidade 8 · saldo 424"
     }
   ]
 }
