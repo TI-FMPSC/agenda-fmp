@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-13T16:56:38.520Z",
-    "updatedAt": "2026-10-13T16:56:38.520Z",
+    "lastSync": "2026-10-13T16:56:57.534Z",
+    "updatedAt": "2026-10-13T16:56:57.534Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1734,14 +1734,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 32,
+      "currentStock": 31,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 30 litros | Tamanho/apresentação: 10 UNIDADES CADA | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-13"
     },
     {
       "id": "mat_lim_018",
@@ -6118,6 +6118,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-13T16:56:37.175Z"
+    },
+    {
+      "id": "id_sd07xvscmv6xbccz",
+      "materialId": "mat_lim_017",
+      "type": "saida",
+      "date": "2026-10-08",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 32,
+      "newStock": 31,
+      "effect": -1,
+      "sector": "VIVI",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-13T16:56:56.147Z"
     }
   ],
   "users": [],
