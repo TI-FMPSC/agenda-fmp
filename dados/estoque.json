@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-13T16:27:13.032Z",
-    "updatedAt": "2026-10-13T16:27:13.032Z",
+    "lastSync": "2026-10-13T16:29:46.185Z",
+    "updatedAt": "2026-10-13T16:29:46.185Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1950,14 +1950,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 200,
-      "currentStock": 432,
+      "currentStock": 424,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "432 UNIDADES ROLÃO",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-10-08"
+      "updatedAt": "2026-10-13"
     },
     {
       "id": "mat_lim_032",
@@ -5748,6 +5748,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-13T16:27:11.924Z"
+    },
+    {
+      "id": "id_i9jlrb8smv6wce0d",
+      "materialId": "mat_lim_029",
+      "type": "saida",
+      "date": "2026-10-05",
+      "quantity": 8,
+      "unitCost": 0,
+      "previousStock": 432,
+      "newStock": 424,
+      "effect": -8,
+      "sector": "jussane",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-13T16:29:45.325Z"
     }
   ],
   "users": [],
