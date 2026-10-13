@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-08T12:47:25.889Z",
-    "updatedAt": "2026-10-08T12:47:25.889Z",
+    "lastSync": "2026-10-13T14:45:30.210Z",
+    "updatedAt": "2026-10-13T14:45:30.210Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2418,14 +2418,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 15,
-      "currentStock": 11,
+      "currentStock": 19,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "Especificação: Erva Doce | Tamanho/apresentação: 5 LITROS",
       "expirationDate": "",
       "createdAt": "2026-08-21",
-      "updatedAt": "2026-10-08"
+      "updatedAt": "2026-10-13"
     },
     {
       "id": "id_dv1vx6wrmt30qxey",
@@ -5684,6 +5684,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-08T12:46:16.604Z"
+    },
+    {
+      "id": "id_kfjyfdummv6smavv",
+      "materialId": "id_xr67phu6mt30bbbr",
+      "type": "entrada",
+      "date": "2026-10-13",
+      "quantity": 8,
+      "unitCost": 0,
+      "previousStock": 11,
+      "newStock": 19,
+      "effect": 8,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-13T14:45:29.371Z"
     }
   ],
   "users": [],
