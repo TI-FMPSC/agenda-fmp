@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T10:35:04.046Z",
+  "updatedAt": "2026-10-14T10:39:35.645Z",
   "vehicles": [
     {
       "id": "eed8b108-da02-4bb2-91cc-3a9907dae344",
@@ -11,12 +11,20 @@
       "updatedAt": "2026-10-14T10:30:51.870Z"
     },
     {
+      "id": "f9f15652-7a47-484e-8c4a-f554e02fad5c",
+      "owner": "1ª fase ads",
+      "plate": "MLI7F60",
+      "category": "Análise e Desenvolvimento de Sistemas (ADS)",
+      "createdAt": "2026-10-14T10:39:35.627Z",
+      "updatedAt": "2026-10-14T10:39:35.627Z"
+    },
+    {
       "id": "2fd75f7e-eb7c-4a08-945b-064edae7e40e",
-      "owner": "GRAZI",
+      "owner": "PROFESORA GRAZI",
       "plate": "QJK8C48",
-      "category": "Administração",
+      "category": "Pedagogia",
       "createdAt": "2026-10-14T10:35:04.026Z",
-      "updatedAt": "2026-10-14T10:35:04.026Z"
+      "updatedAt": "2026-10-14T10:35:48.078Z"
     },
     {
       "id": "da82696e-bdd2-4975-984b-bcf1004380b7",
