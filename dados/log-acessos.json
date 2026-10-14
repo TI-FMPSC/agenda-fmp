@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T10:28:54.826Z",
+  "updatedAt": "2026-10-14T10:30:54.740Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7138,6 +7138,15 @@
       "action": "Cadastra veículo",
       "module": "Veículos",
       "details": "RUF6H80 · PROFESSORA FERNANDA SANCHEZ · Processos Gerenciais (TPG)"
+    },
+    {
+      "id": "929b6bff-be01-4c45-bd7a-d25dcf9f0dab",
+      "timestamp": "2026-10-14T10:30:53.371Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra veículo",
+      "module": "Veículos",
+      "details": "FNN7J94 · 1ª FASE TPG · Processos Gerenciais (TPG)"
     }
   ]
 }
