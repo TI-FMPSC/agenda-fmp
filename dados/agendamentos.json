@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-14T01:08:12.840Z",
+  "updatedAt": "2026-10-14T01:09:57.824Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -6252,6 +6252,20 @@
       "purpose": "CINE DEBATE",
       "startTime": "18:00",
       "endTime": "20:20",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "de82407e-8139-44ee-a9a0-93420bc6f801",
+      "spaceCategory": "lab",
+      "resourceId": "lab3",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Marcus B. O. Silveira",
+      "purpose": "PRÉ-AULA - NEABI",
+      "startTime": "18:00",
+      "endTime": "18:50",
       "status": "confirmed",
       "notes": "",
       "date": "2026-10-14"
