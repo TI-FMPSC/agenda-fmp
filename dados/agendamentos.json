@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-13T20:13:41.991Z",
+  "updatedAt": "2026-10-14T00:59:52.868Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -6198,6 +6198,20 @@
       "purpose": "GERAR",
       "startTime": "08:00",
       "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "9ef59f11-fd6e-4af3-aa0f-687390c50a0c",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Clodomir Coradini",
+      "purpose": "2ª TPG/ADS",
+      "startTime": "09:45",
+      "endTime": "11:45",
       "status": "confirmed",
       "notes": "",
       "date": "2026-10-14"
