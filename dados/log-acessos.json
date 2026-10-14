@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T10:33:03.998Z",
+  "updatedAt": "2026-10-14T10:35:06.210Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7156,6 +7156,15 @@
       "action": "Cadastra veículo",
       "module": "Veículos",
       "details": "STV1B43 · VINICIUS DA BRINQUEDOTECA · Pedagogia"
+    },
+    {
+      "id": "588d4c2f-7368-43cb-8b1d-07418c1ab570",
+      "timestamp": "2026-10-14T10:35:05.642Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra veículo",
+      "module": "Veículos",
+      "details": "QJK8C48 · GRAZI · Administração"
     }
   ]
 }
