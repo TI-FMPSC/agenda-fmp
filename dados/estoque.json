@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-14T14:09:15.095Z",
-    "updatedAt": "2026-10-14T14:09:15.095Z",
+    "lastSync": "2026-10-14T14:09:22.786Z",
+    "updatedAt": "2026-10-14T14:09:22.786Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -90,6 +90,10 @@
     {
       "id": "id_ivlfl8dxmuzhww4p",
       "name": "MAXPRINT"
+    },
+    {
+      "id": "id_hgf6063qmv86roxr",
+      "name": "Acrilex"
     }
   ],
   "locations": [
