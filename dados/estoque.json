@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-14T14:09:43.325Z",
-    "updatedAt": "2026-10-14T14:09:43.325Z",
+    "lastSync": "2026-10-14T14:10:04.490Z",
+    "updatedAt": "2026-10-14T14:10:04.490Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -98,6 +98,10 @@
     {
       "id": "id_3a9p19v3mv86s4xi",
       "name": "Jocar Office"
+    },
+    {
+      "id": "id_fgpc8hj9mv86skxb",
+      "name": "Master Print"
     }
   ],
   "locations": [
