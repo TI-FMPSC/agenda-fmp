@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T01:08:15.853Z",
+  "updatedAt": "2026-10-14T01:10:01.101Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7057,6 +7057,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 4ª Fase · Tatiani Schmitt. · 2026-10-14 · 18:50–22:00 · Laboratório 03"
+    },
+    {
+      "id": "5338c9e9-c40e-4c32-9c67-bf072942b194",
+      "timestamp": "2026-10-14T01:10:00.391Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "PRÉ-AULA - NEABI · Marcus B. O. Silveira · 2026-10-14 · 18:00–18:50 · Laboratório 03"
     }
   ]
 }
