@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T14:31:49.010Z",
+  "updatedAt": "2026-10-14T14:32:21.591Z",
   "vehicles": [
     {
       "id": "eed8b108-da02-4bb2-91cc-3a9907dae344",
@@ -58,6 +58,15 @@
       "category": "Pedagogia",
       "createdAt": "2026-10-14T10:33:01.275Z",
       "updatedAt": "2026-10-14T10:33:01.275Z"
+    },
+    {
+      "id": "f174ec26-5abc-4b01-92e3-a909efb94373",
+      "owner": "Leandro Pickler",
+      "phone": "48999416559",
+      "plate": "TPP2C42",
+      "category": "Funcionário FMP",
+      "createdAt": "2026-10-14T14:32:21.572Z",
+      "updatedAt": "2026-10-14T14:32:21.572Z"
     }
   ]
 }
