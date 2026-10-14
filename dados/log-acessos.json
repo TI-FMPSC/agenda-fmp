@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T14:09:11.751Z",
+  "updatedAt": "2026-10-14T14:11:02.777Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7255,6 +7255,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Ajuste · 41 · Cola grande · quantidade 4 · saldo 4"
+    },
+    {
+      "id": "7b533d87-4098-4afb-a38b-7b8a57fa88e6",
+      "timestamp": "2026-10-14T14:11:02.251Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Ajuste · 43 · Corretivo líquido · quantidade 20 · saldo 20"
     }
   ]
 }
