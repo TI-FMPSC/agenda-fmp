@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T19:36:35.470Z",
+  "updatedAt": "2026-10-14T19:44:18.807Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7444,6 +7444,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "ESTÁGIO · Ana Lucia Machado · 2026-10-14 · 18:50–22:00 · Laboratório 04"
+    },
+    {
+      "id": "e4a717ef-d8af-49f4-9343-5745fe842e0f",
+      "timestamp": "2026-10-14T19:44:18.225Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "PRÉ-AULA · Juliana C. Müller · 2026-10-15 · 18:00–18:50 · Auditório"
     }
   ]
 }
