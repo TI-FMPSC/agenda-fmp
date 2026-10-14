@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T16:20:07.465Z",
+  "updatedAt": "2026-10-14T16:21:32.939Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7408,6 +7408,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "fb7f67c9-2a5c-4faf-9b3a-fefd8c89ca3b",
+      "timestamp": "2026-10-14T16:21:32.284Z",
+      "username": "leandropickler",
+      "name": "Leandro Pickler",
+      "action": "Atualiza veículo",
+      "module": "Veículos",
+      "details": "MKY6I08 · Profesora Tati · (48) 99999-9999 · Administração"
     }
   ]
 }
