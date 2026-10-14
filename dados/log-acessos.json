@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T16:35:13.427Z",
+  "updatedAt": "2026-10-14T18:41:43.567Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7426,6 +7426,15 @@
       "action": "Atualiza veículo",
       "module": "Veículos",
       "details": "QJK8C48 · PROFESSORA GRAZI · (48) 99999-9999 · Pedagogia"
+    },
+    {
+      "id": "3ad3aada-2011-4ad2-8b62-3f89a39a3724",
+      "timestamp": "2026-10-14T18:41:42.729Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
