@@ -1,5 +1,14 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T02:12:25.000Z",
-  "vehicles": []
+  "updatedAt": "2026-10-14T10:28:51.459Z",
+  "vehicles": [
+    {
+      "id": "da82696e-bdd2-4975-984b-bcf1004380b7",
+      "owner": "PROFESSORA FERNANDA SANCHEZ",
+      "plate": "RUF6H80",
+      "category": "Processos Gerenciais (TPG)",
+      "createdAt": "2026-10-14T10:28:51.446Z",
+      "updatedAt": "2026-10-14T10:28:51.446Z"
+    }
+  ]
 }
