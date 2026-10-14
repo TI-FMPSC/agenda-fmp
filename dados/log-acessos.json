@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T10:30:54.740Z",
+  "updatedAt": "2026-10-14T10:33:03.998Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7147,6 +7147,15 @@
       "action": "Cadastra veículo",
       "module": "Veículos",
       "details": "FNN7J94 · 1ª FASE TPG · Processos Gerenciais (TPG)"
+    },
+    {
+      "id": "6b852922-4bf7-460b-96ac-89b1587cc6f9",
+      "timestamp": "2026-10-14T10:33:02.687Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra veículo",
+      "module": "Veículos",
+      "details": "STV1B43 · VINICIUS DA BRINQUEDOTECA · Pedagogia"
     }
   ]
 }
