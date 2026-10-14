@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T16:21:32.939Z",
+  "updatedAt": "2026-10-14T16:35:13.427Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7417,6 +7417,15 @@
       "action": "Atualiza veículo",
       "module": "Veículos",
       "details": "MKY6I08 · Profesora Tati · (48) 99999-9999 · Administração"
+    },
+    {
+      "id": "a5507680-75f4-489e-8902-c45094ec3f08",
+      "timestamp": "2026-10-14T16:35:12.163Z",
+      "username": "leandropickler",
+      "name": "Leandro Pickler",
+      "action": "Atualiza veículo",
+      "module": "Veículos",
+      "details": "QJK8C48 · PROFESSORA GRAZI · (48) 99999-9999 · Pedagogia"
     }
   ]
 }
