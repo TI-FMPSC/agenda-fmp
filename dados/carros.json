@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T10:33:01.294Z",
+  "updatedAt": "2026-10-14T10:35:04.046Z",
   "vehicles": [
     {
       "id": "eed8b108-da02-4bb2-91cc-3a9907dae344",
@@ -9,6 +9,14 @@
       "category": "Processos Gerenciais (TPG)",
       "createdAt": "2026-10-14T10:30:51.870Z",
       "updatedAt": "2026-10-14T10:30:51.870Z"
+    },
+    {
+      "id": "2fd75f7e-eb7c-4a08-945b-064edae7e40e",
+      "owner": "GRAZI",
+      "plate": "QJK8C48",
+      "category": "Administração",
+      "createdAt": "2026-10-14T10:35:04.026Z",
+      "updatedAt": "2026-10-14T10:35:04.026Z"
     },
     {
       "id": "da82696e-bdd2-4975-984b-bcf1004380b7",
