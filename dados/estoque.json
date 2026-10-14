@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-14T14:09:22.786Z",
-    "updatedAt": "2026-10-14T14:09:22.786Z",
+    "lastSync": "2026-10-14T14:09:43.325Z",
+    "updatedAt": "2026-10-14T14:09:43.325Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -94,6 +94,10 @@
     {
       "id": "id_hgf6063qmv86roxr",
       "name": "Acrilex"
+    },
+    {
+      "id": "id_3a9p19v3mv86s4xi",
+      "name": "Jocar Office"
     }
   ],
   "locations": [
