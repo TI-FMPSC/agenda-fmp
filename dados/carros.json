@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T10:41:19.791Z",
+  "updatedAt": "2026-10-14T11:06:45.677Z",
   "vehicles": [
     {
       "id": "eed8b108-da02-4bb2-91cc-3a9907dae344",
@@ -40,7 +40,7 @@
       "plate": "RUF6H80",
       "category": "Processos Gerenciais (TPG)",
       "createdAt": "2026-10-14T10:28:51.446Z",
-      "updatedAt": "2026-10-14T10:28:51.446Z"
+      "updatedAt": "2026-10-14T11:06:45.662Z"
     },
     {
       "id": "c6b68229-7a69-46a3-9449-4c2dd35c3220",
