@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-14T00:59:52.868Z",
+  "updatedAt": "2026-10-14T01:02:20.461Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -6227,6 +6227,20 @@
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: SALA 16: MATURIDADE (13:30-17:30)",
       "customSpaceName": "Sala 16"
+    },
+    {
+      "id": "a0613f4c-51a2-45d0-91b3-fc5a990b0b97",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Juliana C. Müller",
+      "purpose": "CINE DEBATE",
+      "startTime": "18:00",
+      "endTime": "20:20",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-14"
     },
     {
       "id": "2173c5c6-cfff-5c1d-98fe-358df670535e",
