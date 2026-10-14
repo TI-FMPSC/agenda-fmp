@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T18:41:43.567Z",
+  "updatedAt": "2026-10-14T19:36:35.470Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7435,6 +7435,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "bded20ea-1538-40f0-b76b-cd8b09f71b48",
+      "timestamp": "2026-10-14T19:36:34.987Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "ESTÁGIO · Ana Lucia Machado · 2026-10-14 · 18:50–22:00 · Laboratório 04"
     }
   ]
 }
