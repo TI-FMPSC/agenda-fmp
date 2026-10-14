@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T14:34:43.540Z",
+  "updatedAt": "2026-10-14T16:15:38.306Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7363,6 +7363,15 @@
       "action": "Cadastra veículo",
       "module": "Veículos",
       "details": "QHV9A84 · Amanda França · (48) 98429-3736 · Funcionário FMP"
+    },
+    {
+      "id": "4455f78b-8195-4b72-9c6e-a557a6adfead",
+      "timestamp": "2026-10-14T16:15:37.291Z",
+      "username": "leandropickler",
+      "name": "Leandro Pickler",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
