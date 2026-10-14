@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-14T13:55:40.076Z",
-    "updatedAt": "2026-10-14T13:55:40.076Z",
+    "lastSync": "2026-10-14T14:08:09.435Z",
+    "updatedAt": "2026-10-14T14:08:09.435Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -767,24 +767,6 @@
       "status": "active",
       "barcode": "",
       "description": "Especificação: caixa | Tamanho/apresentação: caixas com 440 unid cada",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
-    },
-    {
-      "id": "mat_esc_029",
-      "code": "36",
-      "name": "Cola Bastão",
-      "categoryId": "cat_escritorio",
-      "unit": "FRD",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": "",
-      "currentStock": 3,
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Especificação: 40g | Tamanho/apresentação: com 6 unidades cada",
       "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
