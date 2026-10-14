@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T14:32:21.591Z",
+  "updatedAt": "2026-10-14T14:34:39.935Z",
   "vehicles": [
     {
       "id": "eed8b108-da02-4bb2-91cc-3a9907dae344",
@@ -34,6 +34,15 @@
       "category": "Análise e Desenvolvimento de Sistemas (ADS)",
       "createdAt": "2026-10-14T10:39:35.627Z",
       "updatedAt": "2026-10-14T10:39:35.627Z"
+    },
+    {
+      "id": "25575f52-32be-453f-abd5-2111950c9069",
+      "owner": "Amanda França",
+      "phone": "48984293736",
+      "plate": "QHV9A84",
+      "category": "Funcionário FMP",
+      "createdAt": "2026-10-14T14:34:39.917Z",
+      "updatedAt": "2026-10-14T14:34:39.917Z"
     },
     {
       "id": "2fd75f7e-eb7c-4a08-945b-064edae7e40e",
