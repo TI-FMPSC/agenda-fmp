@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-14T01:02:20.461Z",
+  "updatedAt": "2026-10-14T01:05:43.405Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -6212,6 +6212,20 @@
       "purpose": "2ª TPG/ADS",
       "startTime": "09:45",
       "endTime": "11:45",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-14"
+    },
+    {
+      "id": "b99c4012-2e32-4357-b90c-9793abba9382",
+      "spaceCategory": "lab",
+      "resourceId": "lab1",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": ".",
+      "purpose": "MARKETING",
+      "startTime": "11:10",
+      "endTime": "12:00",
       "status": "confirmed",
       "notes": "",
       "date": "2026-10-14"
