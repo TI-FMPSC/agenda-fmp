@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T10:23:28.968Z",
+  "updatedAt": "2026-10-14T10:28:54.826Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7129,6 +7129,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "45a82b3b-b648-46bd-b2cb-2a001fcc7cf1",
+      "timestamp": "2026-10-14T10:28:54.108Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra veículo",
+      "module": "Veículos",
+      "details": "RUF6H80 · PROFESSORA FERNANDA SANCHEZ · Processos Gerenciais (TPG)"
     }
   ]
 }
