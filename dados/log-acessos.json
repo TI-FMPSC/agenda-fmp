@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T10:56:43.296Z",
+  "updatedAt": "2026-10-14T11:06:48.269Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7192,6 +7192,15 @@
       "action": "Valida integração com GitHub",
       "module": "Configurações",
       "details": "TI-FMPSC/agenda-fmp · token com gravação confirmada"
+    },
+    {
+      "id": "1d367706-3341-4445-bf18-003cdae29abd",
+      "timestamp": "2026-10-14T11:06:47.278Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza veículo",
+      "module": "Veículos",
+      "details": "RUF6H80 · PROFESSORA FERNANDA SANCHEZ · Processos Gerenciais (TPG)"
     }
   ]
 }
