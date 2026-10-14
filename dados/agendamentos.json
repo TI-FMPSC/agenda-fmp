@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-14T19:44:14.159Z",
+  "updatedAt": "2026-10-14T20:15:06.068Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -6565,6 +6565,21 @@
       "purpose": "FORMAÇÃO DOS COORDENADORES DE PRÉDIO CONCURSO",
       "startTime": "11:00",
       "endTime": "18:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-16"
+    },
+    {
+      "id": "b61267b6-e920-4bc4-b6d2-1d05ce232393",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:sala-17",
+      "customSpaceName": "Sala 17",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Marcus B. O. Silveira",
+      "purpose": "PRÉ-AULA",
+      "startTime": "16:30",
+      "endTime": "18:50",
       "status": "confirmed",
       "notes": "",
       "date": "2026-10-16"
