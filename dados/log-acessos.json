@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T13:54:01.355Z",
+  "updatedAt": "2026-10-14T14:08:32.828Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7237,6 +7237,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "62 · Fita Larga Parda FINA"
+    },
+    {
+      "id": "3aa24b37-d934-469c-b31d-8e936a762cff",
+      "timestamp": "2026-10-14T14:08:32.784Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Ajuste · 37 · Cola Bastão · quantidade 17 · saldo 17"
     }
   ]
 }
