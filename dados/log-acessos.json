@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T11:06:48.269Z",
+  "updatedAt": "2026-10-14T11:14:07.858Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7201,6 +7201,15 @@
       "action": "Atualiza veículo",
       "module": "Veículos",
       "details": "RUF6H80 · PROFESSORA FERNANDA SANCHEZ · Processos Gerenciais (TPG)"
+    },
+    {
+      "id": "f35d5c29-5209-46b4-800e-2d67e276ebd7",
+      "timestamp": "2026-10-14T11:14:06.854Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
