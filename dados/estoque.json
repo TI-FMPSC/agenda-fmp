@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-14T14:10:04.490Z",
-    "updatedAt": "2026-10-14T14:10:04.490Z",
+    "lastSync": "2026-10-14T14:11:05.550Z",
+    "updatedAt": "2026-10-14T14:11:05.550Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -882,14 +882,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 7,
+      "currentStock": 20,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Marca: 18 ml | Tamanho/apresentação: unidades soltas",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-14"
     },
     {
       "id": "mat_esc_036",
@@ -6256,6 +6256,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-14T14:09:11.201Z"
+    },
+    {
+      "id": "id_otp8718wmv86tuhb",
+      "materialId": "mat_esc_035",
+      "type": "ajuste",
+      "date": "2026-10-14",
+      "quantity": 20,
+      "unitCost": 0,
+      "previousStock": 7,
+      "newStock": 20,
+      "effect": 13,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-14T14:11:02.159Z"
     }
   ],
   "users": [],
