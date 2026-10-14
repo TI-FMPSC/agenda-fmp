@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-14T13:55:01.736Z",
-    "updatedAt": "2026-10-14T13:55:01.736Z",
+    "lastSync": "2026-10-14T13:55:40.076Z",
+    "updatedAt": "2026-10-14T13:55:40.076Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1190,10 +1190,10 @@
       "code": "63",
       "name": "Fita Larga Parda LARGA",
       "categoryId": "cat_escritorio",
-      "unit": "FRD",
+      "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 5,
       "currentStock": 9,
       "avgCost": "",
       "status": "active",
