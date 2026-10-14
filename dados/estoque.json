@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-14T13:32:25.356Z",
-    "updatedAt": "2026-10-14T13:32:25.356Z",
+    "lastSync": "2026-10-14T13:54:01.692Z",
+    "updatedAt": "2026-10-14T13:54:01.692Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1208,10 +1208,10 @@
       "code": "62",
       "name": "Fita Larga Parda FINA",
       "categoryId": "cat_escritorio",
-      "unit": "FRD",
+      "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 5,
       "currentStock": 1,
       "avgCost": "",
       "status": "active",
@@ -1219,7 +1219,7 @@
       "description": "Tamanho/apresentação: com 12 unidades cada",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-14"
     },
     {
       "id": "mat_esc_054",
