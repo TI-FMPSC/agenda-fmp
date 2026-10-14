@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T14:31:51.611Z",
+  "updatedAt": "2026-10-14T14:32:24.094Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7345,6 +7345,15 @@
       "action": "Cadastra veículo",
       "module": "Veículos",
       "details": "FTT6C72 · Leandro Pickler · (48) 99941-6559 · Funcionário FMP"
+    },
+    {
+      "id": "43481f99-81c5-4f43-bf27-beea5c1e0588",
+      "timestamp": "2026-10-14T14:32:23.521Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra veículo",
+      "module": "Veículos",
+      "details": "TPP2C42 · Leandro Pickler · (48) 99941-6559 · Funcionário FMP"
     }
   ]
 }
