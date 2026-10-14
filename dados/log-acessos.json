@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T19:44:18.807Z",
+  "updatedAt": "2026-10-14T20:15:11.240Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7453,6 +7453,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "PRÉ-AULA · Juliana C. Müller · 2026-10-15 · 18:00–18:50 · Auditório"
+    },
+    {
+      "id": "9cf6a17e-dbb2-4cbb-b2ad-f5c0f26dc200",
+      "timestamp": "2026-10-14T20:15:10.344Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "PRÉ-AULA · Marcus B. O. Silveira · 2026-10-16 · 16:30–18:50 · Sala 17"
     }
   ]
 }
