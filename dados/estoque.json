@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-14T14:11:05.550Z",
-    "updatedAt": "2026-10-14T14:11:05.550Z",
+    "lastSync": "2026-10-14T14:13:50.776Z",
+    "updatedAt": "2026-10-14T14:13:50.776Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1098,14 +1098,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 4,
+      "currentStock": 1,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 5 mm x 6m | Tamanho/apresentação: com 12 unidades cada",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-14"
     },
     {
       "id": "mat_esc_048",
@@ -6272,6 +6272,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-14T14:11:02.159Z"
+    },
+    {
+      "id": "id_p9rkdtuimv86xfy1",
+      "materialId": "mat_esc_047",
+      "type": "ajuste",
+      "date": "2026-10-14",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 4,
+      "newStock": 1,
+      "effect": -3,
+      "sector": "",
+      "document": "",
+      "notes": "Ajuste",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-14T14:13:49.945Z"
     }
   ],
   "users": [],
