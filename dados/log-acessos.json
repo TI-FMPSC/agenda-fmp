@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T10:35:06.210Z",
+  "updatedAt": "2026-10-14T10:39:37.873Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7165,6 +7165,15 @@
       "action": "Cadastra veículo",
       "module": "Veículos",
       "details": "QJK8C48 · GRAZI · Administração"
+    },
+    {
+      "id": "46600b00-f4d6-4eda-9e06-9183900c8b3c",
+      "timestamp": "2026-10-14T10:39:36.998Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra veículo",
+      "module": "Veículos",
+      "details": "MLI7F60 · 1ª fase ads · Análise e Desenvolvimento de Sistemas (ADS)"
     }
   ]
 }
