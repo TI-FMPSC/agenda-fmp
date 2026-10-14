@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-14T14:08:09.435Z",
-    "updatedAt": "2026-10-14T14:08:09.435Z",
+    "lastSync": "2026-10-14T14:08:35.644Z",
+    "updatedAt": "2026-10-14T14:08:35.644Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -780,14 +780,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 3,
+      "currentStock": 17,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 40g | Tamanho/apresentação: unidades soltas",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-14"
     },
     {
       "id": "mat_esc_031",
@@ -6212,6 +6212,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-14T13:55:00.605Z"
+    },
+    {
+      "id": "id_owkj6bngmv86qn5s",
+      "materialId": "mat_esc_030",
+      "type": "ajuste",
+      "date": "2026-10-14",
+      "quantity": 17,
+      "unitCost": 0,
+      "previousStock": 3,
+      "newStock": 17,
+      "effect": 14,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-14T14:08:32.704Z"
     }
   ],
   "users": [],
