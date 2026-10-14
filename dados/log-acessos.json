@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T10:39:37.873Z",
+  "updatedAt": "2026-10-14T10:41:22.374Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7174,6 +7174,15 @@
       "action": "Cadastra veículo",
       "module": "Veículos",
       "details": "MLI7F60 · 1ª fase ads · Análise e Desenvolvimento de Sistemas (ADS)"
+    },
+    {
+      "id": "37340db1-2b6e-47a8-a4ee-181fcaeb1aa1",
+      "timestamp": "2026-10-14T10:41:22.004Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra veículo",
+      "module": "Veículos",
+      "details": "MKY6I08 · profesora tati · Administração"
     }
   ]
 }
