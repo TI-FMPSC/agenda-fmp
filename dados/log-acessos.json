@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T14:08:32.828Z",
+  "updatedAt": "2026-10-14T14:09:11.751Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7246,6 +7246,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Ajuste · 37 · Cola Bastão · quantidade 17 · saldo 17"
+    },
+    {
+      "id": "58181651-3f6d-4545-8741-7dfa90bad8c7",
+      "timestamp": "2026-10-14T14:09:11.288Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Ajuste · 41 · Cola grande · quantidade 4 · saldo 4"
     }
   ]
 }
