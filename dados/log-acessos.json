@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T10:41:22.374Z",
+  "updatedAt": "2026-10-14T10:56:43.296Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7183,6 +7183,15 @@
       "action": "Cadastra veículo",
       "module": "Veículos",
       "details": "MKY6I08 · profesora tati · Administração"
+    },
+    {
+      "id": "e679dcd6-c643-4e8e-91ed-2d3ab45fe836",
+      "timestamp": "2026-10-14T10:56:42.890Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Valida integração com GitHub",
+      "module": "Configurações",
+      "details": "TI-FMPSC/agenda-fmp · token com gravação confirmada"
     }
   ]
 }
