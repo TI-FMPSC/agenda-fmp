@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T12:30:08.373Z",
+  "updatedAt": "2026-10-14T13:54:01.355Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7228,6 +7228,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 66 · Folhas A4 Padrão · quantidade 1 · saldo 2"
+    },
+    {
+      "id": "96a6a20c-032e-408f-ba81-5b008b0921a4",
+      "timestamp": "2026-10-14T13:54:00.671Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "62 · Fita Larga Parda FINA"
     }
   ]
 }
