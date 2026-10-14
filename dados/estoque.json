@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-14T14:08:35.644Z",
-    "updatedAt": "2026-10-14T14:08:35.644Z",
+    "lastSync": "2026-10-14T14:09:15.095Z",
+    "updatedAt": "2026-10-14T14:09:15.095Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -888,14 +888,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 5,
+      "currentStock": 4,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Marca: 1 kg | Tamanho/apresentação: unidades",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-14"
     },
     {
       "id": "mat_esc_037",
@@ -6228,6 +6228,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-14T14:08:32.704Z"
+    },
+    {
+      "id": "id_0datinnmmv86rgv4",
+      "materialId": "mat_esc_036",
+      "type": "ajuste",
+      "date": "2026-10-14",
+      "quantity": 4,
+      "unitCost": 0,
+      "previousStock": 5,
+      "newStock": 4,
+      "effect": -1,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-14T14:09:11.201Z"
     }
   ],
   "users": [],
