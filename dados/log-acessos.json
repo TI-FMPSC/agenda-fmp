@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-14T01:10:01.101Z",
+  "updatedAt": "2026-10-14T02:07:40.872Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7066,6 +7066,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "PRÉ-AULA - NEABI · Marcus B. O. Silveira · 2026-10-14 · 18:00–18:50 · Laboratório 03"
+    },
+    {
+      "id": "e843a61d-6e27-4777-a34c-fd41bd103713",
+      "timestamp": "2026-10-14T02:07:40.012Z",
+      "username": "leandropickler",
+      "name": "Leandro Pickler",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
