@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-15T00:10:11.714Z",
+  "updatedAt": "2026-10-15T00:10:58.202Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -7046,6 +7046,20 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: AVALIAÇÃO CPA"
+    },
+    {
+      "id": "b9558004-0b9c-49e7-aae4-f748aab9ac26",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Juliane P. Q. Odinino",
+      "purpose": "Pedagogia — 3ª Fase",
+      "startTime": "20:30",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-21"
     },
     {
       "id": "47b8041b-a307-53b1-8fae-990afe7e9d27",
