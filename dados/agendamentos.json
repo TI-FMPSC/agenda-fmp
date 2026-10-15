@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-15T00:10:58.202Z",
+  "updatedAt": "2026-10-15T00:20:33.572Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -7046,6 +7046,21 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: AVALIAÇÃO CPA"
+    },
+    {
+      "id": "16bebc6d-88c9-47a1-a224-d57d269dffc4",
+      "spaceCategory": "lab",
+      "resourceId": "custom:quadra-laranja-caixa-de-som-microfone",
+      "customSpaceName": "QUADRA LARANJA (CAIXA DE SOM + MICROFONE)",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Juliane P. Q. Odinino",
+      "purpose": "Pedagogia — 3ª Fase",
+      "startTime": "19:00",
+      "endTime": "20:30",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-21"
     },
     {
       "id": "b9558004-0b9c-49e7-aae4-f748aab9ac26",
