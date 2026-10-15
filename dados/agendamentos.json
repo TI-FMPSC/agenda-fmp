@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-15T00:20:33.572Z",
+  "updatedAt": "2026-10-15T00:33:46.207Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8848,6 +8848,21 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: LEANDRO"
+    },
+    {
+      "id": "c03f9761-145e-4991-99ce-311349954c00",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:quadra-laranja-caixa-de-som-microfone-24-mesas-02-sofas-01-note-02-ext",
+      "customSpaceName": "QUADRA LARANJA (CAIXA DE SOM + MICROFONE + 24 MESAS + 02 SOFÁS + 01 NOTE + 02 EXTENSÕES )",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Carlos A. A. Junior",
+      "purpose": "",
+      "startTime": "08:00",
+      "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-13"
     },
     {
       "id": "b51e3c71-e972-5d5e-a564-0d77d4ee203b",
