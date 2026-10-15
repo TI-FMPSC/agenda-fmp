@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-15T00:33:46.207Z",
+  "updatedAt": "2026-10-15T00:42:35.573Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -7590,6 +7590,20 @@
       "purpose": "GERAR",
       "startTime": "08:00",
       "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-28"
+    },
+    {
+      "id": "3bfeef28-2a10-4066-82b5-d65976cd2879",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "COPER",
+      "purpose": "FORMATURA DO CURSO MARKETING DIGITAL - COPER",
+      "startTime": "11:00",
+      "endTime": "12:00",
       "status": "confirmed",
       "notes": "",
       "date": "2026-10-28"
