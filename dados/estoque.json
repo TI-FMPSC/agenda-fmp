@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-14T14:13:50.776Z",
-    "updatedAt": "2026-10-14T14:13:50.776Z",
+    "lastSync": "2026-10-15T14:14:04.673Z",
+    "updatedAt": "2026-10-15T14:14:04.673Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2687,24 +2687,6 @@
       "status": "active",
       "barcode": "",
       "description": "Especificação: unidade | Marca: Tipo Látex | Tamanho/apresentação: caixa",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
-    },
-    {
-      "id": "mat_lim_004",
-      "code": "91",
-      "name": "Limpa Vidros com alcool uso geral",
-      "categoryId": "cat_limpeza",
-      "unit": "ML",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": "",
-      "currentStock": 1,
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Marca: SEBOLD | Tamanho/apresentação: 500ML | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
