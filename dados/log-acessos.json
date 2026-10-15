@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-15T00:20:36.464Z",
+  "updatedAt": "2026-10-15T00:33:48.724Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7498,6 +7498,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 3ª Fase · Juliane P. Q. Odinino · 2026-10-21 · 19:00–20:30 · QUADRA LARANJA (CAIXA DE SOM + MICROFONE)"
+    },
+    {
+      "id": "0c3134bd-1c9e-4d84-952b-b71fcb328464",
+      "timestamp": "2026-10-15T00:33:48.278Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": " · Carlos A. A. Junior · 2026-11-13 · 08:00–11:10 · QUADRA LARANJA (CAIXA DE SOM + MICROFONE + 24 MESAS + 02 SOFÁS + 01 NOTE + 02 EXTENSÕES )"
     }
   ]
 }
