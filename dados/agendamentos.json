@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-14T20:15:06.068Z",
+  "updatedAt": "2026-10-15T00:10:11.714Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -6977,6 +6977,20 @@
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: SALA 16: MATURIDADE (13:30-17:30)",
       "customSpaceName": "Sala 16"
+    },
+    {
+      "id": "ac3095e2-c1a6-4677-8f54-2b1150fb1ac8",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Juliana C. Müller",
+      "purpose": "Pedagogia — 5ª Fase",
+      "startTime": "18:00",
+      "endTime": "20:20",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-21"
     },
     {
       "id": "414aafbe-44bf-588e-92d3-9cb87e740d76",
