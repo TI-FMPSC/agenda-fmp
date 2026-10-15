@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-15T00:10:15.992Z",
+  "updatedAt": "2026-10-15T00:11:01.569Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7480,6 +7480,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 5ª Fase · Juliana C. Müller · 2026-10-21 · 18:00–20:20 · Auditório"
+    },
+    {
+      "id": "e46db5ba-87ab-4325-8f52-6d90041cff4a",
+      "timestamp": "2026-10-15T00:11:00.879Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 3ª Fase · Juliane P. Q. Odinino · 2026-10-21 · 20:30–22:00 · Auditório"
     }
   ]
 }
