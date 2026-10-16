@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-16T12:03:35.145Z",
-    "updatedAt": "2026-10-16T12:03:35.145Z",
+    "lastSync": "2026-10-16T12:04:04.398Z",
+    "updatedAt": "2026-10-16T12:04:04.398Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -228,12 +228,12 @@
     {
       "id": "mat_epi_005",
       "code": "98",
-      "name": "Luva Látex",
+      "name": "Luva Látex G",
       "categoryId": "cat_epis",
       "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 5,
       "currentStock": 10,
       "avgCost": "",
       "status": "active",
@@ -241,7 +241,7 @@
       "description": "Especificação: TAMANHO G | Tamanho/apresentação: 10 CAIXAS",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-16"
     },
     {
       "id": "mat_epi_006",
