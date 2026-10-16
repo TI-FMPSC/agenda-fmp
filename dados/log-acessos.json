@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-16T20:48:28.341Z",
+  "updatedAt": "2026-10-16T21:07:05.373Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7588,6 +7588,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "a44ecbb7-f31e-41cc-99e8-4748ab6dba82",
+      "timestamp": "2026-10-16T21:07:04.493Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "FORMAÇÃO COORDENADORES DE PRÉDIO DO PROCESSO SELETIVO ACT EDUCAÇÃO · Verra · 2026-11-06 · 18:50–22:00 · Auditório"
     }
   ]
 }
