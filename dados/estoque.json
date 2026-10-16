@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-15T14:14:21.370Z",
-    "updatedAt": "2026-10-15T14:14:21.370Z",
+    "lastSync": "2026-10-16T11:58:20.320Z",
+    "updatedAt": "2026-10-16T11:58:20.320Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -144,14 +144,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 39,
+      "currentStock": 38,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Marca: OURO TRADICIONAL | Tamanho/apresentação: 500GRAMAS | Observações: Lú retirou um em 11/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-10-07"
+      "updatedAt": "2026-10-16"
     },
     {
       "id": "mat_epi_001",
@@ -6286,6 +6286,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-15T14:14:19.966Z"
+    },
+    {
+      "id": "id_g6agwlc9mvawyvjj",
+      "materialId": "mat_cop_001",
+      "type": "saida",
+      "date": "2026-10-16",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 39,
+      "newStock": 38,
+      "effect": -1,
+      "sector": "Mari",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-16T11:58:19.183Z"
     }
   ],
   "users": [],
