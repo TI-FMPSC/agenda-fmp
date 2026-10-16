@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-16T12:04:45.321Z",
-    "updatedAt": "2026-10-16T12:04:45.321Z",
+    "lastSync": "2026-10-16T12:04:58.178Z",
+    "updatedAt": "2026-10-16T12:04:58.178Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -194,7 +194,7 @@
       "code": "96",
       "name": "Luva Látex P",
       "categoryId": "cat_epis",
-      "unit": "CX",
+      "unit": "UN",
       "supplierId": "",
       "locationId": "",
       "minStock": 30,
