@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-16T12:06:24.817Z",
-    "updatedAt": "2026-10-16T12:06:24.817Z",
+    "lastSync": "2026-10-16T12:07:01.653Z",
+    "updatedAt": "2026-10-16T12:07:01.653Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -198,7 +198,7 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 30,
-      "currentStock": 73,
+      "currentStock": 69,
       "avgCost": "",
       "status": "active",
       "barcode": "",
@@ -6334,6 +6334,22 @@
       "notes": "Amanda para distribuição equipe ASO em 16/10.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-16T12:06:21.614Z"
+    },
+    {
+      "id": "id_v58zox0tmvaxa1u7",
+      "materialId": "mat_epi_003",
+      "type": "saida",
+      "date": "2026-10-16",
+      "quantity": 4,
+      "unitCost": 0,
+      "previousStock": 73,
+      "newStock": 69,
+      "effect": -4,
+      "sector": "Amanda /ADM",
+      "document": "",
+      "notes": "Amanda para distribuição equipe ASO em 16/10.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-16T12:07:00.559Z"
     }
   ],
   "users": [],
