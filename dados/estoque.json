@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-16T11:59:00.078Z",
-    "updatedAt": "2026-10-16T11:59:00.078Z",
+    "lastSync": "2026-10-16T12:03:35.145Z",
+    "updatedAt": "2026-10-16T12:03:35.145Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -192,12 +192,12 @@
     {
       "id": "mat_epi_003",
       "code": "96",
-      "name": "Luva Látex",
+      "name": "Luva Látex P",
       "categoryId": "cat_epis",
       "unit": "CX",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 30,
       "currentStock": 73,
       "avgCost": "",
       "status": "active",
@@ -205,7 +205,7 @@
       "description": "Especificação: TAMANHO P | Tamanho/apresentação: 73 CAIXAS",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-16"
     },
     {
       "id": "mat_epi_004",
