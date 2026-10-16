@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-16T12:06:22.522Z",
+  "updatedAt": "2026-10-16T12:07:30.139Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7570,6 +7570,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 98 · Luva Látex G · quantidade 2 · saldo 8"
+    },
+    {
+      "id": "22d942ec-df7b-4993-a343-d3e4967411f6",
+      "timestamp": "2026-10-16T12:07:29.696Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 97 · Luva Látex M · quantidade 4 · saldo 31"
     }
   ]
 }
