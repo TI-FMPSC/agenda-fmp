@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-15T00:42:35.573Z",
+  "updatedAt": "2026-10-16T01:16:42.842Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -6605,6 +6605,20 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: BOFF"
+    },
+    {
+      "id": "a6d165c8-a2c6-4ee9-85fe-8d8b26aa0342",
+      "spaceCategory": "lab",
+      "resourceId": "lab2",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Mariane R. Estefano",
+      "purpose": "PÓS-GRADUAÇÃO",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-16"
     },
     {
       "id": "f0e67be6-c21a-5820-9ccc-93bccfba41ba",
