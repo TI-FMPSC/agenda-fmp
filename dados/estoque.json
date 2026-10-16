@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-16T11:58:20.320Z",
-    "updatedAt": "2026-10-16T11:58:20.320Z",
+    "lastSync": "2026-10-16T11:59:00.078Z",
+    "updatedAt": "2026-10-16T11:59:00.078Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2754,14 +2754,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 5,
-      "currentStock": 23,
+      "currentStock": 22,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "",
       "expirationDate": "",
       "createdAt": "2026-10-07",
-      "updatedAt": "2026-10-07"
+      "updatedAt": "2026-10-16"
     },
     {
       "id": "id_nr5sx2znmuy49rxh",
@@ -6302,6 +6302,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-16T11:58:19.183Z"
+    },
+    {
+      "id": "id_1uyppjcpmvawzqdr",
+      "materialId": "id_vj525m9amuy48tu9",
+      "type": "saida",
+      "date": "2026-10-14",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 23,
+      "newStock": 22,
+      "effect": -1,
+      "sector": "Cristian",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-16T11:58:59.151Z"
     }
   ],
   "users": [],
