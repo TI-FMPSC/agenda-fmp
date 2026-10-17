@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-17T00:27:58.318Z",
+  "updatedAt": "2026-10-17T00:30:23.633Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -6712,6 +6712,20 @@
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: phone: FUTASL 17:30-22:00",
       "customSpaceName": "Quadra Azul"
+    },
+    {
+      "id": "f6f559c5-cffe-4da7-96c5-7e0b9fb5b721",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Juliana C. Müller",
+      "purpose": "MOSTRA DE CINEMA INFANTIL",
+      "startTime": "18:00",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-19"
     },
     {
       "id": "fa4e2109-ee2d-5f33-a700-bb258e5976dc",
