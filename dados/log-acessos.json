@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-17T00:30:26.877Z",
+  "updatedAt": "2026-10-17T00:48:55.243Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7615,6 +7615,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "MOSTRA DE CINEMA INFANTIL · Juliana C. Müller · 2026-10-19 · 18:00–22:00 · Auditório"
+    },
+    {
+      "id": "281ec9ae-5297-4927-add7-72e143ec2eb1",
+      "timestamp": "2026-10-17T00:48:54.600Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
