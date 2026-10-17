@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-16T21:07:01.400Z",
+  "updatedAt": "2026-10-17T00:27:58.318Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -6712,17 +6712,6 @@
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: phone: FUTASL 17:30-22:00",
       "customSpaceName": "Quadra Azul"
-    },
-    {
-      "id": "84923ee8-95ed-567a-91ff-c025883fe95e",
-      "resourceId": "auditorio",
-      "responsible": "GABRIELA (PÓS)",
-      "purpose": "GABRIELA (PÓS)",
-      "date": "2026-10-19",
-      "startTime": "19:00",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: GABRIELA (PÓS)"
     },
     {
       "id": "fa4e2109-ee2d-5f33-a700-bb258e5976dc",
