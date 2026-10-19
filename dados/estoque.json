@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-16T12:07:32.608Z",
-    "updatedAt": "2026-10-16T12:07:32.608Z",
+    "lastSync": "2026-10-19T13:40:00.306Z",
+    "updatedAt": "2026-10-19T13:40:00.306Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1988,24 +1988,6 @@
       "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-10-08"
-    },
-    {
-      "id": "mat_man_001",
-      "code": "155",
-      "name": "Ventilador",
-      "categoryId": "cat_manutencao",
-      "unit": "UN",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": "",
-      "currentStock": 8,
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Especificação: ventilador oscilante parede | Marca: Ventisol 6 Pás Preto | Tamanho/apresentação: 50 cm",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
     },
     {
       "id": "mat_man_002",
