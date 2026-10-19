@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-19T13:46:19.840Z",
-    "updatedAt": "2026-10-19T13:46:19.840Z",
+    "lastSync": "2026-10-19T13:48:20.661Z",
+    "updatedAt": "2026-10-19T13:48:20.661Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -3202,6 +3202,24 @@
       "expirationDate": "",
       "createdAt": "2026-10-13",
       "updatedAt": "2026-10-13"
+    },
+    {
+      "id": "id_woryb0yqmvfb7wlz",
+      "code": "182",
+      "name": "Papel Fotográfico",
+      "categoryId": "cat_escritorio",
+      "unit": "UN",
+      "supplierId": "id_ivlfl8dxmuzhww4p",
+      "locationId": "id_4kwagrwsmvfazjfn",
+      "minStock": 5,
+      "currentStock": 20,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "20 unidades / caixas com 50f folhas cada.  :D",
+      "expirationDate": "",
+      "createdAt": "2026-10-19",
+      "updatedAt": "2026-10-19"
     }
   ],
   "movements": [
@@ -6356,6 +6374,22 @@
       "notes": "Amanda para distribuição equipe ASO em 16/10.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-16T12:07:29.589Z"
+    },
+    {
+      "id": "id_7bffxor2mvfb7wlz",
+      "materialId": "id_woryb0yqmvfb7wlz",
+      "type": "entrada",
+      "date": "2026-10-19",
+      "quantity": 20,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 20,
+      "effect": 20,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-19T13:48:19.799Z"
     }
   ],
   "users": [],
