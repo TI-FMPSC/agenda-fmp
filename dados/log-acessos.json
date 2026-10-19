@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-19T11:52:04.513Z",
+  "updatedAt": "2026-10-19T11:52:17.908Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7640,6 +7640,15 @@
       "username": "amandafranca",
       "name": "Amanda",
       "action": "Cadastra veículo",
+      "module": "Veículos",
+      "details": "TPP5F01 · Letícia Dutra ( Professora Ginástica) · (48) 99986-1760 · Ginástica"
+    },
+    {
+      "id": "9f0558cd-e807-410a-aaaf-addd1cb4d2f6",
+      "timestamp": "2026-10-19T11:52:17.300Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza veículo",
       "module": "Veículos",
       "details": "TPP5F01 · Letícia Dutra ( Professora Ginástica) · (48) 99986-1760 · Ginástica"
     }
