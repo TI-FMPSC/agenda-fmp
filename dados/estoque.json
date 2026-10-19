@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-19T13:40:00.306Z",
-    "updatedAt": "2026-10-19T13:40:00.306Z",
+    "lastSync": "2026-10-19T13:41:50.327Z",
+    "updatedAt": "2026-10-19T13:41:50.327Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -132,6 +132,10 @@
     {
       "id": "id_dsj691tamumqg6l8",
       "name": "ALMOXARIFADO EMBAIXO DA ESCADA"
+    },
+    {
+      "id": "id_4kwagrwsmvfazjfn",
+      "name": "Armário Branco | ADM"
     }
   ],
   "materials": [
