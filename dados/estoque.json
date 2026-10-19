@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-19T13:41:52.051Z",
-    "updatedAt": "2026-10-19T13:41:52.051Z",
+    "lastSync": "2026-10-19T13:46:19.840Z",
+    "updatedAt": "2026-10-19T13:46:19.840Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -102,6 +102,10 @@
     {
       "id": "id_fgpc8hj9mv86skxb",
       "name": "Master Print"
+    },
+    {
+      "id": "id_r6aemc4qmvfb5b68",
+      "name": "MasterPrint"
     }
   ],
   "locations": [
