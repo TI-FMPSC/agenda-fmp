@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-19T11:52:17.908Z",
+  "updatedAt": "2026-10-19T13:48:20.549Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7651,6 +7651,15 @@
       "action": "Atualiza veículo",
       "module": "Veículos",
       "details": "TPP5F01 · Letícia Dutra ( Professora Ginástica) · (48) 99986-1760 · Ginástica"
+    },
+    {
+      "id": "7f893e9f-5cb9-46be-b6ad-f87aef82b470",
+      "timestamp": "2026-10-19T13:48:19.997Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra material",
+      "module": "Estoque FMP",
+      "details": "182 · Papel Fotográfico"
     }
   ]
 }
