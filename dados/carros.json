@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-19T11:52:01.805Z",
+  "updatedAt": "2026-10-19T11:52:15.920Z",
   "vehicles": [
     {
       "id": "eed8b108-da02-4bb2-91cc-3a9907dae344",
@@ -66,11 +66,11 @@
       "id": "4e5fade6-71fc-4f94-af6b-1fdc91253b3f",
       "owner": "Letícia Dutra ( Professora Ginástica)",
       "phone": "48999861760",
-      "model": "HB PRATA",
+      "model": "HB20 PRATA",
       "plate": "TPP5F01",
       "category": "Ginástica",
       "createdAt": "2026-10-19T11:52:01.790Z",
-      "updatedAt": "2026-10-19T11:52:01.790Z"
+      "updatedAt": "2026-10-19T11:52:15.903Z"
     }
   ]
 }
