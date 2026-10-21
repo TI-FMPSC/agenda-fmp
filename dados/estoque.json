@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-21T13:24:34.337Z",
-    "updatedAt": "2026-10-21T13:24:34.337Z",
+    "lastSync": "2026-10-21T13:25:36.567Z",
+    "updatedAt": "2026-10-21T13:25:36.567Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1664,14 +1664,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 20,
+      "currentStock": 19,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 100 litros | Tamanho/apresentação: 100 UNIDADES CADA",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-21"
     },
     {
       "id": "mat_lim_016",
@@ -6638,6 +6638,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-21T13:24:33.461Z"
+    },
+    {
+      "id": "id_9mcahzrxmvi5ablm",
+      "materialId": "mat_lim_015",
+      "type": "saida",
+      "date": "2026-10-19",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 20,
+      "newStock": 19,
+      "effect": -1,
+      "sector": "rubrica",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-21T13:25:33.370Z"
     }
   ],
   "users": [],
