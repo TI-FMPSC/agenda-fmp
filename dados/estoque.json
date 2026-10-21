@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-21T15:46:22.088Z",
-    "updatedAt": "2026-10-21T15:46:22.088Z",
+    "lastSync": "2026-10-21T15:48:58.513Z",
+    "updatedAt": "2026-10-21T15:48:58.513Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -110,6 +110,10 @@
     {
       "id": "id_gsywz7qamvia7srb",
       "name": "PLASVALE"
+    },
+    {
+      "id": "id_3q02yirnmviaeopk",
+      "name": "DALTEXTIL"
     }
   ],
   "locations": [
