@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T12:29:11.043Z",
+  "updatedAt": "2026-10-21T12:48:55.701Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7705,6 +7705,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 110 · Papel Higiênico · quantidade 8 · saldo 360"
+    },
+    {
+      "id": "d6beffc7-c3fa-474c-bd33-3442cf989f69",
+      "timestamp": "2026-10-21T12:48:55.664Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 44 · Desinfetante · quantidade 1 · saldo 43"
     }
   ]
 }
