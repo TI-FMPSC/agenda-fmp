@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-21T13:11:51.996Z",
-    "updatedAt": "2026-10-21T13:11:51.996Z",
+    "lastSync": "2026-10-21T13:12:21.911Z",
+    "updatedAt": "2026-10-21T13:12:21.911Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2641,24 +2641,6 @@
       "status": "active",
       "barcode": "",
       "description": "Especificação: unidade | Marca: Tipo Látex | Tamanho/apresentação: caixa",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
-    },
-    {
-      "id": "mat_lim_031",
-      "code": "139",
-      "name": "sacos de papel toalha",
-      "categoryId": "cat_limpeza",
-      "unit": "PCT",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": "",
-      "currentStock": 7,
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Tamanho/apresentação: 4 pacotes cada | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
