@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-21T13:17:57.986Z",
-    "updatedAt": "2026-10-21T13:17:57.986Z",
+    "lastSync": "2026-10-21T13:21:32.869Z",
+    "updatedAt": "2026-10-21T13:21:32.869Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1628,14 +1628,14 @@
       "supplierId": "id_wov4w4vjmumnv5nq",
       "locationId": "id_yzs046h6mumnxqbj",
       "minStock": 10,
-      "currentStock": 43,
+      "currentStock": 42,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: Classic | Marca: SEBOLD | Tamanho/apresentação: 2 L | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-10-05"
+      "updatedAt": "2026-10-21"
     },
     {
       "id": "mat_lim_014",
@@ -6574,6 +6574,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-21T13:17:25.240Z"
+    },
+    {
+      "id": "id_auhq2pekmvi5535f",
+      "materialId": "mat_lim_011",
+      "type": "saida",
+      "date": "2026-10-15",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 43,
+      "newStock": 42,
+      "effect": -1,
+      "sector": "Vivi",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-21T13:21:29.139Z"
     }
   ],
   "users": [],
