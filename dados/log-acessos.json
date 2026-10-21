@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T13:04:45.091Z",
+  "updatedAt": "2026-10-21T13:06:16.059Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7732,6 +7732,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 94 · Lustra Móveis · quantidade 1 · saldo 54"
+    },
+    {
+      "id": "9a2adffd-8c84-4ed5-a3a1-9c9dbb12e3e1",
+      "timestamp": "2026-10-21T13:06:15.619Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 7 · Água Sanitaria · quantidade 2 · saldo 48"
     }
   ]
 }
