@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-21T12:49:14.217Z",
-    "updatedAt": "2026-10-21T12:49:14.217Z",
+    "lastSync": "2026-10-21T12:50:52.748Z",
+    "updatedAt": "2026-10-21T12:50:52.748Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -3194,14 +3194,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 10,
-      "currentStock": 21,
+      "currentStock": 46,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "22 tiras com 100 copos cada",
       "expirationDate": "",
       "createdAt": "2026-10-13",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-21"
     },
     {
       "id": "id_woryb0yqmvfb7wlz",
@@ -6518,6 +6518,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-21T12:49:12.999Z"
+    },
+    {
+      "id": "id_5ah09sksmvi41nji",
+      "materialId": "id_9sahm7ndmv6x6pkc",
+      "type": "entrada",
+      "date": "2026-10-20",
+      "quantity": 25,
+      "unitCost": 0,
+      "previousStock": 21,
+      "newStock": 46,
+      "effect": 25,
+      "sector": "",
+      "document": "",
+      "notes": "Cada fardinho dem 100 tiras de copos. cada caixa totaliza 2500 copos, 25 fardos com 100 cada.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-21T12:50:49.326Z"
     }
   ],
   "users": [],
