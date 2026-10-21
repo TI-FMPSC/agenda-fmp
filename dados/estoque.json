@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-21T12:29:12.323Z",
-    "updatedAt": "2026-10-21T12:29:12.323Z",
+    "lastSync": "2026-10-21T12:48:26.063Z",
+    "updatedAt": "2026-10-21T12:48:26.063Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1178,14 +1178,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 8,
+      "currentStock": 7,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: undades",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-21"
     },
     {
       "id": "mat_esc_052",
@@ -6470,6 +6470,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-21T12:29:10.873Z"
+    },
+    {
+      "id": "id_s3awkthcmvi3yk8k",
+      "materialId": "mat_esc_051",
+      "type": "saida",
+      "date": "2026-10-20",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 8,
+      "newStock": 7,
+      "effect": -1,
+      "sector": "Lucidalva / Sec. Acadêmica",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-21T12:48:25.076Z"
     }
   ],
   "users": [],
