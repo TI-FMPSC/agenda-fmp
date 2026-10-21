@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-21T12:48:26.063Z",
-    "updatedAt": "2026-10-21T12:48:26.063Z",
+    "lastSync": "2026-10-21T12:48:58.850Z",
+    "updatedAt": "2026-10-21T12:48:58.850Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2600,14 +2600,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 10,
-      "currentStock": 44,
+      "currentStock": 43,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "Recebidos em 28/08 36 unidades de 5 litros cada. Marca: Sebold",
       "expirationDate": "",
       "createdAt": "2026-08-28",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-21"
     },
     {
       "id": "id_oyljvzfjmufp465n",
@@ -6486,6 +6486,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-21T12:48:25.076Z"
+    },
+    {
+      "id": "id_tjfar2ecmvi3z7r8",
+      "materialId": "id_3iirvjowmtd4j83v",
+      "type": "saida",
+      "date": "2026-10-20",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 44,
+      "newStock": 43,
+      "effect": -1,
+      "sector": "JU",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-21T12:48:55.556Z"
     }
   ],
   "users": [],
