@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T15:43:34.234Z",
+  "updatedAt": "2026-10-21T15:46:22.410Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7831,6 +7831,15 @@
       "action": "Cadastra Fornecedor",
       "module": "Estoque FMP",
       "details": "PLASVALE"
+    },
+    {
+      "id": "3b70fc3e-44ff-4396-afb2-8687a3e15809",
+      "timestamp": "2026-10-21T15:46:21.371Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Entrada · 108 · Panos de Chão · quantidade 30 · saldo 45"
     }
   ]
 }
