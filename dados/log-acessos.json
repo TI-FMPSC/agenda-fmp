@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T12:50:49.932Z",
+  "updatedAt": "2026-10-21T13:04:45.091Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7723,6 +7723,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Entrada · 181 · Copo Descartável · quantidade 25 · saldo 46"
+    },
+    {
+      "id": "de8a8686-7d9e-49de-ae94-53926878aab4",
+      "timestamp": "2026-10-21T13:04:44.549Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 94 · Lustra Móveis · quantidade 1 · saldo 54"
     }
   ]
 }
