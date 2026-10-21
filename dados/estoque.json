@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-21T15:43:39.784Z",
-    "updatedAt": "2026-10-21T15:43:39.784Z",
+    "lastSync": "2026-10-21T15:44:56.867Z",
+    "updatedAt": "2026-10-21T15:44:56.867Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -3152,6 +3152,24 @@
       "expirationDate": "",
       "createdAt": "2026-10-19",
       "updatedAt": "2026-10-19"
+    },
+    {
+      "id": "id_12of44b2mvia9k8e",
+      "code": "183",
+      "name": "Balde 20L",
+      "categoryId": "cat_limpeza",
+      "unit": "UN",
+      "supplierId": "id_gsywz7qamvia7srb",
+      "locationId": "id_yzs046h6mumnxqbj",
+      "minStock": 3,
+      "currentStock": 8,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "Balde transparente de 20L",
+      "expirationDate": "",
+      "createdAt": "2026-10-21",
+      "updatedAt": "2026-10-21"
     }
   ],
   "movements": [
@@ -6738,6 +6756,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-21T13:29:16.954Z"
+    },
+    {
+      "id": "id_2022jcw4mvia9k8e",
+      "materialId": "id_12of44b2mvia9k8e",
+      "type": "entrada",
+      "date": "2026-10-21",
+      "quantity": 8,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 8,
+      "effect": 8,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-21T15:44:55.982Z"
     }
   ],
   "users": [],
