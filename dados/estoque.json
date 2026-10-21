@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-21T12:50:52.748Z",
-    "updatedAt": "2026-10-21T12:50:52.748Z",
+    "lastSync": "2026-10-21T12:51:23.336Z",
+    "updatedAt": "2026-10-21T12:51:23.336Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -152,14 +152,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 38,
+      "currentStock": 37,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Marca: OURO TRADICIONAL | Tamanho/apresentação: 500GRAMAS | Observações: Lú retirou um em 11/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-10-16"
+      "updatedAt": "2026-10-21"
     },
     {
       "id": "mat_epi_001",
@@ -6534,6 +6534,22 @@
       "notes": "Cada fardinho dem 100 tiras de copos. cada caixa totaliza 2500 copos, 25 fardos com 100 cada.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-21T12:50:49.326Z"
+    },
+    {
+      "id": "id_qcsxrbw6mvi42d2o",
+      "materialId": "mat_cop_001",
+      "type": "saida",
+      "date": "2026-10-21",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 38,
+      "newStock": 37,
+      "effect": -1,
+      "sector": "Mari",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-21T12:51:22.416Z"
     }
   ],
   "users": [],
