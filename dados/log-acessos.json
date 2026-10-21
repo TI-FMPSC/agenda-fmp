@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T13:21:30.190Z",
+  "updatedAt": "2026-10-21T13:24:02.175Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7795,6 +7795,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 11 · Amaciante de Roupas · quantidade 1 · saldo 42"
+    },
+    {
+      "id": "9604d104-5c5b-46cd-84ee-efd3ee03eb84",
+      "timestamp": "2026-10-21T13:24:01.392Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 96 · Luva Látex P · quantidade 1 · saldo 68"
     }
   ]
 }
