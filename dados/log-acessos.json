@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T13:09:34.045Z",
+  "updatedAt": "2026-10-21T13:11:48.820Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7759,6 +7759,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 68 · Gel antisséptico · quantidade 2 · saldo 2"
+    },
+    {
+      "id": "e4634a25-db13-4ae3-82db-e555c01ca7d2",
+      "timestamp": "2026-10-21T13:11:48.010Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Exclui material",
+      "module": "Estoque FMP",
+      "details": "111 · Papel Toalha"
     }
   ]
 }
