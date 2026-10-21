@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-21T13:09:36.985Z",
-    "updatedAt": "2026-10-21T13:09:36.985Z",
+    "lastSync": "2026-10-21T13:10:15.300Z",
+    "updatedAt": "2026-10-21T13:10:15.300Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1582,24 +1582,6 @@
       "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
-    },
-    {
-      "id": "mat_lim_006",
-      "code": "8",
-      "name": "Alcool em gel",
-      "categoryId": "cat_limpeza",
-      "unit": "L",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": "",
-      "currentStock": 0,
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Especificação: 70º INPM | Marca: ITAJUBÁ | Tamanho/apresentação: 1 LITRO | Observações: atualizado em 14/08",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-10-13"
     },
     {
       "id": "mat_lim_007",
@@ -3544,22 +3526,6 @@
       "createdAt": "2026-08-21T14:07:02.163Z"
     },
     {
-      "id": "id_s5h9odpkmt31hk75",
-      "materialId": "mat_lim_006",
-      "type": "saida",
-      "date": "2026-08-21",
-      "quantity": 1,
-      "unitCost": 0,
-      "previousStock": 1,
-      "newStock": 0,
-      "effect": -1,
-      "sector": "",
-      "document": "",
-      "notes": "",
-      "createdBy": "amandafranca",
-      "createdAt": "2026-08-21T14:23:15.329Z"
-    },
-    {
       "id": "id_sep3macomt32d9w3",
       "materialId": "mat_esc_004",
       "type": "saida",
@@ -4342,22 +4308,6 @@
       "notes": "Compra de 480 Rolão de papel higiênico.",
       "createdBy": "amandafranca",
       "createdAt": "2026-09-23T13:00:35.163Z"
-    },
-    {
-      "id": "id_lqhaodtlmufovkki",
-      "materialId": "mat_lim_006",
-      "type": "entrada",
-      "date": "2026-09-24",
-      "quantity": 12,
-      "unitCost": 0,
-      "previousStock": 0,
-      "newStock": 12,
-      "effect": 12,
-      "sector": "",
-      "document": "",
-      "notes": "12 unidades",
-      "createdBy": "amandafranca",
-      "createdAt": "2026-09-24T15:30:56.611Z"
     },
     {
       "id": "id_vhfhkwozmufox2kr",
@@ -5942,22 +5892,6 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-13T16:39:34.853Z"
-    },
-    {
-      "id": "id_lq5xj0hrmv6wrzba",
-      "materialId": "mat_lim_006",
-      "type": "saida",
-      "date": "2026-10-07",
-      "quantity": 1,
-      "unitCost": 0,
-      "previousStock": 1,
-      "newStock": 0,
-      "effect": -1,
-      "sector": "Mari",
-      "document": "",
-      "notes": "",
-      "createdBy": "amandafranca",
-      "createdAt": "2026-10-13T16:41:52.774Z"
     },
     {
       "id": "id_00yde0sfmv6wst1q",
