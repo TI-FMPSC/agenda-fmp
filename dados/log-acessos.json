@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T13:25:34.347Z",
+  "updatedAt": "2026-10-21T13:28:03.295Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7813,6 +7813,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 136 · Sacos de Lixo · quantidade 1 · saldo 19"
+    },
+    {
+      "id": "1b9d80af-6a8d-42d2-b120-c0c5eb3d3c88",
+      "timestamp": "2026-10-21T13:28:02.951Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 10 · Alcool Etílico Hidratado 92,8% · quantidade 2 · saldo 79"
     }
   ]
 }
