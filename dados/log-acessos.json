@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T13:24:02.175Z",
+  "updatedAt": "2026-10-21T13:25:34.347Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7804,6 +7804,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 96 · Luva Látex P · quantidade 1 · saldo 68"
+    },
+    {
+      "id": "e1554630-2fe2-456b-895b-3285bc4040b2",
+      "timestamp": "2026-10-21T13:25:33.467Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 136 · Sacos de Lixo · quantidade 1 · saldo 19"
     }
   ]
 }
