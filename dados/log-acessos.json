@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T13:07:26.054Z",
+  "updatedAt": "2026-10-21T13:09:34.045Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7750,6 +7750,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 44 · Desinfetante · quantidade 1 · saldo 42"
+    },
+    {
+      "id": "7b2762b0-9729-4e3d-a9ef-b90f907fa65f",
+      "timestamp": "2026-10-21T13:09:33.422Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 68 · Gel antisséptico · quantidade 2 · saldo 2"
     }
   ]
 }
