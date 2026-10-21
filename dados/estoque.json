@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-21T13:07:28.613Z",
-    "updatedAt": "2026-10-21T13:07:28.613Z",
+    "lastSync": "2026-10-21T13:09:36.985Z",
+    "updatedAt": "2026-10-21T13:09:36.985Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1610,14 +1610,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 4,
+      "currentStock": 2,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 70,6 INPM COM BAMPE | Marca: SAUBA | Tamanho/apresentação: 500 GRAMAS",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-09-30"
+      "updatedAt": "2026-10-21"
     },
     {
       "id": "mat_lim_008",
@@ -6630,6 +6630,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-21T13:07:25.592Z"
+    },
+    {
+      "id": "id_vw8dzg7omvi4pqsx",
+      "materialId": "mat_lim_007",
+      "type": "saida",
+      "date": "2026-10-14",
+      "quantity": 2,
+      "unitCost": 0,
+      "previousStock": 4,
+      "newStock": 2,
+      "effect": -2,
+      "sector": "Luana",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-21T13:09:33.297Z"
     }
   ],
   "users": [],
