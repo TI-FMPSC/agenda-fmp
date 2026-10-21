@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-21T15:48:58.513Z",
-    "updatedAt": "2026-10-21T15:48:58.513Z",
+    "lastSync": "2026-10-21T15:49:20.868Z",
+    "updatedAt": "2026-10-21T15:49:20.868Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1849,9 +1849,9 @@
       "name": "Panos de Chão",
       "categoryId": "cat_limpeza",
       "unit": "UN",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": "",
+      "supplierId": "id_3q02yirnmviaeopk",
+      "locationId": "id_yzs046h6mumnxqbj",
+      "minStock": 20,
       "currentStock": 45,
       "avgCost": "",
       "status": "active",
