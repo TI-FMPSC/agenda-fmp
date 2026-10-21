@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-21T13:17:26.483Z",
-    "updatedAt": "2026-10-21T13:17:26.483Z",
+    "lastSync": "2026-10-21T13:17:57.986Z",
+    "updatedAt": "2026-10-21T13:17:57.986Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1874,12 +1874,12 @@
     {
       "id": "mat_lim_027",
       "code": "107",
-      "name": "Pacotes de Esponja",
+      "name": "Esponja",
       "categoryId": "cat_limpeza",
       "unit": "PCT",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 10,
       "currentStock": 17,
       "avgCost": "",
       "status": "active",
@@ -1887,7 +1887,7 @@
       "description": "Tamanho/apresentação: Pacote com 3 | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-09-30"
+      "updatedAt": "2026-10-21"
     },
     {
       "id": "mat_lim_028",
