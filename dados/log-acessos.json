@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T12:11:06.991Z",
+  "updatedAt": "2026-10-21T12:22:08.876Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7678,6 +7678,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "b751aff7-41f0-406c-a509-f9eb84badd4b",
+      "timestamp": "2026-10-21T12:22:07.962Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 112 · Papel Toalha avulso · quantidade 40 · saldo 91"
     }
   ]
 }
