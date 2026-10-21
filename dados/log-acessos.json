@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T15:46:22.410Z",
+  "updatedAt": "2026-10-21T15:48:55.892Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7840,6 +7840,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Entrada · 108 · Panos de Chão · quantidade 30 · saldo 45"
+    },
+    {
+      "id": "30dd7571-e722-4b78-a693-77bccf961e51",
+      "timestamp": "2026-10-21T15:48:55.126Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra Fornecedor",
+      "module": "Estoque FMP",
+      "details": "DALTEXTIL"
     }
   ]
 }
