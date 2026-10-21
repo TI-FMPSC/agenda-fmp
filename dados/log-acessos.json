@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T12:48:55.701Z",
+  "updatedAt": "2026-10-21T12:50:49.932Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7714,6 +7714,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 44 · Desinfetante · quantidade 1 · saldo 43"
+    },
+    {
+      "id": "ce1246b3-0688-4ff2-8166-73588141815f",
+      "timestamp": "2026-10-21T12:50:49.424Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Entrada · 181 · Copo Descartável · quantidade 25 · saldo 46"
     }
   ]
 }
