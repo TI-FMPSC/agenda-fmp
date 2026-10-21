@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-21T15:44:56.867Z",
-    "updatedAt": "2026-10-21T15:44:56.867Z",
+    "lastSync": "2026-10-21T15:46:22.088Z",
+    "updatedAt": "2026-10-21T15:46:22.088Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1848,14 +1848,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 15,
+      "currentStock": 45,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: UNIDADE",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-10-21"
     },
     {
       "id": "mat_lim_026",
@@ -6772,6 +6772,22 @@
       "notes": "Lançamento automático do estoque inicial no cadastro.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-21T15:44:55.982Z"
+    },
+    {
+      "id": "id_4omy6vw9mviabe0y",
+      "materialId": "mat_lim_025",
+      "type": "entrada",
+      "date": "2026-10-21",
+      "quantity": 30,
+      "unitCost": 0,
+      "previousStock": 15,
+      "newStock": 45,
+      "effect": 30,
+      "sector": "",
+      "document": "",
+      "notes": "Rcebidos 30 panos de chão 60x100 FELPUDO, dia 21/10.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-21T15:46:21.250Z"
     }
   ],
   "users": [],
