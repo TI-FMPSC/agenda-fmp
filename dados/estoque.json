@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-21T13:22:12.762Z",
-    "updatedAt": "2026-10-21T13:22:12.762Z",
+    "lastSync": "2026-10-21T13:24:04.761Z",
+    "updatedAt": "2026-10-21T13:24:04.761Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -206,14 +206,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 30,
-      "currentStock": 69,
+      "currentStock": 68,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: TAMANHO P | Tamanho/apresentação: 73 CAIXAS",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-10-16"
+      "updatedAt": "2026-10-21"
     },
     {
       "id": "mat_epi_004",
@@ -6606,6 +6606,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-21T13:22:11.650Z"
+    },
+    {
+      "id": "id_jgjiqxi0mvi58cjg",
+      "materialId": "mat_epi_003",
+      "type": "saida",
+      "date": "2026-10-15",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 69,
+      "newStock": 68,
+      "effect": -1,
+      "sector": "vivi",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-21T13:24:01.276Z"
     }
   ],
   "users": [],
