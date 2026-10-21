@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-21T13:28:03.295Z",
+  "updatedAt": "2026-10-21T15:43:34.234Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7822,6 +7822,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 10 · Alcool Etílico Hidratado 92,8% · quantidade 2 · saldo 79"
+    },
+    {
+      "id": "2af72e35-24f6-4310-99fb-039e602d1b64",
+      "timestamp": "2026-10-21T15:43:33.788Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra Fornecedor",
+      "module": "Estoque FMP",
+      "details": "PLASVALE"
     }
   ]
 }
