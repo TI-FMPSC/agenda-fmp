@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-22T10:50:04.987Z",
+  "updatedAt": "2026-10-22T10:51:25.328Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -7136,6 +7136,20 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: AVALIAÇÃO CPA | name: SÉRGIO"
+    },
+    {
+      "id": "bc5fb267-4138-55ed-8494-3410dd15370c",
+      "resourceId": "lab5",
+      "responsible": "LIVRE",
+      "purpose": "LIVRE",
+      "date": "2026-10-22",
+      "startTime": "08:00",
+      "endTime": "11:10",
+      "status": "pending",
+      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: AVALIAÇÃO CPA | name: LEANDRO",
+      "spaceCategory": "lab",
+      "featuredEvent": false,
+      "allDay": false
     },
     {
       "id": "58899df9-0180-524f-9dfc-5bd61adc6ba2",
