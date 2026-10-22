@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-21T15:55:33.512Z",
-    "updatedAt": "2026-10-21T15:55:33.512Z",
+    "lastSync": "2026-10-22T10:58:10.001Z",
+    "updatedAt": "2026-10-22T10:58:10.001Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1024,14 +1024,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 16,
+      "currentStock": 37,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: Pacotes | Tamanho/apresentação: unidade com 4",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-10-22"
     },
     {
       "id": "mat_esc_043",
@@ -6792,6 +6792,22 @@
       "notes": "Rcebidos 30 panos de chão 60x100 FELPUDO, dia 21/10.",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-21T15:46:21.250Z"
+    },
+    {
+      "id": "id_z0vvskaemvjfgm08",
+      "materialId": "mat_esc_042",
+      "type": "entrada",
+      "date": "2026-10-22",
+      "quantity": 21,
+      "unitCost": 0,
+      "previousStock": 16,
+      "newStock": 37,
+      "effect": 21,
+      "sector": "",
+      "document": "",
+      "notes": "21 conjuntos com 4 cada em 22/10.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-22T10:58:09.128Z"
     }
   ],
   "users": [],
