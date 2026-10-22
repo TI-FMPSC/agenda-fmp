@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-22T10:51:25.328Z",
+  "updatedAt": "2026-10-22T10:52:14.403Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -7150,6 +7150,20 @@
       "spaceCategory": "lab",
       "featuredEvent": false,
       "allDay": false
+    },
+    {
+      "id": "a5e9fd0f-76d3-486c-a505-a44d7c68b264",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Leandro Pickler",
+      "purpose": "ADS — 1ª Fase",
+      "startTime": "08:00",
+      "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-22"
     },
     {
       "id": "58899df9-0180-524f-9dfc-5bd61adc6ba2",
