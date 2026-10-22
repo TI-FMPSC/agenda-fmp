@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-22T10:51:28.810Z",
+  "updatedAt": "2026-10-22T10:52:00.099Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7876,6 +7876,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "LIVRE · LIVRE · 2026-10-22 · 08:00–11:10 · Laboratório 05"
+    },
+    {
+      "id": "9c32a4e8-c08c-4147-bc68-b7c064f3f151",
+      "timestamp": "2026-10-22T10:51:59.392Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
