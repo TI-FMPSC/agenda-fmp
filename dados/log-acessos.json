@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-22T10:50:08.190Z",
+  "updatedAt": "2026-10-22T10:51:28.810Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7867,6 +7867,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "Avaliação CPA · Leandro Pickler · 2026-10-22 · 08:00–11:10 · Laboratório 05"
+    },
+    {
+      "id": "66d7ef27-2edd-4f23-997f-923c76bade59",
+      "timestamp": "2026-10-22T10:51:27.813Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "LIVRE · LIVRE · 2026-10-22 · 08:00–11:10 · Laboratório 05"
     }
   ]
 }
