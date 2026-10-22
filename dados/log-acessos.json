@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-22T10:52:19.814Z",
+  "updatedAt": "2026-10-22T10:58:10.035Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7894,6 +7894,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "ADS — 1ª Fase · Leandro Pickler · 2026-10-22 · 08:00–11:10 · Auditório"
+    },
+    {
+      "id": "b2f43d03-9143-4403-8291-3af17b372777",
+      "timestamp": "2026-10-22T10:58:09.239Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Entrada · 100 · Marcadores quadro branco · quantidade 21 · saldo 37"
     }
   ]
 }
