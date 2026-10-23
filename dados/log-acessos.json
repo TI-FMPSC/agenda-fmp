@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-23T14:26:36.240Z",
+  "updatedAt": "2026-10-23T14:28:00.904Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7912,6 +7912,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "c61337e8-3216-4c7c-b8d2-543aadd3e4d9",
+      "timestamp": "2026-10-23T14:28:00.178Z",
+      "username": "deborabombazaro",
+      "name": "Débora Bombazaro",
+      "action": "Cadastra veículo",
+      "module": "Veículos",
+      "details": "SEL-3130 · Débora Bombazaro · (48) 98813-6362 · Administração"
     }
   ]
 }
