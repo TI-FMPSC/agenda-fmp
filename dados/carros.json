@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-19T11:52:15.920Z",
+  "updatedAt": "2026-10-23T14:27:58.046Z",
   "vehicles": [
     {
       "id": "eed8b108-da02-4bb2-91cc-3a9907dae344",
@@ -51,6 +51,16 @@
       "createdAt": "2026-10-14T10:28:51.446Z",
       "updatedAt": "2026-10-14T11:06:45.662Z",
       "model": ""
+    },
+    {
+      "id": "c1c77198-9dbe-41fc-89a6-df703e33a1ae",
+      "owner": "Débora Bombazaro",
+      "phone": "48988136362",
+      "model": "Toyota Yares",
+      "plate": "SEL3130",
+      "category": "Administração",
+      "createdAt": "2026-10-23T14:27:58.031Z",
+      "updatedAt": "2026-10-23T14:27:58.031Z"
     },
     {
       "id": "c6b68229-7a69-46a3-9449-4c2dd35c3220",
