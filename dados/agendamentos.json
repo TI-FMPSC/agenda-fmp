@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-24T20:08:45.734Z",
+  "updatedAt": "2026-10-24T20:10:10.072Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10712,6 +10712,20 @@
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: phone: FUTASL 17:30-22:00",
       "customSpaceName": "Quadra Azul"
+    },
+    {
+      "id": "db47255c-6062-4906-b4fe-4f95a5dc3035",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": ".",
+      "purpose": "JOVEM PALHOCENSE",
+      "startTime": "19:00",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-12-15"
     },
     {
       "id": "919ca708-d4dd-57a0-848c-0e9844fa508f",
