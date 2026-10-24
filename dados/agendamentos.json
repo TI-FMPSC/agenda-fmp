@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-24T19:56:24.266Z",
+  "updatedAt": "2026-10-24T20:02:58.702Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10104,6 +10104,20 @@
       "purpose": "DANIELA/ADS/COPER (CURSO DE PROGRAMAÇÃO)",
       "startTime": "11:10",
       "endTime": "12:30",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-12-02"
+    },
+    {
+      "id": "3643c17a-405a-4fd0-bae8-5faab069c475",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": ".",
+      "purpose": "JOVEM PALHOCENSE",
+      "startTime": "13:30",
+      "endTime": "17:30",
       "status": "confirmed",
       "notes": "",
       "date": "2026-12-02"
