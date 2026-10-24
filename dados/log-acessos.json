@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-24T19:52:32.736Z",
+  "updatedAt": "2026-10-24T19:56:27.832Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -7975,6 +7975,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "JOVEM PALHOCENSE · . · 2026-11-11 a 2026-11-30 · 13:30–17:30 · Laboratório 05"
+    },
+    {
+      "id": "4b424c22-58db-469f-88ee-8896ec11769e",
+      "timestamp": "2026-10-24T19:56:26.938Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "JOVEM PALHOCENSE · . · 2026-11-01 · 08:00–11:10 · Laboratório 04"
     }
   ]
 }
