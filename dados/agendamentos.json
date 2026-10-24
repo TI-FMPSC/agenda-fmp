@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-24T19:51:07.534Z",
+  "updatedAt": "2026-10-24T19:52:29.497Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8696,6 +8696,20 @@
       "customSpaceName": "Sala 16"
     },
     {
+      "id": "997a499f-76fa-462e-adb2-94290e1514f9",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": ".",
+      "purpose": "JOVEM PALHOCENSE",
+      "startTime": "13:30",
+      "endTime": "17:30",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-11"
+    },
+    {
       "id": "6b6c6662-475f-5693-b6b2-0b6178ec9a71",
       "resourceId": "lab1",
       "responsible": "Fernanda M. Sanchez",
@@ -9237,6 +9251,20 @@
       "customSpaceName": "Sala 16"
     },
     {
+      "id": "9bc8b1f8-0368-4c7c-8378-27f23af86faf",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": ".",
+      "purpose": "JOVEM PALHOCENSE",
+      "startTime": "13:30",
+      "endTime": "17:30",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-18"
+    },
+    {
       "id": "88e55e38-2f16-534b-a8fc-3d8dfb8cc214",
       "resourceId": "lab1",
       "responsible": "Fernanda M. Sanchez",
@@ -9630,6 +9658,20 @@
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: SALA 16: MATURIDADE (13:30-17:30)",
       "customSpaceName": "Sala 16"
+    },
+    {
+      "id": "dd8c3bff-9e88-44b3-9b20-af0518ccd6fa",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": ".",
+      "purpose": "JOVEM PALHOCENSE",
+      "startTime": "13:30",
+      "endTime": "17:30",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-25"
     },
     {
       "id": "b48b7e1e-7085-5b69-9dbc-2842080088fa",
