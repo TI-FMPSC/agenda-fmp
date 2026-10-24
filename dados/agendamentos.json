@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-22T10:52:14.403Z",
+  "updatedAt": "2026-10-24T19:45:21.657Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -7352,6 +7352,20 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: AVALIAÇÃO CPA | phone: JULIANE (20:30-22:00)"
+    },
+    {
+      "id": "53161761-a646-4735-b458-66ffe32399ef",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": ".",
+      "purpose": "JOVEM PALHOCENSE",
+      "startTime": "13:30",
+      "endTime": "17:30",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-24"
     },
     {
       "id": "406ed048-1d00-5f81-bb98-85763df50dbb",
