@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-24T20:10:13.531Z",
+  "updatedAt": "2026-10-26T09:53:20.462Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8038,6 +8038,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "JOVEM PALHOCENSE · . · 2026-12-15 · 19:00–22:00 · Auditório"
+    },
+    {
+      "id": "d94dae44-2198-42cf-958b-1b9444ff5bec",
+      "timestamp": "2026-10-26T09:53:19.776Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
