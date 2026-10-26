@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-26T19:06:33.359Z",
+  "updatedAt": "2026-10-26T19:14:09.274Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -7445,6 +7445,20 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: MARIANE"
+    },
+    {
+      "id": "ccb39a25-0582-453f-902f-9312601e5f77",
+      "spaceCategory": "lab",
+      "resourceId": "lab2",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Gregori M. Czizeweski",
+      "purpose": "Pedagogia — 7ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-26"
     },
     {
       "id": "c53205ae-59d3-53dd-8914-ddbc29cd38b5",
