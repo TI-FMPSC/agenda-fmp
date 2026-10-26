@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-24T20:10:10.072Z",
+  "updatedAt": "2026-10-26T19:06:33.359Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9279,6 +9279,20 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: RAFAEL"
+    },
+    {
+      "id": "7f2b8cbf-66e5-4616-a887-acdea1663311",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": ".",
+      "purpose": "CAIC=ENCONTRO PEDAGÓGICO EDUCAÇÃO INFANTIL",
+      "startTime": "08:00",
+      "endTime": "12:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-18"
     },
     {
       "id": "c883d04d-c317-5d27-94ce-b0e8c677309c",
