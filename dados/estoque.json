@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-22T11:07:39.749Z",
-    "updatedAt": "2026-10-22T11:07:39.749Z",
+    "lastSync": "2026-10-26T13:20:04.331Z",
+    "updatedAt": "2026-10-26T13:20:04.331Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2320,14 +2320,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 20,
-      "currentStock": 46,
+      "currentStock": 44,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "",
       "expirationDate": "",
       "createdAt": "2026-08-21",
-      "updatedAt": "2026-10-21"
+      "updatedAt": "2026-10-26"
     },
     {
       "id": "id_j7xrtpr8mt2xuehl",
@@ -6824,6 +6824,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-22T11:07:38.706Z"
+    },
+    {
+      "id": "id_hd8cqy0fmvpaaidr",
+      "materialId": "id_p07km1q6mt2xlvwb",
+      "type": "saida",
+      "date": "2026-10-26",
+      "quantity": 2,
+      "unitCost": 0,
+      "previousStock": 46,
+      "newStock": 44,
+      "effect": -2,
+      "sector": "Ju",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-26T13:20:03.471Z"
     }
   ],
   "users": [],
