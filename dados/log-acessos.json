@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-26T19:06:37.124Z",
+  "updatedAt": "2026-10-26T19:14:12.838Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8083,6 +8083,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "CAIC=ENCONTRO PEDAGÓGICO EDUCAÇÃO INFANTIL · . · 2026-11-18 · 08:00–12:00 · Auditório"
+    },
+    {
+      "id": "b0136e88-6b97-4b5f-a8c2-ba145fcf0d30",
+      "timestamp": "2026-10-26T19:14:12.405Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 7ª Fase · Gregori M. Czizeweski · 2026-10-26 · 18:50–22:00 · Laboratório 02"
     }
   ]
 }
