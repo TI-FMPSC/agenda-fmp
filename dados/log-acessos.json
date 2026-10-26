@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-26T09:53:20.462Z",
+  "updatedAt": "2026-10-26T13:20:33.021Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8047,6 +8047,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "bf9fc203-7502-4886-9aff-eb465495d00e",
+      "timestamp": "2026-10-26T13:20:32.566Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 44 · Desinfetante · quantidade 1 · saldo 40"
     }
   ]
 }
