@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-26T19:15:23.286Z",
+  "updatedAt": "2026-10-26T19:17:08.769Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8101,6 +8101,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 7ª Fase · Gregori M. Czizeweski. · 2026-10-26 · 18:50–22:00 · Laboratório 03"
+    },
+    {
+      "id": "d952943f-1d3e-4dfb-89b2-7cf34697e7db",
+      "timestamp": "2026-10-26T19:17:08.342Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "LAB. 05 · Leonardo C. Chaves · 2026-10-26 · 18:50–22:00 · Laboratório 05"
     }
   ]
 }
