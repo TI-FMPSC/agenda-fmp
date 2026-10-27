@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-27T13:07:32.661Z",
+  "updatedAt": "2026-10-27T13:16:01.148Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8137,6 +8137,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 112 · Papel Toalha avulso · quantidade 40 · saldo 26"
+    },
+    {
+      "id": "5d987df0-85d8-48eb-b6fb-3a316896a35f",
+      "timestamp": "2026-10-27T13:16:00.165Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 7 · Água Sanitaria · quantidade 2 · saldo 42"
     }
   ]
 }
