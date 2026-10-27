@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-27T21:41:23.191Z",
+  "updatedAt": "2026-10-27T21:41:59.294Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -7638,6 +7638,20 @@
       "allDay": false,
       "responsible": "Gregori M. Czizeweski.",
       "purpose": "TPG — 1ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-27"
+    },
+    {
+      "id": "c9b32f5c-c2d7-4348-9f12-ba190524cdb6",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Andreia de B. Machado",
+      "purpose": "Pedagogia — 7ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
