@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-27T13:15:29.433Z",
-    "updatedAt": "2026-10-27T13:15:29.433Z",
+    "lastSync": "2026-10-27T13:16:00.869Z",
+    "updatedAt": "2026-10-27T13:16:00.869Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2320,14 +2320,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 20,
-      "currentStock": 44,
+      "currentStock": 42,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "",
       "expirationDate": "",
       "createdAt": "2026-08-21",
-      "updatedAt": "2026-10-26"
+      "updatedAt": "2026-10-27"
     },
     {
       "id": "id_j7xrtpr8mt2xuehl",
@@ -6952,6 +6952,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-27T13:15:28.571Z"
+    },
+    {
+      "id": "id_t76ekcckmvqpl58a",
+      "materialId": "id_p07km1q6mt2xlvwb",
+      "type": "saida",
+      "date": "2026-10-21",
+      "quantity": 2,
+      "unitCost": 0,
+      "previousStock": 44,
+      "newStock": 42,
+      "effect": -2,
+      "sector": "Luana",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-27T13:16:00.058Z"
     }
   ],
   "users": [],
