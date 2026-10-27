@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-26T13:20:36.653Z",
-    "updatedAt": "2026-10-26T13:20:36.653Z",
+    "lastSync": "2026-10-27T13:05:40.156Z",
+    "updatedAt": "2026-10-27T13:05:40.156Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1924,14 +1924,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 200,
-      "currentStock": 360,
+      "currentStock": 336,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "432 UNIDADES ROLÃO",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-10-21"
+      "updatedAt": "2026-10-27"
     },
     {
       "id": "mat_lim_032",
@@ -6872,6 +6872,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-26T13:20:32.426Z"
+    },
+    {
+      "id": "id_3835kl5jmvqp7u1e",
+      "materialId": "mat_lim_029",
+      "type": "saida",
+      "date": "2026-10-21",
+      "quantity": 24,
+      "unitCost": 0,
+      "previousStock": 360,
+      "newStock": 336,
+      "effect": -24,
+      "sector": "Luana",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-27T13:05:39.026Z"
     }
   ],
   "users": [],
