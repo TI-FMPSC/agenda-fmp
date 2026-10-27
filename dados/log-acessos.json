@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-27T15:43:46.974Z",
+  "updatedAt": "2026-10-27T15:43:59.605Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8173,6 +8173,15 @@
       "action": "Cadastra veículo",
       "module": "Veículos",
       "details": "MET-7287 · Carlos D\"Ávila · (48) 98422-4412 · Funcionários FMP"
+    },
+    {
+      "id": "4a8ae9b5-0a4e-4549-acc2-e29e8855d7ba",
+      "timestamp": "2026-10-27T15:43:58.877Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza veículo",
+      "module": "Veículos",
+      "details": "MET-7287 · Carlos D'Ávila · (48) 98422-4412 · Funcionários FMP"
     }
   ]
 }
