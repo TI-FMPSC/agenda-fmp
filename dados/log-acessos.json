@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-27T13:19:41.740Z",
+  "updatedAt": "2026-10-27T15:43:46.974Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8164,6 +8164,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 133 · Sabão em Pó · quantidade 1 · saldo 25"
+    },
+    {
+      "id": "959a6857-b16b-439e-ad67-55f4b5cbc587",
+      "timestamp": "2026-10-27T15:43:46.252Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra veículo",
+      "module": "Veículos",
+      "details": "MET-7287 · Carlos D\"Ávila · (48) 98422-4412 · Funcionários FMP"
     }
   ]
 }
