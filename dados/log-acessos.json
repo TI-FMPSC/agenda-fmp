@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-26T19:17:08.769Z",
+  "updatedAt": "2026-10-27T12:11:43.499Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8110,6 +8110,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "LAB. 05 · Leonardo C. Chaves · 2026-10-26 · 18:50–22:00 · Laboratório 05"
+    },
+    {
+      "id": "21419939-373c-42f1-b75c-c091153cbb1f",
+      "timestamp": "2026-10-27T12:11:42.711Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
