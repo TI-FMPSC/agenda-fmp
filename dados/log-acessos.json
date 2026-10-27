@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-27T21:41:26.332Z",
+  "updatedAt": "2026-10-27T21:42:02.477Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8227,6 +8227,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "TPG — 1ª Fase · Gregori M. Czizeweski. · 2026-10-27 · 18:50–22:00 · Laboratório 03"
+    },
+    {
+      "id": "17cf992e-faf2-4b8e-b635-e8e35fe2ae79",
+      "timestamp": "2026-10-27T21:42:01.913Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 7ª Fase · Andreia de B. Machado · 2026-10-27 · 18:50–22:00 · Laboratório 05"
     }
   ]
 }
