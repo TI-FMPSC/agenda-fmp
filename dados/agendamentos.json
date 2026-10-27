@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-26T19:17:05.628Z",
+  "updatedAt": "2026-10-27T19:49:01.470Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -7709,17 +7709,6 @@
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: SALA 16: MATURIDADE (13:30-17:30)",
       "customSpaceName": "Sala 16"
-    },
-    {
-      "id": "c4090c13-103a-53d6-a098-340337ab2c83",
-      "resourceId": "lab1",
-      "responsible": "Fernanda M. Sanchez",
-      "purpose": "Administração — 6ª Fase",
-      "date": "2026-10-28",
-      "startTime": "18:50",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: FERNANDA SANCHES (METODOLOGIA TCC)"
     },
     {
       "id": "2a097e0a-800a-54a5-9aec-a530c9079808",
