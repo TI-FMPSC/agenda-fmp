@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-23T14:27:58.046Z",
+  "updatedAt": "2026-10-27T15:43:43.956Z",
   "vehicles": [
     {
       "id": "eed8b108-da02-4bb2-91cc-3a9907dae344",
@@ -11,6 +11,16 @@
       "createdAt": "2026-10-14T10:30:51.870Z",
       "updatedAt": "2026-10-14T10:30:51.870Z",
       "model": ""
+    },
+    {
+      "id": "a2887dde-fbc0-4b1e-884d-5dfd083a4697",
+      "owner": "Carlos D\"Ávila",
+      "phone": "48984224412",
+      "model": "C3 - Citroen Preto",
+      "plate": "MET7287",
+      "category": "Funcionários FMP",
+      "createdAt": "2026-10-27T15:43:43.939Z",
+      "updatedAt": "2026-10-27T15:43:43.939Z"
     },
     {
       "id": "2e24524a-20d0-480c-8436-8d02a119e925",
