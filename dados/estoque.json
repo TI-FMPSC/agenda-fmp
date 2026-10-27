@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-27T13:07:32.824Z",
-    "updatedAt": "2026-10-27T13:07:32.824Z",
+    "lastSync": "2026-10-27T13:14:42.738Z",
+    "updatedAt": "2026-10-27T13:14:42.738Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -376,14 +376,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 5,
-      "currentStock": 2,
+      "currentStock": 9,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 10X500 com 75 folhas - 75G | Marca: Chamex solutions | Tamanho/apresentação: 17 CAIXAS 10 RESMA COM 500 FOLHAS CADA",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-10-14"
+      "updatedAt": "2026-10-27"
     },
     {
       "id": "mat_esc_005",
@@ -6920,6 +6920,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-27T13:07:31.946Z"
+    },
+    {
+      "id": "id_isdh3d13mvqpjgra",
+      "materialId": "mat_esc_004",
+      "type": "ajuste",
+      "date": "2026-10-27",
+      "quantity": 9,
+      "unitCost": 0,
+      "previousStock": 2,
+      "newStock": 9,
+      "effect": 7,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-27T13:14:41.686Z"
     }
   ],
   "users": [],
