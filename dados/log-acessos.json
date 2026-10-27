@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-27T21:40:08.547Z",
+  "updatedAt": "2026-10-27T21:41:03.875Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8209,6 +8209,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 1ª Fase · Fabiana E. Boff · 2026-10-27 · 18:50–22:00 · Laboratório 01"
+    },
+    {
+      "id": "c51e0440-1283-419d-a5f5-35b67151cb52",
+      "timestamp": "2026-10-27T21:41:03.273Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 1ª Fase · Gregori M. Czizeweski · 2026-10-27 · 18:50–22:00 · Laboratório 02"
     }
   ]
 }
