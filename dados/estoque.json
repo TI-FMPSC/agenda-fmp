@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-10-27T13:05:40.156Z",
-    "updatedAt": "2026-10-27T13:05:40.156Z",
+    "lastSync": "2026-10-27T13:06:42.913Z",
+    "updatedAt": "2026-10-27T13:06:42.913Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1942,14 +1942,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 80,
-      "currentStock": 86,
+      "currentStock": 66,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: cada caixa com 20 unidades. Contados total por unidade.",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-10-21"
+      "updatedAt": "2026-10-27"
     },
     {
       "id": "mat_lim_033",
@@ -6888,6 +6888,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-27T13:05:39.026Z"
+    },
+    {
+      "id": "id_pegpaji3mvqp967k",
+      "materialId": "mat_lim_032",
+      "type": "saida",
+      "date": "2026-10-24",
+      "quantity": 20,
+      "unitCost": 0,
+      "previousStock": 86,
+      "newStock": 66,
+      "effect": -20,
+      "sector": "Adri",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-10-27T13:06:41.456Z"
     }
   ],
   "users": [],
