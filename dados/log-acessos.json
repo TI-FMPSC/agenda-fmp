@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-28T00:25:57.292Z",
+  "updatedAt": "2026-10-28T00:27:09.361Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8272,6 +8272,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": ". · Carolina C. Seidel · 2026-10-28 · 08:00–11:10 · SALA LPP - PREFª CAROL"
+    },
+    {
+      "id": "dbfd71ec-d0cf-4d66-8589-3a403ab3ef2b",
+      "timestamp": "2026-10-28T00:27:08.777Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 5ª Fase · Juliana C. Müller · 2026-10-28 · 18:00–20:20 · Auditório"
     }
   ]
 }
