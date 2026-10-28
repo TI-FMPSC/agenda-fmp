@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-27T21:41:59.294Z",
+  "updatedAt": "2026-10-28T00:10:51.906Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -7814,6 +7814,20 @@
       "allDay": false,
       "responsible": "Ana Lucia Machado",
       "purpose": "",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-28"
+    },
+    {
+      "id": "64816f33-5e09-47b0-b819-5347759d8904",
+      "spaceCategory": "lab",
+      "resourceId": "lab1",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Tatiani Schmitt",
+      "purpose": "Administração — 3ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
