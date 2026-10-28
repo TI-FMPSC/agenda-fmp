@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-10-28T00:19:47.456Z",
+  "updatedAt": "2026-10-28T00:25:53.871Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -7720,6 +7720,21 @@
       "customSpaceName": "GERAR",
       "responsible": "GERAR",
       "purpose": "GERAR",
+      "startTime": "08:00",
+      "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-10-28"
+    },
+    {
+      "id": "0d4dd6b1-96af-47ec-afe4-034480468396",
+      "spaceCategory": "lab",
+      "resourceId": "custom:sala-lpp-pref-carol",
+      "customSpaceName": "SALA LPP - PREFª CAROL",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Carolina C. Seidel",
+      "purpose": ".",
       "startTime": "08:00",
       "endTime": "11:10",
       "status": "confirmed",
