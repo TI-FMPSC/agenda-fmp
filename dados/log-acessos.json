@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-28T00:10:55.276Z",
+  "updatedAt": "2026-10-28T00:19:50.862Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8254,6 +8254,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 3ª Fase · Tatiani Schmitt · 2026-10-28 · 18:50–22:00 · Laboratório 01"
+    },
+    {
+      "id": "1233fd8b-30a7-4c7b-bc24-dd29d2bed371",
+      "timestamp": "2026-10-28T00:19:50.302Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 2ª Fase · Anderson da Silveira · 2026-10-28 · 18:50–22:00 · Laboratório 04"
     }
   ]
 }
