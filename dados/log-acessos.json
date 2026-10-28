@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-27T21:42:02.477Z",
+  "updatedAt": "2026-10-28T00:10:01.584Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8236,6 +8236,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 7ª Fase · Andreia de B. Machado · 2026-10-27 · 18:50–22:00 · Laboratório 05"
+    },
+    {
+      "id": "b5661925-4098-43e8-a05c-cbb4e11468fe",
+      "timestamp": "2026-10-28T00:10:00.978Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
