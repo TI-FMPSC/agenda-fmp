@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-28T00:19:50.862Z",
+  "updatedAt": "2026-10-28T00:25:57.292Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8263,6 +8263,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 2ª Fase · Anderson da Silveira · 2026-10-28 · 18:50–22:00 · Laboratório 04"
+    },
+    {
+      "id": "d14c2b15-d4c7-4cf3-80a7-dabdba86ee5d",
+      "timestamp": "2026-10-28T00:25:56.404Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": ". · Carolina C. Seidel · 2026-10-28 · 08:00–11:10 · SALA LPP - PREFª CAROL"
     }
   ]
 }
