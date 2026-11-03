@@ -524,7 +524,10 @@
 #loanSpaces .featured-event-card:before{display:none}#loanSpaces .featured-event-badge{padding:3px 6px;font-size:10px}
 #loanSpaces .featured-event-card h2{margin:6px 0 2px;font-size:18px}#loanSpaces .featured-event-card p,#loanSpaces .featured-event-meta span{font-size:12px;color:#614916}
 #loanSpaces .featured-event-meta{margin-top:5px;gap:5px}#loanSpaces .featured-event-meta span{padding:3px 6px;background:white}
-#loanSpaces .day-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,225px),1fr));gap:8px;margin:0 0 16px}#loanSpaces h3{font-size:16px;margin:8px 0}#loanSpaces .day-hint{font-size:13px;margin:0 0 8px;color:#465e70}#loanSpaces .day-card{border:1px solid #cbd9e3;border-radius:9px;padding:10px;overflow-wrap:anywhere;background:#f8fafc;font-size:13px}#loanSpaces .day-card h4{font-size:15px;margin:0;color:#183d59}#loanSpaces .day-card small{display:block;color:#41566a;margin-top:2px}#loanSpaces .day-slot,#loanSpaces .day-item{border-top:1px solid #d9e2e9;margin-top:6px;padding-top:6px}#loanSpaces .day-item button{font-size:12px;padding:4px 8px;margin-top:5px}#loanSpaces .day-status{display:inline-block;border-radius:5px;padding:2px 4px;font-size:11px;font-weight:700}#loanSpaces .day-status.late{background:#ffe3e4;color:#8c1c28}#loanSpaces .day-status.ok{background:#dbf3e6;color:#175738}#loanSpaces .day-status.out{background:#fff0cf;color:#764b00}</style>
+#loanSpaces .day-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,225px),1fr));gap:8px;margin:0 0 16px}#loanSpaces h3{font-size:16px;margin:8px 0}#loanSpaces .day-hint{font-size:13px;margin:0 0 8px;color:#465e70}#loanSpaces .day-card{border:1px solid #cbd9e3;border-radius:9px;padding:10px;overflow-wrap:anywhere;background:#f8fafc;font-size:13px}#loanSpaces .day-card h4{font-size:15px;margin:0;color:#183d59}#loanSpaces .day-card small{display:block;color:#41566a;margin-top:2px}#loanSpaces .day-slot,#loanSpaces .day-item{border-top:1px solid #d9e2e9;margin-top:6px;padding-top:6px}#loanSpaces .day-item button{font-size:12px;padding:4px 8px;margin-top:5px}#loanSpaces .day-status{display:inline-block;border-radius:5px;padding:2px 4px;font-size:11px;font-weight:700}#loanSpaces .day-status.late{background:#ffe3e4;color:#8c1c28}#loanSpaces .day-status.ok{background:#dbf3e6;color:#175738}#loanSpaces .day-status.out{background:#fff0cf;color:#764b00}#loanSpaces .day-card{background:var(--person-soft,#f8fafc);border-color:var(--person-line,#cbd9e3);border-top:4px solid var(--person-ink,#183d59)}
+#loanSpaces .day-card h4{color:var(--person-ink,#183d59);background:#ffffffa6;border-radius:5px;padding:5px 6px;margin:-2px -2px 5px}
+.login-password{position:relative}.login-password input{width:100%;padding-right:52px!important}.login-password button{position:absolute;right:5px;top:50%;transform:translateY(-50%);border:0;border-radius:7px;background:transparent;color:#35536b;width:40px;height:40px;display:grid;place-items:center}.login-password button:focus-visible{outline:2px solid #0b5cab}.login-error{background:#fff0f0;border:1px solid #e5b1b1;color:#9c2020;border-radius:8px;padding:10px;margin-bottom:12px;font-size:14px}
+</style>
 </head>
 <body>
 <div id="app" class="app"></div>
@@ -960,25 +963,33 @@ function renderLogin(){
   <div><h1 class="brand-title">Agenda centralizada, visível e sem conflitos.</h1><p class="brand-sub">Organize laboratórios e auditório, consulte a ocupação e publique também um painel de salas de aula baseado na grade semestral.</p></div>
   <div class="brand-cards"><div class="brand-card"><strong>Painel de laboratórios</strong><span>Reservas e ocupação dos espaços</span></div><div class="brand-card"><strong>Painel de salas</strong><span>Professor, turma, horário e sala</span></div><div class="brand-card"><strong>Acesso público</strong><span>Consulta sem necessidade de login</span></div></div></div>
   <div class="login-box-wrap"><div class="login-box">${logoMarkup()}<h2>Acesso administrativo</h2><p>Informe seu usuário e senha para acessar a administração.</p>
-  <form onsubmit="login(event)" autocomplete="off"><div class="field"><label>Usuário</label><input id="loginUser" value="" autocomplete="off" autocapitalize="none" spellcheck="false" required></div><div class="field"><label>Senha</label><input id="loginPass" type="password" value="" autocomplete="new-password" required></div><div class="login-actions"><button class="btn btn-primary" type="submit">Entrar no sistema</button><button class="btn btn-secondary" type="button" onclick="openPanelInNewTab('#painel-labs')">Abrir painel dos laboratórios</button><button class="btn btn-success" type="button" onclick="openPanelInNewTab('#painel-salas')">Abrir painel das salas de aula</button></div></form>
+  <form onsubmit="login(event)" autocomplete="off"><div class="field"><label>Usuário</label><input id="loginUser" value="" autocomplete="off" autocapitalize="none" spellcheck="false" required></div><div class="field"><label for="loginPass">Senha</label><div class="login-password"><input id="loginPass" type="password" value="" autocomplete="new-password" required aria-describedby="loginError"><button type="button" id="loginEye" aria-label="Mostrar senha" aria-controls="loginPass" aria-pressed="false" onclick="toggleLoginPassword()"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/><path id="loginEyeSlash" d="M3 3l18 18" style="display:none"/></svg></button></div></div><div id="loginError" class="hidden login-error" role="alert"></div><div class="login-actions"><button class="btn btn-primary" type="submit">Entrar no sistema</button><button class="btn btn-secondary" type="button" onclick="openPanelInNewTab('#painel-labs')">Abrir painel dos laboratórios</button><button class="btn btn-success" type="button" onclick="openPanelInNewTab('#painel-salas')">Abrir painel das salas de aula</button></div></form>
   <div class="demo-info">Os painéis públicos podem ser consultados sem login. O acesso administrativo exige autenticação.</div></div></div></section>`;
+}
+function toggleLoginPassword(){
+ const input=document.getElementById('loginPass'),button=document.getElementById('loginEye');if(!input||!button)return;
+ const visible=input.type==='password';input.type=visible?'text':'password';button.setAttribute('aria-pressed',String(visible));button.setAttribute('aria-label',visible?'Ocultar senha':'Mostrar senha');document.getElementById('loginEyeSlash').style.display=visible?'':'none';
+}
+function showLoginError(message='Erro de login/senha. Verifique os dados e tente novamente.'){
+ const el=document.getElementById('loginError');if(el){el.textContent=message;el.classList.remove('hidden')}
 }
 async function login(e){
  e.preventDefault();
+ document.getElementById('loginError')?.classList.add('hidden');
  const button=e.submitter||e.target.querySelector('button[type="submit"]');
  if(button?.disabled)return;
  if(button){button.disabled=true;button.textContent='Entrando...'}
  try{
   const u=document.getElementById('loginUser').value.trim(),p=document.getElementById('loginPass').value;
   const user=state.users.find(x=>x.active!==false&&x.username.toLowerCase()===u.toLowerCase());
-  if(!user){toast('Usuário ou senha inválidos.');return}
+  if(!user){showLoginError();return}
   const typedHash=await hashPassword(p);const ok=user.passwordHash?typedHash===user.passwordHash:String(user.password||'')===p;
-  if(!ok){toast('Usuário ou senha inválidos.');return}
+  if(!ok){showLoginError();return}
   startSession(user.username);
   history.replaceState(null,'','#admin');
   renderAdmin();
   recordAuditLog('Login realizado','Acesso','Entrada na área administrativa').catch(err=>console.warn('Falha ao registrar login:',err));
- }finally{
+ }catch(err){showLoginError('Não foi possível concluir o login. Tente novamente.');console.error('Falha no login',err)}finally{
   if(button&&document.body.contains(button)){button.disabled=false;button.textContent='Entrar no sistema'}
  }
 }
@@ -1013,6 +1024,12 @@ function mirrorSelect(days,period){
  if(period)mirrorPeriod=period;
  paintLoanMirror()
 }
+function responsibleColor(name){
+ const key=String(name).trim().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,' ').toLowerCase();
+ let hash=0;for(const char of key)hash=(Math.imul(hash,31)+char.codePointAt(0))>>>0;
+ const hue=(hash*137.508)%360;
+ return '--person-ink:hsl('+hue+',48%,29%);--person-soft:hsl('+hue+',48%,95%);--person-line:hsl('+hue+',35%,76%)';
+}
 function loanDayBoard(date,rows,now=new Date()){
  const day=localISO(date),today=localISO(now),time=now.toTimeString().slice(0,5),people=new Map(),esc=escapeHtml;
  const person=name=>{name=String(name||'Responsável a definir').trim();const k=name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,' ').toLowerCase();if(!people.has(k))people.set(k,{name,slots:[],items:[]});return people.get(k)};
@@ -1029,7 +1046,7 @@ function loanDayBoard(date,rows,now=new Date()){
  const rank=p=>p.items.some(late)?0:p.items.some(r=>!r.returned)?1:2;
  function item(r){const tag=r.returned?'Devolvido':late(r)?'Pendente de devolução':'A devolver hoje';
  return `<div class="day-item"><strong>${esc(r.qty)} × ${esc(r.item)}</strong> <span class="day-status ${r.returned?'ok':late(r)?'late':'out'}">${tag}</span><small>Retirada: ${esc(r.at.slice(0,10).split('-').reverse().join('/'))} às ${esc(r.at.slice(11,16))}${r.room?' · '+esc(r.room):''}${r.assets?.length?' · Patrimônio: '+esc(r.assets.join(', ')):''}</small>${r.returned?'<small>Recebido por '+esc(r.receiver||'Administrativo')+' · '+esc(r.returned.slice(0,10).split('-').reverse().join('/'))+' às '+esc(r.returned.slice(11,16))+'</small>':'<button type="button" class="btn btn-secondary" data-return="'+esc(r.id)+'">Registrar devolução</button>'}</div>`}
- function card(p){return `<article class="day-card"><h4>${esc(p.name)}</h4>${p.slots.sort((a,b)=>a.start.localeCompare(b.start)).map(s=>{
+ function card(p){return `<article class="day-card" style="${responsibleColor(p.name)}"><h4>${esc(p.name)}</h4>${p.slots.sort((a,b)=>a.start.localeCompare(b.start)).map(s=>{
  const status=s.pending?'Reserva pendente':day===today&&s.start<=time&&time<s.end?'Em uso':day<today||(day===today&&time>=s.end)?'Encerrado':'Agendado';
  return '<div class="day-slot"><strong>'+esc(s.room)+'</strong> · '+status+'<small>'+esc(s.start)+'–'+esc(s.end)+' · '+esc(s.purpose||'Reserva')+'</small></div>'}).join('')}${p.items.map(item).join('')}</article>`}
  return '<h3>Agenda e materiais do dia</h3><p class="day-hint">Todos os horários da data selecionada, agrupados por responsável. As devoluções são confirmadas por item.</p>'+(rows===null?'<p role="status">Empréstimos ainda não carregados. Consulte o status da sincronização.</p>':'')+'<div class="day-grid">'+([...people.values()].sort((a,b)=>rank(a)-rank(b)||a.name.localeCompare(b.name,'pt-BR')).map(card).join('')||'Nenhuma reserva ou retirada localizada para esta data.')+'</div>';
