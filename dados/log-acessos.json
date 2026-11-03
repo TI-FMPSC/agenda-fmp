@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-03T16:48:10.826Z",
+  "updatedAt": "2026-11-03T17:52:41.712Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8362,6 +8362,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "JOVEM PALHOCENSE · . · 2026-11-04 · 13:30–17:30 · Laboratório 05"
+    },
+    {
+      "id": "99e745dc-ffea-42bf-8841-cd30e8c8a7b1",
+      "timestamp": "2026-11-03T17:52:40.952Z",
+      "username": "leandropickler",
+      "name": "Leandro Pickler",
+      "action": "Logout realizado",
+      "module": "Acesso",
+      "details": "Saída da área administrativa"
     }
   ]
 }
