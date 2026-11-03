@@ -493,7 +493,7 @@
     @media(max-width:1000px){.vehicle-layout{grid-template-columns:1fr}.vehicle-item{grid-template-columns:120px minmax(0,1fr)}}
     @media(max-width:700px){.vehicle-search-box{display:block}.vehicle-search-box input{width:100%}.vehicle-item{grid-template-columns:1fr}.vehicle-plate{justify-self:start}.vehicle-actions{justify-content:flex-start}.vehicle-search-hero{padding:17px}}
 
-#loanPanel{display:grid;gap:16px}#loanPanel>.panel{background:#fff;border:1px solid #d7e2e8;border-radius:14px;padding:18px;color:#173449}#loanPanel h2{margin:0 0 12px}#loanPanel summary{cursor:pointer;font-weight:700}.loan-grid{display:grid;gap:9px;grid-template-columns:repeat(auto-fit,minmax(185px,1fr))}.loan-grid article,.loan-row{overflow-wrap:anywhere;padding:12px;border:1px solid #d6e3e9;border-radius:9px}.loan-grid article p{margin:5px 0}.loan-row{margin-top:8px}.loan-row button{margin-top:8px}.loan-row.loan-late{background:#fff1f1;color:#841717;border-left:5px solid #b52222}</style>
+#loanPanel{display:grid;gap:16px}#loanPanel>.panel{background:#fff;border:1px solid #d7e2e8;border-radius:14px;padding:18px;color:#173449}#loanPanel h2{margin:0 0 12px}#loanPanel summary{cursor:pointer;font-weight:700}.loan-grid{display:grid;gap:9px;grid-template-columns:repeat(auto-fit,minmax(185px,1fr))}.loan-grid article,.loan-row{overflow-wrap:anywhere;padding:12px;border:1px solid #d6e3e9;border-radius:9px}.loan-grid article p{margin:5px 0}.loan-row{margin-top:8px}.loan-row button{margin-top:8px}.loan-row.loan-late{background:#fff1f1;color:#841717;border-left:5px solid #b52222}#loanSpaces.classroom-page{min-height:0;border-radius:14px;padding:16px}#loanSpaces .classroom-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}#loanSpaces .date-nav button{color:white;border-radius:9px;padding:7px 11px}#loanSpaces .featured-event-card{grid-column:1/-1}</style>
 </head>
 <body>
 <div id="app" class="app"></div>
@@ -970,21 +970,30 @@ function renderLoans(){
  <label class="field">Local (opcional)<input name="room" list="loanPlaces" maxlength="90" placeholder="Sem sala vinculada"></label><datalist id="loanPlaces"></datalist>
  <div class="field"><button class="btn btn-primary" type="submit">Registrar retirada</button></div></form><p id="loanNote" role="status"></p></div>
  <div class="panel"><h2>Materiais em circulação</h2><div id="loanOpen"></div></div>
- <div class="panel"><h2>Ocupação agora</h2><p>Professor, atividade e materiais vinculados a cada espaço.</p><div class="loan-grid" id="loanSpaces"></div></div>
+ <div class="panel"><h2>Ocupação agora</h2><div id="loanSpaces" class="classroom-page"></div></div>
  <details class="panel"><summary>Histórico de devoluções</summary><div id="loanClosed"></div></details></section>`;
  loanRows=null;loanPaint();loanRefresh();
 }
+let mirrorDate=null,mirrorPeriod='auto',mirrorTimer;
+function mirrorSelect(days,period){
+ if(!loanActive())return;
+ if(days===0){mirrorDate=null;mirrorPeriod='auto'}
+ else if(days!=null)mirrorDate=addDays(mirrorDate||new Date(),days);
+ if(period)mirrorPeriod=period;
+ paintLoanMirror()
+}
+function paintLoanMirror(){
+ if(!loanActive())return;
+ const selected=mirrorDate||new Date(),button=(id,label)=>`<button type="button" class="${id===mirrorPeriod?'active':''}" onclick="mirrorSelect(null,'${id}')">${escapeHtml(label)}</button>`;
+ document.getElementById('loanSpaces').innerHTML=`<div class="public-toolbar"><div class="date-nav"><button aria-label="Dia anterior" onclick="mirrorSelect(-1)">‹</button><button onclick="mirrorSelect(0)">Hoje</button><button aria-label="Dia seguinte" onclick="mirrorSelect(1)">›</button><b>${formatDate(selected,{weekday:'long',day:'2-digit',month:'long'})}</b></div><div class="classroom-periods">${button('auto','Automático')}${CLASSROOM_PERIODS.map(p=>button(p.id,p.label)).join('')}</div></div>${classroomBoard(selected,mirrorPeriod)}`;
+ clearTimeout(mirrorTimer);const now=new Date(),mid=new Date(now);mid.setHours(24,0,0,250);
+ mirrorTimer=setTimeout(paintLoanMirror,Math.min(nextClassroomTransitionMs()||Infinity,mid-now));
+}
 function loanPaint(){
  if(!loanActive())return;
- const now=new Date(),today=localISO(now),hm=now.toTimeString().slice(0,5),esc=escapeHtml, places=new Map();
- function place(name){const key=normalizeSpaceName(name).replace(/^sala-0+(\d+)$/,'sala-$1');if(!places.has(key))places.set(key,{name,people:new Set(),items:[]});return places.get(key)}
- loanRooms().forEach(place);
- const slot=CLASSROOM_PERIODS.find(p=>p.start<=hm&&hm<p.end);
- if(slot)classroomEntriesForPeriod(now,slot.id).filter(e=>!e.bookingId&&e.room&&!e.conflict).forEach(e=>place(e.room).people.add([e.professor,e.purpose].filter(Boolean).join(' · ')));
- state.bookings.filter(b=>b.status==='confirmed'&&!isFeaturedEvent(b)&&currentStatus(b,now)).forEach(b=>place(bookingResourceName(b)).people.add([b.responsible,displayPurpose(b)].filter(Boolean).join(' · ')));
+ const today=localISO(new Date()),esc=escapeHtml;
  const rows=loanRows||[],open=rows.filter(r=>!r.returned).sort((a,b)=>a.at.localeCompare(b.at));
- open.filter(r=>r.room).forEach(r=>place(r.room).items.push(r.qty+' × '+r.item+' · '+r.person));
- document.getElementById('loanSpaces').innerHTML=[...places.values()].map(p=>`<article><strong>${esc(p.name)}</strong><p>${[...p.people].map(esc).join('<br>')||'Sem aula ou reserva agora'}</p>${p.items.map(esc).join('<br>')}</article>`).join('');
+ paintLoanMirror();
  document.getElementById('loanPeople').innerHTML=loanOptions([...new Set([...state.classSchedule.map(x=>x.professor),...state.bookings.map(x=>x.responsible),...rows.map(x=>x.person)].filter(Boolean))].sort());
  document.getElementById('loanPlaces').innerHTML=loanOptions(loanRooms());
  document.getElementById('loanItems').innerHTML=loanOptions([...loanCatalog,...[...CLASSROOM_ROOMS,...loanLabs().map(x=>x.name)].map(x=>'Chave · '+x)]);
@@ -1012,13 +1021,15 @@ async function loanRefresh(change=null){
  const panel=document.getElementById('loanPanel'),active=()=>loanActive()&&panel===document.getElementById('loanPanel'),note=msg=>{if(active())document.getElementById('loanNote').textContent=msg};
  loanBusy=true;panel.querySelector('button[type=submit]').disabled=true;
  try{
+ const [agenda,grade]=await Promise.all([fetchPublicJson().catch(async e=>{if(!githubToken())throw e;return (await fetchGithubJson(true)).data}),fetchPublicGrade().catch(async e=>{if(!githubToken())throw e;return (await fetchGithubGrade(true)).data})]);
+ if(!active())return false;
+ mergeRemoteData(agenda);mergeGradeData(grade);paintLoanMirror();
  const token=githubToken();if(!token)throw Error('Configure o token deste navegador para acessar os empréstimos.');
  const g=state.settings.github,repo=g.repo+'-privado',url='https://api.github.com/repos/'+encodeURIComponent(g.owner)+'/'+encodeURIComponent(repo),headers={Authorization:'Bearer '+token,Accept:'application/vnd.github+json'};
- const [info,agenda,grade]=await Promise.all([fetch(url,{headers,cache:'no-store'}),fetchGithubJson(true),fetchGithubGrade(true)]);
+ const info=await fetch(url,{headers,cache:'no-store'});
  if(!active())return false;
  if(!info.ok)throw Error('Verifique o acesso do token ao repositório privado '+g.owner+'/'+repo+'.');
  const meta=await info.json();if(meta.private!==true)throw Error('Os empréstimos exigem um repositório privado.');
- mergeRemoteData(agenda.data);mergeGradeData(grade.data);
  const file=url+'/contents/dados/emprestimos.json',branch=meta.default_branch;
  for(let i=0;i<3;i++){
  const result=await fetch(file+'?ref='+encodeURIComponent(branch),{headers,cache:'no-store'});let sha,doc;
@@ -1574,21 +1585,24 @@ function classroomCard(entry){
    <div class="classroom-time">◷ ${entry.startTime}–${entry.endTime}</div>${detail}
  </article>`;
 }
-function renderClassroomPublic(resetTimer=true){
- if(window.classroomAutoDate===undefined)window.classroomAutoDate=true;
- if(!window.classroomPeriod)window.classroomPeriod='auto';
- const selected=window.classroomAutoDate?new Date():(window.classroomDate||new Date());window.classroomDate=selected;
- const autoState=window.classroomPeriod==='auto'?classroomAutoState(selected):{type:'period',periodId:window.classroomPeriod};
+function classroomBoard(selected,period){
+ const autoState=period==='auto'?classroomAutoState(selected):{type:'period',periodId:period};
  const periodId=autoState.type==='period'?autoState.periodId:null;const slot=periodId?classroomSlotById(periodId):null;
  const entries=slot?classroomEntriesForPeriod(selected,periodId):[];const featured=featuredEventsForDate(selected);const unassigned=entries.filter(e=>!String(e.room||'').trim()).length;const crossConflicts=entries.filter(e=>e.conflict).length;const inLabs=entries.filter(e=>e.relocationCategory==='lab'&&!e.conflict).length;
  const outside=!semesterContainsDate(selected);const weekend=selected.getDay()===0||selected.getDay()===6;
  const emptyText=outside?'Data fora do período letivo 2026/2.':weekend?'Não há grade regular de salas aos finais de semana.':autoState.type!=='period'?autoState.message:'Nenhuma aula encontrada para este período.';
  const autoLabel=autoState.type==='period'?slot.label:autoState.title;const autoExtra=autoState.next?` · próximo horário ${autoState.next}`:'';
  const mainEmptyTitle=autoState.type==='interval'?'INTERVALO':autoState.type==='idle'?autoState.title:'Sem aulas neste período';
+ return `<div class="classroom-panel-note"><span><b>${period==='auto'?'Período automático':'Período selecionado'}:</b> ${escapeHtml(autoLabel)}${autoExtra}${slot?` · ${entries.length} turma${entries.length===1?'':'s'} · ${inLabs} em laboratório`:''}</span><span>${slot?(crossConflicts?`⚠ ${crossConflicts} conflito${crossConflicts===1?'':'s'} de professor/local — revisar`:unassigned?`⚠ ${unassigned} turma${unassigned===1?'':'s'} com sala a definir`:'✓ Conferência automática ativa · locais consistentes'):'✓ Troca automática de horário ativa'}</span></div>
+ <div class="classroom-grid">${featured.map(featuredEventCard).join('')}${entries.length?entries.map(classroomCard).join(''):featured.length?'':`<div class="classroom-empty"><div><strong>${escapeHtml(mainEmptyTitle)}</strong><span>${escapeHtml(emptyText)}</span></div></div>`}</div>`;
+}
+function renderClassroomPublic(resetTimer=true){
+ if(window.classroomAutoDate===undefined)window.classroomAutoDate=true;
+ if(!window.classroomPeriod)window.classroomPeriod='auto';
+ const selected=window.classroomAutoDate?new Date():(window.classroomDate||new Date());window.classroomDate=selected;
  document.getElementById('app').innerHTML=`<section class="classroom-page"><header class="public-header"><div class="public-brand">${logoMarkup()}<div><h1>${escapeHtml(state.settings.classroomPanelTitle||'Painel de Salas de Aula')}</h1><p>${escapeHtml(state.settings.appName)} · Grade ${SEMESTER_2026_2.label}</p></div></div><div class="public-clock"><strong id="clock">--:--</strong><span id="clockDate"></span></div></header>
  <div class="public-toolbar"><div class="date-nav"><button class="icon-btn" onclick="moveClassroomDate(-1)">‹</button><button class="btn fullscreen-btn" onclick="goClassroomToday()">Hoje</button><button class="icon-btn" onclick="moveClassroomDate(1)">›</button><div class="date-label">${formatDate(selected,{weekday:'long',day:'2-digit',month:'long'})}</div></div><div class="classroom-periods"><button class="${window.classroomPeriod==='auto'?'active':''}" onclick="setClassroomPeriod('auto')">Automático</button>${CLASSROOM_PERIODS.map(p=>`<button class="${window.classroomPeriod===p.id?'active':''}" onclick="setClassroomPeriod('${p.id}')">${p.label}</button>`).join('')}</div><div style="display:flex;gap:9px;flex-wrap:wrap"><button class="btn fullscreen-btn" onclick="location.hash='#painel-labs'">▦ Laboratórios</button><button class="btn fullscreen-btn" onclick="toggleFullscreen()">⛶ Tela cheia</button><button class="btn fullscreen-btn" onclick="requestAdminLogin()">Administrar</button></div></div>
- <div class="classroom-panel-note"><span><b>${window.classroomPeriod==='auto'?'Período automático':'Período selecionado'}:</b> ${escapeHtml(autoLabel)}${autoExtra}${slot?` · ${entries.length} turma${entries.length===1?'':'s'} · ${inLabs} em laboratório`:''}</span><span>${slot?(crossConflicts?`⚠ ${crossConflicts} conflito${crossConflicts===1?'':'s'} de professor/local — revisar`:unassigned?`⚠ ${unassigned} turma${unassigned===1?'':'s'} com sala a definir`:'✓ Conferência automática ativa · locais consistentes'):'✓ Troca automática de horário ativa'}</span></div>
- <div class="classroom-grid">${featured.map(featuredEventCard).join('')}${entries.length?entries.map(classroomCard).join(''):featured.length?'':`<div class="classroom-empty"><div><strong>${escapeHtml(mainEmptyTitle)}</strong><span>${escapeHtml(emptyText)}</span></div></div>`}</div>
+ ${classroomBoard(selected,window.classroomPeriod)}
  <footer class="public-foot"><span>Grade semestral ${SEMESTER_2026_2.label} · alterações pontuais podem ser feitas pela administração</span><span id="publicSync" class="sync-note">Dados carregados</span></footer></section>`;
  updateClock();updatePublicSyncNote();scheduleClassroomMidnightRollover();scheduleClassroomPeriodTransition();clearInterval(window.publicTimer);
  if(resetTimer){clearInterval(window.classroomTimer);const seconds=Math.max(30,Number(state.settings.publicRefreshSeconds)||60);window.classroomTimer=setInterval(async()=>{updateClock();ensureClassroomCurrentDay();if(window.classroomAutoDate)await syncPublic(true);else renderClassroomPublic(false)},seconds*1000)}
