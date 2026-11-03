@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-03T16:18:39.983Z",
+  "updatedAt": "2026-11-03T16:18:43.330Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8312,6 +8312,15 @@
     {
       "id": "0f18c9b9-9c79-458f-a280-2312c46e7682",
       "timestamp": "2026-11-03T16:18:39.238Z",
+      "username": "leandropickler",
+      "name": "Leandro Pickler",
+      "action": "Logout realizado",
+      "module": "Acesso",
+      "details": "Saída da área administrativa"
+    },
+    {
+      "id": "a995ddba-16cd-473f-8f70-69dec07cfc61",
+      "timestamp": "2026-11-03T16:18:42.454Z",
       "username": "leandropickler",
       "name": "Leandro Pickler",
       "action": "Logout realizado",
