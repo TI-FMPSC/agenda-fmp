@@ -1,5 +1,1 @@
-{
-  "version": 1,
-  "start": "2026-11-03",
-  "rows": []
-}
+{"version":1,"start":"2026-11-03","rows":[{"id":"key:c59e4184-774d-507c-8958-ef4f54cb5ae0","person":"Daniela Amorim","item":"Chave · Laboratório 01","qty":1,"at":"2026-11-03T08:00:00","room":"Laboratório 01","assets":[],"by":"Agenda do laboratório","bookings":["c59e4184-774d-507c-8958-ef4f54cb5ae0"]},{"id":"key:4f6eac04-4c98-56f2-9f69-6d6a66d395b5","person":"Jaime B. do Monte","item":"Chave · Laboratório 03","qty":1,"at":"2026-11-03T08:00:00","room":"Laboratório 03","assets":[],"by":"Agenda do laboratório","bookings":["4f6eac04-4c98-56f2-9f69-6d6a66d395b5"]},{"id":"key:9533515e-e9d5-5331-a724-1f0e594623be","person":"Rafael Novo da Rosa","item":"Chave · Laboratório 04","qty":1,"at":"2026-11-03T08:00:00","room":"Laboratório 04","assets":[],"by":"Agenda do laboratório","bookings":["9533515e-e9d5-5331-a724-1f0e594623be"]},{"id":"key:19fd04f7-8a63-5426-a025-d9c7cbfcd23e","person":"Clodomir Coradini","item":"Chave · Laboratório 05","qty":1,"at":"2026-11-03T08:00:00","room":"Laboratório 05","assets":[],"by":"Agenda do laboratório","bookings":["19fd04f7-8a63-5426-a025-d9c7cbfcd23e","243361de-ef1d-52b4-9b3a-8620f231c943"]}]}
