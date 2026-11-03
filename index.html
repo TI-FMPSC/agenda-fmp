@@ -1078,11 +1078,11 @@ async function loanRefresh(change=null){
  if(!active())return false;
  mergeRemoteData(agenda);mergeGradeData(grade);paintLoanMirror();}
  const token=githubToken();if(!token)throw Error('Configure o token deste navegador para acessar os empréstimos.');
- const g=state.settings.github,repo=g.repo+'-privado',url='https://api.github.com/repos/'+encodeURIComponent(g.owner)+'/'+encodeURIComponent(repo),headers={Authorization:'Bearer '+token,Accept:'application/vnd.github+json'};
+ const g=state.settings.github,repo=g.repo,url='https://api.github.com/repos/'+encodeURIComponent(g.owner)+'/'+encodeURIComponent(repo),headers={Authorization:'Bearer '+token,Accept:'application/vnd.github+json'};
  const info=await fetch(url,{headers,cache:'no-store'});
  if(!active())return false;
  if(!info.ok)throw Error(info.status===404?'Repositório '+g.owner+'/'+repo+' não encontrado ou sem acesso (404). Confira se ele existe e se o token deste navegador tem acesso a ele.':'Falha ao acessar os empréstimos (HTTP '+info.status+'). Verifique o token deste navegador.');
- const meta=await info.json();if(meta.private!==true)throw Error('Os empréstimos exigem um repositório privado.');
+ const meta=await info.json();
  const file=url+'/contents/dados/emprestimos.json',branch=meta.default_branch;
  for(let i=0;i<3;i++){
  const result=await fetch(file+'?ref='+encodeURIComponent(branch),{headers,cache:'no-store'});let sha,doc;
