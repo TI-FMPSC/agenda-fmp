@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-03T21:34:06.081Z",
+  "updatedAt": "2026-11-03T21:34:20.935Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8497,6 +8497,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "787963bd-234e-420a-a05c-0c801cc5e009",
+      "timestamp": "2026-11-03T21:34:20.284Z",
+      "username": "leandropickler",
+      "name": "Leandro Pickler",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 5ª Fase · Larissa O. Gonçalve · 2026-11-03 · 18:50–22:00 · Laboratório 05"
     }
   ]
 }
