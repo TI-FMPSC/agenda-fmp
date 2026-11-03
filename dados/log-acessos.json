@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-03T16:46:49.042Z",
+  "updatedAt": "2026-11-03T16:48:10.826Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8353,6 +8353,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Jovem Palhocense · Jovem Palhocense · 2026-11-04 · 13:00–17:00 · Auditório"
+    },
+    {
+      "id": "9f8778b4-8fb9-49f8-8b41-72a25c15e2eb",
+      "timestamp": "2026-11-03T16:48:10.297Z",
+      "username": "deborabombazaro",
+      "name": "Débora Bombazaro",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "JOVEM PALHOCENSE · . · 2026-11-04 · 13:30–17:30 · Laboratório 05"
     }
   ]
 }
