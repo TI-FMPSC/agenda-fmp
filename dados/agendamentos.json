@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-03T16:46:45.502Z",
+  "updatedAt": "2026-11-03T16:48:07.529Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8290,20 +8290,6 @@
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: RAFAEL"
     },
     {
-      "id": "53f00b25-ebce-4210-be47-0c259186a513",
-      "spaceCategory": "lab",
-      "resourceId": "auditorio",
-      "featuredEvent": false,
-      "allDay": false,
-      "responsible": "Jovem Palhocense",
-      "purpose": "Jovem Palhocense",
-      "startTime": "13:00",
-      "endTime": "17:00",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-11-04"
-    },
-    {
       "id": "3a49dd68-ebb0-5867-af2e-b8fc66f852b0",
       "resourceId": "custom:sala-16",
       "responsible": "SALA 16: MATURIDADE (13:30-17:30)",
@@ -8314,20 +8300,6 @@
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: SALA 16: MATURIDADE (13:30-17:30)",
       "customSpaceName": "Sala 16"
-    },
-    {
-      "id": "2489511b-ddfc-4231-aeb7-c7c43e86de37",
-      "spaceCategory": "lab",
-      "resourceId": "lab5",
-      "featuredEvent": false,
-      "allDay": false,
-      "responsible": ".",
-      "purpose": "JOVEM PALHOCENSE",
-      "startTime": "13:30",
-      "endTime": "17:30",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-11-04"
     },
     {
       "id": "b7d3d97e-f455-528a-a615-b1c09a64b611",
