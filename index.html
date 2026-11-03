@@ -984,7 +984,7 @@ async function login(e){
 async function logout(){const username=currentUsername();await recordAuditLog('Logout realizado','Acesso','Saída da área administrativa',username);sessionStorage.removeItem(SESSION_KEY);location.hash='#login'}
 
 const loanCatalog=['Notebook','Mouse','Caixa de som','Microfone','Controle de ar-condicionado','Tesoura','Fita crepe','Durex','Extensão'];
-let loanBusy=false,loanRows=null;
+let loanBusy=false,loanRows=null,loanIdle=Promise.resolve(),loanSubmitting=false;
 function loanActive(){return isLogged()&&adminSection==='loans'&&!!document.getElementById('loanPanel')}
 function loanLabs(){return state.resources.filter(r=>r.active&&(/^lab/i.test(r.id)||/^lab/i.test(r.name)))}
 function loanRooms(){return [...new Set([...CLASSROOM_ROOMS,...state.resources.filter(r=>r.active).map(r=>r.name)])]}
@@ -1071,16 +1071,17 @@ function loanAuto(doc,now){
 async function loanRefresh(change=null){
  if(!loanActive()||loanBusy)return false;
  const panel=document.getElementById('loanPanel'),active=()=>loanActive()&&panel===document.getElementById('loanPanel'),note=msg=>{if(active())document.getElementById('loanNote').textContent=msg};
- loanBusy=true;panel.querySelector('button[type=submit]').disabled=true;
+ let unlock;loanIdle=new Promise(resolve=>unlock=resolve);loanBusy=true;
+ if(change)note('Salvando no repositório de empréstimos…');
  try{
- const [agenda,grade]=await Promise.all([fetchPublicJson().catch(async e=>{if(!githubToken())throw e;return (await fetchGithubJson(true)).data}),fetchPublicGrade().catch(async e=>{if(!githubToken())throw e;return (await fetchGithubGrade(true)).data})]);
+ if(!change){const [agenda,grade]=await Promise.all([fetchPublicJson().catch(async e=>{if(!githubToken())throw e;return (await fetchGithubJson(true)).data}),fetchPublicGrade().catch(async e=>{if(!githubToken())throw e;return (await fetchGithubGrade(true)).data})]);
  if(!active())return false;
- mergeRemoteData(agenda);mergeGradeData(grade);paintLoanMirror();
+ mergeRemoteData(agenda);mergeGradeData(grade);paintLoanMirror();}
  const token=githubToken();if(!token)throw Error('Configure o token deste navegador para acessar os empréstimos.');
  const g=state.settings.github,repo=g.repo+'-privado',url='https://api.github.com/repos/'+encodeURIComponent(g.owner)+'/'+encodeURIComponent(repo),headers={Authorization:'Bearer '+token,Accept:'application/vnd.github+json'};
  const info=await fetch(url,{headers,cache:'no-store'});
  if(!active())return false;
- if(!info.ok)throw Error('Verifique o acesso do token ao repositório privado '+g.owner+'/'+repo+'.');
+ if(!info.ok)throw Error(info.status===404?'Repositório '+g.owner+'/'+repo+' não encontrado ou sem acesso (404). Confira se ele existe e se o token deste navegador tem acesso a ele.':'Falha ao acessar os empréstimos (HTTP '+info.status+'). Verifique o token deste navegador.');
  const meta=await info.json();if(meta.private!==true)throw Error('Os empréstimos exigem um repositório privado.');
  const file=url+'/contents/dados/emprestimos.json',branch=meta.default_branch;
  for(let i=0;i<3;i++){
@@ -1091,20 +1092,24 @@ async function loanRefresh(change=null){
  else{const blob=await fetch(url+'/git/blobs/'+encodeURIComponent(sha),{headers:{...headers,Accept:'application/vnd.github.raw+json'},cache:'no-store'});if(!blob.ok)throw Error('Não foi possível carregar o histórico completo.');doc=await blob.json()}}
  if(doc.version!==1||!Array.isArray(doc.rows)||!doc.start)throw Error('Formato de empréstimos inválido. O arquivo foi preservado.');
  if(!active())return false;
- const changed=loanAuto(doc,new Date());if(change)change(doc);
+ const changed=change?false:loanAuto(doc,new Date());if(change)change(doc);
  if(!sha||changed||change){const put=await fetch(file,{method:'PUT',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({branch,message:'Atualiza empréstimos FMP',content:encodeBase64Unicode(JSON.stringify(doc)),...(sha?{sha}:{})})});
  if([409,422].includes(put.status)&&i<2)continue;
  if(!put.ok)throw Error('Gravação não confirmada. Confira a permissão de escrita e sincronize antes de repetir.');
  }
  if(!active())return false;loanRows=doc.rows;loanPaint();note((change?'Registro salvo. ':'')+'Atualizado às '+new Date().toLocaleTimeString('pt-BR'));return true;
  }
- }catch(e){note('Falha na sincronização: '+e.message);return false}finally{loanBusy=false;if(active())panel.querySelector('button[type=submit]').disabled=false;else if(loanActive())setTimeout(()=>loanRefresh(),0)}
+ }catch(e){const msg=(change?'Gravação não confirmada: ':'Falha na sincronização: ')+e.message;note(msg);if(change&&active())toast(msg);return false}finally{loanBusy=false;unlock();if(!active()&&loanActive())setTimeout(()=>loanRefresh(),0)}
 }
 async function loanSubmit(event){
- event.preventDefault();if(!loanActive()||loanBusy)return;const form=event.target,d=new FormData(form),get=k=>String(d.get(k)||'').trim();
+ event.preventDefault();if(!loanActive()||loanSubmitting)return;const form=event.target,d=new FormData(form),get=k=>String(d.get(k)||'').trim();
  const r={id:crypto.randomUUID(),person:get('person'),item:get('item'),room:get('room'),qty:Number(get('qty')),assets:get('assets').split(/[,;\n]/).map(x=>x.trim()).filter(Boolean),at:loanStamp(),by:currentUsername()};
  if(!r.person||!r.item||!Number.isInteger(r.qty)||r.qty<1||r.qty>999||r.assets.length>r.qty||new Set(r.assets.map(x=>x.toLowerCase())).size!==r.assets.length){toast('Revise o nome, o material, a quantidade e os patrimônios (um por unidade, sem repetir).');return}
- if(await loanRefresh(doc=>{if(doc.rows.some(x=>!x.returned&&x.assets?.some(a=>r.assets.some(b=>b.toLowerCase()===a.toLowerCase()))))throw Error('Um dos patrimônios já está emprestado.');doc.rows.push(r)}))form.reset();
+ const btn=form.querySelector('button[type=submit]'),note=document.getElementById('loanNote');loanSubmitting=true;btn.disabled=true;btn.textContent='Registrando…';
+ try{if(loanBusy){note.textContent='Aguardando a sincronização para registrar a retirada…';await loanIdle}
+ if(!form.isConnected||!loanActive())return;
+ if(await loanRefresh(doc=>{if(doc.rows.some(x=>!x.returned&&x.assets?.some(a=>r.assets.some(b=>b.toLowerCase()===a.toLowerCase()))))throw Error('Um dos patrimônios já está emprestado.');doc.rows.push(r)})){form.reset();mirrorDate=null;loanPaint();toast('Retirada registrada: '+r.qty+' × '+r.item+' para '+r.person+'.')}
+ }finally{loanSubmitting=false;btn.disabled=false;btn.textContent='Registrar retirada'}
 }
 setInterval(()=>{if(loanActive()){loanPaint();loanRefresh()}},60000);
 
