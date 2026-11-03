@@ -493,7 +493,7 @@
     @media(max-width:1000px){.vehicle-layout{grid-template-columns:1fr}.vehicle-item{grid-template-columns:120px minmax(0,1fr)}}
     @media(max-width:700px){.vehicle-search-box{display:block}.vehicle-search-box input{width:100%}.vehicle-item{grid-template-columns:1fr}.vehicle-plate{justify-self:start}.vehicle-actions{justify-content:flex-start}.vehicle-search-hero{padding:17px}}
 
-</style>
+#loanPanel{display:grid;gap:16px}#loanPanel>.panel{background:#fff;border:1px solid #d7e2e8;border-radius:14px;padding:18px;color:#173449}#loanPanel h2{margin:0 0 12px}#loanPanel summary{cursor:pointer;font-weight:700}.loan-grid{display:grid;gap:9px;grid-template-columns:repeat(auto-fit,minmax(185px,1fr))}.loan-grid article,.loan-row{overflow-wrap:anywhere;padding:12px;border:1px solid #d6e3e9;border-radius:9px}.loan-grid article p{margin:5px 0}.loan-row{margin-top:8px}.loan-row button{margin-top:8px}.loan-row.loan-late{background:#fff1f1;color:#841717;border-left:5px solid #b52222}</style>
 </head>
 <body>
 <div id="app" class="app"></div>
@@ -771,7 +771,7 @@ function migrateStateData(data){const d=data||{};const oldVolante=(Array.isArray
 function loadState(){try{const saved=migrateStateData(JSON.parse(localStorage.getItem(DB_KEY)));return saved?{...defaultState(),...saved,settings:{...defaultState().settings,...(saved.settings||{}),github:{...defaultState().settings.github,...(saved.settings?.github||{})}},resources:Array.isArray(saved.resources)&&saved.resources.length?saved.resources.filter(r=>r.id!=='volante'):structuredClone(defaultResources),bookings:Array.isArray(saved.bookings)?saved.bookings:[],vehicles:Array.isArray(saved.vehicles)?saved.vehicles:[],classSchedule:Array.isArray(saved.classSchedule)&&saved.classSchedule.length?saved.classSchedule:buildDefaultClassSchedule(),roomAssignments:{...defaultRoomAssignments(),...(saved.roomAssignments||{})},users:normalizeUsers(saved.users),auditLogs:Array.isArray(saved.auditLogs)?saved.auditLogs:[]}:defaultState()}catch{return defaultState()}}
 function saveState(){localStorage.setItem(DB_KEY,JSON.stringify(state));}
 function githubToken(){return localStorage.getItem(GH_TOKEN_KEY)||''}
-function loadAdminSection(){const valid=['agenda','list','rooms','stock','vehicles','logs','settings'];const saved=localStorage.getItem(ADMIN_SECTION_KEY)||'agenda';return valid.includes(saved)?saved:'agenda'}
+function loadAdminSection(){const valid=['agenda','list','rooms','stock','vehicles','loans','logs','settings'];const saved=localStorage.getItem(ADMIN_SECTION_KEY)||'agenda';return valid.includes(saved)?saved:'agenda'}
 let state=loadState(); let currentView='week'; let referenceDate=new Date(); let adminSection=loadAdminSection();
 let auditLogPage=1; let auditLogSearch=''; const AUDIT_LOGS_PER_PAGE=50;
 let syncInfo={status:'idle',last:null,message:'Aguardando sincronização'};
@@ -953,14 +953,106 @@ async function login(e){
 }
 async function logout(){const username=currentUsername();await recordAuditLog('Logout realizado','Acesso','Saída da área administrativa',username);sessionStorage.removeItem(SESSION_KEY);location.hash='#login'}
 
+const loanCatalog=['Notebook','Mouse','Caixa de som','Microfone','Controle de ar-condicionado','Tesoura','Fita crepe','Durex','Extensão'];
+let loanBusy=false,loanRows=null;
+function loanActive(){return isLogged()&&adminSection==='loans'&&!!document.getElementById('loanPanel')}
+function loanLabs(){return state.resources.filter(r=>r.active&&(/^lab/i.test(r.id)||/^lab/i.test(r.name)))}
+function loanRooms(){return [...new Set([...CLASSROOM_ROOMS,...state.resources.filter(r=>r.active).map(r=>r.name)])]}
+function loanStamp(d=new Date()){return localISO(d)+'T'+d.toTimeString().slice(0,8)}
+function loanOptions(arr){return arr.map(x=>'<option value="'+escapeHtml(x)+'"></option>').join('')}
+function renderLoans(){
+ if(!isLogged())return;
+ document.getElementById('adminContent').innerHTML=`<section id="loanPanel"><div class="panel"><h2>Registrar empréstimo</h2><form id="loanForm" onsubmit="loanSubmit(event)" class="form-grid">
+ <label class="field">Professor ou funcionário<input name="person" required maxlength="120" list="loanPeople"></label><datalist id="loanPeople"></datalist>
+ <label class="field">Material ou chave<input name="item" required maxlength="100" list="loanItems" placeholder="Selecione ou digite"></label><datalist id="loanItems"></datalist>
+ <label class="field">Quantidade<input name="qty" type="number" min="1" max="999" step="1" required value="1"></label>
+ <label class="field">Patrimônios (opcional)<input name="assets" maxlength="1500" placeholder="Ex.: 1025, 1031"></label>
+ <label class="field">Local (opcional)<input name="room" list="loanPlaces" maxlength="90" placeholder="Sem sala vinculada"></label><datalist id="loanPlaces"></datalist>
+ <div class="field"><button class="btn btn-primary" type="submit">Registrar retirada</button></div></form><p id="loanNote" role="status"></p></div>
+ <div class="panel"><h2>Materiais em circulação</h2><div id="loanOpen"></div></div>
+ <div class="panel"><h2>Ocupação agora</h2><p>Professor, atividade e materiais vinculados a cada espaço.</p><div class="loan-grid" id="loanSpaces"></div></div>
+ <details class="panel"><summary>Histórico de devoluções</summary><div id="loanClosed"></div></details></section>`;
+ loanRows=null;loanPaint();loanRefresh();
+}
+function loanPaint(){
+ if(!loanActive())return;
+ const now=new Date(),today=localISO(now),hm=now.toTimeString().slice(0,5),esc=escapeHtml, places=new Map();
+ function place(name){const key=normalizeSpaceName(name).replace(/^sala-0+(\d+)$/,'sala-$1');if(!places.has(key))places.set(key,{name,people:new Set(),items:[]});return places.get(key)}
+ loanRooms().forEach(place);
+ const slot=CLASSROOM_PERIODS.find(p=>p.start<=hm&&hm<p.end);
+ if(slot)classroomEntriesForPeriod(now,slot.id).filter(e=>!e.bookingId&&e.room&&!e.conflict).forEach(e=>place(e.room).people.add([e.professor,e.purpose].filter(Boolean).join(' · ')));
+ state.bookings.filter(b=>b.status==='confirmed'&&!isFeaturedEvent(b)&&currentStatus(b,now)).forEach(b=>place(bookingResourceName(b)).people.add([b.responsible,displayPurpose(b)].filter(Boolean).join(' · ')));
+ const rows=loanRows||[],open=rows.filter(r=>!r.returned).sort((a,b)=>a.at.localeCompare(b.at));
+ open.filter(r=>r.room).forEach(r=>place(r.room).items.push(r.qty+' × '+r.item+' · '+r.person));
+ document.getElementById('loanSpaces').innerHTML=[...places.values()].map(p=>`<article><strong>${esc(p.name)}</strong><p>${[...p.people].map(esc).join('<br>')||'Sem aula ou reserva agora'}</p>${p.items.map(esc).join('<br>')}</article>`).join('');
+ document.getElementById('loanPeople').innerHTML=loanOptions([...new Set([...state.classSchedule.map(x=>x.professor),...state.bookings.map(x=>x.responsible),...rows.map(x=>x.person)].filter(Boolean))].sort());
+ document.getElementById('loanPlaces').innerHTML=loanOptions(loanRooms());
+ document.getElementById('loanItems').innerHTML=loanOptions([...loanCatalog,...[...CLASSROOM_ROOMS,...loanLabs().map(x=>x.name)].map(x=>'Chave · '+x)]);
+ function card(r){const late=!r.returned&&r.at.slice(0,10)<today;
+ const fmt=t=>t.slice(8,10)+'/'+t.slice(5,7)+'/'+t.slice(0,4)+' às '+t.slice(11,16);
+ return `<article class="loan-row${late?' loan-late':''}"><b>${late?'Pendência · ':''}${esc(r.person)}</b> — ${esc(r.qty)} × ${esc(r.item)}<br>${esc(r.room||'Sem sala vinculada')}${r.assets?.length?' · Patrimônio: '+esc(r.assets.join(', ')):''}<br><small>Retirada: ${esc(fmt(r.at))} · ${esc(r.by)}</small>${r.returned?'<br><small>Devolvido em '+esc(fmt(r.returned))+' · Recebido por '+esc(r.receiver)+'</small>':'<br><button class="btn btn-secondary" data-return="'+esc(r.id)+'">Registrar devolução</button>'}</article>`}
+ document.getElementById('loanOpen').innerHTML=loanRows===null?'Aguardando leitura dos empréstimos.':open.map(card).join('')||'Nenhum empréstimo em aberto.';
+ document.getElementById('loanClosed').innerHTML=rows.filter(r=>r.returned).sort((a,b)=>b.returned.localeCompare(a.returned)).map(card).join('')||'Nenhuma devolução registrada.';
+ document.getElementById('loanOpen').onclick=e=>{const id=e.target.closest('[data-return]')?.dataset.return;if(!id||!loanActive())return;const r=loanRows.find(x=>x.id===id);if(r&&confirm('Confirmar o recebimento de '+r.qty+' × '+r.item+' de '+r.person+'?'))loanRefresh(doc=>{const row=doc.rows.find(x=>x.id===id);if(!row||row.returned)throw Error('Devolução já registrada. Sincronize o painel.');row.returned=loanStamp();row.receiver=currentUsername()})};
+}
+function loanAuto(doc,now){
+ const labs=new Map(loanLabs().map(r=>[r.id,r.name])),limit=loanStamp(now);
+ const done=new Set(doc.rows.flatMap(r=>r.bookings||[]));let changed=false;
+ for(const b of [...state.bookings].sort((a,b)=>(a.date+a.startTime).localeCompare(b.date+b.startTime))){
+ const at=b.date+'T'+b.startTime+':00',room=labs.get(b.resourceId),person=(b.responsible||'').trim();
+ if(!room||!person||!b.id||b.status!=='confirmed'||isFeaturedEvent(b)||b.date<doc.start||at>limit||done.has(b.id))continue;
+ const item='Chave · '+room;
+ let r=doc.rows.find(r=>r.item===item&&r.person.toLowerCase()===person.toLowerCase()&&r.at.slice(0,10)===b.date&&(!r.returned||r.returned>=at));
+ if(!r){r={id:'key:'+b.id,person,item,qty:1,at,room,assets:[],by:'Agenda do laboratório'};doc.rows.push(r)}
+ (r.bookings||=[]).push(b.id);done.add(b.id);changed=true;
+ }return changed
+}
+async function loanRefresh(change=null){
+ if(!loanActive()||loanBusy)return false;
+ const panel=document.getElementById('loanPanel'),active=()=>loanActive()&&panel===document.getElementById('loanPanel'),note=msg=>{if(active())document.getElementById('loanNote').textContent=msg};
+ loanBusy=true;panel.querySelector('button[type=submit]').disabled=true;
+ try{
+ const token=githubToken();if(!token)throw Error('Configure o token deste navegador para acessar os empréstimos.');
+ const g=state.settings.github,repo=g.repo+'-privado',url='https://api.github.com/repos/'+encodeURIComponent(g.owner)+'/'+encodeURIComponent(repo),headers={Authorization:'Bearer '+token,Accept:'application/vnd.github+json'};
+ const [info,agenda,grade]=await Promise.all([fetch(url,{headers,cache:'no-store'}),fetchGithubJson(true),fetchGithubGrade(true)]);
+ if(!active())return false;
+ if(!info.ok)throw Error('Verifique o acesso do token ao repositório privado '+g.owner+'/'+repo+'.');
+ const meta=await info.json();if(meta.private!==true)throw Error('Os empréstimos exigem um repositório privado.');
+ mergeRemoteData(agenda.data);mergeGradeData(grade.data);
+ const file=url+'/contents/dados/emprestimos.json',branch=meta.default_branch;
+ for(let i=0;i<3;i++){
+ const result=await fetch(file+'?ref='+encodeURIComponent(branch),{headers,cache:'no-store'});let sha,doc;
+ if(result.status===404)doc={version:1,start:localISO(new Date()),rows:[]};
+ else{if(!result.ok)throw Error('Não foi possível ler os empréstimos.');const f=await result.json();sha=f.sha;
+ if(f.encoding==='base64'&&f.content)doc=JSON.parse(decodeBase64Unicode(f.content));
+ else{const blob=await fetch(url+'/git/blobs/'+encodeURIComponent(sha),{headers:{...headers,Accept:'application/vnd.github.raw+json'},cache:'no-store'});if(!blob.ok)throw Error('Não foi possível carregar o histórico completo.');doc=await blob.json()}}
+ if(doc.version!==1||!Array.isArray(doc.rows)||!doc.start)throw Error('Formato de empréstimos inválido. O arquivo foi preservado.');
+ if(!active())return false;
+ const changed=loanAuto(doc,new Date());if(change)change(doc);
+ if(!sha||changed||change){const put=await fetch(file,{method:'PUT',headers:{...headers,'Content-Type':'application/json'},body:JSON.stringify({branch,message:'Atualiza empréstimos FMP',content:encodeBase64Unicode(JSON.stringify(doc)),...(sha?{sha}:{})})});
+ if([409,422].includes(put.status)&&i<2)continue;
+ if(!put.ok)throw Error('Gravação não confirmada. Confira a permissão de escrita e sincronize antes de repetir.');
+ }
+ if(!active())return false;loanRows=doc.rows;loanPaint();note((change?'Registro salvo. ':'')+'Atualizado às '+new Date().toLocaleTimeString('pt-BR'));return true;
+ }
+ }catch(e){note('Falha na sincronização: '+e.message);return false}finally{loanBusy=false;if(active())panel.querySelector('button[type=submit]').disabled=false;else if(loanActive())setTimeout(()=>loanRefresh(),0)}
+}
+async function loanSubmit(event){
+ event.preventDefault();if(!loanActive()||loanBusy)return;const form=event.target,d=new FormData(form),get=k=>String(d.get(k)||'').trim();
+ const r={id:crypto.randomUUID(),person:get('person'),item:get('item'),room:get('room'),qty:Number(get('qty')),assets:get('assets').split(/[,;\n]/).map(x=>x.trim()).filter(Boolean),at:loanStamp(),by:currentUsername()};
+ if(!r.person||!r.item||!Number.isInteger(r.qty)||r.qty<1||r.qty>999||r.assets.length>r.qty||new Set(r.assets.map(x=>x.toLowerCase())).size!==r.assets.length){toast('Revise o nome, o material, a quantidade e os patrimônios (um por unidade, sem repetir).');return}
+ if(await loanRefresh(doc=>{if(doc.rows.some(x=>!x.returned&&x.assets?.some(a=>r.assets.some(b=>b.toLowerCase()===a.toLowerCase()))))throw Error('Um dos patrimônios já está emprestado.');doc.rows.push(r)}))form.reset();
+}
+setInterval(()=>{if(loanActive()){loanPaint();loanRefresh()}},60000);
+
 function renderAdmin(){
  if(!isLogged()){location.hash='#login';return}
- const title=adminSection==='agenda'?'Gestão das Salas':adminSection==='settings'?'Configurações':adminSection==='rooms'?'Layout de salas FMP':adminSection==='stock'?'Gestão de Estoque':adminSection==='vehicles'?'Buscar veículo':adminSection==='logs'?'Logs de acesso':'Gestão dos Laboratórios';
+ const title=adminSection==='loans'?'Salas e empréstimos':adminSection==='agenda'?'Gestão das Salas':adminSection==='settings'?'Configurações':adminSection==='rooms'?'Layout de salas FMP':adminSection==='stock'?'Gestão de Estoque':adminSection==='vehicles'?'Buscar veículo':adminSection==='logs'?'Logs de acesso':'Gestão dos Laboratórios';
  const stockMode=adminSection==='stock';
  document.getElementById('app').innerHTML=`<div class="shell"><aside class="sidebar"><div class="side-brand">${logoMarkup()}<div><strong>${escapeHtml(state.settings.appName)}</strong><small>Administração</small></div></div>
- <nav class="nav"><button class="${adminSection==='agenda'?'active':''}" onclick="setSection('agenda')">● <span>Gestão das Salas</span></button><button class="${adminSection==='list'?'active':''}" onclick="setSection('list')">● <span>Gestão dos Laboratórios</span></button><button class="${adminSection==='rooms'?'active':''}" onclick="setSection('rooms')">● <span>Layout de salas FMP</span></button><button class="${adminSection==='stock'?'active':''}" onclick="setSection('stock')">● <span>Gestão de Estoque</span></button><button class="${adminSection==='vehicles'?'active':''}" onclick="setSection('vehicles')">● <span>Buscar veículo</span></button><button class="${adminSection==='logs'?'active':''}" onclick="setSection('logs')">● <span>Logs de acesso</span></button><button class="${adminSection==='settings'?'active':''}" onclick="setSection('settings')">⚙ <span>Configurações</span></button></nav><div class="nav-spacer"></div><div class="side-foot"><button class="btn btn-ghost" onclick="openPanelInNewTab('#painel-labs')">● <span>Painel laboratórios</span></button><button class="btn btn-ghost" onclick="openPanelInNewTab('#painel-salas')">● <span>Painel salas de aula</span></button><button class="btn btn-ghost" onclick="logout()">● <span>Sair</span></button></div></aside>
- <main class="main ${stockMode?'stock-mode':''}"><header class="topbar"><div><h1>${title}</h1><small>${formatDate(new Date(),{weekday:'long',day:'2-digit',month:'long',year:'numeric'})}</small></div><div class="top-actions"><span id="sessionBadge" class="session-badge" title="A sessão administrativa expira 4 horas após o login">Sessão: ${formatSessionRemaining()}</span><span id="tokenStatusBadge" class="token-status-badge" title="Verificando o token salvo neste navegador">Token</span><span id="adminSyncBadge" class="sync-badge">Dados GitHub</span><button class="btn btn-secondary" onclick="${stockMode?'syncStockModule()':adminSection==='vehicles'?'syncVehiclesFromGithub()':'syncFromGithub()'}">↻ Sincronizar</button>${stockMode?`<button class="btn btn-secondary" onclick="setSection('agenda')">← Voltar às salas</button>`:adminSection==='vehicles'?`<button class="btn btn-primary" onclick="document.getElementById('vehicleOwner')?.focus()">＋ Cadastrar veículo</button>`:adminSection==='agenda'?`<button class="btn btn-success" onclick="openPanelInNewTab('#painel-salas')">Painel salas</button><button class="btn btn-secondary" onclick="setSection('rooms')">Layout de salas FMP</button>`:adminSection==='list'?`<button class="btn btn-secondary" onclick="openPanelInNewTab('#painel-labs')">Painel laboratórios</button><button class="btn btn-primary" onclick="openBookingModal()">＋ Novo agendamento</button>`:`<button class="btn btn-secondary" onclick="openPanelInNewTab('#painel-labs')">Painel laboratórios</button><button class="btn btn-success" onclick="openPanelInNewTab('#painel-salas')">Painel salas</button>`}</div></header><div class="content" id="adminContent"></div></main></div>`;
- if(adminSection==='agenda')renderClassroomManagement();else if(adminSection==='settings')renderSettings();else if(adminSection==='rooms')renderRoomAssignments();else if(adminSection==='stock')renderStockModule();else if(adminSection==='vehicles')renderVehicles();else if(adminSection==='logs')renderAuditLogs();else renderBookingList();
+ <nav class="nav"><button class="${adminSection==='agenda'?'active':''}" onclick="setSection('agenda')">● <span>Gestão das Salas</span></button><button class="${adminSection==='list'?'active':''}" onclick="setSection('list')">● <span>Gestão dos Laboratórios</span></button><button class="${adminSection==='rooms'?'active':''}" onclick="setSection('rooms')">● <span>Layout de salas FMP</span></button><button class="${adminSection==='stock'?'active':''}" onclick="setSection('stock')">● <span>Gestão de Estoque</span></button><button aria-label="Salas e empréstimos" title="Salas e empréstimos" class="${adminSection==='loans'?'active':''}" onclick="setSection('loans')">● <span>Salas e empréstimos</span></button><button class="${adminSection==='vehicles'?'active':''}" onclick="setSection('vehicles')">● <span>Buscar veículo</span></button><button class="${adminSection==='logs'?'active':''}" onclick="setSection('logs')">● <span>Logs de acesso</span></button><button class="${adminSection==='settings'?'active':''}" onclick="setSection('settings')">⚙ <span>Configurações</span></button></nav><div class="nav-spacer"></div><div class="side-foot"><button class="btn btn-ghost" onclick="openPanelInNewTab('#painel-labs')">● <span>Painel laboratórios</span></button><button class="btn btn-ghost" onclick="openPanelInNewTab('#painel-salas')">● <span>Painel salas de aula</span></button><button class="btn btn-ghost" onclick="logout()">● <span>Sair</span></button></div></aside>
+ <main class="main ${stockMode?'stock-mode':''}"><header class="topbar"><div><h1>${title}</h1><small>${formatDate(new Date(),{weekday:'long',day:'2-digit',month:'long',year:'numeric'})}</small></div><div class="top-actions"><span id="sessionBadge" class="session-badge" title="A sessão administrativa expira 4 horas após o login">Sessão: ${formatSessionRemaining()}</span><span id="tokenStatusBadge" class="token-status-badge" title="Verificando o token salvo neste navegador">Token</span><span id="adminSyncBadge" class="sync-badge">Dados GitHub</span><button class="btn btn-secondary" onclick="${adminSection==='loans'?'loanRefresh()':stockMode?'syncStockModule()':adminSection==='vehicles'?'syncVehiclesFromGithub()':'syncFromGithub()'}">↻ Sincronizar</button>${stockMode?`<button class="btn btn-secondary" onclick="setSection('agenda')">← Voltar às salas</button>`:adminSection==='vehicles'?`<button class="btn btn-primary" onclick="document.getElementById('vehicleOwner')?.focus()">＋ Cadastrar veículo</button>`:adminSection==='agenda'?`<button class="btn btn-success" onclick="openPanelInNewTab('#painel-salas')">Painel salas</button><button class="btn btn-secondary" onclick="setSection('rooms')">Layout de salas FMP</button>`:adminSection==='list'?`<button class="btn btn-secondary" onclick="openPanelInNewTab('#painel-labs')">Painel laboratórios</button><button class="btn btn-primary" onclick="openBookingModal()">＋ Novo agendamento</button>`:`<button class="btn btn-secondary" onclick="openPanelInNewTab('#painel-labs')">Painel laboratórios</button><button class="btn btn-success" onclick="openPanelInNewTab('#painel-salas')">Painel salas</button>`}</div></header><div class="content" id="adminContent"></div></main></div>`;
+ if(adminSection==='loans')renderLoans();else if(adminSection==='agenda')renderClassroomManagement();else if(adminSection==='settings')renderSettings();else if(adminSection==='rooms')renderRoomAssignments();else if(adminSection==='stock')renderStockModule();else if(adminSection==='vehicles')renderVehicles();else if(adminSection==='logs')renderAuditLogs();else renderBookingList();
  updateAdminSyncBadge();updateSessionBadge();updateGithubTokenBadge();setTimeout(()=>refreshGithubTokenStatus(false),0);
 }
 function setSection(s){if(!isLogged()){location.hash='#login';return}adminSection=s;localStorage.setItem(ADMIN_SECTION_KEY,s);renderAdmin();if(s==='logs')loadAuditLogs(true);if(s==='vehicles')syncVehiclesFromGithub(true)}
