@@ -523,7 +523,7 @@
 #loanSpaces .featured-event-card:before{display:none}#loanSpaces .featured-event-badge{padding:3px 6px;font-size:10px}
 #loanSpaces .featured-event-card h2{margin:6px 0 2px;font-size:18px}#loanSpaces .featured-event-card p,#loanSpaces .featured-event-meta span{font-size:12px;color:#614916}
 #loanSpaces .featured-event-meta{margin-top:5px;gap:5px}#loanSpaces .featured-event-meta span{padding:3px 6px;background:white}
-</style>
+#loanSpaces .day-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,225px),1fr));gap:8px;margin:0 0 16px}#loanSpaces h3{font-size:16px;margin:8px 0}#loanSpaces .day-hint{font-size:13px;margin:0 0 8px;color:#465e70}#loanSpaces .day-card{border:1px solid #cbd9e3;border-radius:9px;padding:10px;overflow-wrap:anywhere;background:#f8fafc;font-size:13px}#loanSpaces .day-card h4{font-size:15px;margin:0;color:#183d59}#loanSpaces .day-card small{display:block;color:#41566a;margin-top:2px}#loanSpaces .day-slot,#loanSpaces .day-item{border-top:1px solid #d9e2e9;margin-top:6px;padding-top:6px}#loanSpaces .day-item button{font-size:12px;padding:4px 8px;margin-top:5px}#loanSpaces .day-status{display:inline-block;border-radius:5px;padding:2px 4px;font-size:11px;font-weight:700}#loanSpaces .day-status.late{background:#ffe3e4;color:#8c1c28}#loanSpaces .day-status.ok{background:#dbf3e6;color:#175738}#loanSpaces .day-status.out{background:#fff0cf;color:#764b00}</style>
 </head>
 <body>
 <div id="app" class="app"></div>
@@ -992,7 +992,7 @@ function loanStamp(d=new Date()){return localISO(d)+'T'+d.toTimeString().slice(0
 function loanOptions(arr){return arr.map(x=>'<option value="'+escapeHtml(x)+'"></option>').join('')}
 function renderLoans(){
  if(!isLogged())return;
- document.getElementById('adminContent').innerHTML=`<section id="loanPanel"><div class="panel"><h2>Registrar empréstimo</h2><form id="loanForm" onsubmit="loanSubmit(event)" class="form-grid">
+ document.getElementById('adminContent').innerHTML=`<section id="loanPanel"> <div class="panel"><h2>Ocupação agora</h2><div id="loanSpaces" class="classroom-page"></div></div><div class="panel"><h2>Registrar empréstimo</h2><form id="loanForm" onsubmit="loanSubmit(event)" class="form-grid">
  <label class="field">Professor ou funcionário<input name="person" required maxlength="120" list="loanPeople"></label><datalist id="loanPeople"></datalist>
  <label class="field">Material ou chave<input name="item" required maxlength="100" list="loanItems" placeholder="Selecione ou digite"></label><datalist id="loanItems"></datalist>
  <label class="field">Quantidade<input name="qty" type="number" min="1" max="999" step="1" required value="1"></label>
@@ -1000,7 +1000,7 @@ function renderLoans(){
  <label class="field">Local (opcional)<input name="room" list="loanPlaces" maxlength="90" placeholder="Sem sala vinculada"></label><datalist id="loanPlaces"></datalist>
  <div class="field"><button class="btn btn-primary" type="submit">Registrar retirada</button></div></form><p id="loanNote" role="status"></p></div>
  <div class="panel"><h2>Materiais em circulação</h2><div id="loanOpen"></div></div>
- <div class="panel"><h2>Ocupação agora</h2><div id="loanSpaces" class="classroom-page"></div></div>
+
  <details class="panel"><summary>Histórico de devoluções</summary><div id="loanClosed"></div></details></section>`;
  loanRows=null;loanPaint();loanRefresh();
 }
@@ -1012,10 +1012,32 @@ function mirrorSelect(days,period){
  if(period)mirrorPeriod=period;
  paintLoanMirror()
 }
+function loanDayBoard(date,rows,now=new Date()){
+ const day=localISO(date),today=localISO(now),time=now.toTimeString().slice(0,5),people=new Map(),esc=escapeHtml;
+ const person=name=>{name=String(name||'Responsável a definir').trim();const k=name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,' ').toLowerCase();if(!people.has(k))people.set(k,{name,slots:[],items:[]});return people.get(k)};
+ function slot(who,room,start,end,purpose,pending=false){const list=person(who).slots;list.push({room,start,end,purpose,pending})}
+ const booked=new Set();
+ for(const b of state.bookings){if(b.date!==day||!['confirmed','pending'].includes(b.status))continue;booked.add(b.id);slot(b.responsible,isFeaturedEvent(b)?b.customSpaceName||'Evento FMP':bookingResourceName(b),b.startTime,b.endTime,displayPurpose(b),b.status==='pending')}
+ for(const p of CLASSROOM_PERIODS)for(const e of classroomEntriesForPeriod(date,p.id)){
+ if(e.bookingId&&booked.has(e.bookingId))continue;
+ slot(e.professor,e.room||'Sala a definir',e.startTime,e.endTime,e.conflict?e.purpose+' · '+(e.conflictText||'Verificar local'):e.purpose)
+ }
+ for(const r of rows||[]){const out=r.at.slice(0,10),back=r.returned?.slice(0,10);
+ if(out===day||back===day||(out<day&&day<=today&&(!back||back>day)))person(r.person).items.push(r)}
+ const late=r=>!r.returned&&r.at.slice(0,10)<today;
+ const rank=p=>p.items.some(late)?0:p.items.some(r=>!r.returned)?1:2;
+ function item(r){const tag=r.returned?'Devolvido':late(r)?'Pendente de devolução':'A devolver hoje';
+ return `<div class="day-item"><strong>${esc(r.qty)} × ${esc(r.item)}</strong> <span class="day-status ${r.returned?'ok':late(r)?'late':'out'}">${tag}</span><small>Retirada: ${esc(r.at.slice(0,10).split('-').reverse().join('/'))} às ${esc(r.at.slice(11,16))}${r.room?' · '+esc(r.room):''}${r.assets?.length?' · Patrimônio: '+esc(r.assets.join(', ')):''}</small>${r.returned?'<small>Recebido por '+esc(r.receiver||'Administrativo')+' · '+esc(r.returned.slice(0,10).split('-').reverse().join('/'))+' às '+esc(r.returned.slice(11,16))+'</small>':'<button type="button" class="btn btn-secondary" data-return="'+esc(r.id)+'">Registrar devolução</button>'}</div>`}
+ function card(p){return `<article class="day-card"><h4>${esc(p.name)}</h4>${p.slots.sort((a,b)=>a.start.localeCompare(b.start)).map(s=>{
+ const status=s.pending?'Reserva pendente':day===today&&s.start<=time&&time<s.end?'Em uso':day<today||(day===today&&time>=s.end)?'Encerrado':'Agendado';
+ return '<div class="day-slot"><strong>'+esc(s.room)+'</strong> · '+status+'<small>'+esc(s.start)+'–'+esc(s.end)+' · '+esc(s.purpose||'Reserva')+'</small></div>'}).join('')}${p.items.map(item).join('')}</article>`}
+ return '<h3>Agenda e materiais do dia</h3><p class="day-hint">Todos os horários da data selecionada, agrupados por responsável. As devoluções são confirmadas por item.</p>'+(rows===null?'<p role="status">Empréstimos ainda não carregados. Consulte o status da sincronização.</p>':'')+'<div class="day-grid">'+([...people.values()].sort((a,b)=>rank(a)-rank(b)||a.name.localeCompare(b.name,'pt-BR')).map(card).join('')||'Nenhuma reserva ou retirada localizada para esta data.')+'</div>';
+}
+
 function paintLoanMirror(){
  if(!loanActive())return;
  const selected=mirrorDate||new Date(),button=(id,label)=>`<button type="button" class="${id===mirrorPeriod?'active':''}" onclick="mirrorSelect(null,'${id}')">${escapeHtml(label)}</button>`;
- document.getElementById('loanSpaces').innerHTML=`<div class="public-toolbar"><div class="date-nav"><button aria-label="Dia anterior" onclick="mirrorSelect(-1)">‹</button><button onclick="mirrorSelect(0)">Hoje</button><button aria-label="Dia seguinte" onclick="mirrorSelect(1)">›</button><b>${formatDate(selected,{weekday:'long',day:'2-digit',month:'long'})}</b></div><div class="classroom-periods">${button('auto','Automático')}${CLASSROOM_PERIODS.map(p=>button(p.id,p.label)).join('')}</div></div>${classroomBoard(selected,mirrorPeriod)}`;
+ document.getElementById('loanSpaces').innerHTML=`<div class="public-toolbar"><div class="date-nav"><button aria-label="Dia anterior" onclick="mirrorSelect(-1)">‹</button><button onclick="mirrorSelect(0)">Hoje</button><button aria-label="Dia seguinte" onclick="mirrorSelect(1)">›</button><b>${formatDate(selected,{weekday:'long',day:'2-digit',month:'long'})}</b></div></div>${loanDayBoard(selected,loanRows)}<h3>Grade de salas por horário</h3><div class="public-toolbar"><div class="classroom-periods">${button('auto','Automático')}${CLASSROOM_PERIODS.map(p=>button(p.id,p.label)).join('')}</div></div>${classroomBoard(selected,mirrorPeriod)}`;
  clearTimeout(mirrorTimer);const now=new Date(),mid=new Date(now);mid.setHours(24,0,0,250);
  mirrorTimer=setTimeout(paintLoanMirror,Math.min(nextClassroomTransitionMs()||Infinity,mid-now));
 }
@@ -1032,7 +1054,7 @@ function loanPaint(){
  return `<article class="loan-row${late?' loan-late':''}"><b>${late?'Pendência · ':''}${esc(r.person)}</b> — ${esc(r.qty)} × ${esc(r.item)}<br>${esc(r.room||'Sem sala vinculada')}${r.assets?.length?' · Patrimônio: '+esc(r.assets.join(', ')):''}<br><small>Retirada: ${esc(fmt(r.at))} · ${esc(r.by)}</small>${r.returned?'<br><small>Devolvido em '+esc(fmt(r.returned))+' · Recebido por '+esc(r.receiver)+'</small>':'<br><button class="btn btn-secondary" data-return="'+esc(r.id)+'">Registrar devolução</button>'}</article>`}
  document.getElementById('loanOpen').innerHTML=loanRows===null?'Aguardando leitura dos empréstimos.':open.map(card).join('')||'Nenhum empréstimo em aberto.';
  document.getElementById('loanClosed').innerHTML=rows.filter(r=>r.returned).sort((a,b)=>b.returned.localeCompare(a.returned)).map(card).join('')||'Nenhuma devolução registrada.';
- document.getElementById('loanOpen').onclick=e=>{const id=e.target.closest('[data-return]')?.dataset.return;if(!id||!loanActive())return;const r=loanRows.find(x=>x.id===id);if(r&&confirm('Confirmar o recebimento de '+r.qty+' × '+r.item+' de '+r.person+'?'))loanRefresh(doc=>{const row=doc.rows.find(x=>x.id===id);if(!row||row.returned)throw Error('Devolução já registrada. Sincronize o painel.');row.returned=loanStamp();row.receiver=currentUsername()})};
+ document.getElementById('loanPanel').onclick=e=>{const id=e.target.closest('[data-return]')?.dataset.return;if(!id||!loanActive())return;const r=loanRows.find(x=>x.id===id);if(loanBusy){toast('Sincronizando. Aguarde um instante e tente novamente.');return}if(r&&confirm('Confirmar o recebimento de '+r.qty+' × '+r.item+' de '+r.person+'?'))loanRefresh(doc=>{const row=doc.rows.find(x=>x.id===id);if(!row||row.returned)throw Error('Devolução já registrada. Sincronize o painel.');row.returned=loanStamp();row.receiver=currentUsername()})};
 }
 function loanAuto(doc,now){
  const labs=new Map(loanLabs().map(r=>[r.id,r.name])),limit=loanStamp(now);
