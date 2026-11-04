@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-04T21:52:37.330Z",
+  "updatedAt": "2026-11-04T21:53:14.808Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8374,6 +8374,20 @@
       "allDay": false,
       "responsible": "Maurício A. de Lima",
       "purpose": "Pedagogia — 8ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-04"
+    },
+    {
+      "id": "b6631183-c621-4865-8ce5-7b1fc5ac6033",
+      "spaceCategory": "lab",
+      "resourceId": "lab4",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Grazielle F. da Silva",
+      "purpose": "PÓS - EDUCAÇÃO ESPECIAL",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
