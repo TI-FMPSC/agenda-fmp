@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-04T21:53:14.808Z",
+  "updatedAt": "2026-11-04T21:53:31.936Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8393,17 +8393,6 @@
       "status": "confirmed",
       "notes": "",
       "date": "2026-11-04"
-    },
-    {
-      "id": "b216a584-35e3-5f75-8aa4-e1946366ecd5",
-      "resourceId": "auditorio",
-      "responsible": "PÓS - EDUCAÇÃO ESPECIAL",
-      "purpose": "PÓS - EDUCAÇÃO ESPECIAL",
-      "date": "2026-11-04",
-      "startTime": "19:00",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: PÓS - EDUCAÇÃO ESPECIAL"
     },
     {
       "id": "b6d2bc06-0b7a-5865-935d-9826a1a53153",
