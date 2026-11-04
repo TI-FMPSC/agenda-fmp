@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-04T21:52:41.894Z",
+  "updatedAt": "2026-11-04T21:53:19.346Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8605,6 +8605,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 8ª Fase · Maurício A. de Lima · 2026-11-04 · 18:50–22:00 · Laboratório 03"
+    },
+    {
+      "id": "01ebf0cc-31c8-417f-875a-2913e51b21e2",
+      "timestamp": "2026-11-04T21:53:18.080Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "PÓS - EDUCAÇÃO ESPECIAL · Grazielle F. da Silva · 2026-11-04 · 18:50–22:00 · Laboratório 04"
     }
   ]
 }
