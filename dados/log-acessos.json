@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-04T00:59:35.247Z",
+  "updatedAt": "2026-11-04T20:31:08.383Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8578,6 +8578,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 4ª Fase · Elaine M. S. dos Santos. · 2026-11-04 · 18:50–22:00 · Laboratório 04"
+    },
+    {
+      "id": "befbb0f6-51c4-4e9e-b62a-7eb5baf8766a",
+      "timestamp": "2026-11-04T20:31:07.766Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
