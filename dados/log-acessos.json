@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-04T22:40:10.379Z",
+  "updatedAt": "2026-11-04T23:46:26.594Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8641,6 +8641,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "PÓS-GRADUAÇÃO (GESTÃO EMPRESARIAL) · Fabiana E. Boff · 2026-11-04 · 18:50–22:00 · Auditório"
+    },
+    {
+      "id": "3eb02475-ac81-42e8-9c07-8c3f173d97b3",
+      "timestamp": "2026-11-04T23:46:26.073Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 8ª Fase · Marcus B. O. Silveira · 2026-11-05 · 18:50–22:00 · Laboratório 02"
     }
   ]
 }
