@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-04T20:31:08.383Z",
+  "updatedAt": "2026-11-04T21:51:59.308Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8587,6 +8587,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "10b08d02-a599-4462-a416-d9685f1c4738",
+      "timestamp": "2026-11-04T21:51:58.757Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "PÓS - EDUCAÇÃO ESPECIAL · PÓS - EDUCAÇÃO ESPECIAL · 2026-11-04 · 19:00–22:00 · Auditório"
     }
   ]
 }
