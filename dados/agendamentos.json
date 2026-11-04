@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-04T21:51:55.338Z",
+  "updatedAt": "2026-11-04T21:52:37.330Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8365,6 +8365,31 @@
       "status": "confirmed",
       "notes": "",
       "date": "2026-11-04"
+    },
+    {
+      "id": "87c31f02-bdcc-4fce-aab8-f8dd1807047b",
+      "spaceCategory": "lab",
+      "resourceId": "lab3",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Maurício A. de Lima",
+      "purpose": "Pedagogia — 8ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-04"
+    },
+    {
+      "id": "b216a584-35e3-5f75-8aa4-e1946366ecd5",
+      "resourceId": "auditorio",
+      "responsible": "PÓS - EDUCAÇÃO ESPECIAL",
+      "purpose": "PÓS - EDUCAÇÃO ESPECIAL",
+      "date": "2026-11-04",
+      "startTime": "19:00",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: PÓS - EDUCAÇÃO ESPECIAL"
     },
     {
       "id": "b6d2bc06-0b7a-5865-935d-9826a1a53153",
