@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-03T21:34:17.222Z",
+  "updatedAt": "2026-11-04T00:51:24.772Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8303,6 +8303,20 @@
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: SALA 16: MATURIDADE (13:30-17:30)",
       "customSpaceName": "Sala 16"
+    },
+    {
+      "id": "698a6c75-b83d-42bd-b86d-53e706a1b713",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": ".",
+      "purpose": "JOVEM PALHOCENSE",
+      "startTime": "13:30",
+      "endTime": "17:30",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-04"
     },
     {
       "id": "b7d3d97e-f455-528a-a615-b1c09a64b611",
