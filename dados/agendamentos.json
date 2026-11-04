@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-04T21:55:17.582Z",
+  "updatedAt": "2026-11-04T22:40:06.850Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8388,6 +8388,20 @@
       "allDay": false,
       "responsible": "Grazielle F. da Silva",
       "purpose": "PÓS - EDUCAÇÃO ESPECIAL",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-04"
+    },
+    {
+      "id": "58bf5ec5-b8cc-4c18-a0d9-e0e3688772e1",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Fabiana E. Boff",
+      "purpose": "PÓS-GRADUAÇÃO (GESTÃO EMPRESARIAL)",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
