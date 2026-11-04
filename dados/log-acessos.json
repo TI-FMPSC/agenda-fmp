@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-04T23:46:26.594Z",
+  "updatedAt": "2026-11-04T23:47:30.408Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8650,6 +8650,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 8ª Fase · Marcus B. O. Silveira · 2026-11-05 · 18:50–22:00 · Laboratório 02"
+    },
+    {
+      "id": "1d14ae5f-6b39-4015-83e3-5d2109ac8a7a",
+      "timestamp": "2026-11-04T23:47:29.901Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "PRÉ-AULA · Mariane R. Estefano · 2026-11-05 · 18:00–18:49 · Laboratório 03"
     }
   ]
 }
