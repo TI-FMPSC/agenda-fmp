@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-05T20:36:50.906Z",
+  "updatedAt": "2026-11-05T20:37:17.426Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8686,6 +8686,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "5148cdd5-004f-4bf3-aabe-b935a87589bc",
+      "timestamp": "2026-11-05T20:37:14.651Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 8ª Fase · Marcus B. O. Silveira. · 2026-11-05 · 18:50–22:00 · Laboratório 03"
     }
   ]
 }
