@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-04T23:48:52.192Z",
+  "updatedAt": "2026-11-05T20:36:50.906Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8677,6 +8677,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 6ª Fase · Andreia de B. Machado · 2026-11-05 · 18:50–22:00 · Auditório"
+    },
+    {
+      "id": "7f9187cb-47b8-4f2f-93eb-fbb0496326df",
+      "timestamp": "2026-11-05T20:36:48.844Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
