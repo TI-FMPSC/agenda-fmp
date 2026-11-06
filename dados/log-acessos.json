@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-06T16:43:15.972Z",
+  "updatedAt": "2026-11-06T17:35:05.580Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8974,6 +8974,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "COPER · Daniela Amorim · 2026-11-09 · 11:12–12:00 · Laboratório 05"
+    },
+    {
+      "id": "61d06b11-9678-4f1c-a140-ad7d6bc0ce2a",
+      "timestamp": "2026-11-06T17:35:03.876Z",
+      "username": "leandropickler",
+      "name": "Leandro Pickler",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
