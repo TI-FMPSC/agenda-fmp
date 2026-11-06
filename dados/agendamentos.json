@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-06T14:14:27.131Z",
+  "updatedAt": "2026-11-06T14:37:06.178Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8687,6 +8687,20 @@
       "date": "2026-11-06"
     },
     {
+      "id": "4d56ae60-adc8-4ff0-8c65-bda47df397c0",
+      "spaceCategory": "lab",
+      "resourceId": "lab3",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Maurício A. de Lima",
+      "purpose": "Administração — 4ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-06"
+    },
+    {
       "id": "124f50e2-2ec5-522c-9c85-3698e2720293",
       "resourceId": "lab1",
       "responsible": "Rafael Novo da Rosa",
@@ -8756,6 +8770,17 @@
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: phone: FUTASL 17:30-22:00",
       "customSpaceName": "Quadra Azul"
+    },
+    {
+      "id": "1a3540ab-9266-59f7-ada7-3b3fd7f2b525",
+      "resourceId": "lab1",
+      "responsible": "Mariane R. Estefano",
+      "purpose": "Administração — 8ª Fase",
+      "date": "2026-11-09",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: MARIANE"
     },
     {
       "id": "f19d6b08-d1b6-57f8-9341-d87209999711",
