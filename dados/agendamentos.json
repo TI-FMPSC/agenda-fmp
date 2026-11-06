@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-06T14:02:21.997Z",
+  "updatedAt": "2026-11-06T14:02:57.755Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8677,6 +8677,20 @@
       "allDay": false,
       "responsible": "ROSANA",
       "purpose": "Administração — 7ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-06"
+    },
+    {
+      "id": "2f42b27b-3c67-479c-9f32-a63ce94e4efb",
+      "spaceCategory": "lab",
+      "resourceId": "lab4",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Maurício A. de Lima",
+      "purpose": "Administração — 4ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
