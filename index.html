@@ -1032,7 +1032,7 @@ function renderLoans(){
  <div class="field"><button class="btn btn-primary" type="submit">Registrar retirada</button></div></form><p id="loanNote" role="status"></p></div>
  <div class="panel"><h2>Materiais em circulação</h2><div id="loanOpen"></div></div>
 
- <details class="panel"><summary>Histórico de devoluções</summary><div id="loanClosed"></div></details></section>`;
+ <details class="panel"><summary>Histórico de devoluções</summary><p>Consulta dos materiais devolvidos, com responsáveis e datas.</p><label class="field">Buscar no histórico<input id="loanHistorySearch" type="search" placeholder="Nome, material, patrimônio, data ou quem recebeu" oninput="renderLoanHistory()"></label><div id="loanClosed"></div></details></section>`;
  loanRows=null;loanPaint();loanRefresh();
 }
 let mirrorDate=null,mirrorPeriod='auto',mirrorTimer;
@@ -1063,8 +1063,9 @@ function loanDayBoard(date,rows,now=new Date()){
  for(const b of state.bookings){if(b.date!==day||!['confirmed','pending'].includes(b.status))continue;booked.add(b.id);add(b.responsible,isFeaturedEvent(b)?b.customSpaceName||'Evento FMP':bookingResourceName(b),b.startTime,b.endTime,displayPurpose(b),b.status==='pending')}
  for(const p of CLASSROOM_PERIODS)for(const e of classroomEntriesForPeriod(date,p.id)){if(e.bookingId&&booked.has(e.bookingId))continue;add(e.professor,e.room,e.startTime,e.endTime,e.conflict?(e.purpose||'')+' · '+(e.conflictText||'Verificar local'):e.purpose)}
  for(const r of rows||[]){
- const out=r.at.slice(0,10),back=r.returned?.slice(0,10);
- if(!(out===day||back===day||(out<day&&day<=today&&(!back||back>day))))continue;
+ const out=r.at.slice(0,10);
+ // Devoluções ficam exclusivamente no histórico; atrasos permanecem visíveis.
+ if(r.returned||!(out===day||(out<day&&day<=today)))continue;
  const explicit=String(r.room||'').trim();
  const candidates=allSlots.filter(s=>key(s.person)===key(r.person)&&(!explicit||roomKey(s.target.name)===roomKey(explicit)));
  // A retirada sem local permanece separada, mesmo havendo aula do responsável.
@@ -1093,6 +1094,15 @@ function paintLoanMirror(){
  clearTimeout(mirrorTimer);const now=new Date(),mid=new Date(now);mid.setHours(24,0,0,250);
  mirrorTimer=setTimeout(paintLoanMirror,Math.min(nextClassroomTransitionMs()||Infinity,mid-now));
 }
+function renderLoanHistory(){
+ const target=document.getElementById('loanClosed');if(!loanActive()||!target)return;
+ const norm=v=>String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+ const query=norm(document.getElementById('loanHistorySearch')?.value||'').trim(),esc=escapeHtml;
+ const fmt=v=>v?v.slice(0,10).split('-').reverse().join('/')+' às '+v.slice(11,16):'Não informado';
+ const rows=(loanRows||[]).filter(r=>r.returned).filter(r=>!query||norm([r.person,r.item,r.room,r.by,r.receiver,...(r.assets||[]),r.at,r.returned,fmt(r.at),fmt(r.returned)].join(' ')).includes(query)).sort((a,b)=>b.returned.localeCompare(a.returned));
+ target.innerHTML=loanRows===null?'Histórico ainda não carregado.':rows.map(r=>'<article class="loan-row"><b>'+esc(r.person)+'</b> — '+esc(r.qty)+' × '+esc(r.item)+'<br>'+esc(r.room||'Sem sala vinculada')+(r.assets?.length?' · Patrimônio: '+esc(r.assets.join(', ')):'')+'<br><small>Retirada: '+esc(fmt(r.at))+' · Entregue por: '+esc(r.by||'Não informado')+'</small><br><small>Devolução: '+esc(fmt(r.returned))+' · Recebido por: '+esc(r.receiver||'Não informado')+'</small></article>').join('')||'Nenhuma devolução encontrada.';
+}
+
 function loanPaint(){
  if(!loanActive())return;
  const today=localISO(new Date()),esc=escapeHtml;
@@ -1105,7 +1115,7 @@ function loanPaint(){
  const fmt=t=>t.slice(8,10)+'/'+t.slice(5,7)+'/'+t.slice(0,4)+' às '+t.slice(11,16);
  return `<article class="loan-row${late?' loan-late':''}"><b>${late?'Pendência · ':''}${esc(r.person)}</b> — ${esc(r.qty)} × ${esc(r.item)}<br>${esc(r.room||'Sem sala vinculada')}${r.assets?.length?' · Patrimônio: '+esc(r.assets.join(', ')):''}<br><small>Retirada: ${esc(fmt(r.at))} · ${esc(r.by)}</small>${r.returned?'<br><small>Devolvido em '+esc(fmt(r.returned))+' · Recebido por '+esc(r.receiver)+'</small>':'<br><button class="btn btn-secondary" data-return="'+esc(r.id)+'">Registrar devolução</button>'}</article>`}
  document.getElementById('loanOpen').innerHTML=loanRows===null?'Aguardando leitura dos empréstimos.':open.map(card).join('')||'Nenhum empréstimo em aberto.';
- document.getElementById('loanClosed').innerHTML=rows.filter(r=>r.returned).sort((a,b)=>b.returned.localeCompare(a.returned)).map(card).join('')||'Nenhuma devolução registrada.';
+ renderLoanHistory();
  document.getElementById('loanPanel').onclick=e=>{const id=e.target.closest('[data-return]')?.dataset.return;if(!id||!loanActive())return;const r=loanRows.find(x=>x.id===id);if(loanBusy){toast('Sincronizando. Aguarde um instante e tente novamente.');return}if(r&&confirm('Confirmar o recebimento de '+r.qty+' × '+r.item+' de '+r.person+'?'))loanRefresh(doc=>{const row=doc.rows.find(x=>x.id===id);if(!row||row.returned)throw Error('Devolução já registrada. Sincronize o painel.');row.returned=loanStamp();row.receiver=currentUsername()})};
 }
 function loanAuto(doc,now){
