@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-06T16:37:22.252Z",
+  "updatedAt": "2026-11-06T16:38:15.235Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8728,7 +8728,7 @@
     {
       "id": "f9713f6d-0c58-5675-b120-6d8041798253",
       "resourceId": "lab3",
-      "responsible": "Daniela Amorim",
+      "responsible": "Leandro Pickler",
       "purpose": "ADS — 5ª Fase",
       "date": "2026-11-09",
       "startTime": "08:00",
