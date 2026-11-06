@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-06T14:09:31.976Z",
+  "updatedAt": "2026-11-06T14:13:23.538Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8578,13 +8578,16 @@
     {
       "id": "d2ef2201-a9a6-5ab9-9a2d-c33376dea6f6",
       "resourceId": "lab1",
-      "responsible": "Daniela Amorim",
+      "responsible": "Leandro Pickler",
       "purpose": "ADS — 4ª Fase",
       "date": "2026-11-06",
       "startTime": "08:00",
       "endTime": "11:10",
       "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: DANIELA"
+      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: DANIELA",
+      "spaceCategory": "lab",
+      "featuredEvent": false,
+      "allDay": false
     },
     {
       "id": "7baf2574-c318-59f8-ba3a-b77ff3fbbabf",
