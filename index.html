@@ -527,6 +527,24 @@
 #loanSpaces .day-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,225px),1fr));gap:8px;margin:0 0 16px}#loanSpaces h3{font-size:16px;margin:8px 0}#loanSpaces .day-hint{font-size:13px;margin:0 0 8px;color:#465e70}#loanSpaces .day-card{border:1px solid #cbd9e3;border-radius:9px;padding:10px;overflow-wrap:anywhere;background:#f8fafc;font-size:13px}#loanSpaces .day-card h4{font-size:15px;margin:0;color:#183d59}#loanSpaces .day-card small{display:block;color:#41566a;margin-top:2px}#loanSpaces .day-slot,#loanSpaces .day-item{border-top:1px solid #d9e2e9;margin-top:6px;padding-top:6px}#loanSpaces .day-item button{font-size:12px;padding:4px 8px;margin-top:5px}#loanSpaces .day-status{display:inline-block;border-radius:5px;padding:2px 4px;font-size:11px;font-weight:700}#loanSpaces .day-status.late{background:#ffe3e4;color:#8c1c28}#loanSpaces .day-status.ok{background:#dbf3e6;color:#175738}#loanSpaces .day-status.out{background:#fff0cf;color:#764b00}#loanSpaces .day-card{background:var(--person-soft,#f8fafc);border-color:var(--person-line,#cbd9e3);border-top:4px solid var(--person-ink,#183d59)}
 #loanSpaces .day-card h4{color:var(--person-ink,#183d59);background:#ffffffa6;border-radius:5px;padding:5px 6px;margin:-2px -2px 5px}
 .login-password{position:relative}.login-password input{width:100%;padding-right:52px!important}.login-password button{position:absolute;right:5px;top:50%;transform:translateY(-50%);border:0;border-radius:7px;background:transparent;color:#35536b;width:40px;height:40px;display:grid;place-items:center}.login-password button:focus-visible{outline:2px solid #0b5cab}.login-error{background:#fff0f0;border:1px solid #e5b1b1;color:#9c2020;border-radius:8px;padding:10px;margin-bottom:12px;font-size:14px}
+
+#loanSpaces .room-usage-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,310px),1fr));gap:12px}
+#loanSpaces .room-usage{color:#fff;background:linear-gradient(145deg,#153f62,#0b2942);border:2px solid #51a8df;border-radius:15px;padding:13px;overflow-wrap:anywhere;min-width:0}
+#loanSpaces .room-usage h4{margin:0;font-size:20px;color:white}
+#loanSpaces .room-usage header{display:flex;justify-content:space-between;gap:8px;border-bottom:1px solid #ffffff35;padding-bottom:9px}
+#loanSpaces .room-usage small{display:block;color:#c7dff0;font-size:12px;line-height:1.4}
+#loanSpaces .room-state{align-self:flex-start;font-size:10px;font-weight:800;border-radius:20px;background:#147bbb;padding:5px 8px;white-space:nowrap}
+#loanSpaces .room-highlight{margin:9px 0;padding:9px 10px;background:#194e77;border:1px solid #4c9fd0;border-radius:10px}
+#loanSpaces .room-highlight b{display:block;font-size:16px;margin:3px 0}#loanSpaces .room-highlight span{font-size:12px}
+#loanSpaces .room-slot{padding-top:9px;margin-top:9px;border-top:1px solid #ffffff20}
+#loanSpaces .room-slot-head{display:flex;gap:10px;align-items:start;font-size:14px}#loanSpaces .room-slot-head time{font-size:12px;color:#a8d8f6;font-weight:800;white-space:nowrap;padding-top:2px}
+#loanSpaces .room-loan{display:flex;gap:8px;align-items:center;justify-content:space-between;background:#ffffff0d;border:1px solid #ffffff25;border-radius:8px;padding:7px;margin-top:7px;font-size:12px}
+#loanSpaces .room-loan>div{min-width:0}#loanSpaces .room-loan button{background:#e3f4ff;color:#103c5d;border:0;border-radius:6px;padding:7px 9px;font-size:12px;font-weight:800;flex-shrink:0}
+#loanSpaces .room-loan button:focus-visible{outline:3px solid #ffd68c}
+#loanSpaces .room-loan-status{display:block;color:#d5e9f5;font-size:11px;margin-top:3px}
+#loanSpaces .room-loan.overdue{background:#591e2c;border-color:#f09bab}#loanSpaces .room-loan.overdue .room-loan-status{color:#ffd2da;font-weight:800}
+#loanSpaces .room-usage.has-pending{border-color:#f18fa0}#loanSpaces .room-usage.has-pending .room-state{background:#a72f48}
+#loanSpaces .room-extra{margin-top:10px}#loanSpaces .room-grade-details{margin-top:14px}#loanSpaces .room-grade-details summary{padding:10px;cursor:pointer}
 </style>
 </head>
 <body>
@@ -1031,31 +1049,47 @@ function responsibleColor(name){
  return '--person-ink:hsl('+hue+',48%,29%);--person-soft:hsl('+hue+',48%,95%);--person-line:hsl('+hue+',35%,76%)';
 }
 function loanDayBoard(date,rows,now=new Date()){
- const day=localISO(date),today=localISO(now),time=now.toTimeString().slice(0,5),people=new Map(),esc=escapeHtml;
- const person=name=>{name=String(name||'Responsável a definir').trim();const k=name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,' ').toLowerCase();if(!people.has(k))people.set(k,{name,slots:[],items:[]});return people.get(k)};
- function slot(who,room,start,end,purpose,pending=false){const list=person(who).slots;list.push({room,start,end,purpose,pending})}
+ const day=localISO(date),today=localISO(now),time=now.toTimeString().slice(0,5),esc=escapeHtml;
+ const key=v=>String(v||'').trim().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,' ').toLowerCase();
+ const roomKey=v=>key(v).replace(/\blab(?:oratorio)?[\s.-]*0*(\d+)/g,'laboratorio $1').replace(/\bsala[\s.-]*0*(\d+)/g,'sala $1');
+ const rooms=new Map(),loose=new Map(),allSlots=[];
+ function room(name,type=''){const k=roomKey(name);if(!rooms.has(k))rooms.set(k,{name,type,slots:[],extra:[]});return rooms.get(k)}
+ (state.resources||[]).filter(r=>r.active).forEach(r=>room(r.name,r.type));
+ CLASSROOM_ROOMS.forEach(r=>room(r,'Sala de aula'));
+ function add(person,place,start,end,purpose,pending=false){const target=room(place||'Sala a definir');const s={person:person||'Responsável a definir',start,end,purpose,pending,items:[],target};
+ target.slots.push(s);allSlots.push(s)}
  const booked=new Set();
- for(const b of state.bookings){if(b.date!==day||!['confirmed','pending'].includes(b.status))continue;booked.add(b.id);slot(b.responsible,isFeaturedEvent(b)?b.customSpaceName||'Evento FMP':bookingResourceName(b),b.startTime,b.endTime,displayPurpose(b),b.status==='pending')}
- for(const p of CLASSROOM_PERIODS)for(const e of classroomEntriesForPeriod(date,p.id)){
- if(e.bookingId&&booked.has(e.bookingId))continue;
- slot(e.professor,e.room||'Sala a definir',e.startTime,e.endTime,e.conflict?e.purpose+' · '+(e.conflictText||'Verificar local'):e.purpose)
+ for(const b of state.bookings){if(b.date!==day||!['confirmed','pending'].includes(b.status))continue;booked.add(b.id);add(b.responsible,isFeaturedEvent(b)?b.customSpaceName||'Evento FMP':bookingResourceName(b),b.startTime,b.endTime,displayPurpose(b),b.status==='pending')}
+ for(const p of CLASSROOM_PERIODS)for(const e of classroomEntriesForPeriod(date,p.id)){if(e.bookingId&&booked.has(e.bookingId))continue;add(e.professor,e.room,e.startTime,e.endTime,e.conflict?(e.purpose||'')+' · '+(e.conflictText||'Verificar local'):e.purpose)}
+ for(const r of rows||[]){
+ const out=r.at.slice(0,10),back=r.returned?.slice(0,10);
+ if(!(out===day||back===day||(out<day&&day<=today&&(!back||back>day))))continue;
+ const explicit=r.room||(/^chave\s*[·:-]\s*/i.test(r.item)?r.item.replace(/^chave\s*[·:-]\s*/i,''):'');
+ const candidates=allSlots.filter(s=>key(s.person)===key(r.person)&&(!explicit||roomKey(s.target.name)===roomKey(explicit)));
+ const unique=new Set(candidates.map(s=>roomKey(s.target.name)));
+ // Without a local, never guess between two rooms used by the same person.
+ if(out===day&&candidates.length&&(explicit||unique.size===1)){
+ const at=r.at.slice(11,16),distance=s=>at<s.start?minutes(s.start)-minutes(at):at>s.end?minutes(at)-minutes(s.end):0;
+ const slot=[...candidates].sort((a,b)=>distance(a)-distance(b)||a.start.localeCompare(b.start))[0];slot.items.push(r);
+ }else if(explicit)room(explicit).extra.push(r);
+ else{const k=key(r.person);if(!loose.has(k))loose.set(k,{name:r.person,items:[]});loose.get(k).items.push(r)}
  }
- for(const r of rows||[]){const out=r.at.slice(0,10),back=r.returned?.slice(0,10);
- if(out===day||back===day||(out<day&&day<=today&&(!back||back>day)))person(r.person).items.push(r)}
+ function minutes(t){const [h,m]=t.split(':').map(Number);return h*60+m}
  const late=r=>!r.returned&&r.at.slice(0,10)<today;
- const rank=p=>p.items.some(late)?0:p.items.some(r=>!r.returned)?1:2;
- function item(r){const tag=r.returned?'Devolvido':late(r)?'Pendente de devolução':'A devolver hoje';
- return `<div class="day-item"><strong>${esc(r.qty)} × ${esc(r.item)}</strong> <span class="day-status ${r.returned?'ok':late(r)?'late':'out'}">${tag}</span><small>Retirada: ${esc(r.at.slice(0,10).split('-').reverse().join('/'))} às ${esc(r.at.slice(11,16))}${r.room?' · '+esc(r.room):''}${r.assets?.length?' · Patrimônio: '+esc(r.assets.join(', ')):''}</small>${r.returned?'<small>Recebido por '+esc(r.receiver||'Administrativo')+' · '+esc(r.returned.slice(0,10).split('-').reverse().join('/'))+' às '+esc(r.returned.slice(11,16))+'</small>':'<button type="button" class="btn btn-secondary" data-return="'+esc(r.id)+'">Registrar devolução</button>'}</div>`}
- function card(p){return `<article class="day-card" style="${responsibleColor(p.name)}"><h4>${esc(p.name)}</h4>${p.slots.sort((a,b)=>a.start.localeCompare(b.start)).map(s=>{
- const status=s.pending?'Reserva pendente':day===today&&s.start<=time&&time<s.end?'Em uso':day<today||(day===today&&time>=s.end)?'Encerrado':'Agendado';
- return '<div class="day-slot"><strong>'+esc(s.room)+'</strong> · '+status+'<small>'+esc(s.start)+'–'+esc(s.end)+' · '+esc(s.purpose||'Reserva')+'</small></div>'}).join('')}${p.items.map(item).join('')}</article>`}
- return '<h3>Agenda e materiais do dia</h3><p class="day-hint">Todos os horários da data selecionada, agrupados por responsável. As devoluções são confirmadas por item.</p>'+(rows===null?'<p role="status">Empréstimos ainda não carregados. Consulte o status da sincronização.</p>':'')+'<div class="day-grid">'+([...people.values()].sort((a,b)=>rank(a)-rank(b)||a.name.localeCompare(b.name,'pt-BR')).map(card).join('')||'Nenhuma reserva ou retirada localizada para esta data.')+'</div>';
+ function item(r,person=false){return '<div class="room-loan '+(late(r)?'overdue':'')+'"><div>'+(person?'<b>'+esc(r.person)+'</b><br>':'')+'<strong>'+esc(r.qty)+' × '+esc(r.item)+'</strong><small>'+esc(r.at.slice(11,16))+' · '+esc(r.at.slice(0,10).split('-').reverse().join('/'))+(r.assets?.length?' · Patrimônio: '+esc(r.assets.join(', ')):'')+'</small><span class="room-loan-status">'+(r.returned?'Devolvido · '+esc(r.receiver||'Administrativo')+' · '+esc(r.returned.slice(0,10).split('-').reverse().join('/'))+' '+esc(r.returned.slice(11,16)):late(r)?'PENDENTE DE DEVOLUÇÃO':'A devolver hoje')+'</span></div>'+(r.returned?'':'<button type="button" data-return="'+esc(r.id)+'">Devolver</button>')+'</div>'}
+ const status=s=>s.pending?'Reserva pendente':day===today&&s.start<=time&&time<s.end?'Em uso':day<today||(day===today&&time>=s.end)?'Encerrado':'Agendado';
+ function card(r){
+ const sorted=r.slots.sort((a,b)=>a.start.localeCompare(b.start)),live=day===today?sorted.find(s=>!s.pending&&s.start<=time&&time<s.end):null;
+ const next=day===today?sorted.find(s=>s.start>time):null,head=live||next||sorted[0],overdue=r.extra.some(late)||sorted.some(s=>s.items.some(late));
+ return '<article class="room-usage '+(overdue?'has-pending':'')+'"><header><div><h4>'+esc(r.name)+'</h4><small>'+esc(r.type)+'</small></div><span class="room-state">'+(overdue?'PENDÊNCIA':live?'EM USO':sorted.length?'AGENDADO':r.extra.length?'MATERIAIS':'LIVRE')+'</span></header>'+(head?'<div class="room-highlight"><small>'+(live?'EM USO AGORA':next?'PRÓXIMO AGENDAMENTO':'AGENDA DO DIA')+'</small><b>'+esc(head.start)+' · '+esc(head.person)+'</b><span>'+esc(head.purpose||'Reserva')+' · até '+esc(head.end)+'</span></div>':'')+sorted.map(s=>'<section class="room-slot"><div class="room-slot-head"><time>'+esc(s.start)+'–'+esc(s.end)+'</time><div><b>'+esc(s.person)+'</b><small>'+esc(s.purpose||'Reserva')+' · '+status(s)+'</small></div></div><div class="room-withdrawals">'+s.items.map(r=>item(r)).join('')+'</div></section>').join('')+(r.extra.length?'<div class="room-extra"><small>RETIRADAS VINCULADAS AO LOCAL</small>'+r.extra.map(r=>item(r,true)).join('')+'</div>':'')+(!sorted.length&&!r.extra.length?'<p>Sem reserva para esta data.</p>':'')+'</article>'
+ }
+ return '<h3>Salas, horários e retiradas</h3><p class="day-hint">Cada retirada aparece uma única vez. Sem local informado, o vínculo só é feito quando o responsável tem uma única sala na data.</p>'+(rows===null?'<p role="status">Empréstimos ainda não carregados. Consulte a sincronização.</p>':'')+'<div class="room-usage-grid">'+[...rooms.values()].map(card).join('')+'</div>'+(loose.size?'<h3>Retiradas sem sala vinculada</h3><div class="room-usage-grid">'+[...loose.values()].map(p=>'<article class="room-usage"><h4>'+esc(p.name)+'</h4>'+p.items.map(r=>item(r)).join('')+'</article>').join('')+'</div>':'');
 }
 
 function paintLoanMirror(){
  if(!loanActive())return;
  const selected=mirrorDate||new Date(),button=(id,label)=>`<button type="button" class="${id===mirrorPeriod?'active':''}" onclick="mirrorSelect(null,'${id}')">${escapeHtml(label)}</button>`;
- document.getElementById('loanSpaces').innerHTML=`<div class="public-toolbar"><div class="date-nav"><button aria-label="Dia anterior" onclick="mirrorSelect(-1)">‹</button><button onclick="mirrorSelect(0)">Hoje</button><button aria-label="Dia seguinte" onclick="mirrorSelect(1)">›</button><b>${formatDate(selected,{weekday:'long',day:'2-digit',month:'long'})}</b></div></div>${loanDayBoard(selected,loanRows)}<h3>Grade de salas por horário</h3><div class="public-toolbar"><div class="classroom-periods">${button('auto','Automático')}${CLASSROOM_PERIODS.map(p=>button(p.id,p.label)).join('')}</div></div>${classroomBoard(selected,mirrorPeriod)}`;
+ document.getElementById('loanSpaces').innerHTML=`<div class="public-toolbar"><div class="date-nav"><button aria-label="Dia anterior" onclick="mirrorSelect(-1)">‹</button><button onclick="mirrorSelect(0)">Hoje</button><button aria-label="Dia seguinte" onclick="mirrorSelect(1)">›</button><b>${formatDate(selected,{weekday:'long',day:'2-digit',month:'long'})}</b></div></div>${loanDayBoard(selected,loanRows)}<details class="room-grade-details"><summary>Consultar grade de salas por horário</summary><div class="public-toolbar"><div class="classroom-periods">${button('auto','Automático')}${CLASSROOM_PERIODS.map(p=>button(p.id,p.label)).join('')}</div></div>${classroomBoard(selected,mirrorPeriod)}</details>`;
  clearTimeout(mirrorTimer);const now=new Date(),mid=new Date(now);mid.setHours(24,0,0,250);
  mirrorTimer=setTimeout(paintLoanMirror,Math.min(nextClassroomTransitionMs()||Infinity,mid-now));
 }
