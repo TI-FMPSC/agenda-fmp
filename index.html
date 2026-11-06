@@ -1017,6 +1017,7 @@ const loanCatalog=['Notebook','Mouse','Caixa de som','Microfone','Controle de ar
 let loanBusy=false,loanRows=null,loanIdle=Promise.resolve(),loanSubmitting=false;
 function loanActive(){return isLogged()&&adminSection==='loans'&&!!document.getElementById('loanPanel')}
 function loanLabs(){return state.resources.filter(r=>r.active&&(/^lab/i.test(r.id)||/^lab/i.test(r.name)))}
+function loanKeyResources(){return state.resources.filter(r=>r.active&&(/^lab/i.test(r.id)||/^lab/i.test(r.name)||normalizeSpaceName(r.id)==='auditorio'||normalizeSpaceName(r.name)==='auditorio'))}
 function loanRooms(){return [...new Set([...CLASSROOM_ROOMS,...state.resources.filter(r=>r.active).map(r=>r.name)])]}
 function loanStamp(d=new Date()){return localISO(d)+'T'+d.toTimeString().slice(0,8)}
 function loanOptions(arr){return arr.map(x=>'<option value="'+escapeHtml(x)+'"></option>').join('')}
@@ -1064,11 +1065,10 @@ function loanDayBoard(date,rows,now=new Date()){
  for(const r of rows||[]){
  const out=r.at.slice(0,10),back=r.returned?.slice(0,10);
  if(!(out===day||back===day||(out<day&&day<=today&&(!back||back>day))))continue;
- const explicit=r.room||(/^chave\s*[·:-]\s*/i.test(r.item)?r.item.replace(/^chave\s*[·:-]\s*/i,''):'');
+ const explicit=String(r.room||'').trim();
  const candidates=allSlots.filter(s=>key(s.person)===key(r.person)&&(!explicit||roomKey(s.target.name)===roomKey(explicit)));
- const unique=new Set(candidates.map(s=>roomKey(s.target.name)));
- // Without a local, never guess between two rooms used by the same person.
- if(out===day&&candidates.length&&(explicit||unique.size===1)){
+ // A retirada sem local permanece separada, mesmo havendo aula do responsável.
+ if(out===day&&explicit&&candidates.length){
  const at=r.at.slice(11,16),distance=s=>at<s.start?minutes(s.start)-minutes(at):at>s.end?minutes(at)-minutes(s.end):0;
  const slot=[...candidates].sort((a,b)=>distance(a)-distance(b)||a.start.localeCompare(b.start))[0];slot.items.push(r);
  }else if(explicit)room(explicit).extra.push(r);
@@ -1083,7 +1083,7 @@ function loanDayBoard(date,rows,now=new Date()){
  const next=day===today?sorted.find(s=>s.start>time):null,head=live||next||sorted[0],overdue=r.extra.some(late)||sorted.some(s=>s.items.some(late));
  return '<article class="room-usage '+(overdue?'has-pending':'')+'"><header><div><h4>'+esc(r.name)+'</h4><small>'+esc(r.type)+'</small></div><span class="room-state">'+(overdue?'PENDÊNCIA':live?'EM USO':sorted.length?'AGENDADO':r.extra.length?'MATERIAIS':'LIVRE')+'</span></header>'+(head?'<div class="room-highlight"><small>'+(live?'EM USO AGORA':next?'PRÓXIMO AGENDAMENTO':'AGENDA DO DIA')+'</small><b>'+esc(head.start)+' · '+esc(head.person)+'</b><span>'+esc(head.purpose||'Reserva')+' · até '+esc(head.end)+'</span></div>':'')+sorted.map(s=>'<section class="room-slot"><div class="room-slot-head"><time>'+esc(s.start)+'–'+esc(s.end)+'</time><div><b>'+esc(s.person)+'</b><small>'+esc(s.purpose||'Reserva')+' · '+status(s)+'</small></div></div><div class="room-withdrawals">'+s.items.map(r=>item(r)).join('')+'</div></section>').join('')+(r.extra.length?'<div class="room-extra"><small>RETIRADAS VINCULADAS AO LOCAL</small>'+r.extra.map(r=>item(r,true)).join('')+'</div>':'')+(!sorted.length&&!r.extra.length?'<p>Sem reserva para esta data.</p>':'')+'</article>'
  }
- return '<h3>Salas, horários e retiradas</h3><p class="day-hint">Cada retirada aparece uma única vez. Sem local informado, o vínculo só é feito quando o responsável tem uma única sala na data.</p>'+(rows===null?'<p role="status">Empréstimos ainda não carregados. Consulte a sincronização.</p>':'')+'<div class="room-usage-grid">'+[...rooms.values()].map(card).join('')+'</div>'+(loose.size?'<h3>Retiradas sem sala vinculada</h3><div class="room-usage-grid">'+[...loose.values()].map(p=>'<article class="room-usage"><h4>'+esc(p.name)+'</h4>'+p.items.map(r=>item(r)).join('')+'</article>').join('')+'</div>':'');
+ return '<h3>Salas, horários e retiradas</h3><p class="day-hint">Cada retirada aparece uma única vez. Retiradas sem local ficam em cartões separados por responsável.</p>'+(rows===null?'<p role="status">Empréstimos ainda não carregados. Consulte a sincronização.</p>':'')+'<div class="room-usage-grid">'+[...rooms.values()].map(card).join('')+'</div>'+(loose.size?'<h3>Retiradas sem sala vinculada</h3><div class="room-usage-grid">'+[...loose.values()].map(p=>'<article class="room-usage"><h4>'+esc(p.name)+'</h4>'+p.items.map(r=>item(r)).join('')+'</article>').join('')+'</div>':'');
 }
 
 function paintLoanMirror(){
@@ -1100,7 +1100,7 @@ function loanPaint(){
  paintLoanMirror();
  document.getElementById('loanPeople').innerHTML=loanOptions([...new Set([...state.classSchedule.map(x=>x.professor),...state.bookings.map(x=>x.responsible),...rows.map(x=>x.person)].filter(Boolean))].sort());
  document.getElementById('loanPlaces').innerHTML=loanOptions(loanRooms());
- document.getElementById('loanItems').innerHTML=loanOptions([...loanCatalog,...[...CLASSROOM_ROOMS,...loanLabs().map(x=>x.name)].map(x=>'Chave · '+x)]);
+ document.getElementById('loanItems').innerHTML=loanOptions([...loanCatalog,...loanKeyResources().map(x=>'Chave · '+x.name)]);
  function card(r){const late=!r.returned&&r.at.slice(0,10)<today;
  const fmt=t=>t.slice(8,10)+'/'+t.slice(5,7)+'/'+t.slice(0,4)+' às '+t.slice(11,16);
  return `<article class="loan-row${late?' loan-late':''}"><b>${late?'Pendência · ':''}${esc(r.person)}</b> — ${esc(r.qty)} × ${esc(r.item)}<br>${esc(r.room||'Sem sala vinculada')}${r.assets?.length?' · Patrimônio: '+esc(r.assets.join(', ')):''}<br><small>Retirada: ${esc(fmt(r.at))} · ${esc(r.by)}</small>${r.returned?'<br><small>Devolvido em '+esc(fmt(r.returned))+' · Recebido por '+esc(r.receiver)+'</small>':'<br><button class="btn btn-secondary" data-return="'+esc(r.id)+'">Registrar devolução</button>'}</article>`}
@@ -1109,14 +1109,14 @@ function loanPaint(){
  document.getElementById('loanPanel').onclick=e=>{const id=e.target.closest('[data-return]')?.dataset.return;if(!id||!loanActive())return;const r=loanRows.find(x=>x.id===id);if(loanBusy){toast('Sincronizando. Aguarde um instante e tente novamente.');return}if(r&&confirm('Confirmar o recebimento de '+r.qty+' × '+r.item+' de '+r.person+'?'))loanRefresh(doc=>{const row=doc.rows.find(x=>x.id===id);if(!row||row.returned)throw Error('Devolução já registrada. Sincronize o painel.');row.returned=loanStamp();row.receiver=currentUsername()})};
 }
 function loanAuto(doc,now){
- const labs=new Map(loanLabs().map(r=>[r.id,r.name])),limit=loanStamp(now);
+ const labs=new Map(loanKeyResources().map(r=>[r.id,r.name])),limit=loanStamp(now);
  const done=new Set(doc.rows.flatMap(r=>r.bookings||[]));let changed=false;
  for(const b of [...state.bookings].sort((a,b)=>(a.date+a.startTime).localeCompare(b.date+b.startTime))){
  const at=b.date+'T'+b.startTime+':00',room=labs.get(b.resourceId),person=(b.responsible||'').trim();
  if(!room||!person||!b.id||b.status!=='confirmed'||isFeaturedEvent(b)||b.date<doc.start||at>limit||done.has(b.id))continue;
  const item='Chave · '+room;
  let r=doc.rows.find(r=>r.item===item&&r.person.toLowerCase()===person.toLowerCase()&&r.at.slice(0,10)===b.date&&(!r.returned||r.returned>=at));
- if(!r){r={id:'key:'+b.id,person,item,qty:1,at,room,assets:[],by:'Agenda do laboratório'};doc.rows.push(r)}
+ if(!r){r={id:'key:'+b.id,person,item,qty:1,at,room,assets:[],by:'Agenda do espaço'};doc.rows.push(r)}
  (r.bookings||=[]).push(b.id);done.add(b.id);changed=true;
  }return changed
 }
