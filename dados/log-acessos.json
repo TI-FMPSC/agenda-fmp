@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-06T16:08:06.202Z",
+  "updatedAt": "2026-11-06T16:28:45.705Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8920,6 +8920,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "cec08208-20d4-4bdc-8d99-0ad77ec8a5de",
+      "timestamp": "2026-11-06T16:28:45.208Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "ADS/TPG · Clodomir Coradini · 2026-11-09 · 09:45–11:45 · Auditório"
     }
   ]
 }
