@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-06T16:05:27.308Z",
+  "updatedAt": "2026-11-06T16:28:42.432Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8760,6 +8760,20 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: DANIELA"
+    },
+    {
+      "id": "8fab8b09-56e4-4ce6-af83-c3bd8e195e90",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "allDay": false,
+      "responsible": "Clodomir Coradini",
+      "purpose": "ADS/TPG",
+      "startTime": "09:45",
+      "endTime": "11:45",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-09"
     },
     {
       "id": "6476a291-6b49-4234-aa45-e41454ab2a68",
