@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-06T14:13:59.492Z",
+  "updatedAt": "2026-11-06T14:14:27.131Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8756,17 +8756,6 @@
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: phone: FUTASL 17:30-22:00",
       "customSpaceName": "Quadra Azul"
-    },
-    {
-      "id": "1a3540ab-9266-59f7-ada7-3b3fd7f2b525",
-      "resourceId": "lab1",
-      "responsible": "Mariane R. Estefano",
-      "purpose": "Administração — 8ª Fase",
-      "date": "2026-11-09",
-      "startTime": "18:50",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: MARIANE"
     },
     {
       "id": "f19d6b08-d1b6-57f8-9341-d87209999711",
