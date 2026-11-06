@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-06T16:05:30.713Z",
+  "updatedAt": "2026-11-06T16:07:30.988Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8902,6 +8902,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "PÓS-GRADUAÇÃO (GESTÃO EMPRESARIAL) · Mariane R. Estefano · 2026-11-13 · 18:00–22:00 · Auditório"
+    },
+    {
+      "id": "724df3e9-6ad1-4e72-b13f-c38d20dc8c79",
+      "timestamp": "2026-11-06T16:07:30.393Z",
+      "username": "leandropickler",
+      "name": "Leandro Pickler",
+      "action": "Logout realizado",
+      "module": "Acesso",
+      "details": "Saída da área administrativa"
     }
   ]
 }
