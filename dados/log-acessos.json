@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-06T14:09:35.251Z",
+  "updatedAt": "2026-11-06T14:13:26.772Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8758,6 +8758,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "Administração — 7ª Fase · ROSANA · 2026-11-06 · 18:50–22:00 · Laboratório 02"
+    },
+    {
+      "id": "4285408a-89c4-4a27-a836-455349f6ade1",
+      "timestamp": "2026-11-06T14:13:26.208Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "ADS — 4ª Fase · Leandro Pickler · 2026-11-06 · 08:00–11:10 · Laboratório 01"
     }
   ]
 }
