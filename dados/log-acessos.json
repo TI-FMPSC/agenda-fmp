@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-06T15:13:27.163Z",
+  "updatedAt": "2026-11-06T16:05:30.713Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8893,6 +8893,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "f67288ed-2505-435c-9155-8d15ab153ca6",
+      "timestamp": "2026-11-06T16:05:30.270Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "PÓS-GRADUAÇÃO (GESTÃO EMPRESARIAL) · Mariane R. Estefano · 2026-11-13 · 18:00–22:00 · Auditório"
     }
   ]
 }
