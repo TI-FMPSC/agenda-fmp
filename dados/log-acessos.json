@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-06T13:52:39.242Z",
+  "updatedAt": "2026-11-06T13:55:29.635Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8722,6 +8722,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "9d47a4e0-3dbf-4965-804b-ab4bfa16ded1",
+      "timestamp": "2026-11-06T13:55:28.799Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 3ª Fase · Anderson da Silveira · 2026-11-06 · 18:50–22:00 · Laboratório 01"
     }
   ]
 }
