@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-06T14:43:08.625Z",
+  "updatedAt": "2026-11-06T14:49:13.388Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8692,7 +8692,7 @@
       "resourceId": "lab3",
       "featuredEvent": false,
       "allDay": false,
-      "responsible": "Maurício A. de Lima",
+      "responsible": "ROSANA",
       "purpose": "Administração — 4ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
