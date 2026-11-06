@@ -545,6 +545,7 @@
 #loanSpaces .room-loan.overdue{background:#591e2c;border-color:#f09bab}#loanSpaces .room-loan.overdue .room-loan-status{color:#ffd2da;font-weight:800}
 #loanSpaces .room-usage.has-pending{border-color:#f18fa0}#loanSpaces .room-usage.has-pending .room-state{background:#a72f48}
 #loanSpaces .room-extra{margin-top:10px}#loanSpaces .room-grade-details{margin-top:14px}#loanSpaces .room-grade-details summary{padding:10px;cursor:pointer}
+.important-event-option{display:flex;align-items:center;gap:10px;padding:12px;margin-bottom:16px;border:1px solid #e3c16c;background:#fff8e7;border-radius:10px;color:#6c480a;cursor:pointer}.important-event-option input{width:20px;height:20px;accent-color:#a97809;flex-shrink:0}.important-event-option small{display:block;margin-top:4px;font-size:12px;line-height:1.4}
 </style>
 </head>
 <body>
@@ -557,6 +558,7 @@
       <div class="modal-body">
         <div id="bookingAlert" class="alert alert-error hidden"></div>
         <input type="hidden" id="bookingId" />
+        <label class="important-event-option"><input id="importantEvent" type="checkbox"><span><strong>★ Evento importante</strong><small>Exibir um cartão dourado com estrela nos painéis da data, inclusive durante a semana.</small></span></label>
         <div class="form-grid">
           <div class="field"><label>Tipo de uso *</label><select id="bookingArea" required onchange="toggleBookingArea()"><option value="lab">Laboratório / Auditório</option><option value="classroom">Sala de aula / outro espaço</option><option value="event">Evento institucional em destaque</option></select><div class="booking-area-hint" id="bookingAreaHint">Reserva de laboratório, auditório ou outro espaço institucional.</div></div>
           <div class="field"><label id="resourceLabel">Espaço *</label><select id="resourceId" required onchange="toggleCustomSpace()"></select></div>
@@ -1250,8 +1252,9 @@ function bookingResourceType(b){if(String(b?.resourceId||'').startsWith('custom:
 
 function bookingCategory(b){return b?.spaceCategory==='event'?'event':b?.spaceCategory==='classroom'?'classroom':'lab'}
 function isFeaturedEvent(b){return b?.featuredEvent===true||b?.spaceCategory==='event'}
-function featuredEventsForDate(date){const iso=localISO(date);return state.bookings.filter(b=>b.date===iso&&b.status==='confirmed'&&isFeaturedEvent(b)).sort((a,b)=>a.startTime.localeCompare(b.startTime))}
-function featuredEventCard(b){const happening=currentStatus(b);const badge=happening?'ACONTECENDO AGORA':b.allDay?'EVENTO · DIA INTEIRO':'EVENTO EM DESTAQUE';return `<article class="featured-event-card"><span class="featured-event-badge">★ ${badge}</span><h2>${escapeHtml(displayPurpose(b))}</h2><p>${escapeHtml(b.responsible||'FMP')} · ${escapeHtml(b.customSpaceName||'Faculdade Municipal de Palhoça')}</p><div class="featured-event-meta"><span>📅 ${formatDate(parseLocal(b.date),{weekday:'long',day:'2-digit',month:'long'})}</span><span>◷ ${b.allDay?'Dia inteiro':periodLabel(b)}</span></div></article>`}
+function isHighlightedEvent(b){return isFeaturedEvent(b)||b?.importantEvent===true}
+function featuredEventsForDate(date){const iso=localISO(date);return state.bookings.filter(b=>b.date===iso&&b.status==='confirmed'&&isHighlightedEvent(b)).sort((a,b)=>a.startTime.localeCompare(b.startTime))}
+function featuredEventCard(b){const happening=currentStatus(b);const badge=b.importantEvent?'EVENTO IMPORTANTE'+(happening?' · ACONTECENDO AGORA':''):happening?'ACONTECENDO AGORA':b.allDay?'EVENTO · DIA INTEIRO':'EVENTO EM DESTAQUE';return `<article class="featured-event-card"><span class="featured-event-badge">★ ${badge}</span><h2>${escapeHtml(displayPurpose(b))}</h2><p>${escapeHtml(b.responsible||'FMP')} · ${escapeHtml(bookingCategory(b)==='event'?b.customSpaceName||'Faculdade Municipal de Palhoça':bookingResourceName(b))}</p><div class="featured-event-meta"><span>📅 ${formatDate(parseLocal(b.date),{weekday:'long',day:'2-digit',month:'long'})}</span><span>◷ ${b.allDay?'Dia inteiro':periodLabel(b)}</span></div></article>`}
 function customResourcesForDates(dates,category=null){const set=new Map();const wanted=new Set(dates.map(localISO));state.bookings.filter(b=>wanted.has(b.date)&&String(b.resourceId||'').startsWith('custom:')&&(!category||bookingCategory(b)===category)).forEach(b=>set.set(b.resourceId,{id:b.resourceId,name:b.customSpaceName||'Outro espaço',type:bookingCategory(b)==='classroom'?'Sala de aula / espaço informado':'Espaço informado manualmente',active:true,custom:true,category:bookingCategory(b)}));return [...set.values()].sort((a,b)=>a.name.localeCompare(b.name,'pt-BR'))}
 function resourcesForPublicDate(date){return [...state.resources.filter(r=>r.active),...customResourcesForDates([date],'lab')]}
 function resourcesForWeek(days){return [...state.resources.filter(r=>r.active),...customResourcesForDates(days)]}
@@ -1435,7 +1438,7 @@ function populateProfessorDatalist(){const list=document.getElementById('profess
 function openBookingModal(id='',presetDate='',presetResource=''){
  populateProfessorDatalist();
  const b=id?state.bookings.find(x=>x.id===id):null;document.getElementById('modalTitle').textContent=b?'Editar agendamento':'Novo agendamento';document.getElementById('bookingId').value=b?.id||'';
- const area=b?bookingCategory(b):'lab';document.getElementById('bookingArea').value=area;
+ const area=b?bookingCategory(b):'lab';document.getElementById('bookingArea').value=area;document.getElementById('importantEvent').checked=b?.importantEvent===true;
  const selected=b?.resourceId||presetResource||state.resources.find(r=>r.active)?.id||'__custom__';const isCustom=String(selected).startsWith('custom:');
  populateBookingResources(isCustom?'__custom__':selected);
  document.getElementById('customSpaceName').value=isCustom?(b?.customSpaceName||(presetResource?state.bookings.find(x=>x.resourceId===presetResource)?.customSpaceName:'')||''):'';
@@ -1517,7 +1520,7 @@ async function saveBooking(e){
    const baselineConflicts=dates.flatMap(date=>classroomBaselineConflicts(customSpaceName,date,startTime,endTime,purpose).map(x=>({date,entry:x})));
    if(baselineConflicts.length){const c=baselineConflicts[0];alert.textContent=`A sala ${customSpaceName} já está vinculada a ${c.entry.purpose} em ${formatDate(parseLocal(c.date),{day:'2-digit',month:'2-digit'})}, no horário ${c.entry.startTime}–${c.entry.endTime}.`;alert.classList.remove('hidden');return}
  }
- const base={spaceCategory:area,resourceId,...(area==='event'?{customSpaceName:'FMP'}:selectedResource==='__custom__'?{customSpaceName}:{}),featuredEvent:area==='event',allDay:area==='event'&&document.getElementById('periodType').value==='eventday',responsible,purpose,startTime,endTime,status:document.getElementById('status').value,notes:document.getElementById('notes').value.trim()};
+ const base={spaceCategory:area,resourceId,...(area==='event'?{customSpaceName:'FMP'}:selectedResource==='__custom__'?{customSpaceName}:{}),featuredEvent:area==='event',importantEvent:document.getElementById('importantEvent').checked,allDay:area==='event'&&document.getElementById('periodType').value==='eventday',responsible,purpose,startTime,endTime,status:document.getElementById('status').value,notes:document.getElementById('notes').value.trim()};
  if(id){const idx=state.bookings.findIndex(b=>b.id===id);const previous=state.bookings[idx]||{};state.bookings[idx]={...previous,...base,date:startDate};if(selectedResource!=='__custom__'&&area!=='event')delete state.bookings[idx].customSpaceName}else dates.forEach(date=>state.bookings.push({id:crypto.randomUUID(),...base,date}));
  closeBookingModal();renderAdmin();await persistAndSync(id?'Atualiza agendamento':'Cria agendamento',`${purpose} · ${responsible} · ${startDate}${endDate!==startDate?' a '+endDate:''} · ${startTime}–${endTime} · ${selectedResource==='__custom__'?customSpaceName:bookingResourceName({resourceId})}`);
 }
