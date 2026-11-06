@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-06T14:02:57.755Z",
+  "updatedAt": "2026-11-06T14:09:31.976Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8663,20 +8663,6 @@
       "allDay": false,
       "responsible": "Anderson da Silveira",
       "purpose": "Pedagogia — 3ª Fase",
-      "startTime": "18:50",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-11-06"
-    },
-    {
-      "id": "21ff9f55-a75a-4bf0-a8d4-102601c3d051",
-      "spaceCategory": "lab",
-      "resourceId": "lab2",
-      "featuredEvent": false,
-      "allDay": false,
-      "responsible": "ROSANA",
-      "purpose": "Administração — 7ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
