@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-06T14:14:02.764Z",
+  "updatedAt": "2026-11-06T14:14:30.323Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8776,6 +8776,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "ADS — 5ª Fase · Daniela Amorim · 2026-11-09 · 08:00–09:30 · Laboratório 03"
+    },
+    {
+      "id": "94e33613-b235-48b2-926d-65eda03c5297",
+      "timestamp": "2026-11-06T14:14:29.598Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 8ª Fase · Mariane R. Estefano · 2026-11-09 · 18:50–22:00 · Laboratório 01"
     }
   ]
 }
