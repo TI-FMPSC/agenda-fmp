@@ -546,6 +546,13 @@
 #loanSpaces .room-usage.has-pending{border-color:#f18fa0}#loanSpaces .room-usage.has-pending .room-state{background:#a72f48}
 #loanSpaces .room-extra{margin-top:10px}#loanSpaces .room-grade-details{margin-top:14px}#loanSpaces .room-grade-details summary{padding:10px;cursor:pointer}
 .important-event-option{display:flex;align-items:center;gap:10px;padding:12px;margin-bottom:16px;border:1px solid #e3c16c;background:#fff8e7;border-radius:10px;color:#6c480a;cursor:pointer}.important-event-option input{width:20px;height:20px;accent-color:#a97809;flex-shrink:0}.important-event-option small{display:block;margin-top:4px;font-size:12px;line-height:1.4}
+
+.lab-date-group{margin:18px 0 24px}.lab-date-title{padding:12px 14px;border-radius:10px;background:#123e60;color:white;font-size:16px;line-height:1.4;text-transform:capitalize}.lab-date-title strong{font-weight:850}
+.lab-space-group{border:1px solid #ccdae7;border-radius:12px;padding:12px;margin:10px 0;background:#f8fbfe}.lab-space-group h4{margin:0 0 10px;color:#164c76;font-size:17px}.lab-period-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.lab-period{padding:10px;border:1px solid #d9e3ec;border-radius:9px;background:white;min-width:0}.lab-period h5{margin:0 0 8px;font-size:13px;color:#304b61}.lab-period-empty{margin:6px 0;color:#647787;font-size:12px}
+.lab-group-booking{display:block;width:100%;padding:10px;border:1px solid #bdd6e8;background:#edf6fd;border-radius:8px;color:#1c496a;text-align:left;margin-top:7px;overflow-wrap:anywhere}.lab-group-booking>strong,.lab-group-booking>small{display:block;margin-top:5px}.lab-group-booking>small{font-size:12px;line-height:1.4}.lab-booking-top{display:flex;gap:8px;justify-content:space-between;flex-wrap:wrap;font-size:12px}.lab-booking-top>span{font-size:11px}.lab-booking-ended{background:#fff1f1;color:#8d3434;border-color:#edc3c3}.lab-booking-featured{background:#fff4da;border-color:#d4ab4e;color:#6f4c0b}.lab-group-booking:focus-visible{outline:3px solid #2682bc;outline-offset:2px}
+.lab-spanning{border-radius:9px;padding:10px;background:#edf0f8;color:#3f4e6a;margin-bottom:10px;font-size:13px}.lab-spanning-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:8px}.lab-past{margin-top:20px}.lab-past>summary{cursor:pointer;padding:12px;background:#eef2f6;border-radius:8px;font-weight:750}
+@media(max-width:850px){.lab-period-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -1391,15 +1398,24 @@ function bookingHasEnded(b,now=new Date()){
  const end=new Date(`${b.date}T${b.endTime||'23:59'}:00`);
  return !Number.isNaN(end.getTime())&&end.getTime()<=now.getTime();
 }
+function groupedLabBookings(bookings,past=false){
+ const dates=new Map(),esc=escapeHtml;
+ for(const b of bookings){if(!dates.has(b.date))dates.set(b.date,new Map());const spaces=dates.get(b.date),id=bookingCategory(b)==='event'?'__events__':b.resourceId;if(!spaces.has(id))spaces.set(id,[]);spaces.get(id).push(b)}
+ const periods=[{label:'Matutino',start:'00:00',end:'12:00'},{label:'Vespertino',start:'12:00',end:'18:00'},{label:'Noturno',start:'18:00',end:'24:00'}];
+ return [...dates.entries()].sort(([a],[b])=>past?b.localeCompare(a):a.localeCompare(b)).map(([date,spaces])=>'<section class="lab-date-group"><h3 class="lab-date-title"><strong>'+esc(formatDate(parseLocal(date),{weekday:'long',day:'2-digit',month:'long',year:'numeric'}))+'</strong></h3>'+[...spaces.values()].sort((a,b)=>bookingResourceName(a[0]).localeCompare(bookingResourceName(b[0]),'pt-BR',{numeric:true})).map(rows=>{
+ const name=bookingCategory(rows[0])==='event'?'Eventos institucionais':bookingResourceName(rows[0]);
+ const spanning=rows.filter(b=>periods.filter(p=>b.startTime<p.end&&b.endTime>p.start).length>1);
+ function booking(b){const ended=bookingHasEnded(b,new Date()),cancelled=b.status==='cancelled',tag=cancelled?'Cancelado':ended?'Utilizado':b.status==='confirmed'?'Confirmado':'Pendente';
+ return '<button type="button" class="lab-group-booking '+(ended?'lab-booking-ended ':'')+(isHighlightedEvent(b)?'lab-booking-featured':'')+'" data-booking-id="'+esc(b.id)+'"><div class="lab-booking-top"><b>'+esc(periodLabel(b))+'</b><span>'+tag+'</span></div><strong>'+(isHighlightedEvent(b)?'★ ':'')+esc(b.responsible||'Responsável a definir')+'</strong><small>'+esc(displayPurpose(b))+'</small></button>'}
+ return '<article class="lab-space-group"><h4>'+esc(name)+'</h4>'+(spanning.length?'<div class="lab-spanning"><b>Mais de um turno</b><div class="lab-spanning-items">'+spanning.sort((a,b)=>a.startTime.localeCompare(b.startTime)).map(booking).join('')+'</div></div>':'')+'<div class="lab-period-grid">'+periods.map(p=>{const list=rows.filter(b=>!spanning.includes(b)&&b.startTime<p.end&&b.endTime>p.start).sort((a,b)=>a.startTime.localeCompare(b.startTime));return '<section class="lab-period"><h5>'+esc(name)+' · '+p.label+'</h5>'+list.map(booking).join('')+(list.length?'':'<p class="lab-period-empty">'+(spanning.some(b=>b.startTime<p.end&&b.endTime>p.start)?'Reserva deste turno indicada acima.':'Sem agendamento neste turno.')+'</p>')+'</section>'}).join('')+'</div></article>'
+ }).join('')+'</section>').join('');
+}
 function renderBookingList(){
- const now=new Date();
- const labBookings=state.bookings.filter(b=>bookingCategory(b)!=='classroom');
- const upcoming=[...labBookings].filter(b=>!bookingHasEnded(b,now)).sort((a,b)=>(a.date+a.startTime).localeCompare(b.date+b.startTime));
- const used=[...labBookings].filter(b=>bookingHasEnded(b,now)).sort((a,b)=>(b.date+b.startTime).localeCompare(a.date+a.startTime));
- const renderItem=(b,isUsed=false)=>`<div class="resource-item ${isUsed?'used-booking':''} ${isFeaturedEvent(b)?'featured-booking':''}" onclick="openBookingModal('${b.id}')" style="cursor:pointer"><span><span class="resource-dot" style="background:${isFeaturedEvent(b)?'#dc8b13':isUsed?'var(--danger)':bookingCategory(b)==='classroom'?'var(--success)':'var(--primary)'}"></span><span><strong>${isFeaturedEvent(b)?'★ ':''}${escapeHtml(isFeaturedEvent(b)?b.purpose:bookingResourceName(b))}</strong><br><small>${isFeaturedEvent(b)?'Evento institucional · Dia inteiro':bookingCategory(b)==='classroom'?'Sala de aula':'Laboratório / espaço'} · ${formatDate(parseLocal(b.date),{day:'2-digit',month:'2-digit',year:'numeric'})} · ${isFeaturedEvent(b)&&b.allDay?'Dia inteiro':periodLabel(b)} · ${escapeHtml(isFeaturedEvent(b)?b.customSpaceName||'FMP':b.purpose)} — ${escapeHtml(b.responsible)}</small></span></span><span class="tag ${isUsed?'tag-red':b.status==='confirmed'?'tag-green':'tag-orange'}">${isUsed?'Utilizado':b.status==='confirmed'?'Confirmado':'Pendente'}</span></div>`;
- document.getElementById('adminContent').innerHTML=`<div class="panel"><div class="toolbar"><div><h3 style="margin:0">Laboratórios e espaços</h3><div class="sub" style="margin:5px 0 0">Os agendamentos atuais e futuros ficam no topo. Os já utilizados aparecem em vermelho no final.</div></div><button class="btn btn-secondary" onclick="exportJson()">Exportar JSON</button></div>
- <div class="booking-group-title">Atuais e próximos · ${upcoming.length}</div><div class="resource-list">${upcoming.map(b=>renderItem(b,false)).join('')||'<div class="empty-state">Nenhum agendamento atual ou futuro.</div>'}</div>
- <div class="booking-group-title used">Agendamentos utilizados · ${used.length}</div><div class="resource-list">${used.map(b=>renderItem(b,true)).join('')||'<div class="empty-state">Nenhum agendamento utilizado.</div>'}</div></div>`;
+ const today=localISO(new Date()),bookings=state.bookings.filter(b=>bookingCategory(b)!=='classroom');
+ const current=bookings.filter(b=>b.date>=today),past=bookings.filter(b=>b.date<today);
+ const target=document.getElementById('adminContent');
+ target.innerHTML='<div class="panel"><div class="toolbar"><div><h3 style="margin:0">Laboratórios e espaços</h3><div class="sub" style="margin:5px 0 0">Agendamentos agrupados por data, local e turno. Clique em uma reserva para editar.</div></div><button class="btn btn-secondary" onclick="exportJson()">Exportar JSON</button></div><div class="booking-group-title">Hoje e próximas datas · '+current.length+'</div>'+(groupedLabBookings(current)||'<div class="empty-state">Nenhum agendamento para hoje ou próximas datas.</div>')+'<details class="lab-past"><summary>Datas anteriores · '+past.length+' agendamentos</summary>'+(groupedLabBookings(past,true)||'<div class="empty-state">Nenhum agendamento anterior.</div>')+'</details></div>';
+ target.onclick=e=>{const button=e.target.closest('[data-booking-id]');if(button&&target.contains(button))openBookingModal(button.dataset.bookingId)};
 }
 function renderSettings(){
  const gh=state.settings.github||{};
