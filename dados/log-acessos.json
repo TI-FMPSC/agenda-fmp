@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-06T16:37:25.868Z",
+  "updatedAt": "2026-11-06T16:38:18.546Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8938,6 +8938,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 7ª Fase · Gregori M. Czizeweski · 2026-11-09 · 18:50–22:00 · Laboratório 02"
+    },
+    {
+      "id": "f2dcf104-1d7b-498b-a10f-4799aa6772ee",
+      "timestamp": "2026-11-06T16:38:17.765Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "ADS — 5ª Fase · Leandro Pickler · 2026-11-09 · 08:00–09:30 · Laboratório 03"
     }
   ]
 }
