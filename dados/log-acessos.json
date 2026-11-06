@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-06T14:14:30.323Z",
+  "updatedAt": "2026-11-06T14:37:13.870Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -8785,6 +8785,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "Administração — 8ª Fase · Mariane R. Estefano · 2026-11-09 · 18:50–22:00 · Laboratório 01"
+    },
+    {
+      "id": "c7bd74ce-8645-4ed7-b7b0-5746e5523008",
+      "timestamp": "2026-11-06T14:37:11.497Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 4ª Fase · Maurício A. de Lima · 2026-11-06 · 18:50–22:00 · Laboratório 03"
     }
   ]
 }
