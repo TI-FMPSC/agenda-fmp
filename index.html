@@ -553,7 +553,7 @@
 .lab-group-booking{display:block;width:100%;padding:10px;border:1px solid #bdd6e8;background:#edf6fd;border-radius:8px;color:#1c496a;text-align:left;margin-top:7px;overflow-wrap:anywhere}.lab-group-booking>strong,.lab-group-booking>small{display:block;margin-top:5px}.lab-group-booking>small{font-size:12px;line-height:1.4}.lab-booking-top{display:flex;gap:8px;justify-content:space-between;flex-wrap:wrap;font-size:12px}.lab-booking-top>span{font-size:11px}.lab-booking-ended{background:#fff1f1;color:#8d3434;border-color:#edc3c3}.lab-booking-featured{background:#fff4da;border-color:#d4ab4e;color:#6f4c0b}.lab-group-booking:focus-visible{outline:3px solid #2682bc;outline-offset:2px}
 .lab-spanning{border-radius:9px;padding:10px;background:#edf0f8;color:#3f4e6a;margin-bottom:10px;font-size:13px}.lab-spanning-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:8px}.lab-past{margin-top:20px}.lab-past>summary{cursor:pointer;padding:12px;background:#eef2f6;border-radius:8px;font-weight:750}
 @media(max-width:850px){.lab-period-grid{grid-template-columns:1fr}}
-</style>
+.loan-history-person{margin-top:16px;padding:12px;border:1px solid #cddde8;border-radius:10px;background:#f7fafc}.loan-history-person h4{margin:0 0 10px;font-size:16px;color:#153f60}.loan-history-person h4 small{font-size:12px;font-weight:500}.loan-history-person .loan-row{background:white}</style>
 </head>
 <body>
 <div id="app" class="app"></div>
@@ -1041,7 +1041,7 @@ function renderLoans(){
  <div class="field"><button class="btn btn-primary" type="submit">Registrar retirada</button></div></form><p id="loanNote" role="status"></p></div>
  <div class="panel"><h2>Materiais em circulação</h2><div id="loanOpen"></div></div>
 
- <details class="panel"><summary>Histórico de devoluções</summary><p>Consulta dos materiais devolvidos, com responsáveis e datas.</p><label class="field">Buscar no histórico<input id="loanHistorySearch" type="search" placeholder="Nome, material, patrimônio, data ou quem recebeu" oninput="renderLoanHistory()"></label><div id="loanClosed"></div></details></section>`;
+ <details class="panel"><summary>Histórico de devoluções</summary><p>Consulte as devoluções agrupadas por funcionário, de todas as datas.</p><div class="form-grid"><label class="field">Buscar funcionário<input id="loanHistoryEmployee" type="search" list="loanHistoryEmployees" placeholder="Ex.: Leandro Pickler" oninput="renderLoanHistory()"></label><datalist id="loanHistoryEmployees"></datalist><label class="field">Filtrar materiais e detalhes (opcional)<input id="loanHistorySearch" type="search" placeholder="Material, patrimônio, data ou quem recebeu" oninput="renderLoanHistory()"></label></div><div id="loanClosed"></div></details></section>`;
  loanRows=null;loanPaint();loanRefresh();
 }
 let mirrorDate=null,mirrorPeriod='auto',mirrorTimer;
@@ -1105,11 +1105,15 @@ function paintLoanMirror(){
 }
 function renderLoanHistory(){
  const target=document.getElementById('loanClosed');if(!loanActive()||!target)return;
- const norm=v=>String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
- const query=norm(document.getElementById('loanHistorySearch')?.value||'').trim(),esc=escapeHtml;
+ const norm=v=>String(v||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim().replace(/\s+/g,' ').toLowerCase(),esc=escapeHtml;
+ const employee=norm(document.getElementById('loanHistoryEmployee')?.value),query=norm(document.getElementById('loanHistorySearch')?.value);
  const fmt=v=>v?v.slice(0,10).split('-').reverse().join('/')+' às '+v.slice(11,16):'Não informado';
- const rows=(loanRows||[]).filter(r=>r.returned).filter(r=>!query||norm([r.person,r.item,r.room,r.by,r.receiver,...(r.assets||[]),r.at,r.returned,fmt(r.at),fmt(r.returned)].join(' ')).includes(query)).sort((a,b)=>b.returned.localeCompare(a.returned));
- target.innerHTML=loanRows===null?'Histórico ainda não carregado.':rows.map(r=>'<article class="loan-row"><b>'+esc(r.person)+'</b> — '+esc(r.qty)+' × '+esc(r.item)+'<br>'+esc(r.room||'Sem sala vinculada')+(r.assets?.length?' · Patrimônio: '+esc(r.assets.join(', ')):'')+'<br><small>Retirada: '+esc(fmt(r.at))+' · Entregue por: '+esc(r.by||'Não informado')+'</small><br><small>Devolução: '+esc(fmt(r.returned))+' · Recebido por: '+esc(r.receiver||'Não informado')+'</small></article>').join('')||'Nenhuma devolução encontrada.';
+ const all=(loanRows||[]).filter(r=>r.returned),names=new Map();all.forEach(r=>names.set(norm(r.person),r.person||'Responsável não informado'));
+ const suggestions=document.getElementById('loanHistoryEmployees');if(suggestions)suggestions.innerHTML=[...names.values()].sort((a,b)=>a.localeCompare(b,'pt-BR')).map(n=>'<option value="'+esc(n)+'"></option>').join('');
+ const groups=new Map();
+ all.filter(r=>!employee||norm(r.person).includes(employee)).filter(r=>!query||norm([r.item,r.room,r.by,r.receiver,...(r.assets||[]),r.at,r.returned,fmt(r.at),fmt(r.returned)].join(' ')).includes(query)).sort((a,b)=>b.returned.localeCompare(a.returned)).forEach(r=>{const key=norm(r.person);if(!groups.has(key))groups.set(key,{name:r.person||'Responsável não informado',rows:[]});groups.get(key).rows.push(r)});
+ if(loanRows===null){target.innerHTML='Histórico ainda não carregado.';return}
+ target.innerHTML=[...groups.values()].sort((a,b)=>a.name.localeCompare(b.name,'pt-BR')).map(g=>'<section class="loan-history-person"><h4>'+esc(g.name)+' <small>· '+g.rows.length+' devolução(ões)</small></h4>'+g.rows.map(r=>'<article class="loan-row"><b>'+esc(r.qty)+' × '+esc(r.item)+'</b><br>'+esc(r.room||'Sem sala vinculada')+(r.assets?.length?' · Patrimônio: '+esc(r.assets.join(', ')):'')+'<br><small>Retirada: '+esc(fmt(r.at))+' · Entregue por: '+esc(r.by||'Não informado')+'</small><br><small>Devolução: '+esc(fmt(r.returned))+' · Recebido por: '+esc(r.receiver||'Não informado')+'</small></article>').join('')+'</section>').join('')||'Nenhuma devolução encontrada para essa busca.';
 }
 
 function loanPaint(){
