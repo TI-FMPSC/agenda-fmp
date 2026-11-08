@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-06T16:43:11.749Z",
+  "updatedAt": "2026-11-08T20:56:33.756Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10697,6 +10697,22 @@
       "status": "confirmed",
       "notes": "",
       "date": "2026-12-04"
+    },
+    {
+      "id": "99abad4d-6399-4337-a170-9915b9e29a1b",
+      "spaceCategory": "event",
+      "resourceId": "event:fmp",
+      "customSpaceName": "FMP",
+      "featuredEvent": true,
+      "importantEvent": true,
+      "allDay": false,
+      "responsible": "Faculdade Municipal de Palhoça",
+      "purpose": "ADS — 1ª Fase",
+      "startTime": "08:00",
+      "endTime": "14:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-12-05"
     },
     {
       "id": "08034a7d-5d8a-5b45-9cfd-a87d527f0b1b",
