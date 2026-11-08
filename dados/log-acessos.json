@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-08T20:56:38.970Z",
+  "updatedAt": "2026-11-08T21:04:52.149Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9028,6 +9028,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "ADS — 1ª Fase · Faculdade Municipal de Palhoça · 2026-12-05 · 08:00–14:00 · Espaço"
+    },
+    {
+      "id": "1c65d492-8788-4a7c-954c-e6e2263a3ef1",
+      "timestamp": "2026-11-08T21:04:51.374Z",
+      "username": "leandropickler",
+      "name": "Leandro Pickler",
+      "action": "Atualiza configurações do sistema",
+      "module": "Configurações",
+      "details": "Agenda de Espaços FMP"
     }
   ]
 }
