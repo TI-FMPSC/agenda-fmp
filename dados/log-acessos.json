@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-09T20:41:40.304Z",
+  "updatedAt": "2026-11-09T20:41:47.129Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9118,6 +9118,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 6ª Fase · Larissa O. Gonçalves · 2026-11-09 · 18:50–20:20 · Laboratório 04"
+    },
+    {
+      "id": "b4e2416e-21c3-42db-bcdf-e0032c43abe2",
+      "timestamp": "2026-11-09T20:41:46.561Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 8ª Fase · Larissa O. Gonçalves · 2026-11-09 · 20:30–22:00 · Laboratório 04"
     }
   ]
 }
