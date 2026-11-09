@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-09T10:34:15.826Z",
-    "updatedAt": "2026-11-09T10:34:15.826Z",
+    "lastSync": "2026-11-09T12:09:19.272Z",
+    "updatedAt": "2026-11-09T12:09:19.272Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2770,14 +2770,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 30,
-      "currentStock": 180,
+      "currentStock": 179,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "CAIXA COM 100 UNIDADES.",
       "expirationDate": "",
       "createdAt": "2026-10-07",
-      "updatedAt": "2026-10-07"
+      "updatedAt": "2026-11-09"
     },
     {
       "id": "id_lvfcy66emuy4gryr",
@@ -7096,6 +7096,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-09T10:34:12.088Z"
+    },
+    {
+      "id": "id_ae9ob6m6mw97xduu",
+      "materialId": "id_ji9ktcanmuy4fily",
+      "type": "saida",
+      "date": "2026-11-09",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 180,
+      "newStock": 179,
+      "effect": -1,
+      "sector": "Crstian",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-09T12:09:15.366Z"
     }
   ],
   "users": [],
