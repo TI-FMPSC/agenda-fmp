@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-09T10:34:13.079Z",
+  "updatedAt": "2026-11-09T12:09:16.031Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9064,6 +9064,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 112 · Papel Toalha avulso · quantidade 7 · saldo 19"
+    },
+    {
+      "id": "0fc4e208-7432-48b6-89a9-c23cf649bfa0",
+      "timestamp": "2026-11-09T12:09:15.483Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 161 · BATERIA DE LITHIUM · quantidade 1 · saldo 179"
     }
   ]
 }
