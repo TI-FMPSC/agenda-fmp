@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-09T23:28:34.740Z",
+  "updatedAt": "2026-11-09T23:31:14.587Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9163,6 +9163,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 5ª Fase · Larissa O. Gonçalves. · 2026-11-10 · 18:50–22:00 · Laboratório 02"
+    },
+    {
+      "id": "3d155e8b-f352-44c5-a310-28597853f36f",
+      "timestamp": "2026-11-09T23:31:13.397Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 5ª Fase · Larissa O. Gonçalves · 2026-11-10 · 18:50–22:00 · Laboratório 03"
     }
   ]
 }
