@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-09T23:17:02.268Z",
+  "updatedAt": "2026-11-09T23:28:31.815Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9012,6 +9012,21 @@
       "allDay": false,
       "responsible": "Rodolfo M. Lorandi",
       "purpose": "Pedagogia — 8ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-10"
+    },
+    {
+      "id": "61aa641e-5fc8-49ea-83ee-f90e8e26c27b",
+      "spaceCategory": "lab",
+      "resourceId": "lab2",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "Larissa O. Gonçalves.",
+      "purpose": "Pedagogia — 5ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
