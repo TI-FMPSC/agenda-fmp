@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-08T20:56:33.756Z",
+  "updatedAt": "2026-11-09T20:19:54.227Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8812,6 +8812,21 @@
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: phone: FUTASL 17:30-22:00",
       "customSpaceName": "Quadra Azul"
+    },
+    {
+      "id": "f962fe06-27b0-46e8-b2de-6f743b15a14e",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "Leonardo C. Chaves",
+      "purpose": "PÓS-GRADUAÇÃO (GESTÃO EMPRESARIAL)",
+      "startTime": "18:00",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-09"
     },
     {
       "id": "1a3540ab-9266-59f7-ada7-3b3fd7f2b525",
