@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-09T20:19:54.227Z",
+  "updatedAt": "2026-11-09T20:41:35.950Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8838,17 +8838,6 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: MARIANE"
-    },
-    {
-      "id": "f19d6b08-d1b6-57f8-9341-d87209999711",
-      "resourceId": "lab4",
-      "responsible": "Larissa O. Gonçalves",
-      "purpose": "Pedagogia — 6ª Fase",
-      "date": "2026-11-09",
-      "startTime": "18:50",
-      "endTime": "20:20",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: LARISSA"
     },
     {
       "id": "70cc2bcd-4921-43ab-a523-e057d286a87a",
