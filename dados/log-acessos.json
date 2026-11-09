@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-09T20:43:55.138Z",
+  "updatedAt": "2026-11-09T20:46:25.885Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9136,6 +9136,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 6ª Fase · Larissa O. Gonçalves · 2026-11-09 · 18:50–22:00 · Laboratório 04"
+    },
+    {
+      "id": "878bc585-2580-4440-aa27-2f8087046839",
+      "timestamp": "2026-11-09T20:46:23.656Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "MATURIDADE · Rodolfo M. Lorandi · 2026-10-01 · 14:00–16:19 · Auditório"
     }
   ]
 }
