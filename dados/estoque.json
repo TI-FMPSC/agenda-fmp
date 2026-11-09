@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-09T12:09:19.272Z",
-    "updatedAt": "2026-11-09T12:09:19.272Z",
+    "lastSync": "2026-11-09T13:20:47.406Z",
+    "updatedAt": "2026-11-09T13:20:47.406Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -232,14 +232,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 20,
-      "currentStock": 31,
+      "currentStock": 27,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: TAMANHO M | Tamanho/apresentação: 35",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-10-16"
+      "updatedAt": "2026-11-09"
     },
     {
       "id": "mat_epi_005",
@@ -7112,6 +7112,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-09T12:09:15.366Z"
+    },
+    {
+      "id": "id_wb9e1zi7mw9ahcvf",
+      "materialId": "mat_epi_004",
+      "type": "saida",
+      "date": "2026-11-09",
+      "quantity": 4,
+      "unitCost": 0,
+      "previousStock": 31,
+      "newStock": 27,
+      "effect": -4,
+      "sector": "Amanda",
+      "document": "",
+      "notes": "Para distribuição.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-09T13:20:46.443Z"
     }
   ],
   "users": [],
