@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-09T20:46:25.885Z",
+  "updatedAt": "2026-11-09T23:17:06.318Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9145,6 +9145,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "MATURIDADE · Rodolfo M. Lorandi · 2026-10-01 · 14:00–16:19 · Auditório"
+    },
+    {
+      "id": "d2fe141b-36f3-42fa-932d-5c5f7df38980",
+      "timestamp": "2026-11-09T23:17:05.449Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "MATURIDADE · Rodolfo M. Lorandi · 2026-11-10 · 14:00–16:19 · Auditório"
     }
   ]
 }
