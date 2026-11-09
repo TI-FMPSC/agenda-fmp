@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-09T20:19:58.143Z",
+  "updatedAt": "2026-11-09T20:41:40.304Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9109,6 +9109,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "PÓS-GRADUAÇÃO (GESTÃO EMPRESARIAL) · Leonardo C. Chaves · 2026-11-09 · 18:00–22:00 · Laboratório 05"
+    },
+    {
+      "id": "b2aae34a-a2e0-4e89-b10f-11c7344aa4ca",
+      "timestamp": "2026-11-09T20:41:39.582Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 6ª Fase · Larissa O. Gonçalves · 2026-11-09 · 18:50–20:20 · Laboratório 04"
     }
   ]
 }
