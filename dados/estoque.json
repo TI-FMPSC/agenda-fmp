@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-09T10:33:28.584Z",
-    "updatedAt": "2026-11-09T10:33:28.584Z",
+    "lastSync": "2026-11-09T10:34:15.826Z",
+    "updatedAt": "2026-11-09T10:34:15.826Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1942,14 +1942,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 80,
-      "currentStock": 26,
+      "currentStock": 19,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: cada caixa com 20 unidades. Contados total por unidade.",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-10-27"
+      "updatedAt": "2026-11-09"
     },
     {
       "id": "mat_lim_033",
@@ -7080,6 +7080,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-09T10:33:27.512Z"
+    },
+    {
+      "id": "id_qzzn0odcmw94j56g",
+      "materialId": "mat_lim_032",
+      "type": "saida",
+      "date": "2026-10-27",
+      "quantity": 7,
+      "unitCost": 0,
+      "previousStock": 26,
+      "newStock": 19,
+      "effect": -7,
+      "sector": "Luana",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-09T10:34:12.088Z"
     }
   ],
   "users": [],
