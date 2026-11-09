@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-09T13:21:04.016Z",
-    "updatedAt": "2026-11-09T13:21:04.016Z",
+    "lastSync": "2026-11-09T15:43:13.594Z",
+    "updatedAt": "2026-11-09T15:43:13.594Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -754,14 +754,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 25,
+      "currentStock": 525,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: unidade | Marca: bic | Tamanho/apresentação: canetas soltas",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-11-09"
     },
     {
       "id": "mat_esc_027",
@@ -7144,6 +7144,22 @@
       "notes": "Para distribuição.",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-09T13:21:02.891Z"
+    },
+    {
+      "id": "id_9u110320mw9fkflj",
+      "materialId": "mat_esc_025",
+      "type": "entrada",
+      "date": "2026-11-09",
+      "quantity": 500,
+      "unitCost": 0,
+      "previousStock": 25,
+      "newStock": 525,
+      "effect": 500,
+      "sector": "",
+      "document": "",
+      "notes": "recebemos 10 caixas com 50 cada. 250 canetas azui e 250 canetas pretas.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-09T15:43:08.023Z"
     }
   ],
   "users": [],
