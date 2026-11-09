@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-09T15:43:15.880Z",
+  "updatedAt": "2026-11-09T19:50:52.799Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9091,6 +9091,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Entrada · 18 · Bic Cristal · quantidade 500 · saldo 525"
+    },
+    {
+      "id": "1b780c71-9ed3-4d3f-8218-85b17ab8afff",
+      "timestamp": "2026-11-09T19:50:50.972Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
