@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-10T20:33:34.686Z",
+  "updatedAt": "2026-11-10T20:34:47.539Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9271,6 +9271,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "Administração — 4ª Fase · Maurício A. de Lima · 2026-11-27 · 18:50–22:00 · Laboratório 01"
+    },
+    {
+      "id": "0ab506d1-b8ab-4566-bb09-72278a3d4bfa",
+      "timestamp": "2026-11-10T20:34:46.948Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 4ª Fase · Maurício A. de Lima · 2026-12-04 · 18:50–22:00 · Auditório"
     }
   ]
 }
