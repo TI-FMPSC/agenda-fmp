@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-09T15:43:13.594Z",
-    "updatedAt": "2026-11-09T15:43:13.594Z",
+    "lastSync": "2026-11-10T13:48:37.961Z",
+    "updatedAt": "2026-11-10T13:48:37.961Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -772,14 +772,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 75,
+      "currentStock": 60,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: unidade | Marca: DWG-HB | Tamanho/apresentação: unidades",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-11-10"
     },
     {
       "id": "mat_esc_028",
@@ -7160,6 +7160,22 @@
       "notes": "recebemos 10 caixas com 50 cada. 250 canetas azui e 250 canetas pretas.",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-09T15:43:08.023Z"
+    },
+    {
+      "id": "id_frn51g3hmwaqx0mt",
+      "materialId": "mat_esc_027",
+      "type": "ajuste",
+      "date": "2026-11-10",
+      "quantity": 60,
+      "unitCost": 0,
+      "previousStock": 75,
+      "newStock": 60,
+      "effect": -15,
+      "sector": "",
+      "document": "",
+      "notes": "Ajuste dia 10/11",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-10T13:48:37.109Z"
     }
   ],
   "users": [],
