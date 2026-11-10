@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-10T20:33:31.357Z",
+  "updatedAt": "2026-11-10T20:34:44.384Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10799,7 +10799,7 @@
     {
       "id": "cf58c2d5-ba76-41b8-a725-49dfb0578dd6",
       "spaceCategory": "lab",
-      "resourceId": "lab1",
+      "resourceId": "auditorio",
       "featuredEvent": false,
       "importantEvent": false,
       "allDay": false,
