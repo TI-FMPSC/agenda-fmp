@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-10T00:29:44.740Z",
+  "updatedAt": "2026-11-10T13:45:53.464Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9235,6 +9235,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 4ª Fase · Maurício A. de Lima · 2026-12-04 · 18:50–22:00 · Laboratório 01"
+    },
+    {
+      "id": "26c00a6a-a419-46aa-9f5a-ff55353adf50",
+      "timestamp": "2026-11-10T13:45:53.426Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Valida integração com GitHub",
+      "module": "Configurações",
+      "details": "TI-FMPSC/agenda-fmp · token com gravação confirmada"
     }
   ]
 }
