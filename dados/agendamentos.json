@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-10T00:26:33.056Z",
+  "updatedAt": "2026-11-10T00:28:17.288Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10639,21 +10639,6 @@
       "purpose": "JOVEM PALHOCENSE",
       "startTime": "13:30",
       "endTime": "17:30",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-12-02"
-    },
-    {
-      "id": "25b0fa10-4ba0-48e4-9ace-6fcf61dc2eb5",
-      "spaceCategory": "lab",
-      "resourceId": "lab1",
-      "featuredEvent": false,
-      "importantEvent": false,
-      "allDay": false,
-      "responsible": "Maurício A. de Lima",
-      "purpose": "Administração — 8ª Fase",
-      "startTime": "18:50",
-      "endTime": "22:00",
       "status": "confirmed",
       "notes": "",
       "date": "2026-12-02"
