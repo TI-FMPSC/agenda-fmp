@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-11T21:52:11.286Z",
+  "updatedAt": "2026-11-11T22:08:28.923Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9424,6 +9424,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "PÓS - EDUCAÇÃO ESPECIAL · Grazielle F. da Silva · 2026-11-11 · 18:50–22:00 · Laboratório 05"
+    },
+    {
+      "id": "20640e95-d890-4ce0-b31b-4d21feb75133",
+      "timestamp": "2026-11-11T22:08:28.116Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
