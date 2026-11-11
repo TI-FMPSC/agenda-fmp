@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-11T19:36:05.837Z",
+  "updatedAt": "2026-11-11T19:36:55.606Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9155,6 +9155,21 @@
       "purpose": "JOVEM PALHOCENSE",
       "startTime": "13:30",
       "endTime": "17:30",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-11"
+    },
+    {
+      "id": "9756adf7-b885-4044-a818-01b067d979e6",
+      "spaceCategory": "lab",
+      "resourceId": "lab1",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "Marcus B. O. Silveira",
+      "purpose": "REUNIÃO NEABI",
+      "startTime": "18:00",
+      "endTime": "18:49",
       "status": "confirmed",
       "notes": "",
       "date": "2026-11-11"
