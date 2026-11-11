@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-11T23:36:32.570Z",
+  "updatedAt": "2026-11-11T23:37:15.327Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9360,6 +9360,21 @@
       "importantEvent": false,
       "allDay": false,
       "responsible": "GABRELE",
+      "purpose": ".",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-12"
+    },
+    {
+      "id": "2ad8432f-5c8c-4ded-aecc-4dbe8bbedc91",
+      "spaceCategory": "lab",
+      "resourceId": "lab3",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "GABRIELE",
       "purpose": ".",
       "startTime": "18:50",
       "endTime": "22:00",
