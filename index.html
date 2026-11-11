@@ -982,7 +982,7 @@ function route(){
   }
 }
 window.addEventListener('hashchange',route);
-function logoMarkup(){return `<div class="logo">${state.settings.logo?`<img src="${state.settings.logo}" alt="Logo">`:'FMP'}</div>`}
+function logoMarkup(){return `<div class="logo"><img src="${escapeHtml(state.settings.logo||'assets/logo-fmp.svg')}" alt="Logomarca FMP"></div>`}
 
 function renderLogin(){
  document.getElementById('app').innerHTML=`<section class="login-page">
@@ -1423,7 +1423,7 @@ function renderBookingList(){
 }
 function renderSettings(){
  const gh=state.settings.github||{};
- document.getElementById('adminContent').innerHTML=`<div class="settings-grid"><section class="panel"><h3>Identidade do sistema</h3><div class="sub">Altere o nome, o título do painel e a logomarca.</div><div class="field"><label>Nome do sistema</label><input id="cfgAppName" value="${escapeHtml(state.settings.appName)}"></div><div class="field"><label>Título do painel dos laboratórios</label><input id="cfgPanelTitle" value="${escapeHtml(state.settings.panelTitle)}"></div><div class="field"><label>Título do painel das salas</label><input id="cfgClassroomPanelTitle" value="${escapeHtml(state.settings.classroomPanelTitle||'Painel de Salas de Aula')}"></div><div class="field"><label>Logomarca</label><input type="file" accept="image/*" onchange="loadLogo(event)"></div><div class="field"><label>Atualização do painel (segundos)</label><input id="cfgRefresh" type="number" min="30" max="600" value="${Number(state.settings.publicRefreshSeconds)||60}"></div><button class="btn btn-primary" onclick="saveSettings()">Salvar configurações</button></section>
+ document.getElementById('adminContent').innerHTML=`<div class="settings-grid"><section class="panel"><h3>Identidade do sistema</h3><div class="sub">Altere o nome, o título do painel e a logomarca.</div><div class="field"><label>Nome do sistema</label><input id="cfgAppName" value="${escapeHtml(state.settings.appName)}"></div><div class="field"><label>Título do painel dos laboratórios</label><input id="cfgPanelTitle" value="${escapeHtml(state.settings.panelTitle)}"></div><div class="field"><label>Título do painel das salas</label><input id="cfgClassroomPanelTitle" value="${escapeHtml(state.settings.classroomPanelTitle||'Painel de Salas de Aula')}"></div><div class="field"><label>Logomarca</label><input type="file" accept="image/png,image/jpeg,image/webp" onchange="loadLogo(event)"><img id="cfgLogoPreview" src="${escapeHtml(pendingLogo||state.settings.logo||'assets/logo-fmp.svg')}" alt="Prévia da logomarca" style="display:block;width:100px;height:100px;object-fit:contain;margin-top:10px;background:white;border:1px solid #dbe3ed;border-radius:9px"><div id="cfgLogoStatus" role="status" aria-live="polite" style="margin-top:8px;font-size:13px">Selecione a imagem e salve para publicar em todos os navegadores.</div></div><div class="field"><label>Atualização do painel (segundos)</label><input id="cfgRefresh" type="number" min="30" max="600" value="${Number(state.settings.publicRefreshSeconds)||60}"></div><button id="cfgSaveSettings" class="btn btn-primary" onclick="saveSettings()">Salvar configurações</button></section>
  <section class="panel"><h3>Integração com GitHub</h3><div class="sub">O token fica somente neste navegador e nunca é gravado nos JSONs públicos.</div><div class="form-grid"><div class="field"><label>Proprietário</label><input id="ghOwner" value="${escapeHtml(gh.owner||'')}" placeholder="TI-FMPSC"></div><div class="field"><label>Repositório</label><input id="ghRepo" value="${escapeHtml(gh.repo||'')}" placeholder="agenda-fmp"></div><div class="field"><label>Branch</label><input id="ghBranch" value="${escapeHtml(gh.branch||'main')}" placeholder="main"></div><div class="field"><label>JSON de agendamentos</label><input id="ghPath" value="${escapeHtml(gh.path||'dados/agendamentos.json')}"></div><div class="field"><label>JSON da grade de salas</label><input id="ghGradePath" value="${escapeHtml(gh.gradePath||'dados/grade-salas.json')}"></div><div class="field"><label>JSON de usuários</label><input id="ghUsersPath" value="${escapeHtml(gh.usersPath||'dados/usuarios.json')}"></div><div class="field"><label>JSON do estoque</label><input id="ghStockPath" value="${escapeHtml(gh.stockPath||'dados/estoque.json')}"></div><div class="field"><label>JSON de veículos</label><input id="ghVehiclePath" value="${escapeHtml(gh.vehiclePath||'dados/carros.json')}"></div><div class="field"><label>JSON de logs</label><input id="ghLogPath" value="${escapeHtml(gh.logPath||'dados/log-acessos.json')}"></div><div class="field full"><label>Fine-grained token</label><input id="ghToken" type="password" value="${escapeHtml(githubToken())}" placeholder="github_pat_..."></div></div><div style="display:flex;gap:9px;flex-wrap:wrap"><button class="btn btn-primary" onclick="saveGithub()">Salvar conexão</button><button class="btn btn-secondary" onclick="testGithubConnection()">Testar conexão</button><button class="btn btn-secondary" onclick="syncFromGithub()">Baixar dados do GitHub</button></div><div class="alert alert-info" style="margin-top:14px;margin-bottom:0">Permissão necessária no token: <b>Contents = Read and write</b>, limitada ao repositório desta agenda.</div></section>
  <section class="panel"><h3>Espaços cadastrados</h3><div class="sub">Os cinco laboratórios e o auditório são fixos. Outros espaços são informados diretamente no novo agendamento.</div><div class="resource-list">${state.resources.map(r=>`<div class="resource-item"><span><span class="resource-dot"></span><span><strong>${escapeHtml(r.name)}</strong><br><small>${escapeHtml(r.type)}</small></span></span><span class="tag tag-blue">Ativo</span></div>`).join('')}</div></section>
  <section class="panel"><h3>Backup</h3><div class="sub">Importe ou exporte os agendamentos e mantenha uma cópia de segurança quando necessário.</div><div style="display:flex;gap:9px;flex-wrap:wrap"><button class="btn btn-secondary" onclick="document.getElementById('importInput').click()">Importar JSON</button><button class="btn btn-secondary" onclick="exportJson()">Exportar JSON</button><button class="btn btn-danger" onclick="resetDemo()">Limpar dados locais</button></div></section>
@@ -1433,8 +1433,45 @@ function renderSettings(){
 }
 let pendingLogo=null;
 
-function loadLogo(e){const f=e.target.files[0];if(!f)return;const reader=new FileReader();reader.onload=()=>{pendingLogo=reader.result;toast('Logo carregada. Clique em salvar configurações.')} ;reader.readAsDataURL(f)}
-async function saveSettings(){state.settings.appName=document.getElementById('cfgAppName').value.trim()||'Sistema integrado FMP';state.settings.panelTitle=document.getElementById('cfgPanelTitle').value.trim()||'Painel de Laboratórios e Espaços';state.settings.classroomPanelTitle=document.getElementById('cfgClassroomPanelTitle').value.trim()||'Painel de Salas de Aula';if(pendingLogo){state.settings.logo=pendingLogo;pendingLogo=null}saveState();await recordAuditLog('Atualiza configurações do sistema','Configurações',state.settings.appName);renderAdmin();toast('Configurações salvas.')}
+let logoLoading=null;
+function logoStatus(message,error=false){const el=document.getElementById('cfgLogoStatus');if(el){el.textContent=message;el.style.color=error?'#a32626':'#35556b'}}
+function loadLogo(e){
+ const file=e.target.files[0];if(!file)return;
+ pendingLogo=null;
+ if(!['image/png','image/jpeg','image/webp'].includes(file.type)||file.size>8*1024*1024){logoStatus('Escolha PNG, JPG ou WebP de até 8 MB.',true);e.target.value='';return}
+ logoStatus('Preparando imagem…');
+ logoLoading=new Promise(resolve=>{
+ const fail=()=>{pendingLogo=null;logoStatus('Não foi possível abrir a imagem. Escolha outro arquivo.',true);resolve(false)};
+ const reader=new FileReader();reader.onerror=fail;
+ reader.onload=()=>{const image=new Image();image.onerror=fail;image.onload=()=>{
+ try{const scale=Math.min(1,512/Math.max(image.width,image.height)),canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(image.width*scale));canvas.height=Math.max(1,Math.round(image.height*scale));canvas.getContext('2d').drawImage(image,0,0,canvas.width,canvas.height);pendingLogo=canvas.toDataURL('image/png');const preview=document.getElementById('cfgLogoPreview');if(preview)preview.src=pendingLogo;logoStatus('Imagem pronta. Clique em Salvar configurações para publicar.');resolve(true)}catch(err){fail()}
+ };image.src=reader.result};reader.readAsDataURL(file)
+ });
+}
+async function publishSystemSettings(changes){
+ if(!githubToken())throw Error('Configure o token deste navegador para publicar as configurações.');
+ const path=state.settings.github?.path||'dados/agendamentos.json',g=state.settings.github;
+ for(let attempt=0;attempt<3;attempt++){
+ const current=await fetchGithubFile(path,true);const data=current.data;
+ if(!Array.isArray(data.bookings)||!Array.isArray(data.resources))throw Error('JSON da agenda inválido; os dados foram preservados.');
+ const payload={...data,settings:{...(data.settings||{}),...changes},updatedAt:new Date().toISOString()};
+ const response=await fetch(githubFileApiUrl(path).split('?ref=')[0],{method:'PUT',headers:{Accept:'application/vnd.github+json','Content-Type':'application/json','X-GitHub-Api-Version':'2022-11-28',Authorization:'Bearer '+githubToken()},body:JSON.stringify({message:'Atualiza configurações e logomarca FMP',branch:g.branch||'main',sha:current.sha,content:encodeBase64Unicode(JSON.stringify(payload,null,2))})});
+ if(response.status===409&&attempt<2)continue;
+ if(!response.ok)throw Error('GitHub '+response.status+' ao publicar configurações. Confira o token e tente novamente.');
+ return;
+ }
+}
+async function saveSettings(){
+ if(!isLogged())return;
+ const button=document.getElementById('cfgSaveSettings');if(button?.disabled)return;if(button)button.disabled=true;
+ try{
+ if(logoLoading&&!(await logoLoading))throw Error('Escolha uma imagem válida antes de salvar.'); 
+ const changes={appName:document.getElementById('cfgAppName').value.trim()||'Sistema integrado FMP',panelTitle:document.getElementById('cfgPanelTitle').value.trim()||'Painel de Laboratórios e Espaços',classroomPanelTitle:document.getElementById('cfgClassroomPanelTitle').value.trim()||'Painel de Salas de Aula',logo:pendingLogo||state.settings.logo||'assets/logo-fmp.svg',publicRefreshSeconds:Math.max(30,Math.min(600,Number(document.getElementById('cfgRefresh').value)||60))};
+ logoStatus('Publicando configurações…');await publishSystemSettings(changes);
+ Object.assign(state.settings,changes);pendingLogo=null;logoLoading=null;saveState();renderAdmin();logoStatus('Configurações e logomarca publicadas no GitHub.');toast('Configurações publicadas com sucesso.');
+ recordAuditLog('Atualiza configurações do sistema','Configurações',changes.appName).catch(err=>console.warn('Falha no log',err));
+ }catch(err){logoStatus('Não foi possível salvar: '+err.message,true);toast('Configurações não publicadas. Confira a mensagem na tela.')}finally{if(button&&document.body.contains(button))button.disabled=false}
+}
 async function saveGithub(){state.settings.github={owner:document.getElementById('ghOwner').value.trim(),repo:document.getElementById('ghRepo').value.trim(),branch:document.getElementById('ghBranch').value.trim()||'main',path:document.getElementById('ghPath').value.trim()||'dados/agendamentos.json',gradePath:document.getElementById('ghGradePath').value.trim()||'dados/grade-salas.json',usersPath:document.getElementById('ghUsersPath').value.trim()||'dados/usuarios.json',stockPath:document.getElementById('ghStockPath').value.trim()||'dados/estoque.json',vehiclePath:document.getElementById('ghVehiclePath').value.trim()||'dados/carros.json',logPath:document.getElementById('ghLogPath').value.trim()||'dados/log-acessos.json'};localStorage.setItem(GH_TOKEN_KEY,document.getElementById('ghToken').value.trim());tokenConnectionState={status:'idle',message:'Token alterado; aguardando validação.',checkedAt:0,fingerprint:''};saveState();toast('Conexão salva somente neste navegador.');const valid=await testGithubConnection();if(valid)await recordAuditLog('Valida integração com GitHub','Configurações',`${state.settings.github.owner}/${state.settings.github.repo} · token com gravação confirmada`);}
 
 function resetUserForm(){['editUserId','newUserName','newUsername','newUserPassword'].forEach(id=>{const el=document.getElementById(id);if(el)el.value=''});const save=document.getElementById('saveUserBtn'),cancel=document.getElementById('cancelUserEditBtn'),pwd=document.getElementById('newUserPassword');if(save)save.textContent='Adicionar usuário';if(cancel)cancel.classList.add('hidden');if(pwd)pwd.placeholder='Digite a senha'}
