@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-11T13:07:33.951Z",
-    "updatedAt": "2026-11-11T13:07:33.951Z",
+    "lastSync": "2026-11-11T13:20:52.901Z",
+    "updatedAt": "2026-11-11T13:20:52.901Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1941,7 +1941,7 @@
       "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": 80,
+      "minStock": 600,
       "currentStock": 19,
       "avgCost": "",
       "status": "active",
@@ -1949,7 +1949,7 @@
       "description": "Tamanho/apresentação: cada caixa com 20 unidades. Contados total por unidade.",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-11-09"
+      "updatedAt": "2026-11-11"
     },
     {
       "id": "mat_lim_033",
