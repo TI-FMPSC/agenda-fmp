@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-10T13:48:37.961Z",
-    "updatedAt": "2026-11-10T13:48:37.961Z",
+    "lastSync": "2026-11-11T13:07:33.951Z",
+    "updatedAt": "2026-11-11T13:07:33.951Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -825,7 +825,7 @@
       "unit": "CX",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 5,
       "currentStock": 12,
       "avgCost": "",
       "status": "active",
@@ -833,7 +833,7 @@
       "description": "Marca: sortidos | Tamanho/apresentação: unidades/ compra em caixa com 24 unidades",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-08-16"
+      "updatedAt": "2026-11-11"
     },
     {
       "id": "mat_esc_032",
