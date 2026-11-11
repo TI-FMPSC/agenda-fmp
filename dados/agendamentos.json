@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-11T21:50:51.316Z",
+  "updatedAt": "2026-11-11T21:52:07.312Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9178,6 +9178,21 @@
       "date": "2026-11-11"
     },
     {
+      "id": "77efec23-4d4b-543b-b147-d1c1d941fc0e",
+      "resourceId": "lab5",
+      "responsible": "Grazielle F. da Silva",
+      "purpose": "PÓS - EDUCAÇÃO ESPECIAL",
+      "date": "2026-11-11",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: IVANIR",
+      "spaceCategory": "lab",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false
+    },
+    {
       "id": "9e98cbc7-4082-44f7-b133-f65ff8ca7806",
       "spaceCategory": "lab",
       "resourceId": "lab1",
@@ -9232,17 +9247,6 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: PÓS - EDUCAÇÃO ESPECIAL"
-    },
-    {
-      "id": "77efec23-4d4b-543b-b147-d1c1d941fc0e",
-      "resourceId": "lab5",
-      "responsible": "Ivanir Maciel",
-      "purpose": "Pedagogia — 6ª Fase",
-      "date": "2026-11-11",
-      "startTime": "20:30",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: IVANIR"
     },
     {
       "id": "90fdc8d0-2363-52b6-aa7f-19de7e5e4c62",
