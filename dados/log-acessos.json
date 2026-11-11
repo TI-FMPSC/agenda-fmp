@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-11T19:36:09.595Z",
+  "updatedAt": "2026-11-11T19:36:59.101Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9343,6 +9343,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "Administração — 6ª Fase · Fernanda M. Sanchez · 2026-11-11 · 18:50–22:00 · Laboratório 01"
+    },
+    {
+      "id": "fdfdfd33-58d4-4211-9111-1d4212f6e044",
+      "timestamp": "2026-11-11T19:36:58.454Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "REUNIÃO NEABI · Marcus B. O. Silveira · 2026-11-11 · 18:00–18:49 · Laboratório 01"
     }
   ]
 }
