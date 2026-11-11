@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-11T23:48:32.072Z",
+  "updatedAt": "2026-11-11T23:49:14.518Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9529,6 +9529,21 @@
       "importantEvent": false,
       "allDay": false,
       "responsible": "Deisi Cord",
+      "purpose": "Pedagogia — 6ª Fase",
+      "startTime": "18:50",
+      "endTime": "20:20",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "e9a135d5-8904-47ef-972f-40301858f6c6",
+      "spaceCategory": "lab",
+      "resourceId": "lab3",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "Deisi Cord.",
       "purpose": "Pedagogia — 6ª Fase",
       "startTime": "18:50",
       "endTime": "20:20",
