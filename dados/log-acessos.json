@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-11T23:49:17.371Z",
+  "updatedAt": "2026-11-11T23:50:06.484Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9496,6 +9496,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 6ª Fase · Deisi Cord. · 2026-11-13 · 18:50–20:20 · Laboratório 03"
+    },
+    {
+      "id": "2aef1645-be0e-4224-9285-bfd2c0dd6a82",
+      "timestamp": "2026-11-11T23:50:05.479Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 8ª Fase · Tatiani Schmitt · 2026-11-13 · 18:50–22:00 · Laboratório 04"
     }
   ]
 }
