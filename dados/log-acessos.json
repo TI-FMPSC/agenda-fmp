@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-11T21:44:49.823Z",
+  "updatedAt": "2026-11-11T21:45:11.759Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9361,6 +9361,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "ff285ed2-2617-4844-9bc7-3a6363b60719",
+      "timestamp": "2026-11-11T21:45:11.092Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 6ª Fase · Fernanda M. Sanchez · 2026-11-11 · 18:50–22:00 · Laboratório 01"
     }
   ]
 }
