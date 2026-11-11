@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-11T21:45:42.971Z",
+  "updatedAt": "2026-11-11T21:46:47.289Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9388,6 +9388,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "ALEXANDRE · Alexandre L. da Silva · 2026-11-11 · 19:00–22:00 · Laboratório 04"
+    },
+    {
+      "id": "6c16a2ea-d5cc-4814-a627-8f89b80ec2cb",
+      "timestamp": "2026-11-11T21:46:46.655Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "PÓS-GRADUAÇÃO (GESTÃO EMPRESARIAL) · Fabiana E. Boff · 2026-11-11 · 18:50–22:00 · Laboratório 01"
     }
   ]
 }
