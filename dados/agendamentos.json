@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-11T19:36:55.606Z",
+  "updatedAt": "2026-11-11T21:45:07.077Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9173,21 +9173,6 @@
       "status": "confirmed",
       "notes": "",
       "date": "2026-11-11"
-    },
-    {
-      "id": "6b6c6662-475f-5693-b6b2-0b6178ec9a71",
-      "resourceId": "lab1",
-      "responsible": "Fernanda M. Sanchez",
-      "purpose": "Administração — 6ª Fase",
-      "date": "2026-11-11",
-      "startTime": "18:50",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: FERNANDA SANCHES (METODOLOGIA TCC)",
-      "spaceCategory": "lab",
-      "featuredEvent": false,
-      "importantEvent": false,
-      "allDay": false
     },
     {
       "id": "50215354-cd0a-452e-a146-db4f461bae22",
