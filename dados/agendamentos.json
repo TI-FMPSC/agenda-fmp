@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-11T21:45:07.077Z",
+  "updatedAt": "2026-11-11T21:45:15.777Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9088,17 +9088,6 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: SÉRGIO"
-    },
-    {
-      "id": "29b1efc7-d6da-5b33-9b0c-9c92b356875d",
-      "resourceId": "lab2",
-      "responsible": "Gregori M. Czizeweski",
-      "purpose": "ADS — 3ª Fase",
-      "date": "2026-11-11",
-      "startTime": "08:00",
-      "endTime": "11:10",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: GREGORI"
     },
     {
       "id": "5f5b9481-709e-571a-b83b-2470001808fb",
