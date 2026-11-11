@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-11T21:46:43.948Z",
+  "updatedAt": "2026-11-11T21:49:56.534Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9186,6 +9186,21 @@
       "allDay": false,
       "responsible": "Fabiana E. Boff",
       "purpose": "PÓS-GRADUAÇÃO (GESTÃO EMPRESARIAL)",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-11"
+    },
+    {
+      "id": "a244be85-9656-48fb-a857-d9e5d4d5104d",
+      "spaceCategory": "lab",
+      "resourceId": "lab3",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "Elaine M. S. dos Santos",
+      "purpose": "Pedagogia — 6ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
