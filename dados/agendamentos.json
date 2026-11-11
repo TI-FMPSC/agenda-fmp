@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-11T21:49:56.534Z",
+  "updatedAt": "2026-11-11T21:50:51.316Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9200,6 +9200,21 @@
       "importantEvent": false,
       "allDay": false,
       "responsible": "Elaine M. S. dos Santos",
+      "purpose": "Pedagogia — 6ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-11"
+    },
+    {
+      "id": "00b0b140-9afd-4cfa-a8f5-916d0aeab7e3",
+      "spaceCategory": "lab",
+      "resourceId": "lab4",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "Ana Lucia Machado",
       "purpose": "Pedagogia — 6ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
