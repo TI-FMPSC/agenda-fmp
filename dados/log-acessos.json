@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-11T10:35:07.608Z",
+  "updatedAt": "2026-11-11T13:20:50.518Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9298,6 +9298,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "dc939ccd-0ca0-41c1-a26b-bdf362a514c0",
+      "timestamp": "2026-11-11T13:20:50.149Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "112 · Papel Toalha avulso"
     }
   ]
 }
