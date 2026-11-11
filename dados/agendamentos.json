@@ -5,7 +5,7 @@
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
     "classroomPanelTitle": "Painel de Salas de Aula",
-    "logo": "",
+    "logo": "assets/logo-fmp.svg",
     "publicRefreshSeconds": 60
   },
   "resources": [
