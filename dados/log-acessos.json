@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-11T21:45:18.851Z",
+  "updatedAt": "2026-11-11T21:45:42.971Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9379,6 +9379,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "ADS — 3ª Fase · Gregori M. Czizeweski · 2026-11-11 · 08:00–11:10 · Laboratório 02"
+    },
+    {
+      "id": "fc44a0d2-30fe-48b2-96de-0dbe94fed1c8",
+      "timestamp": "2026-11-11T21:45:41.715Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "ALEXANDRE · Alexandre L. da Silva · 2026-11-11 · 19:00–22:00 · Laboratório 04"
     }
   ]
 }
