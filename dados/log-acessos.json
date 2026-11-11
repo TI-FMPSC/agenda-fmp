@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-11T19:36:59.101Z",
+  "updatedAt": "2026-11-11T21:44:49.823Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9352,6 +9352,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "REUNIÃO NEABI · Marcus B. O. Silveira · 2026-11-11 · 18:00–18:49 · Laboratório 01"
+    },
+    {
+      "id": "4c9e22da-d6b5-4056-9792-87aac466345c",
+      "timestamp": "2026-11-11T21:44:49.082Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
