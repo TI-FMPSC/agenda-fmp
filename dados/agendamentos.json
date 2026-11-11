@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-11T21:45:15.777Z",
+  "updatedAt": "2026-11-11T21:45:39.200Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9187,17 +9187,6 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: PÓS - EDUCAÇÃO ESPECIAL"
-    },
-    {
-      "id": "76390336-8a34-5c6d-93c7-eac6183cb907",
-      "resourceId": "lab4",
-      "responsible": "Alexandre L. da Silva",
-      "purpose": "ALEXANDRE",
-      "date": "2026-11-11",
-      "startTime": "19:00",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: ALEXANDRE"
     },
     {
       "id": "77efec23-4d4b-543b-b147-d1c1d941fc0e",
