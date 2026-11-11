@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-11T14:37:25.808Z",
+  "updatedAt": "2026-11-11T16:25:30.912Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9313,6 +9313,15 @@
       "timestamp": "2026-11-11T14:37:25.451Z",
       "username": "amandafranca",
       "name": "Amanda",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "ea5d785c-9828-4fd2-8362-55d56cb8afdc",
+      "timestamp": "2026-11-11T16:25:29.840Z",
+      "username": "leandropickler",
+      "name": "Leandro Pickler",
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
