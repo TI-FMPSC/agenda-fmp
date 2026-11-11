@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-11T13:20:52.901Z",
-    "updatedAt": "2026-11-11T13:20:52.901Z",
+    "lastSync": "2026-11-11T13:21:49.967Z",
+    "updatedAt": "2026-11-11T13:21:49.967Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1923,7 +1923,7 @@
       "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": 200,
+      "minStock": 270,
       "currentStock": 314,
       "avgCost": "",
       "status": "active",
@@ -1931,7 +1931,7 @@
       "description": "432 UNIDADES ROLÃO",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-11-09"
+      "updatedAt": "2026-11-11"
     },
     {
       "id": "mat_lim_032",
