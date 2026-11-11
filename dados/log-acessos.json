@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-11T22:08:28.923Z",
+  "updatedAt": "2026-11-11T23:29:20.437Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9433,6 +9433,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "8261a1a0-0368-4680-a603-3779bb2f097d",
+      "timestamp": "2026-11-11T23:29:19.656Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 5ª Fase · Mariane R. Estefano · 2026-11-12 · 18:50–22:00 · Laboratório 01"
     }
   ]
 }
