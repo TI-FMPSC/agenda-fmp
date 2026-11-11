@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-11T21:50:55.224Z",
+  "updatedAt": "2026-11-11T21:52:11.286Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9415,6 +9415,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 6ª Fase · Ana Lucia Machado · 2026-11-11 · 18:50–22:00 · Laboratório 04"
+    },
+    {
+      "id": "399ea3b9-f1f1-4931-8996-dbfca2ac2afb",
+      "timestamp": "2026-11-11T21:52:10.631Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "PÓS - EDUCAÇÃO ESPECIAL · Grazielle F. da Silva · 2026-11-11 · 18:50–22:00 · Laboratório 05"
     }
   ]
 }
