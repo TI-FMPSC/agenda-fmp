@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-12T14:13:06.298Z",
+  "updatedAt": "2026-11-12T14:29:52.341Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9559,6 +9559,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Ajuste · 122 · PÓ DE CAFÉ · quantidade 17 · saldo 17"
+    },
+    {
+      "id": "5f68af7e-1fbc-4610-9ec9-afece210a803",
+      "timestamp": "2026-11-12T14:29:51.400Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Ajuste · 3 · A4 - PLASTIFICAÇÃO 100 LAMINAS · quantidade 5 · saldo 5"
     }
   ]
 }
