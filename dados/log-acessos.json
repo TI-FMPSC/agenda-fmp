@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-12T14:29:52.341Z",
+  "updatedAt": "2026-11-12T14:33:59.055Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9568,6 +9568,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Ajuste · 3 · A4 - PLASTIFICAÇÃO 100 LAMINAS · quantidade 5 · saldo 5"
+    },
+    {
+      "id": "84ef4297-919e-4fe1-b20a-d07e0aeba12f",
+      "timestamp": "2026-11-12T14:33:57.656Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "7 · Água Sanitaria"
     }
   ]
 }
