@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-12T14:58:38.278Z",
+  "updatedAt": "2026-11-12T15:02:26.638Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9595,6 +9595,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "133 · Sabão em Pó"
+    },
+    {
+      "id": "8455dc4f-cf90-4b0e-8306-7ef378e59997",
+      "timestamp": "2026-11-12T15:02:25.952Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "44 · Desinfetante"
     }
   ]
 }
