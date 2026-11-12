@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-12T14:37:11.899Z",
-    "updatedAt": "2026-11-12T14:37:11.899Z",
+    "lastSync": "2026-11-12T14:58:37.989Z",
+    "updatedAt": "2026-11-12T14:58:37.989Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2391,7 +2391,7 @@
       "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": 10,
+      "minStock": 15,
       "currentStock": 25,
       "avgCost": 0,
       "status": "active",
@@ -2399,7 +2399,7 @@
       "description": "Especificação: tixan Ypê | Marca: X-MAX | Tamanho/apresentação: 400 GRAMAS | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-21",
-      "updatedAt": "2026-10-27"
+      "updatedAt": "2026-11-12"
     },
     {
       "id": "id_vf4h0b18mt8tpczd",
