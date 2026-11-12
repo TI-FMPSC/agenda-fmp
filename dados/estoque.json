@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-12T14:13:06.530Z",
-    "updatedAt": "2026-11-12T14:13:06.530Z",
+    "lastSync": "2026-11-12T14:17:56.432Z",
+    "updatedAt": "2026-11-12T14:17:56.432Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -156,10 +156,10 @@
       "code": "122",
       "name": "PÓ DE CAFÉ",
       "categoryId": "cat_copa",
-      "unit": "",
+      "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 50,
       "currentStock": 17,
       "avgCost": "",
       "status": "active",
