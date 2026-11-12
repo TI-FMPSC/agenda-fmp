@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-11T14:38:52.873Z",
-    "updatedAt": "2026-11-11T14:38:52.873Z",
+    "lastSync": "2026-11-12T13:57:17.692Z",
+    "updatedAt": "2026-11-12T13:57:17.692Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1942,14 +1942,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 600,
-      "currentStock": 19,
+      "currentStock": 0,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: cada caixa com 20 unidades. Contados total por unidade.",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-11-11"
+      "updatedAt": "2026-11-12"
     },
     {
       "id": "mat_lim_033",
@@ -7224,6 +7224,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-11T14:38:51.984Z"
+    },
+    {
+      "id": "id_cjioikvymwdm3ulo",
+      "materialId": "mat_lim_032",
+      "type": "ajuste",
+      "date": "2026-11-12",
+      "quantity": 0,
+      "unitCost": 0,
+      "previousStock": 19,
+      "newStock": 0,
+      "effect": -19,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-12T13:57:16.332Z"
     }
   ],
   "users": [],
