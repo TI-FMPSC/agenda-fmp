@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-12T14:37:12.414Z",
+  "updatedAt": "2026-11-12T14:58:38.278Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9586,6 +9586,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "10 · Alcool Etílico Hidratado 92,8%"
+    },
+    {
+      "id": "20a16f22-1077-4cc6-b94e-1075c3020051",
+      "timestamp": "2026-11-12T14:58:37.184Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "133 · Sabão em Pó"
     }
   ]
 }
