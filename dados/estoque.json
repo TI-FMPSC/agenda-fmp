@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-12T14:17:56.432Z",
-    "updatedAt": "2026-11-12T14:17:56.432Z",
+    "lastSync": "2026-11-12T14:29:52.176Z",
+    "updatedAt": "2026-11-12T14:29:52.176Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2284,14 +2284,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 1,
-      "currentStock": 2,
+      "currentStock": 5,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "CAIXA COM 100 LAMINAS - 125 MICRAS 0,05MM - 220 MM X 307 MM - MASTERPRINT",
       "expirationDate": "",
       "createdAt": "2026-08-19",
-      "updatedAt": "2026-08-19"
+      "updatedAt": "2026-11-12"
     },
     {
       "id": "id_m1kkizvamt04gfe5",
@@ -7256,6 +7256,22 @@
       "notes": "Ajuste e contagem, Amanda.",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-12T14:13:05.326Z"
+    },
+    {
+      "id": "id_hzcxa5g1mwdn9r3x",
+      "materialId": "id_ubcqw6tnmt0470lk",
+      "type": "ajuste",
+      "date": "2026-11-12",
+      "quantity": 5,
+      "unitCost": 0,
+      "previousStock": 2,
+      "newStock": 5,
+      "effect": 3,
+      "sector": "",
+      "document": "",
+      "notes": "Ajuste em 12/11.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-12T14:29:51.357Z"
     }
   ],
   "users": [],
