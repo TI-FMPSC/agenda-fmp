@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-11T23:50:02.519Z",
+  "updatedAt": "2026-11-12T00:54:56.402Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9455,16 +9455,16 @@
     {
       "id": "c03f9761-145e-4991-99ce-311349954c00",
       "spaceCategory": "classroom",
-      "resourceId": "custom:quadra-laranja-caixa-de-som-microfone-24-mesas-02-sofas-01-note-02-ext",
-      "customSpaceName": "QUADRA LARANJA (CAIXA DE SOM + MICROFONE + 24 MESAS + 02 SOFÁS + 01 NOTE + 02 EXTENSÕES )",
+      "resourceId": "custom:quadra-laranja-caixa-de-som-microfone-24-mesas-02-sofas-05-note-02-ext",
+      "customSpaceName": "QUADRA LARANJA (CAIXA DE SOM + MICROFONE + 24 MESAS + 02 SOFÁS + 05 NOTE + 02 EXTENSÕES+ 01 MUNITOR+ 03 SUPORTE DE BANNER )",
       "featuredEvent": false,
       "allDay": false,
       "responsible": "Carlos A. A. Junior",
-      "purpose": "",
+      "purpose": "Reserva de sala",
       "startTime": "08:00",
       "endTime": "11:10",
       "status": "confirmed",
-      "notes": "",
+      "notes": "Ajuste pontual realizado pela Gestão das Salas.",
       "date": "2026-11-13"
     },
     {
