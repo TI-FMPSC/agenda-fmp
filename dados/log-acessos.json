@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-12T19:49:55.000Z",
+  "updatedAt": "2026-11-12T19:50:24.918Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9613,6 +9613,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "3f1f0631-7e4a-424b-bdeb-0d0bdfcab6bd",
+      "timestamp": "2026-11-12T19:50:24.381Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": ". · GABRELE · 2026-11-12 · 18:50–22:00 · Laboratório 02"
     }
   ]
 }
