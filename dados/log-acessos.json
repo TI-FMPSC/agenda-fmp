@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-12T14:33:59.055Z",
+  "updatedAt": "2026-11-12T14:37:12.414Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9577,6 +9577,15 @@
       "action": "Atualiza material",
       "module": "Estoque FMP",
       "details": "7 · Água Sanitaria"
+    },
+    {
+      "id": "1c498f58-2b23-4295-b946-706722612c0b",
+      "timestamp": "2026-11-12T14:37:10.796Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Atualiza material",
+      "module": "Estoque FMP",
+      "details": "10 · Alcool Etílico Hidratado 92,8%"
     }
   ]
 }
