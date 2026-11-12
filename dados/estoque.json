@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-12T14:58:37.989Z",
-    "updatedAt": "2026-11-12T14:58:37.989Z",
+    "lastSync": "2026-11-12T15:02:26.751Z",
+    "updatedAt": "2026-11-12T15:02:26.751Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2571,7 +2571,7 @@
       "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": 10,
+      "minStock": 20,
       "currentStock": 40,
       "avgCost": 0,
       "status": "active",
@@ -2579,7 +2579,7 @@
       "description": "Recebidos em 28/08 36 unidades de 5 litros cada. Marca: Sebold",
       "expirationDate": "",
       "createdAt": "2026-08-28",
-      "updatedAt": "2026-10-26"
+      "updatedAt": "2026-11-12"
     },
     {
       "id": "id_oyljvzfjmufp465n",
