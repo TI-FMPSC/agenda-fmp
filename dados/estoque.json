@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-13T12:12:01.091Z",
-    "updatedAt": "2026-11-13T12:12:01.091Z",
+    "lastSync": "2026-11-13T14:51:40.896Z",
+    "updatedAt": "2026-11-13T14:51:40.896Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -3174,6 +3174,24 @@
       "expirationDate": "",
       "createdAt": "2026-10-21",
       "updatedAt": "2026-10-21"
+    },
+    {
+      "id": "id_rapoc95ymwf3hn7y",
+      "code": "184",
+      "name": "Rodo Grande",
+      "categoryId": "cat_limpeza",
+      "unit": "UN",
+      "supplierId": "",
+      "locationId": "id_yzs046h6mumnxqbj",
+      "minStock": 5,
+      "currentStock": 0,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "",
+      "expirationDate": "",
+      "createdAt": "2026-11-13",
+      "updatedAt": "2026-11-13"
     }
   ],
   "movements": [
