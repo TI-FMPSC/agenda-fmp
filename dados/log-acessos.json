@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T16:39:22.614Z",
+  "updatedAt": "2026-11-13T19:51:50.445Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9685,6 +9685,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "JOVEM PALHOCENSE · . · 2026-11-13 · 13:00–17:00 · Laboratório 05"
+    },
+    {
+      "id": "d449a079-59db-4b8c-88e5-5f10bc266a74",
+      "timestamp": "2026-11-13T19:51:49.541Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
