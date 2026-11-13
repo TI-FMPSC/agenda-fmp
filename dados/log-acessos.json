@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T20:02:00.730Z",
+  "updatedAt": "2026-11-13T20:02:36.057Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9721,6 +9721,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "CAPACITAÇÃO RH EDUCAÇÃO · CASA EDUCADOR · 2026-11-13 · 13:00–17:00 · Laboratório 01"
+    },
+    {
+      "id": "c46a57b7-2f08-47d2-b883-51f9e72fa86f",
+      "timestamp": "2026-11-13T20:02:35.524Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "JOVEM PALHOCENSE · . · 2026-11-20 · 13:30–17:30 · Auditório"
     }
   ]
 }
