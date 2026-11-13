@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-13T20:18:49.471Z",
+  "updatedAt": "2026-11-13T20:19:01.860Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10315,7 +10315,7 @@
       "featuredEvent": false,
       "importantEvent": false,
       "allDay": false,
-      "responsible": "CASAN EDUCADOR",
+      "responsible": "CASA EDUCADOR",
       "purpose": "CAPACITAÇÃO RH EDUCAÇÃO",
       "startTime": "13:00",
       "endTime": "17:00",
