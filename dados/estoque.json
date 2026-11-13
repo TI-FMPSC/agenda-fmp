@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-13T12:11:17.262Z",
-    "updatedAt": "2026-11-13T12:11:17.262Z",
+    "lastSync": "2026-11-13T12:11:25.253Z",
+    "updatedAt": "2026-11-13T12:11:25.253Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1254,10 +1254,10 @@
       "code": "61",
       "name": "Fita Larga incolor",
       "categoryId": "cat_escritorio",
-      "unit": "FRD",
+      "unit": "UN",
       "supplierId": "",
       "locationId": "",
-      "minStock": "",
+      "minStock": 30,
       "currentStock": 100,
       "avgCost": "",
       "status": "active",
