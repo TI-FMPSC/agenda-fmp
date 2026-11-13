@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T20:17:32.762Z",
+  "updatedAt": "2026-11-13T20:18:53.067Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9793,6 +9793,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "JOVEM PALHOCENSE · DÉBORA · 2026-11-25 · 13:30–17:30 · Laboratório 01"
+    },
+    {
+      "id": "27b9ab23-3879-49c4-8c0e-6243b5f84c89",
+      "timestamp": "2026-11-13T20:18:52.324Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "CAPACITAÇÃO RH EDUCAÇÃO · CASAN EDUCADOR · 2026-11-25 · 13:00–17:00 · Laboratório 05"
     }
   ]
 }
