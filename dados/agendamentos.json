@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-13T16:38:03.621Z",
+  "updatedAt": "2026-11-13T16:38:30.061Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9435,21 +9435,6 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Ajuste pontual realizado pela Gestão das Salas.",
-      "date": "2026-11-13"
-    },
-    {
-      "id": "26258ff6-c905-4751-9981-7aa19a4675c7",
-      "spaceCategory": "lab",
-      "resourceId": "lab5",
-      "featuredEvent": false,
-      "importantEvent": false,
-      "allDay": false,
-      "responsible": ".",
-      "purpose": "",
-      "startTime": "13:00",
-      "endTime": "17:00",
-      "status": "confirmed",
-      "notes": "Jovem Palhocense",
       "date": "2026-11-13"
     },
     {
