@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T20:19:05.589Z",
+  "updatedAt": "2026-11-13T22:04:24.013Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9811,6 +9811,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "CAPACITAÇÃO RH EDUCAÇÃO · CASA EDUCADOR · 2026-11-25 · 13:00–17:00 · Laboratório 05"
+    },
+    {
+      "id": "d3e34edf-5e8e-4d9c-9ed5-f736b9aba98a",
+      "timestamp": "2026-11-13T22:04:22.827Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 6ª Fase · Fabiana E. Boff · 2026-11-13 · 18:50–22:00 · Laboratório 01"
     }
   ]
 }
