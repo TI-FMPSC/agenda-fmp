@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-13T20:00:33.041Z",
+  "updatedAt": "2026-11-13T20:01:56.726Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9446,6 +9446,21 @@
       "allDay": false,
       "responsible": ".",
       "purpose": "JOVEM PALHOCENSE",
+      "startTime": "13:00",
+      "endTime": "17:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-13"
+    },
+    {
+      "id": "a0e910e5-721b-4cb5-a422-d36cb13378d3",
+      "spaceCategory": "lab",
+      "resourceId": "lab1",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "CASA EDUCADOR",
+      "purpose": "CAPACITAÇÃO RH EDUCAÇÃO",
       "startTime": "13:00",
       "endTime": "17:00",
       "status": "confirmed",
