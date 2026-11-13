@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T12:05:21.170Z",
+  "updatedAt": "2026-11-13T12:11:08.577Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9640,6 +9640,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "ee51ba6d-2c55-4dd3-bd3e-90d679524438",
+      "timestamp": "2026-11-13T12:11:07.767Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Entrada · 61 · Fita Larga incolor · quantidade 100 · saldo 100"
     }
   ]
 }
