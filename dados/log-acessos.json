@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T20:03:30.609Z",
+  "updatedAt": "2026-11-13T20:06:37.448Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9739,6 +9739,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "CAPACITAÇÃO RH EDUCAÇÃO · CASA EDUCADOR · 2026-11-23 · 13:00–17:00 · Laboratório 01"
+    },
+    {
+      "id": "2331a966-da0f-4910-8f01-a6e1e46ffe21",
+      "timestamp": "2026-11-13T20:06:36.958Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "CAPACITAÇÃO RH EDUCAÇÃO · CASA EDUCADOR · 2026-11-30 · 13:00–17:00 · Laboratório 05"
     }
   ]
 }
