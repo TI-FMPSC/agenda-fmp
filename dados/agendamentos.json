@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-13T22:49:01.095Z",
+  "updatedAt": "2026-11-13T22:49:50.584Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -11001,20 +11001,6 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: LEANDRO"
-    },
-    {
-      "id": "615d270f-1ba8-427e-95ad-e72d7aabe341",
-      "spaceCategory": "lab",
-      "resourceId": "auditorio",
-      "featuredEvent": false,
-      "allDay": false,
-      "responsible": ".",
-      "purpose": "JOVEM PALHOCENSE",
-      "startTime": "13:30",
-      "endTime": "17:30",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-12-04"
     },
     {
       "id": "cf58c2d5-ba76-41b8-a725-49dfb0578dd6",
