@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-13T16:39:18.369Z",
+  "updatedAt": "2026-11-13T19:55:23.945Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9612,14 +9612,17 @@
     {
       "id": "ab5f9e43-03ef-4eda-933e-543b9b900f8f",
       "spaceCategory": "lab",
-      "resourceId": "auditorio",
+      "resourceId": "lab5",
       "responsible": "PROJETO JOVEM PALHOCENSE (DÉBORA)",
       "purpose": "PROJETO JOVEM PALHOCENSE (DÉBORA)",
       "startTime": "13:30",
       "endTime": "17:30",
       "status": "confirmed",
       "notes": "",
-      "date": "2026-11-16"
+      "date": "2026-11-16",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false
     },
     {
       "id": "50075926-7b6e-5119-8371-9d8a4b610e0a",
