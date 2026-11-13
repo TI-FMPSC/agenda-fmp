@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-13T20:19:01.860Z",
+  "updatedAt": "2026-11-13T22:04:20.145Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9498,8 +9498,8 @@
       "featuredEvent": false,
       "importantEvent": false,
       "allDay": false,
-      "responsible": "Leonardo C. Chaves",
-      "purpose": "Administração — 3ª Fase",
+      "responsible": "Fabiana E. Boff",
+      "purpose": "Administração — 6ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
