@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-13T19:55:23.945Z",
+  "updatedAt": "2026-11-13T20:00:33.041Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10103,6 +10103,21 @@
       "purpose": "PROJETO JOVEM PALHOCENSE (DÉBORA)",
       "startTime": "08:00",
       "endTime": "11:30",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-23"
+    },
+    {
+      "id": "25af4b29-a760-4f4c-9dbe-d41b5cd9a2f4",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "CASA EDUCADOR",
+      "purpose": "CAPACITAÇÃO RH EDUCAÇÃO",
+      "startTime": "13:00",
+      "endTime": "17:00",
       "status": "confirmed",
       "notes": "",
       "date": "2026-11-23"
