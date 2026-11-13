@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T12:11:08.577Z",
+  "updatedAt": "2026-11-13T16:35:39.139Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9649,6 +9649,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Entrada · 61 · Fita Larga incolor · quantidade 100 · saldo 100"
+    },
+    {
+      "id": "503986c4-cdc3-49f2-8c77-cb9c9bba3b7e",
+      "timestamp": "2026-11-13T16:35:38.256Z",
+      "username": "deborabombazaro",
+      "name": "Débora Bombazaro",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
