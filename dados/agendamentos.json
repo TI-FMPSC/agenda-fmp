@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-13T20:02:32.643Z",
+  "updatedAt": "2026-11-13T20:03:26.820Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9453,21 +9453,6 @@
       "date": "2026-11-13"
     },
     {
-      "id": "a0e910e5-721b-4cb5-a422-d36cb13378d3",
-      "spaceCategory": "lab",
-      "resourceId": "lab1",
-      "featuredEvent": false,
-      "importantEvent": false,
-      "allDay": false,
-      "responsible": "CASA EDUCADOR",
-      "purpose": "CAPACITAÇÃO RH EDUCAÇÃO",
-      "startTime": "13:00",
-      "endTime": "17:00",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-11-13"
-    },
-    {
       "id": "17bd9f34-a63b-413c-a752-bbfff1ef8dba",
       "spaceCategory": "lab",
       "resourceId": "auditorio",
@@ -10112,6 +10097,21 @@
       "id": "25af4b29-a760-4f4c-9dbe-d41b5cd9a2f4",
       "spaceCategory": "lab",
       "resourceId": "lab5",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "CASA EDUCADOR",
+      "purpose": "CAPACITAÇÃO RH EDUCAÇÃO",
+      "startTime": "13:00",
+      "endTime": "17:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-23"
+    },
+    {
+      "id": "a0e910e5-721b-4cb5-a422-d36cb13378d3",
+      "spaceCategory": "lab",
+      "resourceId": "lab1",
       "featuredEvent": false,
       "importantEvent": false,
       "allDay": false,
