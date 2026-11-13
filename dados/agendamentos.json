@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-13T20:14:28.797Z",
+  "updatedAt": "2026-11-13T20:15:04.540Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -11075,8 +11075,8 @@
       "featuredEvent": false,
       "importantEvent": false,
       "allDay": false,
-      "responsible": "CASA EDUCADOR",
-      "purpose": "CAPACITAÇÃO RH EDUCAÇÃO",
+      "responsible": "DÉBORA",
+      "purpose": "JOVEM PALHOCENSE",
       "startTime": "13:00",
       "endTime": "17:00",
       "status": "confirmed",
