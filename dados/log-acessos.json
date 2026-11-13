@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T16:38:07.081Z",
+  "updatedAt": "2026-11-13T16:38:33.185Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9667,6 +9667,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": " · . · 2026-11-13 · 13:00–17:00 · Laboratório 05"
+    },
+    {
+      "id": "6e09c5e5-b8b0-44d8-beac-e8c0bfb58679",
+      "timestamp": "2026-11-13T16:38:32.433Z",
+      "username": "deborabombazaro",
+      "name": "Débora Bombazaro",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "JOVEM PALHOCENSE · . · 2026-11-13 · 13:00–17:00 · Laboratório 05"
     }
   ]
 }
