@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T22:04:53.587Z",
+  "updatedAt": "2026-11-13T22:49:05.134Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9829,6 +9829,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "Administração — 4ª Fase · Maurício A. de Lima · 2026-11-13 · 18:50–22:00 · Laboratório 05"
+    },
+    {
+      "id": "16748899-f746-4bc0-802c-f45d4604ed30",
+      "timestamp": "2026-11-13T22:49:04.510Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "JOVEM PALHOCENSE · DÉBORA · 2026-11-27 · 13:00–17:00 · Laboratório 05"
     }
   ]
 }
