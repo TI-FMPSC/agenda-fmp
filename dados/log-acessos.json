@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T22:49:55.255Z",
+  "updatedAt": "2026-11-13T22:50:28.573Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9847,6 +9847,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "JOVEM PALHOCENSE · . · 2026-12-04 · 13:30–17:30 · Auditório"
+    },
+    {
+      "id": "d5a3bbcb-236b-495d-85e2-94929e94fca2",
+      "timestamp": "2026-11-13T22:50:27.857Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "JOVEM PALHOCENSE · DÉBORA · 2026-12-04 · 13:00–17:00 · Laboratório 05"
     }
   ]
 }
