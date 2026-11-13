@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-13T20:17:29.051Z",
+  "updatedAt": "2026-11-13T20:18:49.471Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10307,6 +10307,21 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: RAFAEL"
+    },
+    {
+      "id": "905d5a1a-1945-48cc-adc6-29877e4fb975",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "CASAN EDUCADOR",
+      "purpose": "CAPACITAÇÃO RH EDUCAÇÃO",
+      "startTime": "13:00",
+      "endTime": "17:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-25"
     },
     {
       "id": "88f87cec-bec6-5617-a181-8d33f0b80c81",
