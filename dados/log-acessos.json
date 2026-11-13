@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T20:08:28.183Z",
+  "updatedAt": "2026-11-13T20:13:29.284Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9757,6 +9757,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "CAPACITAÇÃO RH EDUCAÇÃO · CASA EDUCADOR · 2026-12-07 · 13:00–17:00 · Laboratório 05"
+    },
+    {
+      "id": "ae6a8f4d-7de4-4501-ad0d-9ace788ec61d",
+      "timestamp": "2026-11-13T20:13:28.736Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "PROJETO JOVEM PALHOCENSE · DÉBORA · 2026-11-23 · 13:00–17:00 · Laboratório 01"
     }
   ]
 }
