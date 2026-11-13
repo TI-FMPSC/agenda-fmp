@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-12T15:04:54.819Z",
-    "updatedAt": "2026-11-12T15:04:54.819Z",
+    "lastSync": "2026-11-13T12:11:17.262Z",
+    "updatedAt": "2026-11-13T12:11:17.262Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1258,14 +1258,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 0,
+      "currentStock": 100,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: com 6 unidades",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-10-14"
+      "updatedAt": "2026-11-13"
     },
     {
       "id": "mat_esc_056",
@@ -7272,6 +7272,22 @@
       "notes": "Ajuste em 12/11.",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-12T14:29:51.357Z"
+    },
+    {
+      "id": "id_06s85ocomwexr761",
+      "materialId": "mat_esc_055",
+      "type": "entrada",
+      "date": "2026-11-13",
+      "quantity": 100,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 100,
+      "effect": 100,
+      "sector": "",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-13T12:11:07.657Z"
     }
   ],
   "users": [],
