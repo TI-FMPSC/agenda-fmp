@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-16T18:35:52.338Z",
+  "updatedAt": "2026-11-16T18:37:34.393Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9700,6 +9700,21 @@
       "allDay": false,
       "responsible": "Andreia de B. Machado",
       "purpose": "Pedagogia — 3ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-16"
+    },
+    {
+      "id": "3b5996b1-2574-4894-850f-5bbac7d71191",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "Leonardo C. Chaves",
+      "purpose": "PÓS-GRADUAÇÃO (GESTÃO EMPRESARIAL)",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
