@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-16T14:55:15.799Z",
-    "updatedAt": "2026-11-16T14:55:15.799Z",
+    "lastSync": "2026-11-16T14:55:38.003Z",
+    "updatedAt": "2026-11-16T14:55:38.003Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2338,14 +2338,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 30,
-      "currentStock": 87,
+      "currentStock": 85,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "500ml VARIADOS AROMAS",
       "expirationDate": "",
       "createdAt": "2026-08-21",
-      "updatedAt": "2026-10-21"
+      "updatedAt": "2026-11-16"
     },
     {
       "id": "id_cp2jzwyimt2xynql",
@@ -7466,6 +7466,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-16T14:55:14.478Z"
+    },
+    {
+      "id": "id_6tettv2pmwjdyaj1",
+      "materialId": "id_j7xrtpr8mt2xuehl",
+      "type": "saida",
+      "date": "2026-11-11",
+      "quantity": 2,
+      "unitCost": 0,
+      "previousStock": 87,
+      "newStock": 85,
+      "effect": -2,
+      "sector": "Luana",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-16T14:55:37.165Z"
     }
   ],
   "users": [],
