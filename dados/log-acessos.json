@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16T14:46:05.554Z",
+  "updatedAt": "2026-11-16T14:53:07.362Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9910,6 +9910,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 11 · Amaciante de Roupas · quantidade 1 · saldo 40"
+    },
+    {
+      "id": "b7e8830b-f811-4fdd-ad44-e6771a802f06",
+      "timestamp": "2026-11-16T14:53:06.506Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 135 · Sabonete Líquido Grande · quantidade 1 · saldo 15"
     }
   ]
 }
