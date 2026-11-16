@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16T14:55:38.257Z",
+  "updatedAt": "2026-11-16T15:00:43.164Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9946,6 +9946,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 45 · Detergente louça · quantidade 2 · saldo 85"
+    },
+    {
+      "id": "1579605e-ed7e-439e-93c0-aa206275052c",
+      "timestamp": "2026-11-16T15:00:42.087Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Ajuste · 107 · Esponja · quantidade 51 · saldo 51"
     }
   ]
 }
