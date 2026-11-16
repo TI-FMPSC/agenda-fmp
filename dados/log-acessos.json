@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16T18:34:56.217Z",
+  "updatedAt": "2026-11-16T18:35:55.621Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10036,6 +10036,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 3ª Fase · Andreia de B. Machado · 2026-11-16 · 18:50–22:00 · Laboratório 02"
+    },
+    {
+      "id": "721f9816-31ae-441f-9acb-ecdb7cfa5f66",
+      "timestamp": "2026-11-16T18:35:54.754Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 3ª Fase · Andreia de B. Machado · 2026-11-16 · 18:50–22:00 · Laboratório 03"
     }
   ]
 }
