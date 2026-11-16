@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16T14:54:18.223Z",
+  "updatedAt": "2026-11-16T14:55:38.257Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9937,6 +9937,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Ajuste · 4 · AÇÚCAR CRISTAL · quantidade 2 · saldo 2"
+    },
+    {
+      "id": "28e46342-29aa-4b25-8505-fdffa61511a7",
+      "timestamp": "2026-11-16T14:55:37.283Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 45 · Detergente louça · quantidade 2 · saldo 85"
     }
   ]
 }
