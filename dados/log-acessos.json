@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16T15:00:43.164Z",
+  "updatedAt": "2026-11-16T15:07:40.280Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9955,6 +9955,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Ajuste · 107 · Esponja · quantidade 51 · saldo 51"
+    },
+    {
+      "id": "7d5ac7af-e352-4e4d-a92f-fc11fd55b48f",
+      "timestamp": "2026-11-16T15:07:38.774Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 7 · Água Sanitaria · quantidade 4 · saldo 33"
     }
   ]
 }
