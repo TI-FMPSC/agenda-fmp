@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-13T22:51:29.216Z",
+  "updatedAt": "2026-11-16T12:46:48.682Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9874,6 +9874,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "JOVEM PALHOCENSE · DÉBORA · 2026-12-11 · 13:00–17:00 · Laboratório 05"
+    },
+    {
+      "id": "e4395e70-7c9e-4103-845c-789653f090eb",
+      "timestamp": "2026-11-16T12:46:48.060Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Valida integração com GitHub",
+      "module": "Configurações",
+      "details": "TI-FMPSC/agenda-fmp · token com gravação confirmada"
     }
   ]
 }
