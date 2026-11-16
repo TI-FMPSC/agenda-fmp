@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16T15:08:00.512Z",
+  "updatedAt": "2026-11-16T15:08:34.976Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9973,6 +9973,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 44 · Desinfetante · quantidade 2 · saldo 37"
+    },
+    {
+      "id": "ebd059c9-ca1c-46dd-959a-42c371b784c1",
+      "timestamp": "2026-11-16T15:08:33.590Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 94 · Lustra Móveis · quantidade 2 · saldo 51"
     }
   ]
 }
