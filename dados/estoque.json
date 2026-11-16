@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-16T15:00:42.802Z",
-    "updatedAt": "2026-11-16T15:00:42.802Z",
+    "lastSync": "2026-11-16T15:04:05.836Z",
+    "updatedAt": "2026-11-16T15:04:05.836Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1888,7 +1888,7 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 30,
-      "currentStock": 51,
+      "currentStock": 48,
       "avgCost": "",
       "status": "active",
       "barcode": "",
@@ -7546,6 +7546,22 @@
       "notes": "Atualizado de pacote para unidades. cada pacote contem 3 unidades.",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-16T15:00:41.950Z"
+    },
+    {
+      "id": "id_amfjtayomwje9686",
+      "materialId": "mat_lim_027",
+      "type": "saida",
+      "date": "2026-11-09",
+      "quantity": 3,
+      "unitCost": 0,
+      "previousStock": 51,
+      "newStock": 48,
+      "effect": -3,
+      "sector": "Rubrica",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-16T15:04:04.806Z"
     }
   ],
   "users": [],
