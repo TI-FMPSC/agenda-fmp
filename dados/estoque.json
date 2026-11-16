@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-16T14:53:07.377Z",
-    "updatedAt": "2026-11-16T14:53:07.377Z",
+    "lastSync": "2026-11-16T14:53:50.076Z",
+    "updatedAt": "2026-11-16T14:53:50.076Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2302,14 +2302,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 2,
-      "currentStock": 5,
+      "currentStock": 4,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "AÇUCAR CRISTAL / GLOBO",
       "expirationDate": "",
       "createdAt": "2026-08-19",
-      "updatedAt": "2026-10-05"
+      "updatedAt": "2026-11-16"
     },
     {
       "id": "id_p07km1q6mt2xlvwb",
@@ -7418,6 +7418,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-16T14:53:06.389Z"
+    },
+    {
+      "id": "id_cx208gkamwjdvz98",
+      "materialId": "id_m1kkizvamt04gfe5",
+      "type": "saida",
+      "date": "2026-11-11",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 5,
+      "newStock": 4,
+      "effect": -1,
+      "sector": "Luana",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-16T14:53:49.244Z"
     }
   ],
   "users": [],
