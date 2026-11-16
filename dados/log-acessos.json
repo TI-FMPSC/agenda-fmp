@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16T15:08:34.976Z",
+  "updatedAt": "2026-11-16T15:10:24.717Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9982,6 +9982,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 94 · Lustra Móveis · quantidade 2 · saldo 51"
+    },
+    {
+      "id": "6ecf4a2f-4119-4a8d-b6aa-00de57e68ba6",
+      "timestamp": "2026-11-16T15:10:23.809Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 135 · Sabonete Líquido Grande · quantidade 1 · saldo 14"
     }
   ]
 }
