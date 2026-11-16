@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-16T15:12:48.660Z",
-    "updatedAt": "2026-11-16T15:12:48.660Z",
+    "lastSync": "2026-11-16T15:14:36.324Z",
+    "updatedAt": "2026-11-16T15:14:36.324Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -7738,6 +7738,22 @@
       "notes": "1 caixa para o Administrativo",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-16T15:12:47.775Z"
+    },
+    {
+      "id": "id_h2v2wiajmwjemost",
+      "materialId": "mat_esc_004",
+      "type": "saida",
+      "date": "2026-11-11",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 9,
+      "newStock": 8,
+      "effect": -1,
+      "sector": "Juarez",
+      "document": "",
+      "notes": "1 caixa para o ADM",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-16T15:14:35.405Z"
     }
   ],
   "users": [],
