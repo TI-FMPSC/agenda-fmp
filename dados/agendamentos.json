@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-16T18:32:58.165Z",
+  "updatedAt": "2026-11-16T18:33:39.673Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9681,21 +9681,6 @@
       "allDay": false,
       "responsible": "Rodolfo M. Lorandi",
       "purpose": "Pedagogia — 1ª Fase",
-      "startTime": "18:50",
-      "endTime": "22:00",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-11-16"
-    },
-    {
-      "id": "5baff46c-9b07-4517-b593-42553c3a1ef8",
-      "spaceCategory": "lab",
-      "resourceId": "lab2",
-      "featuredEvent": false,
-      "importantEvent": false,
-      "allDay": false,
-      "responsible": "Leonardo C. Chaves",
-      "purpose": "PÓS-GRADUAÇÃO (GESTÃO EMPRESARIAL)",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
