@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-16T18:33:39.673Z",
+  "updatedAt": "2026-11-16T18:34:53.725Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9664,14 +9664,18 @@
     },
     {
       "id": "7bb25805-a56d-57a7-aad2-18fe6c6cec29",
-      "resourceId": "lab5",
+      "resourceId": "lab2",
       "responsible": "Andreia de B. Machado",
       "purpose": "Pedagogia — 3ª Fase",
       "date": "2026-11-16",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
-      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: ANDRÉIA (3ª FASE PED)"
+      "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: ANDRÉIA (3ª FASE PED)",
+      "spaceCategory": "lab",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false
     },
     {
       "id": "c595543a-1297-4442-803a-d36d2a563865",
