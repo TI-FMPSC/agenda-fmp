@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16T18:35:55.621Z",
+  "updatedAt": "2026-11-16T18:37:38.185Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10045,6 +10045,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 3ª Fase · Andreia de B. Machado · 2026-11-16 · 18:50–22:00 · Laboratório 03"
+    },
+    {
+      "id": "3feb6b95-15b7-4b01-a994-f265571c3e4c",
+      "timestamp": "2026-11-16T18:37:37.471Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "PÓS-GRADUAÇÃO (GESTÃO EMPRESARIAL) · Leonardo C. Chaves · 2026-11-16 · 18:50–22:00 · Laboratório 05"
     }
   ]
 }
