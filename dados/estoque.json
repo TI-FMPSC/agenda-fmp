@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-16T15:14:36.324Z",
-    "updatedAt": "2026-11-16T15:14:36.324Z",
+    "lastSync": "2026-11-16T15:15:12.528Z",
+    "updatedAt": "2026-11-16T15:15:12.528Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -376,7 +376,7 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 5,
-      "currentStock": 8,
+      "currentStock": 7,
       "avgCost": "",
       "status": "active",
       "barcode": "",
@@ -7754,6 +7754,22 @@
       "notes": "1 caixa para o ADM",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-16T15:14:35.405Z"
+    },
+    {
+      "id": "id_hctdt2c6mwjengh9",
+      "materialId": "mat_esc_004",
+      "type": "saida",
+      "date": "2026-11-12",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 8,
+      "newStock": 7,
+      "effect": -1,
+      "sector": "Juarez",
+      "document": "",
+      "notes": "1 caixa para Comissão",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-16T15:15:11.277Z"
     }
   ],
   "users": [],
