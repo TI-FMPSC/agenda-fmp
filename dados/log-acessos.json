@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16T15:10:24.717Z",
+  "updatedAt": "2026-11-16T15:12:49.348Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9991,6 +9991,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 135 · Sabonete Líquido Grande · quantidade 1 · saldo 14"
+    },
+    {
+      "id": "7bf2bf65-8aa8-4cc2-8513-60d4de9921d3",
+      "timestamp": "2026-11-16T15:12:47.896Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 66 · Folhas A4 Padrão · quantidade 1 · saldo 8"
     }
   ]
 }
