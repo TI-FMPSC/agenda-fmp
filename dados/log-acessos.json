@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16T14:53:07.362Z",
+  "updatedAt": "2026-11-16T14:53:49.957Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9919,6 +9919,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 135 · Sabonete Líquido Grande · quantidade 1 · saldo 15"
+    },
+    {
+      "id": "9bb8db2c-6685-4482-8567-86730ec1d344",
+      "timestamp": "2026-11-16T14:53:49.361Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 4 · AÇÚCAR CRISTAL · quantidade 1 · saldo 4"
     }
   ]
 }
