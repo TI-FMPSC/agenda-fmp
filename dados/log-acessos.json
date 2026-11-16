@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16T14:53:49.957Z",
+  "updatedAt": "2026-11-16T14:54:18.223Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -9928,6 +9928,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 4 · AÇÚCAR CRISTAL · quantidade 1 · saldo 4"
+    },
+    {
+      "id": "06378d35-c413-45c0-8b0d-45dee77ab259",
+      "timestamp": "2026-11-16T14:54:17.344Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Ajuste · 4 · AÇÚCAR CRISTAL · quantidade 2 · saldo 2"
     }
   ]
 }
