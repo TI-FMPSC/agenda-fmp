@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-16T14:56:23.568Z",
-    "updatedAt": "2026-11-16T14:56:23.568Z",
+    "lastSync": "2026-11-16T14:56:45.228Z",
+    "updatedAt": "2026-11-16T14:56:45.228Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1690,14 +1690,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": "",
-      "currentStock": 13,
+      "currentStock": 11,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Especificação: 50 litros | Tamanho/apresentação: 100 UNIDADES CADA",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-10-13"
+      "updatedAt": "2026-11-16"
     },
     {
       "id": "mat_lim_017",
@@ -7498,6 +7498,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-16T14:56:22.444Z"
+    },
+    {
+      "id": "id_h1k2mah6mwjdzqbs",
+      "materialId": "mat_lim_016",
+      "type": "saida",
+      "date": "2026-11-11",
+      "quantity": 2,
+      "unitCost": 0,
+      "previousStock": 13,
+      "newStock": 11,
+      "effect": -2,
+      "sector": "Luana",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-16T14:56:44.296Z"
     }
   ],
   "users": [],
