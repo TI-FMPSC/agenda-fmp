@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T00:08:49.681Z",
+  "updatedAt": "2026-11-17T00:10:50.827Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10081,6 +10081,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 1ª Fase · Fabiana E. Boff · 2026-11-17 · 18:50–22:00 · Laboratório 01"
+    },
+    {
+      "id": "b6ea6b2e-dd3c-4c0c-84b0-3ec121015dd6",
+      "timestamp": "2026-11-17T00:10:50.054Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "TPG — 4ª Fase · Rosana Rosa Silveira · 2026-11-17 · 08:00–11:10 · Laboratório 02"
     }
   ]
 }
