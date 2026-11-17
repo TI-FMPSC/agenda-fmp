@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-16T18:37:34.393Z",
+  "updatedAt": "2026-11-17T00:07:15.693Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9775,6 +9775,21 @@
       "endTime": "09:30",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: CORADINI"
+    },
+    {
+      "id": "6e409fc1-6f21-43b8-a4d6-bc91ee91e53d",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "DÉBORA",
+      "purpose": "ENCONTRO DA EDUCAÇÃO INFANTIL (DÉBORA)",
+      "startTime": "08:00",
+      "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-17"
     },
     {
       "id": "024fa822-92ce-5c79-9a0f-fd82581e99d4",
