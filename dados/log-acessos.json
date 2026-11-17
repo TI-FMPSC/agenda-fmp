@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T01:00:22.554Z",
+  "updatedAt": "2026-11-17T01:00:52.081Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10108,6 +10108,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "CAIC=ENCONTRO PEDAGÓGICO EDUCAÇÃO INFANTIL (SOM+PROJETOR+MICROFONE · VENSSA · 2026-11-18 · 08:00–12:00 · Auditório"
+    },
+    {
+      "id": "da4f226d-0542-404c-a2b7-d61ffc8f43fd",
+      "timestamp": "2026-11-17T01:00:51.603Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "CAIC=ENCONTRO PEDAGÓGICO EDUCAÇÃO INFANTIL (SOM+PROJETOR+MICROFONE · VANESSA · 2026-11-18 · 08:00–12:00 · Auditório"
     }
   ]
 }
