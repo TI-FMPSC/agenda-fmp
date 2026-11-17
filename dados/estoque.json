@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-17T11:24:03.474Z",
-    "updatedAt": "2026-11-17T11:24:03.474Z",
+    "lastSync": "2026-11-17T12:04:00.587Z",
+    "updatedAt": "2026-11-17T12:04:00.587Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1774,24 +1774,6 @@
       "expirationDate": "",
       "createdAt": "2026-08-16",
       "updatedAt": "2026-08-16"
-    },
-    {
-      "id": "mat_lim_021",
-      "code": "153",
-      "name": "Vassouras",
-      "categoryId": "cat_limpeza",
-      "unit": "UN",
-      "supplierId": "",
-      "locationId": "",
-      "minStock": "",
-      "currentStock": 0,
-      "avgCost": "",
-      "status": "active",
-      "barcode": "",
-      "description": "Tamanho/apresentação: UNIDADE",
-      "expirationDate": "",
-      "createdAt": "2026-08-16",
-      "updatedAt": "2026-10-08"
     },
     {
       "id": "mat_lim_022",
@@ -4048,22 +4030,6 @@
       "createdAt": "2026-09-10T15:16:18.315Z"
     },
     {
-      "id": "id_ehhbmxxhmtvo7rxa",
-      "materialId": "mat_lim_021",
-      "type": "saida",
-      "date": "2026-09-10",
-      "quantity": 2,
-      "unitCost": 0,
-      "previousStock": 6,
-      "newStock": 4,
-      "effect": -2,
-      "sector": "VIVI / ASO",
-      "document": "",
-      "notes": "",
-      "createdBy": "amandafranca",
-      "createdAt": "2026-09-10T15:17:02.878Z"
-    },
-    {
       "id": "id_925dtfxlmtvo902r",
       "materialId": "id_i2nytlb0mt8w4k4z",
       "type": "saida",
@@ -5486,22 +5452,6 @@
       "notes": "CONTANDO COM AS AVULSAS + 20 = 2 CAIXAS CONTADAS",
       "createdBy": "amandafranca",
       "createdAt": "2026-10-08T12:21:32.650Z"
-    },
-    {
-      "id": "id_12gj5bwvmuzihz9m",
-      "materialId": "mat_lim_021",
-      "type": "saida",
-      "date": "2026-10-08",
-      "quantity": 6,
-      "unitCost": 0,
-      "previousStock": 6,
-      "newStock": 0,
-      "effect": -6,
-      "sector": "Adri / aso",
-      "document": "",
-      "notes": "",
-      "createdBy": "amandafranca",
-      "createdAt": "2026-10-08T12:27:48.298Z"
     },
     {
       "id": "id_hwy4sd7zmuzilg5t",
