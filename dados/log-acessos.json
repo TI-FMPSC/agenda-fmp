@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T01:08:55.064Z",
+  "updatedAt": "2026-11-17T10:31:42.123Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10153,6 +10153,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": " · Fabiana E. Boff · 2026-11-18 · 18:50–22:00 · Laboratório 05"
+    },
+    {
+      "id": "b11f356c-255a-4847-94e0-83725ad03e19",
+      "timestamp": "2026-11-17T10:31:41.072Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Valida integração com GitHub",
+      "module": "Configurações",
+      "details": "TI-FMPSC/agenda-fmp · token com gravação confirmada"
     }
   ]
 }
