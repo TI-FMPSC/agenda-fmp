@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-16T15:15:12.528Z",
-    "updatedAt": "2026-11-16T15:15:12.528Z",
+    "lastSync": "2026-11-17T11:17:56.403Z",
+    "updatedAt": "2026-11-17T11:17:56.403Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1942,14 +1942,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 600,
-      "currentStock": 0,
+      "currentStock": 400,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: cada caixa com 20 unidades. Contados total por unidade.",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-11-12"
+      "updatedAt": "2026-11-17"
     },
     {
       "id": "mat_lim_033",
@@ -7770,6 +7770,22 @@
       "notes": "1 caixa para Comissão",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-16T15:15:11.277Z"
+    },
+    {
+      "id": "id_vs5utw9dmwklm6of",
+      "materialId": "mat_lim_032",
+      "type": "entrada",
+      "date": "2026-11-16",
+      "quantity": 400,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 400,
+      "effect": 400,
+      "sector": "",
+      "document": "",
+      "notes": "50 caixas cada uma com 8 unidades e 2000 mil folhas. Total de folhas do pedido: 16 mil folhas",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-17T11:17:55.407Z"
     }
   ],
   "users": [],
