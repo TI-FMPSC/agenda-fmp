@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-17T00:08:45.874Z",
+  "updatedAt": "2026-11-17T00:10:46.949Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9785,6 +9785,21 @@
       "allDay": false,
       "responsible": "DÉBORA",
       "purpose": "ENCONTRO DA EDUCAÇÃO INFANTIL (DÉBORA)",
+      "startTime": "08:00",
+      "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "fc8901eb-e6d3-402d-b25f-51a885137c66",
+      "spaceCategory": "lab",
+      "resourceId": "lab2",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "Rosana Rosa Silveira",
+      "purpose": "TPG — 4ª Fase",
       "startTime": "08:00",
       "endTime": "11:10",
       "status": "confirmed",
