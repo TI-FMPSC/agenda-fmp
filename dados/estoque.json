@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-17T12:04:00.587Z",
-    "updatedAt": "2026-11-17T12:04:00.587Z",
+    "lastSync": "2026-11-17T12:04:40.187Z",
+    "updatedAt": "2026-11-17T12:04:40.187Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2360,14 +2360,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 15,
-      "currentStock": 14,
+      "currentStock": 13,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "Especificação: Erva Doce | Tamanho/apresentação: 5 LITROS",
       "expirationDate": "",
       "createdAt": "2026-08-21",
-      "updatedAt": "2026-11-16"
+      "updatedAt": "2026-11-17"
     },
     {
       "id": "id_dv1vx6wrmt30qxey",
@@ -7740,6 +7740,22 @@
       "notes": "50 caixas cada uma com 8 unidades e 2000 mil folhas. Total de folhas do pedido: 16 mil folhas",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-17T11:17:55.407Z"
+    },
+    {
+      "id": "id_s1sgtlyimwkna9s3",
+      "materialId": "id_xr67phu6mt30bbbr",
+      "type": "saida",
+      "date": "2026-11-16",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 14,
+      "newStock": 13,
+      "effect": -1,
+      "sector": "Luana Krieger",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-17T12:04:38.787Z"
     }
   ],
   "users": [],
