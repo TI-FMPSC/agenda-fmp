@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T00:10:50.827Z",
+  "updatedAt": "2026-11-17T00:12:11.344Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10090,6 +10090,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "TPG — 4ª Fase · Rosana Rosa Silveira · 2026-11-17 · 08:00–11:10 · Laboratório 02"
+    },
+    {
+      "id": "c6287857-84d1-45a4-98a2-edf6cd2160e1",
+      "timestamp": "2026-11-17T00:12:10.887Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 1ª Fase · Inara A. V. Willerding · 2026-11-17 · 18:50–22:00 · Laboratório 05"
     }
   ]
 }
