@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-17T20:44:25.086Z",
+  "updatedAt": "2026-11-17T20:45:12.638Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9908,6 +9908,21 @@
       "allDay": false,
       "responsible": "Schirlei S. Ramos",
       "purpose": "Administração — 4ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "83c0d516-a958-4d8c-969c-bc525f6593db",
+      "spaceCategory": "lab",
+      "resourceId": "lab4",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "VERA",
+      "purpose": "Pedagogia — 8ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
