@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-17T00:10:46.949Z",
+  "updatedAt": "2026-11-17T00:12:08.042Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9876,6 +9876,21 @@
       "importantEvent": false,
       "allDay": false,
       "responsible": "Fabiana E. Boff",
+      "purpose": "Administração — 1ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-17"
+    },
+    {
+      "id": "5712f562-8479-4be0-b29f-fe709fc413d9",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "Inara A. V. Willerding",
       "purpose": "Administração — 1ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
