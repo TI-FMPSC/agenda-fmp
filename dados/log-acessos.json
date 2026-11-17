@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T20:39:11.993Z",
+  "updatedAt": "2026-11-17T20:43:59.508Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10225,6 +10225,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "44c32392-774c-4791-9010-3cfc8c48d964",
+      "timestamp": "2026-11-17T20:43:59.059Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 4ª Fase · Schirlei S. Ramos. · 2026-11-17 · 18:50–22:00 · Laboratório 02"
     }
   ]
 }
