@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-17T00:12:08.042Z",
+  "updatedAt": "2026-11-17T01:00:19.117Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9959,13 +9959,14 @@
       "resourceId": "auditorio",
       "featuredEvent": false,
       "allDay": false,
-      "responsible": ".",
-      "purpose": "CAIC=ENCONTRO PEDAGÓGICO EDUCAÇÃO INFANTIL",
+      "responsible": "VENSSA",
+      "purpose": "CAIC=ENCONTRO PEDAGÓGICO EDUCAÇÃO INFANTIL (SOM+PROJETOR+MICROFONE",
       "startTime": "08:00",
       "endTime": "12:00",
       "status": "confirmed",
       "notes": "",
-      "date": "2026-11-18"
+      "date": "2026-11-18",
+      "importantEvent": false
     },
     {
       "id": "c883d04d-c317-5d27-94ce-b0e8c677309c",
