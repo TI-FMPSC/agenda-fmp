@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-17T12:05:11.427Z",
-    "updatedAt": "2026-11-17T12:05:11.427Z",
+    "lastSync": "2026-11-17T12:05:35.838Z",
+    "updatedAt": "2026-11-17T12:05:35.838Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -2378,14 +2378,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 15,
-      "currentStock": 23,
+      "currentStock": 22,
       "avgCost": 0,
       "status": "active",
       "barcode": "",
       "description": "Especificação: tixan Ypê | Marca: X-MAX | Tamanho/apresentação: 400 GRAMAS | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-21",
-      "updatedAt": "2026-11-16"
+      "updatedAt": "2026-11-17"
     },
     {
       "id": "id_vf4h0b18mt8tpczd",
@@ -7772,6 +7772,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-17T12:05:10.455Z"
+    },
+    {
+      "id": "id_qexb983kmwknbgws",
+      "materialId": "id_dv1vx6wrmt30qxey",
+      "type": "saida",
+      "date": "2026-11-16",
+      "quantity": 1,
+      "unitCost": 0,
+      "previousStock": 23,
+      "newStock": 22,
+      "effect": -1,
+      "sector": "Luana K",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-17T12:05:34.684Z"
     }
   ],
   "users": [],
