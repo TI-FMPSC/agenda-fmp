@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T20:43:59.508Z",
+  "updatedAt": "2026-11-17T20:44:22.107Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10234,6 +10234,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 4ª Fase · Schirlei S. Ramos. · 2026-11-17 · 18:50–22:00 · Laboratório 02"
+    },
+    {
+      "id": "25c52a37-73b8-4126-899d-e6a4b07638bc",
+      "timestamp": "2026-11-17T20:44:21.648Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 4ª Fase · Schirlei S. Ramos · 2026-11-17 · 18:50–22:00 · Laboratório 03"
     }
   ]
 }
