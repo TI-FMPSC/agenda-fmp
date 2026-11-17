@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16T18:37:38.185Z",
+  "updatedAt": "2026-11-17T00:06:05.148Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10054,6 +10054,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "PÓS-GRADUAÇÃO (GESTÃO EMPRESARIAL) · Leonardo C. Chaves · 2026-11-16 · 18:50–22:00 · Laboratório 05"
+    },
+    {
+      "id": "3e3f468c-858b-45d1-aa0f-3317c9c0dc4d",
+      "timestamp": "2026-11-17T00:06:04.264Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
