@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T00:06:05.148Z",
+  "updatedAt": "2026-11-17T00:07:22.702Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10063,6 +10063,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "06e26200-3b68-48d3-a41e-eac23e65a120",
+      "timestamp": "2026-11-17T00:07:21.603Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "ENCONTRO DA EDUCAÇÃO INFANTIL (DÉBORA) · DÉBORA · 2026-11-17 · 08:00–11:10 · Auditório"
     }
   ]
 }
