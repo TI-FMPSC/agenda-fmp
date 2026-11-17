@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-17T01:00:48.474Z",
+  "updatedAt": "2026-11-17T01:02:08.012Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -9967,6 +9967,21 @@
       "notes": "",
       "date": "2026-11-18",
       "importantEvent": false
+    },
+    {
+      "id": "6ba17332-b064-47d1-be61-096d39f18e95",
+      "spaceCategory": "lab",
+      "resourceId": "lab1",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "MALTON",
+      "purpose": "CURSO DA REDE MUNICIPAL",
+      "startTime": "13:00",
+      "endTime": "17:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-18"
     },
     {
       "id": "c883d04d-c317-5d27-94ce-b0e8c677309c",
