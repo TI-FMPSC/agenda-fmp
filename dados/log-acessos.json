@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T00:12:11.344Z",
+  "updatedAt": "2026-11-17T01:00:22.554Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10099,6 +10099,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 1ª Fase · Inara A. V. Willerding · 2026-11-17 · 18:50–22:00 · Laboratório 05"
+    },
+    {
+      "id": "57791b05-ac2f-43a9-9702-0ce2bebe98b8",
+      "timestamp": "2026-11-17T01:00:22.061Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": "CAIC=ENCONTRO PEDAGÓGICO EDUCAÇÃO INFANTIL (SOM+PROJETOR+MICROFONE · VENSSA · 2026-11-18 · 08:00–12:00 · Auditório"
     }
   ]
 }
