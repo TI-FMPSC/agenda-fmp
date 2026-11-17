@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T10:31:42.123Z",
+  "updatedAt": "2026-11-17T12:05:35.519Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10162,6 +10162,15 @@
       "action": "Valida integração com GitHub",
       "module": "Configurações",
       "details": "TI-FMPSC/agenda-fmp · token com gravação confirmada"
+    },
+    {
+      "id": "413297f9-386c-401d-a57b-0edf20be4ef8",
+      "timestamp": "2026-11-17T12:05:34.810Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 133 · Sabão em Pó · quantidade 1 · saldo 22"
     }
   ]
 }
