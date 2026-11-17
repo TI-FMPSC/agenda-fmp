@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-17T11:17:56.403Z",
-    "updatedAt": "2026-11-17T11:17:56.403Z",
+    "lastSync": "2026-11-17T11:18:45.923Z",
+    "updatedAt": "2026-11-17T11:18:45.923Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -114,6 +114,10 @@
     {
       "id": "id_3q02yirnmviaeopk",
       "name": "DALTEXTIL"
+    },
+    {
+      "id": "id_g6197bf2mwkln8zu",
+      "name": "IPEL"
     }
   ],
   "locations": [
