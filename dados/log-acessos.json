@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T01:00:52.081Z",
+  "updatedAt": "2026-11-17T01:02:12.494Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10117,6 +10117,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "CAIC=ENCONTRO PEDAGÓGICO EDUCAÇÃO INFANTIL (SOM+PROJETOR+MICROFONE · VANESSA · 2026-11-18 · 08:00–12:00 · Auditório"
+    },
+    {
+      "id": "56192fe9-ef37-4c8f-85e3-5bb472b95bfb",
+      "timestamp": "2026-11-17T01:02:11.223Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "CURSO DA REDE MUNICIPAL · MALTON · 2026-11-18 · 13:00–17:00 · Laboratório 01"
     }
   ]
 }
