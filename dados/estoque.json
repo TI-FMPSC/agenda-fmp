@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-17T12:07:35.362Z",
-    "updatedAt": "2026-11-17T12:07:35.362Z",
+    "lastSync": "2026-11-17T12:07:57.654Z",
+    "updatedAt": "2026-11-17T12:07:57.654Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1874,14 +1874,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 30,
-      "currentStock": 48,
+      "currentStock": 45,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Tamanho/apresentação: Pacote com 3 | Observações: atualizado em 14/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-11-16"
+      "updatedAt": "2026-11-17"
     },
     {
       "id": "mat_lim_028",
@@ -7868,6 +7868,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-17T12:07:34.541Z"
+    },
+    {
+      "id": "id_g53fwnp4mwkneicx",
+      "materialId": "mat_lim_027",
+      "type": "saida",
+      "date": "2026-11-17",
+      "quantity": 3,
+      "unitCost": 0,
+      "previousStock": 48,
+      "newStock": 45,
+      "effect": -3,
+      "sector": "Luana K",
+      "document": "",
+      "notes": "",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-17T12:07:56.529Z"
     }
   ],
   "users": [],
