@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T20:44:22.107Z",
+  "updatedAt": "2026-11-17T20:44:28.724Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10243,6 +10243,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 4ª Fase · Schirlei S. Ramos · 2026-11-17 · 18:50–22:00 · Laboratório 03"
+    },
+    {
+      "id": "38faa71c-aa75-49c2-a10a-93b9f05006ce",
+      "timestamp": "2026-11-17T20:44:27.872Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 8ª Fase · Rodolfo M. Lorandi · 2026-11-17 · 18:50–22:00 · Laboratório 04"
     }
   ]
 }
