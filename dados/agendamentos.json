@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-18T00:23:33.516Z",
+  "updatedAt": "2026-11-18T00:33:12.746Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -8093,6 +8093,21 @@
       "purpose": "JOVEM PALHOCENSE",
       "startTime": "08:00",
       "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-01"
+    },
+    {
+      "id": "ed364be5-413c-4aaa-b3da-5cf639ceac9d",
+      "spaceCategory": "lab",
+      "resourceId": "lab1",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": ".",
+      "purpose": "CURSO MARKETING DIGITAL(COPER) 13:30-16:30",
+      "startTime": "13:30",
+      "endTime": "16:30",
       "status": "confirmed",
       "notes": "",
       "date": "2026-11-01"
