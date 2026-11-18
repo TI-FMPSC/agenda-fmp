@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-17T12:07:57.654Z",
-    "updatedAt": "2026-11-17T12:07:57.654Z",
+    "lastSync": "2026-11-18T15:19:22.352Z",
+    "updatedAt": "2026-11-18T15:19:22.352Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -164,14 +164,14 @@
       "supplierId": "",
       "locationId": "",
       "minStock": 50,
-      "currentStock": 17,
+      "currentStock": 12,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "Marca: OURO TRADICIONAL | Tamanho/apresentação: 500GRAMAS | Observações: Lú retirou um em 11/08",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-11-12"
+      "updatedAt": "2026-11-18"
     },
     {
       "id": "mat_epi_001",
@@ -7884,6 +7884,22 @@
       "notes": "",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-17T12:07:56.529Z"
+    },
+    {
+      "id": "id_qkmkh2jtmwm9ogg5",
+      "materialId": "mat_cop_001",
+      "type": "ajuste",
+      "date": "2026-11-18",
+      "quantity": 12,
+      "unitCost": 0,
+      "previousStock": 17,
+      "newStock": 12,
+      "effect": -5,
+      "sector": "",
+      "document": "",
+      "notes": "Não estão marcando. Recontado dia 18/11.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-18T15:19:18.341Z"
     }
   ],
   "users": [],
