@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-17T20:45:12.638Z",
+  "updatedAt": "2026-11-18T00:11:28.372Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10102,7 +10102,7 @@
       "featuredEvent": false,
       "importantEvent": false,
       "allDay": false,
-      "responsible": "Elaine M. S. dos Santos",
+      "responsible": "Ana Lucia Machado",
       "purpose": "",
       "startTime": "18:50",
       "endTime": "22:00",
