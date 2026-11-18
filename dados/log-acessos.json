@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-18T20:15:12.507Z",
+  "updatedAt": "2026-11-18T20:32:27.477Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10423,6 +10423,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "Administração — 8ª Fase · Maurício A. de Lima · 2026-11-18 · 18:50–22:00 · Laboratório 04"
+    },
+    {
+      "id": "20a02dca-ceed-42a9-84a0-8462e6a54879",
+      "timestamp": "2026-11-18T20:32:26.568Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "BRINQUEDOTECA · Juliana C. Müller · 2026-12-09 · 19:00–22:00 · Auditório"
     }
   ]
 }
