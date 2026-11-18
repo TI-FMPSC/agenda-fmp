@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-18T00:21:12.245Z",
+  "updatedAt": "2026-11-18T00:22:07.662Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10226,6 +10226,21 @@
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "MARCUS (NEABI) RODA DE CONVERSA - TAPETE, 03 POLTRONAS, PLANTAS, 03 MICROFONE (19:30-21:00)",
+      "date": "2026-11-19"
+    },
+    {
+      "id": "ea575d33-895e-42c8-88d8-549222cba6f2",
+      "spaceCategory": "lab",
+      "resourceId": "lab1",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "Mariane R. Estefano",
+      "purpose": "Administração — 5ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
       "date": "2026-11-19"
     },
     {
