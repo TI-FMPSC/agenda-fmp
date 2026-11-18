@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-18T00:23:08.227Z",
+  "updatedAt": "2026-11-18T00:23:33.516Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10247,6 +10247,21 @@
       "id": "482f1960-392b-41ad-a5f5-19705ab93487",
       "spaceCategory": "lab",
       "resourceId": "lab2",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "Larissa O. Gonçalves",
+      "purpose": "",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-19"
+    },
+    {
+      "id": "f30d83bf-e5f8-4fa6-aad8-a2d346dc6160",
+      "spaceCategory": "lab",
+      "resourceId": "lab3",
       "featuredEvent": false,
       "importantEvent": false,
       "allDay": false,
