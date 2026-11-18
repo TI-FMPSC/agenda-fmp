@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-18T00:35:15.196Z",
+  "updatedAt": "2026-11-18T00:36:58.334Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -11186,6 +11186,21 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: ANDERSON"
+    },
+    {
+      "id": "8f0ff982-0d4e-4ab9-96aa-09d22a7bdf7e",
+      "spaceCategory": "lab",
+      "resourceId": "lab1",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": ".",
+      "purpose": "CURSO MARKETING DIGITAL(COPER)",
+      "startTime": "13:00",
+      "endTime": "17:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-12-03"
     },
     {
       "id": "dbec0d80-cb6d-501d-9164-284dd387d566",
