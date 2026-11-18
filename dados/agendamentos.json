@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-18T00:42:05.816Z",
+  "updatedAt": "2026-11-18T20:15:08.682Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10072,13 +10072,14 @@
       "resourceId": "lab4",
       "featuredEvent": false,
       "allDay": false,
-      "responsible": "Elaine M. S. dos Santos",
-      "purpose": "Pedagogia — 4ª Fase",
+      "responsible": "Maurício A. de Lima",
+      "purpose": "Administração — 8ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "",
-      "date": "2026-11-18"
+      "date": "2026-11-18",
+      "importantEvent": false
     },
     {
       "id": "46384643-5159-48f7-9e63-991728498962",
