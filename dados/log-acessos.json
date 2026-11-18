@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-17T20:45:15.860Z",
+  "updatedAt": "2026-11-18T00:11:31.909Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10261,6 +10261,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 8ª Fase · VERA · 2026-11-17 · 18:50–22:00 · Laboratório 04"
+    },
+    {
+      "id": "76466296-569a-4933-adeb-9f6bc9641dbf",
+      "timestamp": "2026-11-18T00:11:31.421Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Atualiza agendamento",
+      "module": "Agendamentos",
+      "details": " · Ana Lucia Machado · 2026-11-18 · 18:50–22:00 · Laboratório 03"
     }
   ]
 }
