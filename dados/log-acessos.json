@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-18T00:20:30.394Z",
+  "updatedAt": "2026-11-18T00:21:15.051Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10286,6 +10286,15 @@
       "username": "andreakochela",
       "name": "Andréa Kochela",
       "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Pedagogia — 8ª Fase · Marcus B. O. Silveira · 2026-11-19 · 18:50–22:00 · Auditório"
+    },
+    {
+      "id": "830f75ac-ce9e-4762-931a-195849e3e3af",
+      "timestamp": "2026-11-18T00:21:14.522Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 8ª Fase · Marcus B. O. Silveira · 2026-11-19 · 18:50–22:00 · Auditório"
     }
