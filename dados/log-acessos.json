@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-18T00:42:11.704Z",
+  "updatedAt": "2026-11-18T13:25:46.452Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10387,6 +10387,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": ". · . · 2026-12-09 · 13:00–17:00 · Laboratório 01"
+    },
+    {
+      "id": "78e65929-b779-4222-9f63-cdee0d0734e8",
+      "timestamp": "2026-11-18T13:25:46.399Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Valida integração com GitHub",
+      "module": "Configurações",
+      "details": "TI-FMPSC/agenda-fmp · token com gravação confirmada"
     }
   ]
 }
