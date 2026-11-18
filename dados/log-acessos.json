@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-18T13:25:46.452Z",
+  "updatedAt": "2026-11-18T15:19:19.429Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10396,6 +10396,15 @@
       "action": "Valida integração com GitHub",
       "module": "Configurações",
       "details": "TI-FMPSC/agenda-fmp · token com gravação confirmada"
+    },
+    {
+      "id": "fc2d7f6e-f1dd-4c7b-ab11-126b4de46074",
+      "timestamp": "2026-11-18T15:19:18.493Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Ajuste · 122 · PÓ DE CAFÉ · quantidade 12 · saldo 12"
     }
   ]
 }
