@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-18T00:23:42.855Z",
+  "updatedAt": "2026-11-18T00:33:16.883Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10324,6 +10324,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": " · Larissa O. Gonçalves · 2026-11-19 · 18:50–22:00 · Laboratório 03"
+    },
+    {
+      "id": "de6e87b1-7974-4533-8fff-cab59a1b9a64",
+      "timestamp": "2026-11-18T00:33:15.988Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "CURSO MARKETING DIGITAL(COPER) 13:30-16:30 · . · 2026-11-01 · 13:30–16:30 · Laboratório 01"
     }
   ]
 }
