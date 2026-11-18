@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-18T15:19:19.429Z",
+  "updatedAt": "2026-11-18T20:14:11.403Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10405,6 +10405,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Ajuste · 122 · PÓ DE CAFÉ · quantidade 12 · saldo 12"
+    },
+    {
+      "id": "6c2f9c10-c70a-4634-a58a-0526f7b18e2b",
+      "timestamp": "2026-11-18T20:14:10.364Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
