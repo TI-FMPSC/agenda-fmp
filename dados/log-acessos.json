@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-18T00:21:15.051Z",
+  "updatedAt": "2026-11-18T00:22:11.752Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10297,6 +10297,15 @@
       "action": "Atualiza agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 8ª Fase · Marcus B. O. Silveira · 2026-11-19 · 18:50–22:00 · Auditório"
+    },
+    {
+      "id": "06b5ece3-8153-48dd-a8c5-782774d2413a",
+      "timestamp": "2026-11-18T00:22:10.886Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 5ª Fase · Mariane R. Estefano · 2026-11-19 · 18:50–22:00 · Laboratório 01"
     }
   ]
 }
