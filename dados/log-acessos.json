@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-18T00:39:39.141Z",
+  "updatedAt": "2026-11-18T00:42:11.704Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10378,6 +10378,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "CURSO MARKETING DIGITAL(COPER) · . · 2026-12-02 · 13:00–17:00 · Laboratório 01"
+    },
+    {
+      "id": "0be46213-0851-4ba8-a375-7414b7eaa441",
+      "timestamp": "2026-11-18T00:42:09.624Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": ". · . · 2026-12-09 · 13:00–17:00 · Laboratório 01"
     }
   ]
 }
