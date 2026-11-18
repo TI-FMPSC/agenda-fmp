@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-18T00:11:28.372Z",
+  "updatedAt": "2026-11-18T00:20:25.329Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10206,6 +10206,21 @@
       "featuredEvent": false,
       "allDay": false,
       "responsible": "Ana Bárbara S. M. S. Dias",
+      "purpose": "Pedagogia — 8ª Fase",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-19"
+    },
+    {
+      "id": "2dc5f6ba-b9fc-455a-907c-500cd88f3351",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "Marcus B. O. Silveira",
       "purpose": "Pedagogia — 8ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
