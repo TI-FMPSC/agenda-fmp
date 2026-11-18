@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-18T20:15:08.682Z",
+  "updatedAt": "2026-11-18T20:32:23.287Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -11601,6 +11601,21 @@
       "purpose": "JOVEM PALHOCENSE",
       "startTime": "13:30",
       "endTime": "17:30",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-12-09"
+    },
+    {
+      "id": "cee7f178-103b-4aaf-8d06-5aa34c9a2fe1",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "Juliana C. Müller",
+      "purpose": "BRINQUEDOTECA",
+      "startTime": "19:00",
+      "endTime": "22:00",
       "status": "confirmed",
       "notes": "",
       "date": "2026-12-09"
