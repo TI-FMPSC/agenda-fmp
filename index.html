@@ -553,7 +553,12 @@
 .lab-group-booking{display:block;width:100%;padding:10px;border:1px solid #bdd6e8;background:#edf6fd;border-radius:8px;color:#1c496a;text-align:left;margin-top:7px;overflow-wrap:anywhere}.lab-group-booking>strong,.lab-group-booking>small{display:block;margin-top:5px}.lab-group-booking>small{font-size:12px;line-height:1.4}.lab-booking-top{display:flex;gap:8px;justify-content:space-between;flex-wrap:wrap;font-size:12px}.lab-booking-top>span{font-size:11px}.lab-booking-ended{background:#fff1f1;color:#8d3434;border-color:#edc3c3}.lab-booking-featured{background:#fff4da;border-color:#d4ab4e;color:#6f4c0b}.lab-group-booking:focus-visible{outline:3px solid #2682bc;outline-offset:2px}
 .lab-spanning{border-radius:9px;padding:10px;background:#edf0f8;color:#3f4e6a;margin-bottom:10px;font-size:13px}.lab-spanning-items{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:8px}.lab-past{margin-top:20px}.lab-past>summary{cursor:pointer;padding:12px;background:#eef2f6;border-radius:8px;font-weight:750}
 @media(max-width:850px){.lab-period-grid{grid-template-columns:1fr}}
-.loan-history-person{margin-top:16px;padding:12px;border:1px solid #cddde8;border-radius:10px;background:#f7fafc}.loan-history-person h4{margin:0 0 10px;font-size:16px;color:#153f60}.loan-history-person h4 small{font-size:12px;font-weight:500}.loan-history-person .loan-row{background:white}</style>
+.loan-history-person{margin-top:16px;padding:12px;border:1px solid #cddde8;border-radius:10px;background:#f7fafc}.loan-history-person h4{margin:0 0 10px;font-size:16px;color:#153f60}.loan-history-person h4 small{font-size:12px;font-weight:500}.loan-history-person .loan-row{background:white}
+.holiday-notice{padding:16px 20px;margin:14px 0;border:1px solid #d5a84b;border-left:6px solid #c38a22;border-radius:12px;background:#fff4d9;color:#59400d;white-space:pre-line}
+.holiday-notice strong,.holiday-notice span{display:block}.holiday-notice span{margin-top:6px;font-size:.95em}
+.holiday-badge{display:block;color:#8b5807;background:#fff1c9;border-radius:6px;padding:4px 6px;margin:5px 0;font-size:12px;font-weight:700}
+.public-page .holiday-notice,.classroom-page .holiday-notice{font-size:clamp(16px,1.5vw,24px)}
+</style>
 </head>
 <body>
 <div id="app" class="app"></div>
@@ -563,7 +568,8 @@
     <div class="modal-head"><h2 id="modalTitle">Novo agendamento</h2><button class="icon-btn" onclick="closeBookingModal()">✕</button></div>
     <form id="bookingForm" onsubmit="saveBooking(event)">
       <div class="modal-body">
-        <div id="bookingAlert" class="alert alert-error hidden"></div>
+        <div id="bookingHolidayWarning" class="holiday-notice" role="status" aria-live="polite" hidden></div>
+<div id="bookingAlert" class="alert alert-error hidden"></div>
         <input type="hidden" id="bookingId" />
         <label class="important-event-option"><input id="importantEvent" type="checkbox"><span><strong>★ Evento importante</strong><small>Exibir um cartão dourado com estrela nos painéis da data, inclusive durante a semana.</small></span></label>
         <div class="form-grid">
@@ -657,6 +663,29 @@
 
 <input type="file" id="importInput" class="hidden" accept="application/json" onchange="importJson(event)" />
 <script>
+
+// Feriados nacionais: Portaria MGI 11.460/2025 e calendário CNJ 2026–2027.
+// Pontos facultativos e feriados locais não integram esta relação.
+const FMP_NATIONAL_HOLIDAYS = (()=>{
+ const fixed={'01-01':'Confraternização Universal','04-21':'Tiradentes','05-01':'Dia Mundial do Trabalho','09-07':'Independência do Brasil','10-12':'Nossa Senhora Aparecida','11-02':'Finados','11-15':'Proclamação da República','11-20':'Dia Nacional de Zumbi e da Consciência Negra','12-25':'Natal'}, days={};
+ for(const year of [2026,2027])for(const [day,name] of Object.entries(fixed))days[year+'-'+day]=name;
+ days['2026-04-03']='Paixão de Cristo';days['2027-03-26']='Paixão de Cristo';return Object.freeze(days);
+})();
+function nationalHoliday(date){return FMP_NATIONAL_HOLIDAYS[typeof date==='string'?date.slice(0,10):localISO(date)]||''}
+function holidayBanner(date){
+ const name=nationalHoliday(date);if(!name)return '';
+ const iso=typeof date==='string'?date.slice(0,10):localISO(date),reserved=state.bookings.some(b=>b.date===iso&&b.status!=='cancelled');
+ return '<aside class="holiday-notice" role="status"><strong>Dia não letivo · Feriado nacional: '+escapeHtml(name)+'</strong><span>'+(reserved?'Há agendamentos nesta data. As reservas cadastradas permanecem válidas e visíveis.':'Sem agendamentos nesta data. A grade regular de aulas não se aplica ao feriado.')+'</span></aside>';
+}
+function holidayDatesMessage(dates){return [...new Set(dates)].filter(nationalHoliday).map(d=>d.slice(8,10)+'/'+d.slice(5,7)+'/'+d.slice(0,4)+' — '+nationalHoliday(d)).join('\n')}
+function confirmHolidayBooking(dates){const message=holidayDatesMessage(dates);return !message||confirm('Atenção: dia não letivo devido a feriado nacional.\n\n'+message+'\n\nDeseja agendar mesmo assim?')}
+function updateBookingHolidayWarning(){
+ const start=document.getElementById('startDate')?.value,end=document.getElementById('endDate')?.value,repeat=document.getElementById('repeat')?.value||'none',el=document.getElementById('bookingHolidayWarning');if(!el)return;
+ const message=start&&end&&end>=start?holidayDatesMessage(datesBetween(start,end,repeat)):'';
+ el.hidden=!message;el.textContent=message?'Dia não letivo devido a feriado nacional:\n'+message+'\nÉ possível agendar mesmo assim.':'';
+}
+document.addEventListener('change',e=>{if(['startDate','endDate','repeat'].includes(e.target.id))updateBookingHolidayWarning()});
+
 const DB_KEY='fmp_agenda_v3';
 const SESSION_KEY='fmp_agenda_session_v2';
 const SESSION_DURATION_MS=4*60*60*1000;
@@ -1093,7 +1122,7 @@ function loanDayBoard(date,rows,now=new Date()){
  const next=day===today?sorted.find(s=>s.start>time):null,head=live||next||sorted[0],overdue=r.extra.some(late)||sorted.some(s=>s.items.some(late));
  return '<article class="room-usage '+(overdue?'has-pending':'')+'"><header><div><h4>'+esc(r.name)+'</h4><small>'+esc(r.type)+'</small></div><span class="room-state">'+(overdue?'PENDÊNCIA':live?'EM USO':sorted.length?'AGENDADO':r.extra.length?'MATERIAIS':'LIVRE')+'</span></header>'+(head?'<div class="room-highlight"><small>'+(live?'EM USO AGORA':next?'PRÓXIMO AGENDAMENTO':'AGENDA DO DIA')+'</small><b>'+esc(head.start)+' · '+esc(head.person)+'</b><span>'+esc(head.purpose||'Reserva')+' · até '+esc(head.end)+'</span></div>':'')+sorted.map(s=>'<section class="room-slot"><div class="room-slot-head"><time>'+esc(s.start)+'–'+esc(s.end)+'</time><div><b>'+esc(s.person)+'</b><small>'+esc(s.purpose||'Reserva')+' · '+status(s)+'</small></div></div><div class="room-withdrawals">'+s.items.map(r=>item(r)).join('')+'</div></section>').join('')+(r.extra.length?'<div class="room-extra"><small>RETIRADAS VINCULADAS AO LOCAL</small>'+r.extra.map(r=>item(r,true)).join('')+'</div>':'')+(!sorted.length&&!r.extra.length?'<p>Sem reserva para esta data.</p>':'')+'</article>'
  }
- return '<h3>Salas, horários e retiradas</h3><p class="day-hint">Cada retirada aparece uma única vez. Retiradas sem local ficam em cartões separados por responsável.</p>'+(rows===null?'<p role="status">Empréstimos ainda não carregados. Consulte a sincronização.</p>':'')+'<div class="room-usage-grid">'+[...rooms.values()].map(card).join('')+'</div>'+(loose.size?'<h3>Retiradas sem sala vinculada</h3><div class="room-usage-grid">'+[...loose.values()].map(p=>'<article class="room-usage"><h4>'+esc(p.name)+'</h4>'+p.items.map(r=>item(r)).join('')+'</article>').join('')+'</div>':'');
+ return holidayBanner(date)+'<h3>Salas, horários e retiradas</h3><p class="day-hint">Cada retirada aparece uma única vez. Retiradas sem local ficam em cartões separados por responsável.</p>'+(rows===null?'<p role="status">Empréstimos ainda não carregados. Consulte a sincronização.</p>':'')+'<div class="room-usage-grid">'+[...rooms.values()].map(card).join('')+'</div>'+(loose.size?'<h3>Retiradas sem sala vinculada</h3><div class="room-usage-grid">'+[...loose.values()].map(p=>'<article class="room-usage"><h4>'+esc(p.name)+'</h4>'+p.items.map(r=>item(r)).join('')+'</article>').join('')+'</div>':'');
 }
 
 function paintLoanMirror(){
@@ -1310,7 +1339,7 @@ function renderClassroomManagement(){
    return `<div class="classroom-admin-card lab ${occupied?'':'free'} ${conflict?'conflict':''}" onclick="${click}"><div class="ca-top"><div class="ca-room">${escapeHtml(resource.name)}</div><span class="tag ${tagClass}">${status}</span></div><div class="ca-course">${escapeHtml(purposes.join(' · ')||'Sem agendamento neste horário')}</div><div class="ca-prof">${escapeHtml(people.join(' · ')||resource.type||'Disponível')}</div><div class="ca-time">${escapeHtml(slot.start)}–${escapeHtml(slot.end)} · ${formatDate(date,{weekday:'long',day:'2-digit',month:'2-digit'})}</div><div class="ca-hint">${occupied?'Clique para consultar ou alterar o agendamento.':'Clique para criar um agendamento neste espaço.'}</div></div>`;
  }).join('');
  const occupiedRooms=roomNames.filter(room=>classroomEntries.some(e=>normalizeSpaceName(e.room||'')===normalizeSpaceName(room))).length;const occupiedLabs=fixedResources.filter(resource=>entries.some(e=>normalizeSpaceName(e.room||'')===normalizeSpaceName(resource.name))||state.bookings.some(b=>b.status==='confirmed'&&b.date===iso&&b.resourceId===resource.id&&overlaps(slot.start,slot.end,b.startTime,b.endTime))).length;
- document.getElementById('adminContent').innerHTML=`<div class="summary-grid"><div class="summary"><div class="label">Espaços na visão geral</div><div class="value">${roomNames.length+fixedResources.length}</div><div class="detail">Salas, laboratórios e auditório</div></div><div class="summary"><div class="label">Ocupados neste horário</div><div class="value">${occupiedRooms+occupiedLabs}</div><div class="detail">Visão administrativa consolidada</div></div><div class="summary"><div class="label">Turmas e ajustes</div><div class="value">${baseCount+adjustCount}</div><div class="detail">${baseCount} da grade · ${adjustCount} ajuste(s)</div></div><div class="summary"><div class="label">Sala a definir</div><div class="value">${unassigned}</div><div class="detail">Turmas sem local definido</div></div></div>
+ document.getElementById('adminContent').innerHTML=`${holidayBanner(date)}<div class="summary-grid"><div class="summary"><div class="label">Espaços na visão geral</div><div class="value">${roomNames.length+fixedResources.length}</div><div class="detail">Salas, laboratórios e auditório</div></div><div class="summary"><div class="label">Ocupados neste horário</div><div class="value">${occupiedRooms+occupiedLabs}</div><div class="detail">Visão administrativa consolidada</div></div><div class="summary"><div class="label">Turmas e ajustes</div><div class="value">${baseCount+adjustCount}</div><div class="detail">${baseCount} da grade · ${adjustCount} ajuste(s)</div></div><div class="summary"><div class="label">Sala a definir</div><div class="value">${unassigned}</div><div class="detail">Turmas sem local definido</div></div></div>
  <div class="classroom-admin-controls"><div class="classroom-admin-date"><button class="icon-btn" onclick="moveClassroomAdminDate(-1)">‹</button><button class="btn btn-secondary" onclick="classroomAdminToday()">Hoje</button><button class="icon-btn" onclick="moveClassroomAdminDate(1)">›</button><strong>${formatDate(date,{weekday:'long',day:'2-digit',month:'long',year:'numeric'})}</strong></div><div class="classroom-admin-periods">${CLASSROOM_PERIODS.map(p=>`<button class="${periodId===p.id?'active':''}" onclick="setClassroomAdminPeriod('${p.id}')">${p.label}</button>`).join('')}</div></div>
  <div class="panel" style="margin-bottom:16px;border-color:#cce7da;background:#f9fdfb"><div class="room-admin-header" style="margin:0"><div><h3>Visão geral dos espaços FMP</h3><div class="sub" style="margin:5px 0 0">Esta tela administrativa reúne todas as salas, os cinco laboratórios e o auditório para a data e horário selecionados. Os dois painéis públicos continuam separados e sem alterações.</div></div><button class="btn btn-success" onclick="openPanelInNewTab('#painel-salas')">Abrir Painel das Salas</button></div></div>
  <div class="room-admin-header"><div><h3>Salas de aula</h3><div class="sub" style="margin:5px 0 0">Todas as salas aparecem, inclusive quando estão livres.</div></div><span class="tag tag-green">${roomNames.length} salas</span></div><div class="classroom-admin-grid">${roomCards}${unassignedCards}</div>
@@ -1344,6 +1373,7 @@ async function saveClassroomAdminEdit(e){
    const assignments={...defaultRoomAssignments(),...(state.roomAssignments||{}),[purpose]:room};const conflicts=roomAssignmentConflicts(assignments);if(conflicts.length){const c=conflicts[0];classroomEditError(`${c.room} ficaria atribuída a ${c.a.purpose} e ${c.b.purpose} no mesmo horário.`);return}
    baseline.professor=professor;state.roomAssignments=assignments;saveState();closeClassroomAdminEditor();await persistGradeAndSync('Atualiza sala/professor da grade',`${purpose} · ${['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'][baseline.weekday]} · ${startTime}–${endTime} · ${room} · ${professor}`);renderClassroomManagement();return;
  }
+ if(!confirmHolidayBooking([date]))return;
  const targetId=bookingId||state.bookings.find(b=>b.date===date&&samePurpose(b.purpose,purpose)&&overlaps(startTime,endTime,b.startTime,b.endTime))?.id||'';
  const roomId=makeCustomResourceId(room);
  const roomConflict=state.bookings.find(b=>b.id!==targetId&&b.date===date&&b.status!=='cancelled'&&b.resourceId===roomId&&overlaps(startTime,endTime,b.startTime,b.endTime));if(roomConflict){classroomEditError(`${room} já possui um agendamento das ${roomConflict.startTime} às ${roomConflict.endTime}.`);return}
@@ -1372,14 +1402,14 @@ function renderWeek(){
  const start=getWeekStart(referenceDate);const days=Array.from({length:7},(_,i)=>addDays(start,i));
  document.getElementById('rangeTitle').textContent=`${formatDate(start,{day:'2-digit',month:'short'})} — ${formatDate(days[6],{day:'2-digit',month:'short',year:'numeric'})}`;
  let html=`<div class="week-grid"><div class="week-head"><strong>Espaço</strong><span>Agenda semanal</span></div>`;
- days.forEach(d=>html+=`<div class="week-head ${localISO(d)===localISO(new Date())?'today':''}"><strong>${formatDate(d,{weekday:'short'})}</strong><span>${formatDate(d,{day:'2-digit',month:'2-digit'})}</span></div>`);
+ days.forEach(d=>html+=`<div class="week-head ${localISO(d)===localISO(new Date())?'today':''}"><strong>${formatDate(d,{weekday:'short'})}</strong><span>${formatDate(d,{day:'2-digit',month:'2-digit'})}</span>${nationalHoliday(d)?'<small class="holiday-badge">'+escapeHtml(nationalHoliday(d))+'</small>':''}</div>`);
  resourcesForWeek(days).forEach(r=>{html+=`<div class="resource-name"><strong>${escapeHtml(r.name)}</strong><small>${escapeHtml(r.type)}</small></div>`;days.forEach(d=>{const arr=getBookings(d,r.id);html+=`<div class="week-cell" ondblclick="openBookingModal('', '${localISO(d)}', '${r.id}')">${arr.map(b=>`<div class="booking ${currentStatus(b)?'current':''}" onclick="openBookingModal('${b.id}')"><span class="time">${periodLabel(b)}</span><strong>${escapeHtml(b.responsible)}</strong><span>${escapeHtml(b.purpose||'Reserva')}</span></div>`).join('')}</div>`});});
  html+='</div>';document.getElementById('calendarHost').innerHTML=html;
 }
 function renderMonth(){
  const first=new Date(referenceDate.getFullYear(),referenceDate.getMonth(),1,12);const offset=(first.getDay()+6)%7;const start=addDays(first,-offset);document.getElementById('rangeTitle').textContent=formatDate(first,{month:'long',year:'numeric'});
  let html='<div class="month-grid">';['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'].forEach(x=>html+=`<div class="month-weekday">${x}</div>`);
- for(let i=0;i<42;i++){const d=addDays(start,i),arr=getBookings(d);const other=d.getMonth()!==first.getMonth();html+=`<div class="month-day ${other?'other':''} ${localISO(d)===localISO(new Date())?'today':''}" ondblclick="openBookingModal('', '${localISO(d)}')"><div class="day-number"><span>${d.getDate()}</span>${arr.length?`<span class="count-badge">${arr.length}</span>`:''}</div>${arr.slice(0,4).map(b=>{const r=state.resources.find(x=>x.id===b.resourceId);return `<div class="month-booking" onclick="openBookingModal('${b.id}')">${b.startTime} · ${escapeHtml(bookingResourceName(b))} · ${escapeHtml(b.purpose)}</div>`}).join('')}${arr.length>4?`<small>+ ${arr.length-4} agendamento(s)</small>`:''}</div>`}
+ for(let i=0;i<42;i++){const d=addDays(start,i),arr=getBookings(d);const other=d.getMonth()!==first.getMonth();html+=`<div class="month-day ${other?'other':''} ${localISO(d)===localISO(new Date())?'today':''}" ondblclick="openBookingModal('', '${localISO(d)}')"><div class="day-number"><span>${d.getDate()}</span>${arr.length?`<span class="count-badge">${arr.length}</span>`:''}</div>${nationalHoliday(d)?'<span class="holiday-badge">'+escapeHtml(nationalHoliday(d))+'</span>':''}${arr.slice(0,4).map(b=>{const r=state.resources.find(x=>x.id===b.resourceId);return `<div class="month-booking" onclick="openBookingModal('${b.id}')">${b.startTime} · ${escapeHtml(bookingResourceName(b))} · ${escapeHtml(b.purpose)}</div>`}).join('')}${arr.length>4?`<small>+ ${arr.length-4} agendamento(s)</small>`:''}</div>`}
  html+='</div>';document.getElementById('calendarHost').innerHTML=html;
 }
 
@@ -1406,7 +1436,7 @@ function groupedLabBookings(bookings,past=false){
  const dates=new Map(),esc=escapeHtml;
  for(const b of bookings){if(!dates.has(b.date))dates.set(b.date,new Map());const spaces=dates.get(b.date),id=bookingCategory(b)==='event'?'__events__':b.resourceId;if(!spaces.has(id))spaces.set(id,[]);spaces.get(id).push(b)}
  const periods=[{label:'Matutino',start:'00:00',end:'12:00'},{label:'Vespertino',start:'12:00',end:'18:00'},{label:'Noturno',start:'18:00',end:'24:00'}];
- return [...dates.entries()].sort(([a],[b])=>past?b.localeCompare(a):a.localeCompare(b)).map(([date,spaces])=>'<section class="lab-date-group"><h3 class="lab-date-title"><strong>'+esc(formatDate(parseLocal(date),{weekday:'long',day:'2-digit',month:'long',year:'numeric'}))+'</strong></h3>'+[...spaces.values()].sort((a,b)=>bookingResourceName(a[0]).localeCompare(bookingResourceName(b[0]),'pt-BR',{numeric:true})).map(rows=>{
+ return [...dates.entries()].sort(([a],[b])=>past?b.localeCompare(a):a.localeCompare(b)).map(([date,spaces])=>'<section class="lab-date-group"><h3 class="lab-date-title"><strong>'+esc(formatDate(parseLocal(date),{weekday:'long',day:'2-digit',month:'long',year:'numeric'}))+'</strong></h3>'+holidayBanner(date)+[...spaces.values()].sort((a,b)=>bookingResourceName(a[0]).localeCompare(bookingResourceName(b[0]),'pt-BR',{numeric:true})).map(rows=>{
  const name=bookingCategory(rows[0])==='event'?'Eventos institucionais':bookingResourceName(rows[0]);
  const spanning=rows.filter(b=>periods.filter(p=>b.startTime<p.end&&b.endTime>p.start).length>1);
  function booking(b){const ended=bookingHasEnded(b,new Date()),cancelled=b.status==='cancelled',tag=cancelled?'Cancelado':ended?'Utilizado':b.status==='confirmed'?'Confirmado':'Pendente';
@@ -1504,7 +1534,7 @@ function openBookingModal(id='',presetDate='',presetResource=''){
  document.getElementById('startDate').value=b?.date||presetDate||localISO(new Date());document.getElementById('endDate').value=b?.date||presetDate||localISO(new Date());document.getElementById('endDate').disabled=false;document.getElementById('startTime').value=b?.startTime||'08:00';document.getElementById('endTime').value=b?.endTime||'11:10';document.getElementById('repeat').value='none';document.getElementById('repeat').disabled=!!b;document.getElementById('status').value=b?.status||'confirmed';document.getElementById('notes').value=b?.notes||'';
  const preset=!b?'morning':isFeaturedEvent(b)&&b.startTime==='08:00'&&b.endTime==='22:00'?'eventday':b.startTime==='08:00'&&b.endTime==='11:10'?'morning':b.startTime==='13:00'&&b.endTime==='17:00'?'afternoon':b.startTime==='18:50'&&b.endTime==='22:00'?'classnightfull':b.startTime==='19:00'&&b.endTime==='22:00'?'evening':b.startTime==='08:00'&&b.endTime==='09:30'?'morning1':b.startTime==='09:40'&&b.endTime==='11:10'?'morning2':b.startTime==='13:00'&&b.endTime==='15:00'?'afternoon1':b.startTime==='15:00'&&b.endTime==='17:00'?'afternoon2':b.startTime==='19:00'&&b.endTime==='20:30'?'evening1':b.startTime==='20:30'&&b.endTime==='22:00'?'evening2':b.startTime==='18:50'&&b.endTime==='20:20'?'classnight1':'custom';document.getElementById('periodType').value=b?preset:'morning';document.getElementById('bookingAlert').classList.add('hidden');
  let foot=document.querySelector('#bookingModal .modal-foot');const old=document.getElementById('deleteBtn');if(old)old.remove();if(b){const del=document.createElement('button');del.type='button';del.id='deleteBtn';del.className='btn btn-danger';del.textContent='Excluir';del.onclick=()=>deleteBooking(b.id);foot.prepend(del)}
- document.getElementById('bookingModal').classList.remove('hidden');
+ document.getElementById('bookingModal').classList.remove('hidden');updateBookingHolidayWarning();
 }
 function populateBookingResources(selected=''){
  const area=document.getElementById('bookingArea')?.value||'lab';const sel=document.getElementById('resourceId');if(!sel)return;
@@ -1561,7 +1591,7 @@ function roomAssignmentConflicts(assignments){
 
 function normalizeRoomName(v=''){return normalizeSpaceName(v)}
 function classroomBaselineConflicts(room,date,startTime,endTime,purpose=''){
- const d=parseLocal(date);const weekday=d.getDay();if(weekday<1||weekday>5)return [];
+ const d=parseLocal(date);const weekday=d.getDay();if(nationalHoliday(date)||weekday<1||weekday>5)return [];
  const normalized=normalizeRoomName(room);
  return (state.classSchedule||[]).filter(e=>e.weekday===weekday&&e.purpose!==purpose&&overlaps(startTime,endTime,e.startTime,e.endTime)&&normalizeRoomName(state.roomAssignments?.[e.purpose]||'')===normalized&&normalized);
 }
@@ -1577,6 +1607,7 @@ async function saveBooking(e){
    const baselineConflicts=dates.flatMap(date=>classroomBaselineConflicts(customSpaceName,date,startTime,endTime,purpose).map(x=>({date,entry:x})));
    if(baselineConflicts.length){const c=baselineConflicts[0];alert.textContent=`A sala ${customSpaceName} já está vinculada a ${c.entry.purpose} em ${formatDate(parseLocal(c.date),{day:'2-digit',month:'2-digit'})}, no horário ${c.entry.startTime}–${c.entry.endTime}.`;alert.classList.remove('hidden');return}
  }
+ if(!confirmHolidayBooking(id?[startDate]:dates))return;
  const base={spaceCategory:area,resourceId,...(area==='event'?{customSpaceName:'FMP'}:selectedResource==='__custom__'?{customSpaceName}:{}),featuredEvent:area==='event',importantEvent:document.getElementById('importantEvent').checked,allDay:area==='event'&&document.getElementById('periodType').value==='eventday',responsible,purpose,startTime,endTime,status:document.getElementById('status').value,notes:document.getElementById('notes').value.trim()};
  if(id){const idx=state.bookings.findIndex(b=>b.id===id);const previous=state.bookings[idx]||{};state.bookings[idx]={...previous,...base,date:startDate};if(selectedResource!=='__custom__'&&area!=='event')delete state.bookings[idx].customSpaceName}else dates.forEach(date=>state.bookings.push({id:crypto.randomUUID(),...base,date}));
  closeBookingModal();renderAdmin();await persistAndSync(id?'Atualiza agendamento':'Cria agendamento',`${purpose} · ${responsible} · ${startDate}${endDate!==startDate?' a '+endDate:''} · ${startTime}–${endTime} · ${selectedResource==='__custom__'?customSpaceName:bookingResourceName({resourceId})}`);
@@ -1683,14 +1714,14 @@ function renderPublic(resetTimer=true){
  if(window.publicAutoDate===undefined)window.publicAutoDate=true;
  const selected=window.publicAutoDate?new Date():(window.publicDate||new Date());window.publicDate=selected;const featured=featuredEventsForDate(selected);document.getElementById('app').innerHTML=`<section class="public-page"><header class="public-header"><div class="public-brand">${logoMarkup()}<div><h1>${escapeHtml(state.settings.panelTitle)}</h1><p>${escapeHtml(state.settings.appName)} · Agenda pública</p></div></div><div class="public-clock"><strong id="clock">--:--</strong><span id="clockDate"></span></div></header>
  <div class="public-toolbar"><div class="date-nav"><button class="icon-btn" onclick="movePublicDate(-1)">‹</button><button class="btn fullscreen-btn" onclick="goPublicToday()">Hoje</button><button class="icon-btn" onclick="movePublicDate(1)">›</button><div class="date-label">${formatDate(selected,{weekday:'long',day:'2-digit',month:'long'})}</div></div><div class="status-legend"><span class="legend-item busy"><span class="legend-dot"></span>EM USO</span><span class="legend-item scheduled"><span class="legend-dot"></span>AGENDADO</span><span class="legend-item"><span class="legend-dot"></span>LIVRE</span></div><div style="display:flex;gap:9px;flex-wrap:wrap"><button class="btn fullscreen-btn" onclick="location.hash='#painel-salas'">⌂ Salas de aula</button><button class="btn fullscreen-btn" onclick="toggleFullscreen()">⛶ Tela cheia</button><button class="btn fullscreen-btn" onclick="requestAdminLogin()">Administrar</button></div></div>
- <div class="public-grid">${featured.map(featuredEventCard).join('')}${resourcesForPublicDate(selected).map(r=>publicSpaceCard(r,selected)).join('')}</div><footer class="public-foot"><span>Turnos: 08:00–11:10 · 13:00–17:00 · 19:00–22:00</span><span id="publicSync" class="sync-note">Dados carregados</span></footer></section>`;updateClock();updatePublicSyncNote();schedulePublicMidnightRollover();if(resetTimer){clearInterval(window.publicTimer);const seconds=Math.max(30,Number(state.settings.publicRefreshSeconds)||60);window.publicTimer=setInterval(async()=>{updateClock();ensurePublicCurrentDay();if(window.publicAutoDate)await syncPublic(true)},seconds*1000)}
+ ${holidayBanner(selected)}<div class="public-grid">${featured.map(featuredEventCard).join('')}${resourcesForPublicDate(selected).map(r=>publicSpaceCard(r,selected)).join('')}</div><footer class="public-foot"><span>Turnos: 08:00–11:10 · 13:00–17:00 · 19:00–22:00</span><span id="publicSync" class="sync-note">Dados carregados</span></footer></section>`;updateClock();updatePublicSyncNote();schedulePublicMidnightRollover();if(resetTimer){clearInterval(window.publicTimer);const seconds=Math.max(30,Number(state.settings.publicRefreshSeconds)||60);window.publicTimer=setInterval(async()=>{updateClock();ensurePublicCurrentDay();if(window.publicAutoDate)await syncPublic(true)},seconds*1000)}
 }
 function displayPurpose(b){return (b.purpose||'').trim()||'Reserva de espaço'}
 function publicSpaceCard(r,date){const arr=getBookings(date,r.id).filter(b=>b.status==='confirmed');const isToday=localISO(date)===localISO(new Date());const current=isToday?arr.find(b=>currentStatus(b)):null;const currentConflict=current?bookingProfessorConflicts(current):[];const now=new Date().toTimeString().slice(0,5);const future=isToday?arr.filter(b=>b.startTime>now):arr;const next=future[0]||(!isToday?arr[0]:null);const cardState=current?'in-use':arr.length?'scheduled':'free';const pillClass=current?'busy':arr.length?'scheduled':'free';const pillText=current?'EM USO':arr.length?'AGENDADO':'LIVRE';let highlight;
  if(current&&currentConflict.length){highlight=`<div class="current-box conflict"><div class="eyebrow">⚠ Conflito de professor</div><strong>${escapeHtml(current.responsible)}</strong><span>Também aparece em ${escapeHtml(uniqueBookingLocations(currentConflict).join(' / '))} neste horário</span></div>`}
  else if(current){highlight=`<div class="current-box"><div class="eyebrow">Em uso agora</div><strong>${escapeHtml(current.responsible)}</strong><span>${escapeHtml(displayPurpose(current))} · ${periodLabel(current)}</span></div>`}
  else if(arr.length){const target=next||arr[0];highlight=`<div class="current-box scheduled"><div class="eyebrow">${isToday&&next?'Próximo agendamento':'Agenda desta data'}</div><strong>${isToday&&next?`${next.startTime} · ${escapeHtml(next.responsible)}`:`${arr.length} agendamento${arr.length>1?'s':''}`}</strong><span>${isToday&&next?`${escapeHtml(displayPurpose(next))} · até ${next.endTime}`:`Primeiro horário: ${periodLabel(target)}`}</span></div>`}
- else{highlight=`<div class="current-box empty"><div class="eyebrow">Situação da data</div><strong>Espaço livre</strong><span>Sem agendamentos para esta data</span></div>`}
+ else{highlight=`<div class="current-box empty"><div class="eyebrow">Situação da data</div><strong>${nationalHoliday(date)?'Dia não letivo':'Espaço livre'}</strong><span>${nationalHoliday(date)?'Feriado nacional: '+escapeHtml(nationalHoliday(date)):'Sem agendamentos para esta data'}</span></div>`}
  const rows=arr.length?arr.map(b=>{const pc=bookingProfessorConflicts(b);return `<div class="schedule-row ${current?.id===b.id?'now':''} ${pc.length?'conflict':''}"><span class="slot">${periodLabel(b)}</span><span class="who"><strong>${pc.length?'⚠ ':''}${escapeHtml(b.responsible)}</strong><small>${escapeHtml(displayPurpose(b))}${pc.length?' · CONFLITO DE LOCAL':''}</small></span></div>`}).join(''):'<div style="color:#b9cad8;font-size:16px;font-weight:700">Nenhum agendamento.</div>';
  return `<article class="space-card ${cardState}"><div class="space-head"><div><h2>${escapeHtml(r.name)}</h2><small>${escapeHtml(r.type)}</small></div><span class="status-pill ${pillClass}">${pillText}</span></div>${highlight}<div class="schedule-list">${rows}</div></article>`}
 function movePublicDate(n){window.publicAutoDate=false;window.publicDate=addDays(window.publicDate||new Date(),n);renderPublic()}
@@ -1726,8 +1757,8 @@ function scheduleClassroomPeriodTransition(){
 }
 function classroomEntriesForPeriod(date,periodId){
  const slot=classroomSlotById(periodId),weekday=date.getDay(),iso=localISO(date);
- if(weekday<1||weekday>5||!semesterContainsDate(date))return [];
- const baseline=(state.classSchedule||[]).filter(e=>e.weekday===weekday&&e.startTime===slot.start&&e.endTime===slot.end).map(e=>({...e,room:(state.roomAssignments?.[e.purpose]||'').trim(),manual:false}));
+ if(!nationalHoliday(date)&&(weekday<1||weekday>5||!semesterContainsDate(date)))return [];
+ const baseline=(nationalHoliday(date)?[]:(state.classSchedule||[])).filter(e=>e.weekday===weekday&&e.startTime===slot.start&&e.endTime===slot.end).map(e=>({...e,room:(state.roomAssignments?.[e.purpose]||'').trim(),manual:false}));
  const allBookings=state.bookings.filter(b=>b.status==='confirmed'&&b.date===iso&&overlaps(slot.start,slot.end,b.startTime,b.endTime));
  const consumed=new Set();
  const resolved=baseline.map(entry=>{
@@ -1765,6 +1796,11 @@ function classroomCard(entry){
  </article>`;
 }
 function classroomBoard(selected,period){
+ if(nationalHoliday(selected)){
+ const iso=localISO(selected),bookings=state.bookings.filter(b=>b.date===iso&&b.status==='confirmed'&&bookingCategory(b)==='classroom').sort((a,b)=>a.startTime.localeCompare(b.startTime));
+ return holidayBanner(selected)+'<div class="classroom-grid">'+featuredEventsForDate(selected).map(featuredEventCard).join('')+bookings.map(b=>classroomCard({room:bookingResourceName(b),professor:b.responsible,purpose:b.purpose,startTime:b.startTime,endTime:b.endTime,manual:true})).join('')+'</div>';
+ }
+
  const autoState=period==='auto'?classroomAutoState(selected):{type:'period',periodId:period};
  const periodId=autoState.type==='period'?autoState.periodId:null;const slot=periodId?classroomSlotById(periodId):null;
  const entries=slot?classroomEntriesForPeriod(selected,periodId):[];const featured=featuredEventsForDate(selected);const unassigned=entries.filter(e=>!String(e.room||'').trim()).length;const crossConflicts=entries.filter(e=>e.conflict).length;const inLabs=entries.filter(e=>e.relocationCategory==='lab'&&!e.conflict).length;
