@@ -1,12 +1,17 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-18T20:32:23.287Z",
+  "updatedAt": "2026-11-20T18:10:16.551Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
     "classroomPanelTitle": "Painel de Salas de Aula",
     "logo": "assets/logo-fmp.svg",
-    "publicRefreshSeconds": 60
+    "publicRefreshSeconds": 60,
+    "academicSemester": {
+      "label": "2026/6",
+      "start": "2026-07-29",
+      "end": "2026-12-11"
+    }
   },
   "resources": [
     {
