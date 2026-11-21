@@ -905,7 +905,7 @@ async function checkRemoteSync(){
  }finally{syncProbeBusy=false;updateSyncButton()}
 }
 async function synchronizeSystemButton(){
- if(syncButtonBusy)return;syncButtonBusy=true;updateSyncButton();
+ if(syncButtonBusy)return;const requestedSection=adminSection;syncButtonBusy=true;updateSyncButton();
  try{
  // Publish unsaved local changes before downloading; stop on concurrent remote edits.
  for(const [path,pending] of [...pendingSyncWrites]){
@@ -914,9 +914,21 @@ async function synchronizeSystemButton(){
   const payload=pending.kind==='agenda'?sharedPayload():pending.kind==='grade'?gradePayload():pending.kind==='users'?usersPayload():vehiclePayload();
   await saveJsonFileToGithub(path,payload,'Sincroniza alterações locais pendentes');
  }
- const mainOk=await syncFromGithub(true);if(!mainOk)throw Error(syncInfo.message||'Falha ao sincronizar.');
+ const mainOk=await syncFromGithub(true,false);if(!mainOk)throw Error(syncInfo.message||'Falha ao sincronizar.');
+ if(adminSection!==requestedSection||location.hash!=='#admin')return;
  if(adminSection==='stock'){syncStockModule()}
- else if(adminSection==='loans'){if(!await loanRefresh())throw Error('Não foi possível sincronizar os empréstimos.');syncWarnings.delete('loans')}
+ else if(adminSection==='loans'){
+  if(loanBusy)await loanIdle;
+  if(!loanActive()||adminSection!==requestedSection)return;
+  const ok=await loanRefresh();
+  if(!loanActive()||adminSection!==requestedSection)return;
+  if(!ok)throw Error(syncWarnings.get('loans')||'Não foi possível sincronizar os empréstimos.');
+  syncWarnings.delete('loans');
+ }else if(adminSection==='vehicles'){renderVehicles()}
+ else if(adminSection==='agenda'){renderClassroomManagement()}
+ else if(adminSection==='list'){renderBookingList()}
+ else if(adminSection==='rooms'){renderRoomAssignments()}
+ else if(adminSection==='logs'){renderAuditLogs()}
  if(adminSection!=='stock')toast('Sincronização concluída.');
  }catch(e){syncInfo={status:'error',last:syncInfo.last,message:e.message};toast(e.message)}
  finally{syncButtonBusy=false;updateAdminSyncBadge();updateSyncButton()}
@@ -1235,7 +1247,8 @@ function loanAuto(doc,now){
  }return changed
 }
 async function loanRefresh(change=null){
- if(!loanActive()||loanBusy)return false;
+ if(!loanActive())return false;
+ if(loanBusy){await loanIdle;if(change)return loanActive()?loanRefresh(change):false;return loanActive()&&loanRows!==null&&!syncWarnings.has('loans')}
  const panel=document.getElementById('loanPanel'),active=()=>loanActive()&&panel===document.getElementById('loanPanel'),note=msg=>{if(active())document.getElementById('loanNote').textContent=msg};
  let unlock;loanIdle=new Promise(resolve=>unlock=resolve);loanBusy=true;
  if(change)note('Salvando no repositório de empréstimos…');
@@ -1265,7 +1278,7 @@ async function loanRefresh(change=null){
  }
  if(!active())return false;noteSyncVersion('dados/emprestimos.json',doc);loanRows=doc.rows;syncWarnings.delete('loans');updateSyncButton();loanPaint();note((change?'Registro salvo. ':'')+'Atualizado às '+new Date().toLocaleTimeString('pt-BR'));return true;
  }
- }catch(e){const msg=(change?'Gravação não confirmada: ':'Falha na sincronização: ')+e.message;syncWarnings.set('loans',msg);updateSyncButton();note(msg);if(change&&active())toast(msg);return false}finally{loanBusy=false;unlock();if(!active()&&loanActive())setTimeout(()=>loanRefresh(),0)}
+ }catch(e){if(!active())return false;const msg=(change?'Gravação não confirmada: ':'Falha na sincronização: ')+e.message;syncWarnings.set('loans',msg);updateSyncButton();note(msg);if(change&&active())toast(msg);return false}finally{loanBusy=false;unlock();if(!active()&&loanActive())setTimeout(()=>loanRefresh(),0)}
 }
 async function loanSubmit(event){
  event.preventDefault();if(!loanActive()||loanSubmitting)return;const form=event.target,d=new FormData(form),get=k=>String(d.get(k)||'').trim();
@@ -1729,8 +1742,8 @@ async function fetchPublicFile(path){
 async function fetchPublicJson(){return fetchPublicFile(state.settings.github?.path||'dados/agendamentos.json')}
 async function fetchPublicGrade(){return fetchPublicFile(state.settings.github?.gradePath||'dados/grade-salas.json')}
 async function fetchPublicUsers(){return fetchPublicFile(state.settings.github?.usersPath||'dados/usuarios.json')}
-async function syncFromGithub(silent=false){
- try{syncInfo={status:'busy',last:syncInfo.last,message:'Sincronizando dados...'};updateAdminSyncBadge();const useToken=Boolean(githubToken());const [{data:bookings},{data:grade}]=await Promise.all([fetchGithubJson(useToken),fetchGithubGrade(useToken)]);mergeRemoteData(bookings);mergeGradeData(grade);try{const {data:users}=await fetchGithubUsers(useToken);mergeUsersData(users)}catch(e){if(!String(e.message).includes('GitHub 404'))throw e}try{const {data:vehicles}=await fetchGithubVehicles(useToken);mergeVehiclesData(vehicles)}catch(e){if(!String(e.message).includes('GitHub 404'))throw e}try{const {data:logs}=await fetchGithubLogs(useToken);mergeAuditLogsData(logs)}catch(e){if(!String(e.message).includes('GitHub 404'))console.warn('Logs não sincronizados:',e)}syncInfo={status:'ok',last:new Date(),message:'Agendamentos, grade, usuários, veículos e logs sincronizados'};syncWarnings.delete('network');if(!silent)toast('Dados atualizados a partir do GitHub.');if(location.hash==='#admin')renderAdmin();return true}catch(e){syncInfo={status:'error',last:syncInfo.last,message:e.message};updateAdminSyncBadge();if(!silent)toast('Falha ao sincronizar: '+e.message);return false}
+async function syncFromGithub(silent=false,refreshView=true){
+ try{syncInfo={status:'busy',last:syncInfo.last,message:'Sincronizando dados...'};updateAdminSyncBadge();const useToken=Boolean(githubToken());const [{data:bookings},{data:grade}]=await Promise.all([fetchGithubJson(useToken),fetchGithubGrade(useToken)]);mergeRemoteData(bookings);mergeGradeData(grade);try{const {data:users}=await fetchGithubUsers(useToken);mergeUsersData(users)}catch(e){if(!String(e.message).includes('GitHub 404'))throw e}try{const {data:vehicles}=await fetchGithubVehicles(useToken);mergeVehiclesData(vehicles)}catch(e){if(!String(e.message).includes('GitHub 404'))throw e}try{const {data:logs}=await fetchGithubLogs(useToken);mergeAuditLogsData(logs)}catch(e){if(!String(e.message).includes('GitHub 404'))console.warn('Logs não sincronizados:',e)}syncInfo={status:'ok',last:new Date(),message:'Agendamentos, grade, usuários, veículos e logs sincronizados'};syncWarnings.delete('network');if(!silent)toast('Dados atualizados a partir do GitHub.');if(refreshView&&location.hash==='#admin')renderAdmin();return true}catch(e){syncInfo={status:'error',last:syncInfo.last,message:e.message};updateAdminSyncBadge();if(!silent)toast('Falha ao sincronizar: '+e.message);return false}
 }
 
 async function syncPublic(silent=true){
