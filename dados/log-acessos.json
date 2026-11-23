@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-23T23:31:19.789Z",
+  "updatedAt": "2026-11-23T23:57:18.534Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10522,6 +10522,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Pedagogia — 6ª Fase · Deisi Cord · 2026-12-04 · 18:50–22:00 · Laboratório 04"
+    },
+    {
+      "id": "c9911e8f-a565-449b-a577-f7aca7c47175",
+      "timestamp": "2026-11-23T23:57:17.967Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "TPG — 4ª Fase · Rosana Rosa Silveira · 2026-11-24 · 08:00–11:10 · Laboratório 02"
     }
   ]
 }
