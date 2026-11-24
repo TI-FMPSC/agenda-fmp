@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T18:50:49.710Z",
+  "updatedAt": "2026-11-24T18:53:39.661Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10837,6 +10837,15 @@
       "action": "Remove ajuste de sala de aula",
       "module": "Agendamentos",
       "details": "Reserva de sala · 2026-11-25 · 08:00–12:00"
+    },
+    {
+      "id": "93dc3983-d55c-4dd6-b632-20f06ad8c913",
+      "timestamp": "2026-11-24T18:53:35.279Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "SABRE+MINISTÉRIO DA CULTURA · DÉBORA BOMBAZARO · 2026-11-25 · 08:00–11:10 · Auditório"
     }
   ]
 }
