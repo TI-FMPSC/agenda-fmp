@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T18:57:57.308Z",
+  "updatedAt": "2026-11-24T19:05:34.909Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10864,6 +10864,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "SEBRAE+MINISTÉRIO DA CULTURA · DÉBORA BOMBAZARO · 2026-11-25 · 08:00–11:10 · Auditório"
+    },
+    {
+      "id": "fc691736-3c5a-4996-affd-00c40cb97530",
+      "timestamp": "2026-11-24T19:05:33.995Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 5ª Fase · Fabiana E. Boff · 2026-11-24 · 18:50–22:00 · Laboratório 05"
     }
   ]
 }
