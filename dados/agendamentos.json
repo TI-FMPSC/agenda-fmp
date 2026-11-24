@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-24T18:57:54.567Z",
+  "updatedAt": "2026-11-24T19:05:31.888Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10553,6 +10553,21 @@
       "allDay": false,
       "responsible": "COORDENAÇÃO PEDAGOGIA",
       "purpose": "SEMANA DA PEDAGOGIA",
+      "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-24"
+    },
+    {
+      "id": "e8749734-9692-4055-8a81-8f23ee77c908",
+      "spaceCategory": "lab",
+      "resourceId": "lab5",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "Fabiana E. Boff",
+      "purpose": "Administração — 5ª Fase",
       "startTime": "18:50",
       "endTime": "22:00",
       "status": "confirmed",
