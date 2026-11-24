@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-24T16:28:52.226Z",
+  "updatedAt": "2026-11-24T16:31:02.479Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10637,12 +10637,12 @@
       "featuredEvent": false,
       "importantEvent": false,
       "allDay": false,
-      "responsible": ".",
-      "purpose": "",
+      "responsible": "SEBRAE",
+      "purpose": "Reserva de sala",
       "startTime": "08:00",
       "endTime": "12:00",
       "status": "confirmed",
-      "notes": "Curso do Sebrae",
+      "notes": "Ajuste pontual realizado pela Gestão das Salas.",
       "date": "2026-11-25"
     },
     {
