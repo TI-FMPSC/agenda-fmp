@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-24T18:37:30.306Z",
+  "updatedAt": "2026-11-24T18:44:52.943Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10643,21 +10643,6 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: RAFAEL"
-    },
-    {
-      "id": "625acd27-f2b1-4bc6-bb1d-bbe7c30cf82d",
-      "spaceCategory": "lab",
-      "resourceId": "auditorio",
-      "featuredEvent": false,
-      "importantEvent": false,
-      "allDay": false,
-      "responsible": "VERA",
-      "purpose": "CEI AQUARELA",
-      "startTime": "08:00",
-      "endTime": "11:10",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-11-25"
     },
     {
       "id": "de25192b-29f4-49ba-b575-5cdddfcbce1e",
