@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-24T18:44:52.943Z",
+  "updatedAt": "2026-11-24T18:50:46.370Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10643,22 +10643,6 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: RAFAEL"
-    },
-    {
-      "id": "de25192b-29f4-49ba-b575-5cdddfcbce1e",
-      "spaceCategory": "classroom",
-      "resourceId": "custom:sala-01",
-      "customSpaceName": "Sala 01",
-      "featuredEvent": false,
-      "importantEvent": false,
-      "allDay": false,
-      "responsible": "SEBRAE",
-      "purpose": "Reserva de sala",
-      "startTime": "08:00",
-      "endTime": "12:00",
-      "status": "confirmed",
-      "notes": "Ajuste pontual realizado pela Gestão das Salas.",
-      "date": "2026-11-25"
     },
     {
       "id": "80b01f96-7909-4de1-a757-3ec935d1dc6b",
