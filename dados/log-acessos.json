@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T16:28:58.989Z",
+  "updatedAt": "2026-11-24T16:31:05.530Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10747,6 +10747,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": " · . · 2026-11-25 · 08:00–12:00 · Sala 01"
+    },
+    {
+      "id": "ec5e6ba4-3314-470f-8d43-6f7128e5e91c",
+      "timestamp": "2026-11-24T16:31:04.904Z",
+      "username": "deborabombazaro",
+      "name": "Débora Bombazaro",
+      "action": "Atualiza ajuste de sala de aula",
+      "module": "Agendamentos",
+      "details": "Reserva de sala · 2026-11-25 · 08:00–12:00 · Sala 01 · SEBRAE"
     }
   ]
 }
