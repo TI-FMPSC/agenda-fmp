@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T18:54:44.024Z",
+  "updatedAt": "2026-11-24T18:57:57.308Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10855,6 +10855,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "SABRE+MINISTÉRIO DA CULTURA · DÉBORA BOMBAZARO · 2026-11-25 · 08:00–11:10 · Auditório"
+    },
+    {
+      "id": "46e63052-96e5-401f-b196-74eff12d3f52",
+      "timestamp": "2026-11-24T18:57:56.862Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "SEBRAE+MINISTÉRIO DA CULTURA · DÉBORA BOMBAZARO · 2026-11-25 · 08:00–11:10 · Auditório"
     }
   ]
 }
