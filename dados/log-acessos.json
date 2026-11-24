@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T18:45:03.686Z",
+  "updatedAt": "2026-11-24T18:50:49.710Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10828,6 +10828,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "CEI AQUARELA · VERA · 2026-11-25 · 08:00–11:10 · Auditório"
+    },
+    {
+      "id": "ee8f1843-363b-408a-959c-445ef79dbb3c",
+      "timestamp": "2026-11-24T18:50:49.126Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Remove ajuste de sala de aula",
+      "module": "Agendamentos",
+      "details": "Reserva de sala · 2026-11-25 · 08:00–12:00"
     }
   ]
 }
