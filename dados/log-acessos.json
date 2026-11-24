@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T00:49:00.199Z",
+  "updatedAt": "2026-11-24T00:50:08.265Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10549,6 +10549,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "ANDERSON(MATURIDADE) - 16:20-17:30 · Anderson da Silveira · 2026-11-24 · 16:20–17:30 · Auditório"
+    },
+    {
+      "id": "254ea35e-fd0f-466e-81d5-76696a503fcc",
+      "timestamp": "2026-11-24T00:50:07.807Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "SEMANA DA PEDAGOGIA · COORDENAÇÃO PEDAGOGIA · 2026-11-24 · 13:00–17:00 · Auditório"
     }
   ]
 }
