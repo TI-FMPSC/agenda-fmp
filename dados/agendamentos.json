@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-24T01:07:17.869Z",
+  "updatedAt": "2026-11-24T01:08:14.900Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10920,6 +10920,21 @@
       "allDay": false,
       "responsible": "DÉBORA",
       "purpose": "JOVEM PALHOCENSE",
+      "startTime": "13:00",
+      "endTime": "17:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-27"
+    },
+    {
+      "id": "05de2a97-e0bf-420e-9e24-fdb6c97c2e7f",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "COORDENAÇÃO PEDAGOGIA",
+      "purpose": "SEMANA DA PEDAGOGIA",
       "startTime": "13:00",
       "endTime": "17:00",
       "status": "confirmed",
