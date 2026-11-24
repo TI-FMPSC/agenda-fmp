@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T00:57:35.394Z",
+  "updatedAt": "2026-11-24T00:58:14.408Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10603,6 +10603,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "SEMANA DA PEDAGOGIA · COORDENAÇÃO PEDAGOGIA · 2026-11-26 · 13:00–17:00 · Auditório"
+    },
+    {
+      "id": "b1a2a09b-e235-4230-8e8c-1795c70f2770",
+      "timestamp": "2026-11-24T00:58:13.967Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "SEMANA DA PEDAGOGIA · COORDENAÇÃO PEDAGOGIA · 2026-11-23 a 2026-11-26 · 18:50–22:00 · Auditório"
     }
   ]
 }
