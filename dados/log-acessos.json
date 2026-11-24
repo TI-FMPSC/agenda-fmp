@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T10:32:21.569Z",
+  "updatedAt": "2026-11-24T12:55:20.453Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10693,6 +10693,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Ajuste · 122 · PÓ DE CAFÉ · quantidade 10 · saldo 10"
+    },
+    {
+      "id": "76add4b7-8b1d-4196-b5e6-40f42d41f381",
+      "timestamp": "2026-11-24T12:55:17.367Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Saída · 97 · Luva Látex M · quantidade 3 · saldo 24"
     }
   ]
 }
