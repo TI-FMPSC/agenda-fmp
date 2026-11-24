@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-23T23:57:15.006Z",
+  "updatedAt": "2026-11-24T00:46:40.322Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10456,6 +10456,21 @@
       "allDay": false,
       "responsible": "Rosana Rosa Silveira",
       "purpose": "TPG — 4ª Fase",
+      "startTime": "08:00",
+      "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-24"
+    },
+    {
+      "id": "ac514aca-5d19-4e20-817b-fd00770ce3b5",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "COORDENAÇÃO PEDAGOGIA",
+      "purpose": "SEMANA DA PEDAGOGIA",
       "startTime": "08:00",
       "endTime": "11:10",
       "status": "confirmed",
