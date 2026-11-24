@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-24T16:31:17.622Z",
+  "updatedAt": "2026-11-24T18:37:03.415Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10554,6 +10554,21 @@
       "responsible": "COORDENAÇÃO PEDAGOGIA",
       "purpose": "SEMANA DA PEDAGOGIA",
       "startTime": "18:50",
+      "endTime": "22:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-24"
+    },
+    {
+      "id": "0a2a1940-137d-4abd-9d74-a3973f442052",
+      "spaceCategory": "lab",
+      "resourceId": "lab1",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "Schirlei S. Ramos",
+      "purpose": "Administração — 7ª Fase",
+      "startTime": "20:30",
       "endTime": "22:00",
       "status": "confirmed",
       "notes": "",
