@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-24T00:56:57.057Z",
+  "updatedAt": "2026-11-24T00:57:31.772Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10772,6 +10772,21 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: ANDERSON"
+    },
+    {
+      "id": "d84e19eb-a9ad-4f4e-8bfc-867d848465e5",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "COORDENAÇÃO PEDAGOGIA",
+      "purpose": "SEMANA DA PEDAGOGIA",
+      "startTime": "13:00",
+      "endTime": "17:00",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-26"
     },
     {
       "id": "43282896-ab55-545f-8603-14814da263b5",
