@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-23T23:57:18.534Z",
+  "updatedAt": "2026-11-24T00:46:43.634Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10531,6 +10531,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "TPG — 4ª Fase · Rosana Rosa Silveira · 2026-11-24 · 08:00–11:10 · Laboratório 02"
+    },
+    {
+      "id": "156db530-03be-4de8-b2bb-00a30ca79ea8",
+      "timestamp": "2026-11-24T00:46:43.185Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "SEMANA DA PEDAGOGIA · COORDENAÇÃO PEDAGOGIA · 2026-11-24 · 08:00–11:10 · Auditório"
     }
   ]
 }
