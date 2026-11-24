@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-24T01:01:32.797Z",
+  "updatedAt": "2026-11-24T01:06:03.425Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10922,20 +10922,6 @@
       "purpose": "JOVEM PALHOCENSE",
       "startTime": "13:00",
       "endTime": "17:00",
-      "status": "confirmed",
-      "notes": "",
-      "date": "2026-11-27"
-    },
-    {
-      "id": "030cb61a-ea3f-426d-b984-d1c402025804",
-      "spaceCategory": "lab",
-      "resourceId": "auditorio",
-      "featuredEvent": false,
-      "allDay": false,
-      "responsible": ".",
-      "purpose": "JOVEM PALHOCENSE",
-      "startTime": "13:30",
-      "endTime": "17:30",
       "status": "confirmed",
       "notes": "",
       "date": "2026-11-27"
