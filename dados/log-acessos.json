@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T00:50:38.057Z",
+  "updatedAt": "2026-11-24T00:54:17.218Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10567,6 +10567,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "SEMANA DA PEDAGOGIA · COORDENAÇÃO PEDAGOGIA · 2026-11-24 · 18:50–22:00 · Auditório"
+    },
+    {
+      "id": "0e220845-521b-4ce8-9960-74516745a97d",
+      "timestamp": "2026-11-24T00:54:16.631Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "CEI AQUARELA · VERA · 2026-11-25 · 08:00–11:10 · Auditório"
     }
   ]
 }
