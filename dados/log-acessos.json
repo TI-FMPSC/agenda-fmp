@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T12:55:20.453Z",
+  "updatedAt": "2026-11-24T15:29:36.983Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10702,6 +10702,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Saída · 97 · Luva Látex M · quantidade 3 · saldo 24"
+    },
+    {
+      "id": "7fcd0c47-9d76-45e4-be99-0e4e49d7a5c0",
+      "timestamp": "2026-11-24T15:29:36.051Z",
+      "username": "deborabombazaro",
+      "name": "Débora Bombazaro",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
