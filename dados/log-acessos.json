@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T10:19:45.290Z",
+  "updatedAt": "2026-11-24T10:27:51.114Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10675,6 +10675,15 @@
       "action": "Valida integração com GitHub",
       "module": "Configurações",
       "details": "TI-FMPSC/agenda-fmp · token com gravação confirmada"
+    },
+    {
+      "id": "074a85c7-13d4-4a81-b135-16ac419a65b9",
+      "timestamp": "2026-11-24T10:27:48.926Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Entrada · 112 · Papel Toalha avulso · quantidade 276 · saldo 676"
     }
   ]
 }
