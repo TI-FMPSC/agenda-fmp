@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-24T01:08:14.900Z",
+  "updatedAt": "2026-11-24T16:28:52.226Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10627,6 +10627,22 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "",
+      "date": "2026-11-25"
+    },
+    {
+      "id": "de25192b-29f4-49ba-b575-5cdddfcbce1e",
+      "spaceCategory": "classroom",
+      "resourceId": "custom:sala-01",
+      "customSpaceName": "Sala 01",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": ".",
+      "purpose": "",
+      "startTime": "08:00",
+      "endTime": "12:00",
+      "status": "confirmed",
+      "notes": "Curso do Sebrae",
       "date": "2026-11-25"
     },
     {
