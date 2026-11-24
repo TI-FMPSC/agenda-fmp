@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T10:27:51.114Z",
+  "updatedAt": "2026-11-24T10:32:21.569Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10684,6 +10684,15 @@
       "action": "Movimentação de estoque",
       "module": "Estoque FMP",
       "details": "Entrada · 112 · Papel Toalha avulso · quantidade 276 · saldo 676"
+    },
+    {
+      "id": "31282665-591b-4972-8132-e10b21f85d37",
+      "timestamp": "2026-11-24T10:32:16.685Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Movimentação de estoque",
+      "module": "Estoque FMP",
+      "details": "Ajuste · 122 · PÓ DE CAFÉ · quantidade 10 · saldo 10"
     }
   ]
 }
