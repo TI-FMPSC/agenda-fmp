@@ -1,6 +1,6 @@
 {
   "version": 6,
-  "updatedAt": "2026-11-24T18:54:40.845Z",
+  "updatedAt": "2026-11-24T18:57:54.567Z",
   "settings": {
     "appName": "Agenda de Espaços FMP",
     "panelTitle": "Painel de Laboratórios e Espaços",
@@ -10643,6 +10643,21 @@
       "endTime": "11:10",
       "status": "confirmed",
       "notes": "Importado da planilha AGENDA ESPAÇO FÍSICO FMP — 2026/2. Registro original: org: RAFAEL"
+    },
+    {
+      "id": "334ae212-f924-47f1-b591-cf0b5b3d848e",
+      "spaceCategory": "lab",
+      "resourceId": "auditorio",
+      "featuredEvent": false,
+      "importantEvent": false,
+      "allDay": false,
+      "responsible": "DÉBORA BOMBAZARO",
+      "purpose": "SEBRAE+MINISTÉRIO DA CULTURA",
+      "startTime": "08:00",
+      "endTime": "11:10",
+      "status": "confirmed",
+      "notes": "",
+      "date": "2026-11-25"
     },
     {
       "id": "80b01f96-7909-4de1-a757-3ec935d1dc6b",
