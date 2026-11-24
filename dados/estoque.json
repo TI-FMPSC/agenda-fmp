@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-18T15:19:22.352Z",
-    "updatedAt": "2026-11-18T15:19:22.352Z",
+    "lastSync": "2026-11-24T10:27:52.677Z",
+    "updatedAt": "2026-11-24T10:27:52.677Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -1928,14 +1928,14 @@
       "supplierId": "id_g6197bf2mwkln8zu",
       "locationId": "id_7t187xi9mumny3mz",
       "minStock": 200,
-      "currentStock": 400,
+      "currentStock": 676,
       "avgCost": "",
       "status": "active",
       "barcode": "",
       "description": "50 CAIXAS COM  8 UNIDADES CADA. tOTAL DE FOLHAS POR CAIXA: 2MIL / TOTAL PEDIDO: 16000 FOLHAS",
       "expirationDate": "",
       "createdAt": "2026-08-16",
-      "updatedAt": "2026-11-17"
+      "updatedAt": "2026-11-24"
     },
     {
       "id": "mat_lim_033",
@@ -7900,6 +7900,22 @@
       "notes": "Não estão marcando. Recontado dia 18/11.",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-18T15:19:18.341Z"
+    },
+    {
+      "id": "id_hjpt2r73mwujwpfc",
+      "materialId": "mat_lim_032",
+      "type": "entrada",
+      "date": "2026-11-23",
+      "quantity": 276,
+      "unitCost": 0,
+      "previousStock": 400,
+      "newStock": 676,
+      "effect": 276,
+      "sector": "",
+      "document": "",
+      "notes": "Doação 46 caixa com 6 fardos em cada: total 276 unidades",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-24T10:27:48.792Z"
     }
   ],
   "users": [],
