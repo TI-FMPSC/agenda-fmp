@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-24T18:37:33.700Z",
+  "updatedAt": "2026-11-24T18:45:03.686Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10819,6 +10819,15 @@
       "action": "Cria agendamento",
       "module": "Agendamentos",
       "details": "Administração — 7ª Fase · Schirlei S. Ramos. · 2026-11-24 · 20:30–22:00 · Laboratório 02"
+    },
+    {
+      "id": "0f937ebe-e4d6-4580-9a58-e46526188d8c",
+      "timestamp": "2026-11-24T18:44:59.387Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "CEI AQUARELA · VERA · 2026-11-25 · 08:00–11:10 · Auditório"
     }
   ]
 }
