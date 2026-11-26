@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-26T11:07:44.806Z",
+  "updatedAt": "2026-11-26T11:11:18.934Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10927,6 +10927,15 @@
       "action": "Cadastra Fornecedor",
       "module": "Estoque FMP",
       "details": "AOC ROKU"
+    },
+    {
+      "id": "8df55ec9-e8c2-45d9-b674-deda371fda5c",
+      "timestamp": "2026-11-26T11:11:18.441Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra equipamento",
+      "module": "Estoque FMP",
+      "details": "EQ-007 · TV LED SMART43\" AOC · saldo 1"
     }
   ]
 }
