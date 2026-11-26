@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-24T12:56:19.264Z",
-    "updatedAt": "2026-11-24T12:56:19.264Z",
+    "lastSync": "2026-11-26T10:45:02.525Z",
+    "updatedAt": "2026-11-26T10:45:02.525Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -118,6 +118,10 @@
     {
       "id": "id_g6197bf2mwkln8zu",
       "name": "IPEL"
+    },
+    {
+      "id": "id_mk5tcy1qmwxfejaq",
+      "name": "ONIX PAPEL TOALHA"
     }
   ],
   "locations": [
