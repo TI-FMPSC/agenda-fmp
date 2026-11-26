@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-26T10:51:15.344Z",
-    "updatedAt": "2026-11-26T10:51:15.344Z",
+    "lastSync": "2026-11-26T11:07:44.907Z",
+    "updatedAt": "2026-11-26T11:07:44.907Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -122,6 +122,10 @@
     {
       "id": "id_mk5tcy1qmwxfejaq",
       "name": "ONIX PAPEL TOALHA"
+    },
+    {
+      "id": "id_3mb48zxkmwxg7qpw",
+      "name": "AOC ROKU"
     }
   ],
   "locations": [
