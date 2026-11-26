@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-26T10:45:02.525Z",
-    "updatedAt": "2026-11-26T10:45:02.525Z",
+    "lastSync": "2026-11-26T10:51:15.344Z",
+    "updatedAt": "2026-11-26T10:51:15.344Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -3182,6 +3182,24 @@
       "expirationDate": "",
       "createdAt": "2026-11-13",
       "updatedAt": "2026-11-13"
+    },
+    {
+      "id": "id_rkap9vrqmwxfmj21",
+      "code": "185",
+      "name": "Papel Toalha Mais Fino",
+      "categoryId": "cat_limpeza",
+      "unit": "UN",
+      "supplierId": "id_mk5tcy1qmwxfejaq",
+      "locationId": "id_7t187xi9mumny3mz",
+      "minStock": 5,
+      "currentStock": 60,
+      "avgCost": 0,
+      "status": "active",
+      "barcode": "",
+      "description": "Recebidos 60 unidades do papel toalha mais fininho, dia 25/11. 3 caixas cada uma com 20 unidades.",
+      "expirationDate": "",
+      "createdAt": "2026-11-26",
+      "updatedAt": "2026-11-26"
     }
   ],
   "movements": [
@@ -7968,6 +7986,22 @@
       "notes": "Para distribuição.",
       "createdBy": "amandafranca",
       "createdAt": "2026-11-24T12:56:18.403Z"
+    },
+    {
+      "id": "id_x6idkziqmwxfmj22",
+      "materialId": "id_rkap9vrqmwxfmj21",
+      "type": "entrada",
+      "date": "2026-11-26",
+      "quantity": 60,
+      "unitCost": 0,
+      "previousStock": 0,
+      "newStock": 60,
+      "effect": 60,
+      "sector": "Estoque inicial",
+      "document": "",
+      "notes": "Lançamento automático do estoque inicial no cadastro.",
+      "createdBy": "amandafranca",
+      "createdAt": "2026-11-26T10:51:14.042Z"
     }
   ],
   "users": [],
