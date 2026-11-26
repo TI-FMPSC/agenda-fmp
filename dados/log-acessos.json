@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-26T11:16:53.822Z",
+  "updatedAt": "2026-11-26T13:30:26.619Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10963,6 +10963,15 @@
       "action": "Cadastra equipamento",
       "module": "Estoque FMP",
       "details": "EQ-010 · LAMINULA 24X24 MM · saldo 1000"
+    },
+    {
+      "id": "7f83469b-5cdc-46d3-8aa6-33d5e9b1da16",
+      "timestamp": "2026-11-26T13:30:25.920Z",
+      "username": "leandropickler",
+      "name": "Leandro Pickler",
+      "action": "Login realizado",
+      "module": "Acesso",
+      "details": "Entrada na área administrativa"
     }
   ]
 }
