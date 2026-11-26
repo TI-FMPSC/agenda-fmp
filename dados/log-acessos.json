@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-26T00:33:30.048Z",
+  "updatedAt": "2026-11-26T10:43:52.623Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10900,6 +10900,15 @@
       "action": "Exclui agendamento",
       "module": "Agendamentos",
       "details": "PROJETO JOVEM PALHOCENSE (DÉBORA) · PROJETO JOVEM PALHOCENSE (DÉBORA) · 2026-12-07 · 08:00–11:30 · Auditório"
+    },
+    {
+      "id": "34d6b9d0-715d-40fb-8f0a-08cf52657a0c",
+      "timestamp": "2026-11-26T10:43:52.560Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Valida integração com GitHub",
+      "module": "Configurações",
+      "details": "TI-FMPSC/agenda-fmp · token com gravação confirmada"
     }
   ]
 }
