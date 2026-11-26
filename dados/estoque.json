@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-26T11:16:53.528Z",
-    "updatedAt": "2026-11-26T11:16:53.528Z",
+    "lastSync": "2026-11-26T11:18:37.038Z",
+    "updatedAt": "2026-11-26T11:18:37.038Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -8157,6 +8157,21 @@
       "model": "",
       "status": "active",
       "description": "10 CAIXAS COM 100 EM CADA.",
+      "createdAt": "2026-11-26",
+      "updatedAt": "2026-11-26"
+    },
+    {
+      "id": "id_ctrgiinpmwxglq5g",
+      "code": "EQ-011",
+      "name": "LAMINA PONTA FOSCA 26X76 MM",
+      "type": "Equipamento",
+      "unit": "UN",
+      "currentStock": 500,
+      "minStock": 100,
+      "size": "26X76 MM",
+      "model": "",
+      "status": "active",
+      "description": "50 UND POR CAIXA / 10 CAIXAS",
       "createdAt": "2026-11-26",
       "updatedAt": "2026-11-26"
     }
