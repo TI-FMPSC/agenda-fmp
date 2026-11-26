@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-26T11:07:44.907Z",
-    "updatedAt": "2026-11-26T11:07:44.907Z",
+    "lastSync": "2026-11-26T11:11:19.252Z",
+    "updatedAt": "2026-11-26T11:11:19.252Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -8099,6 +8099,21 @@
       "description": "",
       "createdAt": "2026-10-07",
       "updatedAt": "2026-10-07"
+    },
+    {
+      "id": "id_01ccyhi5mwxgccak",
+      "code": "EQ-007",
+      "name": "TV LED SMART43\" AOC",
+      "type": "Equipamento",
+      "unit": "UN",
+      "currentStock": 1,
+      "minStock": 1,
+      "size": "",
+      "model": "43S5155/78G",
+      "status": "active",
+      "description": "",
+      "createdAt": "2026-11-26",
+      "updatedAt": "2026-11-26"
     }
   ],
   "equipmentDeliveries": []
