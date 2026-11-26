@@ -1130,6 +1130,18 @@ let loanBusy=false,loanRows=null,loanIdle=Promise.resolve(),loanSubmitting=false
 function loanActive(){return isLogged()&&adminSection==='loans'&&!!document.getElementById('loanPanel')}
 function loanLabs(){return state.resources.filter(r=>r.active&&(/^lab/i.test(r.id)||/^lab/i.test(r.name)))}
 function loanKeyResources(){return state.resources.filter(r=>r.active&&(/^lab/i.test(r.id)||/^lab/i.test(r.name)||normalizeSpaceName(r.id)==='auditorio'||normalizeSpaceName(r.name)==='auditorio'))}
+function loanKeyResourceForItem(item){
+ const key=normalizeSpaceName(item).replace(/^chaves?-/,'').replace(/^(?:da|do|de)-/,'').replace(/^lab-/,'laboratorio-').replace(/-0+(\d+)/g,'-$1');
+ return loanKeyResources().find(r=>normalizeSpaceName(r.name).replace(/-0+(\d+)/g,'-$1')===key)||null;
+}
+function isLoanKeyItem(item){return /^chaves?(?:-|$)/.test(normalizeSpaceName(item))}
+function updateLoanPlaceOptions(){
+ const item=document.querySelector('#loanForm input[name="item"]')?.value||'',list=document.getElementById('loanPlaces');if(!list)return;
+ list.innerHTML=loanOptions(isLoanKeyItem(item)?loanKeyResources().map(r=>r.name):loanRooms());
+ const resource=isLoanKeyItem(item)?loanKeyResourceForItem(item):null;
+ if(resource){const room=document.querySelector('#loanForm input[name="room"]');if(room)room.value=resource.name}
+}
+
 function loanRooms(){return [...new Set([...CLASSROOM_ROOMS,...state.resources.filter(r=>r.active).map(r=>r.name)])]}
 function loanStamp(d=new Date()){return localISO(d)+'T'+d.toTimeString().slice(0,8)}
 function loanOptions(arr){return arr.map(x=>'<option value="'+escapeHtml(x)+'"></option>').join('')}
@@ -1138,7 +1150,7 @@ function renderLoans(){
  if(!isLogged())return;
  document.getElementById('adminContent').innerHTML=`<section id="loanPanel"> <div class="panel"><div class="toolbar" style="align-items:center;gap:12px;flex-wrap:wrap"><h2 style="margin:0">Ocupação agora</h2><button class="btn btn-primary" type="button" onclick="goToLoanRegistration()">REGISTRAR EMPRÉSTIMO</button></div><div id="loanSpaces" class="classroom-page"></div></div><div class="panel" id="loanRegistration" style="scroll-margin-top:24px"><h2>Registrar empréstimo</h2><form id="loanForm" onsubmit="loanSubmit(event)" class="form-grid">
  <label class="field">Professor ou funcionário<input name="person" required maxlength="120" list="loanPeople"></label><datalist id="loanPeople"></datalist>
- <label class="field">Material ou chave<input name="item" required maxlength="100" list="loanItems" placeholder="Selecione ou digite"></label><datalist id="loanItems"></datalist>
+ <label class="field">Material ou chave<input name="item" required maxlength="100" list="loanItems" oninput="updateLoanPlaceOptions()" placeholder="Selecione ou digite"></label><datalist id="loanItems"></datalist><small style="grid-column:1/-1;color:var(--muted)">Chaves: somente laboratórios e auditório. As salas de aula ficam abertas.</small>
  <label class="field">Quantidade<input name="qty" type="number" min="1" max="999" step="1" required value="1"></label>
  <label class="field">Patrimônios (opcional)<input name="assets" maxlength="1500" placeholder="Ex.: 1025, 1031"></label>
  <label class="field">Local (opcional)<input name="room" list="loanPlaces" maxlength="90" placeholder="Sem sala vinculada"></label><datalist id="loanPlaces"></datalist>
@@ -1226,7 +1238,7 @@ function loanPaint(){
  const rows=loanRows||[],open=rows.filter(r=>!r.returned).sort((a,b)=>a.at.localeCompare(b.at));
  paintLoanMirror();
  document.getElementById('loanPeople').innerHTML=loanOptions([...new Set([...state.classSchedule.map(x=>x.professor),...state.bookings.map(x=>x.responsible),...rows.map(x=>x.person)].filter(Boolean))].sort());
- document.getElementById('loanPlaces').innerHTML=loanOptions(loanRooms());
+ updateLoanPlaceOptions();
  document.getElementById('loanItems').innerHTML=loanOptions([...loanCatalog,...loanKeyResources().map(x=>'Chave · '+x.name)]);
  function card(r){const late=!r.returned&&r.at.slice(0,10)<today;
  const fmt=t=>t.slice(8,10)+'/'+t.slice(5,7)+'/'+t.slice(0,4)+' às '+t.slice(11,16);
@@ -1284,6 +1296,7 @@ async function loanRefresh(change=null){
 async function loanSubmit(event){
  event.preventDefault();if(!loanActive()||loanSubmitting)return;const form=event.target,d=new FormData(form),get=k=>String(d.get(k)||'').trim();
  const r={id:crypto.randomUUID(),person:get('person'),item:get('item'),room:get('room'),qty:Number(get('qty')),assets:get('assets').split(/[,;\n]/).map(x=>x.trim()).filter(Boolean),at:loanStamp(),by:currentUsername()};
+ if(isLoanKeyItem(r.item)){const resource=loanKeyResourceForItem(r.item);if(!resource){toast('Empréstimo de chaves permitido somente para os laboratórios e o auditório. As salas de aula ficam abertas.');return}r.item='Chave · '+resource.name;r.room=resource.name}
  if(!r.person||!r.item||!Number.isInteger(r.qty)||r.qty<1||r.qty>999||r.assets.length>r.qty||new Set(r.assets.map(x=>x.toLowerCase())).size!==r.assets.length){toast('Revise o nome, o material, a quantidade e os patrimônios (um por unidade, sem repetir).');return}
  const btn=form.querySelector('button[type=submit]'),note=document.getElementById('loanNote');loanSubmitting=true;btn.disabled=true;btn.textContent='Registrando…';
  try{if(loanBusy){note.textContent='Aguardando a sincronização para registrar a retirada…';await loanIdle}
