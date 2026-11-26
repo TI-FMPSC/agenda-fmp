@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-26T11:18:37.038Z",
-    "updatedAt": "2026-11-26T11:18:37.038Z",
+    "lastSync": "2026-11-26T11:19:30.521Z",
+    "updatedAt": "2026-11-26T11:19:30.521Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -8172,6 +8172,21 @@
       "model": "",
       "status": "active",
       "description": "50 UND POR CAIXA / 10 CAIXAS",
+      "createdAt": "2026-11-26",
+      "updatedAt": "2026-11-26"
+    },
+    {
+      "id": "id_r4f3ckj0mwxgmveo",
+      "code": "EQ-012",
+      "name": "PORTA LAMINAS",
+      "type": "Equipamento",
+      "unit": "UN",
+      "currentStock": 1,
+      "minStock": 1,
+      "size": "100 LUGARES CINZA",
+      "model": "ABS",
+      "status": "active",
+      "description": "",
       "createdAt": "2026-11-26",
       "updatedAt": "2026-11-26"
     }
