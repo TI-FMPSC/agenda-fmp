@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-26T11:11:19.252Z",
-    "updatedAt": "2026-11-26T11:11:19.252Z",
+    "lastSync": "2026-11-26T11:12:31.522Z",
+    "updatedAt": "2026-11-26T11:12:31.522Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -8110,6 +8110,21 @@
       "minStock": 1,
       "size": "",
       "model": "43S5155/78G",
+      "status": "active",
+      "description": "",
+      "createdAt": "2026-11-26",
+      "updatedAt": "2026-11-26"
+    },
+    {
+      "id": "id_14hvnoxmmwxgdw42",
+      "code": "EQ-008",
+      "name": "TABLET A11+11\"",
+      "type": "Equipamento",
+      "unit": "UN",
+      "currentStock": 12,
+      "minStock": 1,
+      "size": "",
+      "model": "SM-X230NZAATO",
       "status": "active",
       "description": "",
       "createdAt": "2026-11-26",
