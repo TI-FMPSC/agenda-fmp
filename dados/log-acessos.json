@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-26T11:11:18.934Z",
+  "updatedAt": "2026-11-26T11:12:31.703Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10936,6 +10936,15 @@
       "action": "Cadastra equipamento",
       "module": "Estoque FMP",
       "details": "EQ-007 · TV LED SMART43\" AOC · saldo 1"
+    },
+    {
+      "id": "91640351-78b7-4325-b270-22e11e6a61e4",
+      "timestamp": "2026-11-26T11:12:30.756Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra equipamento",
+      "module": "Estoque FMP",
+      "details": "EQ-008 · TABLET A11+11\" · saldo 12"
     }
   ]
 }
