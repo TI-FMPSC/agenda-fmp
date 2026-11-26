@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-26T00:30:18.920Z",
+  "updatedAt": "2026-11-26T00:33:30.048Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10891,6 +10891,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "1e2cfae4-a80d-4947-b53a-b11b7fa3ab77",
+      "timestamp": "2026-11-26T00:33:29.584Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Exclui agendamento",
+      "module": "Agendamentos",
+      "details": "PROJETO JOVEM PALHOCENSE (DÉBORA) · PROJETO JOVEM PALHOCENSE (DÉBORA) · 2026-12-07 · 08:00–11:30 · Auditório"
     }
   ]
 }
