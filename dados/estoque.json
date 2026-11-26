@@ -3,8 +3,8 @@
   "settings": {
     "appName": "ESTOQUE FMP",
     "logo": "",
-    "lastSync": "2026-11-26T11:12:31.522Z",
-    "updatedAt": "2026-11-26T11:12:31.522Z",
+    "lastSync": "2026-11-26T11:14:17.721Z",
+    "updatedAt": "2026-11-26T11:14:17.721Z",
     "integratedWith": "Sistema integrado FMP",
     "dataStorage": "dados/estoque.json",
     "modules": [
@@ -8125,6 +8125,21 @@
       "minStock": 1,
       "size": "",
       "model": "SM-X230NZAATO",
+      "status": "active",
+      "description": "",
+      "createdAt": "2026-11-26",
+      "updatedAt": "2026-11-26"
+    },
+    {
+      "id": "id_zunhma2umwxgg4dw",
+      "code": "EQ-009",
+      "name": "MICROCOSPIO BINOCULAR",
+      "type": "Equipamento",
+      "unit": "UN",
+      "currentStock": 1,
+      "minStock": 1,
+      "size": "",
+      "model": "P13",
       "status": "active",
       "description": "",
       "createdAt": "2026-11-26",
