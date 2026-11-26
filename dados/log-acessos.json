@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-26T10:43:52.623Z",
+  "updatedAt": "2026-11-26T10:45:01.664Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10909,6 +10909,15 @@
       "action": "Valida integração com GitHub",
       "module": "Configurações",
       "details": "TI-FMPSC/agenda-fmp · token com gravação confirmada"
+    },
+    {
+      "id": "34b965f7-7d9c-427e-9628-3dbb1217b560",
+      "timestamp": "2026-11-26T10:45:01.185Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra Fornecedor",
+      "module": "Estoque FMP",
+      "details": "ONIX PAPEL TOALHA"
     }
   ]
 }
