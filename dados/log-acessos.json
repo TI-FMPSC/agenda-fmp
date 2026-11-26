@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-26T11:14:16.841Z",
+  "updatedAt": "2026-11-26T11:16:53.822Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10954,6 +10954,15 @@
       "action": "Cadastra equipamento",
       "module": "Estoque FMP",
       "details": "EQ-009 · MICROCOSPIO BINOCULAR · saldo 1"
+    },
+    {
+      "id": "8398c320-9e8c-4bd2-ab43-12293dd2da2d",
+      "timestamp": "2026-11-26T11:16:52.771Z",
+      "username": "amandafranca",
+      "name": "Amanda",
+      "action": "Cadastra equipamento",
+      "module": "Estoque FMP",
+      "details": "EQ-010 · LAMINULA 24X24 MM · saldo 1000"
     }
   ]
 }
