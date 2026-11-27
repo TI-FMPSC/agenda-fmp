@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-27T21:30:15.025Z",
+  "updatedAt": "2026-11-27T21:36:24.274Z",
   "logs": [
     {
       "id": "3896c0bd-232c-4e63-854e-b74857c46612",
@@ -10981,6 +10981,15 @@
       "action": "Login realizado",
       "module": "Acesso",
       "details": "Entrada na área administrativa"
+    },
+    {
+      "id": "ef343c56-c77a-4757-b6ba-81489905379e",
+      "timestamp": "2026-11-27T21:36:23.756Z",
+      "username": "andreakochela",
+      "name": "Andréa Kochela",
+      "action": "Cria agendamento",
+      "module": "Agendamentos",
+      "details": "Administração — 7ª Fase · Rosana Rosa Silveira · 2026-11-27 · 18:50–22:00 · Laboratório 03"
     }
   ]
 }
